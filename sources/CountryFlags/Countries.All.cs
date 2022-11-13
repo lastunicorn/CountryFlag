@@ -24,11 +24,12 @@ public static partial class Countries
 
     static Countries()
     {
-        Country[] countries = {
+        Country[] countries =
+        {
             // A
 
-            Afganistan_IslamicEmirate,
-            Afganistan_IslamicRepublic,
+            Afghanistan_IslamicEmirate,
+            Afghanistan_IslamicRepublic,
             Aland,
             Albania,
             Algeria,
@@ -66,7 +67,50 @@ public static partial class Countries
             Brunei,
             Bulgaria,
             BurkinaFaso,
-            Burundi
+            Burundi,
+
+            // C
+
+            CaboVerde,
+            Cambodia,
+            Cameroon,
+            Canada,
+            CaymanIslands,
+            CentralAfricanRepublic,
+            Chad,
+            Chile,
+            ChristmasIsland,
+            CocosIslands,
+            Colombia,
+            Comoros,
+            Congo_Republic,
+            Congo_DemocraticRepublic,
+            CookIslands,
+            CostaRica,
+            IvoryCoast,
+            Croatia,
+            Cuba,
+            Curacao,
+            Cyprus,
+            Czechia,
+
+            // D
+
+            Denmark,
+            Djibouti,
+            Dominica,
+            DominicanRepublic,
+
+            // E
+
+            Ecuador,
+            Egypt,
+            ElSalvador,
+            EquatorialGuinea,
+            Eritrea,
+            Estonia,
+            Eswatini,
+            Ethiopia
         };
 
         All = countries.ToImmutableList();

@@ -24,7 +24,8 @@ public static partial class Countries
         FullName = "Commonwealth of The Bahamas",
         IsoCodeAlpha2 = "BS",
         IsoCodeAlpha3 = "BHS",
-        IsoCodeNumeric = "044"
+        IsoCodeNumeric = "044",
+        IsIndependent = true
     };
 
     public static Country Bahrain { get; } = new()
@@ -33,7 +34,8 @@ public static partial class Countries
         FullName = "Kingdom of Bahrain",
         IsoCodeAlpha2 = "BH",
         IsoCodeAlpha3 = "BHR",
-        IsoCodeNumeric = "048"
+        IsoCodeNumeric = "048",
+        IsIndependent = true
     };
 
     public static Country Bangladesh { get; } = new()
@@ -42,7 +44,8 @@ public static partial class Countries
         FullName = "People's Republic of Bangladesh",
         IsoCodeAlpha2 = "BD",
         IsoCodeAlpha3 = "BGD",
-        IsoCodeNumeric = "050"
+        IsoCodeNumeric = "050",
+        IsIndependent = true
     };
 
     public static Country Barbados { get; } = new()
@@ -51,7 +54,8 @@ public static partial class Countries
         FullName = "Barbados",
         IsoCodeAlpha2 = "BB",
         IsoCodeAlpha3 = "BRB",
-        IsoCodeNumeric = "052"
+        IsoCodeNumeric = "052",
+        IsIndependent = true
     };
 
     public static Country Belarus { get; } = new()
@@ -60,7 +64,8 @@ public static partial class Countries
         FullName = "Republic of Belarus",
         IsoCodeAlpha2 = "BY",
         IsoCodeAlpha3 = "BLR",
-        IsoCodeNumeric = "112"
+        IsoCodeNumeric = "112",
+        IsIndependent = true
     };
 
     public static Country Belgium { get; } = new()
@@ -69,16 +74,18 @@ public static partial class Countries
         FullName = "Kingdom of Belgium",
         IsoCodeAlpha2 = "BE",
         IsoCodeAlpha3 = "BEL",
-        IsoCodeNumeric = "056"
+        IsoCodeNumeric = "056",
+        IsIndependent = true
     };
 
     public static Country Belize { get; } = new()
     {
         ShortName = "Belize",
-        FullName = "Kingdom of Belgium",
+        FullName = "Belize",
         IsoCodeAlpha2 = "BZ",
         IsoCodeAlpha3 = "BLZ",
-        IsoCodeNumeric = "084"
+        IsoCodeNumeric = "084",
+        IsIndependent = true
     };
 
     public static Country Benin { get; } = new()
@@ -87,7 +94,8 @@ public static partial class Countries
         FullName = "Republic of Benin",
         IsoCodeAlpha2 = "BJ",
         IsoCodeAlpha3 = "BEN",
-        IsoCodeNumeric = "204"
+        IsoCodeNumeric = "204",
+        IsIndependent = true
     };
 
     public static Country Bermuda { get; } = new()
@@ -96,7 +104,8 @@ public static partial class Countries
         FullName = "Bermuda",
         IsoCodeAlpha2 = "BM",
         IsoCodeAlpha3 = "BMU",
-        IsoCodeNumeric = "060"
+        IsoCodeNumeric = "060",
+        IsIndependent = false
     };
 
     public static Country Bhutan { get; } = new()
@@ -105,7 +114,8 @@ public static partial class Countries
         FullName = "Kingdom of Bhutan",
         IsoCodeAlpha2 = "BT",
         IsoCodeAlpha3 = "BTN",
-        IsoCodeNumeric = "064"
+        IsoCodeNumeric = "064",
+        IsIndependent = true
     };
 
     public static Country Bolivia { get; } = new()
@@ -114,7 +124,8 @@ public static partial class Countries
         FullName = "Plurinational State of Bolivia",
         IsoCodeAlpha2 = "BO",
         IsoCodeAlpha3 = "BOL",
-        IsoCodeNumeric = "068"
+        IsoCodeNumeric = "068",
+        IsIndependent = true
     };
 
     public static Country CaribbeanNetherlands { get; } = new()
@@ -123,16 +134,18 @@ public static partial class Countries
         FullName = "Bonaire, Sint Eustatius and Saba",
         IsoCodeAlpha2 = "BQ",
         IsoCodeAlpha3 = "BES",
-        IsoCodeNumeric = "535"
+        IsoCodeNumeric = "535",
+        IsIndependent = false
     };
 
     public static Country BosniaHerzegovina { get; } = new()
     {
-        ShortName = "Bosnia Herzegovina",
+        ShortName = "Bosnia and Herzegovina",
         FullName = "Bosnia and Herzegovina",
         IsoCodeAlpha2 = "BA",
         IsoCodeAlpha3 = "BIH",
-        IsoCodeNumeric = "070"
+        IsoCodeNumeric = "070",
+        IsIndependent = true
     };
 
     public static Country Botswana { get; } = new()
@@ -141,7 +154,8 @@ public static partial class Countries
         FullName = "Republic of Botswana",
         IsoCodeAlpha2 = "BW",
         IsoCodeAlpha3 = "BWA",
-        IsoCodeNumeric = "072"
+        IsoCodeNumeric = "072",
+        IsIndependent = true
     };
 
     public static Country BouvetIsland { get; } = new()
@@ -150,7 +164,8 @@ public static partial class Countries
         FullName = "Bouvet Island",
         IsoCodeAlpha2 = "BV",
         IsoCodeAlpha3 = "BVT",
-        IsoCodeNumeric = "074"
+        IsoCodeNumeric = "074",
+        IsIndependent = false
     };
 
     public static Country Brazil { get; } = new()
@@ -159,7 +174,8 @@ public static partial class Countries
         FullName = "Federative Republic of Brazil",
         IsoCodeAlpha2 = "BR",
         IsoCodeAlpha3 = "BRA",
-        IsoCodeNumeric = "076"
+        IsoCodeNumeric = "076",
+        IsIndependent = true
     };
 
     public static Country BritishIndianOceanTerritory { get; } = new()
@@ -168,7 +184,8 @@ public static partial class Countries
         FullName = "British Indian Ocean Territory",
         IsoCodeAlpha2 = "IO",
         IsoCodeAlpha3 = "IOT",
-        IsoCodeNumeric = "086"
+        IsoCodeNumeric = "086",
+        IsIndependent = false
     };
 
     public static Country Brunei { get; } = new()
@@ -177,7 +194,8 @@ public static partial class Countries
         FullName = "Brunei Darussalam",
         IsoCodeAlpha2 = "BN",
         IsoCodeAlpha3 = "BRN",
-        IsoCodeNumeric = "096"
+        IsoCodeNumeric = "096",
+        IsIndependent = true
     };
 
     public static Country Bulgaria { get; } = new()
@@ -186,7 +204,8 @@ public static partial class Countries
         FullName = "Republic of Bulgaria",
         IsoCodeAlpha2 = "BG",
         IsoCodeAlpha3 = "BGR",
-        IsoCodeNumeric = "100"
+        IsoCodeNumeric = "100",
+        IsIndependent = true
     };
 
     public static Country BurkinaFaso { get; } = new()
@@ -195,7 +214,8 @@ public static partial class Countries
         FullName = "Burkina Faso",
         IsoCodeAlpha2 = "BF",
         IsoCodeAlpha3 = "BFA",
-        IsoCodeNumeric = "854"
+        IsoCodeNumeric = "854",
+        IsIndependent = true
     };
 
     public static Country Burundi { get; } = new()
@@ -204,6 +224,7 @@ public static partial class Countries
         FullName = "Republic of Burundi",
         IsoCodeAlpha2 = "BI",
         IsoCodeAlpha3 = "BDI",
-        IsoCodeNumeric = "108"
+        IsoCodeNumeric = "108",
+        IsIndependent = true
     };
 }

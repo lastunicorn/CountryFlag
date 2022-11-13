@@ -21,11 +21,14 @@ public class CountryViewModel
     public string CountryName { get; }
 
     public string CountryCode { get; }
+    
+    public string CountryFullName { get; }
 
     public CountryViewModel(Country country)
     {
         CountryName = country?.ShortName;
         CountryCode = country?.IsoCodeAlpha2;
+        CountryFullName = country?.FullName;
     }
 
     public override string ToString()

@@ -18,19 +18,20 @@ namespace DustInTheWind.CountryFlags;
 
 public static partial class Countries
 {
-    public static Country Afganistan_IslamicEmirate { get; } = new()
+    public static Country Afghanistan_IslamicEmirate { get; } = new()
     {
         ShortName = "Afghanistan",
         FullName = "Islamic Emirate of Afghanistan"
     };
 
-    public static Country Afganistan_IslamicRepublic { get; } = new()
+    public static Country Afghanistan_IslamicRepublic { get; } = new()
     {
         ShortName = "Afghanistan",
         FullName = "Islamic Republic of Afghanistan",
         IsoCodeAlpha2 = "AF",
         IsoCodeAlpha3 = "AFG",
-        IsoCodeNumeric = "004"
+        IsoCodeNumeric = "004",
+        IsIndependent = true
     };
 
     public static Country Aland { get; } = new()
@@ -39,16 +40,18 @@ public static partial class Countries
         FullName = "Åland",
         IsoCodeAlpha2 = "AX",
         IsoCodeAlpha3 = "ALA",
-        IsoCodeNumeric = "248"
+        IsoCodeNumeric = "248",
+        IsIndependent = false
     };
 
     public static Country Albania { get; } = new()
     {
         ShortName = "Albania",
-        FullName = "Islamic Republic of Afghanistan",
+        FullName = "Republic of Albania",
         IsoCodeAlpha2 = "AL",
         IsoCodeAlpha3 = "ALB",
-        IsoCodeNumeric = "008"
+        IsoCodeNumeric = "008",
+        IsIndependent = true
     };
 
     public static Country Algeria { get; } = new()
@@ -57,7 +60,8 @@ public static partial class Countries
         FullName = "People's Democratic Republic of Algeria",
         IsoCodeAlpha2 = "DZ",
         IsoCodeAlpha3 = "DZA",
-        IsoCodeNumeric = "012"
+        IsoCodeNumeric = "012",
+        IsIndependent = true
     };
 
     public static Country AmericanSamoa { get; } = new()
@@ -66,7 +70,8 @@ public static partial class Countries
         FullName = "American Samoa",
         IsoCodeAlpha2 = "AS",
         IsoCodeAlpha3 = "ASM",
-        IsoCodeNumeric = "016"
+        IsoCodeNumeric = "016",
+        IsIndependent = false
     };
 
     public static Country Andorra { get; } = new()
@@ -75,7 +80,8 @@ public static partial class Countries
         FullName = "Principality of Andorra",
         IsoCodeAlpha2 = "AD",
         IsoCodeAlpha3 = "AND",
-        IsoCodeNumeric = "020"
+        IsoCodeNumeric = "020",
+        IsIndependent = true
     };
 
     public static Country Angola { get; } = new()
@@ -84,16 +90,18 @@ public static partial class Countries
         FullName = "Republic of Angola",
         IsoCodeAlpha2 = "AO",
         IsoCodeAlpha3 = "AGO",
-        IsoCodeNumeric = "024"
+        IsoCodeNumeric = "024",
+        IsIndependent = true
     };
 
     public static Country Anguilla { get; } = new()
     {
         ShortName = "Anguilla",
-        FullName = "Republic of Angola",
+        FullName = "Anguilla",
         IsoCodeAlpha2 = "AI",
         IsoCodeAlpha3 = "AIA",
-        IsoCodeNumeric = "660"
+        IsoCodeNumeric = "660",
+        IsIndependent = false
     };
 
     public static Country Antarctica { get; } = new()
@@ -102,7 +110,8 @@ public static partial class Countries
         FullName = "Antarctica",
         IsoCodeAlpha2 = "AQ",
         IsoCodeAlpha3 = "ATA",
-        IsoCodeNumeric = "010"
+        IsoCodeNumeric = "010",
+        IsIndependent = false
     };
 
     public static Country AntiguaAndBarbuda { get; } = new()
@@ -111,7 +120,8 @@ public static partial class Countries
         FullName = "Antigua and Barbuda",
         IsoCodeAlpha2 = "AG",
         IsoCodeAlpha3 = "ATG",
-        IsoCodeNumeric = "028"
+        IsoCodeNumeric = "028",
+        IsIndependent = true
     };
 
     public static Country Argentina { get; } = new()
@@ -120,7 +130,8 @@ public static partial class Countries
         FullName = "Argentine Republic",
         IsoCodeAlpha2 = "AR",
         IsoCodeAlpha3 = "ARG",
-        IsoCodeNumeric = "032"
+        IsoCodeNumeric = "032",
+        IsIndependent = true
     };
 
     public static Country Armenia { get; } = new()
@@ -129,7 +140,8 @@ public static partial class Countries
         FullName = "Republic of Armenia",
         IsoCodeAlpha2 = "AM",
         IsoCodeAlpha3 = "ARM",
-        IsoCodeNumeric = "051"
+        IsoCodeNumeric = "051",
+        IsIndependent = true
     };
 
     public static Country Aruba { get; } = new()
@@ -138,7 +150,8 @@ public static partial class Countries
         FullName = "Country of Aruba",
         IsoCodeAlpha2 = "AW",
         IsoCodeAlpha3 = "ABW",
-        IsoCodeNumeric = "533"
+        IsoCodeNumeric = "533",
+        IsIndependent = false
     };
 
     public static Country Australia { get; } = new()
@@ -147,7 +160,8 @@ public static partial class Countries
         FullName = "Commonwealth of Australia",
         IsoCodeAlpha2 = "AU",
         IsoCodeAlpha3 = "AUS",
-        IsoCodeNumeric = "036"
+        IsoCodeNumeric = "036",
+        IsIndependent = true
     };
 
     public static Country Austria { get; } = new()
@@ -156,7 +170,8 @@ public static partial class Countries
         FullName = "Republic of Austria",
         IsoCodeAlpha2 = "AT",
         IsoCodeAlpha3 = "AUT",
-        IsoCodeNumeric = "040"
+        IsoCodeNumeric = "040",
+        IsIndependent = true
     };
 
     public static Country Azerbaijan { get; } = new()
@@ -165,6 +180,7 @@ public static partial class Countries
         FullName = "Republic of Azerbaijan",
         IsoCodeAlpha2 = "AZ",
         IsoCodeAlpha3 = "AZE",
-        IsoCodeNumeric = "031"
+        IsoCodeNumeric = "031",
+        IsIndependent = true
     };
 }
