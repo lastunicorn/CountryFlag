@@ -1,0 +1,49 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Barbados -->
+
+    <ControlTemplate x:Key="CountryFlag_BB">
+        <Viewbox Stretch="Uniform">
+            <Canvas Width="24000" Height="16000">
+
+                <Rectangle Width="24000" Height="16000" Fill="#00267f" />
+                <Rectangle Width="8000" Height="16000" Canvas.Left="8000" Fill="#ffc726" />
+
+                <Path
+                    Data="M 12000,4124 C 11740,4833 11475,5571 10908,6136 C 11084,6078 11392,6026 11590,6031 L 11590,9013 L 10748,9138 C 10718,9135 10708,9088 10708,9024 C 10627,8098 10408,7320 10156,6515 C 10138,6405 9819,5985 10065,6059 C 10095,6063 10424,6197 10372,6133 C 9924,5669 9269,5335 8633,5236 C 8577,5222 8544,5250 8594,5315 C 9438,6614 10144,8147 10138,9966 C 10466,9966 11261,9772 11590,9772 C 11590,9772 11590,11876 11590,11876 L 12005,11876 12100, 6000 z"
+                    Fill="#000000" />
+
+                <Path
+                    Data="M 12000,4124 C 11740,4833 11475,5571 10908,6136 C 11084,6078 11392,6026 11590,6031 L 11590,9013 L 10748,9138 C 10718,9135 10708,9088 10708,9024 C 10627,8098 10408,7320 10156,6515 C 10138,6405 9819,5985 10065,6059 C 10095,6063 10424,6197 10372,6133 C 9924,5669 9269,5335 8633,5236 C 8577,5222 8544,5250 8594,5315 C 9438,6614 10144,8147 10138,9966 C 10466,9966 11261,9772 11590,9772 C 11590,9772 11590,11876 11590,11876 L 12005,11876 12100, 6000 z"
+                    Fill="#000000">
+
+                    <Path.RenderTransform>
+                        <ScaleTransform CenterX="12000" CenterY="8000" ScaleX="-1" />
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>

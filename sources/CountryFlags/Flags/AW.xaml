@@ -1,0 +1,47 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Aruba -->
+
+    <ControlTemplate x:Key="CountryFlag_AW">
+        <Viewbox Stretch="Uniform">
+            <Canvas Height="18" Width="27">
+
+                <Path
+                    Fill="#418fde"
+                    Data="M0,0h27v18H0V0z" />
+
+                <Path
+                    Fill="#ffd100"
+                    Data="M0,12h27v1H0v1h27v1H0V12z" />
+
+                <Polygon
+                    Fill="#EF3340"
+                    Stroke="#FFF"
+                    StrokeThickness="0.2"
+                    Points="4.625,3.375 4,1.349609 3.375,3.375 1.349609,4 3.375,4.625 4,6.650391 4.625,4.625 6.650391,4" />
+
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>

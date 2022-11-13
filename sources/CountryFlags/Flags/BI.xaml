@@ -1,0 +1,86 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Burundi -->
+
+    <ControlTemplate x:Key="CountryFlag_BI">
+        <Viewbox Stretch="Uniform">
+            <Canvas Width="100" Height="60">
+
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="50" Y="30"></TranslateTransform>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="m-50-30H50v60H-50z"
+                    Fill="#c8102e"
+                    StrokeThickness="8" />
+
+                <Path
+                    Data="m-55-33v66L55-33v66z"
+                    Stroke="#ffffff"
+                    Fill="#43b02a"
+                    StrokeThickness="8"
+                    Clip="m-50-30H50v60H-50z"/>
+
+                <Ellipse
+                    Fill="#ffffff"
+                    Width="34"
+                    Height="34"
+                    Canvas.Left="-17"
+                    Canvas.Top="-17" />
+
+                <!-- Stars -->
+
+                <Path
+                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+                    Stroke="#43b02a"
+                    Fill="#c8102e"
+                    StrokeThickness="0.36" />
+
+                <Path
+                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+                    Stroke="#43b02a"
+                    Fill="#c8102e"
+                    StrokeThickness="0.36">
+
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="120" />
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+                    Stroke="#43b02a"
+                    Fill="#c8102e"
+                    StrokeThickness="0.36">
+
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="240" />
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>
