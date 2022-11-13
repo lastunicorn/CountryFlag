@@ -1,0 +1,206 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Cook Islands -->
+
+    <ControlTemplate x:Key="CountryFlag_CK">
+        <Viewbox Stretch="Uniform">
+            <Canvas Width="9600" Height="4800">
+
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <ScaleTransform ScaleX="800" ScaleY="800" />
+                    </Canvas.RenderTransform>
+
+                    <!-- Background -->
+
+                    <Rectangle Width="12" Height="6" Canvas.Left="0" Canvas.Top="0" Fill="#012169" />
+
+                    <!-- United Kingdom Flag -->
+
+                    <Path
+                        Data="M 0 0 6 3 M 6 0 0 3"
+                        Stroke="#ffffff"
+                        StrokeThickness="0.6"
+                        Clip="M 0 0 H 6 V 3 H 0 z" />
+
+                    <Path
+                        Data="M 0 0 6 3 M 6 0 0 3"
+                        Stroke="#c8102e"
+                        StrokeThickness="0.4"
+                        Clip="M 0 0 V 1.5 H 6 V 3 H 6 z M 6 0 H 3 V 3 H 0 V 3 z" />
+
+                    <Path
+                        Data="M 3 0 v 3 M 0 1.5 h 6"
+                        Stroke="#ffffff" />
+
+                    <Path
+                        Data="M 3 0 V 3 M 0 1.5 h 6"
+                        Stroke="#c8102e"
+                        StrokeThickness="0.6" />
+
+                </Canvas>
+
+                <!-- Circle of Stars -->
+
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <TranslateTransform X="7200" Y="2400" />
+                    </Canvas.RenderTransform>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff" />
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="24" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="48" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="72" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="96" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="120" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="144" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="168" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="192" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="216" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="240" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="264" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="288" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="312" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="m 0 -1992 81 249 h 261l -211 153 81 249 L 0 -1494 l -212 153 81 -249 -211 -153 h 261 z"
+                        Fill="#ffffff">
+
+                        <Path.RenderTransform>
+                            <RotateTransform Angle="336" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                </Canvas>
+
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>
