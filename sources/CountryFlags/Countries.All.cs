@@ -110,7 +110,18 @@ public static partial class Countries
             Eritrea,
             Estonia,
             Eswatini,
-            Ethiopia
+            Ethiopia,
+
+            // F
+
+            FalklandIslands,
+            FaroeIslands,
+            Fiji,
+            Finland,
+            France,
+            FrenchGuiana,
+            FrenchPolynesia,
+            FrenchSouthernTerritories
         };
 
         All = countries.ToImmutableList();
