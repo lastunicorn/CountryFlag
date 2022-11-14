@@ -22,8 +22,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Brazil -->
 
-    <!-- Not finished -->
-
     <ControlTemplate x:Key="CountryFlag_BR">
         <Viewbox Stretch="Uniform">
             <Canvas Width="4200" Height="2940">
@@ -93,17 +91,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                     <!-- R -->
 
-                    <Path
-                        Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                        Fill="#009c3b">
+                    <Canvas>
 
-                        <Path.RenderTransform>
+                        <Canvas.RenderTransform>
                             <TransformGroup>
                                 <TranslateTransform Y="-1697.5" />
                                 <RotateTransform Angle="-4" />
                             </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                        </Canvas.RenderTransform>
+
+                        <Path
+                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
+                            Fill="#009c3b" />
+
+                        <Path
+                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                            Fill="#009c3b" />
+
+                    </Canvas>
 
                     <!-- D -->
 
@@ -177,17 +182,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                     <!-- R -->
 
-                    <Path
-                        Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                        Fill="#009c3b">
+                    <Canvas>
 
-                        <Path.RenderTransform>
+                        <Canvas.RenderTransform>
                             <TransformGroup>
                                 <TranslateTransform Y="-1697.5" />
                                 <RotateTransform Angle="17.5" />
                             </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                        </Canvas.RenderTransform>
+
+                        <Path
+                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
+                            Fill="#009c3b" />
+
+                        <Path
+                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                            Fill="#009c3b" />
+
+                    </Canvas>
 
                     <!-- O -->
 
@@ -237,17 +249,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                     <!-- R -->
 
-                    <Path
-                        Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                        Fill="#009c3b">
+                    <Canvas>
 
-                        <Path.RenderTransform>
+                        <Canvas.RenderTransform>
                             <TransformGroup>
                                 <TranslateTransform Y="-1697.5" />
                                 <RotateTransform Angle="26.5" />
                             </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                        </Canvas.RenderTransform>
+
+                        <Path
+                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
+                            Fill="#009c3b" />
+
+                        <Path
+                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                            Fill="#009c3b" />
+
+                    </Canvas>
 
                     <!-- E -->
 
