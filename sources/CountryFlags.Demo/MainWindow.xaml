@@ -123,7 +123,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <StackPanel
             Grid.Column="4"
-            Grid.IsSharedSizeScope="True">
+            Grid.IsSharedSizeScope="True"
+            Margin="10">
 
             <Grid>
                 <Grid.ColumnDefinitions>

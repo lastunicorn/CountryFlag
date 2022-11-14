@@ -121,7 +121,26 @@ public static partial class Countries
             France,
             FrenchGuiana,
             FrenchPolynesia,
-            FrenchSouthernTerritories
+            FrenchSouthernTerritories,
+
+            // G
+
+            Gabon,
+            Gambia,
+            Georgia,
+            Germany,
+            Ghana,
+            Gibraltar,
+            Greece,
+            Greenland,
+            Grenada,
+            Guadeloupe,
+            Guam,
+            Guatemala,
+            Guernsey,
+            Guinea,
+            GuineaBissau,
+            Guyana
         };
 
         All = countries.ToImmutableList();
