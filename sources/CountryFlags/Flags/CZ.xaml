@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -20,33 +20,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- United Arab Emirates -->
+    <!-- Czechia -->
 
-    <ControlTemplate x:Key="CountryFlag_AE">
+    <ControlTemplate x:Key="CountryFlag_CZ">
         <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="6">
+            <Canvas Width="900" Height="600">
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Fill="#00732f" />
-
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="2"
+                    Width="900"
+                    Height="300"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
                     Fill="#ffffff" />
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="4"
-                    Fill="#000000" />
+                    Width="900"
+                    Height="300"
+                    Canvas.Left="0"
+                    Canvas.Top="300"
+                    Fill="#d7141a" />
 
-                <Rectangle
-                    Width="3"
-                    Height="6"
-                    Fill="#ff0000" />
+                <Path
+                    Data="M 450 300 0 0 V 600 z"
+                    Fill="#11457e" />
 
             </Canvas>
         </Viewbox>

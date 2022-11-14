@@ -25,9 +25,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <ControlTemplate x:Key="CountryFlag_AM">
         <Viewbox Stretch="Uniform">
             <Canvas Width="6" Height="3">
-                <Rectangle Width="6" Height="1" Canvas.Left="0" Canvas.Top="0" Fill="#D90012" />
-                <Rectangle Width="6" Height="1" Canvas.Left="0" Canvas.Top="1" Fill="#0033A0" />
-                <Rectangle Width="6" Height="1" Canvas.Left="0" Canvas.Top="2" Fill="#F2A800" />
+
+                <Rectangle
+                    Width="6"
+                    Height="1"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#D90012" />
+
+                <Rectangle
+                    Width="6"
+                    Height="1"
+                    Canvas.Left="0"
+                    Canvas.Top="1"
+                    Fill="#0033A0" />
+
+                <Rectangle
+                    Width="6"
+                    Height="1"
+                    Canvas.Left="0"
+                    Canvas.Top="2"
+                    Fill="#F2A800" />
+
             </Canvas>
         </Viewbox>
     </ControlTemplate>

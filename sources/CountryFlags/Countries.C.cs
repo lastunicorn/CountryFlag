@@ -18,7 +18,7 @@ namespace DustInTheWind.CountryFlags;
 
 public static partial class Countries
 {
-    public static Country CaboVerde { get; } = new()
+    public static Country CapeVerde { get; } = new()
     {
         ShortName = "Cabo Verde",
         FullName = "Republic of Cabo Verde",

@@ -71,7 +71,7 @@ public static partial class Countries
 
             // C
 
-            CaboVerde,
+            CapeVerde,
             Cambodia,
             Cameroon,
             Canada,

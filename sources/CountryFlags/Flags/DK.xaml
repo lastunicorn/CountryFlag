@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -20,33 +20,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- United Arab Emirates -->
+    <!-- Denmark -->
 
-    <ControlTemplate x:Key="CountryFlag_AE">
+    <ControlTemplate x:Key="CountryFlag_DK">
         <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="6">
+            <Canvas Width="37" Height="28">
+
+                <!-- Background -->
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Fill="#00732f" />
+                    Width="37"
+                    Height="28"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#c8102e" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="2"
-                    Fill="#ffffff" />
+                <!-- White Cross -->
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="4"
-                    Fill="#000000" />
-
-                <Rectangle
-                    Width="3"
-                    Height="6"
-                    Fill="#ff0000" />
+                <Path
+                    Fill="#ffffff"
+                    Data="M 0 12 H 12 V 0 H 16 V 12 H 37 V 16 H 16 V 28 H 12 V 16 H 0 Z" />
 
             </Canvas>
         </Viewbox>

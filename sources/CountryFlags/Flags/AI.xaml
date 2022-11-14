@@ -28,7 +28,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Background -->
 
-                <Rectangle Width="1200" Height="600" Canvas.Left="0" Canvas.Top="0" Fill="#012169" />
+                <Rectangle
+                    Width="1200"
+                    Height="600"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#012169" />
 
                 <!-- United Kingdom Flag -->
 

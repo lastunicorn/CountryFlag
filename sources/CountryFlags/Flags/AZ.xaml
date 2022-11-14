@@ -25,16 +25,46 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <ControlTemplate x:Key="CountryFlag_AZ">
         <Viewbox Stretch="Uniform">
             <Canvas Width="1200" Height="600">
-                <Rectangle Width="1200" Height="200" Canvas.Left="0" Canvas.Top="0" Fill="#00b5e2" />
-                <Rectangle Width="1200" Height="200" Canvas.Left="0" Canvas.Top="200" Fill="#ef3340" />
-                <Rectangle Width="1200" Height="200" Canvas.Left="0" Canvas.Top="400" Fill="#509e2f" />
 
-                <Ellipse Fill="#ffffff" Width="180" Height="180" Canvas.Left="480" Canvas.Top="210" />
-                <Ellipse Fill="#ef3340" Width="150" Height="150" Canvas.Left="515" Canvas.Top="225" />
+                <Rectangle
+                    Width="1200"
+                    Height="200"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#00b5e2" />
+
+                <Rectangle
+                    Width="1200"
+                    Height="200"
+                    Canvas.Left="0"
+                    Canvas.Top="200"
+                    Fill="#ef3340" />
+
+                <Rectangle
+                    Width="1200"
+                    Height="200"
+                    Canvas.Left="0"
+                    Canvas.Top="400"
+                    Fill="#509e2f" />
+
+                <Ellipse
+                    Fill="#ffffff"
+                    Width="180"
+                    Height="180"
+                    Canvas.Left="480"
+                    Canvas.Top="210" />
+
+                <Ellipse
+                    Fill="#ef3340"
+                    Width="150"
+                    Height="150"
+                    Canvas.Left="515"
+                    Canvas.Top="225" />
 
                 <Path
                     Data="M670 250l9.567 26.903 25.788-12.258-12.258 25.788L720 300l-26.903 9.567 12.258 25.788-25.788-12.258L670 350l-9.567-26.903-25.788 12.258 12.258-25.788L620 300l26.903-9.567-12.258-25.788 25.788 12.258z"
                     Fill="#ffffff" />
+
             </Canvas>
         </Viewbox>
     </ControlTemplate>

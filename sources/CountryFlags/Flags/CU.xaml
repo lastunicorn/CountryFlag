@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -20,33 +20,48 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- United Arab Emirates -->
+    <!-- Cuba -->
 
-    <ControlTemplate x:Key="CountryFlag_AE">
+    <ControlTemplate x:Key="CountryFlag_CU">
         <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="6">
+            <Canvas Width="30" Height="15">
+
+                <!-- Background -->
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Fill="#00732f" />
+                    Width="30"
+                    Height="15"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#004B87" />
+
+                <!-- White bands -->
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="2"
+                    Width="30"
+                    Height="3"
+                    Canvas.Left="0"
+                    Canvas.Top="3"
                     Fill="#ffffff" />
 
                 <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="4"
-                    Fill="#000000" />
+                    Width="30"
+                    Height="3"
+                    Canvas.Left="0"
+                    Canvas.Top="9"
+                    Fill="#ffffff" />
 
-                <Rectangle
-                    Width="3"
-                    Height="6"
-                    Fill="#ff0000" />
+                <!-- Red Triangle -->
+
+                <Path
+                    Data="m 12.99 7.5 L 0 15 V 0 z"
+                    Fill="#DA291C" />
+
+                <!-- Star -->
+
+                <Path
+                    Data="F1 m 4.33 5 -1.469 4.523 3.847 -2.796 H 1.952 L 5.8 9.523 z"
+                    Fill="#ffffff"/>
 
             </Canvas>
         </Viewbox>

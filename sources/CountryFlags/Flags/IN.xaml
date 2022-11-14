@@ -27,9 +27,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <Canvas Width="225" Height="150">
 
-                <Rectangle Width="225" Height="50" Canvas.Top="0" Fill="#ff9933" />
-                <Rectangle Width="225" Height="50" Canvas.Top="50" Fill="#ffffff" />
-                <Rectangle Width="225" Height="50" Canvas.Top="100" Fill="#138808" />
+                <Rectangle
+                    Width="225"
+                    Height="50"
+                    Canvas.Top="0"
+                    Fill="#ff9933" />
+
+                <Rectangle
+                    Width="225"
+                    Height="50"
+                    Canvas.Top="50"
+                    Fill="#ffffff" />
+
+                <Rectangle
+                    Width="225"
+                    Height="50"
+                    Canvas.Top="100"
+                    Fill="#138808" />
 
                 <!-- Ashoka Chakra -->
 
