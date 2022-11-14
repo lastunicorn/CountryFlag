@@ -1,0 +1,62 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Chile -->
+
+    <ControlTemplate x:Key="CountryFlag_CL">
+        <Viewbox Stretch="Uniform">
+            <Canvas Width="6" Height="4">
+
+                <Rectangle
+                    Width="2"
+                    Height="2"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#0039a6" />
+
+                <Rectangle
+                    Width="4"
+                    Height="2"
+                    Canvas.Left="2"
+                    Canvas.Top="0"
+                    Fill="#ffffff" />
+
+                <Rectangle
+                    Width="6"
+                    Height="2"
+                    Canvas.Left="0"
+                    Canvas.Top="2"
+                    Fill="#d52b1e" />
+                
+                <Path
+                    Data="F1 m 1 .5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                    Fill="#ffffff"/>
+
+                <!--<Path
+                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                    Fill="#ffffff"/>-->
+
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+</ResourceDictionary>
