@@ -20,39 +20,32 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Empty -->
+    <!-- Gabon -->
 
     <ControlTemplate x:Key="CountryFlag_GA">
         <Viewbox Stretch="Uniform">
-            <Canvas Width="5" Height="5">
+            <Canvas Width="4" Height="3">
 
                 <Rectangle
-                    Width="1"
+                    Width="4"
                     Height="1"
-                    Canvas.Left="1"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#009e60" />
+
+                <Rectangle
+                    Width="4"
+                    Height="1"
+                    Canvas.Left="0"
                     Canvas.Top="1"
-                    Fill="#000000" />
+                    Fill="#fcd116" />
 
                 <Rectangle
-                    Width="1"
+                    Width="4"
                     Height="1"
-                    Canvas.Left="3"
-                    Canvas.Top="1"
-                    Fill="#000000" />
-
-                <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="1"
-                    Canvas.Top="3"
-                    Fill="#000000" />
-
-                <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="3"
-                    Canvas.Top="3"
-                    Fill="#000000" />
+                    Canvas.Left="0"
+                    Canvas.Top="2"
+                    Fill="#3a75c4" />
 
             </Canvas>
         </Viewbox>

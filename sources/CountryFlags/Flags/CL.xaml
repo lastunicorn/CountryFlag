@@ -51,10 +51,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     Data="F1 m 1 .5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
                     Fill="#ffffff"/>
 
-                <!--<Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff"/>-->
-
             </Canvas>
         </Viewbox>
     </ControlTemplate>
