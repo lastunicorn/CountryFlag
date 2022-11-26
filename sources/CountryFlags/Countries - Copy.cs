@@ -23,67 +23,6 @@
 //{
 
 
-
-//public static Country Haiti { get; } = new()
-//{
-//    ShortName = "Haiti",
-//    FullName = "Haiti",
-//    IsoCodeAlpha2 = "HT",
-//    IsoCodeAlpha3 = "HTI",
-//    IsoCodeNumeric = "332",
-//    IsIndependent = true
-//};
-
-//public static Country HeardIslandandMcDonaldIslands { get; } = new()
-//{
-//    ShortName = "Heard Island and McDonald Islands",
-//    FullName = "Heard Island and McDonald Islands",
-//    IsoCodeAlpha2 = "HM",
-//    IsoCodeAlpha3 = "HMD",
-//    IsoCodeNumeric = "334",
-//    IsIndependent = false
-//};
-
-//public static Country HolySee { get; } = new()
-//{
-//    ShortName = "Holy See",
-//    FullName = "Holy See",
-//    IsoCodeAlpha2 = "VA",
-//    IsoCodeAlpha3 = "VAT",
-//    IsoCodeNumeric = "336",
-//    IsIndependent = true
-//};
-
-//public static Country Honduras { get; } = new()
-//{
-//    ShortName = "Honduras",
-//    FullName = "Honduras",
-//    IsoCodeAlpha2 = "HN",
-//    IsoCodeAlpha3 = "HND",
-//    IsoCodeNumeric = "340",
-//    IsIndependent = true
-//};
-
-//public static Country HongKong { get; } = new()
-//{
-//    ShortName = "Hong Kong",
-//    FullName = "Hong Kong",
-//    IsoCodeAlpha2 = "HK",
-//    IsoCodeAlpha3 = "HKG",
-//    IsoCodeNumeric = "344",
-//    IsIndependent = false
-//};
-
-//public static Country Hungary { get; } = new()
-//{
-//    ShortName = "Hungary",
-//    FullName = "Hungary",
-//    IsoCodeAlpha2 = "HU",
-//    IsoCodeAlpha3 = "HUN",
-//    IsoCodeNumeric = "348",
-//    IsIndependent = true
-//};
-
 //public static Country Iceland { get; } = new()
 //{
 //    ShortName = "Iceland",

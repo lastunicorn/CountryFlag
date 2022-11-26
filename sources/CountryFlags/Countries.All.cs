@@ -140,7 +140,16 @@ public static partial class Countries
             Guernsey,
             Guinea,
             GuineaBissau,
-            Guyana
+            Guyana,
+
+            // H
+
+            Haiti,
+            HeardIslandAndMcDonaldIslands,
+            HolySee,
+            Honduras,
+            HongKong,
+            Hungary
         };
 
         All = countries.ToImmutableList();
