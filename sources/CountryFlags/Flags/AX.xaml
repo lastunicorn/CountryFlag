@@ -22,26 +22,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Åland -->
 
-    <ControlTemplate x:Key="CountryFlag_AX">
-        <Viewbox Stretch="Uniform">
-            <Canvas Height="34" Width="52">
+    <Canvas x:Key="CountryFlag_AX" Height="34" Width="52">
 
-                <Path
-                    Data="M0 0h52v34H0Z"
-                    Fill="#0064AD" />
+        <Path
+            Data="M0 0h52v34H0Z"
+            Fill="#0064AD" />
 
-                <Path
-                    Data="M0 17h52M21 0v34"
-                    StrokeThickness="10"
-                    Stroke="#FFD300" />
+        <Path
+            Data="M0 17h52M21 0v34"
+            StrokeThickness="10"
+            Stroke="#FFD300" />
 
-                <Path
-                    Data="M0 17h52M21 0v34"
-                    StrokeThickness="4"
-                    Stroke="#DA0E15" />
+        <Path
+            Data="M0 17h52M21 0v34"
+            StrokeThickness="4"
+            Stroke="#DA0E15" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

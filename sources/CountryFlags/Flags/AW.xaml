@@ -22,26 +22,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Aruba -->
 
-    <ControlTemplate x:Key="CountryFlag_AW">
-        <Viewbox Stretch="Uniform">
-            <Canvas Height="18" Width="27">
+    <Canvas x:Key="CountryFlag_AW" Height="18" Width="27">
 
-                <Path
-                    Fill="#418fde"
-                    Data="M0,0h27v18H0V0z" />
+        <Path
+            Fill="#418fde"
+            Data="M0,0h27v18H0V0z" />
 
-                <Path
-                    Fill="#ffd100"
-                    Data="M0,12h27v1H0v1h27v1H0V12z" />
+        <Path
+            Fill="#ffd100"
+            Data="M0,12h27v1H0v1h27v1H0V12z" />
 
-                <Polygon
-                    Fill="#EF3340"
-                    Stroke="#FFF"
-                    StrokeThickness="0.2"
-                    Points="4.625,3.375 4,1.349609 3.375,3.375 1.349609,4 3.375,4.625 4,6.650391 4.625,4.625 6.650391,4" />
+        <Polygon
+            Fill="#EF3340"
+            Stroke="#FFF"
+            StrokeThickness="0.2"
+            Points="4.625,3.375 4,1.349609 3.375,3.375 1.349609,4 3.375,4.625 4,6.650391 4.625,4.625 6.650391,4" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

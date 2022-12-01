@@ -22,31 +22,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Benin -->
 
-    <ControlTemplate x:Key="CountryFlag_BJ">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="90" Height="60">
-                <Rectangle
-                    Width="36"
-                    Height="60"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#008751" />
+    <Canvas x:Key="CountryFlag_BJ" Width="90" Height="60">
+        <Rectangle
+            Width="36"
+            Height="60"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#008751" />
 
-                <Rectangle
-                    Width="54"
-                    Height="30"
-                    Canvas.Left="36"
-                    Canvas.Top="0"
-                    Fill="#fcd116" />
+        <Rectangle
+            Width="54"
+            Height="30"
+            Canvas.Left="36"
+            Canvas.Top="0"
+            Fill="#fcd116" />
 
-                <Rectangle
-                    Width="54"
-                    Height="30"
-                    Canvas.Left="36"
-                    Canvas.Top="30"
-                    Fill="#e8112d" />
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+        <Rectangle
+            Width="54"
+            Height="30"
+            Canvas.Left="36"
+            Canvas.Top="30"
+            Fill="#e8112d" />
+    </Canvas>
 
 </ResourceDictionary>

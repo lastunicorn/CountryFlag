@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Greece -->
 
-    <ControlTemplate x:Key="CountryFlag_GR">
+    <!--<ControlTemplate x:Key="CountryFlag_GR">
         <Viewbox Stretch="Uniform">
             <Canvas Width="27" Height="18">
 
@@ -40,6 +40,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             </Canvas>
         </Viewbox>
-    </ControlTemplate>
+    </ControlTemplate>-->
+
+    <Canvas Width="27" Height="18" x:Key="CountryFlag_GR">
+
+        <Rectangle
+            Width="27"
+            Height="18"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#0D5EAF" />
+
+        <Path
+            StrokeThickness="2"
+            Stroke="#ffffff"
+            Data="M 5,0 V 11 M 0,5 H 10 M 10,3 H 27 M 10,7 H 27 M 0,11 H 27 M 0,15 H 27" />
+
+    </Canvas>
 
 </ResourceDictionary>

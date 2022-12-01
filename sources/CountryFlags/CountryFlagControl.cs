@@ -50,16 +50,16 @@ namespace DustInTheWind.CountryFlags
                         };
 
                         object resource = resourceDictionary[resourceName];
-                        countryFlagControl.FlagTemplate = resource as ControlTemplate;
+                        countryFlagControl.FlagCanvas = resource as Canvas;
                     }
                     catch
                     {
-                        countryFlagControl.FlagTemplate = null;
+                        countryFlagControl.FlagCanvas = null;
                     }
                 }
                 else
                 {
-                    countryFlagControl.FlagTemplate = null;
+                    countryFlagControl.FlagCanvas = null;
                 }
             }
         }
@@ -72,21 +72,21 @@ namespace DustInTheWind.CountryFlags
 
         #endregion
 
-        #region FlagTemplate
+        #region FlagCanvas
 
-        private static readonly DependencyPropertyKey FlagTemplatePropertyKey = DependencyProperty.RegisterReadOnly(
-            nameof(FlagTemplate),
-            typeof(ControlTemplate),
+        private static readonly DependencyPropertyKey FlagCanvasPropertyKey = DependencyProperty.RegisterReadOnly(
+            nameof(FlagCanvas),
+            typeof(Canvas),
             typeof(CountryFlagControl),
             new FrameworkPropertyMetadata(null, flags: FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
         );
 
-        public static readonly DependencyProperty FlagTemplateProperty = FlagTemplatePropertyKey.DependencyProperty;
+        public static readonly DependencyProperty FlagCanvasProperty = FlagCanvasPropertyKey.DependencyProperty;
 
-        public ControlTemplate? FlagTemplate
+        public Canvas? FlagCanvas
         {
-            get => (ControlTemplate)GetValue(FlagTemplateProperty);
-            private set => SetValue(FlagTemplatePropertyKey, value);
+            get => (Canvas)GetValue(FlagCanvasProperty);
+            private set => SetValue(FlagCanvasPropertyKey, value);
         }
 
         #endregion

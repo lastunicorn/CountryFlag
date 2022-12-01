@@ -22,23 +22,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Bahrain -->
 
-    <ControlTemplate x:Key="CountryFlag_BH">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="1500" Height="900">
+    <Canvas x:Key="CountryFlag_BH" Width="1500" Height="900">
 
-                <Rectangle
-                    Width="1500"
-                    Height="900"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="1500"
+            Height="900"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Path
-                    Data="M1500 0H375l225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90h1125"
-                    Fill="#ce1126" />
+        <Path
+            Data="M1500 0H375l225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90h1125"
+            Fill="#ce1126" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

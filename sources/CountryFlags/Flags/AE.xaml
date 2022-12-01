@@ -22,34 +22,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- United Arab Emirates -->
 
-    <ControlTemplate x:Key="CountryFlag_AE">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="6">
+    <Canvas x:Key="CountryFlag_AE" Width="12" Height="6">
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Fill="#00732f" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Fill="#00732f" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="2"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Top="2"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Top="4"
-                    Fill="#000000" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Top="4"
+            Fill="#000000" />
 
-                <Rectangle
-                    Width="3"
-                    Height="6"
-                    Fill="#ff0000" />
+        <Rectangle
+            Width="3"
+            Height="6"
+            Fill="#ff0000" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

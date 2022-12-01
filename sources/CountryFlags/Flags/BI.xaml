@@ -22,65 +22,61 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Burundi -->
 
-    <ControlTemplate x:Key="CountryFlag_BI">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="100" Height="60">
+    <Canvas x:Key="CountryFlag_BI" Width="100" Height="60">
 
-                <Canvas.RenderTransform>
-                    <TranslateTransform X="50" Y="30"></TranslateTransform>
-                </Canvas.RenderTransform>
+        <Canvas.RenderTransform>
+            <TranslateTransform X="50" Y="30" />
+        </Canvas.RenderTransform>
 
-                <Path
-                    Data="m-50-30H50v60H-50z"
-                    Fill="#c8102e"
-                    StrokeThickness="8" />
+        <Path
+            Data="m-50-30H50v60H-50z"
+            Fill="#c8102e"
+            StrokeThickness="8" />
 
-                <Path
-                    Data="m-55-33v66L55-33v66z"
-                    Stroke="#ffffff"
-                    Fill="#43b02a"
-                    StrokeThickness="8"
-                    Clip="m-50-30H50v60H-50z"/>
+        <Path
+            Data="m-55-33v66L55-33v66z"
+            Stroke="#ffffff"
+            Fill="#43b02a"
+            StrokeThickness="8"
+            Clip="m-50-30H50v60H-50z" />
 
-                <Ellipse
-                    Fill="#ffffff"
-                    Width="34"
-                    Height="34"
-                    Canvas.Left="-17"
-                    Canvas.Top="-17" />
+        <Ellipse
+            Fill="#ffffff"
+            Width="34"
+            Height="34"
+            Canvas.Left="-17"
+            Canvas.Top="-17" />
 
-                <!-- Stars -->
+        <!-- Stars -->
 
-                <Path
-                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
-                    Stroke="#43b02a"
-                    Fill="#c8102e"
-                    StrokeThickness="0.36" />
+        <Path
+            Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+            Stroke="#43b02a"
+            Fill="#c8102e"
+            StrokeThickness="0.36" />
 
-                <Path
-                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
-                    Stroke="#43b02a"
-                    Fill="#c8102e"
-                    StrokeThickness="0.36">
+        <Path
+            Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+            Stroke="#43b02a"
+            Fill="#c8102e"
+            StrokeThickness="0.36">
 
-                    <Path.RenderTransform>
-                        <RotateTransform Angle="120" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <RotateTransform Angle="120" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
-                    Stroke="#43b02a"
-                    Fill="#c8102e"
-                    StrokeThickness="0.36">
+        <Path
+            Data="m0-12.44 1.051 1.82h2.101L2.102-8.8l1.05 1.82H1.051L0-5.16-1.051-6.98h-2.101l1.05-1.82-1.05-1.82h2.101z"
+            Stroke="#43b02a"
+            Fill="#c8102e"
+            StrokeThickness="0.36">
 
-                    <Path.RenderTransform>
-                        <RotateTransform Angle="240" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <RotateTransform Angle="240" />
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

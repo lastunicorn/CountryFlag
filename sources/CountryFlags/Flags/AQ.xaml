@@ -21,96 +21,92 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!-- Antarctic Treaty -->
-    
+
     <!-- Not finished -->
 
-    <ControlTemplate x:Key="CountryFlag_AQ">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_AQ" Width="900" Height="600">
+
+        <Canvas.RenderTransform>
+            <TranslateTransform X="66.5" />
+        </Canvas.RenderTransform>
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="2.25,0,0,2.25,83.125,-0.75000002" />
+            </Canvas.RenderTransform>
+
+            <Canvas.Clip>
+                <PathGeometry Figures="M -66.5 0 H 333.5 V 267 H -66.5 z" />
+            </Canvas.Clip>
+
+            <Path
+                Fill="#072b5f"
+                Data="M -66.5 0.333 H 333.5 V 267 H -66.5 z" />
+
+            <Ellipse
+                Width="99"
+                Height="99"
+                Canvas.Left="84"
+                Canvas.Top="84"
+                Stroke="#ffffff"
+                StrokeThickness="2" />
+
+            <Ellipse
+                Width="184.12"
+                Height="184.12"
+                Canvas.Left="41.607"
+                Canvas.Top="41.44"
+                Stroke="#ffffff"
+                StrokeThickness="1.99" />
+
+            <Ellipse
+                Width="264.236"
+                Height="264.236"
+                Canvas.Left="1.549"
+                Canvas.Top="1.382"
+                Stroke="#ffffff"
+                StrokeThickness="1.987" />
+
+            <Path
+                Stroke="#ffffff"
+                StrokeThickness="2"
+                Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
+
+            <Canvas>
 
                 <Canvas.RenderTransform>
-                    <TranslateTransform X="66.5" />
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="400" ScaleY="267" />
+                        <RotateTransform Angle="30" CenterX="133.5" CenterY="133.5" />
+                    </TransformGroup>
                 </Canvas.RenderTransform>
 
-                <Canvas>
-
-                    <Canvas.RenderTransform>
-                        <MatrixTransform Matrix="2.25,0,0,2.25,83.125,-0.75000002" />
-                    </Canvas.RenderTransform>
-
-                    <Canvas.Clip>
-                        <PathGeometry Figures="M -66.5 0 H 333.5 V 267 H -66.5 z" />
-                    </Canvas.Clip>
-
-                    <Path
-                        Fill="#072b5f"
-                        Data="M -66.5 0.333 H 333.5 V 267 H -66.5 z" />
-
-                    <Ellipse
-                        Width="99"
-                        Height="99"
-                        Canvas.Left="84"
-                        Canvas.Top="84"
-                        Stroke="#ffffff"
-                        StrokeThickness="2" />
-
-                    <Ellipse
-                        Width="184.12"
-                        Height="184.12"
-                        Canvas.Left="41.607"
-                        Canvas.Top="41.44"
-                        Stroke="#ffffff"
-                        StrokeThickness="1.99" />
-
-                    <Ellipse
-                        Width="264.236"
-                        Height="264.236"
-                        Canvas.Left="1.549"
-                        Canvas.Top="1.382"
-                        Stroke="#ffffff"
-                        StrokeThickness="1.987" />
-
-                    <Path
-                        Stroke="#ffffff"
-                        StrokeThickness="2"
-                        Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="400" ScaleY="267" />
-                                <RotateTransform Angle="30" CenterX="133.5" CenterY="133.5" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Stroke="#ffffff"
-                            StrokeThickness="2"
-                            Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
-
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform X="400" Y="267" />
-                                <RotateTransform Angle="60" CenterX="133.5" CenterY="133.5" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Stroke="#ffffff"
-                            StrokeThickness="2"
-                            Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
-
-                    </Canvas>
-
-                </Canvas>
+                <Path
+                    Stroke="#ffffff"
+                    StrokeThickness="2"
+                    Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
 
             </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="400" Y="267" />
+                        <RotateTransform Angle="60" CenterX="133.5" CenterY="133.5" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Stroke="#ffffff"
+                    StrokeThickness="2"
+                    Data="M -100,133.5 H 367 M 133.5,-100 v 467" />
+
+            </Canvas>
+
+        </Canvas>
+
+    </Canvas>
 
 </ResourceDictionary>

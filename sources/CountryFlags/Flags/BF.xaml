@@ -22,144 +22,140 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Burkina Faso -->
 
-    <ControlTemplate x:Key="CountryFlag_BF">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_BF" Width="900" Height="600">
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ef2b2d" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ef2b2d" />
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="300"
-                    Fill="#009e49" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="300"
+            Fill="#009e49" />
 
-                <Canvas>
+        <Canvas>
 
-                    <Canvas.RenderTransform>
-                        <TranslateTransform X="450" Y="300" />
-                    </Canvas.RenderTransform>
+            <Canvas.RenderTransform>
+                <TranslateTransform X="450" Y="300" />
+            </Canvas.RenderTransform>
 
-                    <Canvas>
+            <Canvas>
 
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                            </Path.RenderTransform>
-                        </Path>
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                    </Path.RenderTransform>
+                </Path>
 
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <TransformGroup>
-                                    <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                                    <ScaleTransform ScaleX="-1" />
-                                </TransformGroup>
-                            </Path.RenderTransform>
-                        </Path>
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                            <ScaleTransform ScaleX="-1" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
 
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="72" />
-                        </Canvas.RenderTransform>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                            </Path.RenderTransform>
-                        </Path>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <TransformGroup>
-                                    <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                                    <ScaleTransform ScaleX="-1" />
-                                </TransformGroup>
-                            </Path.RenderTransform>
-                        </Path>
-
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="144" />
-                        </Canvas.RenderTransform>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                            </Path.RenderTransform>
-                        </Path>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <TransformGroup>
-                                    <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                                    <ScaleTransform ScaleX="-1" />
-                                </TransformGroup>
-                            </Path.RenderTransform>
-                        </Path>
-
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="216" />
-                        </Canvas.RenderTransform>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                            </Path.RenderTransform>
-                        </Path>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <TransformGroup>
-                                    <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                                    <ScaleTransform ScaleX="-1" />
-                                </TransformGroup>
-                            </Path.RenderTransform>
-                        </Path>
-
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="288" />
-                        </Canvas.RenderTransform>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                            </Path.RenderTransform>
-                        </Path>
-
-                        <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
-                            <Path.RenderTransform>
-                                <TransformGroup>
-                                    <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
-                                    <ScaleTransform ScaleX="-1" />
-                                </TransformGroup>
-                            </Path.RenderTransform>
-                        </Path>
-
-                    </Canvas>
-
-                </Canvas>
             </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="72" />
+                </Canvas.RenderTransform>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                            <ScaleTransform ScaleX="-1" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="144" />
+                </Canvas.RenderTransform>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                            <ScaleTransform ScaleX="-1" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="216" />
+                </Canvas.RenderTransform>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                            <ScaleTransform ScaleX="-1" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="288" />
+                </Canvas.RenderTransform>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path Data="M 0,-100 V 0 H 50" Fill="#fcd116">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="18" CenterX="0" CenterY="-100" />
+                            <ScaleTransform ScaleX="-1" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+
+        </Canvas>
+    </Canvas>
 
 </ResourceDictionary>

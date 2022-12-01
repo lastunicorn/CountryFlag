@@ -22,30 +22,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Bahamas -->
 
-    <ControlTemplate x:Key="CountryFlag_BS">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="6" Height="3">
+    <Canvas x:Key="CountryFlag_BS" Width="6" Height="3">
 
-                <Rectangle
-                    Width="6"
-                    Height="3"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#00778b" />
+        <Rectangle
+            Width="6"
+            Height="3"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#00778b" />
 
-                <Rectangle
-                    Width="6"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="1"
-                    Fill="#ffc72c" />
+        <Rectangle
+            Width="6"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="1"
+            Fill="#ffc72c" />
 
-                <Path
-                    Data="m 2.5981 1.5 L 0 3 V 0 z"
-                    Fill="#000000" />
+        <Path
+            Data="m 2.5981 1.5 L 0 3 V 0 z"
+            Fill="#000000" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

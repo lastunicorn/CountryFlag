@@ -22,13 +22,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Austria -->
 
-    <ControlTemplate x:Key="CountryFlag_AT">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="9" Height="6">
-                <Rectangle Width="9" Height="6" Canvas.Left="0" Canvas.Top="0" Fill="#c8102e" />
-                <Rectangle Width="9" Height="2" Canvas.Left="0" Canvas.Top="2" Fill="#ffffff" />
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    <Canvas x:Key="CountryFlag_AT" Width="9" Height="6">
+
+        <Rectangle
+            Width="9"
+            Height="6"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#c8102e" />
+
+        <Rectangle
+            Width="9"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#ffffff" />
+
+    </Canvas>
 
 </ResourceDictionary>

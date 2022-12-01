@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type countryFlags:CountryFlagControl}">
 
-                    <Border Visibility="{Binding FlagTemplate, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource NullToVisibilityConverter}}">
+                    <Border Visibility="{Binding FlagCanvas, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource NullToVisibilityConverter}}">
 
                         <Border
                             BorderThickness="{TemplateBinding BorderThickness}"
@@ -41,10 +41,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Background="{TemplateBinding Background}"
                             HorizontalAlignment="Center">
 
-                            <Control
-                                Template="{TemplateBinding FlagTemplate}"
+                            <Viewbox
+                                Stretch="Uniform"
                                 VerticalAlignment="Center"
-                                HorizontalAlignment="Center" />
+                                HorizontalAlignment="Center">
+
+                                <ContentPresenter Content="{TemplateBinding FlagCanvas}" />
+
+                            </Viewbox>
 
                         </Border>
 

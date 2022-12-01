@@ -22,33 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Botswana -->
 
-    <ControlTemplate x:Key="CountryFlag_BW">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="36" Height="24">
-                
-                <Rectangle
-                    Width="36" 
-                    Height="24" 
-                    Canvas.Left="0" 
-                    Canvas.Top="0"
-                    Fill="#6DA9D2" />
-                
-                <Rectangle
-                    Width="36" 
-                    Height="6" 
-                    Canvas.Left="0" 
-                    Canvas.Top="9"
-                    Fill="#ffffff" />
-                
-                <Rectangle
-                    Width="36" 
-                    Height="4" 
-                    Canvas.Left="0" 
-                    Canvas.Top="10"
-                    Fill="#000000" />
+    <Canvas x:Key="CountryFlag_BW" Width="36" Height="24">
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+        <Rectangle
+            Width="36"
+            Height="24"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#6DA9D2" />
+
+        <Rectangle
+            Width="36"
+            Height="6"
+            Canvas.Left="0"
+            Canvas.Top="9"
+            Fill="#ffffff" />
+
+        <Rectangle
+            Width="36"
+            Height="4"
+            Canvas.Left="0"
+            Canvas.Top="10"
+            Fill="#000000" />
+
+    </Canvas>
 
 </ResourceDictionary>

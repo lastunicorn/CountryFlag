@@ -22,51 +22,47 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Central African Republic -->
 
-    <ControlTemplate x:Key="CountryFlag_CF">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="8">
+    <Canvas x:Key="CountryFlag_CF" Width="12" Height="8">
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#003082" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#003082" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#fff" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#fff" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="4"
-                    Fill="#289728" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="4"
+            Fill="#289728" />
 
-                <Rectangle
-                    Width="12"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="6"
-                    Fill="#ffce00" />
+        <Rectangle
+            Width="12"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="6"
+            Fill="#ffce00" />
 
-                <Rectangle
-                    Width="2"
-                    Height="8"
-                    Canvas.Left="5"
-                    Canvas.Top="0"
-                    Fill="#d21034" />
+        <Rectangle
+            Width="2"
+            Height="8"
+            Canvas.Left="5"
+            Canvas.Top="0"
+            Fill="#d21034" />
 
-                <Path
-                    Data="F1 M 2 .1859 l .529 1.6282 L 1.144.8078 h 1.712 L 1.471 1.8141 z"
-                    Fill="#ffce00" />
+        <Path
+            Data="F1 M 2 .1859 l .529 1.6282 L 1.144.8078 h 1.712 L 1.471 1.8141 z"
+            Fill="#ffce00" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

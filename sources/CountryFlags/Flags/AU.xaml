@@ -22,125 +22,121 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Australia -->
 
-    <ControlTemplate x:Key="CountryFlag_AU">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="10080" Height="5040">
+    <Canvas x:Key="CountryFlag_AU" Width="10080" Height="5040">
 
-                <Canvas>
-                    <Canvas.RenderTransform>
-                        <ScaleTransform ScaleX="840" ScaleY="840" />
-                    </Canvas.RenderTransform>
+        <Canvas>
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="840" ScaleY="840" />
+            </Canvas.RenderTransform>
 
-                    <!-- Background -->
+            <!-- Background -->
 
-                    <Rectangle
-                        Width="12"
-                        Height="6"
-                        Canvas.Left="0"
-                        Canvas.Top="0"
-                        Fill="#012169" />
+            <Rectangle
+                Width="12"
+                Height="6"
+                Canvas.Left="0"
+                Canvas.Top="0"
+                Fill="#012169" />
 
-                    <!-- United Kingdom Flag -->
+            <!-- United Kingdom Flag -->
 
-                    <Path
-                        Data="M 0 0 6 3 M 6 0 0 3"
-                        Stroke="#ffffff"
-                        StrokeThickness="0.6"
-                        Clip="M 0 0 H 6 V 3 H 0 z" />
+            <Path
+                Data="M 0 0 6 3 M 6 0 0 3"
+                Stroke="#ffffff"
+                StrokeThickness="0.6"
+                Clip="M 0 0 H 6 V 3 H 0 z" />
 
-                    <Path
-                        Data="M 0 0 6 3 M 6 0 0 3"
-                        Stroke="#e4002b"
-                        StrokeThickness="0.4"
-                        Clip="M 0 0 V 1.5 H 6 V 3 H 6 z M 6 0 H 3 V 3 H 0 V 3 z" />
+            <Path
+                Data="M 0 0 6 3 M 6 0 0 3"
+                Stroke="#e4002b"
+                StrokeThickness="0.4"
+                Clip="M 0 0 V 1.5 H 6 V 3 H 6 z M 6 0 H 3 V 3 H 0 V 3 z" />
 
-                    <Path
-                        Data="M 3 0 V 3 M 0 1.5 H 6"
-                        Stroke="#ffffff" />
+            <Path
+                Data="M 3 0 V 3 M 0 1.5 H 6"
+                Stroke="#ffffff" />
 
-                    <Path
-                        Data="M 3 0 V 3 M 0 1.5 H 6"
-                        Stroke="#e4002b"
-                        StrokeThickness="0.6" />
+            <Path
+                Data="M 3 0 V 3 M 0 1.5 H 6"
+                Stroke="#e4002b"
+                StrokeThickness="0.6" />
 
-                </Canvas>
+        </Canvas>
 
-                <!-- Stars -->
+        <!-- Stars -->
 
-                <Canvas>
+        <Canvas>
 
-                    <!-- Stars - Comwlth -->
+            <!-- Stars - Comwlth -->
 
-                    <Path
-                        Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform X="2520" Y="3780" />
-                                <ScaleTransform CenterX="2520" CenterY="3780" ScaleX="2.1" ScaleY="2.1" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="2520" Y="3780" />
+                        <ScaleTransform CenterX="2520" CenterY="3780" ScaleX="2.1" ScaleY="2.1" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - αCrucis -->
+            <!-- Stars - αCrucis -->
 
-                    <Path
-                        Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TranslateTransform X="7560" Y="4200" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TranslateTransform X="7560" Y="4200" />
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - βCrucis -->
+            <!-- Stars - βCrucis -->
 
-                    <Path
-                        Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TranslateTransform X="6300" Y="2205" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TranslateTransform X="6300" Y="2205" />
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - γCrucis -->
+            <!-- Stars - γCrucis -->
 
-                    <Path
-                        Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TranslateTransform X="7560" Y="840" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TranslateTransform X="7560" Y="840" />
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - δCrucis -->
+            <!-- Stars - δCrucis -->
 
-                    <Path
-                        Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TranslateTransform X="8680" Y="1869" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TranslateTransform X="8680" Y="1869" />
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - εCrucis -->
+            <!-- Stars - εCrucis -->
 
-                    <Path
-                        Data="M0,-210 54.859957,-75.508253 199.721868,-64.893569 88.765275,28.841586 123.434903,169.893569 0,93.333333 -123.434903,169.893569 -88.765275,28.841586 -199.721868,-64.893569 -54.859957,-75.508253z"
-                        Fill="#ffffff">
+            <Path
+                Data="M0,-210 54.859957,-75.508253 199.721868,-64.893569 88.765275,28.841586 123.434903,169.893569 0,93.333333 -123.434903,169.893569 -88.765275,28.841586 -199.721868,-64.893569 -54.859957,-75.508253z"
+                Fill="#ffffff">
 
-                        <Path.RenderTransform>
-                            <TranslateTransform X="8064" Y="2730" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TranslateTransform X="8064" Y="2730" />
+                </Path.RenderTransform>
+            </Path>
 
-                </Canvas>
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+        </Canvas>
+    </Canvas>
 
 </ResourceDictionary>

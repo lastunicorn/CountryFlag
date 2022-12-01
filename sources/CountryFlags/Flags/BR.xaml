@@ -22,690 +22,686 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Brazil -->
 
-    <ControlTemplate x:Key="CountryFlag_BR">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="4200" Height="2940">
+    <Canvas x:Key="CountryFlag_BR" Width="4200" Height="2940">
+
+        <Canvas.RenderTransform>
+            <TranslateTransform X="2100" Y="1470" />
+        </Canvas.RenderTransform>
+
+        <!-- Background -->
+
+        <Rectangle
+            Width="4200"
+            Height="2940"
+            Canvas.Left="-2100"
+            Canvas.Top="-1470"
+            Fill="#009c3b" />
+
+        <!-- Diamond -->
+
+        <Path
+            Data="M -1743,0 0,1113 1743,0 0,-1113 z"
+            Fill="#ffdf00" />
+
+        <!-- Globe -->
+
+        <Ellipse
+            Width="1470"
+            Height="1470"
+            Canvas.Left="-735"
+            Canvas.Top="-735"
+            Fill="#002776" />
+
+        <!-- Band -->
+
+        <Path
+            Data="M -2205,1470 a 1785 1785 0 0 1 3570,0 h -105 a 1680 1680 0 1 0 -3360,0 z"
+            Fill="#fff">
+
+            <Path.Clip>
+                <EllipseGeometry
+                    RadiusX="735"
+                    RadiusY="735" />
+            </Path.Clip>
+        </Path>
+
+        <!-- Band Text -->
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TranslateTransform X="-420" Y="1470" />
+            </Canvas.RenderTransform>
+
+            <!-- O -->
+
+            <Path
+                Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="-7" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- R -->
+
+            <Canvas>
 
                 <Canvas.RenderTransform>
-                    <TranslateTransform X="2100" Y="1470" />
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="-4" />
+                    </TransformGroup>
                 </Canvas.RenderTransform>
 
-                <!-- Background -->
-
-                <Rectangle
-                    Width="4200"
-                    Height="2940"
-                    Canvas.Left="-2100"
-                    Canvas.Top="-1470"
+                <Path
+                    Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
                     Fill="#009c3b" />
 
-                <!-- Diamond -->
-
                 <Path
-                    Data="M -1743,0 0,1113 1743,0 0,-1113 z"
-                    Fill="#ffdf00" />
-
-                <!-- Globe -->
-
-                <Ellipse
-                    Width="1470"
-                    Height="1470"
-                    Canvas.Left="-735"
-                    Canvas.Top="-735"
-                    Fill="#002776" />
-
-                <!-- Band -->
-
-                <Path
-                    Data="M -2205,1470 a 1785 1785 0 0 1 3570,0 h -105 a 1680 1680 0 1 0 -3360,0 z"
-                    Fill="#fff">
-
-                    <Path.Clip>
-                        <EllipseGeometry
-                            RadiusX="735"
-                            RadiusY="735" />
-                    </Path.Clip>
-                </Path>
-
-                <!-- Band Text -->
-
-                <Canvas>
-
-                    <Canvas.RenderTransform>
-                        <TranslateTransform X="-420" Y="1470" />
-                    </Canvas.RenderTransform>
-
-                    <!-- O -->
-
-                    <Path
-                        Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="-7" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- R -->
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="-4" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
-                            Fill="#009c3b" />
-
-                        <Path
-                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                            Fill="#009c3b" />
-
-                    </Canvas>
-
-                    <!-- D -->
-
-                    <Path
-                        Data="M -31.5,0 h 33 a 30 30 0 0 0 30,-30 v -10 a 30 30 0 0 0 -30,-30 H -31.5 z M -18.5,-13 h 19 a 19 19 0 0 0 19,-19 v -6 a 19 19 0 0 0 -19,-19 H -18.5 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="-1" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- E -->
-
-                    <Path
-                        Data="M -31.5,0 h 63 v -13 H -19.5 v -18 h 40 v -12 h -40 v -14 H 28.5 v -13 H -31.5 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="2" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- M -->
-
-                    <Path
-                        Data="M -31.5,0 h 12 v -48 l 14,48 h 11 l 14,-48 V 0 h 12 V -70 h -17.5 l -14,48 l -14,-48 H -31.5 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- e -->
-
-                    <Path
-                        Data="M -26.25,0 h 52.5 v -12 h -40.5 v -16 h 33 v -12 h -33 v -11 H 25 v -12 H -26.25 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="9.75" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- P -->
-
-                    <Path
-                        Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="14.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- R -->
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="17.5" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
-                            Fill="#009c3b" />
-
-                        <Path
-                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                            Fill="#009c3b" />
-
-                    </Canvas>
-
-                    <!-- O -->
-
-                    <Path
-                        Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="20.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- G -->
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="23.5" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
-                            Fill="#009c3b"
-                            Clip="M -31.5,0 v -70 h 63 v 70 z M 0,-47 v 12 h 31.5 v -12 z" />
-
-                        <Rectangle
-                            Canvas.Left="5"
-                            Canvas.Top="-35"
-                            Width="26.5"
-                            Height="10"
-                            Fill="#009c3b" />
-
-                        <Rectangle
-                            Canvas.Left="21.5"
-                            Canvas.Top="-35"
-                            Width="10"
-                            Height="35"
-                            Fill="#009c3b" />
-
-                    </Canvas>
-
-                    <!-- R -->
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="26.5" />
-                            </TransformGroup>
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
-                            Fill="#009c3b" />
-
-                        <Path
-                            Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
-                            Fill="#009c3b" />
-
-                    </Canvas>
-
-                    <!-- E -->
-
-                    <Path
-                        Data="M -31.5,0 h 63 v -13 H -19.5 v -18 h 40 v -12 h -40 v -14 H 28.5 v -13 H -31.5 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="29.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- S -->
-
-                    <Path
-                        Data="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="32.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- S -->
-
-                    <Path
-                        Data="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="35.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                    <!-- O -->
-
-                    <Path
-                        Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
-                        Fill="#009c3b">
-
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <TranslateTransform Y="-1697.5" />
-                                <RotateTransform Angle="38.5" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
-
-                </Canvas>
-
-                <!-- Star: αCMi (Procyon from Canis Minoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="-600" Y="-132" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αCMa (Sirius from Canis Majoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="-535" Y="177" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: βCMa (Mirzam from Canis Majoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="-625" Y="243" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: γCMa (Muliphen from Canis Majoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="30" ScaleY="30" />
-                            <TranslateTransform X="-463" Y="132" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: δCMa (Wezen from Canis Majoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="-382" Y="250" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: εCMa (Adhara from Canis Majoris) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="-404" Y="323" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αVir (Spica from Virginis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="228" Y="-228" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αSco (Antares from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="515" Y="258" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: βSco (Graffias from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="617" Y="265" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: εSco (Larawag from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="545" Y="323" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: θSco (Sargas from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="368" Y="477" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: ιSco (ι from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="367" Y="551" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: κSco (κ from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="441" Y="419" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: λSco (Shaula from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="500" Y="382" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: μSco (Xamidimura & Pipirima from Scorpii) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="365" Y="405" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αHya (Alphard from Hydrae) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="-280" Y="30" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: γHya (γ from Hydrae) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="200" Y="-37" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αCru (Acrux or Estrela de Magalhães from Crucis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="0" Y="330" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: βCru (Mimosa from Crucis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="85" Y="184" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: γCru (Gacrux from Crucis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="0" Y="118" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: δCru (Imai from Crucis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="-74" Y="184" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: εCru (Ginan from Crucis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="30" ScaleY="30" />
-                            <TranslateTransform X="-37" Y="235" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αTrA (Atria from Trianguli Australis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
-                            <TranslateTransform X="220" Y="495" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: βTrA (β from Trianguli Australis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="283" Y="430" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: γTrA (γ from Trianguli Australis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="42" ScaleY="42" />
-                            <TranslateTransform X="162" Y="412" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: αCar (Canopus from Carinae) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="63" ScaleY="63" />
-                            <TranslateTransform X="-295" Y="390" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-
-                <!-- Star: σOct (Polaris Australis from Octantis) -->
-
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff">
-
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="21" ScaleY="21" />
-                            <TranslateTransform X="0" Y="575" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
+                    Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                    Fill="#009c3b" />
 
             </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+
+            <!-- D -->
+
+            <Path
+                Data="M -31.5,0 h 33 a 30 30 0 0 0 30,-30 v -10 a 30 30 0 0 0 -30,-30 H -31.5 z M -18.5,-13 h 19 a 19 19 0 0 0 19,-19 v -6 a 19 19 0 0 0 -19,-19 H -18.5 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="-1" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- E -->
+
+            <Path
+                Data="M -31.5,0 h 63 v -13 H -19.5 v -18 h 40 v -12 h -40 v -14 H 28.5 v -13 H -31.5 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="2" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- M -->
+
+            <Path
+                Data="M -31.5,0 h 12 v -48 l 14,48 h 11 l 14,-48 V 0 h 12 V -70 h -17.5 l -14,48 l -14,-48 H -31.5 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- e -->
+
+            <Path
+                Data="M -26.25,0 h 52.5 v -12 h -40.5 v -16 h 33 v -12 h -33 v -11 H 25 v -12 H -26.25 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="9.75" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- P -->
+
+            <Path
+                Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="14.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- R -->
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="17.5" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
+                    Fill="#009c3b" />
+
+                <Path
+                    Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                    Fill="#009c3b" />
+
+            </Canvas>
+
+            <!-- O -->
+
+            <Path
+                Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="20.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- G -->
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="23.5" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
+                    Fill="#009c3b"
+                    Clip="M -31.5,0 v -70 h 63 v 70 z M 0,-47 v 12 h 31.5 v -12 z" />
+
+                <Rectangle
+                    Canvas.Left="5"
+                    Canvas.Top="-35"
+                    Width="26.5"
+                    Height="10"
+                    Fill="#009c3b" />
+
+                <Rectangle
+                    Canvas.Left="21.5"
+                    Canvas.Top="-35"
+                    Width="10"
+                    Height="35"
+                    Fill="#009c3b" />
+
+            </Canvas>
+
+            <!-- R -->
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="26.5" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0 0 0,-18 h -27"
+                    Fill="#009c3b" />
+
+                <Path
+                    Data="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32"
+                    Fill="#009c3b" />
+
+            </Canvas>
+
+            <!-- E -->
+
+            <Path
+                Data="M -31.5,0 h 63 v -13 H -19.5 v -18 h 40 v -12 h -40 v -14 H 28.5 v -13 H -31.5 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="29.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- S -->
+
+            <Path
+                Data="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="32.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- S -->
+
+            <Path
+                Data="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="35.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- O -->
+
+            <Path
+                Data="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a 18.5 22 0 0 0 0,44"
+                Fill="#009c3b">
+
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="-1697.5" />
+                        <RotateTransform Angle="38.5" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+        </Canvas>
+
+        <!-- Star: αCMi (Procyon from Canis Minoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="-600" Y="-132" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αCMa (Sirius from Canis Majoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="-535" Y="177" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: βCMa (Mirzam from Canis Majoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="-625" Y="243" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: γCMa (Muliphen from Canis Majoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="30" ScaleY="30" />
+                    <TranslateTransform X="-463" Y="132" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: δCMa (Wezen from Canis Majoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="-382" Y="250" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: εCMa (Adhara from Canis Majoris) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="-404" Y="323" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αVir (Spica from Virginis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="228" Y="-228" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αSco (Antares from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="515" Y="258" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: βSco (Graffias from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="617" Y="265" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: εSco (Larawag from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="545" Y="323" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: θSco (Sargas from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="368" Y="477" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: ιSco (ι from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="367" Y="551" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: κSco (κ from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="441" Y="419" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: λSco (Shaula from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="500" Y="382" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: μSco (Xamidimura & Pipirima from Scorpii) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="365" Y="405" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αHya (Alphard from Hydrae) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="-280" Y="30" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: γHya (γ from Hydrae) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="200" Y="-37" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αCru (Acrux or Estrela de Magalhães from Crucis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="0" Y="330" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: βCru (Mimosa from Crucis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="85" Y="184" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: γCru (Gacrux from Crucis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="0" Y="118" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: δCru (Imai from Crucis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="-74" Y="184" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: εCru (Ginan from Crucis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="30" ScaleY="30" />
+                    <TranslateTransform X="-37" Y="235" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αTrA (Atria from Trianguli Australis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="52.5" ScaleY="52.5" />
+                    <TranslateTransform X="220" Y="495" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: βTrA (β from Trianguli Australis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="283" Y="430" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: γTrA (γ from Trianguli Australis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="42" ScaleY="42" />
+                    <TranslateTransform X="162" Y="412" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: αCar (Canopus from Carinae) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="63" ScaleY="63" />
+                    <TranslateTransform X="-295" Y="390" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star: σOct (Polaris Australis from Octantis) -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="21" ScaleY="21" />
+                    <TranslateTransform X="0" Y="575" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
 
 </ResourceDictionary>
