@@ -83,7 +83,7 @@ namespace DustInTheWind.CountryFlags
 
         public static readonly DependencyProperty FlagTemplateProperty = FlagTemplatePropertyKey.DependencyProperty;
 
-        public ControlTemplate FlagTemplate
+        public ControlTemplate? FlagTemplate
         {
             get => (ControlTemplate)GetValue(FlagTemplateProperty);
             private set => SetValue(FlagTemplatePropertyKey, value);

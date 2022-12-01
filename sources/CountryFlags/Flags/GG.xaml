@@ -20,39 +20,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Empty -->
+    <!-- Guernsey -->
 
     <ControlTemplate x:Key="CountryFlag_GG">
         <Viewbox Stretch="Uniform">
-            <Canvas Width="5" Height="5">
+            <Canvas Width="36" Height="24">
 
                 <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="1"
-                    Canvas.Top="1"
-                    Fill="#000000" />
+                    Width="36"
+                    Height="24"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Fill="#fff" />
 
-                <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="3"
-                    Canvas.Top="1"
-                    Fill="#000000" />
+                <Path
+                    Data="M21,0v9h15v6h-15v9h-6v-9h-15v-6h15v-9z"
+                    Fill="#e8112d" />
 
-                <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="1"
-                    Canvas.Top="3"
-                    Fill="#000000" />
-
-                <Rectangle
-                    Width="1"
-                    Height="1"
-                    Canvas.Left="3"
-                    Canvas.Top="3"
-                    Fill="#000000" />
+                <Path
+                    Data="M9,14l1-1h7v7l-1,1h4l-1-1v-7h7l1,1v-4l-1,1h-7v-7l1-1h-4l1,1v7h-7l-1-1z"
+                    Fill="#f9dd16" />
 
             </Canvas>
         </Viewbox>
