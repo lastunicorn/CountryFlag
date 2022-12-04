@@ -22,9 +22,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.CountryFlags</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags</RootNamespace>
+        <AssemblyName>DustInTheWind.Flags.CountryFlags</AssemblyName>
+        <RootNamespace>DustInTheWind.Flags.CountryFlags</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <Page Update="Flags\FO.xaml">

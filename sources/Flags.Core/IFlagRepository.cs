@@ -14,13 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.Flags.CountryFlags;
+using System.Windows.Controls;
 
-public static partial class Countries
+namespace DustInTheWind.Flags.Core;
+
+public interface IFlagRepository
 {
-    public static Country Romania { get; } = new()
-    {
-        FullName = "Romania",
-        IsoCodeAlpha2 = "RO"
-    };
+    Canvas? Get(string id);
 }

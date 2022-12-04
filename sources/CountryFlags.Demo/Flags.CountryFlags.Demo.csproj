@@ -23,12 +23,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.CountryFlags.Demo</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags.Demo</RootNamespace>
+        <AssemblyName>DustInTheWind.Flags.CountryFlags.Demo</AssemblyName>
+        <RootNamespace>DustInTheWind.Flags.CountryFlags.Demo</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\CountryFlags\CountryFlags.csproj" />
+        <ProjectReference Include="..\CountryFlags\Flags.CountryFlags.csproj" />
     </ItemGroup>
 
 </Project>

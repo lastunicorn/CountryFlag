@@ -14,17 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.Demo;
+namespace DustInTheWind.Flags.CountryFlags.Demo;
 
 public class CountryViewModel
 {
-    public string CountryName { get; }
+    public string? CountryName { get; }
 
-    public string CountryCode { get; }
+    public string? CountryCode { get; }
     
-    public string CountryFullName { get; }
+    public string? CountryFullName { get; }
 
-    public CountryViewModel(Country country)
+    public CountryViewModel(Country? country)
     {
         CountryName = country?.ShortName;
         CountryCode = country?.IsoCodeAlpha2;
@@ -33,6 +33,6 @@ public class CountryViewModel
 
     public override string ToString()
     {
-        return CountryName;
+        return CountryName ?? string.Empty;
     }
 }

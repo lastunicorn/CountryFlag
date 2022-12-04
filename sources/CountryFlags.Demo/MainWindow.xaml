@@ -17,14 +17,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <Window
-    x:Class="DustInTheWind.CountryFlags.Demo.MainWindow"
+    x:Class="DustInTheWind.Flags.CountryFlags.Demo.MainWindow"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:countryFlags="clr-namespace:DustInTheWind.CountryFlags;assembly=DustInTheWind.CountryFlags"
-    xmlns:demo="clr-namespace:DustInTheWind.CountryFlags.Demo"
+    xmlns:core="clr-namespace:DustInTheWind.Flags.Core;assembly=DustInTheWind.Flags.Core"
+    xmlns:demo="clr-namespace:DustInTheWind.Flags.CountryFlags.Demo"
 
     mc:Ignorable="d"
     Title="MainWindow"
@@ -54,7 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     <DockPanel
                         MinHeight="30">
 
-                        <countryFlags:CountryFlagControl
+                        <core:FlagBox
                             DockPanel.Dock="Left"
                             CountryCode="{Binding CountryCode}"
                             MaxHeight="16"
@@ -106,7 +106,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 DockPanel.Dock="Top"
                 Height="40" />
 
-            <countryFlags:CountryFlagControl
+            <core:FlagBox
                 CountryCode="{Binding CountryCode}"
                 BorderThickness="2"
                 BorderBrush="LightGray" />

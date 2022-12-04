@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -16,10 +16,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<Application
-    x:Class="DustInTheWind.Flags.CountryFlags.Demo.App"
+<Project Sdk="Microsoft.NET.Sdk">
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <AssemblyName>DustInTheWind.Flags.Core</AssemblyName>
+        <RootNamespace>DustInTheWind.Flags.Core</RootNamespace>
+    </PropertyGroup>
 
-    StartupUri="MainWindow.xaml" />
+</Project>

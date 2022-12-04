@@ -16,7 +16,7 @@
 
 using System.Windows;
 
-namespace DustInTheWind.CountryFlags.Demo;
+namespace DustInTheWind.Flags.CountryFlags.Demo;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

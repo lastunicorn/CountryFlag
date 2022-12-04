@@ -17,15 +17,15 @@
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace DustInTheWind.CountryFlags.Demo;
+namespace DustInTheWind.Flags.CountryFlags.Demo;
 
 public class MainViewModel : ViewModelBase
 {
-    private CountryViewModel selectedCountry;
+    private CountryViewModel? selectedCountry;
 
     public ImmutableList<CountryViewModel> Countries { get; }
 
-    public CountryViewModel SelectedCountry
+    public CountryViewModel? SelectedCountry
     {
         get => selectedCountry;
         set
@@ -41,7 +41,7 @@ public class MainViewModel : ViewModelBase
 
     public MainViewModel()
     {
-        Countries = DustInTheWind.CountryFlags.Countries.All
+        Countries = CountryFlags.Countries.EnumerateAll()
             .Select(x => new CountryViewModel(x))
             .ToImmutableList();
     }

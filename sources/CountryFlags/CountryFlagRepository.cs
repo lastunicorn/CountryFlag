@@ -15,31 +15,34 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Globalization;
 using System.Windows;
-using System.Windows.Data;
+using System.Windows.Controls;
+using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.Converters
+namespace DustInTheWind.Flags.CountryFlags;
+
+public class CountryFlagRepository : IFlagRepository
 {
-    [Localizability(LocalizationCategory.NeverLocalize)]
-    public class NullToVisibilityConverter : IValueConverter
+    public Canvas? Get(string id)
     {
-        public bool Inverse { get; set; }
+        string idUpperCase = id.ToUpper();
 
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{idUpperCase}.xaml");
+        string resourceName = "CountryFlag_" + idUpperCase;
+
+        try
         {
-            return Inverse
-                ? value == null
-                    ? Visibility.Visible
-                    : Visibility.Collapsed
-                : value == null
-                    ? Visibility.Collapsed
-                    : Visibility.Visible;
+            ResourceDictionary resourceDictionary = new()
+            {
+                Source = resourceUri
+            };
+
+            object resource = resourceDictionary[resourceName];
+            return resource as Canvas;
         }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        catch
         {
-            return DependencyProperty.UnsetValue;
+            return null;
         }
     }
 }

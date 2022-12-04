@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,13 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.Flags.CountryFlags;
+using System;
 
-public static partial class Countries
+namespace DustInTheWind.Flags.Core;
+
+[AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
+public class FlagRepositoryAttribute : Attribute
 {
-    public static Country Romania { get; } = new()
+    public Type FlagRepositoryType { get; }
+
+    public FlagRepositoryAttribute(Type flagRepositoryType)
     {
-        FullName = "Romania",
-        IsoCodeAlpha2 = "RO"
-    };
+        FlagRepositoryType = flagRepositoryType ?? throw new ArgumentNullException(nameof(flagRepositoryType));
+    }
 }

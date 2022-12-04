@@ -14,36 +14,60 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.Linq;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace DustInTheWind.CountryFlags;
+namespace DustInTheWind.Flags.Core;
 
-public class CountryFlagControl : Control
+public class FlagBox : Control
 {
-    private static readonly FlagRepository DefaultFlagRepository = new();
-
     #region CountryCode
 
     public static readonly DependencyProperty FlagRepositoryProperty = DependencyProperty.Register(
         nameof(FlagRepository),
         typeof(IFlagRepository),
-        typeof(CountryFlagControl),
-        new PropertyMetadata(DefaultFlagRepository, FlagRepositoryChangedCallback)
+        typeof(FlagBox),
+        new PropertyMetadata(null, FlagRepositoryChangedCallback)
     );
+
+    private static IFlagRepository? CalculateDefaultFlagRepository()
+    {
+        Type? defaultFlagRepositoryType = AppDomain.CurrentDomain.GetAssemblies()
+            .SelectMany(x => x.GetCustomAttributes<FlagRepositoryAttribute>())
+            .Select(x => x.FlagRepositoryType)
+            .FirstOrDefault(x => x.GetConstructor(Type.EmptyTypes) != null);
+
+        if (defaultFlagRepositoryType == null)
+            return null;
+
+        return Activator.CreateInstance(defaultFlagRepositoryType) as IFlagRepository;
+    }
 
     private static void FlagRepositoryChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        if (d is CountryFlagControl countryFlagControl)
+        if (d is FlagBox flagBox)
         {
-            if (e.NewValue == null)
+            if (flagBox.CountryCode == null)
             {
-                countryFlagControl.FlagRepository = DefaultFlagRepository;
+                flagBox.FlagCanvas = null;
+            }
+            else
+            {
+                IFlagRepository? flagRepository = e.NewValue as IFlagRepository ?? CalculateDefaultFlagRepository();
+
+                if (flagRepository == null)
+                    return;
+
+                string newCountryCodeUpperCase = flagBox.CountryCode.ToUpper();
+                flagBox.FlagCanvas = flagRepository.Get(newCountryCodeUpperCase);
             }
         }
     }
 
-    public IFlagRepository FlagRepository
+    public IFlagRepository? FlagRepository
     {
         get => (IFlagRepository)GetValue(FlagRepositoryProperty);
         set => SetValue(FlagRepositoryProperty, value);
@@ -56,27 +80,32 @@ public class CountryFlagControl : Control
     public static readonly DependencyProperty CountryCodeProperty = DependencyProperty.Register(
         nameof(CountryCode),
         typeof(string),
-        typeof(CountryFlagControl),
+        typeof(FlagBox),
         new PropertyMetadata(null, CountryCodeChangedCallback)
     );
 
     private static void CountryCodeChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        if (d is CountryFlagControl countryFlagControl)
+        if (d is FlagBox flagBox)
         {
             if (e.NewValue is string newCountryCode)
             {
+                IFlagRepository? flagRepository = flagBox.FlagRepository ?? CalculateDefaultFlagRepository();
+
+                if (flagRepository == null)
+                    return;
+
                 string newCountryCodeUpperCase = newCountryCode.ToUpper();
-                countryFlagControl.FlagCanvas = countryFlagControl.FlagRepository.Get(newCountryCodeUpperCase);
+                flagBox.FlagCanvas = flagRepository.Get(newCountryCodeUpperCase);
             }
             else
             {
-                countryFlagControl.FlagCanvas = null;
+                flagBox.FlagCanvas = null;
             }
         }
     }
 
-    public string CountryCode
+    public string? CountryCode
     {
         get => (string)GetValue(CountryCodeProperty);
         set => SetValue(CountryCodeProperty, value);
@@ -89,7 +118,7 @@ public class CountryFlagControl : Control
     private static readonly DependencyPropertyKey FlagCanvasPropertyKey = DependencyProperty.RegisterReadOnly(
         nameof(FlagCanvas),
         typeof(Canvas),
-        typeof(CountryFlagControl),
+        typeof(FlagBox),
         new FrameworkPropertyMetadata(null, flags: FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
@@ -103,8 +132,8 @@ public class CountryFlagControl : Control
 
     #endregion
 
-    static CountryFlagControl()
+    static FlagBox()
     {
-        DefaultStyleKeyProperty.OverrideMetadata(typeof(CountryFlagControl), new FrameworkPropertyMetadata(typeof(CountryFlagControl)));
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(FlagBox), new FrameworkPropertyMetadata(typeof(FlagBox)));
     }
 }
