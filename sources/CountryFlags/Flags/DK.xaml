@@ -22,27 +22,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Denmark -->
 
-    <ControlTemplate x:Key="CountryFlag_DK">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="37" Height="28">
+    <Canvas x:Key="CountryFlag_DK" Width="37" Height="28">
 
-                <!-- Background -->
+        <!-- Background -->
 
-                <Rectangle
-                    Width="37"
-                    Height="28"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#c8102e" />
+        <Rectangle
+            Width="37"
+            Height="28"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#c8102e" />
 
-                <!-- White Cross -->
+        <!-- White Cross -->
 
-                <Path
-                    Fill="#ffffff"
-                    Data="M 0 12 H 12 V 0 H 16 V 12 H 37 V 16 H 16 V 28 H 12 V 16 H 0 Z" />
+        <Path
+            Fill="#ffffff"
+            Data="M 0 12 H 12 V 0 H 16 V 12 H 37 V 16 H 16 V 28 H 12 V 16 H 0 Z" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

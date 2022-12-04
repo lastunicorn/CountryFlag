@@ -22,99 +22,95 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- French Southern and Antarctic Lands -->
 
-    <ControlTemplate x:Key="CountryFlag_TF">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="600" Height="400">
+    <Canvas x:Key="CountryFlag_TF" Width="600" Height="400">
 
-                <!-- French Flag -->
+        <!-- French Flag -->
 
-                <Rectangle
-                    Width="600"
-                    Height="400"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#002395" />
+        <Rectangle
+            Width="600"
+            Height="400"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#002395" />
 
-                <Rectangle
-                    Width="160"
-                    Height="160"
-                    Canvas.Left="80"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="160"
+            Height="160"
+            Canvas.Left="80"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="80"
-                    Height="160"
-                    Canvas.Left="160"
-                    Canvas.Top="0"
-                    Fill="#ED2939" />
+        <Rectangle
+            Width="80"
+            Height="160"
+            Canvas.Left="160"
+            Canvas.Top="0"
+            Fill="#ED2939" />
 
-                <!-- French Flag Border -->
+        <!-- French Flag Border -->
 
-                <Rectangle
-                    Width="249.91736"
-                    Height="169.87405"
-                    Canvas.Left="-10"
-                    Canvas.Top="-10"
-                    Stroke="#ffffff"
-                    StrokeThickness="4.20587"
-                    Clip="M 10 10 H 249.91736 V 169.87405 H 10 z"/>
+        <Rectangle
+            Width="249.91736"
+            Height="169.87405"
+            Canvas.Left="-10"
+            Canvas.Top="-10"
+            Stroke="#ffffff"
+            StrokeThickness="4.20587"
+            Clip="M 10 10 H 249.91736 V 169.87405 H 10 z" />
 
-                <!-- T.A.A.F. -->
+        <!-- T.A.A.F. -->
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m354.99732 182.97585 12.875 20.5h36.625v71.5l-27.5-43-37 59h23l3.4375-6.5h23.03125l26.53125 42.5 26.53125-42.5h23.03125l3.4375 6.5h23l-37-59-27.5 43v-39.5h16.5l12.25-19.5h-28.75v-12.5h36.625l12.875-20.5zm22.17725 73.70095 8.97428 13.95119-15.97318 0.0886zm77.291 1.41801 7.17615 12.53317-14.55518-0.0886z" />
+        <Path
+            Fill="#ffffff"
+            Data="m354.99732 182.97585 12.875 20.5h36.625v71.5l-27.5-43-37 59h23l3.4375-6.5h23.03125l26.53125 42.5 26.53125-42.5h23.03125l3.4375 6.5h23l-37-59-27.5 43v-39.5h16.5l12.25-19.5h-28.75v-12.5h36.625l12.875-20.5zm22.17725 73.70095 8.97428 13.95119-15.97318 0.0886zm77.291 1.41801 7.17615 12.53317-14.55518-0.0886z" />
 
-                <!-- Stars -->
+        <!-- Stars -->
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
+        <Path
+            Fill="#ffffff"
+            Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="4.6085281" Y="8.1431142" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="4.6085281" Y="8.1431142" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
+        <Path
+            Fill="#ffffff"
+            Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="-40.505367" Y="42.592725" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="-40.505367" Y="42.592725" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
+        <Path
+            Fill="#ffffff"
+            Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
 
-                    <Path.RenderTransform>
-                        <MatrixTransform Matrix="-1,0,0,1,827.61896,8.2039372" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <MatrixTransform Matrix="-1,0,0,1,827.61896,8.2039372" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
+        <Path
+            Fill="#ffffff"
+            Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="42.517453" Y="-92.952019" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="42.517453" Y="-92.952019" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
+        <Path
+            Fill="#ffffff"
+            Data="m456 298.63999 4.73445 14.8436 15.58013-0.0842-12.65408 9.08966 4.8946 14.79156-12.5551-9.22588-12.5551 9.22588 4.8946-14.79156-12.65407-9.08966 15.58012 0.0842z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="-121.80101" Y="-93.2457" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="-121.80101" Y="-93.2457" />
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

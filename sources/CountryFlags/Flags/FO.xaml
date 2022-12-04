@@ -22,47 +22,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Faroe Islands -->
 
-    <ControlTemplate x:Key="CountryFlag_FO">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="22" Height="16">
+    <Canvas x:Key="CountryFlag_FO" Width="22" Height="16">
 
-                <Rectangle
-                    Width="22"
-                    Height="16"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="22"
+            Height="16"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="4"
-                    Height="16"
-                    Canvas.Left="6"
-                    Canvas.Top="0"
-                    Fill="#005EB8" />
+        <Rectangle
+            Width="4"
+            Height="16"
+            Canvas.Left="6"
+            Canvas.Top="0"
+            Fill="#005EB8" />
 
-                <Rectangle
-                    Width="22"
-                    Height="4"
-                    Canvas.Left="0"
-                    Canvas.Top="6"
-                    Fill="#005EB8" />
+        <Rectangle
+            Width="22"
+            Height="4"
+            Canvas.Left="0"
+            Canvas.Top="6"
+            Fill="#005EB8" />
 
-                <Rectangle
-                    Width="2"
-                    Height="16"
-                    Canvas.Left="7"
-                    Canvas.Top="0"
-                    Fill="#EF3340" />
+        <Rectangle
+            Width="2"
+            Height="16"
+            Canvas.Left="7"
+            Canvas.Top="0"
+            Fill="#EF3340" />
 
-                <Rectangle
-                    Width="22"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="7"
-                    Fill="#EF3340" />
+        <Rectangle
+            Width="22"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="7"
+            Fill="#EF3340" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

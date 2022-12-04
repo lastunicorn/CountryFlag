@@ -22,45 +22,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Guinea-Bissau -->
 
-    <ControlTemplate x:Key="CountryFlag_GW">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="12" Height="6">
+    <Canvas x:Key="CountryFlag_GW" Width="12" Height="6">
 
-                <Rectangle
-                    Width="12"
-                    Height="6"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#fcd116" />
+        <Rectangle
+            Width="12"
+            Height="6"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#fcd116" />
 
-                <Rectangle
-                    Width="12"
-                    Height="3"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#009e49" />
+        <Rectangle
+            Width="12"
+            Height="3"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#009e49" />
 
-                <Rectangle
-                    Width="4"
-                    Height="6"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ce1126" />
+        <Rectangle
+            Width="4"
+            Height="6"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ce1126" />
 
-                <Path
-                    Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#000000">
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#000000">
 
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="2" ScaleY="2"/>
-                            <TranslateTransform X="2" Y="3" />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2" />
+                    <TranslateTransform X="2" Y="3" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

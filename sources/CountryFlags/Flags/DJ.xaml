@@ -22,42 +22,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Djibouti -->
 
-    <ControlTemplate x:Key="CountryFlag_DJ">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_DJ" Width="900" Height="600">
 
-                <!-- Top -->
+        <!-- Top -->
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#6ab2e7" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#6ab2e7" />
 
-                <!-- Bottom -->
+        <!-- Bottom -->
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="300"
-                    Fill="#12ad2b" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="300"
+            Fill="#12ad2b" />
 
-                <!-- White Triangle -->
+        <!-- White Triangle -->
 
-                <Path
-                    Data="M 0 0 v 600 l 519.615 -300 z"
-                    Fill="#fff" />
+        <Path
+            Data="M 0 0 v 600 l 519.615 -300 z"
+            Fill="#fff" />
 
-                <!-- Red Star -->
+        <!-- Red Star -->
 
-                <Path
-                    Data="M198.86 225l18.616 57.295h60.243l-48.738 35.41L247.598 375l-48.738-35.41L150.122 375l18.616-57.295L120 282.295h60.243z"
-                    Fill="#d7141a" />
+        <Path
+            Data="M198.86 225l18.616 57.295h60.243l-48.738 35.41L247.598 375l-48.738-35.41L150.122 375l18.616-57.295L120 282.295h60.243z"
+            Fill="#d7141a" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

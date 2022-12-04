@@ -22,33 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Colombia -->
 
-    <ControlTemplate x:Key="CountryFlag_CO">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="6" Height="4">
+    <Canvas x:Key="CountryFlag_CO" Width="6" Height="4">
 
-                <Rectangle
-                    Width="6"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffcd00" />
+        <Rectangle
+            Width="6"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffcd00" />
 
-                <Rectangle
-                    Width="6"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#003087" />
+        <Rectangle
+            Width="6"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#003087" />
 
-                <Rectangle
-                    Width="6"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="3"
-                    Fill="#c8102e" />
+        <Rectangle
+            Width="6"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="3"
+            Fill="#c8102e" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

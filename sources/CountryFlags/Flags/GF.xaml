@@ -22,29 +22,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- French Guiana -->
 
-    <ControlTemplate x:Key="CountryFlag_GF">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_GF" Width="900" Height="600">
 
-                <Path
-                    Data="M 0 0 h 900 v 600 z"
-                    Fill="#078930" />
+        <Path
+            Data="M 0 0 h 900 v 600 z"
+            Fill="#078930" />
 
-                <Path
-                    Data="M 0 0 v 600 h 900 z"
-                    Fill="#fcdd09" />
+        <Path
+            Data="M 0 0 v 600 h 900 z"
+            Fill="#fcdd09" />
 
-                <Path
-                    Data="F1 m 0 -1 .58778525 1.80901699 -1.53884177 -1.11803398 h 1.90211304 l -1.53884177 1.11803398 z"
-                    Fill="#da121a">
+        <Path
+            Data="F1 m 0 -1 .58778525 1.80901699 -1.53884177 -1.11803398 h 1.90211304 l -1.53884177 1.11803398 z"
+            Fill="#da121a">
 
-                    <Path.RenderTransform>
-                        <MatrixTransform Matrix="100 0 0 100 450 300" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <MatrixTransform Matrix="100 0 0 100 450 300" />
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

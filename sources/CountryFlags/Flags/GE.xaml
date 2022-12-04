@@ -22,99 +22,95 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Georgia -->
 
-    <ControlTemplate x:Key="CountryFlag_GE">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="30" Height="20">
+    <Canvas x:Key="CountryFlag_GE" Width="30" Height="20">
 
-                <Rectangle
-                    Width="30"
-                    Height="20"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="30"
+            Height="20"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Path
-                    Fill="#ff0000"
-                    Data="F1 m 13 0 h 4 v 20 h -4 z M 0 8 h 30 v 4 H 0 z" />
+        <Path
+            Fill="#ff0000"
+            Data="F1 m 13 0 h 4 v 20 h -4 z M 0 8 h 30 v 4 H 0 z" />
 
-                <Path
-                    Fill="#ff0000"
-                    Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
+        <Path
+            Fill="#ff0000"
+            Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
 
-                <Path
-                    Fill="#ff0000"
-                    Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
+        <Path
+            Fill="#ff0000"
+            Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
 
-                    <Path.RenderTransform>
-                        <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Canvas>
+        <Canvas>
 
-                    <Canvas.RenderTransform>
-                        <TranslateTransform X="17" />
-                    </Canvas.RenderTransform>
+            <Canvas.RenderTransform>
+                <TranslateTransform X="17" />
+            </Canvas.RenderTransform>
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
 
-                        <Path.RenderTransform>
-                            <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
+                </Path.RenderTransform>
+            </Path>
 
-                </Canvas>
+        </Canvas>
 
-                <Canvas>
+        <Canvas>
 
-                    <Canvas.RenderTransform>
-                        <TranslateTransform Y="12" />
-                    </Canvas.RenderTransform>
+            <Canvas.RenderTransform>
+                <TranslateTransform Y="12" />
+            </Canvas.RenderTransform>
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
 
-                        <Path.RenderTransform>
-                            <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
+                </Path.RenderTransform>
+            </Path>
 
-                </Canvas>
+        </Canvas>
 
-                <Canvas>
+        <Canvas>
 
-                    <Canvas.RenderTransform>
-                        <TranslateTransform X="17" Y="12" />
-                    </Canvas.RenderTransform>
+            <Canvas.RenderTransform>
+                <TranslateTransform X="17" Y="12" />
+            </Canvas.RenderTransform>
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z" />
 
-                    <Path
-                        Fill="#ff0000"
-                        Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
+            <Path
+                Fill="#ff0000"
+                Data="m5.7968 1.954a5.4 5.4 0 0 0 1.4064 0 10.4 10.4 0 0 0 0 4.092 5.4 5.4 0 0 0-1.4064 0 10.4 10.4 0 0 0 0-4.092z">
 
-                        <Path.RenderTransform>
-                            <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
+                </Path.RenderTransform>
+            </Path>
 
-                </Canvas>
+        </Canvas>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

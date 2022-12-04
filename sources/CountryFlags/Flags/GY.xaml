@@ -22,35 +22,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Guyana -->
 
-    <ControlTemplate x:Key="CountryFlag_GY">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="1000" Height="600">
+    <Canvas x:Key="CountryFlag_GY" Width="1000" Height="600">
 
-                <Rectangle
-                    Width="1000"
-                    Height="600"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#009e49" />
+        <Rectangle
+            Width="1000"
+            Height="600"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#009e49" />
 
-                <Path
-                    Fill="#ffffff"
-                    Data="M 0 0 l 1000 300 L 0 600 z" />
+        <Path
+            Fill="#ffffff"
+            Data="M 0 0 l 1000 300 L 0 600 z" />
 
-                <Path
-                    Fill="#fcd116"
-                    Data="M 0 26.1 L 912 300 0 573.9 z" />
+        <Path
+            Fill="#fcd116"
+            Data="M 0 26.1 L 912 300 0 573.9 z" />
 
-                <Path
-                    Fill="#000000"
-                    Data="M 0 0 l 500 300 L 0 600 z" />
+        <Path
+            Fill="#000000"
+            Data="M 0 0 l 500 300 L 0 600 z" />
 
-                <Path
-                    Fill="#ce1126"
-                    Data="M 0 35 l 441.7 265 L 0 565 z" />
+        <Path
+            Fill="#ce1126"
+            Data="M 0 35 l 441.7 265 L 0 565 z" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

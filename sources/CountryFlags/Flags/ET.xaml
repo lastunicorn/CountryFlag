@@ -22,121 +22,117 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Ethiopia -->
 
-    <ControlTemplate x:Key="CountryFlag_ET">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="1200" Height="600">
+    <Canvas x:Key="CountryFlag_ET" Width="1200" Height="600">
 
-                <Rectangle
-                    Width="1200"
-                    Height="200"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#078930" />
+        <Rectangle
+            Width="1200"
+            Height="200"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#078930" />
 
-                <Rectangle
-                    Width="1200"
-                    Height="200"
-                    Canvas.Left="0"
-                    Canvas.Top="200"
+        <Rectangle
+            Width="1200"
+            Height="200"
+            Canvas.Left="0"
+            Canvas.Top="200"
+            Fill="#fcdd09" />
+
+        <Rectangle
+            Width="1200"
+            Height="200"
+            Canvas.Left="0"
+            Canvas.Top="400"
+            Fill="#da121a" />
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="1.6666667,0,0,1.6666667,600,300" />
+            </Canvas.RenderTransform>
+
+            <Ellipse
+                Width="240"
+                Height="240"
+                Canvas.Left="-120"
+                Canvas.Top="-120"
+                Fill="#0f47af" />
+
+            <Path
+                Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
+                Fill="#fcdd09" />
+
+            <Path
+                Data="M 0,44 V 96"
+                Stroke="#fcdd09"
+                StrokeThickness="4" />
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="72" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
                     Fill="#fcdd09" />
 
-                <Rectangle
-                    Width="1200"
-                    Height="200"
-                    Canvas.Left="0"
-                    Canvas.Top="400"
-                    Fill="#da121a" />
-
-                <Canvas>
-
-                    <Canvas.RenderTransform>
-                        <MatrixTransform Matrix="1.6666667,0,0,1.6666667,600,300" />
-                    </Canvas.RenderTransform>
-
-                    <Ellipse
-                        Width="240"
-                        Height="240"
-                        Canvas.Left="-120"
-                        Canvas.Top="-120"
-                        Fill="#0f47af" />
-
-                    <Path
-                        Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
-                        Fill="#fcdd09" />
-
-                    <Path
-                        Data="M 0,44 V 96"
-                        Stroke="#fcdd09"
-                        StrokeThickness="4" />
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="72" />
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
-                            Fill="#fcdd09" />
-
-                        <Path
-                            Data="M 0,44 V 96"
-                            Stroke="#fcdd09"
-                            StrokeThickness="4" />
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="144" />
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
-                            Fill="#fcdd09" />
-
-                        <Path
-                            Data="M 0,44 V 96"
-                            Stroke="#fcdd09"
-                            StrokeThickness="4" />
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="216" />
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
-                            Fill="#fcdd09" />
-
-                        <Path
-                            Data="M 0,44 V 96"
-                            Stroke="#fcdd09"
-                            StrokeThickness="4" />
-                    </Canvas>
-
-                    <Canvas>
-
-                        <Canvas.RenderTransform>
-                            <RotateTransform Angle="288" />
-                        </Canvas.RenderTransform>
-
-                        <Path
-                            Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
-                            Fill="#fcdd09" />
-
-                        <Path
-                            Data="M 0,44 V 96"
-                            Stroke="#fcdd09"
-                            StrokeThickness="4" />
-                    </Canvas>
-
-                </Canvas>
-
+                <Path
+                    Data="M 0,44 V 96"
+                    Stroke="#fcdd09"
+                    StrokeThickness="4" />
             </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="144" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
+                    Fill="#fcdd09" />
+
+                <Path
+                    Data="M 0,44 V 96"
+                    Stroke="#fcdd09"
+                    StrokeThickness="4" />
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="216" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
+                    Fill="#fcdd09" />
+
+                <Path
+                    Data="M 0,44 V 96"
+                    Stroke="#fcdd09"
+                    StrokeThickness="4" />
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="288" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Data="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
+                    Fill="#fcdd09" />
+
+                <Path
+                    Data="M 0,44 V 96"
+                    Stroke="#fcdd09"
+                    StrokeThickness="4" />
+            </Canvas>
+
+        </Canvas>
+
+    </Canvas>
 
 </ResourceDictionary>

@@ -22,37 +22,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Chile -->
 
-    <ControlTemplate x:Key="CountryFlag_CL">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="6" Height="4">
+    <Canvas x:Key="CountryFlag_CL" Width="6" Height="4">
 
-                <Rectangle
-                    Width="2"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#0039a6" />
+        <Rectangle
+            Width="2"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#0039a6" />
 
-                <Rectangle
-                    Width="4"
-                    Height="2"
-                    Canvas.Left="2"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="4"
+            Height="2"
+            Canvas.Left="2"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="6"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#d52b1e" />
-                
-                <Path
-                    Data="F1 m 1 .5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                    Fill="#ffffff"/>
+        <Rectangle
+            Width="6"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#d52b1e" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+        <Path
+            Data="F1 m 1 .5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffffff" />
+
+    </Canvas>
 
 </ResourceDictionary>

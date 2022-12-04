@@ -14,86 +14,97 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace DustInTheWind.CountryFlags
+namespace DustInTheWind.CountryFlags;
+
+public class CountryFlagControl : Control
 {
-    public class CountryFlagControl : Control
+    private static readonly FlagRepository DefaultFlagRepository = new();
+
+    #region CountryCode
+
+    public static readonly DependencyProperty FlagRepositoryProperty = DependencyProperty.Register(
+        nameof(FlagRepository),
+        typeof(IFlagRepository),
+        typeof(CountryFlagControl),
+        new PropertyMetadata(DefaultFlagRepository, FlagRepositoryChangedCallback)
+    );
+
+    private static void FlagRepositoryChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        #region CountryCode
-
-        public static readonly DependencyProperty CountryCodeProperty = DependencyProperty.Register(
-            nameof(CountryCode),
-            typeof(string),
-            typeof(CountryFlagControl),
-            new PropertyMetadata(null, CountryCodeChangedCallback)
-        );
-
-        private static void CountryCodeChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        if (d is CountryFlagControl countryFlagControl)
         {
-            if (d is CountryFlagControl countryFlagControl)
+            if (e.NewValue == null)
             {
-                if (e.NewValue is string newCountryCode)
-                {
-                    string newCountryCodeUpperCase = newCountryCode.ToUpper();
-
-                    Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.CountryFlags;component/Flags/{newCountryCodeUpperCase}.xaml");
-                    string resourceName = "CountryFlag_" + newCountryCodeUpperCase;
-
-                    try
-                    {
-                        ResourceDictionary resourceDictionary = new()
-                        {
-                            Source = resourceUri
-                        };
-
-                        object resource = resourceDictionary[resourceName];
-                        countryFlagControl.FlagCanvas = resource as Canvas;
-                    }
-                    catch
-                    {
-                        countryFlagControl.FlagCanvas = null;
-                    }
-                }
-                else
-                {
-                    countryFlagControl.FlagCanvas = null;
-                }
+                countryFlagControl.FlagRepository = DefaultFlagRepository;
             }
         }
+    }
 
-        public string CountryCode
+    public IFlagRepository FlagRepository
+    {
+        get => (IFlagRepository)GetValue(FlagRepositoryProperty);
+        set => SetValue(FlagRepositoryProperty, value);
+    }
+
+    #endregion
+
+    #region CountryCode
+
+    public static readonly DependencyProperty CountryCodeProperty = DependencyProperty.Register(
+        nameof(CountryCode),
+        typeof(string),
+        typeof(CountryFlagControl),
+        new PropertyMetadata(null, CountryCodeChangedCallback)
+    );
+
+    private static void CountryCodeChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+        if (d is CountryFlagControl countryFlagControl)
         {
-            get => (string)GetValue(CountryCodeProperty);
-            set => SetValue(CountryCodeProperty, value);
+            if (e.NewValue is string newCountryCode)
+            {
+                string newCountryCodeUpperCase = newCountryCode.ToUpper();
+                countryFlagControl.FlagCanvas = countryFlagControl.FlagRepository.Get(newCountryCodeUpperCase);
+            }
+            else
+            {
+                countryFlagControl.FlagCanvas = null;
+            }
         }
+    }
 
-        #endregion
+    public string CountryCode
+    {
+        get => (string)GetValue(CountryCodeProperty);
+        set => SetValue(CountryCodeProperty, value);
+    }
 
-        #region FlagCanvas
+    #endregion
 
-        private static readonly DependencyPropertyKey FlagCanvasPropertyKey = DependencyProperty.RegisterReadOnly(
-            nameof(FlagCanvas),
-            typeof(Canvas),
-            typeof(CountryFlagControl),
-            new FrameworkPropertyMetadata(null, flags: FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
-        );
+    #region FlagCanvas
 
-        public static readonly DependencyProperty FlagCanvasProperty = FlagCanvasPropertyKey.DependencyProperty;
+    private static readonly DependencyPropertyKey FlagCanvasPropertyKey = DependencyProperty.RegisterReadOnly(
+        nameof(FlagCanvas),
+        typeof(Canvas),
+        typeof(CountryFlagControl),
+        new FrameworkPropertyMetadata(null, flags: FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
+    );
 
-        public Canvas? FlagCanvas
-        {
-            get => (Canvas)GetValue(FlagCanvasProperty);
-            private set => SetValue(FlagCanvasPropertyKey, value);
-        }
+    public static readonly DependencyProperty FlagCanvasProperty = FlagCanvasPropertyKey.DependencyProperty;
 
-        #endregion
+    public Canvas? FlagCanvas
+    {
+        get => (Canvas)GetValue(FlagCanvasProperty);
+        private set => SetValue(FlagCanvasPropertyKey, value);
+    }
 
-        static CountryFlagControl()
-        {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(CountryFlagControl), new FrameworkPropertyMetadata(typeof(CountryFlagControl)));
-        }
+    #endregion
+
+    static CountryFlagControl()
+    {
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(CountryFlagControl), new FrameworkPropertyMetadata(typeof(CountryFlagControl)));
     }
 }

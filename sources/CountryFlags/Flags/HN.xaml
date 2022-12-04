@@ -22,83 +22,79 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Honduras -->
 
-    <ControlTemplate x:Key="CountryFlag_HN">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="72" Height="36">
+    <Canvas x:Key="CountryFlag_HN" Width="72" Height="36">
 
-                <Rectangle
-                    Width="72"
-                    Height="36"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#fff" />
+        <Rectangle
+            Width="72"
+            Height="36"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#fff" />
 
-                <Rectangle
-                    Width="72"
-                    Height="12"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#00BCE4" />
+        <Rectangle
+            Width="72"
+            Height="12"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#00BCE4" />
 
-                <Rectangle
-                    Width="72"
-                    Height="12"
-                    Canvas.Left="0"
-                    Canvas.Top="24"
-                    Fill="#00BCE4" />
+        <Rectangle
+            Width="72"
+            Height="12"
+            Canvas.Left="0"
+            Canvas.Top="24"
+            Fill="#00BCE4" />
 
-                <!-- Star - Top Left -->
+        <!-- Star - Top Left -->
 
-                <Path
-                    Fill="#00BCE4"
-                    Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z" />
+        <Path
+            Fill="#00BCE4"
+            Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z" />
 
-                <!-- Star - Bottom Left -->
+        <!-- Star - Bottom Left -->
 
-                <Path
-                    Fill="#00BCE4"
-                    Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
+        <Path
+            Fill="#00BCE4"
+            Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform Y="6" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform Y="6" />
+            </Path.RenderTransform>
+        </Path>
 
-                <!-- Star - Center -->
+        <!-- Star - Center -->
 
-                <Path
-                    Fill="#00BCE4"
-                    Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
+        <Path
+            Fill="#00BCE4"
+            Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="10" Y="3" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="10" Y="3" />
+            </Path.RenderTransform>
+        </Path>
 
-                <!-- Star - Top Right -->
+        <!-- Star - Top Right -->
 
-                <Path
-                    Fill="#00BCE4"
-                    Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
+        <Path
+            Fill="#00BCE4"
+            Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="20" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="20" />
+            </Path.RenderTransform>
+        </Path>
 
-                <!-- Star - Bottom Right -->
+        <!-- Star - Bottom Right -->
 
-                <Path
-                    Fill="#00BCE4"
-                    Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
+        <Path
+            Fill="#00BCE4"
+            Data="F1 m26 13 1.1756 3.618-3.0777-2.236h3.8042l-3.0777 2.236z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform X="20" Y="6" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform X="20" Y="6" />
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

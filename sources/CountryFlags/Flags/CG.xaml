@@ -22,24 +22,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Republic of Congo -->
 
-    <ControlTemplate x:Key="CountryFlag_CG">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="3" Height="2">
+    <Canvas x:Key="CountryFlag_CG" Width="3" Height="2">
 
-                <Path
-                    Data="m 0 0 h 3 v 2 h -3 z"
-                    Fill="#fbde4a" />
+        <Path
+            Data="m 0 0 h 3 v 2 h -3 z"
+            Fill="#fbde4a" />
 
-                <Path
-                    Data="m 0 2 v -2 h 2 z"
-                    Fill="#009543" />
+        <Path
+            Data="m 0 2 v -2 h 2 z"
+            Fill="#009543" />
 
-                <Path
-                    Data="m 3 0 v 2 h -2 z"
-                    Fill="#da1a35" />
+        <Path
+            Data="m 3 0 v 2 h -2 z"
+            Fill="#da1a35" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

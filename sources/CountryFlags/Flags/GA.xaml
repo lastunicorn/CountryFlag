@@ -22,33 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Gabon -->
 
-    <ControlTemplate x:Key="CountryFlag_GA">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="4" Height="3">
+    <Canvas x:Key="CountryFlag_GA" Width="4" Height="3">
 
-                <Rectangle
-                    Width="4"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#009e60" />
+        <Rectangle
+            Width="4"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#009e60" />
 
-                <Rectangle
-                    Width="4"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="1"
-                    Fill="#fcd116" />
+        <Rectangle
+            Width="4"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="1"
+            Fill="#fcd116" />
 
-                <Rectangle
-                    Width="4"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#3a75c4" />
+        <Rectangle
+            Width="4"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#3a75c4" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

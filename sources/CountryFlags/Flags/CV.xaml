@@ -22,179 +22,175 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Cape Verde -->
 
-    <ControlTemplate x:Key="CountryFlag_CV">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="1020" Height="600">
+    <Canvas x:Key="CountryFlag_CV" Width="1020" Height="600">
 
-                <!-- Background -->
+        <!-- Background -->
 
-                <Rectangle
-                    Width="1020"
-                    Height="600"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#003DA5" />
+        <Rectangle
+            Width="1020"
+            Height="600"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#003DA5" />
 
-                <!-- White Band -->
+        <!-- White Band -->
 
-                <Rectangle
-                    Width="1020"
-                    Height="150"
-                    Canvas.Left="0"
-                    Canvas.Top="300"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="1020"
+            Height="150"
+            Canvas.Left="0"
+            Canvas.Top="300"
+            Fill="#ffffff" />
 
-                <!-- Red Band -->
+        <!-- Red Band -->
 
-                <Rectangle
-                    Width="1020"
-                    Height="50"
-                    Canvas.Left="0"
-                    Canvas.Top="350"
-                    Fill="#EF3340" />
+        <Rectangle
+            Width="1020"
+            Height="50"
+            Canvas.Left="0"
+            Canvas.Top="350"
+            Fill="#EF3340" />
 
-                <Canvas>
+        <Canvas>
 
-                    <Canvas.RenderTransform>
-                        <MatrixTransform Matrix="2 0 0 2 382.5 375" />
-                    </Canvas.RenderTransform>
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="2 0 0 2 382.5 375" />
+            </Canvas.RenderTransform>
 
-                    <!-- Stars - Set A -->
+            <!-- Stars - Set A -->
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="-75" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="-75" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="-75" />
-                                <RotateTransform Angle="72" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="-75" />
+                        <RotateTransform Angle="72" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="-75" />
-                                <RotateTransform Angle="144" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="-75" />
+                        <RotateTransform Angle="144" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="-75" />
-                                <RotateTransform Angle="216" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="-75" />
+                        <RotateTransform Angle="216" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="-75" />
-                                <RotateTransform Angle="288" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="-75" />
+                        <RotateTransform Angle="288" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <!-- Stars - Set B -->
+            <!-- Stars - Set B -->
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="75" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="75" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="75" />
-                                <RotateTransform Angle="72" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="75" />
+                        <RotateTransform Angle="72" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="75" />
-                                <RotateTransform Angle="144" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="75" />
+                        <RotateTransform Angle="144" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="75" />
-                                <RotateTransform Angle="216" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="75" />
+                        <RotateTransform Angle="216" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                    <Path
-                        Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
-                        Fill="#FFD100">
+            <Path
+                Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+                Fill="#FFD100">
 
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleX="30" ScaleY="30" />
-                                <TranslateTransform X="0" Y="75" />
-                                <RotateTransform Angle="288" />
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="30" ScaleY="30" />
+                        <TranslateTransform X="0" Y="75" />
+                        <RotateTransform Angle="288" />
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
 
-                </Canvas>
+        </Canvas>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

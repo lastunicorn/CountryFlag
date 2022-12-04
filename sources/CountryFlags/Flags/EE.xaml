@@ -22,33 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Estonia -->
 
-    <ControlTemplate x:Key="CountryFlag_EE">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="33" Height="21">
+    <Canvas x:Key="CountryFlag_EE" Width="33" Height="21">
 
-                <Rectangle
-                    Width="33"
-                    Height="7"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#0072ce" />
+        <Rectangle
+            Width="33"
+            Height="7"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#0072ce" />
 
-                <Rectangle
-                    Width="33"
-                    Height="7"
-                    Canvas.Left="0"
-                    Canvas.Top="7"
-                    Fill="#000000" />
+        <Rectangle
+            Width="33"
+            Height="7"
+            Canvas.Left="0"
+            Canvas.Top="7"
+            Fill="#000000" />
 
-                <Rectangle
-                    Width="33"
-                    Height="7"
-                    Canvas.Left="0"
-                    Canvas.Top="14"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="33"
+            Height="7"
+            Canvas.Left="0"
+            Canvas.Top="14"
+            Fill="#ffffff" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

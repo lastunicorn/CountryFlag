@@ -22,33 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Germany -->
 
-    <ControlTemplate x:Key="CountryFlag_DE">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="5" Height="3">
+    <Canvas x:Key="CountryFlag_DE" Width="5" Height="3">
 
-                <Rectangle
-                    Width="5"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#000000" />
+        <Rectangle
+            Width="5"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#000000" />
 
-                <Rectangle
-                    Width="5"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="1"
-                    Fill="#dd0000" />
+        <Rectangle
+            Width="5"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="1"
+            Fill="#dd0000" />
 
-                <Rectangle
-                    Width="5"
-                    Height="1"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#FFCE00" />
+        <Rectangle
+            Width="5"
+            Height="1"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#FFCE00" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

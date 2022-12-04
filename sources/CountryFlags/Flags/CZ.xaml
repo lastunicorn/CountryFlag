@@ -22,30 +22,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Czechia -->
 
-    <ControlTemplate x:Key="CountryFlag_CZ">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_CZ" Width="900" Height="600">
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="900"
-                    Height="300"
-                    Canvas.Left="0"
-                    Canvas.Top="300"
-                    Fill="#d7141a" />
+        <Rectangle
+            Width="900"
+            Height="300"
+            Canvas.Left="0"
+            Canvas.Top="300"
+            Fill="#d7141a" />
 
-                <Path
-                    Data="M 450 300 0 0 V 600 z"
-                    Fill="#11457e" />
+        <Path
+            Data="M 450 300 0 0 V 600 z"
+            Fill="#11457e" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

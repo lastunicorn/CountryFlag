@@ -22,37 +22,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Ghana -->
 
-    <ControlTemplate x:Key="CountryFlag_GH">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="9" Height="6">
+    <Canvas x:Key="CountryFlag_GH" Width="9" Height="6">
 
-                <Rectangle
-                    Width="9"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ce1126" />
+        <Rectangle
+            Width="9"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ce1126" />
 
-                <Rectangle
-                    Width="9"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="2"
-                    Fill="#fcd116" />
+        <Rectangle
+            Width="9"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="2"
+            Fill="#fcd116" />
 
-                <Rectangle
-                    Width="9"
-                    Height="2"
-                    Canvas.Left="0"
-                    Canvas.Top="4"
-                    Fill="#006b3f" />
+        <Rectangle
+            Width="9"
+            Height="2"
+            Canvas.Left="0"
+            Canvas.Top="4"
+            Fill="#006b3f" />
 
-                <Path
-                    Fill="#000000"
-                    Data="F1 m 4.5 2 .6498 2 -1.7013 -1.2361 h 2.103 L 3.8502 4 z"/>
+        <Path
+            Fill="#000000"
+            Data="F1 m 4.5 2 .6498 2 -1.7013 -1.2361 h 2.103 L 3.8502 4 z" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

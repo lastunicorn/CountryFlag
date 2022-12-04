@@ -22,87 +22,83 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Comoros -->
 
-    <ControlTemplate x:Key="CountryFlag_KM">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="60" Height="36">
+    <Canvas x:Key="CountryFlag_KM" Width="60" Height="36">
 
-                <!-- Background -->
+        <!-- Background -->
 
-                <Rectangle
-                    Width="60"
-                    Height="9"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#ffd100" />
+        <Rectangle
+            Width="60"
+            Height="9"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffd100" />
 
-                <Rectangle
-                    Width="60"
-                    Height="9"
-                    Canvas.Left="0"
-                    Canvas.Top="9"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="60"
+            Height="9"
+            Canvas.Left="0"
+            Canvas.Top="9"
+            Fill="#ffffff" />
 
-                <Rectangle
-                    Width="60"
-                    Height="9"
-                    Canvas.Left="0"
-                    Canvas.Top="18"
-                    Fill="#ef3340" />
+        <Rectangle
+            Width="60"
+            Height="9"
+            Canvas.Left="0"
+            Canvas.Top="18"
+            Fill="#ef3340" />
 
-                <Rectangle
-                    Width="60"
-                    Height="9"
-                    Canvas.Left="0"
-                    Canvas.Top="27"
-                    Fill="#003da5" />
+        <Rectangle
+            Width="60"
+            Height="9"
+            Canvas.Left="0"
+            Canvas.Top="27"
+            Fill="#003da5" />
 
-                <!-- Green triangle -->
+        <!-- Green triangle -->
 
-                <Path
-                    Fill="#009739"
-                    Data="m 30 18 L 0 36 V 0 z" />
+        <Path
+            Fill="#009739"
+            Data="m 30 18 L 0 36 V 0 z" />
 
-                <!-- Moon -->
+        <!-- Moon -->
 
-                <Path
-                    Fill="#ffffff"
-                    Data="m12.519 9.809a8.25 8.25 0 0 0 0 16.382 8.5 8.5 0 1 1 0-16.382z" />
+        <Path
+            Fill="#ffffff"
+            Data="m12.519 9.809a8.25 8.25 0 0 0 0 16.382 8.5 8.5 0 1 1 0-16.382z" />
 
-                <!-- Stars -->
+        <!-- Stars -->
 
-                <Path
-                    Fill="#ffffff"
-                    Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z" />
+        <Path
+            Fill="#ffffff"
+            Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z" />
 
-                <Path
-                    Fill="#ffffff"
-                    Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
+        <Path
+            Fill="#ffffff"
+            Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform Y="3.75" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform Y="3.75" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
+        <Path
+            Fill="#ffffff"
+            Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform Y="7.5" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform Y="7.5" />
+            </Path.RenderTransform>
+        </Path>
 
-                <Path
-                    Fill="#ffffff"
-                    Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
+        <Path
+            Fill="#ffffff"
+            Data="F1 m 12.519 10.75 1.029 3.166 -2.693 -1.957 h 3.329 l -2.693 1.957 z">
 
-                    <Path.RenderTransform>
-                        <TranslateTransform Y="11.25" />
-                    </Path.RenderTransform>
-                </Path>
+            <Path.RenderTransform>
+                <TranslateTransform Y="11.25" />
+            </Path.RenderTransform>
+        </Path>
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>

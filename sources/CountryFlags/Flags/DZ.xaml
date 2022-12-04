@@ -22,30 +22,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Algeria -->
 
-    <ControlTemplate x:Key="CountryFlag_DZ">
-        <Viewbox Stretch="Uniform">
-            <Canvas Width="900" Height="600">
+    <Canvas x:Key="CountryFlag_DZ" Width="900" Height="600">
 
-                <Rectangle
-                    Width="450"
-                    Height="600"
-                    Canvas.Left="0"
-                    Canvas.Top="0"
-                    Fill="#006633" />
+        <Rectangle
+            Width="450"
+            Height="600"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#006633" />
 
-                <Rectangle
-                    Width="450"
-                    Height="600"
-                    Canvas.Left="450"
-                    Canvas.Top="0"
-                    Fill="#ffffff" />
+        <Rectangle
+            Width="450"
+            Height="600"
+            Canvas.Left="450"
+            Canvas.Top="0"
+            Fill="#ffffff" />
 
-                <Path
-                    Fill="#d21034"
-                    Data="F1 M579.903811 225a150 150 0 1 0 0 150 120 120 0 1 1 0-150M585.676275 300 450 255.916106 533.852549 371.329239v-142.658277L450 344.083894z" />
+        <Path
+            Fill="#d21034"
+            Data="F1 M579.903811 225a150 150 0 1 0 0 150 120 120 0 1 1 0-150M585.676275 300 450 255.916106 533.852549 371.329239v-142.658277L450 344.083894z" />
 
-            </Canvas>
-        </Viewbox>
-    </ControlTemplate>
+    </Canvas>
 
 </ResourceDictionary>
