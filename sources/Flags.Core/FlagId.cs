@@ -14,19 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows;
+using System;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo;
+namespace DustInTheWind.Flags.Core;
 
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class MainWindow : Window
+public readonly struct FlagId
 {
-    public MainWindow()
-    {
-        InitializeComponent();
+    public string RepositoryId { get; init; }
 
-        DataContext = new MainViewModel();
+    public string Value { get; init; }
+
+    public bool HasRepository => !string.IsNullOrWhiteSpace(RepositoryId);
+
+    public static implicit operator FlagId(string value)
+    {
+        int separatorIndex = value.IndexOf(":", StringComparison.Ordinal);
+
+        if (separatorIndex >= 0)
+            return new FlagId
+            {
+                RepositoryId = value[..separatorIndex],
+                Value = value[(separatorIndex + 1)..]
+            };
+
+        return new FlagId
+        {
+            RepositoryId = string.Empty,
+            Value = value
+        };
     }
 }

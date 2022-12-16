@@ -16,12 +16,17 @@
 
 using System.Windows;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo
+namespace DustInTheWind.Flags.CountryFlags.Demo;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public MainWindow(MainViewModel mainViewModel)
     {
+        InitializeComponent();
+
+        DataContext = mainViewModel;
     }
 }

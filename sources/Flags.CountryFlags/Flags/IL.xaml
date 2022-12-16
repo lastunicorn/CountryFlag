@@ -1,0 +1,55 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Israel -->
+
+    <Canvas x:Key="CountryFlag_IL" Width="1100" Height="800">
+
+        <Rectangle
+            Width="1100"
+            Height="800"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
+
+        <Rectangle
+            Width="1100"
+            Height="125"
+            Canvas.Left="0"
+            Canvas.Top="75"
+            Fill="#0038b8" />
+
+        <Rectangle
+            Width="1100"
+            Height="125"
+            Canvas.Left="0"
+            Canvas.Top="600"
+            Fill="#0038b8" />
+
+        <Path
+            Data="M 423.81566,472.85253 H 676.18435 L 550.00001,254.29492 Z m 126.18435,72.85255 126.1843,-218.55765 H 423.81566 Z"
+            Stroke="#0038b8"
+            StrokeThickness="27.5" />
+
+    </Canvas>
+
+</ResourceDictionary>

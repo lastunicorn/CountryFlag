@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -16,21 +16,24 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<Project Sdk="Microsoft.NET.Sdk">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <PropertyGroup>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.Flags.Core</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.Core</RootNamespace>
-    </PropertyGroup>
+    <!-- Jamaica -->
 
-    <ItemGroup>
-      <Page Update="Themes\MissingFlag.xaml">
-        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-        <SubType>Designer</SubType>
-      </Page>
-    </ItemGroup>
+    <Canvas x:Key="CountryFlag_JM" Width="12" Height="6">
 
-</Project>
+        <Path
+            Fill="#007749"
+            Data="m0 0h12v6H0z"/>
+        
+        <Path
+            Stroke="#ffb81c"
+            Fill="#000000"
+            Data="m -2 -1 v 8 l 16 -8 v 8 z"
+            Clip="m 0 0 h 12 v 6 H 0 z"/>
+
+    </Canvas>
+
+</ResourceDictionary>

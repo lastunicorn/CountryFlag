@@ -1,0 +1,725 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Iran -->
+
+    <Canvas x:Key="CountryFlag_IR" Width="1000" Height="572.2">
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TranslateTransform X="7.217" Y="4.129" />
+            </Canvas.RenderTransform>
+
+            <Path
+                Data="M -7.217 -4.129 h 1000 v 572.2 h -1000 z"
+                Fill="#239f40" />
+
+            <Path
+                Data="M-7.217 281.971h1000v286.1h-1000z"
+                Fill="#da0000" />
+
+            <Path
+                Data="M-7.217 186.571h1000v190.75h-1000z"
+                Fill="#fff" />
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="-7.217" Y="155.471" />
+                </Canvas.RenderTransform>
+
+                <!-- 1 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 1 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 2 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="20" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="20" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 2 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="20" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="20" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 3 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="40" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="40" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 3 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="40" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="40" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 4 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="60" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="60" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 4 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="60" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="60" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 5 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="80" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="80" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 5 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="80" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="80" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 6 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="100" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="100" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 6 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="100" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="100" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 7 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="120" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="120" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 7 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="120" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="120" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 8 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="140" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="140" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 8 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="140" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="140" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 9 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="160" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="160" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 9 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="160" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="160" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 10 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="180" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="180" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 10 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="180" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="180" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 11 up -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="200" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 7h9m1 0h9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="200" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <!-- 11 down -->
+
+                <Path
+                    Stroke="#fff"
+                    Data="M3 .5h13M3.5 5V2.5h4v2h4v-2H9m-4 2h1m10 0h-2.5v-2h4m0-2.5v4.5h4V0m-2 0v4.5">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="200" Y="51.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Stroke="#fff"
+                    Data="M 3 7 h 9 m 1 0 h 9"
+                    StrokeThickness="2">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="200" Y="42.913" />
+                            <ScaleTransform ScaleX="4.4445" ScaleY="4.4445" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+
+                </Path>
+
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <MatrixTransform Matrix="69.285 0 0 69.285 492.783 281.971" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Fill="#da0000"
+                    Data="M-.548.836A.912.912 0 0 0 .329-.722 1 1 0 0 1-.548.836" />
+
+                <Path
+                    Fill="#da0000"
+                    Data="M.618.661A.764.764 0 0 0 .422-.74 1 1 0 0 1 .618.661M0 1l-.05-1L0-.787a.31.31 0 0 0 .118.099V-.1l-.04.993zM-.02-.85L0-.831a.144.144 0 0 0 .252-.137A.136.136 0 0 1 0-.925" />
+
+                <Path
+                    Fill="#da0000"
+                    Data="M-.548.836A.912.912 0 0 0 .329-.722 1 1 0 0 1-.548.836">
+
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="-1" ScaleY="1" />
+                    </Path.RenderTransform>
+
+                </Path>
+
+                <Path
+                    Fill="#da0000"
+                    Data="M.618.661A.764.764 0 0 0 .422-.74 1 1 0 0 1 .618.661M0 1l-.05-1L0-.787a.31.31 0 0 0 .118.099V-.1l-.04.993zM-.02-.85L0-.831a.144.144 0 0 0 .252-.137A.136.136 0 0 1 0-.925">
+
+                    <Path.RenderTransform>
+                        <ScaleTransform ScaleX="-1" ScaleY="1" />
+                    </Path.RenderTransform>
+
+                </Path>
+
+            </Canvas>
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

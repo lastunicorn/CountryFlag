@@ -20,8 +20,6 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    public static void Initialize(){}
-
     public static IEnumerable<Country> EnumerateAll()
     {
         // A
@@ -148,138 +146,33 @@ public static partial class Countries
         yield return Honduras;
         yield return HongKong;
         yield return Hungary;
+
+        // I
+
+        yield return Iceland;
+        yield return India;
+        yield return Indonesia;
+        yield return Iran;
+        yield return Ireland;
+        yield return IsleOfMan;
+        yield return Israel;
+        yield return Italy;
+
+        // J
+
+        yield return Jamaica;
+        yield return Japan;
+        yield return Jersey;
+        yield return Jordan;
+
+        // K
+
+        yield return Kazakhstan;
+        yield return Kenya;
+        yield return Kiribati;
+        yield return NorthKorea;
+        yield return SouthKorea;
+        yield return Kuwait;
+        yield return Kyrgyzstan;
     }
-
-    //static Countries()
-    //{
-    //    Country[] countries =
-    //    {
-    //        // A
-
-    //        Afghanistan_IslamicEmirate,
-    //        Afghanistan_IslamicRepublic,
-    //        Aland,
-    //        Albania,
-    //        Algeria,
-    //        AmericanSamoa,
-    //        Andorra,
-    //        Angola,
-    //        Anguilla,
-    //        Antarctica,
-    //        AntiguaAndBarbuda,
-    //        Argentina,
-    //        Armenia,
-    //        Aruba,
-    //        Australia,
-    //        Azerbaijan,
-
-    //        // B
-
-    //        Bahamas,
-    //        Bahrain,
-    //        Bangladesh,
-    //        Barbados,
-    //        Belarus,
-    //        Belgium,
-    //        Belize,
-    //        Benin,
-    //        Bermuda,
-    //        Bhutan,
-    //        Bolivia,
-    //        CaribbeanNetherlands,
-    //        BosniaHerzegovina,
-    //        Botswana,
-    //        BouvetIsland,
-    //        Brazil,
-    //        BritishIndianOceanTerritory,
-    //        Brunei,
-    //        Bulgaria,
-    //        BurkinaFaso,
-    //        Burundi,
-
-    //        // C
-
-    //        CapeVerde,
-    //        Cambodia,
-    //        Cameroon,
-    //        Canada,
-    //        CaymanIslands,
-    //        CentralAfricanRepublic,
-    //        Chad,
-    //        Chile,
-    //        ChristmasIsland,
-    //        CocosIslands,
-    //        Colombia,
-    //        Comoros,
-    //        Congo_Republic,
-    //        Congo_DemocraticRepublic,
-    //        CookIslands,
-    //        CostaRica,
-    //        IvoryCoast,
-    //        Croatia,
-    //        Cuba,
-    //        Curacao,
-    //        Cyprus,
-    //        Czechia,
-
-    //        // D
-
-    //        Denmark,
-    //        Djibouti,
-    //        Dominica,
-    //        DominicanRepublic,
-
-    //        // E
-
-    //        Ecuador,
-    //        Egypt,
-    //        ElSalvador,
-    //        EquatorialGuinea,
-    //        Eritrea,
-    //        Estonia,
-    //        Eswatini,
-    //        Ethiopia,
-
-    //        // F
-
-    //        FalklandIslands,
-    //        FaroeIslands,
-    //        Fiji,
-    //        Finland,
-    //        France,
-    //        FrenchGuiana,
-    //        FrenchPolynesia,
-    //        FrenchSouthernTerritories,
-
-    //        // G
-
-    //        Gabon,
-    //        Gambia,
-    //        Georgia,
-    //        Germany,
-    //        Ghana,
-    //        Gibraltar,
-    //        Greece,
-    //        Greenland,
-    //        Grenada,
-    //        Guadeloupe,
-    //        Guam,
-    //        Guatemala,
-    //        Guernsey,
-    //        Guinea,
-    //        GuineaBissau,
-    //        Guyana,
-
-    //        // H
-
-    //        Haiti,
-    //        HeardIslandAndMcDonaldIslands,
-    //        HolySee,
-    //        Honduras,
-    //        HongKong,
-    //        Hungary
-    //    };
-
-    //    EnumerateAll = countries.ToImmutableList();
-    //}
 }

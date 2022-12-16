@@ -14,17 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
+using System.Windows;
 
-namespace DustInTheWind.Flags.Core;
-
-[AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
-public class FlagRepositoryAttribute : Attribute
-{
-    public Type FlagRepositoryType { get; }
-
-    public FlagRepositoryAttribute(Type flagRepositoryType)
-    {
-        FlagRepositoryType = flagRepositoryType ?? throw new ArgumentNullException(nameof(flagRepositoryType));
-    }
-}
+[assembly: ThemeInfo(
+    ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
+    //(used if a resource is not found in the page,
+    // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
+    //(used if a resource is not found in the page,
+    // app, or any theme specific resource dictionaries)
+)]

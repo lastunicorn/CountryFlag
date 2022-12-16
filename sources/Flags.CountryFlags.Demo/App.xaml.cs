@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -15,12 +15,27 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows;
+using DustInTheWind.Flags.Core;
 
-[assembly: ThemeInfo(
-    ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
-                                     //(used if a resource is not found in the page,
-                                     // or application resource dictionaries)
-    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
-                                              //(used if a resource is not found in the page,
-                                              // app, or any theme specific resource dictionaries)
-)]
+namespace DustInTheWind.Flags.CountryFlags.Demo
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            CountryFlagRepository countryFlagRepository = new();
+            FlagRepositories.Add(countryFlagRepository);
+
+            MainViewModel mainViewModel = new();
+            MainWindow mainWindow = new(mainViewModel);
+            mainWindow.Show();
+
+            MainWindow = mainWindow;
+
+            base.OnStartup(e);
+        }
+    }
+}

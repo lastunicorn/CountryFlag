@@ -23,9 +23,14 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public class CountryFlagRepository : IFlagRepository
 {
-    public Canvas? Get(string id)
+    public string Id => "countries";
+
+    public Canvas? Get(FlagId id)
     {
-        string idUpperCase = id.ToUpper();
+        if (id.HasRepository && id.RepositoryId != Id)
+            return null;
+
+        string idUpperCase = id.Value.ToUpper();
 
         Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{idUpperCase}.xaml");
         string resourceName = "CountryFlag_" + idUpperCase;
@@ -37,8 +42,7 @@ public class CountryFlagRepository : IFlagRepository
                 Source = resourceUri
             };
 
-            object resource = resourceDictionary[resourceName];
-            return resource as Canvas;
+            return resourceDictionary[resourceName] as Canvas;
         }
         catch
         {

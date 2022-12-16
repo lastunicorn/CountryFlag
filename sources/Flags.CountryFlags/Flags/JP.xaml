@@ -16,19 +16,28 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<Project Sdk="Microsoft.NET.Sdk">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.Flags.CountryFlags.Demo</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.CountryFlags.Demo</RootNamespace>
-    </PropertyGroup>
+    <!-- Japan -->
 
-    <ItemGroup>
-        <ProjectReference Include="..\CountryFlags\Flags.CountryFlags.csproj" />
-    </ItemGroup>
+    <Canvas x:Key="CountryFlag_JP" Width="90" Height="60">
 
-</Project>
+        <Rectangle
+            Width="90"
+            Height="60"
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Fill="#ffffff" />
+
+        <Ellipse
+            Fill="#bc002d"
+            Width="36"
+            Height="36"
+            Canvas.Left="27"
+            Canvas.Top="12" />
+
+    </Canvas>
+
+</ResourceDictionary>

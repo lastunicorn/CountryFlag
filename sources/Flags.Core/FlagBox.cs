@@ -14,9 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Linq;
-using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -30,21 +27,7 @@ public class FlagBox : Control
         nameof(FlagRepository),
         typeof(IFlagRepository),
         typeof(FlagBox),
-        new PropertyMetadata(null, FlagRepositoryChangedCallback)
-    );
-
-    private static IFlagRepository? CalculateDefaultFlagRepository()
-    {
-        Type? defaultFlagRepositoryType = AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(x => x.GetCustomAttributes<FlagRepositoryAttribute>())
-            .Select(x => x.FlagRepositoryType)
-            .FirstOrDefault(x => x.GetConstructor(Type.EmptyTypes) != null);
-
-        if (defaultFlagRepositoryType == null)
-            return null;
-
-        return Activator.CreateInstance(defaultFlagRepositoryType) as IFlagRepository;
-    }
+        new PropertyMetadata(null, FlagRepositoryChangedCallback));
 
     private static void FlagRepositoryChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
@@ -52,17 +35,15 @@ public class FlagBox : Control
         {
             if (flagBox.CountryCode == null)
             {
-                flagBox.FlagCanvas = null;
+                flagBox.FlagCanvas = EmptyFlagRepository.MissingFlag;
             }
             else
             {
-                IFlagRepository? flagRepository = e.NewValue as IFlagRepository ?? CalculateDefaultFlagRepository();
+                IFlagRepository flagRepository = e.NewValue as IFlagRepository
+                                                 ?? FlagRepositories.Repository
+                                                 ?? new EmptyFlagRepository();
 
-                if (flagRepository == null)
-                    return;
-
-                string newCountryCodeUpperCase = flagBox.CountryCode.ToUpper();
-                flagBox.FlagCanvas = flagRepository.Get(newCountryCodeUpperCase);
+                flagBox.FlagCanvas = flagRepository.Get(flagBox.CountryCode) ?? EmptyFlagRepository.MissingFlag;
             }
         }
     }
@@ -90,17 +71,15 @@ public class FlagBox : Control
         {
             if (e.NewValue is string newCountryCode)
             {
-                IFlagRepository? flagRepository = flagBox.FlagRepository ?? CalculateDefaultFlagRepository();
+                IFlagRepository flagRepository = flagBox.FlagRepository
+                                                 ?? FlagRepositories.Repository
+                                                 ?? new EmptyFlagRepository();
 
-                if (flagRepository == null)
-                    return;
-
-                string newCountryCodeUpperCase = newCountryCode.ToUpper();
-                flagBox.FlagCanvas = flagRepository.Get(newCountryCodeUpperCase);
+                flagBox.FlagCanvas = flagRepository.Get(newCountryCode) ?? EmptyFlagRepository.MissingFlag;
             }
             else
             {
-                flagBox.FlagCanvas = null;
+                flagBox.FlagCanvas = EmptyFlagRepository.MissingFlag;
             }
         }
     }

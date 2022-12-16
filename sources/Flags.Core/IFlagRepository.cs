@@ -20,5 +20,7 @@ namespace DustInTheWind.Flags.Core;
 
 public interface IFlagRepository
 {
-    Canvas? Get(string id);
+    string Id { get; }
+
+    Canvas? Get(FlagId id);
 }

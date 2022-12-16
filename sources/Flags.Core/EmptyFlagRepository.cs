@@ -14,14 +14,39 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace DustInTheWind.Flags.Core;
 
 public class EmptyFlagRepository : IFlagRepository
 {
-    public Canvas? Get(string id)
+    public string Id => "empty";
+
+    public static Canvas? MissingFlag => GetMissingFlagCanvas();
+
+    public Canvas? Get(FlagId id)
     {
-        return null;
+        return GetMissingFlagCanvas();
+    }
+
+    private static Canvas? GetMissingFlagCanvas()
+    {
+        Uri resourceUri = new("Pack://application:,,,/DustInTheWind.Flags.Core;component/Themes/MissingFlag.xaml");
+
+        try
+        {
+            ResourceDictionary resourceDictionary = new()
+            {
+                Source = resourceUri
+            };
+
+            return resourceDictionary["MissingFlag"] as Canvas;
+        }
+        catch
+        {
+            return null;
+        }
     }
 }
