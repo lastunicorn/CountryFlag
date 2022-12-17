@@ -18,9 +18,43 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    public static Country Romania { get; } = new()
-    {
-        FullName = "Romania",
-        IsoCodeAlpha2 = "RO"
-    };
+    //public static Country Réunion { get; } = new()
+    //{
+    //    ShortName = "Réunion",
+    //    FullName = "Réunion",
+    //    IsoCodeAlpha2 = "RE",
+    //    IsoCodeAlpha3 = "REU",
+    //    IsoCodeNumeric = "638",
+    //    IsIndependent = false
+    //};
+
+    //public static Country Romania { get; } = new()
+    //{
+    //    ShortName = "Romania",
+    //    FullName = "Romania",
+    //    IsoCodeAlpha2 = "RO",
+    //    IsoCodeAlpha3 = "ROU",
+    //    IsoCodeNumeric = "642",
+    //    IsIndependent = true
+    //};
+
+    //public static Country RussianFederation { get; } = new()
+    //{
+    //    ShortName = "Russian Federation",
+    //    FullName = "Russian Federation",
+    //    IsoCodeAlpha2 = "RU",
+    //    IsoCodeAlpha3 = "RUS",
+    //    IsoCodeNumeric = "643",
+    //    IsIndependent = true
+    //};
+
+    //public static Country Rwanda { get; } = new()
+    //{
+    //    ShortName = "Rwanda",
+    //    FullName = "Rwanda",
+    //    IsoCodeAlpha2 = "RW",
+    //    IsoCodeAlpha3 = "RWA",
+    //    IsoCodeNumeric = "646",
+    //    IsIndependent = true
+    //};
 }

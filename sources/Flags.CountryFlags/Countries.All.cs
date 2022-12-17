@@ -174,5 +174,63 @@ public static partial class Countries
         yield return SouthKorea;
         yield return Kuwait;
         yield return Kyrgyzstan;
+
+        // L
+
+        yield return Laos;
+        yield return Latvia;
+        yield return Lebanon;
+        yield return Lesotho;
+        yield return Liberia;
+        yield return Libya;
+        yield return Liechtenstein;
+        yield return Lithuania;
+        yield return Luxembourg;
+
+        // M
+
+        yield return Macao;
+        yield return Madagascar;
+        yield return Malawi;
+        yield return Malaysia;
+        yield return Maldives;
+        yield return Mali;
+        yield return Malta;
+        yield return MarshallIslands;
+        yield return Martinique;
+        yield return Mauritania;
+        yield return Mauritius;
+        yield return Mayotte;
+        yield return Mexico;
+        yield return Micronesia;
+        yield return Moldova;
+        yield return Monaco;
+        yield return Mongolia;
+        yield return Montenegro;
+        yield return Montserrat;
+        yield return Morocco;
+        yield return Mozambique;
+        yield return Myanmar;
+
+        // N
+
+        yield return Namibia;
+        yield return Nauru;
+        yield return Nepal;
+        yield return Netherlands;
+        yield return NewCaledonia;
+        yield return NewZealand;
+        yield return Nicaragua;
+        yield return Niger;
+        yield return Nigeria;
+        yield return Niue;
+        yield return NorfolkIsland;
+        yield return NorthMacedonia;
+        yield return NorthernMarianaIslands;
+        yield return Norway;
+
+        // O
+
+        yield return Oman;
     }
 }

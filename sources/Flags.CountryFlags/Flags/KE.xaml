@@ -22,32 +22,150 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Kenya -->
 
-    <Canvas x:Key="CountryFlag_KE" Width="10080" Height="5040">
+    <Canvas x:Key="CountryFlag_KE" Width="900" Height="600">
+
+        <!-- Background -->
 
         <Rectangle
-            Width="10080"
-            Height="5040"
+            Width="900"
+            Height="600"
             Canvas.Left="0"
             Canvas.Top="0"
             Fill="#ffffff" />
 
         <Rectangle
-            Width="10080"
-            Height="1680"
+            Width="900"
+            Height="180"
             Canvas.Left="0"
             Canvas.Top="0"
-            Fill="#000000" />
+            Fill="#000" />
 
         <Rectangle
-            Width="10080"
-            Height="1680"
+            Width="900"
+            Height="180"
             Canvas.Left="0"
-            Canvas.Top="3360"
-            Fill="#007a3d" />
+            Canvas.Top="210"
+            Fill="#b00" />
 
-        <Path
-            Fill="#ce1126"
-            Data="m5040 2520L0 5040V0m1557 2160-78 198-203-62 106 184-176 120 211 32-16 212 156-144 157 144-16-212 210-32-175-120 106-184-203 62z"/>
+        <Rectangle
+            Width="900"
+            Height="180"
+            Canvas.Left="0"
+            Canvas.Top="420"
+            Fill="#060" />
+
+        <!-- Center -->
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3.75" ScaleY="3.75" />
+                    <TranslateTransform X="450" Y="300" />
+                </TransformGroup>
+            </Canvas.RenderTransform>
+
+            <!-- Spear Bottom-Left Top-Right -->
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="30" />
+                </Canvas.RenderTransform>
+
+                <Path
+                    Fill="#000"
+                    Data="M-1,55.4256258422h2V-38C3,-40 3,-43 3,-46C3,-48 3,-56 0,-64.6632301492C-3,-56 -3,-48 -3,-46C-3,-43 -3,-40 -1,-38z"
+                    StrokeMiterLimit="10" />
+
+                <Path
+                    Fill="#fff"
+                    Data="M-1,55.4256258422h2V-38C3,-40 3,-43 3,-46C3,-48 3,-56 0,-64.6632301492C-3,-56 -3,-48 -3,-46C-3,-43 -3,-40 -1,-38z"
+                    StrokeMiterLimit="10" />
+
+            </Canvas>
+
+            <!-- Spear Bottom-Right Top-Left -->
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="30" />
+                        <ScaleTransform ScaleX="-1" ScaleY="1" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <Path
+                    Fill="#000"
+                    Data="M-1,55.4256258422h2V-38C3,-40 3,-43 3,-46C3,-48 3,-56 0,-64.6632301492C-3,-56 -3,-48 -3,-46C-3,-43 -3,-40 -1,-38z"
+                    StrokeMiterLimit="10" />
+
+                <Path
+                    Fill="#fff"
+                    Data="M-1,55.4256258422h2V-38C3,-40 3,-43 3,-46C3,-48 3,-56 0,-64.6632301492C-3,-56 -3,-48 -3,-46C-3,-43 -3,-40 -1,-38z"
+                    StrokeMiterLimit="10" />
+
+            </Canvas>
+
+            <!-- Shield -->
+
+            <Path
+                Data="M-19,24c3,8 13,24 19,24s16,-16 19,-24V-24c-3,-8 -13,-24 -19,-24s-16,16 -19,24z"
+                Fill="#b00" />
+
+            <Path
+                Data="M19,24c3,-8 5,-16 5,-24s-2,-16 -5,-24c-3,8 -5,16 -5,24s2,16 5,24z"
+                Fill="#000" />
+
+            <Path
+                Data="M19,24c3,-8 5,-16 5,-24s-2,-16 -5,-24c-3,8 -5,16 -5,24s2,16 5,24z"
+                Fill="#000">
+
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleX="-1" ScaleY="1" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Ellipse
+                Width="8"
+                Height="12"
+                Canvas.Left="-4"
+                Canvas.Top="-6"
+                Fill="#fff" />
+
+            <Path
+                Fill="#fff"
+                Data="M1,5.85c0,0 4,8 4,21s-4,21 -4,21z" />
+
+            <Path
+                Fill="#fff"
+                Data="M1,5.85c0,0 4,8 4,21s-4,21 -4,21z">
+
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleX="-1" ScaleY="1" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Fill="#fff"
+                Data="M1,5.85c0,0 4,8 4,21s-4,21 -4,21z">
+
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="-1" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Fill="#fff"
+                Data="M1,5.85c0,0 4,8 4,21s-4,21 -4,21z">
+
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1" />
+                </Path.RenderTransform>
+            </Path>
+
+        </Canvas>
 
     </Canvas>
 

@@ -26,6 +26,13 @@ public readonly struct FlagId
 
     public bool HasRepository => !string.IsNullOrWhiteSpace(RepositoryId);
 
+    public override string ToString()
+    {
+        return string.IsNullOrEmpty(RepositoryId)
+            ? Value
+            : RepositoryId + ":" + Value;
+    }
+
     public static implicit operator FlagId(string value)
     {
         int separatorIndex = value.IndexOf(":", StringComparison.Ordinal);

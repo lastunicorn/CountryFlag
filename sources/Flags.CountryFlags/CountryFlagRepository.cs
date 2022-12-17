@@ -15,6 +15,11 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
@@ -30,10 +35,13 @@ public class CountryFlagRepository : IFlagRepository
         if (id.HasRepository && id.RepositoryId != Id)
             return null;
 
+        bool resourceExists = CheckResourceExists(id);
+        if (!resourceExists)
+            return null;
+
         string idUpperCase = id.Value.ToUpper();
 
         Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{idUpperCase}.xaml");
-        string resourceName = "CountryFlag_" + idUpperCase;
 
         try
         {
@@ -42,11 +50,44 @@ public class CountryFlagRepository : IFlagRepository
                 Source = resourceUri
             };
 
-            return resourceDictionary[resourceName] as Canvas;
+            string resourceName = "CountryFlag_" + idUpperCase;
+
+            return resourceDictionary.Contains(resourceName)
+                ? resourceDictionary[resourceName] as Canvas
+                : null;
         }
-        catch
+        catch (Exception ex)
         {
             return null;
+        }
+    }
+
+    private static bool CheckResourceExists(FlagId id)
+    {
+        return GetResourcePaths(Assembly.GetExecutingAssembly())
+            .Where(x => x is string)
+            .Cast<string>()
+            .Any(x => x.Contains($"flags/{id.Value}", StringComparison.OrdinalIgnoreCase));
+    }
+
+    public static IEnumerable<object> GetResourcePaths(Assembly assembly)
+    {
+        CultureInfo culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+        string resourceName = assembly.GetName().Name + ".g";
+        ResourceManager resourceManager = new(resourceName, assembly);
+
+        try
+        {
+            ResourceSet? resourceSet = resourceManager.GetResourceSet(culture, true, true);
+
+            foreach (System.Collections.DictionaryEntry resource in resourceSet)
+            {
+                yield return resource.Key;
+            }
+        }
+        finally
+        {
+            resourceManager.ReleaseAllResources();
         }
     }
 }
