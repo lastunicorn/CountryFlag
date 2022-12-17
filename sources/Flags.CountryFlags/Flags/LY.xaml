@@ -1,0 +1,62 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Libya -->
+
+    <Canvas x:Key="CountryFlag_LY" Width="960" Height="480">
+
+        <Rectangle
+            Fill="#FF239E46"
+            Width="960"
+            Height="480" />
+       
+        <Rectangle
+            Fill="#FF000000"
+            Width="960"
+            Height="360" />
+      
+        <Rectangle
+            Fill="#FFE70013"
+            Width="960"
+            Height="120" />
+      
+        <Ellipse
+            Fill="#FFFFFFFF"
+            Width="120"
+            Height="120"
+            Canvas.Left="420"
+            Canvas.Top="180" />
+      
+        <Ellipse
+            Fill="#FF000000"
+            Width="104.26406860351562"
+            Height="104.26406860351562"
+            Canvas.Left="440"
+            Canvas.Top="187.8679656982422" />
+       
+        <Path
+            Data="F1 M509.175411,240L589.875233,213.779039 540,282.426407 540,197.573593 589.875233,266.220961z"
+            Fill="#FFFFFFFF" />
+
+    </Canvas>
+
+</ResourceDictionary>
