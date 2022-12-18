@@ -25,7 +25,7 @@ namespace DustInTheWind.Flags.Core;
 
 internal class AggregateFlagRepository : IFlagRepository, IEnumerable<IFlagRepository>
 {
-    private readonly ConcurrentBag<IFlagRepository> items = new();
+    private readonly ConcurrentBag<IFlagRepository> childRepositories = new();
 
     public string Id => string.Empty;
 
@@ -33,22 +33,25 @@ internal class AggregateFlagRepository : IFlagRepository, IEnumerable<IFlagRepos
     {
         if (flagRepository == null) throw new ArgumentNullException(nameof(flagRepository));
 
-        items.Add(flagRepository);
+        childRepositories.Add(flagRepository);
     }
 
-    public Canvas? Get(FlagId id)
+    public Canvas? Get(FlagId flagId)
     {
-        if (id.HasRepository)
-            return items.FirstOrDefault(x => x.Id == id.RepositoryId)?.Get(id);
+        if (flagId.HasRepository)
+        {
+            IFlagRepository? flagRepository = childRepositories.FirstOrDefault(x => x.Id == flagId.RepositoryId);
+            return flagRepository?.Get(flagId);
+        }
 
-        return items
-            .Select(x => x.Get(id))
+        return childRepositories
+            .Select(x => x.Get(flagId))
             .FirstOrDefault();
     }
 
     public IEnumerator<IFlagRepository> GetEnumerator()
     {
-        return items.GetEnumerator();
+        return childRepositories.GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()

@@ -16,6 +16,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace DustInTheWind.Flags.Core;
 
@@ -30,36 +32,51 @@ public static class FlagRepositories
         AddInternal(flagRepository);
     }
 
-    private static void AddInternal(IFlagRepository flagRepository)
-    {
-        if (Repository == null)
-        {
-            Repository = flagRepository;
-        }
-        else if (Repository is AggregateFlagRepository aggregateFlagRepository)
-        {
-            aggregateFlagRepository.Add(flagRepository);
-        }
-        else
-        {
-            Repository = new AggregateFlagRepository
-            {
-                Repository,
-                flagRepository
-            };
-        }
-    }
-
     public static void AddRange(IEnumerable<IFlagRepository?> flagRepositories)
     {
         if (flagRepositories == null) throw new ArgumentNullException(nameof(flagRepositories));
 
-        foreach (IFlagRepository? flagRepository in flagRepositories)
-        {
-            if (flagRepository == null)
-                continue;
+        IEnumerable<IFlagRepository> flagRepositoriesNotNull = flagRepositories
+            .Where(x => x != null)!;
 
+        foreach (IFlagRepository flagRepository in flagRepositoriesNotNull)
             AddInternal(flagRepository);
+    }
+
+    private static void AddInternal(IFlagRepository flagRepository)
+    {
+        switch (Repository)
+        {
+            case null:
+                Repository = flagRepository;
+                break;
+
+            case AggregateFlagRepository aggregateFlagRepository:
+                aggregateFlagRepository.Add(flagRepository);
+                break;
+
+            default:
+                Repository = new AggregateFlagRepository
+                {
+                    Repository,
+                    flagRepository
+                };
+                break;
+        }
+    }
+
+    public static void LoadFrom(params Assembly[] assemblies)
+    {
+        IEnumerable<Type> types = assemblies
+            .SelectMany(x => x.ExportedTypes)
+            .Where(x => typeof(IFlagRepository).IsAssignableFrom(x));
+
+        foreach (Type type in types)
+        {
+            object? instance = Activator.CreateInstance(type);
+
+            if (instance is IFlagRepository flagRepository)
+                AddInternal(flagRepository);
         }
     }
 }

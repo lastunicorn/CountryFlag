@@ -26,11 +26,16 @@ public readonly struct FlagId
 
     public bool HasRepository => !string.IsNullOrWhiteSpace(RepositoryId);
 
+    public bool MatchRepository(string repositoryId)
+    {
+        return !HasRepository || RepositoryId == repositoryId;
+    }
+
     public override string ToString()
     {
         return string.IsNullOrEmpty(RepositoryId)
             ? Value
-            : RepositoryId + ":" + Value;
+            : $"{RepositoryId}:{Value}";
     }
 
     public static implicit operator FlagId(string value)

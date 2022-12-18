@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -24,13 +24,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <UseWPF>true</UseWPF>
         <AssemblyName>DustInTheWind.Flags.Core</AssemblyName>
         <RootNamespace>DustInTheWind.Flags.Core</RootNamespace>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Authors>lastunicorn</Authors>
+        <Company>Dust in the Wind</Company>
+        <Description>WPF control for displaying flags. An additional package containing the actual flags' implementation is needed at runtime.</Description>
+        <Copyright>Dust in the Wind</Copyright>
+        <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/lastunicorn/CountryFlags</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>flag;country;country-flag</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
-      <Page Update="Themes\MissingFlag.xaml">
-        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-        <SubType>Designer</SubType>
-      </Page>
+        <None Include="..\icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Page Update="Themes\MissingFlag.xaml">
+            <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+            <SubType>Designer</SubType>
+        </Page>
     </ItemGroup>
 
 </Project>

@@ -36,6 +36,19 @@ public class Country
     /// ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest.
     /// </summary>
     public string IsoCodeNumeric { get; init; }
-    
+
     public bool IsIndependent { get; init; }
+
+    public bool IsMatch(string? id)
+    {
+        if (id == null)
+            return false;
+
+        return id.Length switch
+        {
+            2 => id == IsoCodeAlpha2,
+            3 => id == IsoCodeAlpha3 || id == IsoCodeNumeric,
+            _ => false
+        };
+    }
 }

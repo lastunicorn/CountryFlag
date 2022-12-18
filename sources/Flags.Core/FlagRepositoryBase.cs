@@ -14,29 +14,29 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Reflection;
-using System.Windows;
-using DustInTheWind.Flags.Core;
+using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo
+namespace DustInTheWind.Flags.Core;
+
+public abstract class FlagRepositoryBase : IFlagRepository
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public abstract string Id { get; }
+
+    public Canvas? Get(FlagId flagId)
     {
-        protected override void OnStartup(StartupEventArgs e)
+        bool flagIdMatchRepository = flagId.MatchRepository(Id);
+        if (!flagIdMatchRepository)
+            return null;
+
+        try
         {
-            Assembly countryFlagsAssembly = typeof(Countries).Assembly;
-            FlagRepositories.LoadFrom(countryFlagsAssembly);
-
-            MainViewModel mainViewModel = new();
-            MainWindow mainWindow = new(mainViewModel);
-            mainWindow.Show();
-
-            MainWindow = mainWindow;
-
-            base.OnStartup(e);
+            return GetInternal(flagId);
+        }
+        catch
+        {
+            return null;
         }
     }
+    
+    protected abstract Canvas? GetInternal(FlagId flagId);
 }

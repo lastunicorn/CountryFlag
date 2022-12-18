@@ -26,48 +26,42 @@ using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
-public class CountryFlagRepository : IFlagRepository
+public class CountryFlagRepository : FlagRepositoryBase
 {
-    public string Id => "countries";
+    public override string Id => "countries";
 
-    public Canvas? Get(FlagId id)
+    protected override Canvas? GetInternal(FlagId flagId)
     {
-        if (id.HasRepository && id.RepositoryId != Id)
+        Country? country = Countries.EnumerateAll()
+            .FirstOrDefault(x => x.IsMatch(flagId.Value));
+
+        if (country == null)
             return null;
 
-        bool resourceExists = CheckResourceExists(id);
+        bool resourceExists = Exists(country.IsoCodeAlpha2);
         if (!resourceExists)
             return null;
+        
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{country.IsoCodeAlpha2}.xaml");
 
-        string idUpperCase = id.Value.ToUpper();
-
-        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{idUpperCase}.xaml");
-
-        try
+        ResourceDictionary resourceDictionary = new()
         {
-            ResourceDictionary resourceDictionary = new()
-            {
-                Source = resourceUri
-            };
+            Source = resourceUri
+        };
 
-            string resourceName = "CountryFlag_" + idUpperCase;
+        string resourceName = "CountryFlag_" + country.IsoCodeAlpha2;
 
-            return resourceDictionary.Contains(resourceName)
-                ? resourceDictionary[resourceName] as Canvas
-                : null;
-        }
-        catch (Exception ex)
-        {
-            return null;
-        }
+        return resourceDictionary.Contains(resourceName)
+            ? resourceDictionary[resourceName] as Canvas
+            : null;
     }
 
-    private static bool CheckResourceExists(FlagId id)
+    private static bool Exists(string flagId)
     {
         return GetResourcePaths(Assembly.GetExecutingAssembly())
             .Where(x => x is string)
             .Cast<string>()
-            .Any(x => x.Contains($"flags/{id.Value}", StringComparison.OrdinalIgnoreCase));
+            .Any(x => x.Contains($"flags/{flagId}", StringComparison.OrdinalIgnoreCase));
     }
 
     public static IEnumerable<object> GetResourcePaths(Assembly assembly)
@@ -80,10 +74,11 @@ public class CountryFlagRepository : IFlagRepository
         {
             ResourceSet? resourceSet = resourceManager.GetResourceSet(culture, true, true);
 
+            if (resourceSet == null)
+                yield break;
+
             foreach (System.Collections.DictionaryEntry resource in resourceSet)
-            {
                 yield return resource.Key;
-            }
         }
         finally
         {

@@ -26,7 +26,7 @@ public class EmptyFlagRepository : IFlagRepository
 
     public static Canvas? MissingFlag => GetMissingFlagCanvas();
 
-    public Canvas? Get(FlagId id)
+    public Canvas? Get(FlagId flagId)
     {
         return GetMissingFlagCanvas();
     }

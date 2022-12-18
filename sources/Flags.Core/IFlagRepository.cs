@@ -22,5 +22,5 @@ public interface IFlagRepository
 {
     string Id { get; }
 
-    Canvas? Get(FlagId id);
+    Canvas? Get(FlagId flagId);
 }
