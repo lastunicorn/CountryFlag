@@ -14,32 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
-using System.Windows.Shapes;
-using Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml;
-
-internal static class SvgCircleExtensions
+public class SvgGroup : SvgElement
 {
-    public static Ellipse ToXaml(this SvgCircle svgCircle)
-    {
-        Ellipse ellipse = new()
-        {
-            Width = svgCircle.R * 2,
-            Height = svgCircle.R * 2
-        };
-
-        ellipse.UpdateFrom(svgCircle);
-
-        float left = svgCircle.Cx - svgCircle.R;
-        if (left != 0)
-            Canvas.SetLeft(ellipse, left);
-
-        float top = svgCircle.Cy - svgCircle.R;
-        if (top != 0)
-            Canvas.SetTop(ellipse, top);
-
-        return ellipse;
-    }
+    public List<SvgElement>? Children { get; set; }
 }

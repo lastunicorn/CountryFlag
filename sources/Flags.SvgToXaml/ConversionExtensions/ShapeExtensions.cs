@@ -14,30 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
+using System;
+using System.Windows.Media;
 using System.Windows.Shapes;
-using Flags.SvgToXaml.SvgModel;
+using DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
-internal static class SvgRectExtensions
+internal static class ShapeExtensions
 {
-    public static Rectangle ToXaml(this SvgRect svgRect)
+    public static void UpdateFrom(this Shape shape, SvgElement svgElement, SvgGroup? parent = null)
     {
-        Rectangle rectangle = new()
-        {
-            Width = svgRect.Width,
-            Height = svgRect.Height
-        };
+        if (svgElement.Fill != null && string.Compare(svgElement.Fill, "none", StringComparison.OrdinalIgnoreCase) != 0)
+            shape.Fill = (Brush)new BrushConverter().ConvertFrom(svgElement.Fill)!;
 
-        rectangle.UpdateFrom(svgRect);
-
-        if (svgRect.X != 0)
-            Canvas.SetLeft(rectangle, svgRect.X);
-
-        if (svgRect.Y != 0)
-            Canvas.SetTop(rectangle, svgRect.Y);
-
-        return rectangle;
+        if (svgElement.Stroke != null && string.Compare(svgElement.Stroke, "none", StringComparison.OrdinalIgnoreCase) != 0)
+            shape.Stroke = (Brush)new BrushConverter().ConvertFrom(svgElement.Stroke)!;
     }
 }

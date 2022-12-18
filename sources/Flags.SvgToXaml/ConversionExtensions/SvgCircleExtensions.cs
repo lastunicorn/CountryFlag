@@ -16,27 +16,27 @@
 
 using System.Windows.Controls;
 using System.Windows.Shapes;
-using Flags.SvgToXaml.SvgModel;
+using DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
-internal static class SvgEllipseExtensions
+internal static class SvgCircleExtensions
 {
-    public static Ellipse ToXaml(this SvgEllipse svgEllipse)
+    public static Ellipse ToXaml(this SvgCircle svgCircle)
     {
         Ellipse ellipse = new()
         {
-            Width = svgEllipse.Rx * 2,
-            Height = svgEllipse.Ry * 2
+            Width = svgCircle.Radius * 2,
+            Height = svgCircle.Radius * 2
         };
 
-        ellipse.UpdateFrom(svgEllipse);
+        ellipse.UpdateFrom(svgCircle);
 
-        float left = svgEllipse.Cx - svgEllipse.Rx;
+        float left = svgCircle.CenterX - svgCircle.Radius;
         if (left != 0)
             Canvas.SetLeft(ellipse, left);
 
-        float top = svgEllipse.Cy - svgEllipse.Ry;
+        float top = svgCircle.CenterY - svgCircle.Radius;
         if (top != 0)
             Canvas.SetTop(ellipse, top);
 

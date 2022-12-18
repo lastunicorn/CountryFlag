@@ -14,21 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Windows.Media;
-using System.Windows.Shapes;
-using Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml;
-
-internal static class ShapeExtensions
+public class Svg : SvgGroup
 {
-    public static void UpdateFrom(this Shape shape, SvgElement svgElement)
-    {
-        if (svgElement.Fill != null && string.Compare(svgElement.Fill, "none", StringComparison.OrdinalIgnoreCase) != 0)
-            shape.Fill = (Brush)new BrushConverter().ConvertFrom(svgElement.Fill)!;
+    public int Width { get; set; }
 
-        if (svgElement.Stroke != null && string.Compare(svgElement.Stroke, "none", StringComparison.OrdinalIgnoreCase) != 0)
-            shape.Stroke = (Brush)new BrushConverter().ConvertFrom(svgElement.Stroke)!;
-    }
+    public int Height { get; set; }
 }

@@ -14,19 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Text;
-using System.Xml.Serialization;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-namespace Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
 
-public class SvgCircle : SvgElement
+internal static class EllipseExtensions
 {
-    [XmlAttribute("r")]
-    public float R { get; set; }
-
-    [XmlAttribute("cx")]
-    public float Cx { get; set; }
-
-    [XmlAttribute("cy")]
-    public float Cy { get; set; }
+    public static SvgEllipse ToEntity(this Ellipse serializableEllipse, SvgGroup? parent = null)
+    {
+        return new SvgEllipse
+        {
+            RadiusX = serializableEllipse.Rx,
+            RadiusY = serializableEllipse.Ry,
+            CenterX = serializableEllipse.Cx,
+            CenterY = serializableEllipse.Cy,
+            Fill = serializableEllipse.Fill,
+            Stroke = serializableEllipse.Stroke,
+            Parent = parent
+        };
+    }
 }

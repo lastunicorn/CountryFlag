@@ -79,6 +79,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>
         </Page>
+        <Page Update="Flags\LT.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\MO.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\LU.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\LI.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>

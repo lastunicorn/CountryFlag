@@ -15,20 +15,32 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Xml.Serialization;
+using DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
 
-namespace Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class SvgRect : SvgElement
+public class SvgDocument
 {
-    [XmlAttribute("width")]
-    public float Width { get; set; }
+    public Svg? Svg { get; set; }
 
-    [XmlAttribute("height")]
-    public float Height { get; set; }
+    public static SvgDocument Parse(string svg)
+    {
+        StringReader sr = new(svg);
 
-    [XmlAttribute("x")]
-    public float X { get; set; }
+        XmlSerializer xmlSerializer = new(typeof(Serialization.Svg));
 
-    [XmlAttribute("y")]
-    public float Y { get; set; }
+        object? deserializedObject = xmlSerializer.Deserialize(sr);
+
+        if (deserializedObject is Serialization.Svg svgObject)
+        {
+            Svg? entity = svgObject.ToEntity();
+
+            return new SvgDocument
+            {
+                Svg = entity
+            };
+        }
+
+        throw new ArgumentException("The value is not a valid svg document.", nameof(svg));
+    }
 }

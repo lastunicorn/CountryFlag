@@ -16,11 +16,9 @@
 
 using System.IO;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using System.Xml;
-using System.Xml.Serialization;
-using Flags.SvgToXaml.SvgModel;
-using Path = System.Windows.Shapes.Path;
+using DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
+using DustInTheWind.Flags.SvgToXaml.Svg;
 
 namespace Flags.SvgToXaml;
 
@@ -59,43 +57,51 @@ public class MainViewModel : ViewModelBase
             return;
         }
 
-        StringReader sr = new(svgText);
+        SvgDocument svgDocument = SvgDocument.Parse(svgText);
+        Canvas? canvas = svgDocument.Svg.ToXaml();
 
-        XmlSerializer xmlSerializer = new(typeof(Svg));
+        //Canvas canvas = new();
 
-        Svg? svg = (Svg?)xmlSerializer.Deserialize(sr);
-
-        Canvas canvas = new();
-
-        foreach (object svgElement in svg.Elements)
-        {
-            if (svgElement is SvgCircle svgCircle)
-            {
-                Ellipse ellipse = svgCircle.ToXaml();
-                canvas.Children.Add(ellipse);
-            }
-            else if (svgElement is SvgEllipse svgEllipse)
-            {
-                Ellipse ellipse = svgEllipse.ToXaml();
-                canvas.Children.Add(ellipse);
-            }
-            else if (svgElement is SvgPath svgPath)
-            {
-                Path xamlPath = svgPath.ToXaml();
-                canvas.Children.Add(xamlPath);
-            }
-            else if (svgElement is SvgRect svgRect)
-            {
-                Rectangle xamlRectangle = svgRect.ToXaml();
-                canvas.Children.Add(xamlRectangle);
-            }
-        }
+        //if (svg?.Children != null)
+        //{
+        //    foreach (object svgElement in svg.Children)
+        //    {
+        //        if (svgElement is SvgCircle svgCircle)
+        //        {
+        //            Ellipse ellipse = svgCircle.ToXaml();
+        //            canvas.Children.Add(ellipse);
+        //        }
+        //        else if (svgElement is SvgEllipse svgEllipse)
+        //        {
+        //            Ellipse ellipse = svgEllipse.ToXaml();
+        //            canvas.Children.Add(ellipse);
+        //        }
+        //        else if (svgElement is SvgPath svgPath)
+        //        {
+        //            Path xamlPath = svgPath.ToXaml();
+        //            canvas.Children.Add(xamlPath);
+        //        }
+        //        else if (svgElement is SvgRect svgRect)
+        //        {
+        //            Rectangle xamlRectangle = svgRect.ToXaml();
+        //            canvas.Children.Add(xamlRectangle);
+        //        }
+        //        else if(svgElement is SvgG svgG)
+        //        {
+        //            Canvas xamlCanvas = svgG.ToXaml();
+        //            canvas.Children.Add(xamlCanvas);
+        //        }
+        //    }
+        //}
 
         XamlText = Serialize(canvas);
     }
 
-    private static string Serialize(Canvas canvas)
+    private static string Serialize(Canvas? canvas)
     {
+        if (canvas == null)
+            return string.Empty;
+
         using MemoryStream ms = new();
         XmlWriterSettings xmlWriterSettings = new()
         {

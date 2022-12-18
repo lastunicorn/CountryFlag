@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 Country Flags
 Copyright (C) 2022 Dust in the Wind
 
@@ -19,20 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.Flags.SvgToXaml</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.SvgToXaml</RootNamespace>
+        <AssemblyName>DustInTheWind.Flags.SvgToXaml.Svg.Serialization</AssemblyName>
+        <RootNamespace>DustInTheWind.Flags.SvgToXaml.Svg.Serialization</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <Folder Include="SvgModel\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj" />
-    </ItemGroup>
 
 </Project>

@@ -16,23 +16,25 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<Project Sdk="Microsoft.NET.Sdk">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.Flags.SvgToXaml</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.SvgToXaml</RootNamespace>
-    </PropertyGroup>
+    <!-- Macau (Macao) -->
 
-    <ItemGroup>
-      <Folder Include="SvgModel\" />
-    </ItemGroup>
+    <Canvas x:Key="CountryFlag_MO" Width="2880" Height="1920">
 
-    <ItemGroup>
-      <ProjectReference Include="..\Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj" />
-    </ItemGroup>
+        <Canvas.RenderTransform>
+            <TranslateTransform X="1440" Y="960" />
+        </Canvas.RenderTransform>
 
-</Project>
+        <Rectangle
+            Width="2880"
+            Height="1920"
+            Canvas.Left="-1440"
+            Canvas.Top="-960"
+            Fill="#0f7562" />
+
+    </Canvas>
+
+</ResourceDictionary>

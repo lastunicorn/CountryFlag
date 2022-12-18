@@ -14,23 +14,16 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
-using System.Windows.Shapes;
-using Flags.SvgToXaml.SvgModel;
+using System.Xml.Serialization;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-internal static class SvgPathExtensions
+public class G : SvgElement
 {
-    public static Path ToXaml(this SvgPath svgPath)
-    {
-        Path path = new()
-        {
-            Data = Geometry.Parse(svgPath.D)
-        };
-
-        path.UpdateFrom(svgPath);
-
-        return path;
-    }
+    [XmlElement("circle", typeof(Circle))]
+    [XmlElement("ellipse", typeof(Ellipse))]
+    [XmlElement("path", typeof(Path))]
+    [XmlElement("rect", typeof(Rect))]
+    [XmlElement("g", typeof(G))]
+    public object[]? Children { get; set; }
 }

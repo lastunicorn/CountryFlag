@@ -14,12 +14,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
 
-namespace Flags.SvgToXaml.SvgModel;
-
-public class SvgPath : SvgElement
+internal static class PathExtensions
 {
-    [XmlAttribute("d")]
-    public string D { get; set; }
+    public static SvgPath ToEntity(this Serialization.Path serializablePath, SvgGroup? parent = null)
+    {
+        return new SvgPath
+        {
+            Data = serializablePath.D,
+            Fill = serializablePath.Fill,
+            Stroke = serializablePath.Stroke,
+            Parent = parent
+        };
+    }
 }

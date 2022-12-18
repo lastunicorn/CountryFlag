@@ -14,15 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+using System.Windows.Controls;
+using System.Windows.Shapes;
+using DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
-public class SvgElement
+internal static class SvgRectExtensions
 {
-    [XmlAttribute("fill")]
-    public string? Fill { get; set; }
-    
-    [XmlAttribute("stroke")]
-    public string? Stroke { get; set; }
+    public static Rectangle ToXaml(this SvgRectangle svgRect)
+    {
+        Rectangle rectangle = new()
+        {
+            Width = svgRect.Width,
+            Height = svgRect.Height
+        };
+
+        rectangle.UpdateFrom(svgRect);
+
+        if (svgRect.X != 0)
+            Canvas.SetLeft(rectangle, svgRect.X);
+
+        if (svgRect.Y != 0)
+            Canvas.SetTop(rectangle, svgRect.Y);
+
+        return rectangle;
+    }
 }

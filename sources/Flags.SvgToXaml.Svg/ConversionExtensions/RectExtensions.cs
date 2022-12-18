@@ -14,22 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Text;
-using System.Xml.Serialization;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-namespace Flags.SvgToXaml.SvgModel;
+namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
 
-public class SvgEllipse : SvgElement
+internal static class RectExtensions
 {
-    [XmlAttribute("rx")]
-    public float Rx { get; set; }
-
-    [XmlAttribute("ry")]
-    public float Ry { get; set; }
-
-    [XmlAttribute("cx")]
-    public float Cx { get; set; }
-
-    [XmlAttribute("cy")]
-    public float Cy { get; set; }
+    public static SvgRectangle ToEntity(this Rect serializableRect, SvgGroup? parent = null)
+    {
+        return new SvgRectangle
+        {
+            Width = serializableRect.Width,
+            Height = serializableRect.Height,
+            X = serializableRect.X,
+            Y = serializableRect.Y,
+            Fill = serializableRect.Fill,
+            Stroke = serializableRect.Stroke,
+            Parent = parent
+        };
+    }
 }
