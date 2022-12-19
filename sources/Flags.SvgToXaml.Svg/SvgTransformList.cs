@@ -50,7 +50,7 @@ public class SvgTransformList : Collection<ISvgTransform>
         }
     }
 
-    private IEnumerable<KeyValuePair<string, string>> Parse(string text)
+    private static IEnumerable<KeyValuePair<string, string>> Parse(string text)
     {
         ParseState parseState = ParseState.ExpectName;
 
@@ -159,6 +159,7 @@ public class SvgTransformList : Collection<ISvgTransform>
                     else
                     {
                         startIndex = i;
+                        parseState = ParseState.Value;
                     }
 
                     break;

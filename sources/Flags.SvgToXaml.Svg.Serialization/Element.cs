@@ -41,4 +41,10 @@ public class Element
     public double StrokeDashOffset { get; set; }
     
     public bool StrokeDashOffsetSpecified { get; set; }
+
+    [XmlAttribute("style")]
+    public string? Style { get; set; }
+
+    [XmlAttribute("transform")]
+    public string? Transform { get; set; }
 }

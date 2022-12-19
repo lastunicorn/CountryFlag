@@ -14,28 +14,37 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.Globalization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class SvgScaleTransform : ISvgTransform
+public class SvgViewBox
 {
-    public double? CenterX { get; set; }
+    public Size? OriginX { get; set; }
 
-    public double? CenterY { get; set; }
+    public Size? OriginY { get; set; }
 
-    public double? ScaleX { get; set; }
+    public Size? Width { get; set; }
 
-    public double? ScaleY { get; set; }
+    public Size? Height { get; set; }
 
-    public SvgScaleTransform(string? text)
+    public static SvgViewBox? Parse(string? text)
     {
         if (text == null)
-            return;
+            return null;
 
-        double scaleValue = double.Parse(text, CultureInfo.InvariantCulture);
+        string[] parts = text.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
-        ScaleX = scaleValue;
-        ScaleY = scaleValue;
+        if (parts.Length != 4)
+            return null;
+
+        return new SvgViewBox
+        {
+            OriginX = double.Parse(parts[0], CultureInfo.InvariantCulture),
+            OriginY = double.Parse(parts[1], CultureInfo.InvariantCulture),
+            Width = double.Parse(parts[2], CultureInfo.InvariantCulture),
+            Height = double.Parse(parts[3], CultureInfo.InvariantCulture)
+        };
     }
 }

@@ -21,8 +21,6 @@ namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgGroup : SvgElement
 {
-    public SvgTransformList Transforms { get; set; }
-
     public SvgElementCollection<SvgElement> Children { get; }
 
     public SvgGroup()
@@ -34,11 +32,6 @@ public class SvgGroup : SvgElement
         : base(g)
     {
         if (g == null) throw new ArgumentNullException(nameof(g));
-
-        Transforms = new SvgTransformList();
-
-        if (g.Transform != null)
-            Transforms.ParseAndAdd(g.Transform);
 
         Children = new SvgElementCollection<SvgElement>(this);
 

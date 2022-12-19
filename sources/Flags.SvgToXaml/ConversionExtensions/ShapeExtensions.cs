@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.Flags.SvgToXaml.Svg;
@@ -25,25 +26,37 @@ internal static class ShapeExtensions
 {
     public static void UpdateFrom(this Shape shape, SvgElement svgElement)
     {
-        if (svgElement.Fill == null)
+        string? fill = svgElement.CalculateFill();
+
+        if (fill == null)
         {
             shape.Fill = Brushes.Black;
         }
         else
         {
-            if (string.Compare(svgElement.Fill, "none", StringComparison.OrdinalIgnoreCase) != 0)
-                shape.Fill = (Brush)new BrushConverter().ConvertFrom(svgElement.Fill)!;
+            bool isNone = string.Compare(fill, "none", StringComparison.OrdinalIgnoreCase) == 0;
+
+            if (!isNone)
+                shape.Fill = (Brush)new BrushConverter().ConvertFrom(fill)!;
         }
 
-        if (svgElement.Stroke != null && string.Compare(svgElement.Stroke, "none", StringComparison.OrdinalIgnoreCase) != 0)
-            shape.Stroke = (Brush)new BrushConverter().ConvertFrom(svgElement.Stroke)!;
-
-        if (svgElement.StrokeWidth != null)
-            shape.StrokeThickness = svgElement.StrokeWidth.Value;
-
-        if (svgElement.StrokeLineCap != null)
+        string? stroke = svgElement.CalculateStroke();
+        if (stroke != null)
         {
-            shape.StrokeStartLineCap = svgElement.StrokeLineCap switch
+            bool isNone = string.Compare(stroke, "none", StringComparison.OrdinalIgnoreCase) == 0;
+
+            if (!isNone)
+                shape.Stroke = (Brush)new BrushConverter().ConvertFrom(stroke)!;
+        }
+
+        double? strokeWidth = svgElement.CalculateStrokeWidth();
+        if (strokeWidth != null)
+            shape.StrokeThickness = strokeWidth.Value;
+
+        StrokeLineCap? strokeLineCap = svgElement.CalculateStrokeLineCap();
+        if (strokeLineCap != null)
+        {
+            PenLineCap penLineCap = strokeLineCap switch
             {
                 StrokeLineCap.Flat => PenLineCap.Flat,
                 StrokeLineCap.Square => PenLineCap.Square,
@@ -52,19 +65,14 @@ internal static class ShapeExtensions
                 _ => throw new ArgumentOutOfRangeException()
             };
 
-            shape.StrokeEndLineCap = svgElement.StrokeLineCap switch
-            {
-                StrokeLineCap.Flat => PenLineCap.Flat,
-                StrokeLineCap.Square => PenLineCap.Square,
-                StrokeLineCap.Round => PenLineCap.Round,
-                StrokeLineCap.Triangle => PenLineCap.Triangle,
-                _ => throw new ArgumentOutOfRangeException()
-            };
+            shape.StrokeStartLineCap = penLineCap;
+            shape.StrokeEndLineCap = penLineCap;
         }
 
-        if (svgElement.StrokeLineJoin != null)
+        StrokeLineJoin? strokeLineJoin = svgElement.CalculateStrokeLineJoin();
+        if (strokeLineJoin != null)
         {
-            shape.StrokeLineJoin = svgElement.StrokeLineJoin switch
+            shape.StrokeLineJoin = strokeLineJoin switch
             {
                 StrokeLineJoin.Miter => PenLineJoin.Miter,
                 StrokeLineJoin.Bevel => PenLineJoin.Bevel,
@@ -73,7 +81,11 @@ internal static class ShapeExtensions
             };
         }
 
-        if (svgElement.StrokeDashOffset != null)
-            shape.StrokeDashOffset = svgElement.StrokeDashOffset.Value;
+        double? strokeDashOffset = svgElement.CalculateStrokeDashOffset();
+        if (strokeDashOffset != null)
+            shape.StrokeDashOffset = strokeDashOffset.Value;
+        
+        if (svgElement.Transforms.Count > 0)
+            shape.RenderTransform = svgElement.Transforms.ToXaml();
     }
 }

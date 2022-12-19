@@ -1,0 +1,48 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Mauritania -->
+
+    <Canvas x:Key="CountryFlag_MR" Width="3000" Height="2000">
+
+        <Rectangle
+            Width="3000"
+            Height="2000"
+            Fill="#FFD01C1F" />
+
+        <Rectangle
+            Width="3000"
+            Height="1200"
+            Canvas.Top="400"
+            Fill="#FF00A95C" />
+
+        <Path
+            Data="M1299,744L1452,744 1500,600 1548,744 1701,744 1575,836 1626,982 1500,892 1374,982 1425,836z"
+            Fill="#FFFFD700" />
+
+        <Path
+            Data="M750,670A760.092776,628,0,0,0,2250,670A750,730,0,0,1,750,670z"
+            Fill="#FFFFD700" />
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -20,9 +20,6 @@ namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
 public class G : Element
 {
-    [XmlAttribute("transform")]
-    public string? Transform { get; set; }
-
     [XmlElement("circle", typeof(Circle))]
     [XmlElement("ellipse", typeof(Ellipse))]
     [XmlElement("path", typeof(Path))]

@@ -30,19 +30,19 @@ internal static class SvgTransformExtensions
                 return svgTransformList[0].ToXaml();
 
             case > 1:
-            {
-                TransformGroup transformGroup = new();
-
-                for (int i = svgTransformList.Count - 1; i >= 0; i--)
                 {
-                    ISvgTransform svgTransform = svgTransformList[i];
-                    
-                    Transform transform = svgTransform.ToXaml();
-                    transformGroup.Children.Add(transform);
-                }
+                    TransformGroup transformGroup = new();
 
-                return transformGroup;
-            }
+                    for (int i = svgTransformList.Count - 1; i >= 0; i--)
+                    {
+                        ISvgTransform svgTransform = svgTransformList[i];
+
+                        Transform transform = svgTransform.ToXaml();
+                        transformGroup.Children.Add(transform);
+                    }
+
+                    return transformGroup;
+                }
 
             default:
                 return null;
@@ -61,13 +61,21 @@ internal static class SvgTransformExtensions
                 };
 
             case SvgScaleTransform svgScaleTransform:
-                return new ScaleTransform
-                {
-                    CenterX = svgScaleTransform.CenterX,
-                    CenterY = svgScaleTransform.CenterY,
-                    ScaleX = svgScaleTransform.ScaleX,
-                    ScaleY = svgScaleTransform.ScaleY
-                };
+                ScaleTransform? xaml = new();
+
+                if (svgScaleTransform.CenterX != null)
+                    xaml.CenterX = svgScaleTransform.CenterX.Value;
+
+                if (svgScaleTransform.CenterY != null)
+                    xaml.CenterY = svgScaleTransform.CenterY.Value;
+
+                if (svgScaleTransform.ScaleX != null)
+                    xaml.ScaleX = svgScaleTransform.ScaleX.Value;
+
+                if (svgScaleTransform.ScaleY != null)
+                    xaml.ScaleY = svgScaleTransform.ScaleY.Value;
+
+                return xaml;
 
             case SvgRotateTransform svgRotateTransform:
                 return new RotateTransform

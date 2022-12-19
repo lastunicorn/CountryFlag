@@ -1,0 +1,50 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Marshall Islands -->
+
+    <Canvas x:Key="CountryFlag_MH" Width="475" Height="250">
+
+        <Path
+            Data="M0,0L475,0 475,250 0,250z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="M0,242L0,0 475,0 475,53z"
+            Fill="#FFDD7500" />
+
+        <Path
+            Data="M0,238L0,0 475,0 475,4z M0,246L0,250 475,250 475,102z"
+            Fill="#FF003893" />
+
+        <Path
+            Data="M9128,1378L9448,6699 10564,3767 10065,6864 11903,4321 10619,7184 13052,5203 11072,7636 13934,6353 11391,8190 14489,7691 11557,8808 16878,9128 11557,9448 14489,10564 11391,10065 13934,11903 11072,10619 13052,13052 10619,11072 11903,13934 10065,11391 10564,14489 9448,11557 9128,16878 8808,11557 7691,14489 8190,11391 6353,13934 7636,11072 5203,13052 7184,10619 4321,11903 6864,10065 3767,10564 6699,9448 1378,9128 6699,8808 3767,7691 6864,8190 4321,6353 7184,7636 5203,5203 7636,7184 6353,4321 8190,6864 7691,3767 8808,6699z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <ScaleTransform ScaleX="0.01" ScaleY="0.01" />
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>

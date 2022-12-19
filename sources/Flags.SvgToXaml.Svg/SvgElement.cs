@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Globalization;
 using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
@@ -35,6 +36,10 @@ public class SvgElement
 
     public double? StrokeDashOffset { get; set; }
 
+    public SvgStyle? Style { get; set; }
+
+    public SvgTransformList Transforms { get; set; }
+
     public SvgElement()
     {
     }
@@ -44,18 +49,111 @@ public class SvgElement
         if (element == null) throw new ArgumentNullException(nameof(element));
 
         Fill = element.Fill;
+
         Stroke = element.Stroke;
+
         StrokeWidth = element.StrokeWidthSpecified
             ? element.StrokeWidth
             : null;
+
         StrokeLineJoin = element.StrokeLineJoin == null
             ? null
             : (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), element.StrokeLineJoin, true);
+
         StrokeLineCap = element.StrokeLineCap == null
             ? null
             : (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), element.StrokeLineCap, true);
+
         StrokeDashOffset = element.StrokeDashOffsetSpecified
             ? element.StrokeDashOffset
             : null;
+
+        Style = element.Style;
+
+        Transforms = new SvgTransformList();
+
+        if (element.Transform != null)
+            Transforms.ParseAndAdd(element.Transform);
+
+    }
+
+    public string? CalculateFill()
+    {
+        string? value = Fill;
+
+        if (value != null)
+            return value;
+
+        SvgStyleItem? styleItem = Style?["fill"];
+
+        if (styleItem != null)
+            return styleItem.Value;
+
+        return Parent?.CalculateFill();
+    }
+
+    public string? CalculateStroke()
+    {
+        string? value = Stroke;
+
+        if (value != null)
+            return value;
+
+        SvgStyleItem? styleItem = Style?["stroke"];
+
+        if (styleItem != null)
+            return styleItem.Value;
+
+        return Parent?.CalculateStroke();
+    }
+
+    public double? CalculateStrokeWidth()
+    {
+        double? value = StrokeWidth;
+
+        if (value != null)
+            return value;
+
+        SvgStyleItem? styleItem = Style?["stroke-width"];
+
+        if (styleItem != null)
+            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+
+        return Parent?.CalculateStrokeWidth();
+    }
+
+    public StrokeLineCap? CalculateStrokeLineCap()
+    {
+        StrokeLineCap? value = StrokeLineCap;
+
+        if (value != null)
+            return value;
+
+        SvgStyleItem? styleItem = Style?["stroke-linecap"];
+
+        if (styleItem != null)
+            return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), styleItem.Value, true);
+
+        return Parent?.CalculateStrokeLineCap();
+    }
+
+    public StrokeLineJoin? CalculateStrokeLineJoin()
+    {
+        StrokeLineJoin? value = StrokeLineJoin;
+
+        if (value != null)
+            return value;
+        
+        return Parent?.CalculateStrokeLineJoin();
+    }
+
+    public double? CalculateStrokeDashOffset()
+    {
+        double? value = StrokeDashOffset;
+
+        if (value != null)
+            return value;
+
+        return Parent?.CalculateStrokeDashOffset();
     }
 }
