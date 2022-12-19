@@ -14,23 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
-
-internal static class EllipseExtensions
+public class SvgRotateTransform : ISvgTransform
 {
-    public static SvgEllipse ToEntity(this Ellipse serializableEllipse, SvgGroup? parent = null)
+    public double Angle { get; set; }
+
+    public double CenterX { get; set; }
+
+    public double CenterY { get; set; }
+
+    public SvgRotateTransform(string text)
     {
-        return new SvgEllipse
-        {
-            RadiusX = serializableEllipse.Rx,
-            RadiusY = serializableEllipse.Ry,
-            CenterX = serializableEllipse.Cx,
-            CenterY = serializableEllipse.Cy,
-            Fill = serializableEllipse.Fill,
-            Stroke = serializableEllipse.Stroke,
-            Parent = parent
-        };
     }
 }

@@ -14,18 +14,31 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
+using System.Xml.Serialization;
 
-internal static class PathExtensions
+namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+
+public class Element
 {
-    public static SvgPath ToEntity(this Serialization.Path serializablePath, SvgGroup? parent = null)
-    {
-        return new SvgPath
-        {
-            Data = serializablePath.D,
-            Fill = serializablePath.Fill,
-            Stroke = serializablePath.Stroke,
-            Parent = parent
-        };
-    }
+    [XmlAttribute("fill")]
+    public string? Fill { get; set; }
+
+    [XmlAttribute("stroke")]
+    public string? Stroke { get; set; }
+
+    [XmlAttribute("stroke-width")]
+    public double StrokeWidth { get; set; }
+    
+    public bool StrokeWidthSpecified { get; set; }
+
+    [XmlAttribute("stroke-linecap")]
+    public string? StrokeLineCap { get; set; }
+
+    [XmlAttribute("stroke-linejoin")]
+    public string? StrokeLineJoin { get; set; }
+
+    [XmlAttribute("stroke-dashoffset")]
+    public double StrokeDashOffset { get; set; }
+    
+    public bool StrokeDashOffsetSpecified { get; set; }
 }

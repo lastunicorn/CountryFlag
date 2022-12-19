@@ -14,23 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
-
-internal static class RectExtensions
+public class SvgScaleTransform : ISvgTransform
 {
-    public static SvgRectangle ToEntity(this Rect serializableRect, SvgGroup? parent = null)
+    public double CenterX { get; set; }
+
+    public double CenterY { get; set; }
+
+    public double ScaleX { get; set; }
+
+    public double ScaleY { get; set; }
+
+    public SvgScaleTransform(string text)
     {
-        return new SvgRectangle
-        {
-            Width = serializableRect.Width,
-            Height = serializableRect.Height,
-            X = serializableRect.X,
-            Y = serializableRect.Y,
-            Fill = serializableRect.Fill,
-            Stroke = serializableRect.Stroke,
-            Parent = parent
-        };
     }
 }

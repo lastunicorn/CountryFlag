@@ -14,26 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class Svg : SvgGroup
+public enum StrokeLineCap
 {
-    public double Width { get; set; }
-
-    public double Height { get; set; }
-
-    public Svg()
-    {
-    }
-
-    internal Svg(Serialization.Svg svg)
-        : base(svg)
-    {
-        if (svg == null) throw new ArgumentNullException(nameof(svg));
-
-        Width = svg.Width;
-        Height = svg.Height;
-    }
+    Flat,
+    Square,
+    Round,
+    Triangle
 }

@@ -18,7 +18,7 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-public class Path : SvgElement
+public class Path : Element
 {
     [XmlAttribute("d")]
     public string D { get; set; }

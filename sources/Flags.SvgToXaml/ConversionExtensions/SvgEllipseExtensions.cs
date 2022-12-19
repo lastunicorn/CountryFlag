@@ -32,11 +32,11 @@ internal static class SvgEllipseExtensions
 
         ellipse.UpdateFrom(svgEllipse);
 
-        float left = svgEllipse.CenterX - svgEllipse.RadiusX;
+        double left = svgEllipse.CenterX - svgEllipse.RadiusX;
         if (left != 0)
             Canvas.SetLeft(ellipse, left);
 
-        float top = svgEllipse.CenterY - svgEllipse.RadiusY;
+        double top = svgEllipse.CenterY - svgEllipse.RadiusY;
         if (top != 0)
             Canvas.SetTop(ellipse, top);
 

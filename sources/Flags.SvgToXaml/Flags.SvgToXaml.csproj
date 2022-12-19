@@ -28,10 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="SvgModel\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj" />
     </ItemGroup>
 

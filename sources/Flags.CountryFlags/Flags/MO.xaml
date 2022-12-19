@@ -28,12 +28,364 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <TranslateTransform X="1440" Y="960" />
         </Canvas.RenderTransform>
 
+        <!-- Background -->
+
         <Rectangle
             Width="2880"
             Height="1920"
             Canvas.Left="-1440"
             Canvas.Top="-960"
             Fill="#0f7562" />
+
+        <!-- Middle Peak -->
+
+        <Canvas Clip="M-224 0h448v400h-448z">
+
+            <Ellipse
+                Fill="#fff"
+                Width="649"
+                Height="649"
+                Canvas.Left="-533.5"
+                Canvas.Top="-331.5" />
+
+            <Ellipse
+                Fill="#fff"
+                Width="649"
+                Height="649"
+                Canvas.Left="-115.5"
+                Canvas.Top="-331.5" />
+
+        </Canvas>
+
+        <Ellipse
+            Fill="#FF0F7562"
+            Width="649"
+            Height="649"
+            Canvas.Left="-100.5"
+            Canvas.Top="-363.5" />
+
+        <Ellipse
+            Fill="#FF0F7562"
+            Width="649"
+            Height="649"
+            Canvas.Left="-548.5"
+            Canvas.Top="-363.5" />
+
+        <!-- Water Waves -->
+
+        <Path
+            Fill="#fff"
+            Data="M-500,285.5L-209,285.5 -209,317.5 -500,317.5z M-500,350.5L500,350.5 500,366.5 -500,366.5z M-500,399.5L500,399.5 500,424.5 -500,424.5z M-500,449.5L500,449.5 500,481.5 -500,481.5z M-500,497.5L500,497.5 500,547.5 -500,547.5z M500,285.5L209,285.5 209,317.5 500,317.5z">
+
+            <Path.Clip>
+                <EllipseGeometry
+                    Center="0 -38"
+                    RadiusX="576"
+                    RadiusY="576" />
+            </Path.Clip>
+        </Path>
+
+        <!-- Middle Petal -->
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-158 -149"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Ellipse
+                Fill="#FFFFFFFF"
+                Width="649"
+                Height="649"
+                Canvas.Left="-166.5"
+                Canvas.Top="-473.5" />
+
+        </Canvas>
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-199 -118"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Ellipse
+                Fill="#FF0F7562"
+                Width="649"
+                Height="649"
+                Canvas.Left="-125.5"
+                Canvas.Top="-442.5" />
+
+        </Canvas>
+
+        <Ellipse
+            Fill="#FF0F7562"
+            Width="260"
+            Height="260"
+            Canvas.Left="-130"
+            Canvas.Top="-476" />
+
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-212 -100"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Ellipse
+                Fill="#FFFFFFFF"
+                Width="649"
+                Height="649"
+                Canvas.Left="-112.5"
+                Canvas.Top="-424.5" />
+
+        </Canvas>
+
+        <!-- Left Petal -->
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-234 -64"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Ellipse
+                Fill="#FFFFFFFF"
+                Width="763"
+                Height="763"
+                Canvas.Left="-760.5"
+                Canvas.Top="-74.5" />
+
+        </Canvas>
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-213 -91"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Ellipse
+                Fill="#FF0F7562"
+                Width="763"
+                Height="763"
+                Canvas.Left="-751.5"
+                Canvas.Top="-38.5" />
+
+        </Canvas>
+
+        <Ellipse
+            Fill="#FF0F7562"
+            Width="260"
+            Height="260"
+            Canvas.Left="-615"
+            Canvas.Top="-109" />
+
+        <Canvas>
+
+            <Canvas.Clip>
+                <EllipseGeometry
+                    Center="-234 -64"
+                    RadiusX="324.5"
+                    RadiusY="324.5" />
+            </Canvas.Clip>
+
+            <Canvas>
+
+                <Canvas.Clip>
+                    <EllipseGeometry
+                        Center="-182 -96"
+                        RadiusX="324.5"
+                        RadiusY="324.5" />
+                </Canvas.Clip>
+
+                <Ellipse
+                    Fill="#FFFFFFFF"
+                    Width="763"
+                    Height="763"
+                    Canvas.Left="-720.5"
+                    Canvas.Top="-9.5" />
+
+            </Canvas>
+
+            <Path
+                Fill="#FFFFFFFF"
+                Data="M-100,50L-40,100 10,100 10,200 -50,200z" />
+
+        </Canvas>
+
+        <!-- Right Petal -->
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="-1" ScaleY="1" />
+            </Canvas.RenderTransform>
+
+            <Canvas>
+
+                <Canvas.Clip>
+                    <EllipseGeometry
+                        Center="-234 -64"
+                        RadiusX="324.5"
+                        RadiusY="324.5" />
+                </Canvas.Clip>
+
+                <Ellipse
+                    Fill="#FFFFFFFF"
+                    Width="763"
+                    Height="763"
+                    Canvas.Left="-760.5"
+                    Canvas.Top="-74.5" />
+
+            </Canvas>
+
+            <Canvas>
+
+                <Canvas.Clip>
+                    <EllipseGeometry
+                        Center="-213 -91"
+                        RadiusX="324.5"
+                        RadiusY="324.5" />
+                </Canvas.Clip>
+
+                <Ellipse
+                    Fill="#FF0F7562"
+                    Width="763"
+                    Height="763"
+                    Canvas.Left="-751.5"
+                    Canvas.Top="-38.5" />
+
+            </Canvas>
+
+            <Ellipse
+                Fill="#FF0F7562"
+                Width="260"
+                Height="260"
+                Canvas.Left="-615"
+                Canvas.Top="-109" />
+
+            <Canvas>
+
+                <Canvas.Clip>
+                    <EllipseGeometry
+                        Center="-234 -64"
+                        RadiusX="324.5"
+                        RadiusY="324.5" />
+                </Canvas.Clip>
+
+                <Canvas>
+
+                    <Canvas.Clip>
+                        <EllipseGeometry
+                            Center="-182 -96"
+                            RadiusX="324.5"
+                            RadiusY="324.5" />
+                    </Canvas.Clip>
+
+                    <Ellipse
+                        Fill="#FFFFFFFF"
+                        Width="763"
+                        Height="763"
+                        Canvas.Left="-720.5"
+                        Canvas.Top="-9.5" />
+
+                </Canvas>
+
+                <Path
+                    Fill="#FFFFFFFF"
+                    Data="M-100,50L-40,100 10,100 10,200 -50,200z" />
+
+            </Canvas>
+
+        </Canvas>
+
+        <!-- Star 1 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffde23">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="146" ScaleY="146" />
+                    <TranslateTransform X="0" Y="-492.5" />
+                    <RotateTransform Angle="-65" CenterX="0" CenterY="-38" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star 2 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffde23">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="146" ScaleY="146" />
+                    <TranslateTransform X="0" Y="-492.5" />
+                    <RotateTransform Angle="-35" CenterX="0" CenterY="-38" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star 3 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffde23">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="211" ScaleY="211" />
+                    <TranslateTransform X="0" Y="-492.5" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star 4 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffde23">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="146" ScaleY="146" />
+                    <TranslateTransform X="0" Y="-492.5" />
+                    <RotateTransform Angle="35" CenterX="0" CenterY="-38" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star 5 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffde23">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="146" ScaleY="146" />
+                    <TranslateTransform X="0" Y="-492.5" />
+                    <RotateTransform Angle="65" CenterX="0" CenterY="-38" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
 
     </Canvas>
 

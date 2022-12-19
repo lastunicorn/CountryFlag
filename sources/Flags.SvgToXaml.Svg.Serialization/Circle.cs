@@ -18,14 +18,14 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-public class Circle : SvgElement
+public class Circle : Element
 {
     [XmlAttribute("r")]
-    public float R { get; set; }
+    public double R { get; set; }
 
     [XmlAttribute("cx")]
-    public float Cx { get; set; }
+    public double Cx { get; set; }
 
     [XmlAttribute("cy")]
-    public float Cy { get; set; }
+    public double Cy { get; set; }
 }

@@ -20,14 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AssemblyName>DustInTheWind.Flags.SvgToXaml.Svg</AssemblyName>
         <RootNamespace>DustInTheWind.Flags.SvgToXaml.Svg</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj" />
+      <ProjectReference Include="..\Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj" PrivateAssets="All" />
     </ItemGroup>
 
 </Project>

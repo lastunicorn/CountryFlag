@@ -14,8 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.IO;
 using System.Xml.Serialization;
-using DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
@@ -25,19 +26,16 @@ public class SvgDocument
 
     public static SvgDocument Parse(string svg)
     {
-        StringReader sr = new(svg);
-
         XmlSerializer xmlSerializer = new(typeof(Serialization.Svg));
 
+        using StringReader sr = new(svg);
         object? deserializedObject = xmlSerializer.Deserialize(sr);
 
         if (deserializedObject is Serialization.Svg svgObject)
         {
-            Svg? entity = svgObject.ToEntity();
-
             return new SvgDocument
             {
-                Svg = entity
+                Svg = new Svg(svgObject)
             };
         }
 

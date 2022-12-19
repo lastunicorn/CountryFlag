@@ -18,7 +18,7 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-public class Ellipse : SvgElement
+public class Ellipse : Element
 {
     [XmlAttribute("rx")]
     public float Rx { get; set; }

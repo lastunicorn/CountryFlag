@@ -22,8 +22,8 @@ namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 public class Svg : G
 {
     [XmlAttribute("width")]
-    public int Width { get; set; }
+    public double Width { get; set; }
 
     [XmlAttribute("height")]
-    public int Height { get; set; }
+    public double Height { get; set; }
 }

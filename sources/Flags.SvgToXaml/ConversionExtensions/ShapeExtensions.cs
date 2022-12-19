@@ -23,12 +23,57 @@ namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
 internal static class ShapeExtensions
 {
-    public static void UpdateFrom(this Shape shape, SvgElement svgElement, SvgGroup? parent = null)
+    public static void UpdateFrom(this Shape shape, SvgElement svgElement)
     {
-        if (svgElement.Fill != null && string.Compare(svgElement.Fill, "none", StringComparison.OrdinalIgnoreCase) != 0)
-            shape.Fill = (Brush)new BrushConverter().ConvertFrom(svgElement.Fill)!;
+        if (svgElement.Fill == null)
+        {
+            shape.Fill = Brushes.Black;
+        }
+        else
+        {
+            if (string.Compare(svgElement.Fill, "none", StringComparison.OrdinalIgnoreCase) != 0)
+                shape.Fill = (Brush)new BrushConverter().ConvertFrom(svgElement.Fill)!;
+        }
 
         if (svgElement.Stroke != null && string.Compare(svgElement.Stroke, "none", StringComparison.OrdinalIgnoreCase) != 0)
             shape.Stroke = (Brush)new BrushConverter().ConvertFrom(svgElement.Stroke)!;
+
+        if (svgElement.StrokeWidth != null)
+            shape.StrokeThickness = svgElement.StrokeWidth.Value;
+
+        if (svgElement.StrokeLineCap != null)
+        {
+            shape.StrokeStartLineCap = svgElement.StrokeLineCap switch
+            {
+                StrokeLineCap.Flat => PenLineCap.Flat,
+                StrokeLineCap.Square => PenLineCap.Square,
+                StrokeLineCap.Round => PenLineCap.Round,
+                StrokeLineCap.Triangle => PenLineCap.Triangle,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+
+            shape.StrokeEndLineCap = svgElement.StrokeLineCap switch
+            {
+                StrokeLineCap.Flat => PenLineCap.Flat,
+                StrokeLineCap.Square => PenLineCap.Square,
+                StrokeLineCap.Round => PenLineCap.Round,
+                StrokeLineCap.Triangle => PenLineCap.Triangle,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
+
+        if (svgElement.StrokeLineJoin != null)
+        {
+            shape.StrokeLineJoin = svgElement.StrokeLineJoin switch
+            {
+                StrokeLineJoin.Miter => PenLineJoin.Miter,
+                StrokeLineJoin.Bevel => PenLineJoin.Bevel,
+                StrokeLineJoin.Round => PenLineJoin.Round,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
+
+        if (svgElement.StrokeDashOffset != null)
+            shape.StrokeDashOffset = svgElement.StrokeDashOffset.Value;
     }
 }

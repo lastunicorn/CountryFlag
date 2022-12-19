@@ -14,13 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgCircle : SvgElement
 {
-    public float Radius { get; set; }
+    public double Radius { get; set; }
 
-    public float CenterX { get; set; }
+    public double CenterX { get; set; }
 
-    public float CenterY { get; set; }
+    public double CenterY { get; set; }
+
+    public SvgCircle()
+    {
+    }
+
+    internal SvgCircle(Circle circle)
+        : base(circle)
+    {
+        if (circle == null) throw new ArgumentNullException(nameof(circle));
+
+        Radius = circle.R;
+        CenterX = circle.Cx;
+        CenterY = circle.Cy;
+    }
 }

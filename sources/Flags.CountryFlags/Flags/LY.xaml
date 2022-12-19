@@ -24,35 +24,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <Canvas x:Key="CountryFlag_LY" Width="960" Height="480">
 
+        <!-- Background -->
+
         <Rectangle
             Fill="#FF239E46"
             Width="960"
             Height="480" />
-       
+
         <Rectangle
             Fill="#FF000000"
             Width="960"
             Height="360" />
-      
+
         <Rectangle
             Fill="#FFE70013"
             Width="960"
             Height="120" />
-      
+
+        <!-- Moon -->
+
         <Ellipse
             Fill="#FFFFFFFF"
             Width="120"
             Height="120"
             Canvas.Left="420"
             Canvas.Top="180" />
-      
+
         <Ellipse
             Fill="#FF000000"
             Width="104.26406860351562"
             Height="104.26406860351562"
             Canvas.Left="440"
             Canvas.Top="187.8679656982422" />
-       
+
+        <!-- Star -->
+
         <Path
             Data="F1 M509.175411,240L589.875233,213.779039 540,282.426407 540,197.573593 589.875233,266.220961z"
             Fill="#FFFFFFFF" />

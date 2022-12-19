@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.IO;
 using System.Windows.Controls;
 using System.Xml;
@@ -51,50 +52,24 @@ public class MainViewModel : ViewModelBase
 
     private void TransformSvgToXaml()
     {
-        if (string.IsNullOrEmpty(svgText))
+        try
         {
-            XamlText = null;
-            return;
+
+            if (string.IsNullOrEmpty(svgText))
+            {
+                XamlText = null;
+                return;
+            }
+
+            SvgDocument svgDocument = SvgDocument.Parse(svgText);
+            Canvas? canvas = svgDocument.Svg.ToXaml();
+
+            XamlText = Serialize(canvas);
         }
-
-        SvgDocument svgDocument = SvgDocument.Parse(svgText);
-        Canvas? canvas = svgDocument.Svg.ToXaml();
-
-        //Canvas canvas = new();
-
-        //if (svg?.Children != null)
-        //{
-        //    foreach (object svgElement in svg.Children)
-        //    {
-        //        if (svgElement is SvgCircle svgCircle)
-        //        {
-        //            Ellipse ellipse = svgCircle.ToXaml();
-        //            canvas.Children.Add(ellipse);
-        //        }
-        //        else if (svgElement is SvgEllipse svgEllipse)
-        //        {
-        //            Ellipse ellipse = svgEllipse.ToXaml();
-        //            canvas.Children.Add(ellipse);
-        //        }
-        //        else if (svgElement is SvgPath svgPath)
-        //        {
-        //            Path xamlPath = svgPath.ToXaml();
-        //            canvas.Children.Add(xamlPath);
-        //        }
-        //        else if (svgElement is SvgRect svgRect)
-        //        {
-        //            Rectangle xamlRectangle = svgRect.ToXaml();
-        //            canvas.Children.Add(xamlRectangle);
-        //        }
-        //        else if(svgElement is SvgG svgG)
-        //        {
-        //            Canvas xamlCanvas = svgG.ToXaml();
-        //            canvas.Children.Add(xamlCanvas);
-        //        }
-        //    }
-        //}
-
-        XamlText = Serialize(canvas);
+        catch (Exception ex)
+        {
+            XamlText = ex.ToString();
+        }
     }
 
     private static string Serialize(Canvas? canvas)

@@ -14,22 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.ConversionExtensions;
-
-internal static class CircleExtensions
+public enum StrokeLineJoin
 {
-    public static SvgCircle ToEntity(this Circle serializationCircle, SvgGroup? parent = null)
-    {
-        return new SvgCircle
-        {
-            Radius = serializationCircle.R,
-            CenterX = serializationCircle.Cx,
-            CenterY = serializationCircle.Cy,
-            Fill = serializationCircle.Fill,
-            Stroke = serializationCircle.Stroke,
-            Parent = parent
-        };
-    }
+    Miter,
+    Bevel,
+    Round,
 }

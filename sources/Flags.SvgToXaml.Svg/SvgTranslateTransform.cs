@@ -14,15 +14,15 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
-
-public class SvgElement
+public class SvgTranslateTransform : ISvgTransform
 {
-    [XmlAttribute("fill")]
-    public string? Fill { get; set; }
+    public double X { get; set; }
 
-    [XmlAttribute("stroke")]
-    public string? Stroke { get; set; }
+    public double Y { get; set; }
+
+    public SvgTranslateTransform(string text)
+    {
+    }
 }

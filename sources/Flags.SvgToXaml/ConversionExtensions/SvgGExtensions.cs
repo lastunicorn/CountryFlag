@@ -29,8 +29,8 @@ internal static class SvgGExtensions
 
         Canvas canvas = new();
 
-        if (svgGroup.Children == null)
-            return canvas;
+        if (svgGroup.Transforms.Count > 0) 
+            canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
         foreach (SvgElement svgElement in svgGroup.Children)
         {

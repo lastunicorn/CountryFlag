@@ -14,15 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgRectangle : SvgElement
 {
-    public float Width { get; set; }
+    public double Width { get; set; }
 
-    public float Height { get; set; }
+    public double Height { get; set; }
 
-    public float X { get; set; }
+    public double X { get; set; }
 
-    public float Y { get; set; }
+    public double Y { get; set; }
+
+    public SvgRectangle()
+    {
+    }
+
+    internal SvgRectangle(Rect rect)
+        : base(rect)
+    {
+        if (rect == null) throw new ArgumentNullException(nameof(rect));
+
+        Width = rect.Width;
+        Height = rect.Height;
+        X = rect.X;
+        Y = rect.Y;
+    }
 }

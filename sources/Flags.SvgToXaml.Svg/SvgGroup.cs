@@ -14,9 +14,64 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgGroup : SvgElement
 {
-    public List<SvgElement>? Children { get; set; }
+    public SvgTransformList Transforms { get; set; }
+
+    public SvgElementCollection<SvgElement> Children { get; }
+
+    public SvgGroup()
+    {
+        Children = new SvgElementCollection<SvgElement>(this);
+    }
+
+    internal SvgGroup(G g)
+        : base(g)
+    {
+        if (g == null) throw new ArgumentNullException(nameof(g));
+
+        Transforms = new SvgTransformList();
+
+        if (g.Transform != null)
+            Transforms.ParseAndAdd(g.Transform);
+
+        Children = new SvgElementCollection<SvgElement>(this);
+
+        if (g.Children != null)
+        {
+            foreach (object serializationChild in g.Children)
+            {
+                if (serializationChild is Circle serializationCircle)
+                {
+                    SvgCircle circle = new(serializationCircle);
+                    Children.Add(circle);
+                }
+                else if (serializationChild is Ellipse serializationEllipse)
+                {
+                    SvgEllipse ellipse = new(serializationEllipse);
+                    Children.Add(ellipse);
+                }
+                else if (serializationChild is Path serializationPath)
+                {
+                    SvgPath path = new(serializationPath);
+                    Children.Add(path);
+                }
+                else if (serializationChild is Rect serializationRect)
+                {
+                    SvgRectangle rectangle = new(serializationRect);
+                    Children.Add(rectangle);
+                }
+                else if (serializationChild is G serializationGChild)
+                {
+                    SvgGroup svgGroupChild = new(serializationGChild);
+                    Children.Add(svgGroupChild);
+                }
+            }
+        }
+    }
 }

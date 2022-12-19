@@ -14,15 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgEllipse : SvgElement
 {
-    public float RadiusX { get; set; }
+    public double RadiusX { get; set; }
 
-    public float RadiusY { get; set; }
+    public double RadiusY { get; set; }
 
-    public float CenterX { get; set; }
+    public double CenterX { get; set; }
 
-    public float CenterY { get; set; }
+    public double CenterY { get; set; }
+
+    public SvgEllipse()
+    {
+    }
+
+    internal SvgEllipse(Ellipse ellipse)
+        : base(ellipse)
+    {
+        if (ellipse == null) throw new ArgumentNullException(nameof(ellipse));
+
+        RadiusX = ellipse.Rx;
+        RadiusY = ellipse.Ry;
+        CenterX = ellipse.Cx;
+        CenterY = ellipse.Cy;
+    }
 }

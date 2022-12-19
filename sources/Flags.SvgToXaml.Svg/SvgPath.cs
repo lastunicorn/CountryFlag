@@ -14,9 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using Path = DustInTheWind.Flags.SvgToXaml.Svg.Serialization.Path;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgPath : SvgElement
 {
-    public string Data { get; set; }
+    public string? Data { get; set; }
+
+    public SvgPath()
+    {
+    }
+
+    internal SvgPath(Path path)
+        : base(path)
+    {
+        if (path == null) throw new ArgumentNullException(nameof(path));
+
+        Data = path.D;
+    }
 }
