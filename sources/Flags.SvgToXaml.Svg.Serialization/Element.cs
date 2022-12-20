@@ -42,6 +42,11 @@ public class Element
     
     public bool StrokeDashOffsetSpecified { get; set; }
 
+    [XmlAttribute("stroke-miterlimit")]
+    public double StrokeMiterLimit { get; set; }
+    
+    public bool StrokeMiterLimitSpecified { get; set; }
+
     [XmlAttribute("style")]
     public string? Style { get; set; }
 

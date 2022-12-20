@@ -18,13 +18,13 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country Qatar { get; } = new()
-    //{
-    //    ShortName = "Qatar",
-    //    FullName = "Qatar",
-    //    IsoCodeAlpha2 = "QA",
-    //    IsoCodeAlpha3 = "QAT",
-    //    IsoCodeNumeric = "634",
-    //    IsIndependent = true
-    //};
+    public static Country Qatar { get; } = new()
+    {
+        ShortName = "Qatar",
+        FullName = "State of Qatar",
+        IsoCodeAlpha2 = "QA",
+        IsoCodeAlpha3 = "QAT",
+        IsoCodeNumeric = "634",
+        IsIndependent = true
+    };
 }

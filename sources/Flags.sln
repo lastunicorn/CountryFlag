@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml", "Flags.Sv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml.Svg", "Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj", "{68974C5B-5DB4-4264-AA8E-460293FC61D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flags.SvgToXaml.Svg.Serialization", "Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj", "{780E9A3A-CCF5-4030-886F-CC2F33185CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml.Svg.Serialization", "Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj", "{780E9A3A-CCF5-4030-886F-CC2F33185CB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{714C17FF-A0D0-4995-8483-7205722A1878}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.build.props = Directory.build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

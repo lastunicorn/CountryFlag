@@ -232,5 +232,24 @@ public static partial class Countries
         // O
 
         yield return Oman;
+
+        // P
+
+        yield return Pakistan;
+        yield return Palau;
+        yield return Palestine;
+        yield return Panama;
+        yield return PapuaNewGuinea;
+        yield return Paraguay;
+        yield return Peru;
+        yield return Philippines;
+        yield return Pitcairn;
+        yield return Poland;
+        yield return Portugal;
+        yield return PuertoRico;
+
+        // Q
+
+        yield return Qatar;
     }
 }

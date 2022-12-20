@@ -35,6 +35,8 @@ public class SvgElement
     public StrokeLineJoin? StrokeLineJoin { get; set; }
 
     public double? StrokeDashOffset { get; set; }
+    
+    public double? StrokeMiterLimit { get; set; }
 
     public SvgStyle? Style { get; set; }
 
@@ -66,6 +68,10 @@ public class SvgElement
 
         StrokeDashOffset = element.StrokeDashOffsetSpecified
             ? element.StrokeDashOffset
+            : null;
+
+        StrokeMiterLimit = element.StrokeMiterLimitSpecified
+            ? element.StrokeMiterLimit
             : null;
 
         Style = element.Style;
@@ -155,5 +161,15 @@ public class SvgElement
             return value;
 
         return Parent?.CalculateStrokeDashOffset();
+    }
+
+    public double? CalculateStrokeMiterLimit()
+    {
+        double? value = StrokeMiterLimit;
+
+        if (value != null)
+            return value;
+
+        return Parent?.CalculateStrokeMiterLimit();
     }
 }

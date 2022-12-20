@@ -15,7 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.Flags.SvgToXaml.Svg;
@@ -84,7 +83,11 @@ internal static class ShapeExtensions
         double? strokeDashOffset = svgElement.CalculateStrokeDashOffset();
         if (strokeDashOffset != null)
             shape.StrokeDashOffset = strokeDashOffset.Value;
-        
+
+        double? strokeMiterLimit = svgElement.CalculateStrokeMiterLimit();
+        if (strokeMiterLimit != null)
+            shape.StrokeMiterLimit = strokeMiterLimit.Value;
+
         if (svgElement.Transforms.Count > 0)
             shape.RenderTransform = svgElement.Transforms.ToXaml();
     }
