@@ -54,6 +54,11 @@ internal static class SvgGExtensions
                 Rectangle xamlRectangle = svgRect.ToXaml();
                 canvas.Children.Add(xamlRectangle);
             }
+            else if (svgElement is SvgPolygon svgPolygon)
+            {
+                Polygon xamlPolygon = svgPolygon.ToXaml();
+                canvas.Children.Add(xamlPolygon);
+            }
             else if (svgElement is SvgGroup svgGChild)
             {
                 Canvas? xamlCanvas = svgGChild.ToXaml();

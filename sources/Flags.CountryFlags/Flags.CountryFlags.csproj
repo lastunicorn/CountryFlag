@@ -62,6 +62,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
             <SubType>Designer</SubType>
         </Page>
+        <Page Update="Flags\NA.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\NR.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\NP.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\MM.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\MZ.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\MA.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\MS.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>

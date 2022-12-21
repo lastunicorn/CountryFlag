@@ -1,0 +1,67 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Namibia -->
+
+    <Canvas x:Key="CountryFlag_NA" Width="90" Height="60">
+
+        <Path
+            Data="M0,60L0,0 90,0z"
+            Fill="#FF003580" />
+
+        <Path
+            Data="M90,0L90,60 0,60z"
+            Fill="#FF009543" />
+
+        <Canvas Clip="m0 0h90v60H0z">
+
+            <Path
+                Data="M0,60L90,0"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="20" />
+
+            <Path
+                Data="M0,60L90,0"
+                Stroke="#FFD21034"
+                StrokeThickness="15" />
+
+        </Canvas>
+
+        <Path
+            Data="M18000,6341L19553,10546 23000,7681 22243,12099 26660,11341 23796,14789 28000,16341 23796,17894 26660,21341 22243,20584 23000,25002 19553,22137 18000,26341 16447,22137 13000,25002 13757,20584 9340,21341 12204,17894 8000,16341 12204,14789 9340,11341 13757,12099 13000,7681 16447,10546z"
+            Fill="#FFFFCE00">
+
+            <Path.RenderTransform>
+                <ScaleTransform ScaleX="0.001" ScaleY="0.001" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Ellipse
+            Stroke="#FF003580"
+            Width="11"
+            Height="11"
+            Canvas.Left="12.5"
+            Canvas.Top="10.841000000000001" />
+
+    </Canvas>
+
+</ResourceDictionary>

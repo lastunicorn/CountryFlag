@@ -18,13 +18,8 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-public class G : Element
+public class Polygon : Element
 {
-    [XmlElement("circle", typeof(Circle))]
-    [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
-    [XmlElement("rect", typeof(Rect))]
-    [XmlElement("polygon", typeof(Polygon))]
-    [XmlElement("g", typeof(G))]
-    public object[]? Children { get; set; }
+    [XmlAttribute("points")]
+    public string? Points { get; set; }
 }

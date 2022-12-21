@@ -14,33 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Globalization;
-
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class SvgRotateTransform : ISvgTransform
+public class SvgPoint
 {
-    public double Angle { get; set; }
+    public double X { get; set; }
 
-    public double? CenterX { get; set; }
+    public double Y { get; set; }
 
-    public double? CenterY { get; set; }
-
-    public SvgRotateTransform(string? text)
-    {
-        if (text == null)
-            return;
-
-        string[] parts = text.Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-
-        if (parts.Length >= 1)
-            Angle = double.Parse(parts[0], CultureInfo.InvariantCulture);
-
-        if (parts.Length >= 3)
-        {
-            CenterX = double.Parse(parts[1], CultureInfo.InvariantCulture);
-            CenterY = double.Parse(parts[2], CultureInfo.InvariantCulture);
-        }
-    }
 }

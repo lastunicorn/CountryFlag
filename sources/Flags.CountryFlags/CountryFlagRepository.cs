@@ -28,7 +28,7 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public class CountryFlagRepository : FlagRepositoryBase
 {
-    public override string Id => "countries";
+    public override string Id => "country";
 
     protected override Canvas? GetInternal(FlagId flagId)
     {

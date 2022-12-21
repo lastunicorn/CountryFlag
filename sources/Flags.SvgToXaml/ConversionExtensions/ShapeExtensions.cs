@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.Flags.SvgToXaml.Svg;
@@ -24,6 +25,18 @@ namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 internal static class ShapeExtensions
 {
     public static void UpdateFrom(this Shape shape, SvgElement svgElement)
+    {
+        SetFill(shape, svgElement);
+        SetStroke(shape, svgElement);
+        SetStrokeThickness(shape, svgElement);
+        SetStrokeStartLineCap(shape, svgElement);
+        SetStrokeLineJoin(shape, svgElement);
+        SetStrokeDashOffset(shape, svgElement);
+        SetStrokeMiterLimit(shape, svgElement);
+        SetRenderTransform(shape, svgElement);
+    }
+
+    private static void SetFill(Shape shape, SvgElement svgElement)
     {
         string? fill = svgElement.CalculateFill();
 
@@ -38,7 +51,10 @@ internal static class ShapeExtensions
             if (!isNone)
                 shape.Fill = (Brush)new BrushConverter().ConvertFrom(fill)!;
         }
+    }
 
+    private static void SetStroke(Shape shape, SvgElement svgElement)
+    {
         string? stroke = svgElement.CalculateStroke();
         if (stroke != null)
         {
@@ -47,11 +63,17 @@ internal static class ShapeExtensions
             if (!isNone)
                 shape.Stroke = (Brush)new BrushConverter().ConvertFrom(stroke)!;
         }
+    }
 
+    private static void SetStrokeThickness(Shape shape, SvgElement svgElement)
+    {
         double? strokeWidth = svgElement.CalculateStrokeWidth();
         if (strokeWidth != null)
             shape.StrokeThickness = strokeWidth.Value;
+    }
 
+    private static void SetStrokeStartLineCap(Shape shape, SvgElement svgElement)
+    {
         StrokeLineCap? strokeLineCap = svgElement.CalculateStrokeLineCap();
         if (strokeLineCap != null)
         {
@@ -67,7 +89,10 @@ internal static class ShapeExtensions
             shape.StrokeStartLineCap = penLineCap;
             shape.StrokeEndLineCap = penLineCap;
         }
+    }
 
+    private static void SetStrokeLineJoin(Shape shape, SvgElement svgElement)
+    {
         StrokeLineJoin? strokeLineJoin = svgElement.CalculateStrokeLineJoin();
         if (strokeLineJoin != null)
         {
@@ -79,15 +104,24 @@ internal static class ShapeExtensions
                 _ => throw new ArgumentOutOfRangeException()
             };
         }
+    }
 
+    private static void SetStrokeDashOffset(Shape shape, SvgElement svgElement)
+    {
         double? strokeDashOffset = svgElement.CalculateStrokeDashOffset();
         if (strokeDashOffset != null)
             shape.StrokeDashOffset = strokeDashOffset.Value;
+    }
 
+    private static void SetStrokeMiterLimit(Shape shape, SvgElement svgElement)
+    {
         double? strokeMiterLimit = svgElement.CalculateStrokeMiterLimit();
         if (strokeMiterLimit != null)
             shape.StrokeMiterLimit = strokeMiterLimit.Value;
+    }
 
+    private static void SetRenderTransform(UIElement shape, SvgElement svgElement)
+    {
         if (svgElement.Transforms.Count > 0)
             shape.RenderTransform = svgElement.Transforms.ToXaml();
     }

@@ -46,6 +46,11 @@ public class SvgTransformList : Collection<ISvgTransform>
                     SvgRotateTransform svgRotateTransform = new(item.Value);
                     Items.Add(svgRotateTransform);
                     break;
+
+                case "matrix":
+                    SvgMatrixTransform svgMatrixTransform = new(item.Value);
+                    Items.Add(svgMatrixTransform);
+                    break;
             }
         }
     }

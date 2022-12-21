@@ -14,17 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
+using System.Windows.Media;
+using DustInTheWind.Flags.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
-public class G : Element
+internal static class SvgPointExtensions
 {
-    [XmlElement("circle", typeof(Circle))]
-    [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
-    [XmlElement("rect", typeof(Rect))]
-    [XmlElement("polygon", typeof(Polygon))]
-    [XmlElement("g", typeof(G))]
-    public object[]? Children { get; set; }
+    public static PointCollection ToXaml(this List<SvgPoint> svgPoints)
+    {
+        IEnumerable<Point> points = svgPoints
+            .Select(x => new Point
+            {
+                X = x.X,
+                Y = x.Y
+            });
+
+        return new PointCollection(points);
+    }
 }

@@ -59,6 +59,11 @@ public class SvgGroup : SvgElement
                     SvgRectangle rectangle = new(serializationRect);
                     Children.Add(rectangle);
                 }
+                else if (serializationChild is Polygon serializationPolygon)
+                {
+                    SvgPolygon polygon = new(serializationPolygon);
+                    Children.Add(polygon);
+                }
                 else if (serializationChild is G serializationGChild)
                 {
                     SvgGroup svgGroupChild = new(serializationGChild);

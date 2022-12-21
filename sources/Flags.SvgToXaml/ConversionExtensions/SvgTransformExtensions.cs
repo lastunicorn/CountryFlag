@@ -30,19 +30,19 @@ internal static class SvgTransformExtensions
                 return svgTransformList[0].ToXaml();
 
             case > 1:
+            {
+                TransformGroup transformGroup = new();
+
+                for (int i = svgTransformList.Count - 1; i >= 0; i--)
                 {
-                    TransformGroup transformGroup = new();
+                    ISvgTransform svgTransform = svgTransformList[i];
 
-                    for (int i = svgTransformList.Count - 1; i >= 0; i--)
-                    {
-                        ISvgTransform svgTransform = svgTransformList[i];
-
-                        Transform transform = svgTransform.ToXaml();
-                        transformGroup.Children.Add(transform);
-                    }
-
-                    return transformGroup;
+                    Transform transform = svgTransform.ToXaml();
+                    transformGroup.Children.Add(transform);
                 }
+
+                return transformGroup;
+            }
 
             default:
                 return null;
@@ -61,7 +61,7 @@ internal static class SvgTransformExtensions
                 };
 
             case SvgScaleTransform svgScaleTransform:
-                ScaleTransform? xaml = new();
+                ScaleTransform xaml = new();
 
                 if (svgScaleTransform.CenterX != null)
                     xaml.CenterX = svgScaleTransform.CenterX.Value;
@@ -78,11 +78,31 @@ internal static class SvgTransformExtensions
                 return xaml;
 
             case SvgRotateTransform svgRotateTransform:
-                return new RotateTransform
+                RotateTransform transform = new()
                 {
-                    Angle = svgRotateTransform.Angle,
-                    CenterX = svgRotateTransform.CenterX,
-                    CenterY = svgRotateTransform.CenterY
+                    Angle = svgRotateTransform.Angle
+                };
+
+                if (svgRotateTransform.CenterX != null)
+                    transform.CenterX = svgRotateTransform.CenterX.Value;
+
+                if (svgRotateTransform.CenterY != null)
+                    transform.CenterY = svgRotateTransform.CenterY.Value;
+
+                return transform;
+
+            case SvgMatrixTransform svgMatrixTransform:
+                return new MatrixTransform
+                {
+                    Matrix = new Matrix
+                    {
+                        M11 = svgMatrixTransform.M11,
+                        M12 = svgMatrixTransform.M12,
+                        M21 = svgMatrixTransform.M21,
+                        M22 = svgMatrixTransform.M22,
+                        OffsetX = svgMatrixTransform.OffsetX,
+                        OffsetY = svgMatrixTransform.OffsetY
+                    }
                 };
 
             default:
