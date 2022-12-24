@@ -41,6 +41,8 @@ public class SvgElement
     public SvgStyle? Style { get; set; }
 
     public SvgTransformList Transforms { get; set; }
+    
+    public double? Opacity { get; set; }
 
     public SvgElement()
     {
@@ -171,5 +173,15 @@ public class SvgElement
             return value;
 
         return Parent?.CalculateStrokeMiterLimit();
+    }
+
+    public double? CalculateOpacity()
+    {
+        double? value = Opacity;
+
+        if (value != null)
+            return value;
+
+        return Parent?.CalculateOpacity();
     }
 }

@@ -19,60 +19,19 @@ using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class SvgGraphicElement
+public class SvgDefinitions : SvgGroup
 {
-
-}
-
-public class SvgContainerElement
-{
-    // a
-    // clipPath
-    // defs
-    // g
-    // marker
-    // mask
-    // pattern
-    // svg
-    // switch
-    // symbol
-    // unknown
-}
-
-public class SvgStructuralElement
-{
-    // defs
-    // g
-    // svg
-    // symbol
-    // use
-
-}
-
-public class SvgShapeElement
-{
-    // 
-}
-
-public class SvgGroup : SvgElement
-{
-    public SvgElementCollection<SvgElement> Children { get; }
-
-    public SvgGroup()
+    public SvgDefinitions()
     {
-        Children = new SvgElementCollection<SvgElement>(this);
     }
 
-    internal SvgGroup(G g)
-        : base(g)
+    internal SvgDefinitions(Defs defs)
     {
-        if (g == null) throw new ArgumentNullException(nameof(g));
-
-        Children = new SvgElementCollection<SvgElement>(this);
-
-        if (g.Children != null)
+        if (defs == null) throw new ArgumentNullException(nameof(defs));
+        
+        if (defs.Children != null)
         {
-            foreach (object serializationChild in g.Children)
+            foreach (object serializationChild in defs.Children)
             {
                 if (serializationChild is Circle serializationCircle)
                 {

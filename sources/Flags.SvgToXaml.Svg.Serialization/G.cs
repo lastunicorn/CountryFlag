@@ -18,6 +18,15 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
+/// <remarks>
+/// May contain any number of the following elements, in any order:
+///    - animation elements — ‘animate’, ‘animateMotion’, ‘animateTransform’, ‘discard’, ‘set’
+///    - descriptive elements — ‘desc’, ‘title’, ‘metadata’
+///    - paint server elements — ‘linearGradient’, ‘radialGradient’, ‘pattern’
+///    - shape elements — ‘circle’, ‘ellipse’, ‘line’, ‘path’, ‘polygon’, ‘polyline’, ‘rect’
+///    - structural elements — ‘defs’, ‘g’, ‘svg’, ‘symbol’, ‘use’
+///    - a, audio, canvas, clipPath, filter, foreignObject, iframe, image, marker, mask, script, style, switch, text, video, view.
+/// </remarks>
 public class G : Element
 {
     [XmlElement("circle", typeof(Circle))]

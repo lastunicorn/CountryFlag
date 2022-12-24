@@ -15,28 +15,19 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Windows;
-using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.Flags.CountryFlags;
 
-public class EmptyFlagRepository : IFlagRepository
+[Flags]
+public enum FlagUsage
 {
-    public string Id => "empty";
-
-    public static Canvas MissingFlag => GetMissingFlagCanvas();
-
-    public Canvas Get(FlagId flagId)
-    {
-        return GetMissingFlagCanvas();
-    }
-
-    private static Canvas GetMissingFlagCanvas()
-    {
-        return new Canvas
-        {
-            Width = 1,
-            Height = 1
-        };
-    }
+    None = 0,
+    CivilFlag = 1,
+    StateFlag = 2,
+    WarFlag = 4,
+    NationalFlag = 7,
+    CivilEnsign = 8,
+    StateEnsign = 16,
+    WarEnsign = 32,
+    All = 63
 }

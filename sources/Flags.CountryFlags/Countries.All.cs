@@ -219,6 +219,7 @@ public static partial class Countries
         yield return Nepal;
         yield return Netherlands;
         yield return NewCaledonia;
+        yield return NewCaledoniaFlnks;
         yield return NewZealand;
         yield return Nicaragua;
         yield return Niger;

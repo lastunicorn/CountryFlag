@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+
 namespace DustInTheWind.Flags.CountryFlags;
 
 public class Country
@@ -38,17 +40,27 @@ public class Country
     public string IsoCodeNumeric { get; init; }
 
     public bool IsIndependent { get; init; }
+    
+    public string Description { get; init; }
+    
+    public DateTime AdoptedDate { get; init; }
+    
+    public string DesignedBy { get; init; }
+    
+    public FlagUsage Usage { get; init; }
 
     public bool IsMatch(string? id)
     {
         if (id == null)
             return false;
 
-        return id.Length switch
-        {
-            2 => id == IsoCodeAlpha2,
-            3 => id == IsoCodeAlpha3 || id == IsoCodeNumeric,
-            _ => false
-        };
+        return IsoCodeAlpha2 == id || IsoCodeAlpha3 == id || IsoCodeNumeric == id;
+
+        //return id.Length switch
+        //{
+        //    2 => id == IsoCodeAlpha2,
+        //    3 => id == IsoCodeAlpha3 || id == IsoCodeNumeric,
+        //    _ => false
+        //};
     }
 }

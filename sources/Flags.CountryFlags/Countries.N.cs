@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -25,7 +27,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "NA",
         IsoCodeAlpha3 = "NAM",
         IsoCodeNumeric = "516",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A white-edged red diagonal band radiating from the lower hoist-side corner. The upper triangle is blue, charged with a gold sun with 12 triangular rays and the lower triangle is green.",
+        AdoptedDate = new DateTime(1990, 03, 21),
+        Usage = FlagUsage.All
     };
 
     public static Country Nauru { get; } = new()
@@ -35,7 +40,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "NR",
         IsoCodeAlpha3 = "NRU",
         IsoCodeNumeric = "520",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A blue field with the thin yellow narrow horizontal stripe across in the center and the large white twelve-pointed star on the bottom of the stripe and near the hoist-side.",
+        AdoptedDate = new DateTime(1968, 01, 31),
+        DesignedBy = "Theo Jankowski, Don Stevenson, Ortrud Clay",
+        Usage = FlagUsage.StateFlag | FlagUsage.CivilEnsign
     };
 
     public static Country Nepal { get; } = new()
@@ -45,7 +54,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "NP",
         IsoCodeAlpha3 = "NPL",
         IsoCodeNumeric = "524",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "The national flag of Nepal consists of two juxtaposed triangular figures with a crimson-coloured base and deep blue borders, there being a white emblem of the crescent moon with eight rays visible out of sixteen in the upper part and a white emblem of a twelve rayed sun in the lower part.",
+        AdoptedDate = new DateTime(1962, 12, 16),
+        Usage = FlagUsage.NationalFlag
     };
 
     public static Country Netherlands { get; } = new()
@@ -55,7 +67,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "NL",
         IsoCodeAlpha3 = "NLD",
         IsoCodeNumeric = "528",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A horizontal triband of red (bright vermilion), white, and cobalt blue",
+        AdoptedDate = new DateTime(1575, 01, 01),
+        Usage = FlagUsage.All
     };
 
     public static Country NewCaledonia { get; } = new()
@@ -65,7 +80,22 @@ public static partial class Countries
         IsoCodeAlpha2 = "NC",
         IsoCodeAlpha3 = "NCL",
         IsoCodeNumeric = "540",
-        IsIndependent = false
+        IsIndependent = false,
+        Description = "A vertical tricolour of blue, white, and red.",
+        AdoptedDate = new DateTime(1794, 02, 15),
+        Usage = FlagUsage.NationalFlag
+    };
+
+    public static Country NewCaledoniaFlnks { get; } = new()
+    {
+        ShortName = "New Caledonia",
+        FullName = "New Caledonia",
+        IsoCodeAlpha2 = "NC_FLNKS",
+        IsoCodeAlpha3 = "NCL_FLNKS",
+        IsoCodeNumeric = "540_FLNKS",
+        IsIndependent = false,
+        Description = "A horizontal tricolour of blue, red, and green charged with a yellow disc outlined in black and defaced with a black flèche faîtière.",
+        AdoptedDate = new DateTime(2010, 07, 13)
     };
 
     public static Country NewZealand { get; } = new()
@@ -75,7 +105,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "NZ",
         IsoCodeAlpha3 = "NZL",
         IsoCodeNumeric = "554",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A Blue Ensign with a Union Jack in the first quarter and four five-pointed red stars with white borders on the fly representing the Southern Cross.",
+        AdoptedDate = new DateTime(1902, 03, 24),
+        DesignedBy = "Albert Hastings Markham",
+        Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
     };
 
     public static Country Nicaragua { get; } = new()
@@ -85,7 +119,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "NI",
         IsoCodeAlpha3 = "NIC",
         IsoCodeNumeric = "558",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A horizontal triband of Azure (top and bottom) and white with the National Coat of Arms centered on the white band.",
+        AdoptedDate = new DateTime(1908, 09, 04),
+        Usage = FlagUsage.All
     };
 
     public static Country Niger { get; } = new()

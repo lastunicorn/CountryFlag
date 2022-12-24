@@ -34,6 +34,7 @@ internal static class ShapeExtensions
         SetStrokeDashOffset(shape, svgElement);
         SetStrokeMiterLimit(shape, svgElement);
         SetRenderTransform(shape, svgElement);
+        SetOpacity(shape, svgElement);
     }
 
     private static void SetFill(Shape shape, SvgElement svgElement)
@@ -124,5 +125,12 @@ internal static class ShapeExtensions
     {
         if (svgElement.Transforms.Count > 0)
             shape.RenderTransform = svgElement.Transforms.ToXaml();
+    }
+
+    private static void SetOpacity(Shape shape, SvgElement svgElement)
+    {
+        double? opacity = svgElement.CalculateOpacity();
+        if (opacity != null)
+            shape.Opacity = opacity.Value;
     }
 }

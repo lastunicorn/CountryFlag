@@ -20,33 +20,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Nauru -->
+    <!-- Netherlands -->
 
-    <Canvas x:Key="CountryFlag_NR" Width="48" Height="24">
-
-        <!-- Background -->
+    <Canvas x:Key="CountryFlag_NL" Width="9" Height="6">
 
         <Rectangle
-            Fill="#FF002B7F"
-            Width="48"
-            Height="24" />
+            Fill="#FF21468B"
+            Width="9"
+            Height="6" />
 
         <Rectangle
-            Fill="#FFFFC61E"
-            Width="48"
-            Height="2"
-            Canvas.Top="11" />
+            Fill="#FFFFFFFF"
+            Width="9"
+            Height="4" />
 
-        <!-- Star -->
-
-        <Path
-            Data="M 4,0 L 1.931852,0.517638 3.464102,2 1.414214,1.414214 2,3.464102 0.517638,1.931852 0,4 -0.517638,1.931852 -2,3.464102 -1.414214,1.414214 -3.464102,2 -1.931852,0.517638 -4,0 -1.931852,-0.517638 -3.464102,-2 -1.414214,-1.414214 -2,-3.464102 -0.517638,-1.931852 0,-4 0.517638,-1.931852 2,-3.464102 1.414214,-1.414214 3.464102,-2 1.931852,-0.517638 z"
-            Fill="#FFFFFFFF">
-
-            <Path.RenderTransform>
-                <TranslateTransform X="12" Y="17" />
-            </Path.RenderTransform>
-        </Path>
+        <Rectangle
+            Fill="#FFAE1C28"
+            Width="9"
+            Height="2" />
 
     </Canvas>
 

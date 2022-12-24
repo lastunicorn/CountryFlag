@@ -14,29 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Windows;
-using System.Windows.Controls;
+using System.Xml.Serialization;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
-public class EmptyFlagRepository : IFlagRepository
+public class Defs
 {
-    public string Id => "empty";
-
-    public static Canvas MissingFlag => GetMissingFlagCanvas();
-
-    public Canvas Get(FlagId flagId)
-    {
-        return GetMissingFlagCanvas();
-    }
-
-    private static Canvas GetMissingFlagCanvas()
-    {
-        return new Canvas
-        {
-            Width = 1,
-            Height = 1
-        };
-    }
+    [XmlElement("circle", typeof(Circle))]
+    [XmlElement("ellipse", typeof(Ellipse))]
+    [XmlElement("path", typeof(Path))]
+    [XmlElement("rect", typeof(Rect))]
+    [XmlElement("polygon", typeof(Polygon))]
+    [XmlElement("g", typeof(G))]
+    public object[]? Children { get; set; }
 }

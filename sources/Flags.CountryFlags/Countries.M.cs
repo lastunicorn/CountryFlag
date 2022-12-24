@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -148,7 +150,7 @@ public static partial class Countries
         IsIndependent = true
     };
 
-    public static Country Micronesia { get; } = new ()
+    public static Country Micronesia { get; } = new()
     {
         ShortName = "Micronesia",
         FullName = "Federated States of Micronesia",
@@ -158,7 +160,7 @@ public static partial class Countries
         IsIndependent = true
     };
 
-    public static Country Moldova { get; } = new ()
+    public static Country Moldova { get; } = new()
     {
         ShortName = "Moldova",
         FullName = "Republic of Moldova",
@@ -235,6 +237,9 @@ public static partial class Countries
         IsoCodeAlpha2 = "MM",
         IsoCodeAlpha3 = "MMR",
         IsoCodeNumeric = "104",
-        IsIndependent = true
+        IsIndependent = true,
+        Description = "A horizontal triband of yellow, green and red; charged with a large white five-pointed star at the centre.",
+        AdoptedDate = new DateTime(2010, 10, 21),
+        Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
     };
 }

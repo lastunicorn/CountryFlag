@@ -52,4 +52,7 @@ public class Element
 
     [XmlAttribute("transform")]
     public string? Transform { get; set; }
+
+    [XmlAttribute("opacity")]
+    public double Opacity { get; set; }
 }

@@ -41,11 +41,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </None>
     </ItemGroup>
 
-    <ItemGroup>
-        <Page Update="Themes\MissingFlag.xaml">
-            <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-            <SubType>Designer</SubType>
-        </Page>
-    </ItemGroup>
-
 </Project>
