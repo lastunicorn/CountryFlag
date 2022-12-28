@@ -27,7 +27,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "MO",
         IsoCodeAlpha3 = "MAC",
         IsoCodeNumeric = "446",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection()
+        {
+            new()
+            {
+                Description = "Peacock green field with a lotus flower above the stylised Governor Nobre de Carvalho Bridge and water in white, beneath an arc of five golden five-pointed stars, where the large star is in the center flanked by four smaller stars, two on each side of the large star.",
+                AdoptedDate = new DateTime(1993, 03, 31),
+                DesignedBy = "Zhang Lei, Xiao Hong",
+                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            }
+        }
     };
 
     public static Country Madagascar { get; } = new()
@@ -238,8 +248,14 @@ public static partial class Countries
         IsoCodeAlpha3 = "MMR",
         IsoCodeNumeric = "104",
         IsIndependent = true,
-        Description = "A horizontal triband of yellow, green and red; charged with a large white five-pointed star at the centre.",
-        AdoptedDate = new DateTime(2010, 10, 21),
-        Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal triband of yellow, green and red; charged with a large white five-pointed star at the centre.",
+                AdoptedDate = new DateTime(2010, 10, 21),
+                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            }
+        }
     };
 }

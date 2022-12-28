@@ -17,6 +17,7 @@
 using System.Reflection;
 using System.Windows;
 using DustInTheWind.Flags.Core;
+using DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
 namespace DustInTheWind.Flags.CountryFlags.Demo
 {

@@ -39,6 +39,7 @@ public static partial class Countries
         yield return Armenia;
         yield return Aruba;
         yield return Australia;
+        yield return Austria;
         yield return Azerbaijan;
 
         // B
@@ -219,7 +220,7 @@ public static partial class Countries
         yield return Nepal;
         yield return Netherlands;
         yield return NewCaledonia;
-        yield return NewCaledoniaFlnks;
+        //yield return NewCaledoniaFlnks;
         yield return NewZealand;
         yield return Nicaragua;
         yield return Niger;

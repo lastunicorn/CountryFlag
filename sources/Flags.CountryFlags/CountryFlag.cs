@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -15,30 +15,50 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Text;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
-public static partial class Countries
+public class CountryFlag
 {
-    /// <summary>
-    /// Mast add naval ensign.
-    /// </summary>
-    public static Country Oman { get; } = new()
+    public Country? Country { get; internal set; }
+
+    public string? Id { get; init; }
+
+    public string FullId
     {
-        ShortName = "Oman",
-        FullName = "Sultanate of Oman",
-        IsoCodeAlpha2 = "OM",
-        IsoCodeAlpha3 = "OMN",
-        IsoCodeNumeric = "512",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
+        get
         {
-            new()
+            StringBuilder sb = new();
+
+            if (Country != null)
+                sb.Append(Country.IsoCodeAlpha2);
+
+            if (Id != null)
             {
-                Description = "A horizontal tricolor of white, red and green; with a vertical red stripe at the hoist, charged with the National emblem of Oman.",
-                AdoptedDate = new DateTime(1995, 04, 25),
-                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+                if (sb.Length > 0)
+                    sb.Append(">");
+
+                sb.Append(Id);
             }
+
+            return sb.ToString();
         }
-    };
+    }
+
+    public string? Description { get; init; }
+
+    public DateTime AdoptedDate { get; init; }
+
+    public string? DesignedBy { get; init; }
+
+    public FlagUsage Usage { get; init; }
+
+    public bool IsMatch(string? id)
+    {
+        if (id == null)
+            return false;
+
+        return FullId == id;
+    }
 }

@@ -14,12 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
 public class Country
 {
+    private readonly CountryFlagCollection? flagsInternal;
     public string ShortName { get; init; }
 
     public string FullName { get; init; }
@@ -40,27 +42,29 @@ public class Country
     public string IsoCodeNumeric { get; init; }
 
     public bool IsIndependent { get; init; }
-    
-    public string Description { get; init; }
-    
-    public DateTime AdoptedDate { get; init; }
-    
-    public string DesignedBy { get; init; }
-    
-    public FlagUsage Usage { get; init; }
 
-    public bool IsMatch(string? id)
+    public IEnumerable<CountryFlag> Flags => FlagsInternal ?? Enumerable.Empty<CountryFlag>();
+
+    internal CountryFlagCollection? FlagsInternal
     {
-        if (id == null)
-            return false;
+        get => flagsInternal;
+        init
+        {
+            if (flagsInternal != null)
+                flagsInternal.Country = null;
 
-        return IsoCodeAlpha2 == id || IsoCodeAlpha3 == id || IsoCodeNumeric == id;
+            flagsInternal = value;
 
-        //return id.Length switch
-        //{
-        //    2 => id == IsoCodeAlpha2,
-        //    3 => id == IsoCodeAlpha3 || id == IsoCodeNumeric,
-        //    _ => false
-        //};
+            if (flagsInternal != null)
+                flagsInternal.Country = this;
+        }
     }
+
+    //public bool IsMatch(string? id)
+    //{
+    //    if (id == null)
+    //        return false;
+
+    //    return IsoCodeAlpha2 == id || IsoCodeAlpha3 == id || IsoCodeNumeric == id;
+    //}
 }

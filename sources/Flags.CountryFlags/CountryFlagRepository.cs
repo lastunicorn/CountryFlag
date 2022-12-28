@@ -20,6 +20,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
@@ -32,28 +33,49 @@ public class CountryFlagRepository : FlagRepositoryBase
 
     protected override Canvas? GetInternal(FlagId flagId)
     {
-        Country? country = Countries.EnumerateAll()
+        CountryFlag? countryFlag = Countries.EnumerateAll()
+            .SelectMany(x => x.Flags)
             .FirstOrDefault(x => x.IsMatch(flagId.Value));
 
-        if (country == null)
+        if (countryFlag?.Country == null)
             return null;
 
-        bool resourceExists = Exists(country.IsoCodeAlpha2);
+        string resourceId = CalculateResourceIdFor(countryFlag);
+
+        bool resourceExists = Exists(resourceId);
         if (!resourceExists)
             return null;
-        
-        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{country.IsoCodeAlpha2}.xaml");
+
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{resourceId}.xaml");
 
         ResourceDictionary resourceDictionary = new()
         {
             Source = resourceUri
         };
 
-        string resourceName = "CountryFlag_" + country.IsoCodeAlpha2;
+        string resourceName = "CountryFlag_" + resourceId;
 
         return resourceDictionary.Contains(resourceName)
             ? resourceDictionary[resourceName] as Canvas
             : null;
+    }
+
+    private static string CalculateResourceIdFor(CountryFlag countryFlag)
+    {
+        StringBuilder sb = new();
+
+        if (countryFlag.Country != null)
+            sb.Append(countryFlag.Country.IsoCodeAlpha2);
+
+        if (countryFlag.Id != null)
+        {
+            if (sb.Length > 0)
+                sb.Append("_");
+
+            sb.Append(countryFlag.Id);
+        }
+
+        return sb.ToString();
     }
 
     private static bool Exists(string flagId)

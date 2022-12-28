@@ -14,19 +14,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows;
+using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo;
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class MainWindow : Window
+namespace DustInTheWind.Flags.CountryFlags.Demo
 {
-    public MainWindow(MainViewModel mainViewModel)
+    /// <summary>
+    /// Interaction logic for FlagInfoBox.xaml
+    /// </summary>
+    public partial class FlagInfoBox : UserControl
     {
-        InitializeComponent();
-
-        DataContext = mainViewModel;
+        public FlagInfoBox()
+        {
+            InitializeComponent();
+        }
     }
 }

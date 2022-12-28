@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,35 +14,20 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Immutable;
-using System.Linq;
+using System.Windows;
+using DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
 namespace DustInTheWind.Flags.CountryFlags.Demo;
 
-public class MainViewModel : ViewModelBase
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    private CountryViewModel? selectedCountry;
-
-    public ImmutableList<CountryViewModel> Countries { get; }
-
-    public CountryViewModel? SelectedCountry
+    public MainWindow(MainViewModel mainViewModel)
     {
-        get => selectedCountry;
-        set
-        {
-            selectedCountry = value;
-            OnPropertyChanged();
+        InitializeComponent();
 
-            OnPropertyChanged(nameof(CountryCode));
-        }
-    }
-
-    public string? CountryCode => SelectedCountry?.CountryCode;
-
-    public MainViewModel()
-    {
-        Countries = CountryFlags.Countries.EnumerateAll()
-            .Select(x => new CountryViewModel(x))
-            .ToImmutableList();
+        DataContext = mainViewModel;
     }
 }

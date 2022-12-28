@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -25,7 +27,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BS",
         IsoCodeAlpha3 = "BHS",
         IsoCodeNumeric = "044",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal triband of aquamarine (top and bottom) and gold with the black chevron aligned to the hoist-side.",
+                AdoptedDate = new DateTime(1973, 07, 10),
+                DesignedBy = "Dr. Hervis Bain",
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country Bahrain { get; } = new()
@@ -35,7 +47,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BH",
         IsoCodeAlpha3 = "BHR",
         IsoCodeNumeric = "048",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A white field on the hoist side separated from a larger red field on the fly by five white triangles in the form of a zigzag pattern.",
+                AdoptedDate = new DateTime(2002, 02, 14),
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country Bangladesh { get; } = new()
@@ -45,7 +66,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BD",
         IsoCodeAlpha3 = "BGD",
         IsoCodeNumeric = "050",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A red disc slightly off center to the left defacing a dark green banner.",
+                AdoptedDate = new DateTime(1972, 01, 17),
+                DesignedBy = "Quamrul Hassan",
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country Barbados { get; } = new()
@@ -55,7 +86,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BB",
         IsoCodeAlpha3 = "BRB",
         IsoCodeNumeric = "052",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A vertical triband of ultramarine (hoist-side and fly-side) and gold with the black trident-head centred on the gold band.",
+                AdoptedDate = new DateTime(1966, 11, 30),
+                DesignedBy = "Grantley W. Prescod",
+                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            }
+        }
     };
 
     public static Country Belarus { get; } = new()
@@ -65,7 +106,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BY",
         IsoCodeAlpha3 = "BLR",
         IsoCodeNumeric = "112",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal bicolour of red over green in a 2:1 ratio, with a red ornamental pattern on a white vertical stripe at the hoist.",
+                AdoptedDate = new DateTime(1951, 12, 25),
+                DesignedBy = "Mikhail Husyev",
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country Belgium { get; } = new()
@@ -75,7 +126,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BE",
         IsoCodeAlpha3 = "BEL",
         IsoCodeNumeric = "056",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A vertical tricolour of black, yellow, and red.",
+                AdoptedDate = new DateTime(1831, 01, 23),
+                Usage = FlagUsage.CivilEnsign
+            }
+        }
     };
 
     public static Country Belize { get; } = new()
@@ -85,7 +145,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BZ",
         IsoCodeAlpha3 = "BLZ",
         IsoCodeNumeric = "084",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A royal blue field with two red narrow horizontal stripes along the top and the bottom edges and the large white disk in the centre bearing the National Coat of Arms.",
+                AdoptedDate = new DateTime(1981, 09, 21),
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country Benin { get; } = new()
@@ -95,7 +164,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BJ",
         IsoCodeAlpha3 = "BEN",
         IsoCodeNumeric = "204",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal bicolor of yellow and red with a green vertical band at the hoist.",
+                AdoptedDate = new DateTime(1959, 11, 16),
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country Bermuda { get; } = new()
@@ -105,7 +183,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BM",
         IsoCodeAlpha3 = "BMU",
         IsoCodeNumeric = "060",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "Red Ensign with the coat-of-arms of Bermuda in the fly.",
+                AdoptedDate = new DateTime(1999, 01, 01),
+                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign
+            }
+        }
     };
 
     public static Country Bhutan { get; } = new()
@@ -115,7 +202,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BT",
         IsoCodeAlpha3 = "BTN",
         IsoCodeNumeric = "064",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "Divided diagonally from the lower hoist-side corner to the upper fly-side corner; the upper triangle is yellow and the lower triangle is orange, with a white dragon holding four jewels in its claws centered along the dividing line and facing away from the hoist.",
+                AdoptedDate = new DateTime(1969, 01, 01),
+                DesignedBy = "Mayum Choying Wangmo Dorji",
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country Bolivia { get; } = new()
@@ -125,7 +222,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BO",
         IsoCodeAlpha3 = "BOL",
         IsoCodeNumeric = "068",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal tricolor of red, yellow and green.",
+                AdoptedDate = new DateTime(1851, 10, 31),
+                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
+            }
+        }
     };
 
     public static Country CaribbeanNetherlands { get; } = new()
@@ -135,7 +241,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BQ",
         IsoCodeAlpha3 = "BES",
         IsoCodeNumeric = "535",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal triband of red (bright vermilion), white, and cobalt blue.",
+                AdoptedDate = new DateTime(1575, 01, 01),
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country BosniaHerzegovina { get; } = new()
@@ -145,7 +260,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BA",
         IsoCodeAlpha3 = "BIH",
         IsoCodeNumeric = "070",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A medium blue field with a yellow right triangle separating said field; along the hypotenuse of the triangle, there are seven full five-pointed white stars and two half stars at the top and bottom of the flag.",
+                AdoptedDate = new DateTime(1998, 02, 04),
+                DesignedBy = "Mladen Kolobarić. The flag was proclaimed by the High Representative Carlos Westendorp",
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country Botswana { get; } = new()
@@ -155,7 +280,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BW",
         IsoCodeAlpha3 = "BWA",
         IsoCodeNumeric = "072",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A light blue field cut horizontally in the centre by a black stripe with a thin white frame.",
+                AdoptedDate = new DateTime(1966, 09, 30),
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country BouvetIsland { get; } = new()
@@ -175,7 +309,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BR",
         IsoCodeAlpha3 = "BRA",
         IsoCodeNumeric = "076",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A green field with the large yellow rhombus in the center bearing the blue disk, which is formed the celestial globe, depicted the starry sky of twenty-seven small white five-pointed stars spanned by the white equatorial curved band with the National Motto: \"Ordem E Progresso\" (Portuguese for \"Order and Progress\"), written in green.",
+                AdoptedDate = new DateTime(1889, 11, 19),
+                DesignedBy = "Raimundo Teixeira Mendes",
+                Usage = FlagUsage.All
+            }
+        }
     };
 
     public static Country BritishIndianOceanTerritory { get; } = new()
@@ -185,7 +329,15 @@ public static partial class Countries
         IsoCodeAlpha2 = "IO",
         IsoCodeAlpha3 = "IOT",
         IsoCodeNumeric = "086",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection()
+        {
+            new()
+            {
+                Description = "A Blue Ensign with 7 wavy white stripes, with a palm tree on the hoist side and a crown over it.",
+                AdoptedDate = new DateTime(1990, 11, 08)
+            }
+        }
     };
 
     public static Country Brunei { get; } = new()
@@ -195,7 +347,17 @@ public static partial class Countries
         IsoCodeAlpha2 = "BN",
         IsoCodeAlpha3 = "BRN",
         IsoCodeNumeric = "096",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A centered red crest of Brunei on a yellow field cut by black and white diagonal stripes (parallelograms).",
+                AdoptedDate = new DateTime(1959, 09, 29),
+                DesignedBy = "Yura Halim",
+                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign
+            }
+        }
     };
 
     public static Country Bulgaria { get; } = new()
@@ -205,7 +367,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BG",
         IsoCodeAlpha3 = "BGR",
         IsoCodeNumeric = "100",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A horizontal tricolour of white, green and red.",
+                AdoptedDate = new DateTime(1879, 01, 01),
+                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign
+            }
+        }
     };
 
     public static Country BurkinaFaso { get; } = new()
@@ -215,7 +386,16 @@ public static partial class Countries
         IsoCodeAlpha2 = "BF",
         IsoCodeAlpha3 = "BFA",
         IsoCodeNumeric = "854",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "Two horizontal bands of red and green with a yellow five-pointed star in the center.",
+                AdoptedDate = new DateTime(1984, 08, 04),
+                Usage = FlagUsage.NationalFlag
+            }
+        }
     };
 
     public static Country Burundi { get; } = new()
@@ -225,6 +405,15 @@ public static partial class Countries
         IsoCodeAlpha2 = "BI",
         IsoCodeAlpha3 = "BDI",
         IsoCodeNumeric = "108",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+                Description = "A white diagonal cross divided into four panels of red (top and bottom) and green (hoist-side and fly-side) with the white disk superimposed at the center of the cross bearing three red six-pointed stars with green outlines arranged in the triangular form (one above, two below).",
+                AdoptedDate = new DateTime(1967, 01, 01),
+                Usage = FlagUsage.All
+            }
+        }
     };
 }
