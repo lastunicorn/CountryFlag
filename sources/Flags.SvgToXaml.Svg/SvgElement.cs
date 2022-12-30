@@ -35,13 +35,13 @@ public class SvgElement
     public StrokeLineJoin? StrokeLineJoin { get; set; }
 
     public double? StrokeDashOffset { get; set; }
-    
+
     public double? StrokeMiterLimit { get; set; }
 
     public SvgStyle? Style { get; set; }
 
     public SvgTransformList Transforms { get; set; }
-    
+
     public double? Opacity { get; set; }
 
     public SvgElement()
@@ -83,64 +83,67 @@ public class SvgElement
         if (element.Transform != null)
             Transforms.ParseAndAdd(element.Transform);
 
+        Opacity = element.OpacitySpecified
+            ? element.Opacity
+            : null;
     }
 
     public string? CalculateFill()
     {
-        string? value = Fill;
-
-        if (value != null)
-            return value;
-
         SvgStyleItem? styleItem = Style?["fill"];
 
         if (styleItem != null)
             return styleItem.Value;
+
+        string? value = Fill;
+
+        if (value != null)
+            return value;
 
         return Parent?.CalculateFill();
     }
 
     public string? CalculateStroke()
     {
-        string? value = Stroke;
-
-        if (value != null)
-            return value;
-
         SvgStyleItem? styleItem = Style?["stroke"];
 
         if (styleItem != null)
             return styleItem.Value;
+
+        string? value = Stroke;
+
+        if (value != null)
+            return value;
 
         return Parent?.CalculateStroke();
     }
 
     public double? CalculateStrokeWidth()
     {
-        double? value = StrokeWidth;
-
-        if (value != null)
-            return value;
-
         SvgStyleItem? styleItem = Style?["stroke-width"];
 
         if (styleItem != null)
             return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+
+        double? value = StrokeWidth;
+
+        if (value != null)
+            return value;
 
         return Parent?.CalculateStrokeWidth();
     }
 
     public StrokeLineCap? CalculateStrokeLineCap()
     {
-        StrokeLineCap? value = StrokeLineCap;
-
-        if (value != null)
-            return value;
-
         SvgStyleItem? styleItem = Style?["stroke-linecap"];
 
         if (styleItem != null)
             return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), styleItem.Value, true);
+
+        StrokeLineCap? value = StrokeLineCap;
+
+        if (value != null)
+            return value;
 
         return Parent?.CalculateStrokeLineCap();
     }
@@ -151,7 +154,7 @@ public class SvgElement
 
         if (value != null)
             return value;
-        
+
         return Parent?.CalculateStrokeLineJoin();
     }
 

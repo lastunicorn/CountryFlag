@@ -33,8 +33,8 @@ public static partial class Countries
             new()
             {
                 Description = "A white-edged red diagonal band radiating from the lower hoist-side corner. The upper triangle is blue, charged with a gold sun with 12 triangular rays and the lower triangle is green.",
-                AdoptedDate = new DateTime(1990, 03, 21),
-                Usage = FlagUsage.All
+                StartDate = new DateTime(1990, 03, 21),
+                Usage = FlagUsage.NationalFlagAndEnsign
             }
         }
     };
@@ -52,7 +52,7 @@ public static partial class Countries
             new()
             {
                 Description = "A blue field with the thin yellow narrow horizontal stripe across in the center and the large white twelve-pointed star on the bottom of the stripe and near the hoist-side.",
-                AdoptedDate = new DateTime(1968, 01, 31),
+                StartDate = new DateTime(1968, 01, 31),
                 DesignedBy = "Theo Jankowski, Don Stevenson, Ortrud Clay",
                 Usage = FlagUsage.StateFlag | FlagUsage.CivilEnsign
             }
@@ -72,7 +72,7 @@ public static partial class Countries
             new()
             {
                 Description = "The national flag of Nepal consists of two juxtaposed triangular figures with a crimson-coloured base and deep blue borders, there being a white emblem of the crescent moon with eight rays visible out of sixteen in the upper part and a white emblem of a twelve rayed sun in the lower part.",
-                AdoptedDate = new DateTime(1962, 12, 16),
+                StartDate = new DateTime(1962, 12, 16),
                 Usage = FlagUsage.NationalFlag
             }
         }
@@ -91,8 +91,8 @@ public static partial class Countries
             new()
             {
                 Description = "A horizontal triband of red (bright vermilion), white, and cobalt blue",
-                AdoptedDate = new DateTime(1575, 01, 01),
-                Usage = FlagUsage.All
+                StartDate = new DateTime(1575, 01, 01),
+                Usage = FlagUsage.NationalFlagAndEnsign
             }
         }
     };
@@ -110,14 +110,14 @@ public static partial class Countries
             new()
             {
                 Description = "A vertical tricolour of blue, white, and red.",
-                AdoptedDate = new DateTime(1794, 02, 15),
+                StartDate = new DateTime(1794, 02, 15),
                 Usage = FlagUsage.NationalFlag
             },
             new()
             {
                 Id = "FLNKS",
                 Description = "A horizontal tricolour of blue, red, and green charged with a yellow disc outlined in black and defaced with a black flèche faîtière.",
-                AdoptedDate = new DateTime(2010, 07, 13),
+                StartDate = new DateTime(2010, 07, 13),
                 Usage = FlagUsage.NationalFlag
             }
         }
@@ -136,7 +136,7 @@ public static partial class Countries
             new()
             {
                 Description = "A Blue Ensign with a Union Jack in the first quarter and four five-pointed red stars with white borders on the fly representing the Southern Cross.",
-                AdoptedDate = new DateTime(1902, 03, 24),
+                StartDate = new DateTime(1902, 03, 24),
                 DesignedBy = "Albert Hastings Markham",
                 Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
             }
@@ -156,8 +156,8 @@ public static partial class Countries
             new()
             {
                 Description = "A horizontal triband of Azure (top and bottom) and white with the National Coat of Arms centered on the white band.",
-                AdoptedDate = new DateTime(1908, 09, 04),
-                Usage = FlagUsage.All
+                StartDate = new DateTime(1908, 09, 04),
+                Usage = FlagUsage.NationalFlagAndEnsign
             }
         }
     };
@@ -175,7 +175,7 @@ public static partial class Countries
             new()
             {
                 Description = "A horizontal triband of orange, white and green; charged with an orange circle in the centre.",
-                AdoptedDate = new DateTime(1959, 11, 23),
+                StartDate = new DateTime(1959, 11, 23),
                 Usage = FlagUsage.NationalFlag
             }
         }
@@ -194,7 +194,7 @@ public static partial class Countries
             new()
             {
                 Description = "A vertical bicolour triband of green, white and green.",
-                AdoptedDate = new DateTime(1960, 10, 01),
+                StartDate = new DateTime(1960, 10, 01),
                 DesignedBy = "Michael Taiwo Akinkunmi",
                 Usage = FlagUsage.NationalFlag
             }
@@ -214,7 +214,7 @@ public static partial class Countries
             new()
             {
                 Description = "A golden yellow flag with the Union flag in the upper left (hoist) quarter of the flags. On the Union Jack are two yellow five-pointed stars on the vertical stripe and two on the horizontal stripe. In the centre of the Union flag is a blue disc with another, slightly larger, yellow five-pointed star.",
-                AdoptedDate = new DateTime(1975, 10, 15),
+                StartDate = new DateTime(1975, 10, 15),
                 DesignedBy = "Patricia Rex",
                 Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
             }
@@ -234,7 +234,7 @@ public static partial class Countries
             new()
             {
                 Description = "Norfolk Island pine (Araucaria heterophylla) in a central white stripe between two green stripes.",
-                AdoptedDate = new DateTime(1979, 07, 09),
+                StartDate = new DateTime(1979, 07, 09),
                 Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
             }
         }
@@ -253,9 +253,9 @@ public static partial class Countries
             new()
             {
                 Description = "A stylised yellow sun on a red field, with eight broadening rays extending from the centre to the edge of the field.",
-                AdoptedDate = new DateTime(1995, 10, 5),
+                StartDate = new DateTime(1995, 10, 5),
                 DesignedBy = "Miroslav Grčev",
-                Usage = FlagUsage.All
+                Usage = FlagUsage.NationalFlagAndEnsign
             }
         }
     };
@@ -273,7 +273,7 @@ public static partial class Countries
             new()
             {
                 Description = "A circle of flowers and plants with a gray sculpture and a white star on a blue field.",
-                AdoptedDate = new DateTime(1985, 07, 01),
+                StartDate = new DateTime(1985, 07, 01),
                 Usage = FlagUsage.StateFlag | FlagUsage.WarFlag
             }
         }
@@ -292,9 +292,14 @@ public static partial class Countries
             new()
             {
                 Description = "A red field charged with a white-fimbriated dark blue Nordic cross that extends to the edges; the vertical part of the cross is shifted to the hoist side.",
-                AdoptedDate = new DateTime(1821, 07, 13),
+                StartDate = new DateTime(1821, 07, 13),
                 DesignedBy = "Fredrik Meltzer",
-                Usage = FlagUsage.All
+                Usage = FlagUsage.NationalFlagAndEnsign
+            },
+            new()
+            {
+                Id = "STATE",
+                Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
             }
         }
     };

@@ -129,7 +129,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <TextBlock
                 DockPanel.Dock="Top"
-                Text="{Binding FlagUsage}"
+                Text="{Binding FlagUsageDescription}"
                 TextWrapping="Wrap" />
 
             <countryFlags:FlagUsageBox

@@ -34,6 +34,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     Background="WhiteSmoke"
     d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
 
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -54,6 +58,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <DataTemplate>
                     <DockPanel
                         MinHeight="30">
+
+                        <Control
+                            Width="20"
+                            Visibility="{Binding IsAdditional, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                         <core:FlagBox
                             DockPanel.Dock="Left"
@@ -124,7 +132,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <demo:FlagInfoBox
             Grid.Column="4"
             Margin="10"
-            DataContext="{Binding FlagInfoViewModel}"/>
+            DataContext="{Binding FlagInfoViewModel}" />
 
     </Grid>
 

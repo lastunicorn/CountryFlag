@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace DustInTheWind.Flags.CountryFlags;
@@ -46,9 +47,13 @@ public class CountryFlag
         }
     }
 
+    public List<string> Names { get; set; }
+
     public string? Description { get; init; }
 
-    public DateTime AdoptedDate { get; init; }
+    public DateTime? StartDate { get; init; }
+    
+    public DateTime? EndDate { get; init; }
 
     public string? DesignedBy { get; init; }
 

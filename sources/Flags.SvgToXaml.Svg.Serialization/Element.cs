@@ -55,4 +55,6 @@ public class Element
 
     [XmlAttribute("opacity")]
     public double Opacity { get; set; }
+
+    public bool OpacitySpecified { get; set; }
 }

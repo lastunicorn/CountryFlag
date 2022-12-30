@@ -68,7 +68,7 @@ public static partial class Countries
 
         // C
 
-        yield return CapeVerde;
+        yield return CaboVerde;
         yield return Cambodia;
         yield return Cameroon;
         yield return Canada;
@@ -76,6 +76,7 @@ public static partial class Countries
         yield return CentralAfricanRepublic;
         yield return Chad;
         yield return Chile;
+        yield return China;
         yield return ChristmasIsland;
         yield return CocosIslands;
         yield return Colombia;

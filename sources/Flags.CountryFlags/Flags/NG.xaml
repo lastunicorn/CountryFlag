@@ -20,22 +20,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Republic of Congo -->
+    <!-- Nigeria -->
 
-    <Canvas x:Key="CountryFlag_CG" Width="3" Height="2">
+    <Canvas x:Key="CountryFlag_NG" Width="6" Height="3">
 
         <Rectangle
-            Width="3"
-            Height="2"
-            Fill="#fbde4a" />
+            Fill="#008751"
+            Width="6"
+            Height="3" />
 
-        <Path
-            Data="m 0 2 v -2 h 2 z"
-            Fill="#009543" />
-
-        <Path
-            Data="m 3 0 v 2 h -2 z"
-            Fill="#da1a35" />
+        <Rectangle
+            Fill="#fff"
+            Width="2"
+            Height="3"
+            Canvas.Left="2"
+            Canvas.Top="0" />
 
     </Canvas>
 

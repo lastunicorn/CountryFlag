@@ -1,0 +1,64 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- North Macedonia -->
+
+    <Canvas x:Key="CountryFlag_MK" Width="280" Height="140">
+
+        <Canvas.RenderTransform>
+            <TranslateTransform X="140" Y="70" />
+        </Canvas.RenderTransform>
+
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FFD82126"
+            Width="280"
+            Height="140"
+            Canvas.Left="-140"
+            Canvas.Top="-70" />
+
+        <!-- Rays -->
+
+        <Path
+            Data="M-140,14L-140,-14 140,14 140,-14z M-14,-70L14,-70 0,-15z M14,70L-14,70 0,15z M-140,-70L-98,-70 12.86,7.72z M-140,70L-98,70 12.86,-7.72z M140,-70L98,-70 -12.86,7.72z M140,70L98,70 -12.86,-7.72z"
+            Fill="#FFF8E92E" />
+
+        <!-- Center -->
+
+        <Ellipse
+            Fill="#FFD82126"
+            Width="50"
+            Height="50"
+            Canvas.Left="-25"
+            Canvas.Top="-25" />
+
+        <Ellipse
+            Fill="#FFF8E92E"
+            Width="40"
+            Height="40"
+            Canvas.Left="-20"
+            Canvas.Top="-20" />
+
+    </Canvas>
+
+</ResourceDictionary>

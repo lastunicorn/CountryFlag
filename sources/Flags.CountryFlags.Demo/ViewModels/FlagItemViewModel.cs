@@ -22,10 +22,13 @@ public class FlagItemViewModel
 
     public string? Id { get; set; }
 
+    public bool IsAdditional { get; set; }
+
     public FlagItemViewModel(CountryFlag? countryFlag)
     {
         CountryName = countryFlag?.Country?.ShortName;
         Id = countryFlag?.FullId;
+        IsAdditional = !string.IsNullOrEmpty(countryFlag?.Id);
     }
 
     public override string ToString()

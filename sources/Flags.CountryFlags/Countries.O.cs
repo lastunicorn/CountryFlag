@@ -36,7 +36,7 @@ public static partial class Countries
             new()
             {
                 Description = "A horizontal tricolor of white, red and green; with a vertical red stripe at the hoist, charged with the National emblem of Oman.",
-                AdoptedDate = new DateTime(1995, 04, 25),
+                StartDate = new DateTime(1995, 04, 25),
                 Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
             }
         }

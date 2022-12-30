@@ -19,15 +19,24 @@ using System;
 namespace DustInTheWind.Flags.CountryFlags;
 
 [Flags]
-public enum FlagUsage
+public enum FlagUsage : ulong
 {
     None = 0,
-    CivilFlag = 1,
-    StateFlag = 2,
-    WarFlag = 4,
-    NationalFlag = 7,
-    CivilEnsign = 8,
-    StateEnsign = 16,
-    WarEnsign = 32,
-    All = 63
+    
+    CivilFlag = 0x1,
+    StateFlag = 0x2,
+    WarFlag = 0x4,
+    NationalFlag = 0x7,
+    
+    CivilEnsign = 0x8,
+    StateEnsign = 0x10,
+    WarEnsign = 0x20,
+    NationalEnsign = 0x38,
+    
+    NationalFlagAndEnsign = 0x3f,
+    
+    NavalJack = 0x40,
+    LeaderFlag = 0x80,
+    
+    Other = 0x8000_0000_0000_0000
 }

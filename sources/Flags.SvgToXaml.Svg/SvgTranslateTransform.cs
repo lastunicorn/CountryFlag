@@ -14,6 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.Globalization;
+
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
 public class SvgTranslateTransform : ISvgTransform
@@ -22,7 +25,17 @@ public class SvgTranslateTransform : ISvgTransform
 
     public double Y { get; set; }
 
-    public SvgTranslateTransform(string text)
+    public SvgTranslateTransform(string? text)
     {
+        if (text == null)
+            return;
+
+        string[] parts = text.Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+        if (parts.Length >= 2)
+        {
+            X = double.Parse(parts[0], CultureInfo.InvariantCulture);
+            Y = double.Parse(parts[1], CultureInfo.InvariantCulture);
+        }
     }
 }

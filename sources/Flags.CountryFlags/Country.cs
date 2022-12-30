@@ -22,6 +22,7 @@ namespace DustInTheWind.Flags.CountryFlags;
 public class Country
 {
     private readonly CountryFlagCollection? flagsInternal;
+
     public string ShortName { get; init; }
 
     public string FullName { get; init; }
@@ -59,12 +60,4 @@ public class Country
                 flagsInternal.Country = this;
         }
     }
-
-    //public bool IsMatch(string? id)
-    //{
-    //    if (id == null)
-    //        return false;
-
-    //    return IsoCodeAlpha2 == id || IsoCodeAlpha3 == id || IsoCodeNumeric == id;
-    //}
 }
