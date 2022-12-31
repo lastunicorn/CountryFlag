@@ -26,6 +26,8 @@ public class SvgElement
 
     public string? Fill { get; set; }
 
+    public FillRule? FillRule { get; set; }
+
     public string? Stroke { get; set; }
 
     public double? StrokeWidth { get; set; }
@@ -53,6 +55,10 @@ public class SvgElement
         if (element == null) throw new ArgumentNullException(nameof(element));
 
         Fill = element.Fill;
+
+        FillRule = element.FillRule == null
+            ? null
+            : (FillRule)Enum.Parse(typeof(FillRule), element.FillRule, true);
 
         Stroke = element.Stroke;
 
@@ -103,6 +109,21 @@ public class SvgElement
         return Parent?.CalculateFill();
     }
 
+    public FillRule? CalculateFillRule()
+    {
+        SvgStyleItem? styleItem = Style?["fill-rule"];
+
+        if (styleItem != null)
+            return (FillRule)Enum.Parse(typeof(FillRule), styleItem.Value, true);
+
+        FillRule? value = FillRule;
+
+        if (value != null)
+            return value;
+
+        return Parent?.CalculateFillRule();
+    }
+
     public string? CalculateStroke()
     {
         SvgStyleItem? styleItem = Style?["stroke"];
@@ -123,7 +144,14 @@ public class SvgElement
         SvgStyleItem? styleItem = Style?["stroke-width"];
 
         if (styleItem != null)
-            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+        {
+            string valueAsString = styleItem.Value.Trim();
+
+            if (valueAsString.EndsWith("px"))
+                valueAsString = valueAsString[..^2];
+
+            return double.Parse(valueAsString, CultureInfo.InvariantCulture);
+        }
 
         double? value = StrokeWidth;
 

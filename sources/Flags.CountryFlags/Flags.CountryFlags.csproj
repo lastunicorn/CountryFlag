@@ -46,6 +46,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     </ItemGroup>
 
     <ItemGroup>
+        <Page Update="Flags\AL_NavalEnsign.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\AL_CivilEnsign.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\CN_WarFlag.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>
@@ -109,6 +117,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Page Update="Flags\FM.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
             <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RE.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
         </Page>
         <Page Update="Flags\MP.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
@@ -205,6 +217,58 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Page Update="Flags\MD.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
             <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RW_President.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RW.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RU_NavalEnsign.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RU_President.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RU.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_Revolution1989.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_UnitedPrincipalities.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_UnitedRomania.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_PeopleRepublic1.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_PeopleRepublic2.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_PeopleRepublic3.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_SocialistRepublic.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\RO_MoldaviaAndWallachia.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
         </Page>
         <Page Update="Flags\SV_Dios.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

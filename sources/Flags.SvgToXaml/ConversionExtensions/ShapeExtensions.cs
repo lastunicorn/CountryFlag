@@ -29,7 +29,7 @@ internal static class ShapeExtensions
         SetFill(shape, svgElement);
         SetStroke(shape, svgElement);
         SetStrokeThickness(shape, svgElement);
-        SetStrokeStartLineCap(shape, svgElement);
+        SetStrokeLineCap(shape, svgElement);
         SetStrokeLineJoin(shape, svgElement);
         SetStrokeDashOffset(shape, svgElement);
         SetStrokeMiterLimit(shape, svgElement);
@@ -73,17 +73,16 @@ internal static class ShapeExtensions
             shape.StrokeThickness = strokeWidth.Value;
     }
 
-    private static void SetStrokeStartLineCap(Shape shape, SvgElement svgElement)
+    private static void SetStrokeLineCap(Shape shape, SvgElement svgElement)
     {
         StrokeLineCap? strokeLineCap = svgElement.CalculateStrokeLineCap();
         if (strokeLineCap != null)
         {
             PenLineCap penLineCap = strokeLineCap switch
             {
-                StrokeLineCap.Flat => PenLineCap.Flat,
+                StrokeLineCap.Butt => PenLineCap.Flat,
                 StrokeLineCap.Square => PenLineCap.Square,
                 StrokeLineCap.Round => PenLineCap.Round,
-                StrokeLineCap.Triangle => PenLineCap.Triangle,
                 _ => throw new ArgumentOutOfRangeException()
             };
 

@@ -23,6 +23,9 @@ public class Element
     [XmlAttribute("fill")]
     public string? Fill { get; set; }
 
+    [XmlAttribute("fill-rule")]
+    public string? FillRule { get; set; }
+
     [XmlAttribute("stroke")]
     public string? Stroke { get; set; }
 

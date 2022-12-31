@@ -14,8 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.Windows.Shapes;
 using DustInTheWind.Flags.SvgToXaml.Svg;
+using FillRule = System.Windows.Media.FillRule;
 
 namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
 
@@ -30,6 +32,23 @@ internal static class SvgPolygonExtensions
 
         polygon.UpdateFrom(svgPolygon);
 
+        SetFillRule(polygon, svgPolygon);
+
         return polygon;
+    }
+
+    private static void SetFillRule(Polygon polygon, SvgPolygon svgPolygon)
+    {
+        Svg.FillRule? fillRule = svgPolygon.CalculateFillRule();
+
+        if (fillRule != null)
+        {
+            polygon.FillRule = fillRule switch
+            {
+                Svg.FillRule.EvenOdd => FillRule.EvenOdd,
+                Svg.FillRule.Nonzero => FillRule.Nonzero,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
     }
 }

@@ -16,11 +16,8 @@
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public enum StrokeLineCap
+public enum FillRule
 {
-    //Flat,
-    Butt,
-    Square,
-    Round,
-    //Triangle
+    EvenOdd,
+    Nonzero
 }

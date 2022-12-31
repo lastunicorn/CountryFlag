@@ -50,7 +50,7 @@ public class CountryFlag
     public List<string> Names { get; set; }
 
     public string? Description { get; init; }
-
+    
     public DateTime? StartDate { get; init; }
     
     public DateTime? EndDate { get; init; }
@@ -58,6 +58,8 @@ public class CountryFlag
     public string? DesignedBy { get; init; }
 
     public FlagUsage Usage { get; init; }
+
+    public string? Comments { get; init; }
 
     public bool IsMatch(string? id)
     {

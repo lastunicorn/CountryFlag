@@ -22,23 +22,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Romania -->
 
-    <Canvas x:Key="CountryFlag_RO" Width="3" Height="2">
+    <Canvas x:Key="CountryFlag_RO_MoldaviaAndWallachia" Width="9" Height="6">
 
         <Rectangle
-            Width="1"
+            Width="9"
             Height="2"
             Fill="#002B7F" />
 
         <Rectangle
-            Width="1"
+            Width="9"
             Height="2"
-            Canvas.Left="1"
+            Canvas.Top="2"
             Fill="#FCD116" />
 
         <Rectangle
-            Width="1"
+            Width="9"
             Height="2"
-            Canvas.Left="2"
+            Canvas.Top="4"
             Fill="#CE1126" />
 
     </Canvas>

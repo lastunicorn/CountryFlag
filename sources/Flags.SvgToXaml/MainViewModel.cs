@@ -54,7 +54,6 @@ public class MainViewModel : ViewModelBase
     {
         try
         {
-
             if (string.IsNullOrEmpty(svgText))
             {
                 XamlText = null;

@@ -92,6 +92,18 @@ public static partial class Countries
                 StartDate = new DateTime(2002, 07, 22),
                 DesignedBy = "Sadik Kaceli",
                 Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "CivilEnsign",
+                Description = "A horizontal tricolour with red on the top and bottom stripes, and black in the middle.",
+                Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Description = "\tA double-headed eagle on a white background with a red stripe at the bottom.",
+                Usage = FlagUsage.WarEnsign
             }
         }
     };

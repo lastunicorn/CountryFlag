@@ -254,5 +254,12 @@ public static partial class Countries
         // Q
 
         yield return Qatar;
+
+        // R
+
+        yield return Reunion;
+        yield return Romania;
+        yield return Russia;
+        yield return Rwanda;
     }
 }

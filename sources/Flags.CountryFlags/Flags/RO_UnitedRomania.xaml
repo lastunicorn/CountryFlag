@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Romania -->
 
-    <Canvas x:Key="CountryFlag_RO" Width="3" Height="2">
+    <Canvas x:Key="CountryFlag_RO_UnitedRomania" Width="3" Height="2">
 
         <Rectangle
             Width="1"

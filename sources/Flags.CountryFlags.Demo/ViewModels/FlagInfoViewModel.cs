@@ -28,6 +28,8 @@ public class FlagInfoViewModel
 
     public string? CountryFullName { get; }
 
+    public string? FlagName { get; }
+
     public string? FlagDescription { get; }
 
     public FlagUsage FlagUsage { get; }
@@ -41,6 +43,10 @@ public class FlagInfoViewModel
         IsoCodeAlpha3 = countryFlag?.Country?.IsoCodeAlpha3;
         IsoCodeNumeric = countryFlag?.Country?.IsoCodeNumeric;
         CountryFullName = countryFlag?.Country?.FullName;
+
+        FlagName = countryFlag?.Names != null
+            ? string.Join(", ", countryFlag.Names)
+            : string.Empty;
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
