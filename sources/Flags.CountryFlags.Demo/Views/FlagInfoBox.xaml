@@ -35,11 +35,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         Grid.IsSharedSizeScope="True"
         CanHorizontallyScroll="True">
 
+        <TextBlock
+            Text="Country"
+            Background="LightGray"
+            Padding="8"
+            FontSize="16"
+            Margin="0 0 0 10"/>
+
         <DockPanel Margin="0 0 0 10">
 
             <TextBlock
                 DockPanel.Dock="Top"
-                Text="Country"
+                Text="Short Name"
                 FontSize="14"
                 FontWeight="DemiBold" />
 
@@ -53,7 +60,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <TextBlock
                 DockPanel.Dock="Top"
-                Text="Country Full Name"
+                Text="Full Name"
                 FontSize="14"
                 FontWeight="DemiBold" />
 
@@ -104,6 +111,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 TextWrapping="Wrap" />
 
         </DockPanel>
+
+        <TextBlock
+            Text="Flag"
+            Background="LightGray"
+            Padding="8"
+            FontSize="16"
+            Margin="0 0 0 10"/>
 
         <DockPanel Margin="0 0 0 10">
 
