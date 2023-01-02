@@ -20,6 +20,9 @@ namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
 public class Element
 {
+    [XmlAttribute("class")]
+    public string? Class { get; set; }
+
     [XmlAttribute("fill")]
     public string? Fill { get; set; }
 

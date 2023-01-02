@@ -14,43 +14,38 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class SvgStyle : Collection<SvgStyleItem>
+public class SvgStyleClasses : Collection<SvgStyleClass>
 {
-    public SvgStyleItem? this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    public SvgStyleClass? this[string name] => Items.FirstOrDefault(x => x.Name == name);
 
-    public static implicit operator SvgStyle?(string? text)
+    public static implicit operator SvgStyleClasses?(string? text)
     {
         if (text == null)
             return null;
 
-        SvgStyle svgStyle = new();
+        Regex regex = new(@"\.(\w+){(.*)}", RegexOptions.Multiline);
 
-        IEnumerable<SvgStyleItem> items = text.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(x =>
+        MatchCollection matches = regex.Matches(text);
+        
+        IEnumerable<SvgStyleClass> items = matches
+            .Select(x => new SvgStyleClass
             {
-                string[] parts = x.Split(':', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+                Name = x.Groups[1].Value,
+                Value = x.Groups[2].Value
+            });
 
-                if (parts.Length != 2)
-                    return null;
+        SvgStyleClasses svgStyleClasses = new();
 
-                return new SvgStyleItem
-                {
-                    Name = parts[0],
-                    Value = parts[1]
-                };
-            })
-            .Where(x => x != null)!;
+        foreach (SvgStyleClass item in items)
+            svgStyleClasses.Add(item);
 
-        foreach (SvgStyleItem item in items)
-            svgStyle.Add(item);
-
-        return svgStyle;
+        return svgStyleClasses;
     }
 }

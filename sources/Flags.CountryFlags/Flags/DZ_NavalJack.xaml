@@ -1,0 +1,86 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Algeria (Naval Jack) -->
+
+    <Canvas x:Key="CountryFlag_DZ_NavalJack" Width="1000" Height="600">
+
+        <!-- Background -->
+
+        <Rectangle
+            Width="1000"
+            Height="600"
+            Fill="#FF2A7FFF" />
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TranslateTransform X="-56.309148" Y="-1101.3249" />
+            </Canvas.RenderTransform>
+
+            <Path
+                Data="M56.309148,1101.3249L416.30915,1101.3249 416.30915,1341.3249 56.309148,1341.3249z"
+                Fill="#FFFFFFFF" />
+
+            <Path
+                Data="M56.309148,1101.3249L236.30915,1101.3249 236.30915,1341.3249 56.309148,1341.3249z"
+                Fill="#FF006633" />
+
+            <Canvas RenderTransform="0.4,0,0,0.4,56.309148,1101.3249">
+
+                <Path
+                    Data="M600.00003,300A150,150,0,0,1,450,450A150,150,0,0,1,300,300A150,150,0,0,1,450,150A150,150,0,0,1,600.00003,300z"
+                    Fill="#FFD21034" />
+
+                <Canvas>
+
+                    <Canvas.RenderTransform>
+                        <TranslateTransform X="-491.50698" Y="-17.03405" />
+                    </Canvas.RenderTransform>
+
+                    <Path
+                        Data="M484.16602,764.16602C471.86673,764.21342,459.64784,766.15145,447.9375,769.91211L364.93706,884.16601 447.9375,998.52734C459.65355,1002.2515999999999 471.87230999999997,1004.1533 484.16602,1004.1659999999999 550.44018,1004.1659999999999 604.16601,950.4401799999999 604.16602,884.1660199999999 604.16602,817.8918499999999 550.44019,764.1660199999999 484.16602,764.1660199999999z"
+                        Fill="#FFFFFFFF">
+
+                        <Path.RenderTransform>
+                            <TranslateTransform X="493.56992" Y="-567.13196" />
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path
+                        Data="M941.50742,202.78015A120,120,0,0,0,857.73598,317.03407A120,120,0,0,0,941.50742,431.39539z"
+                        Fill="#FF006633" />
+
+                </Canvas>
+
+                <Path
+                    Data="F1 M-63.682584,72.936666L-75.34648899999999,108.83446 -44.80998699999999,86.648413 -82.55518099999999,86.648413 -52.01867599999999,108.83446z"
+                    Fill="#FFD21034"
+                    RenderTransform="0,3.7795276,-3.7795276,0,861.34285,540.69008" />
+
+            </Canvas>
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

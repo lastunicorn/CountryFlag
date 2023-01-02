@@ -21,6 +21,9 @@ namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 [XmlRoot("svg", Namespace = "http://www.w3.org/2000/svg")]
 public class Svg : G
 {
+    [XmlElement("style")]
+    public string? StyleElement { get; set; }
+
     [XmlAttribute("width")]
     public string? Width { get; set; }
 

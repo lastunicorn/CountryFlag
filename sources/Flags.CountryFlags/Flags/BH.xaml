@@ -22,18 +22,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Bahrain -->
 
-    <Canvas x:Key="CountryFlag_BH" Width="1500" Height="900">
+    <Canvas x:Key="CountryFlag_BH" Width="100" Height="60">
 
         <Rectangle
-            Width="1500"
-            Height="900"
-            Canvas.Left="0"
-            Canvas.Top="0"
+            Width="100"
+            Height="60"
             Fill="#ffffff" />
 
         <Path
-            Data="M1500 0H375l225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90 225 90-225 90h1125"
-            Fill="#ce1126" />
+            Data="M 25,0 L 40,6 25,12 40,18 25,24 40,30 25,36 40,42 25,48 40,54 25,60 H 100 V 0 z"
+            Fill="#F21731" />
 
     </Canvas>
 

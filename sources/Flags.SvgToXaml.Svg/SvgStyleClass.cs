@@ -14,39 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
 
-public class Svg : SvgGroup
+public class SvgStyleClass
 {
-    public Size? Width { get; set; }
-
-    public Size? Height { get; set; }
-
-    public SvgViewBox? ViewBox { get; set; }
-
-    public SvgStyleClasses? SvgStyleClasses { get; set; }
-
-    public Svg()
-    {
-    }
-
-    internal Svg(Serialization.Svg svg)
-        : base(svg)
-    {
-        if (svg == null) throw new ArgumentNullException(nameof(svg));
-
-        if (svg.Width != null)
-            Width = svg.Width;
-
-        if (svg.Height != null)
-            Height = svg.Height;
-
-        if (svg.ViewBox != null)
-            ViewBox = SvgViewBox.Parse(svg.ViewBox);
-
-        if (svg.StyleElement != null)
-            SvgStyleClasses = svg.StyleElement;
-    }
+    public string? Name { get; init; }
+    
+    public SvgStyle? Value { get; init; }
 }

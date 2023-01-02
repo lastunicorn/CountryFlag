@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
@@ -126,6 +127,21 @@ public static partial class Countries
                 Description = "A vertical bicolor of green and white with the red crescent encircling the red five-pointed star centered along the dividing line.",
                 StartDate = new DateTime(1962, 07, 03),
                 Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "President",
+                Usage = FlagUsage.LeaderFlag
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Usage = FlagUsage.WarEnsign
+            },
+            new()
+            {
+                Id = "NavalJack",
+                Usage = FlagUsage.NavalJack
             }
         }
     };
@@ -169,6 +185,14 @@ public static partial class Countries
                 StartDate = new DateTime(1866),
                 DesignedBy = "Napoleon III",
                 Usage = FlagUsage.StateFlag
+            },
+            new()
+            {
+                Id = "Civil",
+                Description = "A vertical tricolour of blue, yellow and red.",
+                StartDate = new DateTime(1866, 01, 01),
+                DesignedBy = "Napoleon III",
+                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
             }
         }
     };
@@ -228,9 +252,6 @@ public static partial class Countries
         }
     };
 
-    /// <summary>
-    /// Must add state ensign.
-    /// </summary>
     public static Country AntiguaAndBarbuda { get; } = new()
     {
         ShortName = "Antigua and Barbuda",
@@ -247,6 +268,12 @@ public static partial class Countries
                 StartDate = new DateTime(1967, 02, 27),
                 DesignedBy = "Sir Reginald Samuel",
                 Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "StateEnsign",
+                Description = "A white field with a red cross, the national flag in the canton.",
+                Usage = FlagUsage.StateEnsign
             }
         }
     };
@@ -270,6 +297,17 @@ public static partial class Countries
                 StartDate = new DateTime(1861, 01, 01),
                 DesignedBy = "Manuel Belgrano",
                 Usage = FlagUsage.NationalFlagAndEnsign
+            },
+            new()
+            {
+                Id = "Civil",
+                Names = new List<string>
+                {
+                    "Bandera de Ornato"
+                },
+                Description = "A horizontal triband of light blue (top and bottom) and white (center).",
+                StartDate = new DateTime(1812, 02, 27),
+                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
             }
         }
     };
@@ -290,6 +328,12 @@ public static partial class Countries
                 StartDate = new DateTime(1990, 08, 24),
                 DesignedBy = "Stepan Malkhasyants",
                 Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "President",
+                Description = "A horizontal tricolour of red, blue, and orange defaced with the Presidential seal at its centre.",
+                Usage = FlagUsage.LeaderFlag
             }
         }
     };
@@ -307,7 +351,12 @@ public static partial class Countries
             new()
             {
                 StartDate = new DateTime(1976, 03, 18),
-                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
+                Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "Governor",
+                Usage = FlagUsage.LeaderFlag
             }
         }
     };
@@ -331,6 +380,38 @@ public static partial class Countries
                 StartDate = new DateTime(1903, 12, 08),
                 DesignedBy = "Annie Dorrington, Ivor Evans, Lesley Hawkins, Egbert Nutall and William Stevens",
                 Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "CivilEnsign",
+                Names = new List<string>
+                {
+                    "Australian Red Ensign"
+                },
+                Description = "A Red Ensign defaced with the Commonwealth/Federation Star at the hoist, and the Southern Cross in the fly half.",
+                Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Names = new List<string>
+                {
+                    "Royal Australian Navy Ensign"
+                },
+                Description = "A defaced British White Ensign without the cross. The cross is replaced with the Southern Cross and the Commonwealth Star/Federation Star.",
+                StartDate = new DateTime(1967, 01, 01),
+                Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "AirEnsign",
+                Names = new List<string>
+                {
+                    "Royal Australian Air Force Ensign"
+                },
+                Description = "A field of air force blue with the Union Flag in the canton, the Commonwealth Star below the Union Flag with the Southern Cross in the fly and the RAAF roundel in the lower fly.",
+                StartDate = new DateTime(1982, 01, 01),
+                Usage = FlagUsage.AirEnsign
             }
         }
     };
@@ -353,6 +434,12 @@ public static partial class Countries
                 Description = "A horizontal triband of red (top and bottom) and white.",
                 StartDate = new DateTime(1945, 05, 01),
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "StateAndWar",
+                Description = "A horizontal triband of red (top and bottom) and white defaced with the Coat of arms of Austria at its centre.",
+                Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
             }
         }
     };

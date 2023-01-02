@@ -27,15 +27,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Rectangle
             Width="450"
             Height="600"
-            Canvas.Left="0"
-            Canvas.Top="0"
             Fill="#006633" />
 
         <Rectangle
             Width="450"
             Height="600"
             Canvas.Left="450"
-            Canvas.Top="0"
             Fill="#ffffff" />
 
         <Path

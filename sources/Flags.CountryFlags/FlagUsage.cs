@@ -37,6 +37,7 @@ public enum FlagUsage : ulong
     
     NavalJack = 0x40,
     LeaderFlag = 0x80,
+    AirEnsign = 0x100,
     
     Other = 0x8000_0000_0000_0000
 }

@@ -1,0 +1,80 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Aruba (Governor's Flag) -->
+
+    <Canvas x:Key="CountryFlag_AW_Governor" Width="900" Height="600">
+
+        <!-- Background -->
+
+        <Path
+            Data="M0,0L900,0 900,600 0,600z"
+            Fill="#FFFFFFFF" />
+
+        <!-- Bottom Lines -->
+
+        <Path
+            Data="M0,553.33331L900,553.33331 900,599.9999799999999 0,599.9999799999999z"
+            Fill="#FF21468B" />
+
+        <Path
+            Data="M0,459.99933L900,459.99933 900,506.666 0,506.666z"
+            Fill="#FFAE1C28" />
+
+        <!-- Top Lines -->
+
+        <Path
+            Data="M0,46.66669L900,46.66669 900,2E-05 0,2E-05z"
+            Fill="#FFAE1C28" />
+        <Path
+            Data="M0,140.00067L900,140.00067 900,93.334 0,93.334z"
+            Fill="#FF21468B" />
+
+        <!-- Center -->
+
+        <Path
+            Data="M312.582,162.582L587.418,162.582 587.418,437.418 312.582,437.418z"
+            Fill="#FF4189DD" />
+
+        <Path
+            Data="M317.582,373.54764L587.418,373.54764 587.418,388.26524 317.582,388.26524z"
+            Fill="#FFF9D616" />
+
+        <Path
+            Data="M449.9389,270.52452L461.2238,237.6267 494.1526,226.4326 461.2547,215.14778 450.0606,182.21898000000002 438.7758,215.11679 405.847,226.31089 438.7448,237.59572 449.9389,270.52452z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="M449.9491,263.16575L459.3531,235.75088 486.7938,226.42246 459.3789,217.01845 450.0505,189.57777 440.6465,216.99263 413.2058,226.32103999999998 440.6207,235.72507 449.9491,263.16575z"
+            Fill="#FFD21034" />
+
+        <Path
+            Data="M317.582,344.11277L587.418,344.11277 587.418,358.83037 317.582,358.83037z"
+            Fill="#FFF9D616" />
+
+        <Path
+            Data="M307.582,442.418L307.582,157.582 592.418,157.582 592.418,442.418z M450.0195,432.418C523.1493,432.418 582.418,373.11119 582.418,299.9805 582.418,226.85112 523.1493,167.582 450.0195,167.582 376.88959,167.582 317.582,226.85111999999998 317.582,299.9805 317.582,373.11119 376.88959,432.418 450.0195,432.418z"
+            Fill="#FFFFFFFF" />
+
+    </Canvas>
+
+</ResourceDictionary>

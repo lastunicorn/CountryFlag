@@ -36,6 +36,24 @@ public static partial class Countries
                 StartDate = new DateTime(1973, 07, 10),
                 DesignedBy = "Dr. Hervis Bain",
                 Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "CivilEnsign",
+                Description = "A white cross on a red field, the national flag in the canton.",
+                Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "StateEnsign",
+                Description = "A blue cross on a white field, the national flag in the canton.",
+                Usage = FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "WarEnsign",
+                Description = "A red cross on a white field, the national flag in the canton.",
+                Usage = FlagUsage.WarEnsign
             }
         }
     };

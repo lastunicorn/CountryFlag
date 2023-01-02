@@ -15,7 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.Flags.SvgToXaml.Svg;
@@ -41,6 +43,8 @@ public class SvgElement
     public double? StrokeMiterLimit { get; set; }
 
     public SvgStyle? Style { get; set; }
+
+    public string[]? ClassNames { get; set; }
 
     public SvgTransformList Transforms { get; set; }
 
@@ -84,6 +88,8 @@ public class SvgElement
 
         Style = element.Style;
 
+        ClassNames = element.Class?.Split(new[] { ' ' }, StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+
         Transforms = new SvgTransformList();
 
         if (element.Transform != null)
@@ -94,8 +100,60 @@ public class SvgElement
             : null;
     }
 
+    private Svg? GetParentSvg()
+    {
+        SvgGroup? parent = Parent;
+
+        while (parent != null)
+        {
+            if (parent is Svg svg)
+                return svg;
+
+            parent = parent.Parent;
+        }
+
+        return null;
+    }
+
+    private IEnumerable<SvgStyleClass>? GetApplicableClasses()
+    {
+        if (ClassNames == null)
+            return null;
+
+        Svg? parentSvg = GetParentSvg();
+        SvgStyleClasses? svgStyleClasses = parentSvg?.SvgStyleClasses;
+
+        return svgStyleClasses?
+            .Where(x => ClassNames.Contains(x.Name))
+            .Where(x => x.Value != null)
+            .Reverse();
+    }
+
+    private string? GetStyleValueFromClasses(string name)
+    {
+        IEnumerable<SvgStyleClass>? applicableClasses = GetApplicableClasses();
+
+        if (applicableClasses == null) 
+            return null;
+
+        foreach (SvgStyleClass svgStyleClass in applicableClasses)
+        {
+            SvgStyleItem? styleItem1 = svgStyleClass.Value?[name];
+
+            if (styleItem1 != null)
+                return styleItem1.Value;
+        }
+
+        return null;
+    }
+
     public string? CalculateFill()
     {
+        string? rawValue = GetStyleValueFromClasses("fill");
+
+        if (rawValue != null)
+            return rawValue;
+
         SvgStyleItem? styleItem = Style?["fill"];
 
         if (styleItem != null)
@@ -111,6 +169,11 @@ public class SvgElement
 
     public FillRule? CalculateFillRule()
     {
+        string? rawValue = GetStyleValueFromClasses("fill-rule");
+
+        if (rawValue != null)
+            return (FillRule)Enum.Parse(typeof(FillRule), rawValue, true);
+
         SvgStyleItem? styleItem = Style?["fill-rule"];
 
         if (styleItem != null)
@@ -126,6 +189,11 @@ public class SvgElement
 
     public string? CalculateStroke()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke");
+
+        if (rawValue != null)
+            return rawValue;
+
         SvgStyleItem? styleItem = Style?["stroke"];
 
         if (styleItem != null)
@@ -141,6 +209,11 @@ public class SvgElement
 
     public double? CalculateStrokeWidth()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke-width");
+
+        if (rawValue != null)
+            return double.Parse(rawValue, CultureInfo.InvariantCulture);
+
         SvgStyleItem? styleItem = Style?["stroke-width"];
 
         if (styleItem != null)
@@ -163,6 +236,11 @@ public class SvgElement
 
     public StrokeLineCap? CalculateStrokeLineCap()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke-linecap");
+
+        if (rawValue != null)
+            return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), rawValue, true);
+
         SvgStyleItem? styleItem = Style?["stroke-linecap"];
 
         if (styleItem != null)
