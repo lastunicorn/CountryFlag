@@ -411,7 +411,7 @@ public static partial class Countries
                 },
                 Description = "A field of air force blue with the Union Flag in the canton, the Commonwealth Star below the Union Flag with the Southern Cross in the fly and the RAAF roundel in the lower fly.",
                 StartDate = new DateTime(1982, 01, 01),
-                Usage = FlagUsage.AirEnsign
+                Usage = FlagUsage.AirForceEnsign
             }
         }
     };

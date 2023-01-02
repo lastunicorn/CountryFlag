@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
@@ -93,6 +94,46 @@ public static partial class Countries
                 StartDate = new DateTime(1972, 01, 17),
                 DesignedBy = "Quamrul Hassan",
                 Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "CivilEnsign",
+                Names = new List<string>
+                {
+                    "Civil Ensign"
+                },
+                Description = "A Red Ensign with the national flag of Bangladesh in the canton.",
+                Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Names = new List<string>
+                {
+                    "Naval Ensign"
+                },
+                Description = "A White Ensign with the national flag of Bangladesh in the canton.",
+                Usage = FlagUsage.WarEnsign
+            },
+            new()
+            {
+                Id = "AirEnsign",
+                Names = new List<string>
+                {
+                    "Air force ensign"
+                },
+                Description = "A field of air force blue with the national flag of Bangladesh in the canton and the Bangladesh Air Force roundel in the middle of the fly.",
+                Usage = FlagUsage.AirForceEnsign
+            },
+            new()
+            {
+                Id = "Old1971",
+                Names = new List<string>
+                {
+                    "Flag used during the Liberation War (1971)"
+                },
+                Description = "A red disc with a golden outline of Bangladesh on a green banner.",
+                StartDate = new DateTime(1971, 03, 02)
             }
         }
     };
@@ -113,6 +154,16 @@ public static partial class Countries
                 StartDate = new DateTime(1966, 11, 30),
                 DesignedBy = "Grantley W. Prescod",
                 Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Names = new List<string>
+                {
+                    "Naval ensign"
+                },
+                Description = "A red cross on a white field, the national flag in the canton.",
+                Usage = FlagUsage.WarEnsign
             }
         }
     };
@@ -152,6 +203,26 @@ public static partial class Countries
                 Description = "A vertical tricolour of black, yellow, and red.",
                 StartDate = new DateTime(1831, 01, 23),
                 Usage = FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "NationalFlag",
+                Description = "A vertical tricolour of black, yellow, and red.",
+                Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "StateEnsign",
+                Description = "As above, with the central pale defaced by a lion rampant ensigned by a crown, both sable (black), the lion armed and langued gules (red).",
+                StartDate = new DateTime(1950, 01, 01),
+                Usage = FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Description = "A yellow saltire on a white field, bordered above and below in red and to the left and right in black, charged on the top with a crown above crossed cannons and on the bottom by a fouled anchor.",
+                StartDate = new DateTime(1950, 02, 23),
+                Usage = FlagUsage.WarEnsign
             }
         }
     };
@@ -209,6 +280,27 @@ public static partial class Countries
                 Description = "Red Ensign with the coat-of-arms of Bermuda in the fly.",
                 StartDate = new DateTime(1999, 01, 01),
                 Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "StateEnsign",
+                Names = new List<string>
+                {
+                    "State Ensign",
+                    "Government Ensign of Bermuda"
+                },
+                Description = "Blue Ensign with the coat-of-arms of Bermuda in the fly.",
+                Usage = FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "GovernorFlag",
+                Names = new List<string>
+                {
+                    "Flag of the Governor of Bermuda"
+                },
+                Description = "A Union Flag defaced with the coat-of-arms of Bermuda.",
+                Usage = FlagUsage.LeaderFlag
             }
         }
     };
@@ -228,6 +320,12 @@ public static partial class Countries
                 Description = "Divided diagonally from the lower hoist-side corner to the upper fly-side corner; the upper triangle is yellow and the lower triangle is orange, with a white dragon holding four jewels in its claws centered along the dividing line and facing away from the hoist.",
                 StartDate = new DateTime(1969, 01, 01),
                 DesignedBy = "Mayum Choying Wangmo Dorji",
+                Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "AlternateFlag",
+                Description = "Variant of the Flag of Bhutan with a differently rendered dragon",
                 Usage = FlagUsage.NationalFlag
             }
         }
