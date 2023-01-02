@@ -55,6 +55,13 @@ public static partial class Countries
                 Description = "Three horizontal bands of blue, red (double width) and blue, with a depiction of Angkor Wat in white centred on the red band.",
                 StartDate = new DateTime(1948, 01, 01),
                 Usage = FlagUsage.NationalFlagAndEnsign
+            },
+            new()
+            {
+                Id = "King",
+                Description = "The royal arms in gold centred on a blue field.",
+                StartDate = new DateTime(1993, 09, 24),
+                Usage = FlagUsage.LeaderFlag
             }
         }
     };

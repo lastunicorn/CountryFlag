@@ -14,9 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.Flags.CountryFlags;
-
-namespace DustInTheWind.CountryFlags;
+namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {

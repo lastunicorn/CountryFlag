@@ -14,30 +14,29 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Reflection;
-using System.Windows;
+using System.Collections.Generic;
 using DustInTheWind.Flags.Core;
-using DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo
+namespace DustInTheWind.Flags.CountryFlags;
+
+public class CountryFlagModule : IFlagModule
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public void BeforeLoad()
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            Assembly countryFlagsAssembly = typeof(Countries).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly);
+        
+    }
 
-            MainViewModel mainViewModel = new();
-            MainWindow mainWindow = new(mainViewModel);
-            mainWindow.Show();
+    public IEnumerable<IFlagRepository> GetFlagRepositories()
+    {
+        yield return new CountryFlagRepository();
+    }
 
-            MainWindow = mainWindow;
+    public void ConfigureModule()
+    {
 
-            base.OnStartup(e);
-        }
+    }
+
+    public void AfterLoad()
+    {
     }
 }

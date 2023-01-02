@@ -123,22 +123,22 @@ public static partial class Countries
 
         // G
 
-        yield return DustInTheWind.CountryFlags.Countries.Gabon;
-        yield return DustInTheWind.CountryFlags.Countries.Gambia;
-        yield return DustInTheWind.CountryFlags.Countries.Georgia;
-        yield return DustInTheWind.CountryFlags.Countries.Germany;
-        yield return DustInTheWind.CountryFlags.Countries.Ghana;
-        yield return DustInTheWind.CountryFlags.Countries.Gibraltar;
-        yield return DustInTheWind.CountryFlags.Countries.Greece;
-        yield return DustInTheWind.CountryFlags.Countries.Greenland;
-        yield return DustInTheWind.CountryFlags.Countries.Grenada;
-        yield return DustInTheWind.CountryFlags.Countries.Guadeloupe;
-        yield return DustInTheWind.CountryFlags.Countries.Guam;
-        yield return DustInTheWind.CountryFlags.Countries.Guatemala;
-        yield return DustInTheWind.CountryFlags.Countries.Guernsey;
-        yield return DustInTheWind.CountryFlags.Countries.Guinea;
-        yield return DustInTheWind.CountryFlags.Countries.GuineaBissau;
-        yield return DustInTheWind.CountryFlags.Countries.Guyana;
+        yield return Gabon;
+        yield return Gambia;
+        yield return Georgia;
+        yield return Germany;
+        yield return Ghana;
+        yield return Gibraltar;
+        yield return Greece;
+        yield return Greenland;
+        yield return Grenada;
+        yield return Guadeloupe;
+        yield return Guam;
+        yield return Guatemala;
+        yield return Guernsey;
+        yield return Guinea;
+        yield return GuineaBissau;
+        yield return Guyana;
 
         // H
 
@@ -221,7 +221,6 @@ public static partial class Countries
         yield return Nepal;
         yield return Netherlands;
         yield return NewCaledonia;
-        //yield return NewCaledoniaFlnks;
         yield return NewZealand;
         yield return Nicaragua;
         yield return Niger;

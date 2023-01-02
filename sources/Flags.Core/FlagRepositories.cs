@@ -43,6 +43,21 @@ public static class FlagRepositories
             AddInternal(flagRepository);
     }
 
+    public static void LoadFrom(params Assembly[] assemblies)
+    {
+        IEnumerable<Type> types = assemblies
+            .SelectMany(x => x.ExportedTypes)
+            .Where(x => typeof(IFlagRepository).IsAssignableFrom(x));
+
+        foreach (Type type in types)
+        {
+            object? instance = Activator.CreateInstance(type);
+
+            if (instance is IFlagRepository flagRepository)
+                AddInternal(flagRepository);
+        }
+    }
+
     private static void AddInternal(IFlagRepository flagRepository)
     {
         switch (Repository)
@@ -62,21 +77,6 @@ public static class FlagRepositories
                     flagRepository
                 };
                 break;
-        }
-    }
-
-    public static void LoadFrom(params Assembly[] assemblies)
-    {
-        IEnumerable<Type> types = assemblies
-            .SelectMany(x => x.ExportedTypes)
-            .Where(x => typeof(IFlagRepository).IsAssignableFrom(x));
-
-        foreach (Type type in types)
-        {
-            object? instance = Activator.CreateInstance(type);
-
-            if (instance is IFlagRepository flagRepository)
-                AddInternal(flagRepository);
         }
     }
 }

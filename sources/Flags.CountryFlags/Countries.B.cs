@@ -346,6 +346,44 @@ public static partial class Countries
                 Description = "A horizontal tricolor of red, yellow and green.",
                 StartDate = new DateTime(1851, 10, 31),
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
+            },
+            new()
+            {
+                Id = "Flag2",
+                Description = "A horizontal tricolor of red, yellow and green with the coat of arms.",
+                StartDate = new DateTime(1851, 10, 31),
+                Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
+            },
+            new()
+            {
+                Id = "Wiphala",
+                Names = new List<string>
+                {
+                    "Wiphala",
+                    "Dual flag"
+                },
+                Description = "Banner composed of a 7-by-7 square patchwork in seven colours, arranged diagonally.",
+                StartDate = new DateTime(2009, 02, 07),
+                Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "NavalEnsign",
+                Names = new List<string>
+                {
+                    "Naval Ensign"
+                },
+                Usage = FlagUsage.WarEnsign
+            },
+            new()
+            {
+                Id = "NavalJack",
+                Names = new List<string>
+                {
+                    "Naval Ensign"
+                },
+                Description = "A red, yellow and green square.",
+                Usage = FlagUsage.NavalJack
             }
         }
     };
@@ -365,6 +403,28 @@ public static partial class Countries
                 Description = "A horizontal triband of red (bright vermilion), white, and cobalt blue.",
                 StartDate = new DateTime(1575, 01, 01),
                 Usage = FlagUsage.NationalFlagAndEnsign
+            },
+            new()
+            {
+                Id = "NavalJack",
+                Names = new List<string>
+                {
+                    "Marine Geus or Prinsengeus"
+                },
+                Description = "12 segments in the national colors of red (bright vermilion), white, and cobalt blue.",
+                StartDate = new DateTime(1931, 04, 20),
+                Usage = FlagUsage.NavalJack
+            },
+            new()
+            {
+                Id = "Monarch",
+                Names = new List<string>
+                {
+                    "Royal Standard of the Netherlands"
+                },
+                Description = "Orange field divided in four by a nassau-blue cross, showing bugle-horns of the Principality of Orange and the coat of arms of the Kingdom, surrounded by a crown and the insignia of the Military Order of William.",
+                StartDate = new DateTime(1908, 08, 27),
+                Usage = FlagUsage.NavalJack
             }
         }
     };
@@ -404,6 +464,15 @@ public static partial class Countries
                 Description = "A light blue field cut horizontally in the centre by a black stripe with a thin white frame.",
                 StartDate = new DateTime(1966, 09, 30),
                 Usage = FlagUsage.NationalFlag
+            },
+            new()
+            {
+                Id = "President",
+                Names = new List<string>
+                {
+                    "Presidential Standard of Botswana"
+                },
+                Description = "A light blue field charged with a black-rimmed white circle containing the coat of arms of Botswana in the centre."
             }
         }
     };
@@ -415,7 +484,13 @@ public static partial class Countries
         IsoCodeAlpha2 = "BV",
         IsoCodeAlpha3 = "BVT",
         IsoCodeNumeric = "074",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+            {
+            }
+        }
     };
 
     public static Country Brazil { get; } = new()
