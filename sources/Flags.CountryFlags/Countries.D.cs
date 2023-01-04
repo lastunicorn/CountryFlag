@@ -33,6 +33,10 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    "Dannebrog"
+                },
                 Description = "A white Nordic cross with a red background.",
                 StartDate = new DateTime(1625, 01, 01),
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
@@ -40,10 +44,18 @@ public static partial class Countries
             new()
             {
                 Id = "Splitflaget",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Splitflaget",
-                    "Rigets flag — Flag of the Kingdom [of Denmark]"
+                    new()
+                    {
+                        NativeName = "Splitflaget",
+                        EnglishTranslation = "The national flag of Denmark"
+                    },
+                    new()
+                    {
+                        NativeName = "Rigets flag",
+                        EnglishTranslation = "Flag of the Kingdom [of Denmark]"
+                    }
                 },
                 Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
             }
@@ -62,11 +74,18 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Drapeau National",
-                    "علم الوطني",
-                    "National Flag"
+                    new()
+                    {
+                        NativeName = "Drapeau National",
+                        EnglishTranslation = "National Flag"
+                    },
+                    new()
+                    {
+                        NativeName = "علم الوطني",
+                        EnglishTranslation = "National Flag"
+                    }
                 },
                 Description = "A horizontal bicolour of light blue and light green, with a white isosceles triangle at the hoist bearing a red star in its center.",
                 StartDate = new DateTime(1977, 06, 27),

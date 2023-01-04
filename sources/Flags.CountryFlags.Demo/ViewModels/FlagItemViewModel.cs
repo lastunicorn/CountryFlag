@@ -14,25 +14,42 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Linq;
+
 namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
 public class FlagItemViewModel
 {
-    public string? CountryName { get; }
+    public string? Title { get; }
 
-    public string? Id { get; set; }
+    public string? Id { get; }
 
-    public bool IsAdditional { get; set; }
+    public bool IsAdditional { get; }
 
     public FlagItemViewModel(CountryFlag? countryFlag)
     {
-        CountryName = countryFlag?.Country?.ShortName;
-        Id = countryFlag?.FullId;
-        IsAdditional = !string.IsNullOrEmpty(countryFlag?.Id);
+        if (countryFlag == null)
+            return;
+
+        Id = countryFlag.FullId;
+        IsAdditional = !string.IsNullOrEmpty(countryFlag.Id);
+
+        if (IsAdditional)
+        {
+            string? name = countryFlag.Names?.Count is > 0
+                ? countryFlag.Names.First().EnglishTranslation
+                : null;
+
+            Title = name ?? countryFlag.Country?.ShortName;
+        }
+        else
+        {
+            Title = countryFlag.Country?.ShortName;
+        }
     }
 
     public override string ToString()
     {
-        return CountryName ?? string.Empty;
+        return Title ?? string.Empty;
     }
 }

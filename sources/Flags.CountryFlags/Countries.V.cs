@@ -18,53 +18,53 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country Vanuatu { get; } = new()
-    //{
-    //    ShortName = "Vanuatu",
-    //    FullName = "Vanuatu",
-    //    IsoCodeAlpha2 = "VU",
-    //    IsoCodeAlpha3 = "VUT",
-    //    IsoCodeNumeric = "548",
-    //    IsIndependent = true
-    //};
+    public static Country Vanuatu { get; } = new()
+    {
+        ShortName = "Vanuatu",
+        FullName = "Republic of Vanuatu",
+        IsoCodeAlpha2 = "VU",
+        IsoCodeAlpha3 = "VUT",
+        IsoCodeNumeric = "548",
+        IsIndependent = true
+    };
 
-    //public static Country Venezuela(BolivarianRepublicof) { get; } = new()
-    //{
-    //    ShortName = "Venezuela (Bolivarian Republic of)",
-    //    FullName = "Venezuela (Bolivarian Republic of)",
-    //    IsoCodeAlpha2 = "VE",
-    //    IsoCodeAlpha3 = "VEN",
-    //    IsoCodeNumeric = "862",
-    //    IsIndependent = true
-    //};
+    public static Country Venezuela { get; } = new()
+    {
+        ShortName = "Venezuela",
+        FullName = "Bolivarian Republic of Venezuela",
+        IsoCodeAlpha2 = "VE",
+        IsoCodeAlpha3 = "VEN",
+        IsoCodeNumeric = "862",
+        IsIndependent = true
+    };
 
-    //public static Country VietNam { get; } = new()
-    //{
-    //    ShortName = "Viet Nam",
-    //    FullName = "Viet Nam",
-    //    IsoCodeAlpha2 = "VN",
-    //    IsoCodeAlpha3 = "VNM",
-    //    IsoCodeNumeric = "704",
-    //    IsIndependent = true
-    //};
+    public static Country Vietnam { get; } = new()
+    {
+        ShortName = "Vietnam",
+        FullName = "Socialist Republic of Vietnam",
+        IsoCodeAlpha2 = "VN",
+        IsoCodeAlpha3 = "VNM",
+        IsoCodeNumeric = "704",
+        IsIndependent = true
+    };
 
-    //public static Country VirginIslands(British) { get; } = new()
-    //{
-    //    ShortName = "Virgin Islands (British)",
-    //    FullName = "Virgin Islands (British)",
-    //    IsoCodeAlpha2 = "VG",
-    //    IsoCodeAlpha3 = "VGB",
-    //    IsoCodeNumeric = "92",
-    //    IsIndependent = false
-    //};
+    public static Country BritishVirginIslands { get; } = new()
+    {
+        ShortName = "British Virgin Islands",
+        FullName = "Virgin Islands",
+        IsoCodeAlpha2 = "VG",
+        IsoCodeAlpha3 = "VGB",
+        IsoCodeNumeric = "92",
+        IsIndependent = false
+    };
 
-    //public static Country VirginIslands(U.S.) { get; } = new()
-    //{
-    //    ShortName = "Virgin Islands (U.S.)",
-    //    FullName = "Virgin Islands (U.S.)",
-    //    IsoCodeAlpha2 = "VI",
-    //    IsoCodeAlpha3 = "VIR",
-    //    IsoCodeNumeric = "850",
-    //    IsIndependent = false
-    //};
+    public static Country UnitedStatesVirginIslands { get; } = new()
+    {
+        ShortName = "United States Virgin Islands",
+        FullName = "Virgin Islands of the United States",
+        IsoCodeAlpha2 = "VI",
+        IsoCodeAlpha3 = "VIR",
+        IsoCodeNumeric = "850",
+        IsIndependent = false
+    };
 }

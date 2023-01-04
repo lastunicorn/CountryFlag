@@ -90,6 +90,15 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "লাল সবুজ",
+                        Romanized = "Lal Shôbuz",
+                        EnglishTranslation = "The Red & Green"
+                    }
+                },
                 Description = "A red disc slightly off center to the left defacing a dark green banner.",
                 StartDate = new DateTime(1972, 01, 17),
                 DesignedBy = "Quamrul Hassan",
@@ -98,9 +107,9 @@ public static partial class Countries
             new()
             {
                 Id = "CivilEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Civil Ensign"
+                    "Civil ensign"
                 },
                 Description = "A Red Ensign with the national flag of Bangladesh in the canton.",
                 Usage = FlagUsage.CivilEnsign
@@ -108,9 +117,9 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Naval Ensign"
+                    "Naval ensign"
                 },
                 Description = "A White Ensign with the national flag of Bangladesh in the canton.",
                 Usage = FlagUsage.WarEnsign
@@ -118,7 +127,7 @@ public static partial class Countries
             new()
             {
                 Id = "AirEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Air force ensign"
                 },
@@ -127,13 +136,15 @@ public static partial class Countries
             },
             new()
             {
-                Id = "Old1971",
-                Names = new List<string>
+                Id = "Liberation1971",
+                Names = new List<FlagName>
                 {
-                    "Flag used during the Liberation War (1971)"
+                    "Liberation War 1971"
                 },
                 Description = "A red disc with a golden outline of Bangladesh on a green banner.",
-                StartDate = new DateTime(1971, 03, 02)
+                Comments = "Flag used during the Liberation War (1971)",
+                StartDate = new DateTime(1971, 03, 02),
+                EndDate = new DateTime(1971, 12, 12)
             }
         }
     };
@@ -150,6 +161,10 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    "The Broken Trident"
+                },
                 Description = "A vertical triband of ultramarine (hoist-side and fly-side) and gold with the black trident-head centred on the gold band.",
                 StartDate = new DateTime(1966, 11, 30),
                 DesignedBy = "Grantley W. Prescod",
@@ -158,7 +173,7 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Naval ensign"
                 },
@@ -284,9 +299,8 @@ public static partial class Countries
             new()
             {
                 Id = "StateEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "State Ensign",
                     "Government Ensign of Bermuda"
                 },
                 Description = "Blue Ensign with the coat-of-arms of Bermuda in the fly.",
@@ -295,7 +309,7 @@ public static partial class Countries
             new()
             {
                 Id = "GovernorFlag",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Governor of Bermuda"
                 },
@@ -343,13 +357,21 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "La Tricolor",
+                        EnglishTranslation = "The tricolor"
+                    }
+                },
                 Description = "A horizontal tricolor of red, yellow and green.",
                 StartDate = new DateTime(1851, 10, 31),
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
             },
             new()
             {
-                Id = "Flag2",
+                Id = "State",
                 Description = "A horizontal tricolor of red, yellow and green with the coat of arms.",
                 StartDate = new DateTime(1851, 10, 31),
                 Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
@@ -357,7 +379,7 @@ public static partial class Countries
             new()
             {
                 Id = "Wiphala",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Wiphala",
                     "Dual flag"
@@ -369,18 +391,18 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Naval Ensign"
+                    "Naval ensign"
                 },
                 Usage = FlagUsage.WarEnsign
             },
             new()
             {
                 Id = "NavalJack",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Naval Ensign"
+                    "Naval Jack"
                 },
                 Description = "A red, yellow and green square.",
                 Usage = FlagUsage.NavalJack
@@ -407,7 +429,7 @@ public static partial class Countries
             new()
             {
                 Id = "NavalJack",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Marine Geus or Prinsengeus"
                 },
@@ -418,7 +440,7 @@ public static partial class Countries
             new()
             {
                 Id = "Monarch",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Royal Standard of the Netherlands"
                 },
@@ -468,7 +490,7 @@ public static partial class Countries
             new()
             {
                 Id = "President",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Presidential Standard of Botswana"
                 },

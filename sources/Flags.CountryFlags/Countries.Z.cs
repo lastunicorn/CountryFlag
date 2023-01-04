@@ -18,23 +18,23 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country Zambia { get; } = new()
-    //{
-    //    ShortName = "Zambia",
-    //    FullName = "Zambia",
-    //    IsoCodeAlpha2 = "ZM",
-    //    IsoCodeAlpha3 = "ZMB",
-    //    IsoCodeNumeric = "894",
-    //    IsIndependent = true
-    //};
+    public static Country Zambia { get; } = new()
+    {
+        ShortName = "Zambia",
+        FullName = "Republic of Zambia",
+        IsoCodeAlpha2 = "ZM",
+        IsoCodeAlpha3 = "ZMB",
+        IsoCodeNumeric = "894",
+        IsIndependent = true
+    };
 
-    //public static Country Zimbabwe { get; } = new()
-    //{
-    //    ShortName = "Zimbabwe",
-    //    FullName = "Zimbabwe",
-    //    IsoCodeAlpha2 = "ZW",
-    //    IsoCodeAlpha3 = "ZWE",
-    //    IsoCodeNumeric = "716",
-    //    IsIndependent = true
-    //};
+    public static Country Zimbabwe { get; } = new()
+    {
+        ShortName = "Zimbabwe",
+        FullName = "Republic of Zimbabwe",
+        IsoCodeAlpha2 = "ZW",
+        IsoCodeAlpha3 = "ZWE",
+        IsoCodeNumeric = "716",
+        IsIndependent = true
+    };
 }

@@ -24,6 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <Canvas x:Key="CountryFlag_GE" Width="30" Height="20">
 
+        <!-- Background -->
+
         <Rectangle
             Width="30"
             Height="20"
@@ -31,9 +33,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Canvas.Top="0"
             Fill="#ffffff" />
 
+        <!-- Middle (Big) Cross -->
+
         <Path
             Fill="#ff0000"
             Data="F1 m 13 0 h 4 v 20 h -4 z M 0 8 h 30 v 4 H 0 z" />
+
+        <!-- Top-Left Cross -->
 
         <Path
             Fill="#ff0000"
@@ -47,6 +53,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <RotateTransform Angle="90" CenterX="6.5" CenterY="4" />
             </Path.RenderTransform>
         </Path>
+
+        <!-- Top-Right Cross -->
 
         <Canvas>
 
@@ -69,6 +77,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </Canvas>
 
+        <!-- Bottom-Left Cross -->
+
         <Canvas>
 
             <Canvas.RenderTransform>
@@ -89,6 +99,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </Path>
 
         </Canvas>
+
+        <!-- Bottom-Right Cross -->
 
         <Canvas>
 

@@ -18,13 +18,13 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country Yemen { get; } = new()
-    //{
-    //    ShortName = "Yemen",
-    //    FullName = "Yemen",
-    //    IsoCodeAlpha2 = "YE",
-    //    IsoCodeAlpha3 = "YEM",
-    //    IsoCodeNumeric = "887",
-    //    IsIndependent = true
-    //};
+    public static Country Yemen { get; } = new()
+    {
+        ShortName = "Yemen",
+        FullName = "Republic of Yemen",
+        IsoCodeAlpha2 = "YE",
+        IsoCodeAlpha3 = "YEM",
+        IsoCodeNumeric = "887",
+        IsIndependent = true
+    };
 }

@@ -18,23 +18,23 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country WallisandFutuna { get; } = new()
-    //{
-    //    ShortName = "Wallis and Futuna",
-    //    FullName = "Wallis and Futuna",
-    //    IsoCodeAlpha2 = "WF",
-    //    IsoCodeAlpha3 = "WLF",
-    //    IsoCodeNumeric = "876",
-    //    IsIndependent = false
-    //};
+    public static Country WallisAndFutuna { get; } = new()
+    {
+        ShortName = "Wallis and Futuna",
+        FullName = "Territory of the Wallis and Futuna Islands",
+        IsoCodeAlpha2 = "WF",
+        IsoCodeAlpha3 = "WLF",
+        IsoCodeNumeric = "876",
+        IsIndependent = false
+    };
 
-    //public static Country WesternSahara[b] { get; } = new()
-    //{
-    //    ShortName = "Western Sahara[b]",
-    //    FullName = "Western Sahara[b]",
-    //    IsoCodeAlpha2 = "EH",
-    //    IsoCodeAlpha3 = "ESH",
-    //    IsoCodeNumeric = "732",
-    //    IsIndependent = false
-    //};
+    public static Country WesternSahara { get; } = new()
+    {
+        ShortName = "Western Sahara",
+        FullName = "Western Sahara",
+        IsoCodeAlpha2 = "EH",
+        IsoCodeAlpha3 = "ESH",
+        IsoCodeNumeric = "732",
+        IsIndependent = false
+    };
 }

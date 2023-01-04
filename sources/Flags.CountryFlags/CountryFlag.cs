@@ -47,7 +47,7 @@ public class CountryFlag
         }
     }
 
-    public List<string> Names { get; set; }
+    public List<FlagName>? Names { get; set; }
 
     public string? Description { get; init; }
     
@@ -67,5 +67,23 @@ public class CountryFlag
             return false;
 
         return FullId == id;
+    }
+}
+
+public readonly struct FlagName
+{
+    public string NativeName { get; init; }
+    
+    public string? Romanized { get; init; }
+    
+    public string EnglishTranslation { get; init; }
+
+    public static implicit operator FlagName(string flagName)
+    {
+        return new FlagName
+        {
+            NativeName = flagName,
+            EnglishTranslation = flagName
+        };
     }
 }

@@ -166,6 +166,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
             <SubType>Designer</SubType>
         </Page>
+        <Page Update="Flags\GE_MinisterOfDefence.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\GE_NavalEnsign.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\GI_Union.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\RE.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>

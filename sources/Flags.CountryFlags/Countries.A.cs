@@ -301,9 +301,13 @@ public static partial class Countries
             new()
             {
                 Id = "Civil",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Bandera de Ornato"
+                    new()
+                    {
+                        NativeName = "Bandera de Ornato",
+                        EnglishTranslation = "Ornamental Flag"
+                    }
                 },
                 Description = "A horizontal triband of light blue (top and bottom) and white (center).",
                 StartDate = new DateTime(1812, 02, 27),
@@ -384,7 +388,7 @@ public static partial class Countries
             new()
             {
                 Id = "CivilEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Australian Red Ensign"
                 },
@@ -394,7 +398,7 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Royal Australian Navy Ensign"
                 },
@@ -405,7 +409,7 @@ public static partial class Countries
             new()
             {
                 Id = "AirEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Royal Australian Air Force Ensign"
                 },

@@ -18,83 +18,83 @@ namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
 {
-    //public static Country Uganda { get; } = new()
-    //{
-    //    ShortName = "Uganda",
-    //    FullName = "Uganda",
-    //    IsoCodeAlpha2 = "UG",
-    //    IsoCodeAlpha3 = "UGA",
-    //    IsoCodeNumeric = "800",
-    //    IsIndependent = true
-    //};
+    public static Country Uganda { get; } = new()
+    {
+        ShortName = "Uganda",
+        FullName = "Republic of Uganda",
+        IsoCodeAlpha2 = "UG",
+        IsoCodeAlpha3 = "UGA",
+        IsoCodeNumeric = "800",
+        IsIndependent = true
+    };
 
-    //public static Country Ukraine { get; } = new()
-    //{
-    //    ShortName = "Ukraine",
-    //    FullName = "Ukraine",
-    //    IsoCodeAlpha2 = "UA",
-    //    IsoCodeAlpha3 = "UKR",
-    //    IsoCodeNumeric = "804",
-    //    IsIndependent = true
-    //};
+    public static Country Ukraine { get; } = new()
+    {
+        ShortName = "Ukraine",
+        FullName = "Ukraine",
+        IsoCodeAlpha2 = "UA",
+        IsoCodeAlpha3 = "UKR",
+        IsoCodeNumeric = "804",
+        IsIndependent = true
+    };
 
-    //public static Country UnitedArabEmirates { get; } = new()
-    //{
-    //    ShortName = "United Arab Emirates",
-    //    FullName = "United Arab Emirates",
-    //    IsoCodeAlpha2 = "AE",
-    //    IsoCodeAlpha3 = "ARE",
-    //    IsoCodeNumeric = "784",
-    //    IsIndependent = true
-    //};
+    public static Country UnitedArabEmirates { get; } = new()
+    {
+        ShortName = "United Arab Emirates",
+        FullName = "United Arab Emirates",
+        IsoCodeAlpha2 = "AE",
+        IsoCodeAlpha3 = "ARE",
+        IsoCodeNumeric = "784",
+        IsIndependent = true
+    };
 
-    //public static Country UnitedKingdomofGreatBritainandNorthernIreland { get; } = new()
-    //{
-    //    ShortName = "United Kingdom of Great Britain and Northern Ireland",
-    //    FullName = "United Kingdom of Great Britain and Northern Ireland",
-    //    IsoCodeAlpha2 = "GB",
-    //    IsoCodeAlpha3 = "GBR",
-    //    IsoCodeNumeric = "826",
-    //    IsIndependent = true
-    //};
+    public static Country UnitedKingdom { get; } = new()
+    {
+        ShortName = "United Kingdom",
+        FullName = "United Kingdom of Great Britain and Northern Ireland",
+        IsoCodeAlpha2 = "GB",
+        IsoCodeAlpha3 = "GBR",
+        IsoCodeNumeric = "826",
+        IsIndependent = true
+    };
 
-    //public static Country UnitedStatesofAmerica { get; } = new()
-    //{
-    //    ShortName = "United States of America",
-    //    FullName = "United States of America",
-    //    IsoCodeAlpha2 = "US",
-    //    IsoCodeAlpha3 = "USA",
-    //    IsoCodeNumeric = "840",
-    //    IsIndependent = true
-    //};
+    public static Country UnitedStatesOfAmerica { get; } = new()
+    {
+        ShortName = "United States of America",
+        FullName = "United States of America",
+        IsoCodeAlpha2 = "US",
+        IsoCodeAlpha3 = "USA",
+        IsoCodeNumeric = "840",
+        IsIndependent = true
+    };
 
-    //public static Country UnitedStatesMinorOutlyingIslands[f] { get; } = new()
-    //{
-    //    ShortName = "United States Minor Outlying Islands[f]",
-    //    FullName = "United States Minor Outlying Islands[f]",
-    //    IsoCodeAlpha2 = "UM",
-    //    IsoCodeAlpha3 = "UMI",
-    //    IsoCodeNumeric = "581",
-    //    IsIndependent = false
-    //};
+    public static Country UnitedStatesMinorOutlyingIslands { get; } = new()
+    {
+        ShortName = "United States Minor Outlying Islands",
+        FullName = "United States Minor Outlying Islands",
+        IsoCodeAlpha2 = "UM",
+        IsoCodeAlpha3 = "UMI",
+        IsoCodeNumeric = "581",
+        IsIndependent = false
+    };
 
-    //public static Country Uruguay { get; } = new()
-    //{
-    //    ShortName = "Uruguay",
-    //    FullName = "Uruguay",
-    //    IsoCodeAlpha2 = "UY",
-    //    IsoCodeAlpha3 = "URY",
-    //    IsoCodeNumeric = "858",
-    //    IsIndependent = true
-    //};
+    public static Country Uruguay { get; } = new()
+    {
+        ShortName = "Uruguay",
+        FullName = "Oriental Republic of Uruguay",
+        IsoCodeAlpha2 = "UY",
+        IsoCodeAlpha3 = "URY",
+        IsoCodeNumeric = "858",
+        IsIndependent = true
+    };
 
-    //public static Country Uzbekistan { get; } = new()
-    //{
-    //    ShortName = "Uzbekistan",
-    //    FullName = "Uzbekistan",
-    //    IsoCodeAlpha2 = "UZ",
-    //    IsoCodeAlpha3 = "UZB",
-    //    IsoCodeNumeric = "860",
-    //    IsIndependent = true
-    //};
+    public static Country Uzbekistan { get; } = new()
+    {
+        ShortName = "Uzbekistan",
+        FullName = "Republic of Uzbekistan",
+        IsoCodeAlpha2 = "UZ",
+        IsoCodeAlpha3 = "UZB",
+        IsoCodeNumeric = "860",
+        IsIndependent = true
+    };
 }

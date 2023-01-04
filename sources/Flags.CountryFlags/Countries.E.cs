@@ -33,10 +33,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "La Tricolor",
-                    "The Tricolor"
+                    new()
+                    {
+                        NativeName = "La Tricolor",
+                        EnglishTranslation = "The Tricolor"
+                    }
                 },
                 Description = "A horizontal tricolor of yellow (double width), blue and red with the National Coat of Arms superimposed at the center.",
                 StartDate = new DateTime(1860, 09, 26),
@@ -45,6 +48,10 @@ public static partial class Countries
             new()
             {
                 Id = "Civil",
+                Names = new List<FlagName>
+                {
+                    "Civil flag and ensign"
+                },
                 Description = "A horizontal tricolor of yellow (double width), blue and red.",
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
             }
@@ -63,6 +70,15 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "عَلَمْ مَصر",
+                        Romanized = "ˈʕælæm mɑsˤɾ",
+                        EnglishTranslation = "National flag of Egypt"
+                    }
+                },
                 Description = "Horizontally divided red-white-black tricolor flag with the Eagle of Saladin.",
                 StartDate = new DateTime(1984, 10, 04),
                 DesignedBy = "Aly Kamel El-Deeb",
@@ -71,9 +87,9 @@ public static partial class Countries
             new()
             {
                 Id = "WarFlag",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "War Flag"
+                    "War flag"
                 },
                 Description = "National flag with two white crossed sabres in canton.",
                 StartDate = new DateTime(1984, 10, 04),
@@ -82,9 +98,9 @@ public static partial class Countries
             new()
             {
                 Id = "WarEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "War Ensign"
+                    "War fnsign"
                 },
                 Description = "National flag with two white fouled crossed anchors in canton.",
                 StartDate = new DateTime(1984, 10, 04),
@@ -93,9 +109,9 @@ public static partial class Countries
             new()
             {
                 Id = "President",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "President's Flag"
+                    "President's flag"
                 },
                 Description = "National flag with gold outlined Eagle of Saladin in canton.",
                 StartDate = new DateTime(1984, 10, 04),
@@ -116,10 +132,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Bandera Magna",
-                    "Magna flag"
+                    new()
+                    {
+                        NativeName = "Bandera Magna",
+                        EnglishTranslation = "Magna flag"
+                    }
                 },
                 Description = "A horizontal triband of cobalt blue (top and bottom) and white with the National Coat of Arms in the center and occupying the entire hight of the white stripe with its top touching the upper blue strip and its base touching the lower blue stripe.",
                 StartDate = new DateTime(1912, 05, 27),
@@ -128,6 +147,10 @@ public static partial class Countries
             new()
             {
                 Id = "Civil",
+                Names = new List<FlagName>
+                {
+                    "Civil flag and ensign"
+                },
                 Description = "A horizontal triband of white within cobalt blue.",
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
             },
@@ -169,8 +192,21 @@ public static partial class Countries
         IsIndependent = true,
         FlagsInternal = new CountryFlagCollection
         {
-            new ()
+            new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "ሃገራዊት ባንዴራ ኤርትራ",
+                        EnglishTranslation = "flag of Eritrea"
+                    },
+                    new()
+                    {
+                        NativeName = "علم إريتريا الوطني",
+                        EnglishTranslation = "flag of Eritrea"
+                    }
+                },
                 Description = "A red isosceles triangle based on the hoist-side pointed toward the fly-side and then divided into two right triangles: the upper triangle is green and the lower triangle is blue with an Emblem (1952-1995) in gold (a vertical olive branch encircled by an olive wreath) centered on the hoist side of the triangle.",
                 StartDate = new DateTime(1995, 12, 05),
                 Usage = FlagUsage.NationalFlagAndEnsign
@@ -188,8 +224,16 @@ public static partial class Countries
         IsIndependent = true,
         FlagsInternal = new CountryFlagCollection
         {
-            new ()
+            new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "Eesti lipp",
+                        EnglishTranslation = "flag of Estonia"
+                    }
+                },
                 Description = "A horizontal triband of blue, black, and white.",
                 StartDate = new DateTime(1918, 01, 01),
                 Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign | FlagUsage.StateFlag

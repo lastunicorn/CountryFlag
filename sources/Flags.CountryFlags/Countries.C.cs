@@ -59,7 +59,7 @@ public static partial class Countries
             new()
             {
                 Id = "King",
-                Description = "The royal arms in gold centred on a blue field.",
+                Description = "The royal arms in gold centered on a blue field.",
                 StartDate = new DateTime(1993, 09, 24),
                 Usage = FlagUsage.LeaderFlag
             }
@@ -78,7 +78,7 @@ public static partial class Countries
         {
             new()
             {
-                Description = "A vertical tricolour of green, red and yellow, with a gold star centred on the red band.",
+                Description = "A vertical tricolour of green, red and yellow, with a gold star centered on the red band.",
                 StartDate = new DateTime(1975, 05, 20),
                 Usage = FlagUsage.NationalFlagAndEnsign
             }
@@ -97,10 +97,15 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Canadian flag",
-                    "Maple Leaf"
+                    "Maple Leaf",
+                    new()
+                    {
+                        NativeName = "l'Unifolié",
+                        EnglishTranslation = "the one-leafed"
+                    }
                 },
                 Description = "A vertical triband of red (hoist-side and fly-side) and white (double width) with the red maple leaf centered on the white band.",
                 StartDate = new DateTime(1965, 02, 15),
@@ -180,11 +185,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
+                    "Drapeau du Tchad",
+                    "علم تشاد",
                     "Les trois barres"
                 },
-                Description = "A vertical tricolor of blue, gold, and red.",
+                Description = "The flag of Chad is a vertical tricolour consisting (left to right) of a blue, a gold and a red column. These were intended to be a combination of the colours of blue, white and red as seen on the Flag of France with the Pan-African colours of green, yellow and red. Furthermore, the blue represents the sky and hope; the gold is the sun and desert, and the red signifies the bloodshed over independence.",
                 StartDate = new DateTime(1959, 11, 06),
                 Usage = FlagUsage.NationalFlag
             }
@@ -203,6 +210,14 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "La Estrella Solitaria",
+                        EnglishTranslation = "The Lone Star",
+                    }
+                },
                 Description = "A horizontal bicolor of white and red with the blue square ended on the upper hoist-side corner of the white band bearing the white five-pointed star in the center.",
                 StartDate = new DateTime(1817, 10, 18),
                 DesignedBy = "Ignacio Zenteno or Gregorio de Andía y Varela.",
@@ -211,6 +226,10 @@ public static partial class Countries
             new()
             {
                 Id = "President",
+                Names = new List<FlagName>
+                {
+                    "Presidential Standard"
+                },
                 Description = "Same design as the National Flag with the National Coat of Arms superimposed at the center.",
                 DesignedBy = "Alfonso Martinez Delpelao",
                 Usage = FlagUsage.LeaderFlag
@@ -230,6 +249,14 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "五星红旗",
+                        EnglishTranslation = "Five-star Red Flag"
+                    }
+                },
                 Description = "A large golden star within an arc of four smaller golden stars, in the canton, on a field of Chinese red.",
                 StartDate = new DateTime(1949, 09, 27),
                 DesignedBy = "Zeng Liansong",
@@ -296,10 +323,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "El Tricolor Nacional",
-                    "The National Tricolor"
+                    new()
+                    {
+                        NativeName = "El Tricolor Nacional",
+                        EnglishTranslation = "The National Tricolor"
+                    }
                 },
                 Description = "A horizontal tricolour of yellow (double-width), blue and red.",
                 StartDate = new DateTime(1861, 11, 26),
@@ -467,10 +497,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Trobojnica",
-                    "The Tricolour"
+                    new()
+                    {
+                        NativeName = "Trobojnica",
+                        EnglishTranslation = "The Tricolour"
+                    }
                 },
                 Description = "A horizontal tricolour of red, white, and blue with the Coat of Arms of Croatia in the centre.",
                 StartDate = new DateTime(1990, 12, 21),
@@ -480,6 +513,10 @@ public static partial class Countries
             new()
             {
                 Id = "Ensign",
+                Names = new List<FlagName>
+                {
+                    "Civil and state ensign"
+                },
                 Description = "Three equal horizontal bands of red (top), white and blue superimposed by the Croatian coat of arms.",
                 StartDate = new DateTime(1992, 01, 01),
                 Usage = FlagUsage.CivilEnsign | FlagUsage.StateEnsign
@@ -487,6 +524,10 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
+                Names = new List<FlagName>
+                {
+                    "Naval ensign"
+                },
                 Description = "Three equal horizontal bands of red (top), white and blue superimposed by the emblem of the Croatian Navy.",
                 StartDate = new DateTime(1992, 01, 01),
                 Usage = FlagUsage.WarEnsign

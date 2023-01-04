@@ -73,7 +73,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             BorderBrush="LightGray" />
 
                         <TextBlock
-                            Text="{Binding CountryName}"
+                            Text="{Binding Title}"
                             VerticalAlignment="Center" />
 
                     </DockPanel>

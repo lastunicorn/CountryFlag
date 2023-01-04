@@ -59,7 +59,7 @@ public static partial class Countries
             new()
             {
                 Id = "MoldaviaAndWallachia",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the United Principalities of Moldavia and Wallachia"
                 },
@@ -69,7 +69,7 @@ public static partial class Countries
             new()
             {
                 Id = "UnitedPrincipalities",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Romanian United Principalities"
                 },
@@ -79,7 +79,7 @@ public static partial class Countries
             new()
             {
                 Id = "UnitedRomania",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of Romania"
                 },
@@ -89,7 +89,7 @@ public static partial class Countries
             new()
             {
                 Id = "PeopleRepublic1",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Romanian People's Republic (1948)"
                 },
@@ -99,7 +99,7 @@ public static partial class Countries
             new()
             {
                 Id = "PeopleRepublic2",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Romanian People's Republic (1948-1952)"
                 },
@@ -109,7 +109,7 @@ public static partial class Countries
             new()
             {
                 Id = "PeopleRepublic3",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Romanian People's Republic (1952–1965)"
                 },
@@ -119,7 +119,7 @@ public static partial class Countries
             new()
             {
                 Id = "SocialistRepublic",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Socialist Republic of Romania (1965–1989)"
                 },
@@ -129,7 +129,7 @@ public static partial class Countries
             new()
             {
                 Id = "Revolution1989",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the anti-Ceaușescu protesters during the Romanian Revolution"
                 },
@@ -152,11 +152,26 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Триколор",
-                    "Trikolor",
-                    "Tricolour"
+                    new()
+                    {
+                        NativeName = "Флаг России",
+                        Romanized = "Flag Rossii",
+                        EnglishTranslation = "the national flag of Russia"
+                    },
+                    new()
+                    {
+                        NativeName = "Государственный флаг Российской Федерации",
+                        Romanized = "Gosudarstvenny flag Rossiyskoy Federatsii",
+                        EnglishTranslation = "the State Flag of the Russian"
+                    },
+                    new()
+                    {
+                        NativeName = "Триколор",
+                        Romanized = "Trikolor",
+                        EnglishTranslation = "Tricolour"
+                    }
                 },
                 Description = "A horizontal tricolour of white, dark blue and red.",
                 StartDate = new DateTime(2000, 12, 25),
@@ -166,7 +181,7 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Variant flag of Russia"
                 },
@@ -203,7 +218,7 @@ public static partial class Countries
             new()
             {
                 Id = "President",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Presidential Flag"
                 },

@@ -14,6 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+using System.Linq;
+
 namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
 public class FlagInfoViewModel
@@ -44,9 +47,14 @@ public class FlagInfoViewModel
         IsoCodeNumeric = countryFlag?.Country?.IsoCodeNumeric;
         CountryFullName = countryFlag?.Country?.FullName;
 
-        FlagName = countryFlag?.Names != null
-            ? string.Join(", ", countryFlag.Names)
+        IEnumerable<string>? flagNames = countryFlag?.Names?.Select(x => x.EnglishTranslation);
+        FlagName = flagNames != null
+            ? string.Join(", ", flagNames)
             : string.Empty;
+
+        // FlagName = countryFlag?.Names != null
+        //    ? string.Join(", ", countryFlag.Names)
+        //    : string.Empty;
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;

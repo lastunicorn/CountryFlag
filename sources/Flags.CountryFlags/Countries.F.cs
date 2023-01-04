@@ -47,7 +47,7 @@ public static partial class Countries
             new()
             {
                 Id = "Governor",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the Governor"
                 },
@@ -95,6 +95,14 @@ public static partial class Countries
         {
             new()
             {
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "kuila ni Viti",
+                        EnglishTranslation = "flag of Fiji"
+                    }
+                },
                 Description = "A Cyan Ensign with the shield from the national coat of arms centred in the fly half.",
                 StartDate = new DateTime(1970, 10, 10),
                 DesignedBy = "Tessa Mackenzie",
@@ -103,7 +111,7 @@ public static partial class Countries
             new()
             {
                 Id = "CivilEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Civil Ensign"
                 },
@@ -113,7 +121,7 @@ public static partial class Countries
             new()
             {
                 Id = "StateEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "State Ensign"
                 },
@@ -123,7 +131,7 @@ public static partial class Countries
             new()
             {
                 Id = "NavalEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Naval Ensign"
                 },
@@ -133,7 +141,7 @@ public static partial class Countries
             new()
             {
                 Id = "AirEnsign",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Civil Air Ensign"
                 },
@@ -201,9 +209,13 @@ public static partial class Countries
         {
             new()
             {
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
-                    "Tricolour"
+                    new()
+                    {
+                        NativeName = "Tricolore",
+                        EnglishTranslation = "Tricolour"
+                    }
                 },
                 Description = "A vertical tricolour of blue, white, and red",
                 StartDate = new DateTime(1794, 02, 15),
@@ -214,6 +226,7 @@ public static partial class Countries
             {
                 Id = "Variant",
                 Description = "An interchangeable variant of the national flag with lighter shades.",
+                StartDate = new DateTime(1974, 01, 01),
                 Usage = FlagUsage.NationalFlag
             }
         }
@@ -254,7 +267,7 @@ public static partial class Countries
             new()
             {
                 Id = "FranchTricolore",
-                Names = new List<string>
+                Names = new List<FlagName>
                 {
                     "Flag of the French Republic"
                 },
