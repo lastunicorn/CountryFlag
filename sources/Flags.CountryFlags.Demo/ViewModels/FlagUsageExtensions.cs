@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Collections.Generic;
+using System.Text;
 
 namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
@@ -39,14 +40,31 @@ public static class FlagUsageExtensions
             }
             else
             {
+                List<string> subItems = new();
+
                 if (flagUsage.HasFlag(FlagUsage.CivilFlag))
-                    items.Add("civil flag");
+                    subItems.Add("civil");
 
                 if (flagUsage.HasFlag(FlagUsage.StateFlag))
-                    items.Add("state flag");
+                    subItems.Add("state");
 
                 if (flagUsage.HasFlag(FlagUsage.WarFlag))
-                    items.Add("war flag");
+                    subItems.Add("war");
+
+                if (subItems.Count > 0)
+                {
+                    string text = string.Join(" and ", subItems);
+                    items.Add(text + " flag");
+                }
+                
+                //if (flagUsage.HasFlag(FlagUsage.CivilFlag))
+                //    items.Add("civil flag");
+
+                //if (flagUsage.HasFlag(FlagUsage.StateFlag))
+                //    items.Add("state flag");
+
+                //if (flagUsage.HasFlag(FlagUsage.WarFlag))
+                //    items.Add("war flag");
             }
 
             if (flagUsage.HasFlag(FlagUsage.NationalEnsign))
@@ -55,14 +73,31 @@ public static class FlagUsageExtensions
             }
             else
             {
+                List<string> subItems = new();
+
                 if (flagUsage.HasFlag(FlagUsage.CivilEnsign))
-                    items.Add("civil ensign");
+                    subItems.Add("civil");
 
                 if (flagUsage.HasFlag(FlagUsage.StateEnsign))
-                    items.Add("state ensign");
+                    subItems.Add("state");
 
                 if (flagUsage.HasFlag(FlagUsage.WarEnsign))
-                    items.Add("war ensign");
+                    subItems.Add("war");
+
+                if (subItems.Count > 0)
+                {
+                    string text = string.Join(" and ", subItems);
+                    items.Add(text + " ensign");
+                }
+
+                //if (flagUsage.HasFlag(FlagUsage.CivilEnsign))
+                //    items.Add("civil ensign");
+
+                //if (flagUsage.HasFlag(FlagUsage.StateEnsign))
+                //    items.Add("state ensign");
+
+                //if (flagUsage.HasFlag(FlagUsage.WarEnsign))
+                //    items.Add("war ensign");
             }
         }
 

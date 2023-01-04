@@ -260,5 +260,89 @@ public static partial class Countries
         yield return Romania;
         yield return Russia;
         yield return Rwanda;
+
+        // S
+
+        yield return SaintBarthélemy;
+        yield return SaintHelena;
+        yield return SaintKittsAndNevis;
+        yield return SaintLucia;
+        yield return SaintMartin;
+        yield return SaintPierreAndMiquelon;
+        yield return SaintVincentAndTheGrenadines;
+        yield return Samoa;
+        yield return SanMarino;
+        yield return SaoTomeAndPrincipe;
+        yield return SaudiArabia;
+        yield return Senegal;
+        yield return Serbia;
+        yield return Seychelles;
+        yield return SierraLeone;
+        yield return Singapore;
+        yield return SintMaarten;
+        yield return Slovakia;
+        yield return Slovenia;
+        yield return SolomonIslands;
+        yield return Somalia;
+        yield return SouthAfrica;
+        yield return SouthGeorgiaAndTheSouthSandwichIslands;
+        yield return SouthSudan;
+        yield return Spain;
+        yield return SriLanka;
+        yield return Sudan;
+        yield return Suriname;
+        yield return SvalbardAndJanMayen;
+        yield return Sweden;
+        yield return Switzerland;
+        yield return SyrianArabRepublic;
+
+        // T
+
+        yield return Taiwan;
+        yield return Tajikistan;
+        yield return Tanzania;
+        yield return Thailand;
+        yield return TimorLeste;
+        yield return Togo;
+        yield return Tokelau;
+        yield return Tonga;
+        yield return TrinidadAndTobago;
+        yield return Tunisia;
+        yield return Turkey;
+        yield return Turkmenistan;
+        yield return Tuvalu;
+
+        // U
+
+        yield return Uganda;
+        yield return Ukraine;
+        yield return UnitedArabEmirates;
+        yield return UnitedKingdom;
+        yield return UnitedStatesOfAmerica;
+        yield return UnitedStatesMinorOutlyingIslands;
+        yield return Uruguay;
+        yield return Uzbekistan;
+
+        // V
+
+        yield return Vanuatu;
+        yield return Venezuela;
+        yield return Vietnam;
+        yield return BritishVirginIslands;
+        yield return UnitedStatesVirginIslands;
+
+        // W
+
+        yield return WallisAndFutuna;
+        yield return WesternSahara;
+
+        // Y
+
+        yield return Yemen;
+
+        // Z
+
+        yield return Zambia;
+        yield return Zimbabwe;
     }
 }

@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "WF",
         IsoCodeAlpha3 = "WLF",
         IsoCodeNumeric = "876",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country WesternSahara { get; } = new()
@@ -35,6 +39,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "EH",
         IsoCodeAlpha3 = "ESH",
         IsoCodeNumeric = "732",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

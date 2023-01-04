@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "JM",
         IsoCodeAlpha3 = "JAM",
         IsoCodeNumeric = "388",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Japan { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "JP",
         IsoCodeAlpha3 = "JPN",
         IsoCodeNumeric = "392",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Jersey { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "JE",
         IsoCodeAlpha3 = "JEY",
         IsoCodeNumeric = "832",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Jordan { get; } = new()
@@ -55,6 +67,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "JO",
         IsoCodeAlpha3 = "JOR",
         IsoCodeNumeric = "400",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

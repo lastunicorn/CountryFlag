@@ -158,13 +158,13 @@ public static partial class Countries
                     {
                         NativeName = "Флаг России",
                         Romanized = "Flag Rossii",
-                        EnglishTranslation = "the national flag of Russia"
+                        EnglishTranslation = "The national flag of Russia"
                     },
                     new()
                     {
                         NativeName = "Государственный флаг Российской Федерации",
                         Romanized = "Gosudarstvenny flag Rossiyskoy Federatsii",
-                        EnglishTranslation = "the State Flag of the Russian"
+                        EnglishTranslation = "The State Flag of the Russian"
                     },
                     new()
                     {
@@ -193,7 +193,18 @@ public static partial class Countries
             new()
             {
                 Id = "President",
-                Usage = FlagUsage.LeaderFlag
+                Names = new List<FlagName>
+                {
+                    new()
+                    {
+                        NativeName = "Штандарт Президента",
+                        EnglishTranslation = "Presidential standard"
+                    }
+                },
+                Description = "The square tricolour with the coat of arms (in this case the double-headed eagle is depicted without the shield) in the middle.",
+                StartDate = new DateTime(1994, 02, 15),
+                Usage = FlagUsage.LeaderFlag,
+                Comments = "The President of Russia uses a Presidential Standard (Russian: Штандарт Президента), which was introduced via Presidential Decree No.319 on 15 February 1994."
             }
         }
     };

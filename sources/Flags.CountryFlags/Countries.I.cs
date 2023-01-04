@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IS",
         IsoCodeAlpha3 = "ISL",
         IsoCodeNumeric = "352",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country India { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IN",
         IsoCodeAlpha3 = "IND",
         IsoCodeNumeric = "356",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Indonesia { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "ID",
         IsoCodeAlpha3 = "IDN",
         IsoCodeNumeric = "360",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Iran { get; } = new()
@@ -55,7 +67,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IR",
         IsoCodeAlpha3 = "IRN",
         IsoCodeNumeric = "364",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Iraq { get; } = new()
@@ -65,7 +81,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IQ",
         IsoCodeAlpha3 = "IRQ",
         IsoCodeNumeric = "368",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Ireland { get; } = new()
@@ -75,7 +95,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IE",
         IsoCodeAlpha3 = "IRL",
         IsoCodeNumeric = "372",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country IsleOfMan { get; } = new()
@@ -85,7 +109,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IM",
         IsoCodeAlpha3 = "IMN",
         IsoCodeNumeric = "833",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Israel { get; } = new()
@@ -95,7 +123,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "IL",
         IsoCodeAlpha3 = "ISR",
         IsoCodeNumeric = "376",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Italy { get; } = new()
@@ -105,6 +137,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "IT",
         IsoCodeAlpha3 = "ITA",
         IsoCodeNumeric = "380",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

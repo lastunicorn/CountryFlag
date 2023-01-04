@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "UG",
         IsoCodeAlpha3 = "UGA",
         IsoCodeNumeric = "800",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Ukraine { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "UA",
         IsoCodeAlpha3 = "UKR",
         IsoCodeNumeric = "804",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country UnitedArabEmirates { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "AE",
         IsoCodeAlpha3 = "ARE",
         IsoCodeNumeric = "784",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country UnitedKingdom { get; } = new()
@@ -55,7 +67,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "GB",
         IsoCodeAlpha3 = "GBR",
         IsoCodeNumeric = "826",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country UnitedStatesOfAmerica { get; } = new()
@@ -65,7 +81,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "US",
         IsoCodeAlpha3 = "USA",
         IsoCodeNumeric = "840",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country UnitedStatesMinorOutlyingIslands { get; } = new()
@@ -75,7 +95,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "UM",
         IsoCodeAlpha3 = "UMI",
         IsoCodeNumeric = "581",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Uruguay { get; } = new()
@@ -85,7 +109,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "UY",
         IsoCodeAlpha3 = "URY",
         IsoCodeNumeric = "858",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Uzbekistan { get; } = new()
@@ -95,6 +123,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "UZ",
         IsoCodeAlpha3 = "UZB",
         IsoCodeNumeric = "860",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

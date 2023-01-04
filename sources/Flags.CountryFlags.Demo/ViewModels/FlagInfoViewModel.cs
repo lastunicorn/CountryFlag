@@ -51,10 +51,7 @@ public class FlagInfoViewModel
         FlagName = flagNames != null
             ? string.Join(", ", flagNames)
             : string.Empty;
-
-        // FlagName = countryFlag?.Names != null
-        //    ? string.Join(", ", countryFlag.Names)
-        //    : string.Empty;
+        
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;

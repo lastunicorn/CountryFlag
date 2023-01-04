@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "BL",
         IsoCodeAlpha3 = "BLM",
         IsoCodeNumeric = "652",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintHelena { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SH",
         IsoCodeAlpha3 = "SHN",
         IsoCodeNumeric = "654",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintKittsAndNevis { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "KN",
         IsoCodeAlpha3 = "KNA",
         IsoCodeNumeric = "659",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintLucia { get; } = new()
@@ -55,7 +67,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "LC",
         IsoCodeAlpha3 = "LCA",
         IsoCodeNumeric = "662",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintMartin { get; } = new()
@@ -65,7 +81,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "MF",
         IsoCodeAlpha3 = "MAF",
         IsoCodeNumeric = "663",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintPierreAndMiquelon { get; } = new()
@@ -75,7 +95,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PM",
         IsoCodeAlpha3 = "SPM",
         IsoCodeNumeric = "666",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaintVincentAndTheGrenadines { get; } = new()
@@ -85,7 +109,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "VC",
         IsoCodeAlpha3 = "VCT",
         IsoCodeNumeric = "670",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Samoa { get; } = new()
@@ -95,7 +123,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "WS",
         IsoCodeAlpha3 = "WSM",
         IsoCodeNumeric = "882",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SanMarino { get; } = new()
@@ -105,7 +137,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SM",
         IsoCodeAlpha3 = "SMR",
         IsoCodeNumeric = "674",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaoTomeAndPrincipe { get; } = new()
@@ -115,7 +151,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "ST",
         IsoCodeAlpha3 = "STP",
         IsoCodeNumeric = "678",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SaudiArabia { get; } = new()
@@ -125,7 +165,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SA",
         IsoCodeAlpha3 = "SAU",
         IsoCodeNumeric = "682",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Senegal { get; } = new()
@@ -135,7 +179,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SN",
         IsoCodeAlpha3 = "SEN",
         IsoCodeNumeric = "686",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Serbia { get; } = new()
@@ -145,7 +193,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "RS",
         IsoCodeAlpha3 = "SRB",
         IsoCodeNumeric = "688",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Seychelles { get; } = new()
@@ -155,7 +207,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SC",
         IsoCodeAlpha3 = "SYC",
         IsoCodeNumeric = "690",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SierraLeone { get; } = new()
@@ -165,7 +221,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SL",
         IsoCodeAlpha3 = "SLE",
         IsoCodeNumeric = "694",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Singapore { get; } = new()
@@ -175,7 +235,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SG",
         IsoCodeAlpha3 = "SGP",
         IsoCodeNumeric = "702",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SintMaarten { get; } = new()
@@ -185,7 +249,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SX",
         IsoCodeAlpha3 = "SXM",
         IsoCodeNumeric = "534",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Slovakia { get; } = new()
@@ -195,7 +263,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SK",
         IsoCodeAlpha3 = "SVK",
         IsoCodeNumeric = "703",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Slovenia { get; } = new()
@@ -205,7 +277,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SI",
         IsoCodeAlpha3 = "SVN",
         IsoCodeNumeric = "705",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SolomonIslands { get; } = new()
@@ -215,7 +291,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SB",
         IsoCodeAlpha3 = "SLB",
         IsoCodeNumeric = "90",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Somalia { get; } = new()
@@ -225,7 +305,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SO",
         IsoCodeAlpha3 = "SOM",
         IsoCodeNumeric = "706",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SouthAfrica { get; } = new()
@@ -235,7 +319,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "ZA",
         IsoCodeAlpha3 = "ZAF",
         IsoCodeNumeric = "710",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SouthGeorgiaAndTheSouthSandwichIslands { get; } = new()
@@ -245,7 +333,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "GS",
         IsoCodeAlpha3 = "SGS",
         IsoCodeNumeric = "239",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SouthSudan { get; } = new()
@@ -255,7 +347,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SS",
         IsoCodeAlpha3 = "SSD",
         IsoCodeNumeric = "728",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Spain { get; } = new()
@@ -265,7 +361,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "ES",
         IsoCodeAlpha3 = "ESP",
         IsoCodeNumeric = "724",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SriLanka { get; } = new()
@@ -275,7 +375,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "LK",
         IsoCodeAlpha3 = "LKA",
         IsoCodeNumeric = "144",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Sudan { get; } = new()
@@ -285,7 +389,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SD",
         IsoCodeAlpha3 = "SDN",
         IsoCodeNumeric = "729",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Suriname { get; } = new()
@@ -295,7 +403,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SR",
         IsoCodeAlpha3 = "SUR",
         IsoCodeNumeric = "740",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SvalbardAndJanMayen { get; } = new()
@@ -305,7 +417,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SJ",
         IsoCodeAlpha3 = "SJM",
         IsoCodeNumeric = "744",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Sweden { get; } = new()
@@ -315,7 +431,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "SE",
         IsoCodeAlpha3 = "SWE",
         IsoCodeNumeric = "752",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Switzerland { get; } = new()
@@ -325,7 +445,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "CH",
         IsoCodeAlpha3 = "CHE",
         IsoCodeNumeric = "756",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country SyrianArabRepublic { get; } = new()
@@ -335,6 +459,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "SY",
         IsoCodeAlpha3 = "SYR",
         IsoCodeNumeric = "760",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

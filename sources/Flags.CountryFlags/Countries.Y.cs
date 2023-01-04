@@ -25,6 +25,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "YE",
         IsoCodeAlpha3 = "YEM",
         IsoCodeNumeric = "887",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

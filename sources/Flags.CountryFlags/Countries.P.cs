@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PK",
         IsoCodeAlpha3 = "PAK",
         IsoCodeNumeric = "586",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Palau { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PW",
         IsoCodeAlpha3 = "PLW",
         IsoCodeNumeric = "585",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Palestine { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PS",
         IsoCodeAlpha3 = "PSE",
         IsoCodeNumeric = "275",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Panama { get; } = new()
@@ -55,7 +67,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PA",
         IsoCodeAlpha3 = "PAN",
         IsoCodeNumeric = "591",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country PapuaNewGuinea { get; } = new()
@@ -65,7 +81,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PG",
         IsoCodeAlpha3 = "PNG",
         IsoCodeNumeric = "598",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Paraguay { get; } = new()
@@ -75,7 +95,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PY",
         IsoCodeAlpha3 = "PRY",
         IsoCodeNumeric = "600",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Peru { get; } = new()
@@ -85,7 +109,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PE",
         IsoCodeAlpha3 = "PER",
         IsoCodeNumeric = "604",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Philippines { get; } = new()
@@ -95,7 +123,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PH",
         IsoCodeAlpha3 = "PHL",
         IsoCodeNumeric = "608",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Pitcairn { get; } = new()
@@ -105,7 +137,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PN",
         IsoCodeAlpha3 = "PCN",
         IsoCodeNumeric = "612",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Poland { get; } = new()
@@ -115,7 +151,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PL",
         IsoCodeAlpha3 = "POL",
         IsoCodeNumeric = "616",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Portugal { get; } = new()
@@ -125,7 +165,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "PT",
         IsoCodeAlpha3 = "PRT",
         IsoCodeNumeric = "620",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country PuertoRico { get; } = new()
@@ -135,6 +179,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "PR",
         IsoCodeAlpha3 = "PRI",
         IsoCodeNumeric = "630",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }

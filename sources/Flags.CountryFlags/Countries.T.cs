@@ -25,7 +25,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TW",
         IsoCodeAlpha3 = "TWN",
         IsoCodeNumeric = "158",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tajikistan { get; } = new()
@@ -35,7 +39,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TJ",
         IsoCodeAlpha3 = "TJK",
         IsoCodeNumeric = "762",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tanzania { get; } = new()
@@ -45,7 +53,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TZ",
         IsoCodeAlpha3 = "TZA",
         IsoCodeNumeric = "834",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Thailand { get; } = new()
@@ -55,7 +67,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TH",
         IsoCodeAlpha3 = "THA",
         IsoCodeNumeric = "764",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country TimorLeste { get; } = new()
@@ -65,7 +81,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TL",
         IsoCodeAlpha3 = "TLS",
         IsoCodeNumeric = "626",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Togo { get; } = new()
@@ -75,7 +95,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TG",
         IsoCodeAlpha3 = "TGO",
         IsoCodeNumeric = "768",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tokelau { get; } = new()
@@ -85,7 +109,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TK",
         IsoCodeAlpha3 = "TKL",
         IsoCodeNumeric = "772",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tonga { get; } = new()
@@ -95,7 +123,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TO",
         IsoCodeAlpha3 = "TON",
         IsoCodeNumeric = "776",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country TrinidadAndTobago { get; } = new()
@@ -105,7 +137,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TT",
         IsoCodeAlpha3 = "TTO",
         IsoCodeNumeric = "780",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tunisia { get; } = new()
@@ -115,7 +151,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TN",
         IsoCodeAlpha3 = "TUN",
         IsoCodeNumeric = "788",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Turkey { get; } = new()
@@ -125,7 +165,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TR",
         IsoCodeAlpha3 = "TUR",
         IsoCodeNumeric = "792",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Turkmenistan { get; } = new()
@@ -135,7 +179,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TM",
         IsoCodeAlpha3 = "TKM",
         IsoCodeNumeric = "795",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country TurksAndCaicosIslands { get; } = new()
@@ -145,7 +193,11 @@ public static partial class Countries
         IsoCodeAlpha2 = "TC",
         IsoCodeAlpha3 = "TCA",
         IsoCodeNumeric = "796",
-        IsIndependent = false
+        IsIndependent = false,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 
     public static Country Tuvalu { get; } = new()
@@ -155,6 +207,10 @@ public static partial class Countries
         IsoCodeAlpha2 = "TV",
         IsoCodeAlpha3 = "TUV",
         IsoCodeNumeric = "798",
-        IsIndependent = true
+        IsIndependent = true,
+        FlagsInternal = new CountryFlagCollection
+        {
+            new()
+        }
     };
 }
