@@ -25,11 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KZ",
         IsoCodeAlpha3 = "KAZ",
         IsoCodeNumeric = "398",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Kenya { get; } = new()
@@ -39,11 +35,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KE",
         IsoCodeAlpha3 = "KEN",
         IsoCodeNumeric = "404",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Kiribati { get; } = new()
@@ -53,11 +45,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KI",
         IsoCodeAlpha3 = "KIR",
         IsoCodeNumeric = "296",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country NorthKorea { get; } = new()
@@ -67,11 +55,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KP",
         IsoCodeAlpha3 = "PRK",
         IsoCodeNumeric = "408",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country SouthKorea { get; } = new()
@@ -81,11 +65,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KR",
         IsoCodeAlpha3 = "KOR",
         IsoCodeNumeric = "410",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Kuwait { get; } = new()
@@ -95,11 +75,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "KW",
         IsoCodeAlpha3 = "KWT",
         IsoCodeNumeric = "414",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Kyrgyzstan { get; } = new()
@@ -109,10 +85,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "KG",
         IsoCodeAlpha3 = "KGZ",
         IsoCodeNumeric = "417",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 }

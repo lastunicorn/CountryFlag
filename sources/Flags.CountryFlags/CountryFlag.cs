@@ -68,22 +68,9 @@ public class CountryFlag
 
         return FullId == id;
     }
-}
 
-public readonly struct FlagName
-{
-    public string NativeName { get; init; }
-    
-    public string? Romanized { get; init; }
-    
-    public string EnglishTranslation { get; init; }
-
-    public static implicit operator FlagName(string flagName)
+    public override string ToString()
     {
-        return new FlagName
-        {
-            NativeName = flagName,
-            EnglishTranslation = flagName
-        };
+        return FullId;
     }
 }

@@ -32,7 +32,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     Height="450"
     Width="800"
     Background="WhiteSmoke"
-    d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
+    d:DataContext="{d:DesignInstance viewModels:MainViewModel}"
+    WindowState="Maximized">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
@@ -41,11 +42,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <Grid>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="250" MaxWidth="500" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" MaxWidth="500" />
+            <ColumnDefinition Width="250" MaxWidth="500" />
         </Grid.ColumnDefinitions>
 
         <ListView
@@ -132,7 +133,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <demo:FlagInfoBox
             Grid.Column="4"
             Margin="10"
-            DataContext="{Binding FlagInfoViewModel}" />
+            DataContext="{Binding FlagInfoViewModel}"/>
 
     </Grid>
 

@@ -14,15 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Generic;
-using System.Linq;
-
 namespace DustInTheWind.Flags.CountryFlags;
 
 public class Country
 {
-    private readonly CountryFlagCollection? flagsInternal;
-
     public string ShortName { get; init; }
 
     public string FullName { get; init; }
@@ -44,20 +39,13 @@ public class Country
 
     public bool IsIndependent { get; init; }
 
-    public IEnumerable<CountryFlag> Flags => FlagsInternal ?? Enumerable.Empty<CountryFlag>();
+    public CountryFlagCollection Flags { get; }
 
-    internal CountryFlagCollection? FlagsInternal
+    public Country()
     {
-        get => flagsInternal;
-        init
+        Flags = new CountryFlagCollection
         {
-            if (flagsInternal != null)
-                flagsInternal.Country = null;
-
-            flagsInternal = value;
-
-            if (flagsInternal != null)
-                flagsInternal.Country = this;
-        }
+            Country = this
+        };
     }
 }

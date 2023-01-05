@@ -1,0 +1,54 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <AssemblyName>DustInTheWind.Flags.CountryFlags</AssemblyName>
+        <RootNamespace>DustInTheWind.Flags.CountryFlags</RootNamespace>
+        <Description>A resource library containing the country flags as vectorial graphics.</Description>
+        <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageTags>flags;country;country-flags</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" PrivateAssets="All" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Page Update="Themes\Generic.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+    </ItemGroup>
+
+</Project>

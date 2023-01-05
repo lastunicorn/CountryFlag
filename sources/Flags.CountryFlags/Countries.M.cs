@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -27,17 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MO",
         IsoCodeAlpha3 = "MAC",
         IsoCodeNumeric = "446",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection()
-        {
-            new()
-            {
-                Description = "Peacock green field with a lotus flower above the stylised Governor Nobre de Carvalho Bridge and water in white, beneath an arc of five golden five-pointed stars, where the large star is in the center flanked by four smaller stars, two on each side of the large star.",
-                StartDate = new DateTime(1993, 03, 31),
-                DesignedBy = "Zhang Lei, Xiao Hong",
-                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = false
     };
 
     public static Country Madagascar { get; } = new()
@@ -47,11 +35,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MG",
         IsoCodeAlpha3 = "MDG",
         IsoCodeNumeric = "450",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Malawi { get; } = new()
@@ -61,11 +45,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MW",
         IsoCodeAlpha3 = "MWI",
         IsoCodeNumeric = "454",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Malaysia { get; } = new()
@@ -75,11 +55,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MY",
         IsoCodeAlpha3 = "MYS",
         IsoCodeNumeric = "458",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Maldives { get; } = new()
@@ -89,11 +65,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MV",
         IsoCodeAlpha3 = "MDV",
         IsoCodeNumeric = "462",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Mali { get; } = new()
@@ -103,11 +75,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "ML",
         IsoCodeAlpha3 = "MLI",
         IsoCodeNumeric = "466",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Malta { get; } = new()
@@ -117,11 +85,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MT",
         IsoCodeAlpha3 = "MLT",
         IsoCodeNumeric = "470",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country MarshallIslands { get; } = new()
@@ -131,11 +95,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MH",
         IsoCodeAlpha3 = "MHL",
         IsoCodeNumeric = "584",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Martinique { get; } = new()
@@ -145,11 +105,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MQ",
         IsoCodeAlpha3 = "MTQ",
         IsoCodeNumeric = "474",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country Mauritania { get; } = new()
@@ -159,11 +115,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MR",
         IsoCodeAlpha3 = "MRT",
         IsoCodeNumeric = "478",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Mauritius { get; } = new()
@@ -173,11 +125,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MU",
         IsoCodeAlpha3 = "MUS",
         IsoCodeNumeric = "480",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Mayotte { get; } = new()
@@ -187,11 +135,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "YT",
         IsoCodeAlpha3 = "MYT",
         IsoCodeNumeric = "175",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country Mexico { get; } = new()
@@ -201,11 +145,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MX",
         IsoCodeAlpha3 = "MEX",
         IsoCodeNumeric = "484",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Micronesia { get; } = new()
@@ -215,11 +155,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "FM",
         IsoCodeAlpha3 = "FSM",
         IsoCodeNumeric = "583",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Moldova { get; } = new()
@@ -229,11 +165,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MD",
         IsoCodeAlpha3 = "MDA",
         IsoCodeNumeric = "498",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Monaco { get; } = new()
@@ -243,11 +175,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MC",
         IsoCodeAlpha3 = "MCO",
         IsoCodeNumeric = "492",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Mongolia { get; } = new()
@@ -257,11 +185,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MN",
         IsoCodeAlpha3 = "MNG",
         IsoCodeNumeric = "496",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Montenegro { get; } = new()
@@ -271,11 +195,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "ME",
         IsoCodeAlpha3 = "MNE",
         IsoCodeNumeric = "499",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Montserrat { get; } = new()
@@ -285,11 +205,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MS",
         IsoCodeAlpha3 = "MSR",
         IsoCodeNumeric = "500",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country Morocco { get; } = new()
@@ -299,11 +215,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MA",
         IsoCodeAlpha3 = "MAR",
         IsoCodeNumeric = "504",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Mozambique { get; } = new()
@@ -313,11 +225,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "MZ",
         IsoCodeAlpha3 = "MOZ",
         IsoCodeNumeric = "508",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Myanmar { get; } = new()
@@ -327,15 +235,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "MM",
         IsoCodeAlpha3 = "MMR",
         IsoCodeNumeric = "104",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal triband of yellow, green and red; charged with a large white five-pointed star at the centre.",
-                StartDate = new DateTime(2010, 10, 21),
-                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = true
     };
 }

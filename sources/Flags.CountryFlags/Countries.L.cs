@@ -25,11 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LA",
         IsoCodeAlpha3 = "LAO",
         IsoCodeNumeric = "418",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Latvia { get; } = new()
@@ -39,11 +35,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LV",
         IsoCodeAlpha3 = "LVA",
         IsoCodeNumeric = "428",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Lebanon { get; } = new()
@@ -53,11 +45,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LB",
         IsoCodeAlpha3 = "LBN",
         IsoCodeNumeric = "422",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Lesotho { get; } = new()
@@ -67,11 +55,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LS",
         IsoCodeAlpha3 = "LSO",
         IsoCodeNumeric = "426",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Liberia { get; } = new()
@@ -81,11 +65,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LR",
         IsoCodeAlpha3 = "LBR",
         IsoCodeNumeric = "430",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Libya { get; } = new()
@@ -95,11 +75,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LY",
         IsoCodeAlpha3 = "LBY",
         IsoCodeNumeric = "434",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Liechtenstein { get; } = new()
@@ -109,11 +85,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LI",
         IsoCodeAlpha3 = "LIE",
         IsoCodeNumeric = "438",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Lithuania { get; } = new()
@@ -123,11 +95,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "LT",
         IsoCodeAlpha3 = "LTU",
         IsoCodeNumeric = "440",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Luxembourg { get; } = new()
@@ -137,10 +105,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "LU",
         IsoCodeAlpha3 = "LUX",
         IsoCodeNumeric = "442",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.CountryFlags", "Flags.CountryFlags\Flags.CountryFlags.csproj", "{FFB10E15-0E2B-4F96-8B53-0B1A62ED2634}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.CountryFlags.Core", "Flags.CountryFlags\Flags.CountryFlags.Core.csproj", "{FFB10E15-0E2B-4F96-8B53-0B1A62ED2634}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.CountryFlags.Demo", "Flags.CountryFlags.Demo\Flags.CountryFlags.Demo.csproj", "{87CF4AA8-7FB6-4FFD-989E-04DA18F63881}"
 EndProject
@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Directory.build.props = Directory.build.props
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flags.CountryFlags.Default", "Flags.CountryFlags.Default\Flags.CountryFlags.Default.csproj", "{CA9F8B6F-99DC-401F-8805-FCB21C82987A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flags.CountryFlags.Present", "Flags.CountryFlags.Present\Flags.CountryFlags.Present.csproj", "{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flags.CountryFlags.Past", "Flags.CountryFlags.Past\Flags.CountryFlags.Past.csproj", "{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +56,18 @@ Global
 		{780E9A3A-CCF5-4030-886F-CC2F33185CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780E9A3A-CCF5-4030-886F-CC2F33185CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780E9A3A-CCF5-4030-886F-CC2F33185CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9F8B6F-99DC-401F-8805-FCB21C82987A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9F8B6F-99DC-401F-8805-FCB21C82987A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9F8B6F-99DC-401F-8805-FCB21C82987A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9F8B6F-99DC-401F-8805-FCB21C82987A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

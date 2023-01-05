@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -30,15 +28,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "OM",
         IsoCodeAlpha3 = "OMN",
         IsoCodeNumeric = "512",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal tricolor of white, red and green; with a vertical red stripe at the hoist, charged with the National emblem of Oman.",
-                StartDate = new DateTime(1995, 04, 25),
-                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = true
     };
 }

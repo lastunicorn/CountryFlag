@@ -25,9 +25,9 @@ using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.Flags.CountryFlags;
+namespace DustInTheWind.Flags.CountryFlags.Default;
 
-public class CountryFlagRepository : FlagRepositoryBase
+internal class DefaultCountryFlagsRepository : FlagRepositoryBase
 {
     public override string Id => "country";
 
@@ -42,11 +42,14 @@ public class CountryFlagRepository : FlagRepositoryBase
 
         string resourceId = CalculateResourceIdFor(countryFlag);
 
+        if (string.IsNullOrEmpty(resourceId))
+            return null;
+
         bool resourceExists = Exists(resourceId);
         if (!resourceExists)
             return null;
 
-        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags;component/Flags/{resourceId}.xaml");
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags.Default;component/Flags/{resourceId}.xaml");
 
         ResourceDictionary resourceDictionary = new()
         {

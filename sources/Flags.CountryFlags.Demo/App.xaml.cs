@@ -17,6 +17,7 @@
 using System.Reflection;
 using System.Windows;
 using DustInTheWind.Flags.Core;
+using DustInTheWind.Flags.CountryFlags.Default;
 using DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
 namespace DustInTheWind.Flags.CountryFlags.Demo
@@ -29,7 +30,8 @@ namespace DustInTheWind.Flags.CountryFlags.Demo
         protected override void OnStartup(StartupEventArgs e)
         {
             Assembly countryFlagsAssembly = typeof(Countries).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly);
+            Assembly defaultCountryFlagsAssembly = typeof(DefaultCountryFlagsModule).Assembly;
+            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly);
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

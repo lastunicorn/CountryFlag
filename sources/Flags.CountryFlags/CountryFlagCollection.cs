@@ -19,7 +19,7 @@ using System.Collections.ObjectModel;
 
 namespace DustInTheWind.Flags.CountryFlags;
 
-internal class CountryFlagCollection : Collection<CountryFlag>
+public class CountryFlagCollection : Collection<CountryFlag>
 {
     private Country? country;
 

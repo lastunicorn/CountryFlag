@@ -155,6 +155,7 @@ public static partial class Countries
         yield return India;
         yield return Indonesia;
         yield return Iran;
+        yield return Iraq;
         yield return Ireland;
         yield return IsleOfMan;
         yield return Israel;
@@ -263,7 +264,7 @@ public static partial class Countries
 
         // S
 
-        yield return SaintBarthélemy;
+        yield return SaintBarthelemy;
         yield return SaintHelena;
         yield return SaintKittsAndNevis;
         yield return SaintLucia;
@@ -310,6 +311,7 @@ public static partial class Countries
         yield return Tunisia;
         yield return Turkey;
         yield return Turkmenistan;
+        yield return TurksAndCaicosIslands;
         yield return Tuvalu;
 
         // U

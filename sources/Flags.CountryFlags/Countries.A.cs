@@ -14,9 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Collections.Generic;
-
 namespace DustInTheWind.Flags.CountryFlags;
 
 public static partial class Countries
@@ -24,16 +21,7 @@ public static partial class Countries
     public static Country Afghanistan_IslamicEmirate { get; } = new()
     {
         ShortName = "Afghanistan",
-        FullName = "Islamic Emirate of Afghanistan",
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "The Shahada in black on a white field in the calligraphic Thuluth script",
-                StartDate = new DateTime(1997, 10, 27),
-                Usage = FlagUsage.NationalFlagAndEnsign
-            }
-        }
+        FullName = "Islamic Emirate of Afghanistan"
     };
 
     public static Country Afghanistan_IslamicRepublic { get; } = new()
@@ -43,16 +31,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AF",
         IsoCodeAlpha3 = "AFG",
         IsoCodeNumeric = "004",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "Three vertical bands of black, red and green with the National Emblem in white centered on the red band and then slightly overlapping the black and green bands.",
-                StartDate = new DateTime(2013, 08, 19),
-                Usage = FlagUsage.NationalFlagAndEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Aland { get; } = new()
@@ -62,16 +41,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AX",
         IsoCodeAlpha3 = "ALA",
         IsoCodeNumeric = "248",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A yellow-fimbriated red Nordic cross on a blue field",
-                StartDate = new DateTime(1954, 01, 01),
-                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = false
     };
 
     /// <summary>
@@ -84,29 +54,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AL",
         IsoCodeAlpha3 = "ALB",
         IsoCodeNumeric = "008",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A red field with a black two-headed eagle in the center.",
-                StartDate = new DateTime(2002, 07, 22),
-                DesignedBy = "Sadik Kaceli",
-                Usage = FlagUsage.NationalFlag
-            },
-            new()
-            {
-                Id = "CivilEnsign",
-                Description = "A horizontal tricolour with red on the top and bottom stripes, and black in the middle.",
-                Usage = FlagUsage.CivilEnsign
-            },
-            new()
-            {
-                Id = "NavalEnsign",
-                Description = "\tA double-headed eagle on a white background with a red stripe at the bottom.",
-                Usage = FlagUsage.WarEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     /// <summary>
@@ -119,31 +67,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "DZ",
         IsoCodeAlpha3 = "DZA",
         IsoCodeNumeric = "012",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A vertical bicolor of green and white with the red crescent encircling the red five-pointed star centered along the dividing line.",
-                StartDate = new DateTime(1962, 07, 03),
-                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-            },
-            new()
-            {
-                Id = "President",
-                Usage = FlagUsage.LeaderFlag
-            },
-            new()
-            {
-                Id = "NavalEnsign",
-                Usage = FlagUsage.WarEnsign
-            },
-            new()
-            {
-                Id = "NavalJack",
-                Usage = FlagUsage.NavalJack
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country AmericanSamoa { get; } = new()
@@ -153,17 +77,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AS",
         IsoCodeAlpha3 = "ASM",
         IsoCodeNumeric = "016",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A red-edged white triangle pointing towards the hoist charged with a bald eagle clutching a war club and a fly-whisk. The white triangle divided the dark blue field into two separate triangles.",
-                StartDate = new DateTime(1960, 04, 17),
-                DesignedBy = "Fareti Sotoa",
-                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
-            }
-        }
+        IsIndependent = false
     };
 
     /// <summary>
@@ -176,25 +90,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AD",
         IsoCodeAlpha3 = "AND",
         IsoCodeNumeric = "020",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A vertical tricolour of blue, yellow and red with the National Coat of Arms centred on the yellow band.",
-                StartDate = new DateTime(1866),
-                DesignedBy = "Napoleon III",
-                Usage = FlagUsage.StateFlag
-            },
-            new()
-            {
-                Id = "Civil",
-                Description = "A vertical tricolour of blue, yellow and red.",
-                StartDate = new DateTime(1866, 01, 01),
-                DesignedBy = "Napoleon III",
-                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Angola { get; } = new()
@@ -204,17 +100,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AO",
         IsoCodeAlpha3 = "AGO",
         IsoCodeNumeric = "024",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "Two horizontal bands of red and black with the Machete and Gear Emblem in the center.",
-                StartDate = new DateTime(1975, 11, 11),
-                DesignedBy = "Henrique de Carvalho Santos, António Alberto Neto",
-                Usage = FlagUsage.NationalFlag
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Anguilla { get; } = new()
@@ -224,15 +110,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AI",
         IsoCodeAlpha3 = "AIA",
         IsoCodeNumeric = "660",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A Blue Ensign charged in the fly with the coat of arms of Anguilla",
-                Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = false
     };
 
     public static Country Antarctica { get; } = new()
@@ -242,14 +120,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AQ",
         IsoCodeAlpha3 = "ATA",
         IsoCodeNumeric = "010",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                StartDate = new DateTime(2002, 01, 01)
-            }
-        }
+        IsIndependent = false
     };
 
     public static Country AntiguaAndBarbuda { get; } = new()
@@ -259,23 +130,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AG",
         IsoCodeAlpha3 = "ATG",
         IsoCodeNumeric = "028",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal tri-colour of black, blue (half-width), and white, with two red right scalene triangles on opposite sides. On the black band is a yellow half-sun with nine rays.",
-                StartDate = new DateTime(1967, 02, 27),
-                DesignedBy = "Sir Reginald Samuel",
-                Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
-            },
-            new()
-            {
-                Id = "StateEnsign",
-                Description = "A white field with a red cross, the national flag in the canton.",
-                Usage = FlagUsage.StateEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     /// <summary>
@@ -288,32 +143,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AR",
         IsoCodeAlpha3 = "ARG",
         IsoCodeNumeric = "032",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal triband of light blue (top and bottom) and white with a Sun of May centered on the white band.",
-                StartDate = new DateTime(1861, 01, 01),
-                DesignedBy = "Manuel Belgrano",
-                Usage = FlagUsage.NationalFlagAndEnsign
-            },
-            new()
-            {
-                Id = "Civil",
-                Names = new List<FlagName>
-                {
-                    new()
-                    {
-                        NativeName = "Bandera de Ornato",
-                        EnglishTranslation = "Ornamental Flag"
-                    }
-                },
-                Description = "A horizontal triband of light blue (top and bottom) and white (center).",
-                StartDate = new DateTime(1812, 02, 27),
-                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Armenia { get; } = new()
@@ -323,23 +153,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AM",
         IsoCodeAlpha3 = "ARM",
         IsoCodeNumeric = "051",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal tricolour of red, blue, and apricot.",
-                StartDate = new DateTime(1990, 08, 24),
-                DesignedBy = "Stepan Malkhasyants",
-                Usage = FlagUsage.NationalFlag
-            },
-            new()
-            {
-                Id = "President",
-                Description = "A horizontal tricolour of red, blue, and orange defaced with the Presidential seal at its centre.",
-                Usage = FlagUsage.LeaderFlag
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Aruba { get; } = new()
@@ -349,20 +163,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AW",
         IsoCodeAlpha3 = "ABW",
         IsoCodeNumeric = "533",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                StartDate = new DateTime(1976, 03, 18),
-                Usage = FlagUsage.NationalFlag
-            },
-            new()
-            {
-                Id = "Governor",
-                Usage = FlagUsage.LeaderFlag
-            }
-        }
+        IsIndependent = false
     };
 
     /// <summary>
@@ -375,49 +176,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AU",
         IsoCodeAlpha3 = "AUS",
         IsoCodeNumeric = "036",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A Blue Ensign defaced with the Commonwealth Star in the lower hoist quarter and the five stars of the Southern Cross in the fly half.",
-                StartDate = new DateTime(1903, 12, 08),
-                DesignedBy = "Annie Dorrington, Ivor Evans, Lesley Hawkins, Egbert Nutall and William Stevens",
-                Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
-            },
-            new()
-            {
-                Id = "CivilEnsign",
-                Names = new List<FlagName>
-                {
-                    "Australian Red Ensign"
-                },
-                Description = "A Red Ensign defaced with the Commonwealth/Federation Star at the hoist, and the Southern Cross in the fly half.",
-                Usage = FlagUsage.CivilEnsign
-            },
-            new()
-            {
-                Id = "NavalEnsign",
-                Names = new List<FlagName>
-                {
-                    "Royal Australian Navy Ensign"
-                },
-                Description = "A defaced British White Ensign without the cross. The cross is replaced with the Southern Cross and the Commonwealth Star/Federation Star.",
-                StartDate = new DateTime(1967, 01, 01),
-                Usage = FlagUsage.CivilEnsign
-            },
-            new()
-            {
-                Id = "AirEnsign",
-                Names = new List<FlagName>
-                {
-                    "Royal Australian Air Force Ensign"
-                },
-                Description = "A field of air force blue with the Union Flag in the canton, the Commonwealth Star below the Union Flag with the Southern Cross in the fly and the RAAF roundel in the lower fly.",
-                StartDate = new DateTime(1982, 01, 01),
-                Usage = FlagUsage.AirForceEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     /// <summary>
@@ -430,22 +189,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "AT",
         IsoCodeAlpha3 = "AUT",
         IsoCodeNumeric = "040",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal triband of red (top and bottom) and white.",
-                StartDate = new DateTime(1945, 05, 01),
-                Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
-            },
-            new()
-            {
-                Id = "StateAndWar",
-                Description = "A horizontal triband of red (top and bottom) and white defaced with the Coat of arms of Austria at its centre.",
-                Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
-            }
-        }
+        IsIndependent = true
     };
 
     public static Country Azerbaijan { get; } = new()
@@ -455,15 +199,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "AZ",
         IsoCodeAlpha3 = "AZE",
         IsoCodeNumeric = "031",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-            {
-                Description = "A horizontal tricolour of bright blue, red, and green, with a white crescent and an eight-pointed star centred on a red band.",
-                StartDate = new DateTime(1991, 02, 05),
-                Usage = FlagUsage.NationalFlagAndEnsign
-            }
-        }
+        IsIndependent = true
     };
 }

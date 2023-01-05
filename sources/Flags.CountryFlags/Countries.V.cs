@@ -25,11 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "VU",
         IsoCodeAlpha3 = "VUT",
         IsoCodeNumeric = "548",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Venezuela { get; } = new()
@@ -39,11 +35,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "VE",
         IsoCodeAlpha3 = "VEN",
         IsoCodeNumeric = "862",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Vietnam { get; } = new()
@@ -53,11 +45,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "VN",
         IsoCodeAlpha3 = "VNM",
         IsoCodeNumeric = "704",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country BritishVirginIslands { get; } = new()
@@ -67,11 +55,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "VG",
         IsoCodeAlpha3 = "VGB",
         IsoCodeNumeric = "92",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country UnitedStatesVirginIslands { get; } = new()
@@ -81,10 +65,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "VI",
         IsoCodeAlpha3 = "VIR",
         IsoCodeNumeric = "850",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 }

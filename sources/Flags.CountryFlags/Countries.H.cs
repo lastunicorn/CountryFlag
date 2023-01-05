@@ -25,11 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "HT",
         IsoCodeAlpha3 = "HTI",
         IsoCodeNumeric = "332",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country HeardIslandAndMcDonaldIslands { get; } = new()
@@ -39,11 +35,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "HM",
         IsoCodeAlpha3 = "HMD",
         IsoCodeNumeric = "334",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country HolySee { get; } = new()
@@ -53,11 +45,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "VA",
         IsoCodeAlpha3 = "VAT",
         IsoCodeNumeric = "336",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Honduras { get; } = new()
@@ -67,11 +55,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "HN",
         IsoCodeAlpha3 = "HND",
         IsoCodeNumeric = "340",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country HongKong { get; } = new()
@@ -81,11 +65,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "HK",
         IsoCodeAlpha3 = "HKG",
         IsoCodeNumeric = "344",
-        IsIndependent = false,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = false
     };
 
     public static Country Hungary { get; } = new()
@@ -95,10 +75,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "HU",
         IsoCodeAlpha3 = "HUN",
         IsoCodeNumeric = "348",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 }

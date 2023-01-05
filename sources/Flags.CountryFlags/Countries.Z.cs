@@ -25,11 +25,7 @@ public static partial class Countries
         IsoCodeAlpha2 = "ZM",
         IsoCodeAlpha3 = "ZMB",
         IsoCodeNumeric = "894",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 
     public static Country Zimbabwe { get; } = new()
@@ -39,10 +35,6 @@ public static partial class Countries
         IsoCodeAlpha2 = "ZW",
         IsoCodeAlpha3 = "ZWE",
         IsoCodeNumeric = "716",
-        IsIndependent = true,
-        FlagsInternal = new CountryFlagCollection
-        {
-            new()
-        }
+        IsIndependent = true
     };
 }
