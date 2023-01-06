@@ -152,6 +152,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
+      <Page Update="Flags\PK_NavalEnsign.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
       <Page Update="Flags\RO_MoldaviaAndWallachia.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
@@ -197,6 +201,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <SubType>Designer</SubType>
       </Page>
       <Page Update="Flags\SV_Civil.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\PK_CivilEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>

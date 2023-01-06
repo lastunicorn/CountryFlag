@@ -519,6 +519,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Page Update="Flags\OM.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
+        <Page Update="Flags\PK.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\PF.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>

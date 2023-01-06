@@ -14,13 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
     public static void Pakistan()
     {
-        Countries.Pakistan.Flags.Add(new CountryFlag());
+        Countries.Pakistan.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    NativeName = "Parcham-e Sitārah o Hilāl",
+                    EnglishTranslation = "Flag of the Star and Crescent"
+                }
+            },
+            Description = "A white star and crescent on a dark green field, with a vertical white stripe at the hoist.",
+            StartDate = new DateTime(1947, 08, 11),
+            DesignedBy = "Amiruddin Kidwai",
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Palau()

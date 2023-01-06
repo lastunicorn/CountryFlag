@@ -1,0 +1,87 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Pakistan (Civil Ensign) -->
+
+    <Canvas x:Key="CountryFlag_PK_CivilEnsign" Width="240" Height="160">
+
+        <Canvas.RenderTransform>
+            <TranslateTransform X="75" Y="40" />
+        </Canvas.RenderTransform>
+
+        <Rectangle
+            Width="240"
+            Height="160"
+            Fill="#FFD1081D"
+            Canvas.Left="-75"
+            Canvas.Top="-40" />
+
+        <Path
+            Data="M-75,-40L45,-40 45,40 -45,40z"
+            Fill="#FF01411C" />
+
+        <Path
+            Data="M-75,-40L-75,40 -45,40 -45,-40z"
+            Fill="#FFFFFFFF" />
+
+        <Ellipse
+            Fill="#FFFFFFFF"
+            Width="48"
+            Height="48"
+            Canvas.Left="-24"
+            Canvas.Top="-24" />
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <RotateTransform Angle="-41.63354" CenterX="45" CenterY="-40" />
+            </Canvas.RenderTransform>
+
+            <Ellipse
+                Fill="#FF01411C"
+                Width="44"
+                Height="44"
+                Canvas.Left="-29"
+                Canvas.Top="-62" />
+
+        </Canvas>
+
+        <Polygon
+            Points="0,-513674 301930,415571 -488533,-158734 488533,-158734 -301930,415571"
+            Fill="#FFFFFFFF"
+            FillRule="Nonzero">
+
+            <Polygon.RenderTransform>
+                <TransformGroup>
+                    <TransformGroup.Children>
+                        <ScaleTransform ScaleX="1.557408E-05" ScaleY="1.557408E-05" />
+                        <RotateTransform Angle="18" />
+                        <TranslateTransform X="16" Y="0" />
+                        <RotateTransform Angle="-41.63354" />
+                    </TransformGroup.Children>
+                </TransformGroup>
+            </Polygon.RenderTransform>
+        </Polygon>
+
+    </Canvas>
+
+</ResourceDictionary>
