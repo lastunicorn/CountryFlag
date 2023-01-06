@@ -30,10 +30,7 @@ public static class FlagModules
             .Where(x => typeof(IFlagModule).IsAssignableFrom(x))
             .Select(x => (IFlagModule)Activator.CreateInstance(x)!)
             .ToList();
-
-        foreach (IFlagModule flagModule in flagModules)
-            flagModule.BeforeLoad();
-
+        
         foreach (IFlagModule flagModule in flagModules)
         {
             IEnumerable<IFlagRepository> flagRepositories = flagModule.GetFlagRepositories();
@@ -41,9 +38,6 @@ public static class FlagModules
         }
 
         foreach (IFlagModule flagModule in flagModules)
-            flagModule.ConfigureModule();
-
-        foreach (IFlagModule flagModule in flagModules)
-            flagModule.AfterLoad();
+            flagModule.AddFlagsToCountries();
     }
 }

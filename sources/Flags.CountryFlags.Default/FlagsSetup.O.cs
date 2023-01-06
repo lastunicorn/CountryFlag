@@ -16,7 +16,7 @@
 
 using System;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {

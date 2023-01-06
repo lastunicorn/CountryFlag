@@ -17,7 +17,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
@@ -36,17 +36,6 @@ public static partial class FlagsSetup
             Description = "A horizontal tricolor of yellow (double width), blue and red with the National Coat of Arms superimposed at the center.",
             StartDate = new DateTime(1860, 09, 26),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
-        });
-
-        Countries.Ecuador.Flags.Add(new CountryFlag
-        {
-            Id = "Civil",
-            Names = new List<FlagName>
-            {
-                "Civil flag and ensign"
-            },
-            Description = "A horizontal tricolor of yellow (double width), blue and red.",
-            Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
 
@@ -68,42 +57,6 @@ public static partial class FlagsSetup
             DesignedBy = "Aly Kamel El-Deeb",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
-
-        Countries.Egypt.Flags.Add(new CountryFlag
-        {
-            Id = "WarFlag",
-            Names = new List<FlagName>
-            {
-                "War flag"
-            },
-            Description = "National flag with two white crossed sabres in canton.",
-            StartDate = new DateTime(1984, 10, 04),
-            Usage = FlagUsage.WarFlag
-        });
-
-        Countries.Egypt.Flags.Add(new CountryFlag
-        {
-            Id = "WarEnsign",
-            Names = new List<FlagName>
-            {
-                "War fnsign"
-            },
-            Description = "National flag with two white fouled crossed anchors in canton.",
-            StartDate = new DateTime(1984, 10, 04),
-            Usage = FlagUsage.WarEnsign
-        });
-
-        Countries.Egypt.Flags.Add(new CountryFlag
-        {
-            Id = "President",
-            Names = new List<FlagName>
-            {
-                "President's flag"
-            },
-            Description = "National flag with gold outlined Eagle of Saladin in canton.",
-            StartDate = new DateTime(1984, 10, 04),
-            Usage = FlagUsage.LeaderFlag
-        });
     }
 
     public static void ElSalvador ()
@@ -121,24 +74,6 @@ public static partial class FlagsSetup
             Description = "A horizontal triband of cobalt blue (top and bottom) and white with the National Coat of Arms in the center and occupying the entire hight of the white stripe with its top touching the upper blue strip and its base touching the lower blue stripe.",
             StartDate = new DateTime(1912, 05, 27),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.WarEnsign
-        });
-
-        Countries.ElSalvador.Flags.Add(new CountryFlag
-        {
-            Id = "Civil",
-            Names = new List<FlagName>
-            {
-                "Civil flag and ensign"
-            },
-            Description = "A horizontal triband of white within cobalt blue.",
-            Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
-        });
-
-        Countries.ElSalvador.Flags.Add(new CountryFlag
-        {
-            Id = "Dios",
-            Description = "A horizontal triband of white within cobalt blue, the words \"DIOS UNION LIBERTAD\" in bolden golden amber centered and occupying almost the entire length of the white stripe.",
-            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }
 
@@ -190,32 +125,6 @@ public static partial class FlagsSetup
             Description = "A horizontal triband of blue, black, and white.",
             StartDate = new DateTime(1918, 01, 01),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign | FlagUsage.StateFlag
-        });
-
-        Countries.Estonia.Flags.Add(new CountryFlag
-        {
-            Id = "NavalEnsign",
-            Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.",
-            StartDate = new DateTime(1991, 01, 01),
-            Usage = FlagUsage.WarEnsign
-        });
-
-        Countries.Estonia.Flags.Add(new CountryFlag
-        {
-            Id = "PresidentLand",
-            Usage = FlagUsage.LeaderFlag
-        });
-
-        Countries.Estonia.Flags.Add(new CountryFlag
-        {
-            Id = "PresidentSea",
-            Usage = FlagUsage.LeaderFlag
-        });
-
-        Countries.Estonia.Flags.Add(new CountryFlag
-        {
-            Id = "NavalJack",
-            Usage = FlagUsage.NavalJack
         });
     }
 

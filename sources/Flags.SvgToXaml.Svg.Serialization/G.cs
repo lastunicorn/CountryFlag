@@ -16,7 +16,7 @@
 
 using System.Xml.Serialization;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
 /// <remarks>
 /// May contain any number of the following elements, in any order:

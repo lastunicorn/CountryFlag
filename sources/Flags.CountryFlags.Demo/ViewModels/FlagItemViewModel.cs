@@ -17,7 +17,7 @@
 using System;
 using System.Linq;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
+namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class FlagItemViewModel
 {

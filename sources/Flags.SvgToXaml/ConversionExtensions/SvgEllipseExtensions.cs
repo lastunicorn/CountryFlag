@@ -16,9 +16,9 @@
 
 using System.Windows.Controls;
 using System.Windows.Shapes;
-using DustInTheWind.Flags.SvgToXaml.Svg;
+using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgEllipseExtensions
 {

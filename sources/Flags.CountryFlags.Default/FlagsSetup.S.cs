@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {

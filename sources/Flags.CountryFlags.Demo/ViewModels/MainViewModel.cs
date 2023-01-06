@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
+namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {

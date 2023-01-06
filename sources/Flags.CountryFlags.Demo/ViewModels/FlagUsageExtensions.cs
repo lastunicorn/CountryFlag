@@ -15,9 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Collections.Generic;
-using System.Text;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
+namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public static class FlagUsageExtensions
 {

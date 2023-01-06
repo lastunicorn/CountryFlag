@@ -43,6 +43,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Height="1"
             Canvas.Top="3" />
 
+        <TextBlock
+            Text="Incomplete"
+            Foreground="Black"
+            FontSize=".18"
+            Canvas.Left=".12"
+            Canvas.Top=".06" />
+
     </Canvas>
 
 </ResourceDictionary>

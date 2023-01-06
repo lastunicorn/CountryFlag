@@ -21,8 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <AssemblyName>DustInTheWind.Flags.SvgToXaml.Svg</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.SvgToXaml.Svg</RootNamespace>
+        <AssemblyName>DustInTheWind.SvgToXaml.Svg</AssemblyName>
+        <RootNamespace>DustInTheWind.SvgToXaml.Svg</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

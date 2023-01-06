@@ -14,30 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
-using System.Numerics;
-using System.Text;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public class DefaultCountryFlagsModule : IFlagModule
 {
-    public void BeforeLoad()
-    {
-        
-    }
-
     public IEnumerable<IFlagRepository> GetFlagRepositories()
     {
         yield return new DefaultCountryFlagsRepository();
     }
 
-    public void ConfigureModule()
+    public void AddFlagsToCountries()
     {
         // A
 
@@ -363,9 +352,5 @@ public class DefaultCountryFlagsModule : IFlagModule
 
         FlagsSetup.Zambia();
         FlagsSetup.Zimbabwe();
-    }
-
-    public void AfterLoad()
-    {
     }
 }

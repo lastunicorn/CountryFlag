@@ -18,9 +18,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+using DustInTheWind.SvgToXaml.Svg.Serialization;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgElement
 {

@@ -17,7 +17,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
@@ -38,14 +38,6 @@ public static partial class FlagsSetup
             Description = "Three horizontal bands of blue, red (double width) and blue, with a depiction of Angkor Wat in white centred on the red band.",
             StartDate = new DateTime(1948, 01, 01),
             Usage = FlagUsage.NationalFlagAndEnsign
-        });
-
-        Countries.Cambodia.Flags.Add(new CountryFlag
-        {
-            Id = "King",
-            Description = "The royal arms in gold centered on a blue field.",
-            StartDate = new DateTime(1993, 09, 24),
-            Usage = FlagUsage.LeaderFlag
         });
     }
 
@@ -86,28 +78,6 @@ public static partial class FlagsSetup
         {
             Description = "A British blue ensign with the coat of arms of the Cayman Islands in the fly.",
             StartDate = new DateTime(1999, 01, 01),
-            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
-        });
-
-        Countries.CaymanIslands.Flags.Add(new CountryFlag
-        {
-            Id = "CivilEnsign",
-            StartDate = new DateTime(1999, 01, 01),
-            Usage = FlagUsage.CivilEnsign
-        });
-
-        Countries.CaymanIslands.Flags.Add(new CountryFlag
-        {
-            Id = "Governor",
-            StartDate = new DateTime(1999, 01, 01),
-            Usage = FlagUsage.LeaderFlag
-        });
-
-        Countries.CaymanIslands.Flags.Add(new CountryFlag
-        {
-            Id = "Old1958",
-            StartDate = new DateTime(1958, 01, 01),
-            EndDate = new DateTime(1999, 01, 01),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
         });
     }
@@ -156,18 +126,6 @@ public static partial class FlagsSetup
             DesignedBy = "Ignacio Zenteno or Gregorio de Andía y Varela.",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
-
-        Countries.Chile.Flags.Add(new CountryFlag
-        {
-            Id = "President",
-            Names = new List<FlagName>
-            {
-                "Presidential Standard"
-            },
-            Description = "Same design as the National Flag with the National Coat of Arms superimposed at the center.",
-            DesignedBy = "Alfonso Martinez Delpelao",
-            Usage = FlagUsage.LeaderFlag
-        });
     }
 
     public static void China ()
@@ -186,14 +144,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(1949, 09, 27),
             DesignedBy = "Zeng Liansong",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-        });
-
-        Countries.China.Flags.Add(new CountryFlag
-        {
-            Id = "WarFlag",
-            Description = "A Chinese red field with a yellow star and Chinese numerals \"八一\", referencing 1 August, at the canton.",
-            StartDate = new DateTime(1949, 06, 15),
-            Usage = FlagUsage.WarFlag | FlagUsage.NavalJack
         });
     }
 
@@ -234,20 +184,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(1861, 11, 26),
             Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
         });
-
-        Countries.Colombia.Flags.Add(new CountryFlag
-        {
-            Id = "CivilEnsign",
-            Description = "The national flag defaced in the centre with a blue ellipse outlined in red and an eight-pointed white star.",
-            Usage = FlagUsage.CivilEnsign
-        });
-
-        Countries.Colombia.Flags.Add(new CountryFlag
-        {
-            Id = "NavalEnsign",
-            Description = "The national flag defaced in the centre with a white circle outlined in red and the coat of arms of Colombia.",
-            Usage = FlagUsage.WarEnsign
-        });
     }
 
     public static void Comoros ()
@@ -278,14 +214,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(2006, 02, 20),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
-
-        Countries.Congo_DemocraticRepublic.Flags.Add(new CountryFlag
-        {
-            Id = "President",
-            Description = "National flag with the addition of the inscription \"Le President\"",
-            StartDate = new DateTime(2006, 02, 20),
-            Usage = FlagUsage.LeaderFlag
-        });
     }
 
     public static void CookIslands ()
@@ -295,12 +223,6 @@ public static partial class FlagsSetup
             Description = "Blue ensign with a ring of fifteen white stars in the fly.",
             StartDate = new DateTime(1979, 08, 04),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
-        });
-
-        Countries.CookIslands.Flags.Add(new CountryFlag
-        {
-            Id = "King",
-            Usage = FlagUsage.LeaderFlag
         });
     }
 
@@ -312,15 +234,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(1848, 09, 29),
             DesignedBy = "Pacífica Fernández",
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
-        });
-
-        Countries.CostaRica.Flags.Add(new CountryFlag
-        {
-            Id = "StateAndWar",
-            Description = "Five horizontal bands of blue, white, and red (double width), with the coat of arms offcenter to the left.",
-            StartDate = new DateTime(1906, 11, 27),
-            DesignedBy = "Pacífica Fernández",
-            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });
     }
 
@@ -351,30 +264,6 @@ public static partial class FlagsSetup
             DesignedBy = "Miroslav Šutej",
             Usage = FlagUsage.NationalFlag
         });
-
-        Countries.Croatia.Flags.Add(new CountryFlag
-        {
-            Id = "Ensign",
-            Names = new List<FlagName>
-            {
-                "Civil and state ensign"
-            },
-            Description = "Three equal horizontal bands of red (top), white and blue superimposed by the Croatian coat of arms.",
-            StartDate = new DateTime(1992, 01, 01),
-            Usage = FlagUsage.CivilEnsign | FlagUsage.StateEnsign
-        });
-
-        Countries.Croatia.Flags.Add(new CountryFlag
-        {
-            Id = "NavalEnsign",
-            Names = new List<FlagName>
-            {
-                "Naval ensign"
-            },
-            Description = "Three equal horizontal bands of red (top), white and blue superimposed by the emblem of the Croatian Navy.",
-            StartDate = new DateTime(1992, 01, 01),
-            Usage = FlagUsage.WarEnsign
-        });
     }
 
     public static void Cuba ()
@@ -386,18 +275,6 @@ public static partial class FlagsSetup
             DesignedBy = "Miguel Teurbe Tolón, Narciso López",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
-
-        Countries.Cuba.Flags.Add(new CountryFlag
-        {
-            Id = "President",
-            Usage = FlagUsage.LeaderFlag
-        });
-
-        Countries.Cuba.Flags.Add(new CountryFlag
-        {
-            Id = "NavalJack",
-            Usage = FlagUsage.NavalJack
-        });
     }
 
     public static void Curacao ()
@@ -405,13 +282,6 @@ public static partial class FlagsSetup
         Countries.Curacao.Flags.Add(new CountryFlag
         {
             StartDate = new DateTime(1984, 07, 02)
-        });
-
-        Countries.Curacao.Flags.Add(new CountryFlag
-        {
-            Id = "Governor",
-            StartDate = new DateTime(1984, 07, 02),
-            Usage = FlagUsage.LeaderFlag
         });
     }
 

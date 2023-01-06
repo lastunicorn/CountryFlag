@@ -16,7 +16,7 @@
 
 using System;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class Svg : SvgGroup
 {

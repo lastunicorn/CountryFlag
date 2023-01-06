@@ -16,7 +16,7 @@
 
 using System;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
@@ -171,12 +171,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(1821, 07, 13),
             DesignedBy = "Fredrik Meltzer",
             Usage = FlagUsage.NationalFlagAndEnsign
-        });
-
-        Countries.Norway.Flags.Add(new CountryFlag
-        {
-            Id = "STATE",
-            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });
     }
 }

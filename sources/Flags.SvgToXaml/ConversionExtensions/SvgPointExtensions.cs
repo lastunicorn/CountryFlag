@@ -18,9 +18,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media;
-using DustInTheWind.Flags.SvgToXaml.Svg;
+using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgPointExtensions
 {

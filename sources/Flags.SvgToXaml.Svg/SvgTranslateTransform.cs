@@ -17,7 +17,7 @@
 using System;
 using System.Globalization;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgTranslateTransform : ISvgTransform
 {

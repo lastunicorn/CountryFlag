@@ -25,7 +25,7 @@ using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 internal class DefaultCountryFlagsRepository : FlagRepositoryBase
 {
@@ -49,7 +49,7 @@ internal class DefaultCountryFlagsRepository : FlagRepositoryBase
         if (!resourceExists)
             return null;
 
-        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.Flags.CountryFlags.Default;component/Flags/{resourceId}.xaml");
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.CountryFlags.Default;component/Flags/{resourceId}.xaml");
 
         ResourceDictionary resourceDictionary = new()
         {
@@ -86,7 +86,7 @@ internal class DefaultCountryFlagsRepository : FlagRepositoryBase
         return GetResourcePaths(Assembly.GetExecutingAssembly())
             .Where(x => x is string)
             .Cast<string>()
-            .Any(x => x.Contains($"flags/{flagId}", StringComparison.OrdinalIgnoreCase));
+            .Any(x => x.Contains($"flags/{flagId}.baml", StringComparison.OrdinalIgnoreCase));
     }
 
     public static IEnumerable<object> GetResourcePaths(Assembly assembly)

@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.SvgToXaml;
 
 public class ViewModelBase : INotifyPropertyChanged
 {

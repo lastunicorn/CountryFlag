@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgStyle : Collection<SvgStyleItem>
 {

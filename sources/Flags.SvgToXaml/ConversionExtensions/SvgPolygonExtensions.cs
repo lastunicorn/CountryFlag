@@ -16,10 +16,10 @@
 
 using System;
 using System.Windows.Shapes;
-using DustInTheWind.Flags.SvgToXaml.Svg;
+using DustInTheWind.SvgToXaml.Svg;
 using FillRule = System.Windows.Media.FillRule;
 
-namespace DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgPolygonExtensions
 {

@@ -18,7 +18,7 @@ using System;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgDocument
 {

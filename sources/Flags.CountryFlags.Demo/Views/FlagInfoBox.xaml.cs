@@ -16,7 +16,7 @@
 
 using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo
+namespace DustInTheWind.CountryFlags.Demo.Views
 {
     /// <summary>
     /// Interaction logic for FlagInfoBox.xaml

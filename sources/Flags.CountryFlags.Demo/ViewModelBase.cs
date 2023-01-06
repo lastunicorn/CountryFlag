@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo;
+namespace DustInTheWind.CountryFlags.Demo;
 
 public class ViewModelBase : INotifyPropertyChanged
 {

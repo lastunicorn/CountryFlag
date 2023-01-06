@@ -16,7 +16,7 @@
 
 using System.Windows;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.SvgToXaml;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

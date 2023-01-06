@@ -17,7 +17,7 @@
 using System;
 using System.Collections.ObjectModel;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgElementCollection<T> : Collection<T>
     where T : SvgElement

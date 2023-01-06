@@ -15,9 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using Path = DustInTheWind.Flags.SvgToXaml.Svg.Serialization.Path;
+using Path = DustInTheWind.SvgToXaml.Svg.Serialization.Path;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgPath : SvgElement
 {

@@ -16,11 +16,13 @@
 
 using System.Reflection;
 using System.Windows;
+using DustInTheWind.CountryFlags.Default;
+using DustInTheWind.CountryFlags.Demo.ViewModels;
+using DustInTheWind.CountryFlags.Demo.Views;
+using DustInTheWind.CountryFlags.Present;
 using DustInTheWind.Flags.Core;
-using DustInTheWind.Flags.CountryFlags.Default;
-using DustInTheWind.Flags.CountryFlags.Demo.ViewModels;
 
-namespace DustInTheWind.Flags.CountryFlags.Demo
+namespace DustInTheWind.CountryFlags.Demo
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -31,7 +33,8 @@ namespace DustInTheWind.Flags.CountryFlags.Demo
         {
             Assembly countryFlagsAssembly = typeof(Countries).Assembly;
             Assembly defaultCountryFlagsAssembly = typeof(DefaultCountryFlagsModule).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly);
+            Assembly presentCountryFlagsAssembly = typeof(PresentCountryFlagsModule).Assembly;
+            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly, presentCountryFlagsAssembly);
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

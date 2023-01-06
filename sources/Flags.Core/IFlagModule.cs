@@ -20,11 +20,7 @@ namespace DustInTheWind.Flags.Core;
 
 public interface IFlagModule
 {
-    void BeforeLoad();
-    
     IEnumerable<IFlagRepository> GetFlagRepositories();
 
-    void ConfigureModule();
-    
-    void AfterLoad();
+    void AddFlagsToCountries();
 }

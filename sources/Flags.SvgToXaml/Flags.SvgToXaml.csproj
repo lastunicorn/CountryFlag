@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.Flags.SvgToXaml</AssemblyName>
-        <RootNamespace>DustInTheWind.Flags.SvgToXaml</RootNamespace>
+        <AssemblyName>DustInTheWind.SvgToXaml</AssemblyName>
+        <RootNamespace>DustInTheWind.SvgToXaml</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

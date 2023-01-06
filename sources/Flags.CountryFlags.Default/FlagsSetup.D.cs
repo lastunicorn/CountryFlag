@@ -17,7 +17,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DustInTheWind.Flags.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
@@ -32,25 +32,6 @@ public static partial class FlagsSetup
             Description = "A white Nordic cross with a red background.",
             StartDate = new DateTime(1625, 01, 01),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
-        });
-
-        Countries.Denmark.Flags.Add(new CountryFlag
-        {
-            Id = "Splitflaget",
-            Names = new List<FlagName>
-            {
-                new()
-                {
-                    NativeName = "Splitflaget",
-                    EnglishTranslation = "The national flag of Denmark"
-                },
-                new()
-                {
-                    NativeName = "Rigets flag",
-                    EnglishTranslation = "Flag of the Kingdom [of Denmark]"
-                }
-            },
-            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
         });
     }
 
@@ -86,13 +67,6 @@ public static partial class FlagsSetup
             DesignedBy = "Alwin Bully",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
-
-        Countries.Dominica.Flags.Add(new CountryFlag
-        {
-            Id = "President",
-            Description = "A green field with the coat of arms of Dominica at the centre.",
-            Usage = FlagUsage.LeaderFlag
-        });
     }
 
     public static void DominicanRepublic ()
@@ -103,13 +77,6 @@ public static partial class FlagsSetup
             StartDate = new DateTime(1863, 11, 06),
             DesignedBy = "Juan Pablo Duarte",
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
-        });
-
-        Countries.DominicanRepublic.Flags.Add(new CountryFlag
-        {
-            Id = "Civil",
-            Description = "Quarterly, the first and fourth quarters blue and the second and third quarters red, with a white cross overall.",
-            Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
 }

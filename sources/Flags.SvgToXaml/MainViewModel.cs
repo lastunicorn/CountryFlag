@@ -18,10 +18,10 @@ using System;
 using System.IO;
 using System.Windows.Controls;
 using System.Xml;
-using DustInTheWind.Flags.SvgToXaml.ConversionExtensions;
-using DustInTheWind.Flags.SvgToXaml.Svg;
+using DustInTheWind.SvgToXaml.ConversionExtensions;
+using DustInTheWind.SvgToXaml.Svg;
 
-namespace Flags.SvgToXaml;
+namespace DustInTheWind.SvgToXaml;
 
 public class MainViewModel : ViewModelBase
 {

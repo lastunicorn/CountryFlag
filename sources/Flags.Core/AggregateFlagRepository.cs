@@ -45,8 +45,8 @@ internal class AggregateFlagRepository : IFlagRepository, IEnumerable<IFlagRepos
         }
 
         return childRepositories
-            .Select(x => x.Get(flagId))
-            .FirstOrDefault();
+            .Select(x=> x.Get(flagId))
+            .FirstOrDefault(x => x != null);
     }
 
     public IEnumerator<IFlagRepository> GetEnumerator()

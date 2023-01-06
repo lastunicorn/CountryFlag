@@ -15,9 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using DustInTheWind.Flags.SvgToXaml.Svg.Serialization;
+using DustInTheWind.SvgToXaml.Svg.Serialization;
 
-namespace DustInTheWind.Flags.SvgToXaml.Svg;
+namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgRectangle : SvgElement
 {

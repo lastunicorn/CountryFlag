@@ -17,15 +17,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <Window
-    x:Class="DustInTheWind.Flags.CountryFlags.Demo.MainWindow"
+    x:Class="DustInTheWind.CountryFlags.Demo.Views.MainWindow"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:core="clr-namespace:DustInTheWind.Flags.Core;assembly=DustInTheWind.Flags.Core"
-    xmlns:demo="clr-namespace:DustInTheWind.Flags.CountryFlags.Demo"
-    xmlns:viewModels="clr-namespace:DustInTheWind.Flags.CountryFlags.Demo.ViewModels"
+    xmlns:views="clr-namespace:DustInTheWind.CountryFlags.Demo.Views"
 
     mc:Ignorable="d"
     Title="MainWindow"
@@ -130,7 +129,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="5"
             Margin="3 0" />
 
-        <demo:FlagInfoBox
+        <views:FlagInfoBox
             Grid.Column="4"
             Margin="10"
             DataContext="{Binding FlagInfoViewModel}"/>
