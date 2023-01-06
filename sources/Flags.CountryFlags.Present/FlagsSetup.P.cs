@@ -47,10 +47,29 @@ public static partial class FlagsSetup
 
     public static void Palau()
     {
+        Countries.Palau.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Standard of the President"
+            },
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Palestine()
     {
+        Countries.Palestine.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Presidential standard"
+            },
+            Description = "A horizontal tricolour of black, white, and green; with a red triangle based at the hoist charged with the national emblem above two crossed white swords in the upper hoist corner.",
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Panama()

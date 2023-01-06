@@ -20,11 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.build.props = Directory.build.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.Default", "Flags.CountryFlags.Default\CountryFlags.Default.csproj", "{CA9F8B6F-99DC-401F-8805-FCB21C82987A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags", "Flags.CountryFlags.Default\CountryFlags.csproj", "{CA9F8B6F-99DC-401F-8805-FCB21C82987A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.Present", "Flags.CountryFlags.Present\CountryFlags.Present.csproj", "{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.InUse", "Flags.CountryFlags.Present\CountryFlags.InUse.csproj", "{019AEBD6-CD92-4F08-8457-116D1CBB7CFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.Past", "Flags.CountryFlags.Past\CountryFlags.Past.csproj", "{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.Outdated", "Flags.CountryFlags.Past\CountryFlags.Outdated.csproj", "{D94308B5-95A8-4B0D-9B98-CD06D10BAD27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SvgToXml", "SvgToXml", "{531931B0-270C-4B40-BA2C-68D063CA205D}"
 EndProject

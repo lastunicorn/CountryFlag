@@ -256,6 +256,16 @@ public class SvgElement
 
     public StrokeLineJoin? CalculateStrokeLineJoin()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke-linejoin");
+
+        if (rawValue != null)
+            return (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), rawValue, true);
+
+        SvgStyleItem? styleItem = Style?["stroke-linejoin"];
+
+        if (styleItem != null)
+            return (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), styleItem.Value, true);
+
         StrokeLineJoin? value = StrokeLineJoin;
 
         if (value != null)
@@ -266,6 +276,16 @@ public class SvgElement
 
     public double? CalculateStrokeDashOffset()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke-dashoffset");
+
+        if (rawValue != null)
+            return double.Parse(rawValue, CultureInfo.InvariantCulture);
+
+        SvgStyleItem? styleItem = Style?["stroke-dashoffset"];
+
+        if (styleItem != null)
+            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+
         double? value = StrokeDashOffset;
 
         if (value != null)
@@ -276,6 +296,16 @@ public class SvgElement
 
     public double? CalculateStrokeMiterLimit()
     {
+        string? rawValue = GetStyleValueFromClasses("stroke-miterlimit");
+
+        if (rawValue != null)
+            return double.Parse(rawValue, CultureInfo.InvariantCulture);
+
+        SvgStyleItem? styleItem = Style?["stroke-miterlimit"];
+
+        if (styleItem != null)
+            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+
         double? value = StrokeMiterLimit;
 
         if (value != null)

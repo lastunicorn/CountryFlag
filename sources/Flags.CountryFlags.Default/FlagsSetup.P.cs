@@ -42,12 +42,27 @@ public static partial class FlagsSetup
 
     public static void Palau()
     {
-        Countries.Palau.Flags.Add(new CountryFlag());
+        Countries.Palau.Flags.Add(new CountryFlag
+        {
+            Description = "A light blue field with the large yellow disk shifted slightly to the hoist-side of center.",
+            StartDate = new DateTime(1981, 01, 01),
+            DesignedBy = "Blau J. Skebong",
+            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
     }
 
     public static void Palestine()
     {
-        Countries.Palestine.Flags.Add(new CountryFlag());
+        Countries.Palestine.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "National flag"
+            },
+            Description = "A horizontal tricolour of black, white, and green; with a red triangle based at the hoist.",
+            StartDate = new DateTime(1964, 11, 15),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Panama()

@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
@@ -84,7 +83,7 @@ public class MainViewModel : ViewModelBase
     public string? FlagId
     {
         get => flagId;
-        set
+        private set
         {
             if (value == flagId)
                 return;
@@ -96,31 +95,10 @@ public class MainViewModel : ViewModelBase
 
     public MainViewModel()
     {
-        IEnumerable<Country> enumerateAll = Countries.EnumerateAll();
-        IEnumerable<CountryFlag> countryFlags = enumerateAll
-            .SelectMany(x =>
-            {
-                if (x == null)
-                {
-
-                }
-                return x.Flags ?? Enumerable.Empty<CountryFlag>();
-            });
-        IEnumerable<CountryFlag> enumerable = countryFlags
-            .Where(x => x != null);
-        IEnumerable<FlagItemViewModel> flagItemViewModels = enumerable
+        Flags = Countries.EnumerateAll()
+            .SelectMany(x => x.Flags)
+            .Where(x => x != null)
             .Select(x => new FlagItemViewModel(x))
-            .Where(x => x != null);
-
-        foreach (FlagItemViewModel flagItemViewModel in flagItemViewModels)
-        {
-            if (flagItemViewModel == null)
-            {
-
-            }
-        }
-
-        Flags = flagItemViewModels
             .ToImmutableList();
     }
 
@@ -129,7 +107,7 @@ public class MainViewModel : ViewModelBase
         CountryFlag? countryFlag = selectedFlag == null
             ? null
             : Countries.EnumerateAll()
-                .SelectMany(x => x.Flags ?? Enumerable.Empty<CountryFlag>())
+                .SelectMany(x => x.Flags)
                 .FirstOrDefault(x => x.IsMatch(selectedFlag.Id));
 
         FlagInfoViewModel = new FlagInfoViewModel(countryFlag);
