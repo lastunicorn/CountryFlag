@@ -18,24 +18,24 @@ namespace DustInTheWind.CountryFlags;
 
 public class Country
 {
-    public string ShortName { get; init; }
+    public string? ShortName { get; init; }
 
-    public string FullName { get; init; }
-
-    /// <summary>
-    /// ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest.
-    /// </summary>
-    public string IsoCodeAlpha2 { get; init; }
+    public string? FullName { get; init; }
 
     /// <summary>
     /// ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest.
     /// </summary>
-    public string IsoCodeAlpha3 { get; init; }
+    public string? IsoCodeAlpha2 { get; init; }
 
     /// <summary>
     /// ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest.
     /// </summary>
-    public string IsoCodeNumeric { get; init; }
+    public string? IsoCodeAlpha3 { get; init; }
+
+    /// <summary>
+    /// ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest.
+    /// </summary>
+    public string? IsoCodeNumeric { get; init; }
 
     public bool IsIndependent { get; init; }
 

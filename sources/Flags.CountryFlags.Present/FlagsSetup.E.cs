@@ -45,7 +45,7 @@ public static partial class FlagsSetup
                 "War flag"
             },
             Description = "National flag with two white crossed sabres in canton.",
-            StartDate = new DateTime(1984, 10, 04),
+            StartDate = new FlagDate(1984, 10, 04),
             Usage = FlagUsage.WarFlag
         });
 
@@ -57,7 +57,7 @@ public static partial class FlagsSetup
                 "War ensign"
             },
             Description = "National flag with two white fouled crossed anchors in canton.",
-            StartDate = new DateTime(1984, 10, 04),
+            StartDate = new FlagDate(1984, 10, 04),
             Usage = FlagUsage.WarEnsign
         });
 
@@ -69,7 +69,7 @@ public static partial class FlagsSetup
                 "President's flag"
             },
             Description = "National flag with gold outlined Eagle of Saladin in canton.",
-            StartDate = new DateTime(1984, 10, 04),
+            StartDate = new FlagDate(1984, 10, 04),
             Usage = FlagUsage.LeaderFlag
         });
     }
@@ -117,7 +117,7 @@ public static partial class FlagsSetup
                 "Naval ensign"
             },
             Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.",
-            StartDate = new DateTime(1991, 01, 01),
+            StartDate = new FlagDate(1991),
             Usage = FlagUsage.WarEnsign
         });
 

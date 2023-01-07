@@ -31,7 +31,7 @@ public static partial class FlagsSetup
         {
             Id = "King",
             Description = "The royal arms in gold centered on a blue field.",
-            StartDate = new DateTime(1993, 09, 24),
+            StartDate = new FlagDate(1993, 09, 24),
             Usage = FlagUsage.LeaderFlag
         });
     }
@@ -49,22 +49,34 @@ public static partial class FlagsSetup
         Countries.CaymanIslands.Flags.Add(new CountryFlag
         {
             Id = "CivilEnsign",
-            StartDate = new DateTime(1999, 01, 01),
+            Names = new List<FlagName>
+            {
+                "Civil ensign"
+            },
+            StartDate = new FlagDate(1999),
             Usage = FlagUsage.CivilEnsign
         });
 
         Countries.CaymanIslands.Flags.Add(new CountryFlag
         {
             Id = "Governor",
-            StartDate = new DateTime(1999, 01, 01),
+            Names = new List<FlagName>
+            {
+                "Standard of the Governor"
+            },
+            StartDate = new FlagDate(1999),
             Usage = FlagUsage.LeaderFlag
         });
 
         Countries.CaymanIslands.Flags.Add(new CountryFlag
         {
             Id = "Old1958",
-            StartDate = new DateTime(1958, 01, 01),
-            EndDate = new DateTime(1999, 01, 01),
+            Names = new List<FlagName>
+            {
+                "Old flag"
+            },
+            StartDate = new FlagDate(1958),
+            EndDate = new FlagDate(1999),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
         });
     }
@@ -98,7 +110,7 @@ public static partial class FlagsSetup
         {
             Id = "WarFlag",
             Description = "A Chinese red field with a yellow star and Chinese numerals \"八一\", referencing 1 August, at the canton.",
-            StartDate = new DateTime(1949, 06, 15),
+            StartDate = new FlagDate(1949, 06, 15),
             Usage = FlagUsage.WarFlag | FlagUsage.NavalJack
         });
     }
@@ -150,7 +162,7 @@ public static partial class FlagsSetup
         {
             Id = "President",
             Description = "National flag with the addition of the inscription \"Le President\"",
-            StartDate = new DateTime(2006, 02, 20),
+            StartDate = new FlagDate(2006, 02, 20),
             Usage = FlagUsage.LeaderFlag
         });
     }
@@ -174,7 +186,7 @@ public static partial class FlagsSetup
                 "State and war flag and ensign"
             },
             Description = "Five horizontal bands of blue, white, and red (double width), with the coat of arms offcenter to the left.",
-            StartDate = new DateTime(1906, 11, 27),
+            StartDate = new FlagDate(1906, 11, 27),
             DesignedBy = "Pacífica Fernández",
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });
@@ -194,7 +206,7 @@ public static partial class FlagsSetup
                 "Civil and state ensign"
             },
             Description = "Three equal horizontal bands of red (top), white and blue superimposed by the Croatian coat of arms.",
-            StartDate = new DateTime(1992, 01, 01),
+            StartDate = new FlagDate(1992),
             Usage = FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
 
@@ -206,7 +218,7 @@ public static partial class FlagsSetup
                 "Naval ensign"
             },
             Description = "Three equal horizontal bands of red (top), white and blue superimposed by the emblem of the Croatian Navy.",
-            StartDate = new DateTime(1992, 01, 01),
+            StartDate = new FlagDate(1992),
             Usage = FlagUsage.WarEnsign
         });
     }

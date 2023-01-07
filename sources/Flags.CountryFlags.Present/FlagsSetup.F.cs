@@ -31,7 +31,7 @@ public static partial class FlagsSetup
                 "Civil ensign"
             },
             Description = "Red Ensign with the coat-of-arms of the Falkland Islands in the fly.",
-            StartDate = new DateTime(1999, 01, 25),
+            StartDate = new FlagDate(1999, 01, 25),
             Usage = FlagUsage.CivilEnsign
         });
         
@@ -43,7 +43,7 @@ public static partial class FlagsSetup
                 "Flag of the Governor"
             },
             Description = "A Union Flag defaced with the coat-of-arms of the Falkland Islands.",
-            StartDate = new DateTime(1948, 09, 29),
+            StartDate = new FlagDate(1948, 09, 29),
             Usage = FlagUsage.Other
         });
     }
@@ -118,14 +118,14 @@ public static partial class FlagsSetup
                 "State flag"
             },
             Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red).",
-            StartDate = new DateTime(1978, 01, 01)
+            StartDate = new FlagDate(1978)
         });
 
         Countries.Finland.Flags.Add(new CountryFlag
         {
             Id = "TailedStateFlag",
             Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red), swallow-tailed.",
-            StartDate = new DateTime(1978, 01, 01),
+            StartDate = new FlagDate(1978),
             Usage = FlagUsage.WarFlag | FlagUsage.WarEnsign
         });
 
@@ -137,7 +137,7 @@ public static partial class FlagsSetup
                 "President's flag"
             },
             Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red), swallow-tailed, Cross of Liberty in canton (colors gold on blue).",
-            StartDate = new DateTime(1918, 01, 01),
+            StartDate = new FlagDate(1918),
             Usage = FlagUsage.LeaderFlag
         });
 
@@ -149,7 +149,7 @@ public static partial class FlagsSetup
                 "Naval jack"
             },
             Description = "A white field with the Coat of Arms of Finland in the center.",
-            StartDate = new DateTime(1918, 01, 01),
+            StartDate = new FlagDate(1918),
             Usage = FlagUsage.NavalJack
         });
     }
@@ -160,7 +160,7 @@ public static partial class FlagsSetup
         {
             Id = "Variant",
             Description = "An interchangeable variant of the national flag with lighter shades.",
-            StartDate = new DateTime(1974, 01, 01),
+            StartDate = new FlagDate(1974),
             Usage = FlagUsage.NationalFlag
         });
     }
@@ -178,7 +178,7 @@ public static partial class FlagsSetup
             {
                 "Flag of the French Republic"
             },
-            StartDate = new DateTime(1794, 02, 15),
+            StartDate = new FlagDate(1794, 02, 15),
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }

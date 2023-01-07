@@ -39,6 +39,8 @@ public class FlagInfoViewModel
 
     public string FlagUsageDescription { get; }
 
+    public FlagDate? StartDate { get; }
+
     public FlagInfoViewModel(CountryFlag? countryFlag)
     {
         CountryName = countryFlag?.Country?.ShortName;
@@ -51,10 +53,12 @@ public class FlagInfoViewModel
         FlagName = flagNames != null
             ? string.Join(", ", flagNames)
             : string.Empty;
-        
+
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
+
+        StartDate = countryFlag?.StartDate;
     }
 
     public override string ToString()

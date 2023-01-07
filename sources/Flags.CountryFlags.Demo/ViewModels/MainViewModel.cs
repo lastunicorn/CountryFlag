@@ -98,6 +98,7 @@ public class MainViewModel : ViewModelBase
         Flags = Countries.EnumerateAll()
             .SelectMany(x => x.Flags)
             .Where(x => x != null)
+            //.Where(x => string.IsNullOrEmpty(x.Id))
             .Select(x => new FlagItemViewModel(x))
             .ToImmutableList();
     }

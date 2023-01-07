@@ -32,9 +32,13 @@ public class SvgTranslateTransform : ISvgTransform
 
         string[] parts = text.Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
-        if (parts.Length >= 2)
+        if (parts.Length >= 1)
         {
             X = double.Parse(parts[0], CultureInfo.InvariantCulture);
+        }
+        
+        if (parts.Length >= 2)
+        {
             Y = double.Parse(parts[1], CultureInfo.InvariantCulture);
         }
     }

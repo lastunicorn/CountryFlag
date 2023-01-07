@@ -26,7 +26,7 @@ public static partial class FlagsSetup
         Countries.Reunion.Flags.Add(new CountryFlag
         {
             Description = "A vertical tricolour of blue, white, and red.",
-            StartDate = new DateTime(1794, 02, 15),
+            StartDate = new FlagDate(1794, 02, 15),
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }
@@ -36,7 +36,7 @@ public static partial class FlagsSetup
         Countries.Romania.Flags.Add(new CountryFlag
         {
             Description = "A vertical tricolor of blue, yellow, and red.",
-            StartDate = new DateTime(1989, 12, 27),
+            StartDate = new FlagDate(1989, 12, 27),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -67,7 +67,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal tricolour of white, dark blue and red.",
-            StartDate = new DateTime(2000, 12, 25),
+            StartDate = new FlagDate(2000, 12, 25),
             DesignedBy = "Peter the Great",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
@@ -78,7 +78,7 @@ public static partial class FlagsSetup
         Countries.Rwanda.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolour of light blue (double width), yellow and green; charged with a sun-yellow sun in the upper-fly side corner.",
-            StartDate = new DateTime(2001, 10, 25),
+            StartDate = new FlagDate(2001, 10, 25),
             DesignedBy = "Alphonse Kirimobenecyo",
             Usage = FlagUsage.NationalFlag
         });

@@ -98,7 +98,7 @@ public static partial class FlagsSetup
                 "Civil flag and ensign"
             },
             Description = "A vertical tricolour of blue, yellow and red.",
-            StartDate = new DateTime(1866, 01, 01),
+            StartDate = new FlagDate(1866),
             DesignedBy = "Napoleon III",
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
@@ -140,7 +140,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal triband of light blue (top and bottom) and white (center).",
-            StartDate = new DateTime(1812, 02, 27),
+            StartDate = new FlagDate(1812, 02, 27),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
@@ -189,7 +189,7 @@ public static partial class FlagsSetup
                 "Royal Australian Navy Ensign"
             },
             Description = "A defaced British White Ensign without the cross. The cross is replaced with the Southern Cross and the Commonwealth Star/Federation Star.",
-            StartDate = new DateTime(1967, 01, 01),
+            StartDate = new FlagDate(1967),
             Usage = FlagUsage.CivilEnsign
         });
        
@@ -201,7 +201,7 @@ public static partial class FlagsSetup
                 "Royal Australian Air Force Ensign"
             },
             Description = "A field of air force blue with the Union Flag in the canton, the Commonwealth Star below the Union Flag with the Southern Cross in the fly and the RAAF roundel in the lower fly.",
-            StartDate = new DateTime(1982, 01, 01),
+            StartDate = new FlagDate(1982),
             Usage = FlagUsage.AirForceEnsign
         });
     }

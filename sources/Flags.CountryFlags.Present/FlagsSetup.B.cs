@@ -93,8 +93,8 @@ public static partial class FlagsSetup
             },
             Description = "A red disc with a golden outline of Bangladesh on a green banner.",
             Comments = "Flag used during the Liberation War (1971)",
-            StartDate = new DateTime(1971, 03, 02),
-            EndDate = new DateTime(1971, 12, 12)
+            StartDate = new FlagDate(1971, 03, 02),
+            EndDate = new FlagDate(1971, 12, 12)
         });
     }
 
@@ -190,6 +190,10 @@ public static partial class FlagsSetup
         Countries.Bolivia.Flags.Add(new CountryFlag
         {
             Id = "State",
+            Names = new List<FlagName>
+            {
+                "State Flag"
+            },
             Description = "A horizontal tricolor of red, yellow and green with the coat of arms.",
             StartDate = new DateTime(1851, 10, 31),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
@@ -268,7 +272,7 @@ public static partial class FlagsSetup
             Id = "President",
             Names = new List<FlagName>
             {
-                "Presidential Standard of Botswana"
+                "Presidential Standard"
             },
             Description = "A light blue field charged with a black-rimmed white circle containing the coat of arms of Botswana in the centre."
         });

@@ -26,7 +26,7 @@ public static partial class FlagsSetup
         Countries.CaboVerde.Flags.Add(new CountryFlag
         {
             Description = "Five unequal horizontal bands of blue (six-twelfths), white, red, white (each of the bands are one-twelfth) and blue (three-twelfths) with the circle of ten yellow five-pointed stars centered on the red stripe and positioned three-eighths of the length of the flag from the hoist-side.",
-            StartDate = new DateTime(1992, 09, 22),
+            StartDate = new FlagDate(1992, 09, 22),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -36,7 +36,7 @@ public static partial class FlagsSetup
         Countries.Cambodia.Flags.Add(new CountryFlag
         {
             Description = "Three horizontal bands of blue, red (double width) and blue, with a depiction of Angkor Wat in white centred on the red band.",
-            StartDate = new DateTime(1948, 01, 01),
+            StartDate = new FlagDate(1993, 09, 24),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -46,7 +46,7 @@ public static partial class FlagsSetup
         Countries.Cameroon.Flags.Add(new CountryFlag
         {
             Description = "A vertical tricolour of green, red and yellow, with a gold star centered on the red band.",
-            StartDate = new DateTime(1975, 05, 20),
+            StartDate = new FlagDate(1975, 05, 20),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -66,7 +66,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A vertical triband of red (hoist-side and fly-side) and white (double width) with the red maple leaf centered on the white band.",
-            StartDate = new DateTime(1965, 02, 15),
+            StartDate = new FlagDate(1965, 02, 15),
             DesignedBy = "George F. G. Stanley",
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
@@ -77,7 +77,7 @@ public static partial class FlagsSetup
         Countries.CaymanIslands.Flags.Add(new CountryFlag
         {
             Description = "A British blue ensign with the coat of arms of the Cayman Islands in the fly.",
-            StartDate = new DateTime(1999, 01, 01),
+            StartDate = new FlagDate(1999),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
         });
     }
@@ -104,7 +104,7 @@ public static partial class FlagsSetup
                 "Les trois barres"
             },
             Description = "The flag of Chad is a vertical tricolour consisting (left to right) of a blue, a gold and a red column. These were intended to be a combination of the colours of blue, white and red as seen on the Flag of France with the Pan-African colours of green, yellow and red. Furthermore, the blue represents the sky and hope; the gold is the sun and desert, and the red signifies the bloodshed over independence.",
-            StartDate = new DateTime(1959, 11, 06),
+            StartDate = new FlagDate(1959, 11, 06),
             Usage = FlagUsage.NationalFlag
         });
     }
@@ -122,7 +122,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal bicolor of white and red with the blue square ended on the upper hoist-side corner of the white band bearing the white five-pointed star in the center.",
-            StartDate = new DateTime(1817, 10, 18),
+            StartDate = new FlagDate(1817, 10, 18),
             DesignedBy = "Ignacio Zenteno or Gregorio de Andía y Varela.",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
@@ -141,7 +141,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A large golden star within an arc of four smaller golden stars, in the canton, on a field of Chinese red.",
-            StartDate = new DateTime(1949, 09, 27),
+            StartDate = new FlagDate(1949, 09, 27),
             DesignedBy = "Zeng Liansong",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
@@ -152,7 +152,7 @@ public static partial class FlagsSetup
         Countries.ChristmasIsland.Flags.Add(new CountryFlag
         {
             Description = "Blue and green diagonal bicolour charged with a southern cross of four seven-pointed white stars and one smaller five-pointed white star on the blue half, a golden bosun bird in gold on the green half, and a gold circle in the centre containing the shape of the island in green.",
-            StartDate = new DateTime(2002, 02, 26),
+            StartDate = new FlagDate(2002, 02, 26),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
     }
@@ -162,7 +162,7 @@ public static partial class FlagsSetup
         Countries.CocosIslands.Flags.Add(new CountryFlag
         {
             Description = "Green, with a palm tree on a gold disc in the canton, a gold crescent in the centre of the flag and a gold southern cross in the fly.",
-            StartDate = new DateTime(2004, 04, 06),
+            StartDate = new FlagDate(2004, 04, 06),
             DesignedBy = "Mohammed Minkom",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
@@ -181,7 +181,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal tricolour of yellow (double-width), blue and red.",
-            StartDate = new DateTime(1861, 11, 26),
+            StartDate = new FlagDate(1861, 11, 26),
             Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
         });
     }
@@ -191,7 +191,7 @@ public static partial class FlagsSetup
         Countries.Comoros.Flags.Add(new CountryFlag
         {
             Description = "Four horizontal stripes of yellow, white, red and blue (from top to bottom); with a green chevron based on the hoist side charged with a white crescent and four five-pointed stars.",
-            StartDate = new DateTime(2001, 12, 23),
+            StartDate = new FlagDate(2001, 12, 23),
             Usage = FlagUsage.NationalFlag
         });
     }
@@ -201,7 +201,7 @@ public static partial class FlagsSetup
         Countries.Congo_Republic.Flags.Add(new CountryFlag
         {
             Description = "A diagonal tricolour of green, yellow and red radiating from the lower hoist side corner.",
-            StartDate = new DateTime(1959, 09, 15),
+            StartDate = new FlagDate(1959, 09, 15),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -211,7 +211,7 @@ public static partial class FlagsSetup
         Countries.Congo_DemocraticRepublic.Flags.Add(new CountryFlag
         {
             Description = "A sky blue field with a yellow five-pointed star in the canton and cut yellow-fimbriated red diagonal band from the lower hoist-side to the upper fly-side.",
-            StartDate = new DateTime(2006, 02, 20),
+            StartDate = new FlagDate(2006, 02, 20),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -221,7 +221,7 @@ public static partial class FlagsSetup
         Countries.CookIslands.Flags.Add(new CountryFlag
         {
             Description = "Blue ensign with a ring of fifteen white stars in the fly.",
-            StartDate = new DateTime(1979, 08, 04),
+            StartDate = new FlagDate(1979, 08, 04),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
     }
@@ -231,7 +231,7 @@ public static partial class FlagsSetup
         Countries.CostaRica.Flags.Add(new CountryFlag
         {
             Description = "Five horizontal bands of blue, white, and red (double width).",
-            StartDate = new DateTime(1848, 09, 29),
+            StartDate = new FlagDate(1848, 09, 29),
             DesignedBy = "Pacífica Fernández",
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
         });
@@ -242,7 +242,7 @@ public static partial class FlagsSetup
         Countries.IvoryCoast.Flags.Add(new CountryFlag
         {
             Description = "A vertical tricolor of orange, white, and green.",
-            StartDate = new DateTime(1959, 12, 03),
+            StartDate = new FlagDate(1959, 12, 03),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -260,7 +260,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal tricolour of red, white, and blue with the Coat of Arms of Croatia in the centre.",
-            StartDate = new DateTime(1990, 12, 21),
+            StartDate = new FlagDate(1990, 12, 21),
             DesignedBy = "Miroslav Šutej",
             Usage = FlagUsage.NationalFlag
         });
@@ -271,7 +271,7 @@ public static partial class FlagsSetup
         Countries.Cuba.Flags.Add(new CountryFlag
         {
             Description = "Five horizontal stripes of blue alternate with white with the red equilateral triangle based on the hoist-side bearing the white five-pointed star in the center.",
-            StartDate = new DateTime(1902, 05, 20),
+            StartDate = new FlagDate(1902, 05, 20),
             DesignedBy = "Miguel Teurbe Tolón, Narciso López",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
@@ -281,7 +281,7 @@ public static partial class FlagsSetup
     {
         Countries.Curacao.Flags.Add(new CountryFlag
         {
-            StartDate = new DateTime(1984, 07, 02)
+            StartDate = new FlagDate(1984, 07, 02)
         });
     }
 
@@ -290,7 +290,7 @@ public static partial class FlagsSetup
         Countries.Cyprus.Flags.Add(new CountryFlag
         {
             Description = "An outline of the island of Cyprus in copper above two green olive branches on a white field.",
-            StartDate = new DateTime(2006, 04, 24),
+            StartDate = new FlagDate(2006, 04, 24),
             DesignedBy = "İsmet Güney",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
@@ -301,7 +301,7 @@ public static partial class FlagsSetup
         Countries.Czechia.Flags.Add(new CountryFlag
         {
             Description = "Two equal horizontal bands of white (top) and red with a blue isosceles triangle based on the hoist side.",
-            StartDate = new DateTime(1993, 03, 30),
+            StartDate = new FlagDate(1993, 03, 30),
             DesignedBy = "Jaroslav Kursa",
             Usage = FlagUsage.NationalEnsign | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });

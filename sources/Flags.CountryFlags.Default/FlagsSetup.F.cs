@@ -26,7 +26,7 @@ public static partial class FlagsSetup
         Countries.FalklandIslands.Flags.Add(new CountryFlag
         {
             Description = "Blue Ensign with the coat-of-arms of the Falkland Islands in the fly.",
-            StartDate = new DateTime(1999, 01, 25),
+            StartDate = new FlagDate(1999, 01, 25),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
         });
     }
@@ -36,7 +36,7 @@ public static partial class FlagsSetup
         Countries.FaroeIslands.Flags.Add(new CountryFlag
         {
             Description = "A blue-fimbriated red Nordic cross on a white field.",
-            StartDate = new DateTime(1940, 04, 25),
+            StartDate = new FlagDate(1940, 04, 25),
             DesignedBy = "Jens Oliver Lisberg",
             Usage = FlagUsage.NationalEnsign | FlagUsage.CivilEnsign
         });
@@ -55,7 +55,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A Cyan Ensign with the shield from the national coat of arms centred in the fly half.",
-            StartDate = new DateTime(1970, 10, 10),
+            StartDate = new FlagDate(1970, 10, 10),
             DesignedBy = "Tessa Mackenzie",
             Usage = FlagUsage.NationalFlag
         });
@@ -66,7 +66,7 @@ public static partial class FlagsSetup
         Countries.Finland.Flags.Add(new CountryFlag
         {
             Description = "Sea-blue Nordic cross on white field.",
-            StartDate = new DateTime(1918, 05, 28),
+            StartDate = new FlagDate(1918, 05, 28),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
@@ -84,7 +84,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A vertical tricolour of blue, white, and red",
-            StartDate = new DateTime(1794, 02, 15),
+            StartDate = new FlagDate(1794, 02, 15),
             DesignedBy = "Lafayette, Jacques-Louis David",
             Usage = FlagUsage.NationalFlag
         });
@@ -100,7 +100,7 @@ public static partial class FlagsSetup
         Countries.FrenchPolynesia.Flags.Add(new CountryFlag
         {
             Description = "Two red horizontal bands encase a wide white band in a 1:2:1 ratio, with the Coat of arms centred on the white stripe.",
-            StartDate = new DateTime(1984, 11, 23),
+            StartDate = new FlagDate(1984, 11, 23),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
     }
@@ -110,7 +110,7 @@ public static partial class FlagsSetup
         Countries.FrenchSouthernTerritories.Flags.Add(new CountryFlag
         {
             Description = "A blue ensign with the French tricolor in the canton and the letters T.A.A.F in the form of a white anchor in the fly surrounded by five, five-pointed white stars.",
-            StartDate = new DateTime(2007, 02, 23)
+            StartDate = new FlagDate(2007, 02, 23)
         });
     }
 }

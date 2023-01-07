@@ -74,6 +74,16 @@ public static partial class FlagsSetup
 
     public static void Panama()
     {
+        Countries.Panama.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Presidential standard"
+            },
+            Description = "The national flag with the Coat of arms of Panama charged on the center.",
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void PapuaNewGuinea()

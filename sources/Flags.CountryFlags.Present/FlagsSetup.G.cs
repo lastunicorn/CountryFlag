@@ -30,7 +30,7 @@ public static partial class FlagsSetup
             {
                 "President's flag"
             },
-            StartDate = new DateTime(2016, 01, 01),
+            StartDate = new FlagDate(2016),
             Usage = FlagUsage.LeaderFlag
         });
     }
@@ -112,7 +112,7 @@ public static partial class FlagsSetup
                 "State flag"
             },
             Description = "The civil flag with the coat of arms at the centre.",
-            StartDate = new DateTime(1950, 06, 07),
+            StartDate = new FlagDate(1950, 06, 07),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign
         });
 
@@ -124,7 +124,7 @@ public static partial class FlagsSetup
                 "Naval ensign"
             },
             Description = "A swallowtail of the civil flag with the coat of arms at the centre.",
-            StartDate = new DateTime(1956, 05, 25),
+            StartDate = new FlagDate(1956, 05, 25),
             Usage = FlagUsage.WarEnsign
         });
     }
@@ -175,7 +175,7 @@ public static partial class FlagsSetup
                 "State ensign"
             },
             Description = "Blue Ensign with the Union Flag in the canton and the badge of Gibraltar in the fly.",
-            StartDate = new DateTime(1998, 01, 01),
+            StartDate = new FlagDate(1998),
             Usage = FlagUsage.StateEnsign
         });
 
@@ -187,7 +187,7 @@ public static partial class FlagsSetup
                 "Civil ensign of Gibraltar"
             },
             Description = "Red Ensign with the Union Flag in the canton and the badge of Gibraltar in the fly.",
-            StartDate = new DateTime(1998, 01, 01),
+            StartDate = new FlagDate(1998),
             Usage = FlagUsage.CivilEnsign
         });
 
@@ -252,7 +252,7 @@ public static partial class FlagsSetup
                 "Civil flag and ensign"
             },
             Description = "A vertical triband of Maya blue (hoist-side and fly-side) and white.",
-            StartDate = new DateTime(1871, 01, 01),
+            StartDate = new FlagDate(1871),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }

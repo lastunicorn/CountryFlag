@@ -30,7 +30,7 @@ public static partial class FlagsSetup
                 "Dannebrog"
             },
             Description = "A white Nordic cross with a red background.",
-            StartDate = new DateTime(1625, 01, 01),
+            StartDate = new FlagDate(1625),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
@@ -53,7 +53,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal bicolour of light blue and light green, with a white isosceles triangle at the hoist bearing a red star in its center.",
-            StartDate = new DateTime(1977, 06, 27),
+            StartDate = new FlagDate(1977, 06, 27),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -63,7 +63,7 @@ public static partial class FlagsSetup
         Countries.Dominica.Flags.Add(new CountryFlag
         {
             Description = "A green field with the centred cross of three bands: the vertical part is: yellow, black and white and the horizontal part is: yellow, black and white and the red disk superimposed at the centre of the cross bearing a purple Sisserou Parrot facing the hoist-side encircled by ten green five-pointed stars.",
-            StartDate = new DateTime(1990, 01, 01),
+            StartDate = new FlagDate(1990),
             DesignedBy = "Alwin Bully",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
@@ -74,7 +74,7 @@ public static partial class FlagsSetup
         Countries.DominicanRepublic.Flags.Add(new CountryFlag
         {
             Description = "A white cross with the national coat of arms in the centre that divides the flag into four rectangles, blue and red at the top and red and blue at the bottom.",
-            StartDate = new DateTime(1863, 11, 06),
+            StartDate = new FlagDate(1863, 11, 06),
             DesignedBy = "Juan Pablo Duarte",
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });

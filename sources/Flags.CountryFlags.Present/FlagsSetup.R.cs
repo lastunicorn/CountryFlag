@@ -34,8 +34,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the United Principalities of Moldavia and Wallachia"
             },
-            StartDate = new DateTime(1859, 01, 01),
-            EndDate = new DateTime(1862, 01, 01)
+            StartDate = new FlagDate(1859),
+            EndDate = new FlagDate(1862)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -45,8 +45,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the Romanian United Principalities"
             },
-            StartDate = new DateTime(1862, 01, 01),
-            EndDate = new DateTime(1866, 01, 01)
+            StartDate = new FlagDate(1862),
+            EndDate = new FlagDate(1866)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -56,8 +56,8 @@ public static partial class FlagsSetup
             {
                 "Flag of Romania"
             },
-            StartDate = new DateTime(1866, 01, 01),
-            EndDate = new DateTime(1948, 01, 01)
+            StartDate = new FlagDate(1866),
+            EndDate = new FlagDate(1948)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -67,8 +67,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the Romanian People's Republic (1948)"
             },
-            StartDate = new DateTime(1948, 01, 01),
-            EndDate = new DateTime(1948, 03, 01)
+            StartDate = new FlagDate(1948),
+            EndDate = new FlagDate(1948)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -78,8 +78,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the Romanian People's Republic (1948-1952)"
             },
-            StartDate = new DateTime(1948, 01, 01),
-            EndDate = new DateTime(1952, 01, 01)
+            StartDate = new FlagDate(1948),
+            EndDate = new FlagDate(1952)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -89,8 +89,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the Romanian People's Republic (1952–1965)"
             },
-            StartDate = new DateTime(1952, 01, 01),
-            EndDate = new DateTime(1965, 01, 01)
+            StartDate = new FlagDate(1952),
+            EndDate = new FlagDate(1965)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -100,8 +100,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the Socialist Republic of Romania (1965–1989)"
             },
-            StartDate = new DateTime(1952, 01, 01),
-            EndDate = new DateTime(1965, 01, 01)
+            StartDate = new FlagDate(1952),
+            EndDate = new FlagDate(1965)
         });
 
         Countries.Romania.Flags.Add(new CountryFlag
@@ -111,8 +111,8 @@ public static partial class FlagsSetup
             {
                 "Flag of the anti-Ceaușescu protesters during the Romanian Revolution"
             },
-            StartDate = new DateTime(1989, 12, 17),
-            EndDate = new DateTime(1965, 01, 01),
+            StartDate = new FlagDate(1989, 12, 17),
+            EndDate = new FlagDate(1989),
             Comments = "Starting on 17 December 1989, during the revolution at Timișoara, the protesters began waving flags with the Communist coat of arms cut out of the middle. The coat of arms was perceived as a symbol of Nicolae Ceaușescu's dictatorship. These flags were called \"the flag with the hole\" (drapelul cu gaură)."
         });
     }
@@ -127,7 +127,7 @@ public static partial class FlagsSetup
                 "Variant flag of Russia"
             },
             Description = "St. Andrew's Cross with a white background and two blue diagonal bands forming a saltire.",
-            StartDate = new DateTime(1992, 01, 01),
+            StartDate = new FlagDate(1992),
             DesignedBy = "Peter the Great",
             Usage = FlagUsage.WarEnsign
         });
@@ -144,7 +144,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "The square tricolour with the coat of arms (in this case the double-headed eagle is depicted without the shield) in the middle.",
-            StartDate = new DateTime(1994, 02, 15),
+            StartDate = new FlagDate(1994, 02, 15),
             Usage = FlagUsage.LeaderFlag,
             Comments = "The President of Russia uses a Presidential Standard (Russian: Штандарт Президента), which was introduced via Presidential Decree No.319 on 15 February 1994."
         });

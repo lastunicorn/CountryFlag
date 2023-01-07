@@ -34,7 +34,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal tricolor of yellow (double width), blue and red with the National Coat of Arms superimposed at the center.",
-            StartDate = new DateTime(1860, 09, 26),
+            StartDate = new FlagDate(1860, 09, 26),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });
     }
@@ -53,7 +53,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "Horizontally divided red-white-black tricolor flag with the Eagle of Saladin.",
-            StartDate = new DateTime(1984, 10, 04),
+            StartDate = new FlagDate(1984, 10, 04),
             DesignedBy = "Aly Kamel El-Deeb",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
@@ -72,7 +72,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal triband of cobalt blue (top and bottom) and white with the National Coat of Arms in the center and occupying the entire hight of the white stripe with its top touching the upper blue strip and its base touching the lower blue stripe.",
-            StartDate = new DateTime(1912, 05, 27),
+            StartDate = new FlagDate(1912, 05, 27),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.WarEnsign
         });
     }
@@ -82,7 +82,7 @@ public static partial class FlagsSetup
         Countries.EquatorialGuinea.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolor of green, white and red with a blue isosceles triangle based on the hoist side and the National Coat of arms of Equatorial Guinea centered in the white band.",
-            StartDate = new DateTime(1968, 10, 12),
+            StartDate = new FlagDate(1968, 10, 12),
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
         });
     }
@@ -105,7 +105,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A red isosceles triangle based on the hoist-side pointed toward the fly-side and then divided into two right triangles: the upper triangle is green and the lower triangle is blue with an Emblem (1952-1995) in gold (a vertical olive branch encircled by an olive wreath) centered on the hoist side of the triangle.",
-            StartDate = new DateTime(1995, 12, 05),
+            StartDate = new FlagDate(1995, 12, 05),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -123,7 +123,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A horizontal triband of blue, black, and white.",
-            StartDate = new DateTime(1918, 01, 01),
+            StartDate = new FlagDate(1918),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign | FlagUsage.StateFlag
         });
     }
@@ -133,7 +133,7 @@ public static partial class FlagsSetup
         Countries.Eswatini.Flags.Add(new CountryFlag
         {
             Description = "A horizontal triband of blue (top and bottom) and the yellow-edged red (triple width) with the large black and white Nguni shield covering two spears and the staff decorated with the feather tassels called injobo (tassels-bunches of feathers of the widowbird and the lourie) all centered horizontally of the red band.",
-            StartDate = new DateTime(1968, 10, 06),
+            StartDate = new FlagDate(1968, 10, 06),
             DesignedBy = "King Sobhuza II",
             Usage = FlagUsage.StateFlag | FlagUsage.WarFlag
         });
@@ -144,7 +144,7 @@ public static partial class FlagsSetup
         Countries.Ethiopia.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolour of green, yellow and red with the National Emblem superimposed at the center.",
-            StartDate = new DateTime(2009, 05, 16),
+            StartDate = new FlagDate(2009, 05, 16),
             DesignedBy = "Abebe Alambo",
             Usage = FlagUsage.NationalFlagAndEnsign
         });

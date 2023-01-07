@@ -26,7 +26,7 @@ public static partial class FlagsSetup
         Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
         {
             Description = "The Shahada in black on a white field in the calligraphic Thuluth script",
-            StartDate = new DateTime(1997, 10, 27),
+            StartDate = new FlagDate(1997, 10, 27),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -36,7 +36,7 @@ public static partial class FlagsSetup
         Countries.Afghanistan_IslamicRepublic.Flags.Add(new CountryFlag
         {
             Description = "Three vertical bands of black, red and green with the National Emblem in white centered on the red band and then slightly overlapping the black and green bands.",
-            StartDate = new DateTime(2013, 08, 19),
+            StartDate = new FlagDate(2013, 08, 19),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }
@@ -46,7 +46,7 @@ public static partial class FlagsSetup
         Countries.Aland.Flags.Add(new CountryFlag
         {
             Description = "A yellow-fimbriated red Nordic cross on a blue field",
-            StartDate = new DateTime(1954, 01, 01),
+            StartDate = new FlagDate(1954),
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }
@@ -56,7 +56,7 @@ public static partial class FlagsSetup
         Countries.Albania.Flags.Add(new CountryFlag
         {
             Description = "A red field with a black two-headed eagle in the center.",
-            StartDate = new DateTime(2002, 07, 22),
+            StartDate = new FlagDate(2002, 07, 22),
             DesignedBy = "Sadik Kaceli",
             Usage = FlagUsage.NationalFlag
         });
@@ -67,7 +67,7 @@ public static partial class FlagsSetup
         Countries.Algeria.Flags.Add(new CountryFlag
         {
             Description = "A vertical bicolor of green and white with the red crescent encircling the red five-pointed star centered along the dividing line.",
-            StartDate = new DateTime(1962, 07, 03),
+            StartDate = new FlagDate(1962, 07, 03),
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }
@@ -77,7 +77,7 @@ public static partial class FlagsSetup
         Countries.AmericanSamoa.Flags.Add(new CountryFlag
         {
             Description = "A red-edged white triangle pointing towards the hoist charged with a bald eagle clutching a war club and a fly-whisk. The white triangle divided the dark blue field into two separate triangles.",
-            StartDate = new DateTime(1960, 04, 17),
+            StartDate = new FlagDate(1960, 04, 17),
             DesignedBy = "Fareti Sotoa",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
@@ -88,7 +88,7 @@ public static partial class FlagsSetup
         Countries.Andorra.Flags.Add(new CountryFlag
         {
             Description = "A vertical tricolour of blue, yellow and red with the National Coat of Arms centred on the yellow band.",
-            StartDate = new DateTime(1866),
+            StartDate = new FlagDate(1866),
             DesignedBy = "Napoleon III",
             Usage = FlagUsage.StateFlag
         });
@@ -99,7 +99,7 @@ public static partial class FlagsSetup
         Countries.Angola.Flags.Add(new CountryFlag
         {
             Description = "Two horizontal bands of red and black with the Machete and Gear Emblem in the center.",
-            StartDate = new DateTime(1975, 11, 11),
+            StartDate = new FlagDate(1975, 11, 11),
             DesignedBy = "Henrique de Carvalho Santos, António Alberto Neto",
             Usage = FlagUsage.NationalFlag
         });
@@ -118,7 +118,7 @@ public static partial class FlagsSetup
     {
         Countries.Antarctica.Flags.Add(new CountryFlag
         {
-            StartDate = new DateTime(2002, 01, 01)
+            StartDate = new FlagDate(2002)
         });
     }
 
@@ -127,7 +127,7 @@ public static partial class FlagsSetup
         Countries.AntiguaAndBarbuda.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tri-colour of black, blue (half-width), and white, with two red right scalene triangles on opposite sides. On the black band is a yellow half-sun with nine rays.",
-            StartDate = new DateTime(1967, 02, 27),
+            StartDate = new FlagDate(1967, 02, 27),
             DesignedBy = "Sir Reginald Samuel",
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
         });
@@ -138,7 +138,7 @@ public static partial class FlagsSetup
         Countries.Argentina.Flags.Add(new CountryFlag
         {
             Description = "A horizontal triband of light blue (top and bottom) and white with a Sun of May centered on the white band.",
-            StartDate = new DateTime(1861, 01, 01),
+            StartDate = new FlagDate(1812, 03, 27),
             DesignedBy = "Manuel Belgrano",
             Usage = FlagUsage.NationalFlagAndEnsign
         });
@@ -149,7 +149,7 @@ public static partial class FlagsSetup
         Countries.Armenia.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolour of red, blue, and apricot.",
-            StartDate = new DateTime(1990, 08, 24),
+            StartDate = new FlagDate(1990, 08, 24),
             DesignedBy = "Stepan Malkhasyants",
             Usage = FlagUsage.NationalFlag
         });
@@ -159,7 +159,7 @@ public static partial class FlagsSetup
     {
         Countries.Aruba.Flags.Add(new CountryFlag
         {
-            StartDate = new DateTime(1976, 03, 18),
+            StartDate = new FlagDate(1976, 03, 18),
             Usage = FlagUsage.NationalFlag
         });
     }
@@ -169,7 +169,7 @@ public static partial class FlagsSetup
         Countries.Australia.Flags.Add(new CountryFlag
         {
             Description = "A Blue Ensign defaced with the Commonwealth Star in the lower hoist quarter and the five stars of the Southern Cross in the fly half.",
-            StartDate = new DateTime(1903, 12, 08),
+            StartDate = new FlagDate(1908, 12, 08),
             DesignedBy = "Annie Dorrington, Ivor Evans, Lesley Hawkins, Egbert Nutall and William Stevens",
             Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
         });
@@ -180,7 +180,7 @@ public static partial class FlagsSetup
         Countries.Austria.Flags.Add(new CountryFlag
         {
             Description = "A horizontal triband of red (top and bottom) and white.",
-            StartDate = new DateTime(1945, 05, 01),
+            StartDate = new FlagDate(1945, 05, 01),
             Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
         });
     }
@@ -190,7 +190,7 @@ public static partial class FlagsSetup
         Countries.Azerbaijan.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolour of bright blue, red, and green, with a white crescent and an eight-pointed star centred on a red band.",
-            StartDate = new DateTime(1991, 02, 05),
+            StartDate = new FlagDate(1991, 02, 05),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
     }

@@ -34,7 +34,7 @@ public static partial class FlagsSetup
                 }
             },
             Description = "A white star and crescent on a dark green field, with a vertical white stripe at the hoist.",
-            StartDate = new DateTime(1947, 08, 11),
+            StartDate = new FlagDate(1947, 08, 11),
             DesignedBy = "Amiruddin Kidwai",
             Usage = FlagUsage.NationalFlag
         });
@@ -45,7 +45,7 @@ public static partial class FlagsSetup
         Countries.Palau.Flags.Add(new CountryFlag
         {
             Description = "A light blue field with the large yellow disk shifted slightly to the hoist-side of center.",
-            StartDate = new DateTime(1981, 01, 01),
+            StartDate = new FlagDate(1981, 01, 01),
             DesignedBy = "Blau J. Skebong",
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
@@ -60,14 +60,20 @@ public static partial class FlagsSetup
                 "National flag"
             },
             Description = "A horizontal tricolour of black, white, and green; with a red triangle based at the hoist.",
-            StartDate = new DateTime(1964, 11, 15),
+            StartDate = new FlagDate(1964, 11, 15),
             Usage = FlagUsage.NationalFlag
         });
     }
 
     public static void Panama()
     {
-        Countries.Panama.Flags.Add(new CountryFlag());
+        Countries.Panama.Flags.Add(new CountryFlag
+        {
+            Description = "Divided into four rectangles: going clockwise, each quadrant contains a blue star, a red rectangle, a red star, and a blue rectangle.",
+            StartDate = new FlagDate(1925, 03, 25),
+            DesignedBy = "María de la Ossa de Amador",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void PapuaNewGuinea()

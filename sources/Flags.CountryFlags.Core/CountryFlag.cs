@@ -51,9 +51,9 @@ public class CountryFlag
 
     public string? Description { get; init; }
     
-    public DateTime? StartDate { get; init; }
+    public FlagDate? StartDate { get; init; }
     
-    public DateTime? EndDate { get; init; }
+    public FlagDate? EndDate { get; init; }
 
     public string? DesignedBy { get; init; }
 
