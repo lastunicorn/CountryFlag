@@ -140,7 +140,12 @@ public static partial class FlagsSetup
 
     public static void Portugal()
     {
-        Countries.Portugal.Flags.Add(new CountryFlag());
+        Countries.Portugal.Flags.Add(new CountryFlag
+        {
+            Description = "A 2:3 vertically striped bicolour of green and red, with the lesser coat of arms of Portugal centered over the colour boundary.",
+            StartDate = new FlagDate(1911, 06, 30),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void PuertoRico()

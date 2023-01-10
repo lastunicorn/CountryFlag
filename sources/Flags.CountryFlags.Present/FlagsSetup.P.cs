@@ -231,6 +231,17 @@ public static partial class FlagsSetup
 
     public static void Portugal()
     {
+        Countries.Poland.Flags.Add(new CountryFlag
+        {
+            Id = "War",
+            Names = new List<FlagName>
+            {
+                "National colour of military units"
+            },
+            Description = "As above, but evenly striped (1:1) and with the greater coat of arms, displaying a white scroll with the motto \"Esta é a ditosa pátria minha amada\" (\"This is my beloved blissful homeland\"), taken from Os Lusíadas, III, 21, v. 1",
+            StartDate = new FlagDate(1911, 06, 30),
+            Usage = FlagUsage.WarFlag
+        });
     }
 
     public static void PuertoRico()
