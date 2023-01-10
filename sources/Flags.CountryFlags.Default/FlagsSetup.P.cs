@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
 
 namespace DustInTheWind.CountryFlags.Default;
@@ -78,32 +77,65 @@ public static partial class FlagsSetup
 
     public static void PapuaNewGuinea()
     {
-        Countries.PapuaNewGuinea.Flags.Add(new CountryFlag());
+        Countries.PapuaNewGuinea.Flags.Add(new CountryFlag
+        {
+            Description = "Divided diagonally from the upper hoist-side corner to the lower fly-side corner: the upper triangle is red with the soaring Raggiana bird-of-paradise and the lower triangle is black with the Southern Cross of four white larger five-pointed stars and the smaller star.",
+            StartDate = new FlagDate(1971, 07, 01),
+            DesignedBy = "Susan Karike Huhume",
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
     }
 
     public static void Paraguay()
     {
-        Countries.Paraguay.Flags.Add(new CountryFlag());
+        Countries.Paraguay.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal triband of red, white and blue, defaced on the obverse with the coat of arms of Paraguay.",
+            StartDate = new FlagDate(2013, 07, 15),
+            Usage = FlagUsage.NationalFlagAndEnsign,
+            Comments = "Has different design on its reverse side."
+        });
     }
 
     public static void Peru()
     {
-        Countries.Peru.Flags.Add(new CountryFlag());
+        Countries.Peru.Flags.Add(new CountryFlag
+        {
+            Description = "A vertical triband of red (hoist-side and fly-side) and white.",
+            StartDate = new FlagDate(1950, 03, 31),
+            Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
+        });
     }
 
     public static void Philippines()
     {
-        Countries.Philippines.Flags.Add(new CountryFlag());
+        Countries.Philippines.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal bicolor of blue and red with a white equilateral triangle based at the hoist containing three, five-pointed gold stars at its vertices, and an eight-rayed gold sun at its center.",
+            StartDate = new FlagDate(1998, 02, 12),
+            DesignedBy = "Emilio Aguinaldo",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Pitcairn()
     {
-        Countries.Pitcairn.Flags.Add(new CountryFlag());
+        Countries.Pitcairn.Flags.Add(new CountryFlag
+        {
+            Description = "A Blue Ensign charged in the fly with the coat of arms of the Pitcairn Islands.",
+            StartDate = new FlagDate(1984, 04, 02),
+            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
+        });
     }
 
     public static void Poland()
     {
-        Countries.Poland.Flags.Add(new CountryFlag());
+        Countries.Poland.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal bicolour of white and red.",
+            StartDate = new FlagDate(1980, 01, 31),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Portugal()

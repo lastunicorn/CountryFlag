@@ -619,6 +619,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </Canvas>
 
+        <TextBlock
+            Text="Incomplete"
+            Foreground="Black"
+            FontSize="18"
+            Canvas.Left="12"
+            Canvas.Top="06" />
+
     </Canvas>
 
 </ResourceDictionary>

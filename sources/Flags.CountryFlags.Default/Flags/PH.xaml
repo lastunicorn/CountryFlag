@@ -1,0 +1,151 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Philippines -->
+
+    <Canvas x:Key="CountryFlag_PH" Width="180" Height="90">
+
+        <Canvas.RenderTransform>
+            <TranslateTransform X="28" Y="45" />
+        </Canvas.RenderTransform>
+
+        <Rectangle
+            Width="180"
+            Height="45"
+            Canvas.Left="-28"
+            Canvas.Top="-45"
+            Fill="#FF0038A8" />
+
+        <Rectangle
+            Width="180"
+            Height="45"
+            Canvas.Left="-28"
+            Canvas.Top="0"
+            Fill="#FFCE1126" />
+
+        <Path
+            Data="M49.942,0L-28,45 -28,-45z"
+            Fill="#FFFFFFFF" />
+
+        <!-- Sun -->
+
+        <Ellipse
+            Fill="#FFFCD116"
+            Width="18"
+            Height="18"
+            Canvas.Left="-9"
+            Canvas.Top="-9" />
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116" />
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="45" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="90" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="135" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="180" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="225" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="270" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M0,0L-3.164,-15.909 -2.2190000000000003,-16.855z M0,0L-1.169,-17.831 0,-19 1.169,-17.831z M0,0L2.219,-16.855 3.1639999999999997,-15.909z"
+            Fill="#FFFCD116">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="315" />
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Right Star -->
+
+        <Path
+            Data="M40.942,0L37.56,1.176 37.487,4.755 35.324000000000005,1.9019999999999997 31.897000000000006,2.9389999999999996 33.942,0 31.897,-2.939 35.324,-1.9020000000000001 37.486999999999995,-4.755000000000001 37.56,-1.176z"
+            Fill="#FFFCD116" />
+
+        <Path
+            Data="M40.942,0L37.56,1.176 37.487,4.755 35.324000000000005,1.9019999999999997 31.897000000000006,2.9389999999999996 33.942,0 31.897,-2.939 35.324,-1.9020000000000001 37.486999999999995,-4.755000000000001 37.56,-1.176z"
+            Fill="#FFFCD116" >
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="120" CenterX="-2.019" CenterY="0" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M40.942,0L37.56,1.176 37.487,4.755 35.324000000000005,1.9019999999999997 31.897000000000006,2.9389999999999996 33.942,0 31.897,-2.939 35.324,-1.9020000000000001 37.486999999999995,-4.755000000000001 37.56,-1.176z"
+            Fill="#FFFCD116" >
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="240" CenterX="-2.019" CenterY="0" />
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -88,18 +88,102 @@ public static partial class FlagsSetup
 
     public static void PapuaNewGuinea()
     {
+        Countries.PapuaNewGuinea.Flags.Add(new CountryFlag
+        {
+            Id = "NavalEnsign",
+            Names = new List<FlagName>
+            {
+                "Naval ensign"
+            },
+            Description = "A white flag with the national flag of Papua New Guinea in the canton.",
+            Usage = FlagUsage.NationalEnsign
+        });
     }
 
     public static void Paraguay()
     {
+        Countries.Paraguay.Flags.Add(new CountryFlag
+        {
+            Id = "ReverseSide",
+            Names = new List<FlagName>
+            {
+                "Reverse side"
+            },
+            Description = "A horizontal triband of red, white and blue, defaced on the reverse with the reversed coat of arms of Paraguay.",
+            StartDate = new FlagDate(2013, 07, 15),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
+
+        Countries.Paraguay.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Presidential standard"
+            },
+            Usage = FlagUsage.LeaderFlag
+        });
+
+        Countries.Paraguay.Flags.Add(new CountryFlag
+        {
+            Id = "NavalJack",
+            Names = new List<FlagName>
+            {
+                "Naval Jack"
+            },
+            Usage = FlagUsage.NavalJack
+        });
     }
 
     public static void Peru()
     {
+        Countries.Peru.Flags.Add(new CountryFlag
+        {
+            Id = "State",
+            Names = new List<FlagName>
+            {
+                "State flag and ensign"
+            },
+            Description = "A vertical triband of red (hoist-side and fly-side) and white with the National Coat of Arms centered on the white band.",
+            StartDate = new FlagDate(1950, 03, 31),
+            Usage = FlagUsage.StateFlag | FlagUsage.StateEnsign
+        });
+
+        Countries.Peru.Flags.Add(new CountryFlag
+        {
+            Id = "War",
+            Names = new List<FlagName>
+            {
+                "War flag"
+            },
+            Description = "A vertical triband of red (hoist-side and fly-side) and white.",
+            Usage = FlagUsage.WarFlag | FlagUsage.WarEnsign
+        });
+
+        Countries.Peru.Flags.Add(new CountryFlag
+        {
+            Id = "NavalJack",
+            Names = new List<FlagName>
+            {
+                "Naval Jack"
+            },
+            Description = "A red square with the white square in the center bearing the Coat of Arms (Escudo de Armas) in the center.",
+            Usage = FlagUsage.NavalJack
+        });
     }
 
     public static void Philippines()
     {
+        Countries.Philippines.Flags.Add(new CountryFlag
+        {
+            Id = "War",
+            Names = new List<FlagName>
+            {
+                "War flag and ensign"
+            },
+            Description = "As above, with the blue and red stripes switched to indicate a state of war.",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Pitcairn()
@@ -108,6 +192,41 @@ public static partial class FlagsSetup
 
     public static void Poland()
     {
+        Countries.Poland.Flags.Add(new CountryFlag
+        {
+            Id = "StateFlag",
+            Names = new List<FlagName>
+            {
+                "State flag and civil and state ensign"
+            },
+            Description = "A horizontal bicolour of white and red defaced with the arms of Poland in the white stripe.",
+            StartDate = new FlagDate(1990),
+            Usage = FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
+
+        Countries.Poland.Flags.Add(new CountryFlag
+        {
+            Id = "NavalEnsign",
+            Names = new List<FlagName>
+            {
+                "Naval ensign"
+            },
+            Description = "A flag consisting of two stripes, white and red, terminated in two triangular tongues on a free leech. In the center of the white strip, in the part between the louvre and the apex of the indentation between the tongues, is the emblem of the Republic of Poland.",
+            StartDate = new FlagDate(1993, 02, 19),
+            Usage = FlagUsage.WarEnsign
+        });
+
+        Countries.Poland.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Presidential standard"
+            },
+            Description = "Crowned white eagle in a red field bordered with a white wavy line.",
+            StartDate = new FlagDate(1996, 01, 26),
+            Usage = FlagUsage.WarEnsign
+        });
     }
 
     public static void Portugal()
