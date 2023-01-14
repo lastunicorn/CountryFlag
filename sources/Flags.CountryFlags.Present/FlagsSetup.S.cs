@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Present;
 
 public static partial class FlagsSetup
@@ -52,6 +54,17 @@ public static partial class FlagsSetup
 
     public static void SanMarino()
     {
+        Countries.SanMarino.Flags.Add(new CountryFlag
+        {
+            Id = "State",
+            Names = new List<FlagName>
+            {
+                "State flag"
+            },
+            Description = "A horizontal bicolour of white and light blue; charged with the national coat of arms in the centre.",
+            StartDate = new FlagDate(2011, 07, 22),
+            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag
+        });
     }
 
     public static void SaoTomeAndPrincipe()
@@ -60,6 +73,13 @@ public static partial class FlagsSetup
 
     public static void SaudiArabia()
     {
+        Countries.SaudiArabia.Flags.Add(new CountryFlag
+        {
+            Id = "Alternate",
+            Description = "A green field with the Shahada or Muslim creed written in the Thuluth script in white above a horizontal sword, having its tip pointed to the left.",
+            StartDate = new FlagDate(1973, 03, 15),
+            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
+        });
     }
 
     public static void Senegal()

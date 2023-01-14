@@ -22,22 +22,79 @@ namespace DustInTheWind.CountryFlags;
 public enum FlagUsage : ulong
 {
     None = 0,
-    
+
+    /// <summary>
+    /// Bit 0
+    /// </summary>
     CivilFlag = 0x1,
+
+    /// <summary>
+    /// Bit 1
+    /// </summary>
     StateFlag = 0x2,
+
+    /// <summary>
+    /// Bit 2
+    /// </summary>
     WarFlag = 0x4,
+
+    /// <summary>
+    /// Bit 0, 1 ,2
+    /// </summary>
     NationalFlag = 0x7,
-    
+
+    /// <summary>
+    /// Bit 0, 1
+    /// </summary>
+    CivilAndStateFlag = 0x3,
+
+    /// <summary>
+    /// Bit 3
+    /// </summary>
     CivilEnsign = 0x8,
+
+    /// <summary>
+    /// Bit 4
+    /// </summary>
     StateEnsign = 0x10,
+
+    /// <summary>
+    /// Bit 5
+    /// </summary>
     WarEnsign = 0x20,
+
+    /// <summary>
+    /// Bit 3, 4, 5
+    /// </summary>
     NationalEnsign = 0x38,
-    
+
+    /// <summary>
+    /// Bit 3, 4
+    /// </summary>
+    CivilAndStateEnsign = 0x18,
+
+    /// <summary>
+    /// Bit 1, 2, 3, 4, 5
+    /// </summary>
     NationalFlagAndEnsign = 0x3f,
-    
+
+    /// <summary>
+    /// Bit 6
+    /// </summary>
     NavalJack = 0x40,
+
+    /// <summary>
+    /// Bit 7
+    /// </summary>
     LeaderFlag = 0x80,
+
+    /// <summary>
+    /// Bit 8
+    /// </summary>
     AirForceEnsign = 0x100,
-    
+
+    /// <summary>
+    /// Bit 63
+    /// </summary>
     Other = 0x8000_0000_0000_0000
 }

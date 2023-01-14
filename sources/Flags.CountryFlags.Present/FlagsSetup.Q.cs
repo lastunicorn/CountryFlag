@@ -14,11 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Present;
 
 public static partial class FlagsSetup
 {
     public static void Qatar()
     {
+        Countries.Qatar.Flags.Add(new CountryFlag
+        {
+            Id = "AirEnsign",
+            Names = new List<FlagName>
+            {
+                "Air force ensign"
+            },
+            Description = "A light blue flag with the national flag in the canton, with the Qatar Air Force's roundel on the fly side.",
+            Usage = FlagUsage.AirForceEnsign
+        });
     }
 }

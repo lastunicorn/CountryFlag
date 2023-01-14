@@ -19,11 +19,11 @@ using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Present;
 
-public class PresentCountryFlagsModule : IFlagModule
+public class InUseCountryFlagsModule : IFlagModule
 {
     public IEnumerable<IFlagRepository> GetFlagRepositories()
     {
-        yield return new PresentCountryFlagsRepository();
+        yield return new InUseCountryFlagsRepository();
     }
 
     public void AddFlagsToCountries()

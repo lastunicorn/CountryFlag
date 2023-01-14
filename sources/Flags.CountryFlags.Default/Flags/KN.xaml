@@ -1,0 +1,59 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Saint Kitts and Nevis -->
+
+    <Canvas x:Key="CountryFlag_KN" Width="75" Height="50">
+
+        <Path
+            Data="M0,50L0,0 75,0z"
+            Fill="#FF009739" />
+
+        <Path
+            Data="M75,0L75,50 0,50z"
+            Fill="#FFC8102E" />
+
+        <Canvas Clip="m0 0h75v50H0z">
+
+            <Path
+                Data="M0,50L75,0"
+                Stroke="#FFFFCD00"
+                StrokeThickness="21" />
+
+            <Path
+                Data="M0,50L75,0"
+                Stroke="#FF000000"
+                StrokeThickness="15" />
+
+        </Canvas>
+
+        <Path
+            Data="F1 M19.565,29.347L30.013,37.601 16.709,37.065 27.787,29.679 23.165999999999997,42.166z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="F1 M48.411,10.116L58.859,18.369999999999997 45.555,17.834 56.632999999999996,10.448 52.01199999999999,22.935000000000002z"
+            Fill="#FFFFFFFF" />
+
+    </Canvas>
+
+</ResourceDictionary>

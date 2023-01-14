@@ -271,7 +271,7 @@ public class DefaultCountryFlagsModule : IFlagModule
         // S
 
         FlagsSetup.SaintBarthelemy();
-        FlagsSetup.SaintHelena();
+        FlagsSetup.SaintHelenaAscensionAndTristanDdaCunha();
         FlagsSetup.SaintKittsAndNevis();
         FlagsSetup.SaintLucia();
         FlagsSetup.SaintMartin();

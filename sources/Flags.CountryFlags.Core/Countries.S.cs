@@ -28,9 +28,9 @@ public static partial class Countries
         IsIndependent = false
     };
 
-    public static Country SaintHelena { get; } = new()
+    public static Country SaintHelenaAscensionAndTristanDdaCunha { get; } = new()
     {
-        ShortName = "Saint Helena",
+        ShortName = "Saint Helena, Ascension and Tristan da Cunha",
         FullName = "Saint Helena, Ascension and Tristan da Cunha",
         IsoCodeAlpha2 = "SH",
         IsoCodeAlpha3 = "SHN",

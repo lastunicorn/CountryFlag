@@ -1,0 +1,38 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Qatar -->
+
+    <Canvas x:Key="CountryFlag_QA" Width="28" Height="11">
+
+        <Rectangle
+            Width="28"
+            Height="11"
+            Fill="#FF8A1538" />
+
+        <Path
+            Data="M 0,0 L 8,0 10,0.611111 8,1.222222 10,1.833333 8,2.444444 10,3.055555 8,3.666666 10,4.277777 8,4.888888 10,5.499999 8,6.111111 10,6.722222 8,7.333333 10,7.944444 8,8.555555 10,9.166666 8,9.777777 10,10.388888 8,11 0,11 z"
+            Fill="#FFFFFFFF" />
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -1,0 +1,45 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Saint Lucia -->
+
+    <Canvas x:Key="CountryFlag_LC" Width="12" Height="6">
+
+        <Path
+            Data="M0,0L12,0 12,6 0,6z"
+            Fill="#FF66CCFF" />
+
+        <Path
+            Data="M6,0.5279L8,5.4721 6,5 4,5.4721z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="M6,1.1946L7.5394,5 4.4606,5z"
+            Fill="#FF000000" />
+
+        <Path
+            Data="M6,3L8,5.4721 4,5.4721z"
+            Fill="#FFFCD116" />
+
+    </Canvas>
+
+</ResourceDictionary>

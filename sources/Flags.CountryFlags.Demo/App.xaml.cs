@@ -33,8 +33,8 @@ namespace DustInTheWind.CountryFlags.Demo
         {
             Assembly countryFlagsAssembly = typeof(Countries).Assembly;
             Assembly defaultCountryFlagsAssembly = typeof(DefaultCountryFlagsModule).Assembly;
-            Assembly presentCountryFlagsAssembly = typeof(PresentCountryFlagsModule).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly);
+            Assembly inUseCountryFlagsAssembly = typeof(InUseCountryFlagsModule).Assembly;
+            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly, inUseCountryFlagsAssembly);
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

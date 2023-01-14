@@ -14,68 +14,144 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
     public static void SaintBarthelemy()
     {
-        Countries.SaintBarthelemy.Flags.Add(new CountryFlag());
+        Countries.SaintBarthelemy.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "Flag of France"
+            },
+            StartDate = new FlagDate(1794, 02, 15),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
-    public static void SaintHelena()
+    public static void SaintHelenaAscensionAndTristanDdaCunha()
     {
-        Countries.SaintHelena.Flags.Add(new CountryFlag());
+        Countries.SaintHelenaAscensionAndTristanDdaCunha.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "United Kingdom Flag"
+            },
+            Description = "The United Kingdom's flag",
+            Comments = "Saint Helena, Ascension and Tristan da Cunha, a British Overseas Territory, does not have its own flag; however, the three administrative divisions do have their own flags."
+        });
     }
 
     public static void SaintKittsAndNevis()
     {
-        Countries.SaintKittsAndNevis.Flags.Add(new CountryFlag());
+        Countries.SaintKittsAndNevis.Flags.Add(new CountryFlag
+        {
+            Description = "A yellow-edged black diagonal band bearing two white five-pointed stars divided diagonally from the lower hoist-side corner to the upper fly-side corner: the upper triangle is green and the lower triangle is red.",
+            StartDate = new FlagDate(1983, 09, 19),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void SaintLucia()
     {
-        Countries.SaintLucia.Flags.Add(new CountryFlag());
+        Countries.SaintLucia.Flags.Add(new CountryFlag
+        {
+            Description = "A light blue field with a small golden isosceles triangle in front of a large white-edged black isosceles triangle in the centre.",
+            StartDate = new FlagDate(1967, 03, 01),
+            DesignedBy = "Dunstan St Omer",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SaintMartin()
     {
-        Countries.SaintMartin.Flags.Add(new CountryFlag());
+        Countries.SaintMartin.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "Flag of France"
+            },
+            StartDate = new FlagDate(1794, 02, 15),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void SaintPierreAndMiquelon()
     {
-        Countries.SaintPierreAndMiquelon.Flags.Add(new CountryFlag());
+        Countries.SaintPierreAndMiquelon.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "Flag of France"
+            }
+        });
     }
 
     public static void SaintVincentAndTheGrenadines()
     {
-        Countries.SaintVincentAndTheGrenadines.Flags.Add(new CountryFlag());
+        Countries.SaintVincentAndTheGrenadines.Flags.Add(new CountryFlag
+        {
+            Description = "A Canadian pale triband of blue, gold, and green, with three green diamonds in the centre arranged to form the letter \"V\".",
+            StartDate = new FlagDate(1985, 10, 12),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Samoa()
     {
-        Countries.Samoa.Flags.Add(new CountryFlag());
+        Countries.Samoa.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with the blue rectangle on the upper hoist-side quadrant bearing the Southern Cross of four white larger five-pointed stars and the smaller star in the center.",
+            StartDate = new FlagDate(1962, 01, 01),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SanMarino()
     {
-        Countries.SanMarino.Flags.Add(new CountryFlag());
+        Countries.SanMarino.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "Civil flag"
+            },
+            Description = "Plain white-blue bicolor.",
+            Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign
+        });
     }
 
     public static void SaoTomeAndPrincipe()
     {
-        Countries.SaoTomeAndPrincipe.Flags.Add(new CountryFlag());
+        Countries.SaoTomeAndPrincipe.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of green, yellow and green; with a red triangle based at the hoist and two five-pointed black stars of Africa in the yellow stripe.",
+            StartDate = new FlagDate(1975, 07, 12),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SaudiArabia()
     {
-        Countries.SaudiArabia.Flags.Add(new CountryFlag());
+        Countries.SaudiArabia.Flags.Add(new CountryFlag
+        {
+            Description = "A green field with the Shahada or Muslim creed written in the Thuluth script in white above a horizontal sword, having its tip pointed to the left.",
+            StartDate = new FlagDate(1973, 03, 15),
+            Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
+        });
     }
 
     public static void Senegal()
     {
-        Countries.Senegal.Flags.Add(new CountryFlag());
+        Countries.Senegal.Flags.Add(new CountryFlag
+        {
+            Description = "A vertical tricolour of green, yellow and red; charged with a green five-pointed star at the centre.",
+            StartDate = new FlagDate(1960, 08, 20),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Serbia()

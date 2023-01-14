@@ -150,6 +150,11 @@ public static partial class FlagsSetup
 
     public static void PuertoRico()
     {
-        Countries.PuertoRico.Flags.Add(new CountryFlag());
+        Countries.PuertoRico.Flags.Add(new CountryFlag
+        {
+            Description = "Five equal horizontal bands of red (top and bottom) alternating with white; blue equilateral triangle based on the hoist side bears a large, white, five-pointed star in the center.",
+            StartDate = new FlagDate(1952),
+            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
     }
 }

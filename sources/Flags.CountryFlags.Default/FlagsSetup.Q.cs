@@ -20,6 +20,11 @@ public static partial class FlagsSetup
 {
     public static void Qatar()
     {
-        Countries.Qatar.Flags.Add(new CountryFlag());
+        Countries.Qatar.Flags.Add(new CountryFlag
+        {
+            Description = "A white band on the hoist side, separated from a maroon area on the fly side by nine white triangles which act as a serrated line.",
+            StartDate = new FlagDate(1971, 07, 09),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 }

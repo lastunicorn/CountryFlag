@@ -246,5 +246,29 @@ public static partial class FlagsSetup
 
     public static void PuertoRico()
     {
+        Countries.PuertoRico.Flags.Add(new CountryFlag
+        {
+            Id = "AzulCeleste",
+            Names = new List<FlagName>
+            {
+                "Original flag version from 1895"
+            },
+            Description = "Five equal horizontal bands of red (top and bottom) alternating with white; Azul Celeste (sky blue tone) equilateral triangle based on the hoist side bears a large, white, five-pointed star in the center.",
+            StartDate = new FlagDate(1895, 12, 22),
+            EndDate = new FlagDate(1898, 12, 10),
+            Comments = "Flag was abandoned after military occupation by the United States."
+        });
+
+        Countries.PuertoRico.Flags.Add(new CountryFlag
+        {
+            Id = "DarkBlue",
+            Names = new List<FlagName>
+            {
+                "Flag version with dark blue tone"
+            },
+            Description = "Five equal horizontal bands of red (top and bottom) alternating with white; blue equilateral triangle based on the hoist side bears a large, white, five-pointed star in the center. (Official colors of the flag)",
+            StartDate = new FlagDate(1952),
+            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
     }
 }

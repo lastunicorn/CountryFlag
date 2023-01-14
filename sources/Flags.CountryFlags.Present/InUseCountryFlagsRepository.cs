@@ -27,7 +27,7 @@ using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Present;
 
-internal class PresentCountryFlagsRepository : FlagRepositoryBase
+internal class InUseCountryFlagsRepository : FlagRepositoryBase
 {
     public override string Id => "country";
 

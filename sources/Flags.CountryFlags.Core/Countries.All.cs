@@ -265,7 +265,7 @@ public static partial class Countries
         // S
 
         yield return SaintBarthelemy;
-        yield return SaintHelena;
+        yield return SaintHelenaAscensionAndTristanDdaCunha;
         yield return SaintKittsAndNevis;
         yield return SaintLucia;
         yield return SaintMartin;
