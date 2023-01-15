@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.Globalization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
@@ -33,9 +34,22 @@ public class SvgScaleTransform : ISvgTransform
         if (text == null)
             return;
 
-        double scaleValue = double.Parse(text, CultureInfo.InvariantCulture);
+        string[] parts = text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
-        ScaleX = scaleValue;
-        ScaleY = scaleValue;
+        if (parts.Length >= 1)
+        {
+            double scaleValue = double.Parse(parts[0], CultureInfo.InvariantCulture);
+            ScaleX = scaleValue;
+        }
+
+        if (parts.Length >= 2)
+        {
+            double scaleValue = double.Parse(parts[1], CultureInfo.InvariantCulture);
+            ScaleY = scaleValue;
+        }
+        else
+        {
+            ScaleY = ScaleX;
+        }
     }
 }

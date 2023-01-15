@@ -156,12 +156,26 @@ public static partial class FlagsSetup
 
     public static void Serbia()
     {
-        Countries.Serbia.Flags.Add(new CountryFlag());
+        Countries.Serbia.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "State flag"
+            },
+            Description = "A horizontal tricolour of red, blue, and white; charged with the lesser Coat of arms left of center.",
+            StartDate = new FlagDate(2010),
+            Usage = FlagUsage.StateFlag | FlagUsage.StateEnsign
+        });
     }
 
     public static void Seychelles()
     {
-        Countries.Seychelles.Flags.Add(new CountryFlag());
+        Countries.Seychelles.Flags.Add(new CountryFlag
+        {
+            Description = "Five oblique bands of blue, yellow, red, white and green radiating from the bottom of the hoist side.",
+            StartDate = new FlagDate(1996, 01, 08),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SierraLeone()

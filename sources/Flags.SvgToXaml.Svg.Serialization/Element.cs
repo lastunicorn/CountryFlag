@@ -20,6 +20,9 @@ namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
 public class Element
 {
+    [XmlAttribute("id")]
+    public string? Id { get; set; }
+
     [XmlAttribute("class")]
     public string? Class { get; set; }
 

@@ -597,6 +597,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>
         </Page>
+        <Page Update="Flags\RS.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
+        </Page>
         <Page Update="Flags\RO.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
@@ -605,6 +609,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </Page>
         <Page Update="Flags\RW.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\SC.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+          <SubType>Designer</SubType>
         </Page>
         <Page Update="Flags\SA.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

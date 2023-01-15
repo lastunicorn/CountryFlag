@@ -1,0 +1,49 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Seychelles -->
+
+    <Canvas x:Key="CountryFlag_SC"  Width="6" Height="3">
+
+        <Path
+            Data="M0,0L6,0 6,3 0,3z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="M0,3L0,0 6,0 6,1z"
+            Fill="#FFD92323" />
+        
+        <Path
+            Data="M0,3L0,0 4,0z"
+            Fill="#FFFCD955" />
+        
+        <Path
+            Data="M0,3L0,0 2,0z"
+            Fill="#FF003D88" />
+        
+        <Path
+            Data="M0,3L6,2 6,3z"
+            Fill="#FF007A3A" />
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -88,6 +88,17 @@ public static partial class FlagsSetup
 
     public static void Serbia()
     {
+        Countries.Serbia.Flags.Add(new CountryFlag
+        {
+            Id = "Civil",
+            Names = new List<FlagName>
+            {
+                "Civil flag"
+            },
+            Description = "Horizontal tricolour of red, blue, and white.",
+            StartDate = new FlagDate(2004),
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilEnsign
+        });
     }
 
     public static void Seychelles()

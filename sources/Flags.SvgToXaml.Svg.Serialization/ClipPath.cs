@@ -18,21 +18,11 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
-[XmlRoot("svg", Namespace = "http://www.w3.org/2000/svg")]
-public class Svg : G
+public class ClipPath
 {
-    [XmlElement("clipPath")]
-    public ClipPath[] ClipPaths { get; set; }
+    [XmlAttribute("id")]
+    public string? Id { get; set; }
 
-    [XmlElement("style")]
-    public string? StyleElement { get; set; }
-
-    [XmlAttribute("width")]
-    public string? Width { get; set; }
-
-    [XmlAttribute("height")]
-    public string? Height { get; set; }
-
-    [XmlAttribute("viewBox")]
-    public string? ViewBox { get; set; }
+    [XmlElement("path", typeof(Path))]
+    public Path? Path { get; set; }
 }
