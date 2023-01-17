@@ -25,9 +25,9 @@ using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Present;
 
-internal class DefaultCountryFlagsRepository : FlagRepositoryBase
+internal class InUseCountryFlagsRepository : FlagRepositoryBase
 {
     public override string Id => "country";
 
@@ -49,7 +49,7 @@ internal class DefaultCountryFlagsRepository : FlagRepositoryBase
         if (!resourceExists)
             return null;
 
-        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.CountryFlags.Default;component/Flags/{resourceId}.xaml");
+        Uri resourceUri = new($"Pack://application:,,,/DustInTheWind.CountryFlags.InUse;component/Flags/{resourceId}.xaml");
 
         ResourceDictionary resourceDictionary = new()
         {
@@ -83,7 +83,8 @@ internal class DefaultCountryFlagsRepository : FlagRepositoryBase
 
     private static bool Exists(string flagId)
     {
-        return GetResourcePaths(Assembly.GetExecutingAssembly())
+        Assembly executingAssembly = Assembly.GetExecutingAssembly();
+        return GetResourcePaths(executingAssembly)
             .Where(x => x is string)
             .Cast<string>()
             .Any(x => x.Contains($"flags/{flagId}.baml", StringComparison.OrdinalIgnoreCase));

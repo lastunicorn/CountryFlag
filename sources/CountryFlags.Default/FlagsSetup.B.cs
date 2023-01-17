@@ -173,8 +173,9 @@ public static partial class FlagsSetup
         {
             Description = "A medium blue field with a yellow right triangle separating said field; along the hypotenuse of the triangle, there are seven full five-pointed white stars and two half stars at the top and bottom of the flag.",
             StartDate = new FlagDate(1998, 02, 04),
-            DesignedBy = "Mladen Kolobarić. The flag was proclaimed by the High Representative Carlos Westendorp",
-            Usage = FlagUsage.NationalFlag
+            DesignedBy = "Mladen Kolobarić",
+            Usage = FlagUsage.NationalFlag,
+            Comments = "The flag was proclaimed by the High Representative Carlos Westendorp"
         });
     }
 

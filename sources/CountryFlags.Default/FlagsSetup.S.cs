@@ -180,22 +180,47 @@ public static partial class FlagsSetup
 
     public static void SierraLeone()
     {
-        Countries.SierraLeone.Flags.Add(new CountryFlag());
+        Countries.SierraLeone.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of light green, white and light blue.",
+            StartDate = new FlagDate(1961, 04, 27),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Singapore()
     {
-        Countries.Singapore.Flags.Add(new CountryFlag());
+        Countries.Singapore.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal bicolour of red and white; charged in white in the canton with a crescent facing the fly and a pentagon of five stars representing the nation's ideals.",
+            StartDate = new FlagDate(1965, 08, 09),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void SintMaarten()
     {
-        Countries.SintMaarten.Flags.Add(new CountryFlag());
+        Countries.SintMaarten.Flags.Add(new CountryFlag
+        {
+            StartDate = new FlagDate(1985, 06, 13),
+            DesignedBy = "Roselle Richardson",
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.StateEnsign
+        });
     }
 
     public static void Slovakia()
     {
-        Countries.Slovakia.Flags.Add(new CountryFlag());
+        Countries.Slovakia.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolor of white, blue, and red; charged with coat of arms at the hoist side.",
+            StartDate = new FlagDate(1992, 09, 03),
+            Usage = FlagUsage.NationalFlag,
+            DesignedBy = new StringList
+            {
+                "Ladislav Čisárik",
+                "Ladislav Vrtel"
+            }
+        });
     }
 
     public static void Slovenia()

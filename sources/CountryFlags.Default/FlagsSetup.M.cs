@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
@@ -26,7 +24,11 @@ public static partial class FlagsSetup
         {
             Description = "Peacock green field with a lotus flower above the stylised Governor Nobre de Carvalho Bridge and water in white, beneath an arc of five golden five-pointed stars, where the large star is in the center flanked by four smaller stars, two on each side of the large star.",
             StartDate = new FlagDate(1993, 03, 31),
-            DesignedBy = "Zhang Lei, Xiao Hong",
+            DesignedBy = new StringList
+            {
+                "Zhang Lei",
+                "Xiao Hong"
+            },
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }

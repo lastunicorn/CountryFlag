@@ -1,0 +1,99 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Singapore -->
+
+    <Canvas x:Key="CountryFlag_SG" Width="54" Height="36">
+
+        <!-- Background -->
+
+        <Rectangle
+            Width="54"
+            Height="36"
+            Fill="#FFFFFFFF" />
+
+        <Rectangle
+            Width="54"
+            Height="18"
+            Fill="#FFED2939" />
+
+        <!-- Moon -->
+
+        <Ellipse
+            Fill="#FFFFFFFF"
+            Width="13.25"
+            Height="13.25"
+            Canvas.Left="4.78"
+            Canvas.Top="2.375" />
+
+        <Ellipse
+            Fill="#FFED2939"
+            Width="13.25"
+            Height="13.25"
+            Canvas.Left="7.78"
+            Canvas.Top="2.375" />
+
+        <!-- Stars -->
+
+        <Path
+            Data="F1 M15.03,3.475L14.01607,6.595554 16.670572,4.666945 13.389427,4.666945 16.043929,6.595554z"
+            Fill="#FFFFFFFF" />
+
+        <Path
+            Data="F1 M15.03,3.475L14.01607,6.595554 16.670572,4.666945 13.389427,4.666945 16.043929,6.595554z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="72" CenterX="15.03" CenterY="9" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 M15.03,3.475L14.01607,6.595554 16.670572,4.666945 13.389427,4.666945 16.043929,6.595554z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="144" CenterX="15.03" CenterY="9" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 M15.03,3.475L14.01607,6.595554 16.670572,4.666945 13.389427,4.666945 16.043929,6.595554z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="216" CenterX="15.03" CenterY="9" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 M15.03,3.475L14.01607,6.595554 16.670572,4.666945 13.389427,4.666945 16.043929,6.595554z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <RotateTransform Angle="288" CenterX="15.03" CenterY="9" />
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>

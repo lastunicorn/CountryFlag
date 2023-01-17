@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
@@ -36,7 +34,12 @@ public static partial class FlagsSetup
         {
             Description = "A blue field with the thin yellow narrow horizontal stripe across in the center and the large white twelve-pointed star on the bottom of the stripe and near the hoist-side.",
             StartDate = new FlagDate(1968, 01, 31),
-            DesignedBy = "Theo Jankowski, Don Stevenson, Ortrud Clay",
+            DesignedBy = new StringList
+            {
+                "Theo Jankowski",
+                "Don Stevenson",
+                "Ortrud Clay"
+            },
             Usage = FlagUsage.StateFlag | FlagUsage.CivilEnsign
         });
     }

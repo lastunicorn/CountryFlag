@@ -22,8 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.CountryFlags.Past</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags.Past</RootNamespace>
+        <AssemblyName>DustInTheWind.CountryFlags.Outdated</AssemblyName>
+        <RootNamespace>DustInTheWind.CountryFlags.Outdated</RootNamespace>
         <Description>A resource library that contains flags no longer used by the countries. The flags are provided as vectorial graphics.</Description>
         <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>

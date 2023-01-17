@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -50,12 +49,12 @@ public class CountryFlag
     public List<FlagName>? Names { get; set; }
 
     public string? Description { get; init; }
-    
+
     public FlagDate? StartDate { get; init; }
-    
+
     public FlagDate? EndDate { get; init; }
 
-    public string? DesignedBy { get; init; }
+    public StringList? DesignedBy { get; init; }
 
     public FlagUsage Usage { get; init; }
 

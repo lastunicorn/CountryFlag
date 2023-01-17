@@ -22,8 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.CountryFlags</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags</RootNamespace>
+        <AssemblyName>DustInTheWind.CountryFlags.Core</AssemblyName>
+        <RootNamespace>DustInTheWind.CountryFlags.Core</RootNamespace>
         <Description>A resource library containing the country flags as vectorial graphics.</Description>
         <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>

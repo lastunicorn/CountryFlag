@@ -22,8 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        <AssemblyName>DustInTheWind.CountryFlags.Present</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags.Present</RootNamespace>
+        <AssemblyName>DustInTheWind.CountryFlags.InUse</AssemblyName>
+        <RootNamespace>DustInTheWind.CountryFlags.InUse</RootNamespace>
         <Description>A resource library that contains all flags that are in use by each country. The flags are provided as vectorial graphics.</Description>
         <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <ItemGroup>
         <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" />
-        <ProjectReference Include="..\Flags.CountryFlags.Core\CountryFlags.Core.csproj" />
+        <ProjectReference Include="..\CountryFlags.Core\CountryFlags.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -225,6 +225,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <SubType>Designer</SubType>
       </Page>
       <Page Update="Flags\RS_Civil.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\SK_President.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\SX_Governor.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\SL_President.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\SL_NationalEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>

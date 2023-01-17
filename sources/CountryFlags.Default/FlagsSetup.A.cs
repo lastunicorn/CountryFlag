@@ -14,9 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Collections.Generic;
-
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
@@ -50,7 +47,7 @@ public static partial class FlagsSetup
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
         });
     }
-    
+
     public static void Albania()
     {
         Countries.Albania.Flags.Add(new CountryFlag
@@ -61,7 +58,7 @@ public static partial class FlagsSetup
             Usage = FlagUsage.NationalFlag
         });
     }
-    
+
     public static void Algeria()
     {
         Countries.Algeria.Flags.Add(new CountryFlag
@@ -82,7 +79,7 @@ public static partial class FlagsSetup
             Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag
         });
     }
-    
+
     public static void Andorra()
     {
         Countries.Andorra.Flags.Add(new CountryFlag
@@ -100,7 +97,11 @@ public static partial class FlagsSetup
         {
             Description = "Two horizontal bands of red and black with the Machete and Gear Emblem in the center.",
             StartDate = new FlagDate(1975, 11, 11),
-            DesignedBy = "Henrique de Carvalho Santos, António Alberto Neto",
+            DesignedBy = new StringList
+            {
+                "Henrique de Carvalho Santos",
+                "António Alberto Neto"
+            },
             Usage = FlagUsage.NationalFlag
         });
     }
@@ -132,7 +133,7 @@ public static partial class FlagsSetup
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
         });
     }
-    
+
     public static void Argentina()
     {
         Countries.Argentina.Flags.Add(new CountryFlag
@@ -163,18 +164,23 @@ public static partial class FlagsSetup
             Usage = FlagUsage.NationalFlag
         });
     }
-    
+
     public static void Australia()
     {
         Countries.Australia.Flags.Add(new CountryFlag
         {
             Description = "A Blue Ensign defaced with the Commonwealth Star in the lower hoist quarter and the five stars of the Southern Cross in the fly half.",
             StartDate = new FlagDate(1908, 12, 08),
-            DesignedBy = "Annie Dorrington, Ivor Evans, Lesley Hawkins, Egbert Nutall and William Stevens",
+            DesignedBy = new StringList
+            {
+                "Annie Dorrington",
+                "Ivor Evans, Lesley Hawkins",
+                "Egbert Nutall and William Stevens"
+            },
             Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
         });
     }
-    
+
     public static void Austria()
     {
         Countries.Austria.Flags.Add(new CountryFlag

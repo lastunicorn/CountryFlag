@@ -14,14 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
 
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
-    public static void FalklandIslands ()
+    public static void FalklandIslands()
     {
         Countries.FalklandIslands.Flags.Add(new CountryFlag
         {
@@ -31,7 +30,7 @@ public static partial class FlagsSetup
         });
     }
 
-    public static void FaroeIslands ()
+    public static void FaroeIslands()
     {
         Countries.FaroeIslands.Flags.Add(new CountryFlag
         {
@@ -42,7 +41,7 @@ public static partial class FlagsSetup
         });
     }
 
-    public static void Fiji ()
+    public static void Fiji()
     {
         Countries.Fiji.Flags.Add(new CountryFlag
         {
@@ -61,7 +60,7 @@ public static partial class FlagsSetup
         });
     }
 
-    public static void Finland ()
+    public static void Finland()
     {
         Countries.Finland.Flags.Add(new CountryFlag
         {
@@ -71,7 +70,7 @@ public static partial class FlagsSetup
         });
     }
 
-    public static void France ()
+    public static void France()
     {
         Countries.France.Flags.Add(new CountryFlag
         {
@@ -85,17 +84,21 @@ public static partial class FlagsSetup
             },
             Description = "A vertical tricolour of blue, white, and red",
             StartDate = new FlagDate(1794, 02, 15),
-            DesignedBy = "Lafayette, Jacques-Louis David",
+            DesignedBy = new StringList
+            {
+                "Lafayette",
+                "Jacques-Louis David"
+            },
             Usage = FlagUsage.NationalFlag
         });
     }
 
-    public static void FrenchGuiana ()
+    public static void FrenchGuiana()
     {
         Countries.FrenchGuiana.Flags.Add(new CountryFlag());
     }
 
-    public static void FrenchPolynesia ()
+    public static void FrenchPolynesia()
     {
         Countries.FrenchPolynesia.Flags.Add(new CountryFlag
         {
@@ -105,7 +108,7 @@ public static partial class FlagsSetup
         });
     }
 
-    public static void FrenchSouthernTerritories ()
+    public static void FrenchSouthernTerritories()
     {
         Countries.FrenchSouthernTerritories.Flags.Add(new CountryFlag
         {

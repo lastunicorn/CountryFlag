@@ -107,6 +107,27 @@ public static partial class FlagsSetup
 
     public static void SierraLeone()
     {
+        Countries.SierraLeone.Flags.Add(new CountryFlag
+        {
+            Id = "NationalEnsign",
+            Names = new List<FlagName>
+            {
+                "National ensign"
+            },
+            Description = "White flag with the national flag in canton.",
+            StartDate = new FlagDate(1961, 04, 27),
+            Usage = FlagUsage.NationalEnsign
+        });
+
+        Countries.SierraLeone.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Standard of the President"
+            },
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Singapore()
@@ -115,10 +136,29 @@ public static partial class FlagsSetup
 
     public static void SintMaarten()
     {
+        Countries.SintMaarten.Flags.Add(new CountryFlag
+        {
+            Id = "Governor",
+            Names = new List<FlagName>
+            {
+                "Standard of the Governor"
+            },
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Slovakia()
     {
+        Countries.Slovakia.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                "Presidential standard"
+            },
+            StartDate = new FlagDate(1993),
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Slovenia()
