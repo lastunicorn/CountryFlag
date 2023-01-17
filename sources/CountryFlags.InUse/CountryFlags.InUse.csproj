@@ -30,6 +30,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <PackageTags>flags;country;country-flags;current-flags;present-flags;in-use-flags</PackageTags>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
     <ItemGroup>
         <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" />
         <ProjectReference Include="..\CountryFlags.Core\CountryFlags.Core.csproj" />

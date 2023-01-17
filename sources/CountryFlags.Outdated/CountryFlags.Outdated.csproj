@@ -30,4 +30,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <PackageTags>flags;country;country-flags;past-flags;not-used-flags</PackageTags>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
 </Project>

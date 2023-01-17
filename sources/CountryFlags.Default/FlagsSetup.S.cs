@@ -225,32 +225,63 @@ public static partial class FlagsSetup
 
     public static void Slovenia()
     {
-        Countries.Slovenia.Flags.Add(new CountryFlag());
+        Countries.Slovenia.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolor of white, blue, and red; charged with the Coat of arms at the hoist side.",
+            StartDate = new FlagDate(1991, 06, 25),
+            Usage = FlagUsage.NationalFlag | FlagUsage.WarEnsign
+        });
     }
 
     public static void SolomonIslands()
     {
-        Countries.SolomonIslands.Flags.Add(new CountryFlag());
+        Countries.SolomonIslands.Flags.Add(new CountryFlag
+        {
+            Description = "A thin, yellow stripe dividing diagonally from the lower hoist-side corner to the upper fly-side corner: the upper triangle is blue with five white five-pointed stars arranged in an X pattern and the lower triangle is green.",
+            StartDate = new FlagDate(1977, 11, 18),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Somalia()
     {
-        Countries.Somalia.Flags.Add(new CountryFlag());
+        Countries.Somalia.Flags.Add(new CountryFlag
+        {
+            Description = "A single white five-pointed star centered on a cyan field.",
+            StartDate = new FlagDate(1954, 10, 12),
+            DesignedBy = "Mohammed Awale Liban",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SouthAfrica()
     {
-        Countries.SouthAfrica.Flags.Add(new CountryFlag());
+        Countries.SouthAfrica.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal bicolour of red and blue with a black isosceles triangle based on the hoist-side and a green pall, a central green band that splits into a horizontal Y, centred over the partition lines and was edged in both white against the red and the blue bands and yellow against the triangle, in which the arms of the Y ends at the corners of the hoist and embraces the triangle on the hoist-side.",
+            StartDate = new FlagDate(1994, 04, 27),
+            DesignedBy = "Frederick Brownell",
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void SouthGeorgiaAndTheSouthSandwichIslands()
     {
-        Countries.SouthGeorgiaAndTheSouthSandwichIslands.Flags.Add(new CountryFlag());
+        Countries.SouthGeorgiaAndTheSouthSandwichIslands.Flags.Add(new CountryFlag
+        {
+            Description = "Blue ensign with the coat-of-arms of South Georgia and the South Sandwich Islands in the fly.",
+            StartDate = new FlagDate(1999)
+        });
     }
 
     public static void SouthSudan()
     {
-        Countries.SouthSudan.Flags.Add(new CountryFlag());
+        Countries.SouthSudan.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of black, red, and green, fimbriated with white stripes; with a blue equilateral triangle based on the hoist side bearing a gold star.",
+            StartDate = new FlagDate(2005, 07, 09),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Spain()
@@ -260,7 +291,12 @@ public static partial class FlagsSetup
 
     public static void SriLanka()
     {
-        Countries.SriLanka.Flags.Add(new CountryFlag());
+        Countries.SriLanka.Flags.Add(new CountryFlag
+        {
+            Description = "A golden field with two panels: the smaller hoist-side panel has only two vertical bands of teal and orange and the larger fly-side panel is the maroon field depicting the golden lion holding the kastane sword in its right fore paw in the center and four bo tree (bodhi tree) leaves on each corner and the golden field appears as a border around the entire flag and extends in between the two panels, all bordering together.",
+            StartDate = new FlagDate(1972, 05, 22),
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilEnsign
+        });
     }
 
     public static void Sudan()

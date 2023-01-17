@@ -1,0 +1,101 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Slovenia -->
+
+    <Canvas x:Key="CountryFlag_SI" Width="240" Height="120">
+
+        <!-- Background -->
+
+        <Rectangle
+            Width="240"
+            Height="40"
+            Fill="#FFFFFFFF" />
+
+        <Rectangle
+            Width="240"
+            Height="40"
+            Canvas.Top="40"
+            Fill="#FF0000FF" />
+
+        <Rectangle
+            Width="240"
+            Height="40"
+            Canvas.Top="80"
+            Fill="#FFFF0000" />
+
+        <!-- Background -->
+
+        <Canvas RenderTransform="0.39140688,0,0,0.39140688,60,60">
+
+            <Path
+                Data="M-37.175342,-94.368205A92.195445,92.195445,0,0,1,37.175342,-94.368205Q43,-12 0,-1 -43,-12 -37.175342,-94.368205z"
+                Fill="#FF0000FF" />
+
+            <Path
+                Data="M0,-84.5L1.125,-81.948557 3.897114,-82.25 2.25,-80 3.897114,-77.75 1.125,-78.051443 0,-75.5 -1.125,-78.051443 -3.897114,-77.75 -2.25,-80 -3.897114,-82.25 -1.125,-81.948557"
+                Fill="#FFFFFF00" />
+
+            <Path
+                Data="M0,-84.5L1.125,-81.948557 3.897114,-82.25 2.25,-80 3.897114,-77.75 1.125,-78.051443 0,-75.5 -1.125,-78.051443 -3.897114,-77.75 -2.25,-80 -3.897114,-82.25 -1.125,-81.948557"
+                Fill="#FFFFFF00">
+
+                <Path.RenderTransform>
+                    <TranslateTransform X="-10.5" Y="-14" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M0,-84.5L1.125,-81.948557 3.897114,-82.25 2.25,-80 3.897114,-77.75 1.125,-78.051443 0,-75.5 -1.125,-78.051443 -3.897114,-77.75 -2.25,-80 -3.897114,-82.25 -1.125,-81.948557"
+                Fill="#FFFFFF00">
+
+                <Path.RenderTransform>
+                    <TranslateTransform X="10.5" Y="-14" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M0,-70L9,-52 15,-60 30,-40A10,10,0,0,1,29.615239,-37.252789A46.400549,46.400549,0,0,1,0,-6.090878A46.400549,46.400549,0,0,1,-29.615239,-37.252789A10,10,0,0,1,-30,-40L-15,-60 -9,-52z"
+                Fill="#FFFFFFFF" />
+
+            <Path
+                Data="M-29.615239,-37.252789A10,10,0,0,0,-15,-31.339746A10,10,0,0,1,-5,-31.339746A10,10,0,0,0,5,-31.339746A10,10,0,0,1,15,-31.339746A10,10,0,0,0,29.615239000000003,-37.252789L30,-37.113249 30,-29.792741000000003A10,10,0,0,0,25,-28.452995A10,10,0,0,1,15,-28.452995A10,10,0,0,0,5,-28.452995A10,10,0,0,1,-5,-28.452995A10,10,0,0,0,-15,-28.452995A10,10,0,0,1,-25,-28.452995A10,10,0,0,0,-30,-29.792741000000003L-30,-37.113249"
+                Fill="#FF0000FF" />
+
+            <Path
+                Data="M-29.615239,-37.252789A10,10,0,0,0,-15,-31.339746A10,10,0,0,1,-5,-31.339746A10,10,0,0,0,5,-31.339746A10,10,0,0,1,15,-31.339746A10,10,0,0,0,29.615239000000003,-37.252789L30,-37.113249 30,-29.792741000000003A10,10,0,0,0,25,-28.452995A10,10,0,0,1,15,-28.452995A10,10,0,0,0,5,-28.452995A10,10,0,0,1,-5,-28.452995A10,10,0,0,0,-15,-28.452995A10,10,0,0,1,-25,-28.452995A10,10,0,0,0,-30,-29.792741000000003L-30,-37.113249"
+                Fill="#FF0000FF">
+
+                <Path.RenderTransform>
+                    <TranslateTransform X="0" Y="5.7735028" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M-40,-93.066239A92.195445,92.195445,0,0,1,-37.175342,-94.36820499999999L-34.204702,-46.91942699999999A49.301041,49.301041,0,0,0,0,-3.036262A49.301041,49.301041,0,0,0,34.204702,-46.919426L37.175342,-94.36820399999999A92.195445,92.195445,0,0,1,40,-93.066239L37.099526,-46.73819A52.201533,52.201533,0,0,1,0,0A52.201533,52.201533,0,0,1,-37.099526,-46.738189z"
+                Fill="#FFFF0000" />
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>
