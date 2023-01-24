@@ -207,10 +207,32 @@ public static partial class FlagsSetup
 
     public static void Sweden()
     {
+        Countries.Sweden.Flags.Add(new CountryFlag
+        {
+            Id = "War",
+            Names = new List<FlagName>
+            {
+                "Military Flag"
+            },
+            Description = "Blue with a yellow Nordic cross that extends to the edges of the flag. Overall ratio, including the tails, is 1:2",
+            StartDate = new FlagDate(1906, 06, 22),
+            Usage = FlagUsage.WarFlag | FlagUsage.WarEnsign
+        });
     }
 
     public static void Switzerland()
     {
+        Countries.Switzerland.Flags.Add(new CountryFlag
+        {
+            Id = "Ensign",
+            Names = new List<FlagName>
+            {
+                "Civil and state ensign"
+            },
+            Description = "Red flag with a white cross in the centre and background in red.",
+            StartDate = new FlagDate(1882),
+            Usage = FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+        });
     }
 
     public static void SyrianArabRepublic()

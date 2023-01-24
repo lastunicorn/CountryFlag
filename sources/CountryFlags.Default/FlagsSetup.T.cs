@@ -25,42 +25,86 @@ public static partial class FlagsSetup
 
     public static void Tajikistan()
     {
-        Countries.Tajikistan.Flags.Add(new CountryFlag());
+        Countries.Tajikistan.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of red, white and green, with a yellow crown surmounted by an arc of seven stars at the centre.",
+            StartDate = new FlagDate(1992, 11, 24),
+            DesignedBy = "Zuhur Habibullaev",
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Tanzania()
     {
-        Countries.Tanzania.Flags.Add(new CountryFlag());
+        Countries.Tanzania.Flags.Add(new CountryFlag
+        {
+            Description = "A Yellow-edged black diagonal band divided diagonally from the lower hoist-side corner: the upper triangle is green and the lower triangle is light blue.",
+            StartDate = new FlagDate(1964, 06, 30),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Thailand()
     {
-        Countries.Thailand.Flags.Add(new CountryFlag());
+        Countries.Thailand.Flags.Add(new CountryFlag
+        {
+            Description = "Five horizontal stripes of red, white, blue, white and red, the middle stripe twice as wide as the others.",
+            StartDate = new FlagDate(1917, 09, 28),
+            DesignedBy = "King Vajiravudh (Rama VI)",
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void TimorLeste()
     {
-        Countries.TimorLeste.Flags.Add(new CountryFlag());
+        Countries.TimorLeste.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with the black isosceles triangle based on the hoist-side bearing a white five-pointed star in the center superimposed on the larger yellow triangle, also based on the hoist-side, that extends to the center of the flag.",
+            StartDate = new FlagDate(2002, 05, 19),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Togo()
     {
-        Countries.Togo.Flags.Add(new CountryFlag());
+        Countries.Togo.Flags.Add(new CountryFlag
+        {
+            Description = "Five equal horizontal bands of green (top and bottom) alternating with yellow; with a red canton bearing a white five-pointed star.",
+            StartDate = new FlagDate(1960, 04, 28),
+            DesignedBy = "Paul Ahyi",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Tokelau()
     {
-        Countries.Tokelau.Flags.Add(new CountryFlag());
+        Countries.Tokelau.Flags.Add(new CountryFlag
+        {
+            Description = "A yellow Tokelauan canoe sailing towards the Southern Cross represented by four white stars on a blue field.",
+            StartDate = new FlagDate(2009, 09, 07),
+            Usage = FlagUsage.StateFlag
+        });
     }
 
     public static void Tonga()
     {
-        Countries.Tonga.Flags.Add(new CountryFlag());
+        Countries.Tonga.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with the white rectangle on the upper hoist-side corner bearing the red Greek Cross in the centre.",
+            StartDate = new FlagDate(1875, 11, 04),
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void TrinidadAndTobago()
     {
-        Countries.TrinidadAndTobago.Flags.Add(new CountryFlag());
+        Countries.TrinidadAndTobago.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with a white-fimbriated black diagonal band from the upper hoist-side to the lower fly-side.",
+            StartDate = new FlagDate(1962, 08, 31),
+            DesignedBy = "Carlisle Chang",
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Tunisia()

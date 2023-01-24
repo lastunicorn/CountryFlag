@@ -20,11 +20,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Template -->
+    <!-- Syria -->
 
-    <Canvas x:Key="CountryFlag_SY" Width="1" Height="1">
+    <Canvas x:Key="CountryFlag_SY" Width="900" Height="600">
 
         <!-- Background -->
+
+        <Rectangle
+            Width="900"
+            Height="200"
+            Fill="#FFCE1126" />
+
+        <Rectangle
+            Width="900"
+            Height="200"
+            Canvas.Top="200"
+            Fill="#FFFFFFFF" />
+
+        <Rectangle
+            Width="900"
+            Height="200"
+            Canvas.Top="400"
+            Fill="#FF000000" />
+
+        <!-- Stars -->
+
+        <Path
+            Data="F1 M251.266,375L300.004,225 348.742,375 221.14200000000002,282.295 378.862,282.295 M551.262,375L600,225 648.738,375 521.138,282.295 678.8580000000001,282.295"
+            Fill="#FF007A3D" />
 
     </Canvas>
 

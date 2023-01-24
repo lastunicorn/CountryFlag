@@ -20,11 +20,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Template -->
+    <!-- Svalbard and Jan Mayen -->
 
-    <Canvas x:Key="CountryFlag_SJ" Width="1" Height="1">
+    <Canvas x:Key="CountryFlag_SJ" Width="22" Height="16">
 
-        <!-- Background -->
+        <Rectangle
+            Fill="#FFBA0C2F"
+            Width="22"
+            Height="16" />
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="4"
+            Height="16"
+            Canvas.Left="6" />
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="22"
+            Height="4"
+            Canvas.Top="6" />
+
+        <Rectangle
+            Fill="#FF00205B"
+            Width="2"
+            Height="16"
+            Canvas.Left="7" />
+
+        <Rectangle
+            Fill="#FF00205B"
+            Width="22"
+            Height="2"
+            Canvas.Top="7" />
 
     </Canvas>
 

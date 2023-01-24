@@ -301,12 +301,24 @@ public static partial class FlagsSetup
 
     public static void Sudan()
     {
-        Countries.Sudan.Flags.Add(new CountryFlag());
+        Countries.Sudan.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of red, white, and black; with a green triangle based at the hoist.",
+            StartDate = new FlagDate(1970, 05, 20),
+            DesignedBy = "Abdel Rahman Ahmed Al-Jali",
+            Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign
+        });
     }
 
     public static void Suriname()
     {
-        Countries.Suriname.Flags.Add(new CountryFlag());
+        Countries.Suriname.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal triband of green (top and bottom) and red (double width) with large white border with the large yellow five-pointed star centered on the red band.",
+            StartDate = new FlagDate(1975, 11, 25),
+            DesignedBy = "Jack Pinas",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void SvalbardAndJanMayen()
@@ -316,16 +328,31 @@ public static partial class FlagsSetup
 
     public static void Sweden()
     {
-        Countries.Sweden.Flags.Add(new CountryFlag());
+        Countries.Sweden.Flags.Add(new CountryFlag
+        {
+            Description = "A blue field charged with a yellow Nordic cross that extends to the edges; the vertical part of the cross is shifted to the hoist side. Dimensions: 5:2:9 horizontally and 4:2:4 vertically.",
+            StartDate = new FlagDate(1906, 06, 22),
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Switzerland()
     {
-        Countries.Switzerland.Flags.Add(new CountryFlag());
+        Countries.Switzerland.Flags.Add(new CountryFlag
+        {
+            Description = "A red square flag with a white cross in the centre.",
+            StartDate = new FlagDate(1841),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void SyrianArabRepublic()
     {
-        Countries.SyrianArabRepublic.Flags.Add(new CountryFlag());
+        Countries.SyrianArabRepublic.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of red, white, and black; charged with two green stars at the centre.",
+            StartDate = new FlagDate(1980, 03, 30),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 }

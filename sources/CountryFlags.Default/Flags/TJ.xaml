@@ -1,0 +1,196 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Tajikistan -->
+
+    <Canvas x:Key="CountryFlag_TJ" Width="1400" Height="700">
+
+        <!-- Background -->
+
+        <Rectangle
+            Width="1400"
+            Height="200"
+            Fill="#FFCC0000" />
+
+        <Rectangle
+            Width="1400"
+            Height="300"
+            Canvas.Top="200"
+            Fill="#FFFFFFFF" />
+
+        <Rectangle
+            Width="1400"
+            Height="200"
+            Canvas.Top="500"
+            Fill="#FF006600" />
+
+        <!-- Middle -->
+
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="-0.33413012" />
+            </Canvas.RenderTransform>
+
+            <Path
+                Data="M672,340.7A12.5,12.5,0,0,1,695.3,346.59999999999997L695.3,396.59999999999997 704.6999999999999,396.59999999999997 704.6999999999999,346.59999999999997A12.5,12.5,0,0,1,727.9999999999999,340.7A29.5,29.5,0,1,0,671.9999999999999,340.7"
+                Fill="#FFF8C300" />
+
+            <Path
+                Data="M678.7,327.65A20,20,0,0,1,700,337.2A20,20,0,0,1,721.3,327.65A21.5,21.5,0,0,0,678.6999999999999,327.65"
+                Fill="#FFFFFFFF" />
+
+            <Path
+                Data="M695.3,376.627A38,38,0,0,1,631.4549999999999,400.943A39.5,39.5,0,0,1,571.7209999999999,418.40999999999997C575.3705999999999,454.83599999999996 629.9729999999998,447.39899999999994 634.0409999999999,411.98119999999994 651.1949999999999,442.09619999999995 688.914,433.47119999999995 699.9509999999999,396.58119999999997z"
+                Fill="#FFF8C300" />
+
+            <Path
+                Data="M695.3,376.627A38,38,0,0,1,631.4549999999999,400.943A39.5,39.5,0,0,1,571.7209999999999,418.40999999999997C575.3705999999999,454.83599999999996 629.9729999999998,447.39899999999994 634.0409999999999,411.98119999999994 651.1949999999999,442.09619999999995 688.914,433.47119999999995 699.9509999999999,396.58119999999997z"
+                Fill="#FFF8C300"
+                RenderTransform="-1,0,0,1,1400,0" />
+
+            <Path
+                Data="M658.84,441.31C651.2219,457.75600000000003 635.995,460.581 622.676,447.3053 622.676,447.3053 628.0299,443.5222 633.7620000000001,442.47929999999997 632.6872000000001,437.90489999999994 634.8911,431.5773 637.9974000000001,428.15529999999995 641.2549000000001,430.38169999999997 645.801,434.84389999999996 646.9572000000001,440.0293 654.9863,438.9899 658.8402000000001,441.3108 658.8402000000001,441.3108z"
+                Fill="#FFF8C300" />
+
+            <Path
+                Data="M658.84,441.31C651.2219,457.75600000000003 635.995,460.581 622.676,447.3053 622.676,447.3053 628.0299,443.5222 633.7620000000001,442.47929999999997 632.6872000000001,437.90489999999994 634.8911,431.5773 637.9974000000001,428.15529999999995 641.2549000000001,430.38169999999997 645.801,434.84389999999996 646.9572000000001,440.0293 654.9863,438.9899 658.8402000000001,441.3108 658.8402000000001,441.3108z"
+                Fill="#FFF8C300">
+
+                <Path.RenderTransform>
+                    <RotateTransform Angle="9.37" CenterX="700" CenterY="804" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M658.84,441.31C651.2219,457.75600000000003 635.995,460.581 622.676,447.3053 622.676,447.3053 628.0299,443.5222 633.7620000000001,442.47929999999997 632.6872000000001,437.90489999999994 634.8911,431.5773 637.9974000000001,428.15529999999995 641.2549000000001,430.38169999999997 645.801,434.84389999999996 646.9572000000001,440.0293 654.9863,438.9899 658.8402000000001,441.3108 658.8402000000001,441.3108z"
+                Fill="#FFF8C300">
+
+                <Path.RenderTransform>
+                    <RotateTransform Angle="18.74" CenterX="700" CenterY="804" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M603,478A340,340,0,0,1,797,478"
+                Stroke="#FFF8C300"
+                StrokeThickness="16" />
+
+            <Canvas>
+
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="700" Y="380.00074" />
+                </Canvas.RenderTransform>
+
+                <!-- Stars -->
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="0" Y="-140" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="-70" Y="-121.24356" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="-121.24356" Y="-70" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="-140" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="70" Y="-121.24356" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="121.24356" Y="-70" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+                <Path
+                    Data="F1 M-488533,-158734L488533,-158734 -301930,415571 0,-513674 301930,415571z"
+                    Fill="#FFF8C300">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="4.8669E-05,0,0,4.8669E-05,0,0" />
+                            <TranslateTransform X="140" />
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
+            </Canvas>
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -20,23 +20,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Sweden -->
+    <!-- Thailand -->
 
-    <Canvas x:Key="CountryFlag_SE" Width="16" Height="10">
-
-        <!-- Background -->
+    <Canvas x:Key="CountryFlag_TH" Width="9" Height="6">
 
         <Rectangle
-            Width="16"
-            Height="10"
-            Fill="#006aa7" />
-
-        <!-- Cross -->
-
-        <Path
-            Data="M 6,0 L 6,10 M 0,5 L 16,5"
-            Stroke="#fecc00"
-            StrokeThickness="2"/>
+            Fill="#FFA51931"
+            Width="9"
+            Height="6" />
+        
+        <Rectangle
+            Fill="#FFF4F5F8"
+            Width="9"
+            Height="4"
+            Canvas.Top="1" />
+        
+        <Rectangle
+            Fill="#FF2D2A4A"
+            Width="9"
+            Height="2"
+            Canvas.Top="2" />
 
     </Canvas>
 
