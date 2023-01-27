@@ -109,26 +109,52 @@ public static partial class FlagsSetup
 
     public static void Tunisia()
     {
-        Countries.Tunisia.Flags.Add(new CountryFlag());
+        Countries.Tunisia.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with a centered white sun-disc containing a red five-pointed star surrounded by a red crescent.",
+            StartDate = new FlagDate(1827, 10, 20),
+            DesignedBy = "Hussein II",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Turkey()
     {
-        Countries.Turkey.Flags.Add(new CountryFlag());
+        Countries.Turkey.Flags.Add(new CountryFlag
+        {
+            Description = "A red field with a white star and crescent slightly left of center.",
+            StartDate = new FlagDate(1936, 05, 29),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Turkmenistan()
     {
-        Countries.Turkmenistan.Flags.Add(new CountryFlag());
+        Countries.Turkmenistan.Flags.Add(new CountryFlag
+        {
+            Description = "A green field with a vertical red stripe near the hoist side, containing five carpet guls stacked above two crossed olive branches; a white waxing crescent moon and five white five-pointed stars appear in the upper field, to the fly side of the red stripe.",
+            StartDate = new FlagDate(2001, 01, 24),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void TurksAndCaicosIslands()
     {
-        Countries.TurksAndCaicosIslands.Flags.Add(new CountryFlag());
+        Countries.TurksAndCaicosIslands.Flags.Add(new CountryFlag
+        {
+            Description = "A blue ensign with the Union flag in the canton and the coat of arms of the Turks and Caicos Islands in the fly half.",
+            StartDate = new FlagDate(1968, 11, 07),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void Tuvalu()
     {
-        Countries.Tuvalu.Flags.Add(new CountryFlag());
+        Countries.Tuvalu.Flags.Add(new CountryFlag
+        {
+            Description = "A Light Blue Ensign with a map of the 9 islands, using 9 yellow stars on the fly half of the flag.",
+            StartDate = new FlagDate(1997, 04, 11),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 }

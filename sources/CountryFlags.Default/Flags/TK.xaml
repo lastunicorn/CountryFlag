@@ -1,0 +1,102 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Tokelau -->
+
+    <Canvas x:Key="CountryFlag_TK" Width="1800" Height="900">
+
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FF012169"
+            Width="1800"
+            Height="900" />
+
+        <!-- Canoe -->
+
+        <Path
+            Data="M329.37609,777.2654C311.44173,777.11556 497.99952,677.83404 654.14523,550.66563 858.78891,383.99945 1299.541,117.15633 1429.1161,73.7954 1442.6594,69.26325 1401.34,96.86848 1395.9760999999999,105.81081 1257.6345999999999,269.55124 1368.0511,578.5346 1540.9487,733.8590999999999 1592.9387,773.6222999999999 1590.2760999999998,775.7099199999999 1686.6561,779.6053999999999L1686.6561,788.6053999999999 329.37609,777.2653999999999z"
+            Fill="#FFFFD100" />
+
+        <Path
+            Data="M318.12503,795.3246C318.12503,795.3246 304.9616,804.7275000000001 305.00007999999997,811.7307000000001 305.04308,819.5032000000001 319.76565,829.7775 319.76565,829.7775L1658.5107,844.5431 1683.1200000000001,828.1369 1648.6670000000001,806.8089 318.12503000000015,795.3246z"
+            Fill="#FFFFD100" />
+
+        <!-- Top Star -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="90" ScaleY="90" />
+                    <TranslateTransform X="342.9565" Y="112.5812" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Right Star -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="75" ScaleY="75" />
+                    <TranslateTransform X="521.20459" Y="267.53" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Left Star -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="90" ScaleY="90" />
+                    <TranslateTransform X="135" Y="321.8075" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Bottom Star -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="105" ScaleY="105" />
+                    <TranslateTransform X="342.9565" Y="652.5812" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>
