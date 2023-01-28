@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
@@ -122,6 +124,19 @@ public static partial class FlagsSetup
     {
         Countries.Turkey.Flags.Add(new CountryFlag
         {
+            Names = new List<FlagName>
+            {
+                new FlagName
+                {
+                    NativeName = "al bayrak",
+                    EnglishTranslation = "the red flag"
+                },
+                new FlagName
+                {
+                    NativeName = "al sancak",
+                    EnglishTranslation = "the red banner"
+                }
+            },
             Description = "A red field with a white star and crescent slightly left of center.",
             StartDate = new FlagDate(1936, 05, 29),
             Usage = FlagUsage.NationalFlagAndEnsign
