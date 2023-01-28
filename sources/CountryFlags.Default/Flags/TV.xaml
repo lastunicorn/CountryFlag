@@ -1,0 +1,108 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Tuvalu -->
+
+    <Canvas x:Key="CountryFlag_TV" Width="1200" Height="600">
+
+        <!-- Background -->
+
+        <Path
+            Data="M0,300L600,300 600,0 1200,0 1200,600 0,600z"
+            Fill="#FF009CDE" />
+
+        <!-- UK Flag -->
+
+        <Rectangle
+            Fill="#FF012169"
+            Width="600"
+            Height="300" />
+
+        <Path
+            Data="M0,0L600,300 M600,0L0,300"
+            Fill="#FF000000"
+            Stroke="#FFFFFFFF"
+            StrokeThickness="60"
+            Clip="M 0,0 H 600 V 300 H 0 z" />
+
+        <Path
+            Data="M0,0L600,300 M600,0L0,300"
+            Fill="#FF000000"
+            Stroke="#FFC8102E"
+            StrokeThickness="40"
+            Clip="M 0,0 V 150 H 600 V 300 H 600 z M 0,300 V 300 H 300 V 0 H 600 z" />
+
+        <Path
+            Data="M0,150L600,150 M300,0L300,300"
+            Fill="#FF000000"
+            Stroke="#FFFFFFFF"
+            StrokeThickness="100" />
+
+        <Path
+            Data="M0,150L600,150 M300,0L300,300"
+            Fill="#FF000000"
+            Stroke="#FFC8102E"
+            StrokeThickness="60" />
+
+        <Canvas>
+
+            <Path
+                Data="F1 M645.3396,490.91279L674.7764,581.50979 597.7099,525.51779 692.9693,525.51779 615.9028,581.51079z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M817.46233,463.99977L788.02562,554.5968 758.58878,463.99977 835.65526,519.99184 740.39529,519.99258z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M817.46233,342.01619L788.02562,432.61322 758.58878,342.01619 835.65526,398.00826 740.39529,398.009z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M943.46715,433.16817L914.03044,523.7651999999999 884.59361,433.1681699999999 961.66008,489.16023999999993 866.40011,489.1609699999999z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M943.46715,167.75458L914.03044,258.35161 884.59361,167.75457999999998 961.66008,223.74665 866.40011,223.74738z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M996.44159,339.96479L1025.8784,430.56179 948.8118900000001,374.56978999999995 1044.0713,374.56978999999995 967.0047900000001,430.56278999999995z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M1049.3647,131.56139L1019.9280000000001,222.15841999999998 990.4911900000001,131.56138999999996 1067.5577,187.55345999999997 972.2976900000001,187.55418999999998z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M1102.8361,271.47361L1132.2729,362.07061 1055.2064,306.07860999999997 1150.4658,306.07860999999997 1073.3993,362.07160999999996z"
+                Fill="#FFFEDD00" />
+
+            <Path
+                Data="F1 M1102.8361,37.4052L1132.2729,128.0022 1055.2064,72.0102 1150.4658,72.0102 1073.3993,128.0032z"
+                Fill="#FFFEDD00" />
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>
