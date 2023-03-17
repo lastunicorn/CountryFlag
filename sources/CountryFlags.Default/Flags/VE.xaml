@@ -1,0 +1,162 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Venezuela -->
+
+    <Canvas x:Key="CountryFlag_VE" Width="180" Height="120">
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Width="180"
+            Height="40"
+            Fill="#FFFFCC00" />
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="40"
+            Width="180"
+            Height="40"
+            Fill="#FF00247D" />
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="80"
+            Width="180"
+            Height="40"
+            Fill="#FFCF142B" />
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="-70" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="-50" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="-30" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="-10" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="10" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="30" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="50" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="10" ScaleY="10" />
+                    <TranslateTransform X="0" Y="-38.5" />
+                    <RotateTransform Angle="70" />
+                    <TranslateTransform X="90" Y="86" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>

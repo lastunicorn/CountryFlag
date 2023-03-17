@@ -14,23 +14,56 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Default;
 
 public static partial class FlagsSetup
 {
     public static void Vanuatu()
     {
-        Countries.Vanuatu.Flags.Add(new CountryFlag());
+        Countries.Vanuatu.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal bicolor of red and green with a golden pall, fimbriated in black, with a black chevron filling the lefthand space and two gold crossed namele cycad fronds encircled in a gold boar tusk centered on the chevron.",
+            StartDate = new FlagDate(1980, 02, 18),
+            DesignedBy = "Kalontas Mahlon",
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Venezuela()
     {
-        Countries.Venezuela.Flags.Add(new CountryFlag());
+        Countries.Venezuela.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of yellow, blue and red with an arc of eight white five-pointed stars centred on the blue band.",
+            StartDate = new FlagDate(2006, 03, 12),
+            DesignedBy = "Francisco de Miranda",
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
+        });
     }
 
     public static void Vietnam()
     {
-        Countries.Vietnam.Flags.Add(new CountryFlag());
+        Countries.Vietnam.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                new FlagName
+                {
+                    NativeName = "Cờ đỏ sao vàng",
+                    EnglishTranslation = "red flag with a golden star"
+                },
+                new FlagName
+                {
+                    NativeName = "Cờ Tổ quốc",
+                    EnglishTranslation = "flag of the Fatherland"
+                }
+            },
+            Description = "A large yellow star centered on a red field.",
+            StartDate = new FlagDate(1976),
+            DesignedBy = "Nguyễn Hữu Tiến",
+            Usage = FlagUsage.CivilAndStateFlag
+        });
     }
 
     public static void BritishVirginIslands()

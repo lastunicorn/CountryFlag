@@ -98,6 +98,12 @@ public static partial class FlagsSetup
 
     public static void Uzbekistan()
     {
-        Countries.Uzbekistan.Flags.Add(new CountryFlag());
+        Countries.Uzbekistan.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal triband of azure, white and green, separated by two narrow red stripes. A white crescent and three rows of twelve white five-pointed stars are situated on the left side of the upper azure stripe.",
+            StartDate = new FlagDate(1991, 11, 18),
+            DesignedBy = "Farxod Yuldaşev",
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 }

@@ -1,0 +1,221 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Uzbekistan -->
+
+    <Canvas x:Key="CountryFlag_UZ" Width="250" Height="125">
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Width="250"
+            Height="40"
+            Fill="#FF0099B5" />
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="40"
+            Width="250"
+            Height="45"
+            Fill="#FFCE1126" />
+
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="42.5"
+            Width="250"
+            Height="40"
+            Fill="#FFFFFFFF" />
+        
+        <Rectangle
+            Canvas.Left="0"
+            Canvas.Top="85"
+            Width="250"
+            Height="40"
+            Fill="#FF1EB53A" />
+
+        <Ellipse
+            Fill="#FFFFFFFF"
+            Width="30"
+            Height="30"
+            Canvas.Left="20"
+            Canvas.Top="5" />
+
+        <Ellipse
+            Fill="#FF0099B5"
+            Width="30"
+            Height="30"
+            Canvas.Left="25"
+            Canvas.Top="5" />
+
+        <!-- Stars - Row 1 -->
+        
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="68" Y="8" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="80" Y="8" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="92" Y="8" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Stars - Row 2 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="56" Y="20" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="68" Y="20" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="80" Y="20" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="92" Y="20" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Stars - Row 3 -->
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="44" Y="32" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="56" Y="32" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="68" Y="32" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="80" Y="32" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#FFFFFFFF">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="6" ScaleY="6" />
+                    <TranslateTransform X="92" Y="32" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        
+    </Canvas>
+
+</ResourceDictionary>
