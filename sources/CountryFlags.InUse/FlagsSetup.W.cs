@@ -14,12 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.Present;
 
 public static partial class FlagsSetup
 {
     public static void WallisAndFutuna()
     {
+        Countries.WallisAndFutuna.Flags.Add(new CountryFlag
+        {
+            Id = "Unofficial",
+            Names = new List<FlagName>
+            {
+                new FlagName()
+                {
+                    NativeName = "Uvéa Flag",
+                    EnglishTranslation = "Unofficial Flag"
+                }
+                
+            },
+            Description = "Unofficial flag of the Territory of the Wallis and Futuna Islands.",
+            StartDate = new FlagDate(1985),
+            DesignedBy = "Francisco de Miranda"
+        });
     }
 
     public static void WesternSahara()

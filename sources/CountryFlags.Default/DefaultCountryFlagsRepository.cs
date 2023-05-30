@@ -25,7 +25,7 @@ using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Main;
 
 internal class DefaultCountryFlagsRepository : FlagRepositoryBase
 {

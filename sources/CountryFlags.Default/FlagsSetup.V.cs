@@ -16,7 +16,7 @@
 
 using System.Collections.Generic;
 
-namespace DustInTheWind.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Main;
 
 public static partial class FlagsSetup
 {
@@ -48,12 +48,12 @@ public static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new FlagName
+                new()
                 {
                     NativeName = "Cờ đỏ sao vàng",
                     EnglishTranslation = "red flag with a golden star"
                 },
-                new FlagName
+                new()
                 {
                     NativeName = "Cờ Tổ quốc",
                     EnglishTranslation = "flag of the Fatherland"
@@ -68,11 +68,21 @@ public static partial class FlagsSetup
 
     public static void BritishVirginIslands()
     {
-        Countries.BritishVirginIslands.Flags.Add(new CountryFlag());
+        Countries.BritishVirginIslands.Flags.Add(new CountryFlag
+        {
+            Description = "A blue ensign with the Union flag in the top left hand corner and the coat of arms centre-right.",
+            StartDate = new FlagDate(1960, 11, 15),
+            Usage = FlagUsage.NationalFlag
+        });
     }
 
     public static void UnitedStatesVirginIslands()
     {
-        Countries.UnitedStatesVirginIslands.Flags.Add(new CountryFlag());
+        Countries.UnitedStatesVirginIslands.Flags.Add(new CountryFlag
+        {
+            Description = "A simplified version of the coat of arms of the United States between the letters V and I (for Virgin Islands). The yellow-colored eagle holds a sprig of laurel in one talon, and three arrows in the other. The blue color in the shield on the eagle's breast is the same color as that of the flag and shield of the United States.",
+            StartDate = new FlagDate(1921, 05, 17),
+            Usage = FlagUsage.CivilAndStateFlag
+        });
     }
 }

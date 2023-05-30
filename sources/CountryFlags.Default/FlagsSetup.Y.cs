@@ -14,12 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Main;
 
 public static partial class FlagsSetup
 {
     public static void Yemen()
     {
-        Countries.Yemen.Flags.Add(new CountryFlag());
+        Countries.Yemen.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal tricolour of red, white and black",
+            StartDate = new FlagDate(1990, 05, 22),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 }

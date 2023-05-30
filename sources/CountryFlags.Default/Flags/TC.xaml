@@ -33,36 +33,42 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!-- UK Flag -->
 
-        <Canvas Clip="M 0,0 H 60 V 30 H 0 z">
+        <Canvas>
 
             <Canvas.RenderTransform>
-                <ScaleTransform ScaleX="80" ScaleY="80" />
+                <ScaleTransform ScaleX="8" ScaleY="8" />
             </Canvas.RenderTransform>
 
-            <Canvas>
+            <Rectangle
+                Fill="#FF012169"
+                Width="600"
+                Height="300" />
 
-                <Path
-                    Data="M0,0L60,30 M0,30L60,0"
-                    Stroke="#FFFFFFFF"
-                    StrokeThickness="6" />
+            <Path
+                Data="M0,0L600,300 M600,0L0,300"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="60"
+                Clip="M 0,0 H 600 V 300 H 0 z" />
 
-                <Path
-                    Data="M0,0L60,30 M0,30L60,0"
-                    Stroke="#FFCE1126"
-                    StrokeThickness="4"
-                    Clip="m0 0v15h65v15h-5zm60 0h-30v35H0v-5z" />
+            <Path
+                Data="M0,0L600,300 M600,0L0,300"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="40"
+                Clip="M 0,0 V 150 H 600 V 300 H 600 z M 0,300 V 300 H 300 V 0 H 600 z" />
 
-                <Path
-                    Data="M30,-5L30,35 M-5,15L65,15"
-                    Stroke="#FFFFFFFF"
-                    StrokeThickness="10" />
+            <Path
+                Data="M0,150L600,150 M300,0L300,300"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="100" />
 
-                <Path
-                    Data="M30,0L30,35 M0,15L65,15"
-                    Stroke="#FFCE1126"
-                    StrokeThickness="6" />
-
-            </Canvas>
+            <Path
+                Data="M0,150L600,150 M300,0L300,300"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="60" />
 
         </Canvas>
 

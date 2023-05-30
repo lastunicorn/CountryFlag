@@ -26,9 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!-- Background -->
 
-        <Path
-            Data="M0,300L600,300 600,0 1200,0 1200,600 0,600z"
-            Fill="#FF009CDE" />
+        <Rectangle
+            Fill="#FF009CDE"
+            Width="1200"
+            Height="600" />
 
         <!-- UK Flag -->
 
@@ -62,6 +63,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Fill="#FF000000"
             Stroke="#FFC8102E"
             StrokeThickness="60" />
+
+        <!-- Stars -->
 
         <Canvas>
 

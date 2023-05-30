@@ -14,17 +14,34 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.Default;
+using System.Collections.Generic;
+
+namespace DustInTheWind.CountryFlags.Main;
 
 public static partial class FlagsSetup
 {
     public static void WallisAndFutuna()
     {
-        Countries.WallisAndFutuna.Flags.Add(new CountryFlag());
+        Countries.WallisAndFutuna.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                "Tricolore"
+            },
+            Description = "A vertical tricolour of blue, white, and red.",
+            StartDate = new FlagDate(1794, 02, 15),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void WesternSahara()
     {
-        Countries.WesternSahara.Flags.Add(new CountryFlag());
+        Countries.WesternSahara.Flags.Add(new CountryFlag
+        {
+            Description = "A black, white, and green horizontal tricolor charged with a red star and crescent in the centre stripe and a red chevron at the hoist.",
+            StartDate = new FlagDate(1976, 02, 27),
+            DesignedBy = "El Uali Mustafá Sayed",
+            Usage = FlagUsage.NationalFlag
+        });
     }
 }

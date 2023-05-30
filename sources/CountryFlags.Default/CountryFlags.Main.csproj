@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
         <AssemblyName>DustInTheWind.CountryFlags</AssemblyName>
-        <RootNamespace>DustInTheWind.CountryFlags.Default</RootNamespace>
+        <RootNamespace>DustInTheWind.CountryFlags.Main</RootNamespace>
         <Description>A resource library that contains the main flag for each country. The flags are provided as vectorial graphics.</Description>
         <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
@@ -174,10 +174,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Page Update="Flags\CG.xaml">
             <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
+        <Page Update="Flags\EH.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\VG.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
         <Page Update="Flags\VN.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
         <Page Update="Flags\VE.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\VI.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
         <Page Update="Flags\VU.xaml">
@@ -739,6 +748,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Page Update="Flags\TW.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>
+        </Page>
+        <Page Update="Flags\WF.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\ZW.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\ZM.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
+        <Page Update="Flags\YE.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         </Page>
         <Page Update="Flags\ZA.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

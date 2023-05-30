@@ -24,6 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <Canvas x:Key="CountryFlag_GF" Width="900" Height="600">
 
+        <!-- Background -->
+
         <Path
             Data="M 0 0 h 900 v 600 z"
             Fill="#078930" />
@@ -32,12 +34,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Data="M 0 0 v 600 h 900 z"
             Fill="#fcdd09" />
 
+        <!-- Star -->
+
         <Path
-            Data="F1 m 0 -1 .58778525 1.80901699 -1.53884177 -1.11803398 h 1.90211304 l -1.53884177 1.11803398 z"
-            Fill="#da121a">
+            Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
+            Fill="#ffda121a">
 
             <Path.RenderTransform>
-                <MatrixTransform Matrix="100 0 0 100 450 300" />
+                <TransformGroup>
+                    <ScaleTransform ScaleX="200" ScaleY="200" />
+                    <TranslateTransform X="450" Y="300" />
+                </TransformGroup>
             </Path.RenderTransform>
         </Path>
 

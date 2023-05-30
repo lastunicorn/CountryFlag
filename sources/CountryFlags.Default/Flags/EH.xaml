@@ -1,0 +1,76 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Western Sahara -->
+
+    <Canvas x:Key="CountryFlag_EH" Width="600" Height="300">
+
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FF000000"
+            Width="600"
+            Height="100" />
+        
+        <Rectangle
+            Fill="#FF007A3D"
+            Width="600"
+            Height="100"
+            Canvas.Top="200" />
+        
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="600"
+            Height="100"
+            Canvas.Top="100" />
+
+        <!-- Left Triangle -->
+
+        <Path
+            Data="M0,0L200,150 0,300z"
+            Fill="#FFC4111B" />
+
+        <!-- Moon -->
+
+        <Ellipse
+            Fill="#FFC4111B"
+            Width="80"
+            Height="80"
+            Canvas.Left="260"
+            Canvas.Top="110" />
+        
+        <Ellipse
+            Fill="#FFFFFFFF"
+            Width="80"
+            Height="80"
+            Canvas.Left="275"
+            Canvas.Top="110" />
+
+        <!-- Star -->
+
+        <Path
+            Data="M289.26294,174.2204L306.31927,162.02767 323.24223,174.40476 316.91696,154.41548 333.91777,142.14549 312.95221000000004,141.98418 306.53630000000004,122.02382 299.90415,141.91339 278.93809,141.84729 295.80478,154.30102 289.26294,174.22048z"
+            Fill="#FFC4111B" />
+
+    </Canvas>
+
+</ResourceDictionary>

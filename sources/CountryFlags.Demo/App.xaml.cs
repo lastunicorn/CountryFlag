@@ -16,9 +16,9 @@
 
 using System.Reflection;
 using System.Windows;
-using DustInTheWind.CountryFlags.Default;
 using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
+using DustInTheWind.CountryFlags.Main;
 using DustInTheWind.CountryFlags.Present;
 using DustInTheWind.Flags.Core;
 
@@ -34,7 +34,7 @@ namespace DustInTheWind.CountryFlags.Demo
             Assembly countryFlagsAssembly = typeof(Countries).Assembly;
             Assembly defaultCountryFlagsAssembly = typeof(DefaultCountryFlagsModule).Assembly;
             Assembly inUseCountryFlagsAssembly = typeof(InUseCountryFlagsModule).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly, inUseCountryFlagsAssembly);
+            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly);
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

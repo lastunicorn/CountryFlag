@@ -17,7 +17,7 @@
 using System.Collections.Generic;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.Default;
+namespace DustInTheWind.CountryFlags.Main;
 
 public class DefaultCountryFlagsModule : IFlagModule
 {
@@ -129,22 +129,22 @@ public class DefaultCountryFlagsModule : IFlagModule
 
         // G
 
-        FlagsSetup.Gabon();
-        FlagsSetup.Gambia();
-        FlagsSetup.Georgia();
-        FlagsSetup.Germany();
-        FlagsSetup.Ghana();
-        FlagsSetup.Gibraltar();
-        FlagsSetup.Greece();
-        FlagsSetup.Greenland();
-        FlagsSetup.Grenada();
-        FlagsSetup.Guadeloupe();
-        FlagsSetup.Guam();
-        FlagsSetup.Guatemala();
-        FlagsSetup.Guernsey();
-        FlagsSetup.Guinea();
-        FlagsSetup.GuineaBissau();
-        FlagsSetup.Guyana();
+        Default.FlagsSetup.Gabon();
+        Default.FlagsSetup.Gambia();
+        Default.FlagsSetup.Georgia();
+        Default.FlagsSetup.Germany();
+        Default.FlagsSetup.Ghana();
+        Default.FlagsSetup.Gibraltar();
+        Default.FlagsSetup.Greece();
+        Default.FlagsSetup.Greenland();
+        Default.FlagsSetup.Grenada();
+        Default.FlagsSetup.Guadeloupe();
+        Default.FlagsSetup.Guam();
+        Default.FlagsSetup.Guatemala();
+        Default.FlagsSetup.Guernsey();
+        Default.FlagsSetup.Guinea();
+        Default.FlagsSetup.GuineaBissau();
+        Default.FlagsSetup.Guyana();
 
         // H
 

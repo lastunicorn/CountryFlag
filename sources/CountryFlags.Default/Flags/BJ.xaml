@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Benin -->
 
     <Canvas x:Key="CountryFlag_BJ" Width="90" Height="60">
+
         <Rectangle
             Width="36"
             Height="60"
@@ -43,6 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Canvas.Left="36"
             Canvas.Top="30"
             Fill="#e8112d" />
+
     </Canvas>
 
 </ResourceDictionary>
