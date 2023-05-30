@@ -133,7 +133,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <views:FlagInfoBox
             Grid.Column="4"
             Margin="10"
-            DataContext="{Binding FlagInfoViewModel}"/>
+            DataContext="{Binding FlagInfoViewModel}" />
 
     </Grid>
 

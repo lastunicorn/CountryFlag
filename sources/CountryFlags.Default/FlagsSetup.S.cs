@@ -286,7 +286,20 @@ public static partial class FlagsSetup
 
     public static void Spain()
     {
-        Countries.Spain.Flags.Add(new CountryFlag());
+        Countries.Spain.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    NativeName = "Rojigualda"
+                }
+            },
+            Description = "A horizontal triband flag of red, yellow (double width) and red; charged with the Spanish coat of arms off-centred toward the hoist.",
+            StartDate = new FlagDate(1981, 10, 05),
+            DesignedBy = "Antonio Valdés y Bazán",
+            Usage = FlagUsage.NationalFlag | FlagUsage.StateEnsign | FlagUsage.WarEnsign
+        });
     }
 
     public static void SriLanka()

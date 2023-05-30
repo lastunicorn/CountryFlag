@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Windows.Controls;
 
 namespace DustInTheWind.Flags.Core;
@@ -33,11 +32,11 @@ public abstract class FlagRepositoryBase : IFlagRepository
         {
             return GetInternal(flagId);
         }
-        catch (Exception ex)
+        catch
         {
             return null;
         }
     }
-    
+
     protected abstract Canvas? GetInternal(FlagId flagId);
 }

@@ -84,7 +84,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!-- UK Flag -->
 
-        <Canvas Clip="m0 0h300v150h-300z">
+        <Canvas Clip="m 0,0 h 300 v 150 h -300 z">
 
             <Path
                 Data="M0,0L300,0 300,150 0,150z"
