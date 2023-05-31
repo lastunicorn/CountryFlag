@@ -40,25 +40,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Canvas>
 
-            <Canvas.RenderTransform>
-                <ScaleTransform ScaleX="8.333333" ScaleY="8.333333" />
-            </Canvas.RenderTransform>
+            <Path
+                Data="M 0 0 500 250 M 500 0 0 250"
+                Stroke="#ffffff"
+                StrokeThickness="50"
+                Clip="M 0 0 H 500 V 250 H 0 z" />
 
             <Path
-                Data="M0,0L0,3.354 53.292,30 60,30 60,26.646 6.707999999999998,0z M60,0L60,3.354 6.707999999999998,30 -1.7763568394002505E-15,30 -1.7763568394002505E-15,26.646 53.292,0z"
-                Fill="#FFFFFFFF" />
+                Data="M 0 0 500 250 M 500 0 0 250"
+                Stroke="#FFC8102E"
+                StrokeThickness="33.33"
+                Clip="M 0 0 V 125 H 500 V 250 H 500 z M 500 0 H 250 V 250 H 0 V 250 z" />
 
             <Path
-                Data="F1 M25,0L25,30 35,30 35,0z M0,10L0,20 60,20 60,10z"
-                Fill="#FFFFFFFF" />
+                Data="M 250 0 V 250 M 0 125 H 500"
+                Stroke="#ffffff"
+                StrokeThickness="83.33"/>
 
             <Path
-                Data="F1 M0,12L0,18 60,18 60,12z M27,0L27,30 33,30 33,0z"
-                Fill="#FFC8102E" />
-
-            <Path
-                Data="M0,30L20,20 24.472,20 4.472000000000001,30z M0,0L20,10 15.527999999999999,10 -1.7763568394002505E-15,2.2359999999999998z M35.528,10L55.528,0 60,0 40,10z M60,30L40,20 44.472,20 60,27.764z"
-                Fill="#FFC8102E" />
+                Data="M 250 0 V 250 M 0 125 H 500"
+                Stroke="#FFC8102E"
+                StrokeThickness="50" />
 
         </Canvas>
 
