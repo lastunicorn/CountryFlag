@@ -31,36 +31,42 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Height="500"
             Fill="#FFC8102E" />
 
-        <!-- UK Flag -->
+        <!-- United Kingdom Flag -->
 
-        <Rectangle
-            Width="500"
-            Height="250"
-            Fill="#FF012169" />
+        <Canvas Clip="M 0,0 H 60 V 30 H 0 z">
 
-        <Canvas>
-
-            <Path
-                Data="M 0 0 500 250 M 500 0 0 250"
-                Stroke="#ffffff"
-                StrokeThickness="50"
-                Clip="M 0 0 H 500 V 250 H 0 z" />
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="8.33" ScaleY="8.33" />
+            </Canvas.RenderTransform>
 
             <Path
-                Data="M 0 0 500 250 M 500 0 0 250"
+                Data="M0,0L0,30 60,30 60,0z"
+                Fill="#FF012169" />
+
+            <Path
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="6" />
+
+            <Path
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
                 Stroke="#FFC8102E"
-                StrokeThickness="33.33"
-                Clip="M 0 0 V 125 H 500 V 250 H 500 z M 500 0 H 250 V 250 H 0 V 250 z" />
+                StrokeThickness="4"
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
             <Path
-                Data="M 250 0 V 250 M 0 125 H 500"
-                Stroke="#ffffff"
-                StrokeThickness="83.33"/>
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="10" />
 
             <Path
-                Data="M 250 0 V 250 M 0 125 H 500"
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
                 Stroke="#FFC8102E"
-                StrokeThickness="50" />
+                StrokeThickness="6" />
 
         </Canvas>
 

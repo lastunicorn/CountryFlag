@@ -24,42 +24,49 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <Canvas x:Key="CountryFlag_CK" Width="9600" Height="4800">
 
-        <Canvas>
+        <!-- Background -->
+
+        <Rectangle
+            Width="9600"
+            Height="4800"
+            Fill="#012169" />
+
+        <!-- United Kingdom Flag -->
+
+        <Canvas Clip="M 0,0 H 60 V 30 H 0 z">
+
             <Canvas.RenderTransform>
-                <ScaleTransform ScaleX="800" ScaleY="800" />
+                <ScaleTransform ScaleX="80" ScaleY="80" />
             </Canvas.RenderTransform>
 
-            <!-- Background -->
-
-            <Rectangle
-                Width="12"
-                Height="6"
-                Canvas.Left="0"
-                Canvas.Top="0"
-                Fill="#012169" />
-
-            <!-- United Kingdom Flag -->
+            <Path
+                Data="M0,0L0,30 60,30 60,0z"
+                Fill="#FF012169" />
 
             <Path
-                Data="M 0 0 6 3 M 6 0 0 3"
-                Stroke="#ffffff"
-                StrokeThickness="0.6"
-                Clip="M 0 0 H 6 V 3 H 0 z" />
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="6" />
 
             <Path
-                Data="M 0 0 6 3 M 6 0 0 3"
-                Stroke="#c8102e"
-                StrokeThickness="0.4"
-                Clip="M 0 0 V 1.5 H 6 V 3 H 6 z M 6 0 H 3 V 3 H 0 V 3 z" />
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="4"
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
             <Path
-                Data="M 3 0 v 3 M 0 1.5 h 6"
-                Stroke="#ffffff" />
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="10" />
 
             <Path
-                Data="M 3 0 V 3 M 0 1.5 h 6"
-                Stroke="#c8102e"
-                StrokeThickness="0.6" />
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="6" />
 
         </Canvas>
 

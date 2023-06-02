@@ -22,16 +22,37 @@ public static partial class FlagsSetup
     {
         Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
         {
-            Description = "The Shahada in black on a white field in the calligraphic Thuluth script",
+            Description = "The Shahada in black on a white field in the calligraphic Thuluth script.",
             StartDate = new FlagDate(1997, 10, 27),
             Usage = FlagUsage.NationalFlagAndEnsign
         });
-    }
 
-    public static void Afghanistan_IslamicRepublic()
-    {
-        Countries.Afghanistan_IslamicRepublic.Flags.Add(new CountryFlag
+        Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
         {
+            Id = "Variant_Shahada",
+            Description = "The Shahada in black on a white field in the calligraphic Thuluth script.",
+            StartDate = new FlagDate(1997, 10, 27),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
+
+        Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
+        {
+            Id = "Variant",
+            Description = "The Shahada in black on a white field, underneath which is \"Islamic Emirate of Afghanistan\" in Pashto, both written in calligraphic script",
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
+
+        Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
+        {
+            Id = "Republic",
+            Description = "Three vertical bands of black, red and green with the National Emblem in white centered on the red band and then slightly overlapping the black and green bands.",
+            StartDate = new FlagDate(2013, 08, 19),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
+
+        Countries.Afghanistan_IslamicEmirate.Flags.Add(new CountryFlag
+        {
+            Id = "Republic_Variant",
             Description = "Three vertical bands of black, red and green with the National Emblem in white centered on the red band and then slightly overlapping the black and green bands.",
             StartDate = new FlagDate(2013, 08, 19),
             Usage = FlagUsage.NationalFlagAndEnsign

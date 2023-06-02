@@ -25,7 +25,6 @@ public static partial class Countries
         // A
 
         yield return Afghanistan_IslamicEmirate;
-        yield return Afghanistan_IslamicRepublic;
         yield return Aland;
         yield return Albania;
         yield return Algeria;

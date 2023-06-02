@@ -1,20 +1,16 @@
 # Known Flag Errors and Inconsistences
 
-## Islamic Emirate of Afganistan (Critical)
-
-- Missing flag
-
 ## Heard Island and McDonald Islands (Critical)
 
 - Missing flag
 
-## Mexico (Critical)
+## Mexico
 
-- Missing flag
+- Some gradient colors may be missing.
 
-## South Georgia and the South Sandwich Islands (Critical)
+## South Georgia and the South Sandwich Islands
 
-- Missing flag
+- Some gradient colors may be missing,
 
 ## Costa Rica
 

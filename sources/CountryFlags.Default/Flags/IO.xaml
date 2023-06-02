@@ -82,38 +82,42 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </Path.RenderTransform>
         </Path>
 
-        <!-- UK Flag -->
+        <!-- United Kingdom Flag -->
 
-        <Canvas Clip="m 0,0 h 300 v 150 h -300 z">
+        <Canvas Clip="M 0,0 H 60 V 30 H 0 z">
+
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="5" ScaleY="5" />
+            </Canvas.RenderTransform>
 
             <Path
-                Data="M0,0L300,0 300,150 0,150z"
+                Data="M0,0L0,30 60,30 60,0z"
                 Fill="#FF012169" />
 
             <Path
-                Data="M0,0L300,150 M300,0L0,150"
+                Data="M0,0L60,30 M60,0L0,30"
                 Fill="#FF000000"
                 Stroke="#FFFFFFFF"
-                StrokeThickness="30" />
+                StrokeThickness="6" />
 
             <Path
-                Data="M0,0L300,150 M300,0L0,150"
+                Data="M0,0L60,30 M60,0L0,30"
                 Fill="#FF000000"
                 Stroke="#FFC8102E"
-                StrokeThickness="20"
-                Clip="m0 0v75h350v75h-50zm300 0h-150v200h-150v-50z" />
+                StrokeThickness="4"
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
             <Path
-                Data="M150,0L150,200 M0,75L350,75"
+                Data="M30,0L30,30 M0,15L60,15"
                 Fill="#FF000000"
                 Stroke="#FFFFFFFF"
-                StrokeThickness="50" />
+                StrokeThickness="10" />
 
             <Path
-                Data="M150,0L150,200 M0,75L350,75"
+                Data="M30,0L30,30 M0,15L60,15"
                 Fill="#FF000000"
                 Stroke="#FFC8102E"
-                StrokeThickness="30" />
+                StrokeThickness="6" />
 
         </Canvas>
 

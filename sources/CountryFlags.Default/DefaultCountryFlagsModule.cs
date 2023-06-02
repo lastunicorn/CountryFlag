@@ -31,7 +31,6 @@ public class DefaultCountryFlagsModule : IFlagModule
         // A
 
         FlagsSetup.Afghanistan_IslamicEmirate();
-        FlagsSetup.Afghanistan_IslamicRepublic();
         FlagsSetup.Aland();
         FlagsSetup.Albania();
         FlagsSetup.Algeria();

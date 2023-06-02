@@ -21,13 +21,7 @@ public static partial class Countries
     public static Country Afghanistan_IslamicEmirate { get; } = new()
     {
         ShortName = "Afghanistan",
-        FullName = "Islamic Emirate of Afghanistan"
-    };
-
-    public static Country Afghanistan_IslamicRepublic { get; } = new()
-    {
-        ShortName = "Afghanistan",
-        FullName = "Islamic Republic of Afghanistan",
+        FullName = "Islamic Emirate of Afghanistan",
         IsoCodeAlpha2 = "AF",
         IsoCodeAlpha3 = "AFG",
         IsoCodeNumeric = "004",

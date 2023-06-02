@@ -31,38 +31,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="120"
             Height="60" />
 
-        <!-- UK Flag -->
+        <!-- United Kingdom Flag -->
 
-        <Rectangle
-            Fill="#FF012169"
-            Width="60"
-            Height="30" />
+        <Canvas Clip="M 0,0 H 60 V 30 H 0 z">
 
-        <Path
-            Data="M 0,0 L 60,30 M 60,0 L 0,30"
-            Fill="#FF000000"
-            Stroke="#FFFFFFFF"
-            StrokeThickness="6"
-            Clip="M 0,0 H 60 V 30 H 0 z" />
+            <Path
+                Data="M0,0L0,30 60,30 60,0z"
+                Fill="#FF012169" />
 
-        <Path
-            Data="M 0,0 L 60,30 M 60,0 L 0,30"
-            Fill="#FF000000"
-            Stroke="#FFC8102E"
-            StrokeThickness="4"
-            Clip="M 0,0 V 15 H 60 V 30 H 60 z M 0,30 V 30 H 30 V 0 H 60 z" />
+            <Path
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="6" />
 
-        <Path
-            Data="M 30,0 L 30,30 M 0,15 L 60,15"
-            Fill="#FF000000"
-            Stroke="#FFFFFFFF"
-            StrokeThickness="10" />
+            <Path
+                Data="M0,0L60,30 M60,0L0,30"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="4"
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
-        <Path
-            Data="M 30,0 L 30,30 M 0,15 L 60,15"
-            Fill="#FF000000"
-            Stroke="#FFC8102E"
-            StrokeThickness="6" />
+            <Path
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="10" />
+
+            <Path
+                Data="M30,0L30,30 M0,15L60,15"
+                Fill="#FF000000"
+                Stroke="#FFC8102E"
+                StrokeThickness="6" />
+
+        </Canvas>
 
         <!-- Stars -->
 
