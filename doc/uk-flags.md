@@ -12,8 +12,8 @@
 
 - Fiji
 
-- Montsarrat
-- New Zeealand
+- Montserrat
+- New Zealand
 - Niue *
 
 - Pitcairn

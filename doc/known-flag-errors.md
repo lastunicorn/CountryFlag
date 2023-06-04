@@ -21,10 +21,6 @@
 - The crown is missing four green jewels.
 - The blue waves can be seen at the bottom of the United Kingdom flag.
 
-## Ecuador (Critical)
-
-- Missing the coat of arms
-
 ## Falkland Islands (Malvinas) (Critical)
 
 - Missing the coat of arms
