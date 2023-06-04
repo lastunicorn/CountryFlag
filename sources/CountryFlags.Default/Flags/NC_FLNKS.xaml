@@ -22,41 +22,101 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- New Caledonia (Flnks) -->
 
-    <!-- Incomplete -->
+    <Canvas x:Key="CountryFlag_NC_FLNKS" Width="900" Height="450">
 
-    <Canvas x:Key="CountryFlag_NC_FLNKS" Width="6" Height="3">
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FF009543"
+            Width="900"
+            Height="450" />
+
+        <Rectangle
+            Fill="#FFED4135"
+            Width="900"
+            Height="300" />
+
+        <Rectangle
+            Fill="#FF0035AD"
+            Width="900"
+            Height="150" />
+
+        <!-- Circle -->
+
+        <Ellipse
+            Fill="#FFFAE600"
+            Stroke="#FF000000"
+            StrokeThickness="5"
+            Width="294.96"
+            Height="294.96"
+            Canvas.Left="152.52"
+            Canvas.Top="77.52000000000001" />
+
+        <Path
+            Data="M275,247L325,247 M275,210L325,210 M300,78L300,330"
+            Fill="#FF000000"
+            Stroke="#FF000000"
+            StrokeThickness="6" />
+
+        <Path
+            Data="M240.62,360.419C300.811,384.999 357.228,361.929 357.228,361.929 357.228,361.929 335.931,338.881 325.014,329.882 314.361,321.104 283.023,321.451 272.329,329.882 263.405,336.92 237.809,362.852 240.62,360.419z"
+            Fill="#FF000000" />
+
+        <Ellipse
+            Fill="#FF000000"
+            Width="33"
+            Height="48"
+            Canvas.Left="283.5"
+            Canvas.Top="269" />
+
+        <Ellipse
+            Fill="#FF000000"
+            Width="40"
+            Height="25.31999969482422"
+            Canvas.Left="280"
+            Canvas.Top="215.8400001525879" />
+
+        <Ellipse
+            Fill="#FF000000"
+            Width="40"
+            Height="40"
+            Canvas.Left="280"
+            Canvas.Top="150" />
+
+        <Path
+            Data="M324,95.5C323.994,95.4866 325.733,98.3708 322.087,104.936 304.661,136.319 287.174,136.997 283.855,139.7 280.197,142.678 278.653,142.474 278.653,142.474 278.914,139.786 279.157,128.795 279.348,127.736 281.993,113.073 304.144,113.275 321.48,98.2605 324.188,95.915 323.994,95.4866 323.994,95.4866z"
+            Fill="#FF000000" />
 
         <Canvas>
 
-            <Rectangle
-                Width="6"
-                Height="1"
-                Canvas.Left="0"
-                Canvas.Top="0"
-                Fill="#FF0035AD" />
+            <Path
+                Data="M265.5,163C265.5,163 269.41436,174.22974 270,185.5 270.93516,203.49657 288.18031,204 300,204L300,194C291.14149,194 283.44733,192.68342 277,179.5 273.81955,172.99664 265.5,163 265.5,163z"
+                Fill="#FF000000" />
 
-            <Rectangle
-                Width="6"
-                Height="1"
-                Canvas.Left="0"
-                Canvas.Top="1"
-                Fill="#FFED4135" />
-
-            <Rectangle
-                Width="6"
-                Height="1"
-                Canvas.Left="0"
-                Canvas.Top="2"
-                Fill="#FF009543" />
+            <Path
+                Data="M265,308C265,308 271.29638,300.23457 278.6619,282.02539 282.5048,272.5249 291.6115,267 300,267L300,253C280.97243,253 271.8497,260.0552 270.88719,270.36332 268.90975,291.54089 265,308 265,308z"
+                Fill="#FF000000" />
 
         </Canvas>
 
-        <TextBlock
-            Text="Incomplete"
-            Foreground="White"
-            FontSize=".18"
-            Canvas.Left=".12"
-            Canvas.Top=".06" />
+        <Canvas>
+
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="1" />
+                    <TranslateTransform X="600" Y="0" />
+                </TransformGroup>
+            </Canvas.RenderTransform>
+
+            <Path
+                Data="M265.5,163C265.5,163 269.41436,174.22974 270,185.5 270.93516,203.49657 288.18031,204 300,204L300,194C291.14149,194 283.44733,192.68342 277,179.5 273.81955,172.99664 265.5,163 265.5,163z"
+                Fill="#FF000000" />
+
+            <Path
+                Data="M265,308C265,308 271.29638,300.23457 278.6619,282.02539 282.5048,272.5249 291.6115,267 300,267L300,253C280.97243,253 271.8497,260.0552 270.88719,270.36332 268.90975,291.54089 265,308 265,308z"
+                Fill="#FF000000" />
+
+        </Canvas>
 
     </Canvas>
 

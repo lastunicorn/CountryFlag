@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns:core="clr-namespace:DustInTheWind.Flags.Core;assembly=DustInTheWind.Flags.Core"
     xmlns:views="clr-namespace:DustInTheWind.CountryFlags.Demo.Views"
     xmlns:viewModels="clr-namespace:DustInTheWind.CountryFlags.Demo.ViewModels"
+    xmlns:demo="clr-namespace:DustInTheWind.CountryFlags.Demo"
 
     mc:Ignorable="d"
     Title="MainWindow"
@@ -116,10 +117,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 DockPanel.Dock="Top"
                 Height="40" />
 
-            <core:FlagBox
-                CountryCode="{Binding FlagId}"
-                BorderThickness="2"
-                BorderBrush="LightGray" />
+            <demo:ZoomBorder ClipToBounds="True" Background="Transparent">
+                <core:FlagBox
+                    CountryCode="{Binding FlagId}"
+                    BorderThickness="2"
+                    BorderBrush="LightGray" />
+            </demo:ZoomBorder>
 
         </DockPanel>
 

@@ -21,25 +21,13 @@
 - The crown is missing four green jewels.
 - The blue waves can be seen at the bottom of the United Kingdom flag.
 
-## Falkland Islands (Malvinas) (Critical)
-
-- Missing the coat of arms
-
 ## Morocco
 
 - Missing star's border (probably).
 
-## New Caledonia (Critical)
-
-- Second flag is incomplete.
-
 ## Nicaragua
 
 - Some glitches at the mountains base.
-
-## San Marino (Critical)
-
-- Missing coat of arms.
 
 ## Saudi Arabia
 
