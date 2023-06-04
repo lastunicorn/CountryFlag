@@ -1,9 +1,5 @@
 # Known Flag Errors and Inconsistences
 
-## Heard Island and McDonald Islands (Critical)
-
-- Missing flag
-
 ## Mexico
 
 - Some gradient colors may be missing.
@@ -18,7 +14,6 @@
 
 ## British Indian Ocean Territory
 
-- The crown is missing four green jewels.
 - The blue waves can be seen at the bottom of the United Kingdom flag.
 
 ## Morocco

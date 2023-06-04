@@ -31,7 +31,10 @@ public static partial class FlagsSetup
 
     public static void HeardIslandAndMcDonaldIslands()
     {
-        Countries.HeardIslandAndMcDonaldIslands.Flags.Add(new CountryFlag());
+        Countries.HeardIslandAndMcDonaldIslands.Flags.Add(new CountryFlag
+        {
+            Description = "The Territory of Heard Island and McDonald Islands is an Australian external territory, and uses the Australian flag."
+        });
     }
 
     public static void HolySee()

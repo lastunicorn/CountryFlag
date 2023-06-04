@@ -1957,7 +1957,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <TranslateTransform X="-302.2398" Y="-173.08589" />
                             </Canvas.RenderTransform>
 
-                            <Canvas RenderTransform="0.87076257,-0.01395006,0.01557975,0.77967835,-53.130928,133.63024">
+                            <Canvas>
+
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <MatrixTransform Matrix="0.99582463,-0.09128695,0.13842545,0.99037286,0,0" />
+                                        <MatrixTransform Matrix="0.87076257,-0.01395006,0.01557975,0.77967835,-53.130928,133.63024" />
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
 
                                 <Rectangle
                                     Fill="#FFFED100"
@@ -1970,9 +1977,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     StrokeDashOffset="0"
                                     Width="35.828732"
                                     Height="22.673826"
-                                    RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                     Canvas.Left="494.62906"
-                                    Canvas.Top="340.21054" />
+                                    Canvas.Top="340.21054"
+                                    RadiusX="10.770632"
+                                    RadiusY="10.770632" />
 
                                 <Rectangle
                                     Fill="#FF306947"
@@ -1980,9 +1988,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     StrokeMiterLimit="4"
                                     Width="29.954123"
                                     Height="16.541948"
-                                    RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                     Canvas.Left="497.56638"
-                                    Canvas.Top="343.27649" />
+                                    Canvas.Top="343.27649"
+                                    RadiusX="8.2709742"
+                                    RadiusY="8.2709742" />
 
                                 <Rectangle
                                     Stroke="#FF000000"
@@ -1994,9 +2003,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     StrokeDashOffset="0"
                                     Width="29.954123"
                                     Height="16.541948"
-                                    RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                     Canvas.Left="497.56638"
-                                    Canvas.Top="343.27649" />
+                                    Canvas.Top="343.27649"
+                                    RadiusX="8.2709742"
+                                    RadiusY="8.2709742" />
 
                             </Canvas>
 
@@ -2147,7 +2157,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                             <Canvas RenderTransform="-1,0,0,1,994.39268,0">
 
-                                <Canvas RenderTransform="0.87076257,-0.01395006,0.01557975,0.77967835,-53.130928,133.63024">
+                                <Canvas>
+
+                                    <Canvas.RenderTransform>
+                                        <TransformGroup>
+                                            <MatrixTransform Matrix="0.99582463,-0.09128695,0.13842545,0.99037286,0,0" />
+                                            <MatrixTransform Matrix="0.87076257,-0.01395006,0.01557975,0.77967835,-53.130928,133.63024" />
+                                        </TransformGroup>
+                                    </Canvas.RenderTransform>
 
                                     <Rectangle
                                         Fill="#FFFED100"
@@ -2160,9 +2177,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                         StrokeDashOffset="0"
                                         Width="35.828732"
                                         Height="22.673826"
-                                        RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                         Canvas.Left="494.62906"
-                                        Canvas.Top="340.21054" />
+                                        Canvas.Top="340.21054"
+                                        RadiusX="10.770632"
+                                        RadiusY="10.770632" />
 
                                     <Rectangle
                                         Fill="#FF306947"
@@ -2170,9 +2188,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                         StrokeMiterLimit="4"
                                         Width="29.954123"
                                         Height="16.541948"
-                                        RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                         Canvas.Left="497.56638"
-                                        Canvas.Top="343.27649" />
+                                        Canvas.Top="343.27649"
+                                        RadiusX="8.2709742"
+                                        RadiusY="8.2709742" />
 
                                     <Rectangle
                                         Stroke="#FF000000"
@@ -2184,9 +2203,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                         StrokeDashOffset="0"
                                         Width="29.954123"
                                         Height="16.541948"
-                                        RenderTransform="0.99582463,-0.09128695,0.13842545,0.99037286,0,0"
                                         Canvas.Left="497.56638"
-                                        Canvas.Top="343.27649" />
+                                        Canvas.Top="343.27649"
+                                        RadiusX="8.2709742"
+                                        RadiusY="8.2709742" />
 
                                 </Canvas>
 
