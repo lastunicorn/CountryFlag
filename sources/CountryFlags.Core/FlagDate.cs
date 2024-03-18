@@ -19,7 +19,7 @@ using System.Text;
 
 namespace DustInTheWind.CountryFlags
 {
-    public struct FlagDate
+    public readonly struct FlagDate
     {
         public int Year { get; }
 

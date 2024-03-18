@@ -15,10 +15,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows;
+using DustInTheWind.CountryFlags.DefaultFlags;
 using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
-using DustInTheWind.CountryFlags.Main;
-using DustInTheWind.CountryFlags.Present;
+using DustInTheWind.CountryFlags.InUseFlags;
 using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Demo
