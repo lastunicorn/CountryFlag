@@ -41,6 +41,8 @@ public class FlagInfoViewModel
 
     public FlagDate? StartDate { get; }
 
+    public ExportCommand ExportCommand { get; }
+
     public FlagInfoViewModel(CountryFlag? countryFlag)
     {
         CountryName = countryFlag?.Country?.ShortName;
@@ -59,6 +61,8 @@ public class FlagInfoViewModel
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
 
         StartDate = countryFlag?.StartDate;
+
+        ExportCommand = new ExportCommand(countryFlag);
     }
 
     public override string ToString()

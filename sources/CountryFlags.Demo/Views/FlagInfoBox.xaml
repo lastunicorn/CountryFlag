@@ -183,6 +183,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </DockPanel>
 
+        <TextBlock
+            Text="Export"
+            Background="LightGray"
+            Padding="8"
+            FontSize="16"
+            Margin="0 0 0 10"/>
+
+        <Button
+            Margin="0 0 0 10"
+            Content="Export"
+            Command="{Binding ExportCommand}"
+            CommandParameter="{Binding IsoCodeNumeric}"/>
+
     </StackPanel>
 
 </UserControl>

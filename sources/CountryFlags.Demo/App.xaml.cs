@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -22,26 +22,25 @@ using DustInTheWind.CountryFlags.InUseFlags;
 using DustInTheWind.CountryFlags.OutdatedFlags;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.Demo
+namespace DustInTheWind.CountryFlags.Demo;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    protected override void OnStartup(StartupEventArgs e)
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            FlagsSetup.LoadModule(typeof(DefaultFlagsModule));
-            FlagsSetup.LoadModule(typeof(InUseFlagsModule));
-            FlagsSetup.LoadModule(typeof(OutdatedFlagsModule));
+        FlagsSetup.LoadModule(typeof(DefaultFlagsModule));
+        FlagsSetup.LoadModule(typeof(InUseFlagsModule));
+        FlagsSetup.LoadModule(typeof(OutdatedFlagsModule));
 
-            MainViewModel mainViewModel = new();
-            MainWindow mainWindow = new(mainViewModel);
-            mainWindow.Show();
+        MainViewModel mainViewModel = new();
+        MainWindow mainWindow = new(mainViewModel);
+        mainWindow.Show();
 
-            MainWindow = mainWindow;
+        MainWindow = mainWindow;
 
-            base.OnStartup(e);
-        }
+        base.OnStartup(e);
     }
 }
