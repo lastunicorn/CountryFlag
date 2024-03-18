@@ -248,19 +248,6 @@ internal static partial class FlagsSetup
     {
         Countries.PuertoRico.Flags.Add(new CountryFlag
         {
-            Id = "AzulCeleste",
-            Names = new List<FlagName>
-            {
-                "Original flag version from 1895"
-            },
-            Description = "Five equal horizontal bands of red (top and bottom) alternating with white; Azul Celeste (sky blue tone) equilateral triangle based on the hoist side bears a large, white, five-pointed star in the center.",
-            StartDate = new FlagDate(1895, 12, 22),
-            EndDate = new FlagDate(1898, 12, 10),
-            Comments = "Flag was abandoned after military occupation by the United States."
-        });
-
-        Countries.PuertoRico.Flags.Add(new CountryFlag
-        {
             Id = "DarkBlue",
             Names = new List<FlagName>
             {

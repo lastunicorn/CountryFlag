@@ -67,18 +67,6 @@ internal static partial class FlagsSetup
             StartDate = new FlagDate(1999),
             Usage = FlagUsage.LeaderFlag
         });
-
-        Countries.CaymanIslands.Flags.Add(new CountryFlag
-        {
-            Id = "Old1958",
-            Names = new List<FlagName>
-            {
-                "Old flag"
-            },
-            StartDate = new FlagDate(1958),
-            EndDate = new FlagDate(1999),
-            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.StateEnsign
-        });
     }
 
     public static void CentralAfricanRepublic ()

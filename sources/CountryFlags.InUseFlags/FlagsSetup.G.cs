@@ -14,14 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.Generic;
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Gabon ()
+    public static void Gabon()
     {
         Countries.Gabon.Flags.Add(new CountryFlag
         {
@@ -35,7 +34,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Gambia ()
+    public static void Gambia()
     {
         Countries.Gambia.Flags.Add(new CountryFlag
         {
@@ -48,7 +47,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Georgia ()
+    public static void Georgia()
     {
         Countries.Georgia.Flags.Add(new CountryFlag
         {
@@ -102,7 +101,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Germany ()
+    public static void Germany()
     {
         Countries.Germany.Flags.Add(new CountryFlag
         {
@@ -129,7 +128,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Ghana ()
+    public static void Ghana()
     {
         Countries.Ghana.Flags.Add(new CountryFlag
         {
@@ -154,7 +153,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Gibraltar ()
+    public static void Gibraltar()
     {
         Countries.Gibraltar.Flags.Add(new CountryFlag
         {
@@ -203,15 +202,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Greece ()
+    public static void Greece()
     {
     }
 
-    public static void Greenland ()
+    public static void Greenland()
     {
     }
 
-    public static void Grenada ()
+    public static void Grenada()
     {
         Countries.Grenada.Flags.Add(new CountryFlag
         {
@@ -234,15 +233,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Guadeloupe ()
+    public static void Guadeloupe()
     {
     }
 
-    public static void Guam ()
+    public static void Guam()
     {
     }
 
-    public static void Guatemala ()
+    public static void Guatemala()
     {
         Countries.Guatemala.Flags.Add(new CountryFlag
         {
@@ -257,11 +256,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Guernsey ()
+    public static void Guernsey()
     {
     }
 
-    public static void Guinea ()
+    public static void Guinea()
     {
         Countries.Guinea.Flags.Add(new CountryFlag
         {
@@ -274,11 +273,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void GuineaBissau ()
+    public static void GuineaBissau()
     {
     }
 
-    public static void Guyana ()
+    public static void Guyana()
     {
         Countries.Guyana.Flags.Add(new CountryFlag
         {

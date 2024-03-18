@@ -83,19 +83,6 @@ internal static partial class FlagsSetup
             Description = "A field of air force blue with the national flag of Bangladesh in the canton and the Bangladesh Air Force roundel in the middle of the fly.",
             Usage = FlagUsage.AirForceEnsign
         });
-
-        Countries.Bangladesh.Flags.Add(new CountryFlag
-        {
-            Id = "Liberation1971",
-            Names = new List<FlagName>
-            {
-                "Liberation War 1971"
-            },
-            Description = "A red disc with a golden outline of Bangladesh on a green banner.",
-            Comments = "Flag used during the Liberation War (1971)",
-            StartDate = new FlagDate(1971, 03, 02),
-            EndDate = new FlagDate(1971, 12, 12)
-        });
     }
 
     public static void Barbados ()

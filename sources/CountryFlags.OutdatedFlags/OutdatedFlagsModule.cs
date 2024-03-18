@@ -17,20 +17,20 @@
 using System.Collections.Generic;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.DefaultFlags;
+namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
-public class DefaultFlagsModule : IFlagModule
+public class OutdatedFlagsModule : IFlagModule
 {
     private static volatile bool isInitialized;
 
     public IEnumerable<IFlagRepository> GetFlagRepositories()
     {
-        yield return new DefaultFlagsRepository();
+        yield return new OutdatedFlagsRepository();
     }
 
     public void InitializeFlags()
     {
-        if(isInitialized)
+        if (isInitialized)
             return;
 
         AddFlagsToCountries();
@@ -43,6 +43,7 @@ public class DefaultFlagsModule : IFlagModule
         // A
 
         FlagsSetup.Afghanistan_IslamicEmirate();
+        FlagsSetup.Afghanistan_IslamicRepublic();
         FlagsSetup.Aland();
         FlagsSetup.Albania();
         FlagsSetup.Algeria();
@@ -282,7 +283,7 @@ public class DefaultFlagsModule : IFlagModule
         // S
 
         FlagsSetup.SaintBarthelemy();
-        FlagsSetup.SaintHelenaAscensionAndTristanDdaCunha();
+        FlagsSetup.SaintHelena();
         FlagsSetup.SaintKittsAndNevis();
         FlagsSetup.SaintLucia();
         FlagsSetup.SaintMartin();

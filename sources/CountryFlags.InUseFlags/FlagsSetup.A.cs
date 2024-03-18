@@ -34,7 +34,6 @@ internal static partial class FlagsSetup
     
     public static void Albania()
     {
-
         Countries.Albania.Flags.Add(new CountryFlag
         {
             Id = "CivilEnsign",

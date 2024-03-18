@@ -19,6 +19,7 @@ using DustInTheWind.CountryFlags.DefaultFlags;
 using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
 using DustInTheWind.CountryFlags.InUseFlags;
+using DustInTheWind.CountryFlags.OutdatedFlags;
 using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Demo
@@ -32,6 +33,7 @@ namespace DustInTheWind.CountryFlags.Demo
         {
             FlagsSetup.LoadModule(typeof(DefaultFlagsModule));
             FlagsSetup.LoadModule(typeof(InUseFlagsModule));
+            FlagsSetup.LoadModule(typeof(OutdatedFlagsModule));
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

@@ -41,4 +41,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CountryFlags.Core\CountryFlags.Core.csproj" />
+      <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Flags\RO_MoldaviaAndWallachia.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_PeopleRepublic1.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_PeopleRepublic2.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_PeopleRepublic3.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_Revolution1989.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_SocialistRepublic.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_UnitedPrincipalities.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\RO_UnitedRomania.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+    </ItemGroup>
+
 </Project>
