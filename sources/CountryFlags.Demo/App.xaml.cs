@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Reflection;
 using System.Windows;
 using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
@@ -31,10 +30,9 @@ namespace DustInTheWind.CountryFlags.Demo
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            Assembly countryFlagsAssembly = typeof(Countries).Assembly;
-            Assembly defaultCountryFlagsAssembly = typeof(DefaultCountryFlagsModule).Assembly;
-            Assembly inUseCountryFlagsAssembly = typeof(InUseCountryFlagsModule).Assembly;
-            FlagModules.LoadFrom(countryFlagsAssembly, defaultCountryFlagsAssembly);
+            FlagModules.LoadFromAssemblyContaining(typeof(Countries));
+            FlagModules.LoadFromAssemblyContaining(typeof(DefaultCountryFlagsModule));
+            FlagModules.LoadFromAssemblyContaining(typeof(InUseCountryFlagsModule));
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);

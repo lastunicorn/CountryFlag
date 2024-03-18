@@ -23,6 +23,12 @@ namespace DustInTheWind.Flags.Core;
 
 public static class FlagModules
 {
+    public static void LoadFromAssemblyContaining(Type type)
+    {
+        Assembly assembly = type.Assembly;
+        LoadFrom(assembly);
+    }
+
     public static void LoadFrom(params Assembly[] assemblies)
     {
         List<IFlagModule> flagModules = assemblies
