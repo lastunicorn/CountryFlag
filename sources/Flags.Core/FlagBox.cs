@@ -21,7 +21,7 @@ namespace DustInTheWind.Flags.Core;
 
 public class FlagBox : Control
 {
-    #region CountryCode
+    #region FlagRepository
 
     public static readonly DependencyProperty FlagRepositoryProperty = DependencyProperty.Register(
         nameof(FlagRepository),
@@ -107,6 +107,22 @@ public class FlagBox : Control
     {
         get => (Canvas)GetValue(FlagCanvasProperty);
         private set => SetValue(FlagCanvasPropertyKey, value);
+    }
+
+    #endregion
+
+    #region CornerRadius
+
+    public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(
+        nameof(CornerRadius),
+        typeof(CornerRadius),
+        typeof(FlagBox),
+        new FrameworkPropertyMetadata(new CornerRadius(), FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender));
+
+    public CornerRadius CornerRadius
+    {
+        get => (CornerRadius)GetValue(CornerRadiusProperty);
+        set => SetValue(CornerRadiusProperty, value);
     }
 
     #endregion

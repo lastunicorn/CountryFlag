@@ -24,9 +24,6 @@ public class StringList : List<string>
     {
         return string.IsNullOrEmpty(item)
             ? new StringList()
-            : new StringList
-            {
-                item
-            };
+            : new StringList { item };
     }
 }

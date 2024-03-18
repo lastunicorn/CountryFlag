@@ -39,7 +39,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             BorderBrush="{TemplateBinding BorderBrush}"
                             Padding="{TemplateBinding Padding}"
                             Background="{TemplateBinding Background}"
-                            HorizontalAlignment="Center">
+                            HorizontalAlignment="Center"
+                            CornerRadius="{TemplateBinding CornerRadius}">
 
                             <Viewbox
                                 Stretch="Uniform"

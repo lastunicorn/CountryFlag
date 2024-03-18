@@ -17,21 +17,32 @@
 using System.Collections.Generic;
 using DustInTheWind.Flags.Core;
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.DefaultFlags;
 
-public class InUseCountryFlagsModule : IFlagModule
+public class DefaultFlagsModule : IFlagModule
 {
+    private static volatile bool isInitialized;
+
     public IEnumerable<IFlagRepository> GetFlagRepositories()
     {
-        yield return new InUseCountryFlagsRepository();
+        yield return new DefaultFlagsRepository();
     }
 
-    public void AddFlagsToCountries()
+    public void InitializeFlags()
+    {
+        if(isInitialized)
+            return;
+
+        AddFlagsToCountries();
+
+        isInitialized = true;
+    }
+
+    private static void AddFlagsToCountries()
     {
         // A
 
         FlagsSetup.Afghanistan_IslamicEmirate();
-        FlagsSetup.Afghanistan_IslamicRepublic();
         FlagsSetup.Aland();
         FlagsSetup.Albania();
         FlagsSetup.Algeria();
@@ -129,22 +140,22 @@ public class InUseCountryFlagsModule : IFlagModule
 
         // G
 
-        FlagsSetup.Gabon();
-        FlagsSetup.Gambia();
-        FlagsSetup.Georgia();
-        FlagsSetup.Germany();
-        FlagsSetup.Ghana();
-        FlagsSetup.Gibraltar();
-        FlagsSetup.Greece();
-        FlagsSetup.Greenland();
-        FlagsSetup.Grenada();
-        FlagsSetup.Guadeloupe();
-        FlagsSetup.Guam();
-        FlagsSetup.Guatemala();
-        FlagsSetup.Guernsey();
-        FlagsSetup.Guinea();
-        FlagsSetup.GuineaBissau();
-        FlagsSetup.Guyana();
+        Main.FlagsSetup.Gabon();
+        Main.FlagsSetup.Gambia();
+        Main.FlagsSetup.Georgia();
+        Main.FlagsSetup.Germany();
+        Main.FlagsSetup.Ghana();
+        Main.FlagsSetup.Gibraltar();
+        Main.FlagsSetup.Greece();
+        Main.FlagsSetup.Greenland();
+        Main.FlagsSetup.Grenada();
+        Main.FlagsSetup.Guadeloupe();
+        Main.FlagsSetup.Guam();
+        Main.FlagsSetup.Guatemala();
+        Main.FlagsSetup.Guernsey();
+        Main.FlagsSetup.Guinea();
+        Main.FlagsSetup.GuineaBissau();
+        Main.FlagsSetup.Guyana();
 
         // H
 
@@ -271,7 +282,7 @@ public class InUseCountryFlagsModule : IFlagModule
         // S
 
         FlagsSetup.SaintBarthelemy();
-        FlagsSetup.SaintHelena();
+        FlagsSetup.SaintHelenaAscensionAndTristanDdaCunha();
         FlagsSetup.SaintKittsAndNevis();
         FlagsSetup.SaintLucia();
         FlagsSetup.SaintMartin();

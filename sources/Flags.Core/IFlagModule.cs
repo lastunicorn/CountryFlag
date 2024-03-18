@@ -22,5 +22,5 @@ public interface IFlagModule
 {
     IEnumerable<IFlagRepository> GetFlagRepositories();
 
-    void AddFlagsToCountries();
+    void InitializeFlags();
 }

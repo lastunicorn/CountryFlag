@@ -37,7 +37,7 @@ public class CountryFlag
             if (Id != null)
             {
                 if (sb.Length > 0)
-                    sb.Append(">");
+                    sb.Append('>');
 
                 sb.Append(Id);
             }

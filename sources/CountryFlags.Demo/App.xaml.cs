@@ -30,9 +30,8 @@ namespace DustInTheWind.CountryFlags.Demo
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            FlagModules.LoadFromAssemblyContaining(typeof(Countries));
-            FlagModules.LoadFromAssemblyContaining(typeof(DefaultCountryFlagsModule));
-            FlagModules.LoadFromAssemblyContaining(typeof(InUseCountryFlagsModule));
+            FlagsSetup.LoadModule(typeof(DefaultFlagsModule));
+            FlagsSetup.LoadModule(typeof(InUseFlagsModule));
 
             MainViewModel mainViewModel = new();
             MainWindow mainWindow = new(mainViewModel);
