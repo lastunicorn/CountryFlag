@@ -16,6 +16,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
@@ -41,6 +42,8 @@ public class FlagInfoViewModel
 
     public FlagDate? StartDate { get; }
 
+    public FlagDate? EndDate { get; }
+
     public ExportCommand ExportCommand { get; }
 
     public FlagInfoViewModel(CountryFlag? countryFlag)
@@ -51,16 +54,31 @@ public class FlagInfoViewModel
         IsoCodeNumeric = countryFlag?.Country?.IsoCodeNumeric;
         CountryFullName = countryFlag?.Country?.FullName;
 
-        IEnumerable<string>? flagNames = countryFlag?.Names?.Select(x => x.EnglishTranslation);
+        IEnumerable<string>? flagNames = countryFlag?.Names?
+            .Select(x =>
+            {
+                if (x.NativeName != null)
+                {
+                    return x.EnglishTranslation != null
+                        ? $"{x.NativeName} ({x.EnglishTranslation})"
+                        : x.NativeName;
+                }
+                else
+                {
+                    return x.EnglishTranslation;
+                }
+            });
+
         FlagName = flagNames != null
             ? string.Join(", ", flagNames)
-            : string.Empty;
+            : null;
 
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
 
         StartDate = countryFlag?.StartDate;
+        EndDate = countryFlag?.EndDate;
 
         ExportCommand = new ExportCommand(countryFlag);
     }

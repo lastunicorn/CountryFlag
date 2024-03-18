@@ -49,8 +49,9 @@ internal static class ShapeExtensions
         {
             bool isNone = string.Compare(fill, "none", StringComparison.OrdinalIgnoreCase) == 0;
 
-            if (!isNone)
-                shape.Fill = (Brush)new BrushConverter().ConvertFrom(fill)!;
+            shape.Fill = isNone
+                ? null
+                : (Brush)new BrushConverter().ConvertFrom(fill)!;
         }
     }
 

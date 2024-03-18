@@ -104,6 +104,11 @@ public class SvgGroup : SvgElement
                     SvgGroup svgGroupChild = new(serializationGChild);
                     Children.Add(svgGroupChild);
                 }
+                else if (serializationChild is Use serializationUseChild)
+                {
+                    SvgUse svgUseChild = new(serializationUseChild);
+                    Children.Add(svgUseChild);
+                }
             }
         }
     }

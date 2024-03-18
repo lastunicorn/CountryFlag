@@ -24,6 +24,8 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgElement
 {
+    public string? Id { get; set; }
+
     public SvgGroup? Parent { get; set; }
 
     public string? Fill { get; set; }
@@ -57,6 +59,8 @@ public class SvgElement
     protected internal SvgElement(Element element)
     {
         if (element == null) throw new ArgumentNullException(nameof(element));
+
+        Id = element.Id;
 
         Fill = element.Fill;
 
@@ -100,7 +104,7 @@ public class SvgElement
             : null;
     }
 
-    private Svg? GetParentSvg()
+    public Svg? GetParentSvg()
     {
         SvgGroup? parent = Parent;
 

@@ -117,11 +117,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 DockPanel.Dock="Top"
                 Height="40" />
 
-            <demo:ZoomBorder ClipToBounds="True" Background="Transparent">
+            <demo:ZoomBorder 
+                ClipToBounds="True"
+                Background="Transparent"
+                Padding="10">
+
                 <core:FlagBox
-                    CountryCode="{Binding FlagId}"
-                    BorderThickness="2"
-                    BorderBrush="LightGray" />
+                    CountryCode="{Binding FlagId}">
+
+                    <core:FlagBox.Effect>
+                        <DropShadowEffect
+                            Color="Black"
+                            Direction="0"
+                            ShadowDepth="0"
+                            BlurRadius="10" />
+                    </core:FlagBox.Effect>
+
+                </core:FlagBox>
             </demo:ZoomBorder>
 
         </DockPanel>

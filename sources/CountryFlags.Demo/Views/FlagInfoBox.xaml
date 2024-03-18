@@ -25,11 +25,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:viewModels="clr-namespace:DustInTheWind.CountryFlags.Demo.ViewModels"
     xmlns:countryFlags1="clr-namespace:DustInTheWind.CountryFlags;assembly=DustInTheWind.CountryFlags.Core"
+    xmlns:converters="clr-namespace:DustInTheWind.Flags.Core.Converters;assembly=DustInTheWind.Flags.Core"
 
     mc:Ignorable="d"
     d:DesignHeight="450"
     d:DesignWidth="800"
     d:DataContext="{d:DesignInstance viewModels:FlagInfoViewModel}">
+
+    <UserControl.Resources>
+        <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+    </UserControl.Resources>
 
     <StackPanel
         Grid.IsSharedSizeScope="True"
@@ -40,7 +45,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Background="LightGray"
             Padding="8"
             FontSize="16"
-            Margin="0 0 0 10"/>
+            Margin="0 0 0 10" />
 
         <DockPanel Margin="0 0 0 10">
 
@@ -117,9 +122,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Background="LightGray"
             Padding="8"
             FontSize="16"
-            Margin="0 0 0 10"/>
+            Margin="0 0 0 10" />
 
-        <DockPanel Margin="0 0 0 10">
+        <DockPanel
+            Margin="0 0 0 10"
+            Visibility="{Binding FlagName, Converter={StaticResource NullToVisibilityConverter}}">
 
             <TextBlock
                 DockPanel.Dock="Top"
@@ -133,7 +140,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </DockPanel>
 
-        <DockPanel Margin="0 0 0 10">
+        <DockPanel
+            Margin="0 0 0 10"
+            Visibility="{Binding FlagDescription, Converter={StaticResource NullToVisibilityConverter}}">
 
             <TextBlock
                 DockPanel.Dock="Top"
@@ -147,7 +156,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </DockPanel>
 
-        <DockPanel Margin="0 0 0 10">
+        <DockPanel
+            Margin="0 0 0 10"
+            Visibility="{Binding StartDate, Converter={StaticResource NullToVisibilityConverter}}">
 
             <TextBlock
                 DockPanel.Dock="Top"
@@ -157,6 +168,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <TextBlock
                 Text="{Binding StartDate}"
+                TextWrapping="Wrap" />
+
+        </DockPanel>
+
+        <DockPanel
+            Margin="0 0 0 10"
+            Visibility="{Binding EndDate, Converter={StaticResource NullToVisibilityConverter}}">
+
+            <TextBlock
+                DockPanel.Dock="Top"
+                Text="Obsolete"
+                FontSize="14"
+                FontWeight="DemiBold" />
+
+            <TextBlock
+                Text="{Binding EndDate}"
                 TextWrapping="Wrap" />
 
         </DockPanel>
@@ -188,13 +215,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Background="LightGray"
             Padding="8"
             FontSize="16"
-            Margin="0 0 0 10"/>
+            Margin="0 0 0 10" />
 
         <Button
             Margin="0 0 0 10"
             Content="Export"
             Command="{Binding ExportCommand}"
-            CommandParameter="{Binding IsoCodeNumeric}"/>
+            CommandParameter="{Binding IsoCodeNumeric}" />
 
     </StackPanel>
 

@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,16 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using DustInTheWind.SvgToXaml.Svg.Serialization;
+
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgStyleClass
+public class SvgUse : SvgElement
 {
-    public string? Name { get; init; }
-    
-    public SvgStyle? Value { get; init; }
+    public string? Href { get; set; }
 
-    public override string ToString()
+    public SvgUse()
     {
-        return $".{Name}{{{Value}}}";
+    }
+
+    internal SvgUse(Use use)
+        : base(use)
+    {
+        if (use == null) throw new ArgumentNullException(nameof(use));
+
+        Href = use.Href;
     }
 }

@@ -30,7 +30,7 @@ public class SvgStyleClasses : Collection<SvgStyleClass>
         if (text == null)
             return null;
 
-        Regex regex = new(@"\.(\w+){(.*)}", RegexOptions.Multiline);
+        Regex regex = new(@"\.(\w+){(.*?)}", RegexOptions.Multiline);
 
         MatchCollection matches = regex.Matches(text);
         

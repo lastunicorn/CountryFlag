@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.DefaultFlags;
 
 internal static partial class FlagsSetup
@@ -73,6 +75,13 @@ internal static partial class FlagsSetup
     {
         Countries.Albania.Flags.Add(new CountryFlag
         {
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    NativeName = "Flamuri Kombëtar"
+                }
+            },
             Description = "A red field with a black two-headed eagle in the center.",
             StartDate = new FlagDate(2002, 07, 22),
             DesignedBy = "Sadik Kaceli",

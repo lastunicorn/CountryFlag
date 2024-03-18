@@ -21,4 +21,9 @@ public class SvgStyleItem
     public string Name { get; init; }
 
     public string Value { get; init; }
+
+    public override string ToString()
+    {
+        return $"{Name}:{Value}";
+    }
 }

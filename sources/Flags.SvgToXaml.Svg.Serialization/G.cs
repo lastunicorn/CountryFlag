@@ -35,5 +35,6 @@ public class G : Element
     [XmlElement("rect", typeof(Rect))]
     [XmlElement("polygon", typeof(Polygon))]
     [XmlElement("g", typeof(G))]
+    [XmlElement("use", typeof(Use))]
     public object[]? Children { get; set; }
 }

@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Linq;
 using DustInTheWind.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
@@ -28,7 +29,7 @@ public class SvgDefinitions : SvgGroup
     internal SvgDefinitions(Defs defs)
     {
         if (defs == null) throw new ArgumentNullException(nameof(defs));
-        
+
         if (defs.Children != null)
         {
             foreach (object serializationChild in defs.Children)
@@ -65,5 +66,10 @@ public class SvgDefinitions : SvgGroup
                 }
             }
         }
+    }
+
+    public SvgElement? GetById(string id)
+    {
+        return Children.FirstOrDefault(x => x.Id == id);
     }
 }
