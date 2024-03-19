@@ -77,7 +77,7 @@ internal static partial class FlagsSetup
 
         Countries.Hungary.Flags.Add(new CountryFlag
         {
-            Id = "StateFlag",
+            Id = "Unofficial",
             Names = new List<FlagName>
             {
                 "Unofficial state flag"

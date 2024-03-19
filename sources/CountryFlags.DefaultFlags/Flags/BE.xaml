@@ -22,26 +22,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Belgium -->
 
-    <Canvas x:Key="CountryFlag_BE" Width="900" Height="780">
+    <Canvas x:Key="CountryFlag_BE" Width="15" Height="13">
 
         <Rectangle
-            Width="300"
-            Height="780"
+            Width="5"
+            Height="13"
             Canvas.Left="0"
             Canvas.Top="0"
             Fill="#000000" />
 
         <Rectangle
-            Width="300"
-            Height="780"
-            Canvas.Left="300"
+            Width="5"
+            Height="13"
+            Canvas.Left="5"
             Canvas.Top="0"
             Fill="#fdda25" />
 
         <Rectangle
-            Width="300"
-            Height="780"
-            Canvas.Left="600"
+            Width="5"
+            Height="13"
+            Canvas.Left="10"
             Canvas.Top="0"
             Fill="#ef3340" />
 

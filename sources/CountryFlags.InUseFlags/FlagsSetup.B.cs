@@ -107,9 +107,9 @@ internal static partial class FlagsSetup
     {
         Countries.Belgium.Flags.Add(new CountryFlag
         {
-            Id = "NationalFlag",
+            Id = "CivilEnsign",
             Description = "A vertical tricolour of black, yellow, and red.",
-            Usage = FlagUsage.NationalFlag
+            Usage = FlagUsage.CivilEnsign
         });
 
         Countries.Belgium.Flags.Add(new CountryFlag

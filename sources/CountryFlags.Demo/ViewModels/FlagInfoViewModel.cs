@@ -32,7 +32,7 @@ public class FlagInfoViewModel
 
     public string? CountryFullName { get; }
 
-    public string? FlagName { get; }
+    public List<string>? FlagNames { get; }
 
     public string? FlagDescription { get; }
 
@@ -46,6 +46,8 @@ public class FlagInfoViewModel
 
     public ExportCommand ExportCommand { get; }
 
+    public List<string>? DesignedBy { get; }
+
     public FlagInfoViewModel(CountryFlag? countryFlag)
     {
         CountryName = countryFlag?.Country?.ShortName;
@@ -54,7 +56,7 @@ public class FlagInfoViewModel
         IsoCodeNumeric = countryFlag?.Country?.IsoCodeNumeric;
         CountryFullName = countryFlag?.Country?.FullName;
 
-        IEnumerable<string>? flagNames = countryFlag?.Names?
+        FlagNames = countryFlag?.Names?
             .Select(x =>
             {
                 if (x.NativeName != null)
@@ -67,11 +69,12 @@ public class FlagInfoViewModel
                 {
                     return x.EnglishTranslation;
                 }
-            });
+            })
+            .ToList();
 
-        FlagName = flagNames != null
-            ? string.Join(", ", flagNames)
-            : null;
+        //FlagName = flagNames != null
+        //    ? string.Join(", ", flagNames)
+        //    : null;
 
         FlagDescription = countryFlag?.Description;
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
@@ -81,6 +84,8 @@ public class FlagInfoViewModel
         EndDate = countryFlag?.EndDate;
 
         ExportCommand = new ExportCommand(countryFlag);
+
+        DesignedBy = countryFlag?.DesignedBy;
     }
 
     public override string ToString()

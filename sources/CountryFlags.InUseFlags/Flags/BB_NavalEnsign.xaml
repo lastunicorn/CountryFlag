@@ -1,0 +1,55 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Barbados (Naval ensign) -->
+
+    <Canvas x:Key="CountryFlag_BB_NavalEnsign" Width="540" Height="270">
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="540"
+            Height="270" />
+
+        <Path
+            Data="M270,0L270,270 M0,135L540,135"
+            Fill="#FF000000"
+            Stroke="#FFCC0000"
+            StrokeThickness="36" />
+
+        <Rectangle
+            Fill="#FF00267F"
+            Width="252"
+            Height="117" />
+
+        <Rectangle
+            Fill="#FFFFC726"
+            Width="84"
+            Height="117"
+            Canvas.Left="84" />
+
+        <Path
+            Data="M126,20.708C128.73,27.622 131.509,34.814 137.466,40.331 135.618,39.764 132.382,39.257 130.312,39.308L130.312,68.376 139.141,69.595C139.461,69.564 139.568,69.108 139.569,68.481 140.415,59.46 142.722,51.864 145.364,44.024 145.551,42.948 148.898,38.859 146.32,39.576 146.009,39.613 142.542,40.924 143.091,40.298 147.8,35.777 154.672,32.521 161.353,31.552 161.943,31.411 162.291,31.684 161.759,32.32 152.907,44.989 145.489,59.936 145.55,77.67 142.101,77.67 133.761,75.783 130.312,75.783 130.25,80.732 130.375,91.343 130.312,96.292L121.688,96.292C121.625,91.343 121.75,80.732 121.688,75.783 118.239,75.783 109.898,77.67 106.449,77.67 106.511,59.936 99.092,44.989 90.241,32.32 89.709,31.684 90.057,31.411 90.647,31.552 97.327,32.521 104.2,35.777 108.908,40.298 109.458,40.924 105.99,39.613 105.68,39.576 103.102,38.859 106.449,42.948 106.636,44.024 109.278,51.864 111.585,59.46 112.431,68.481 112.432,69.108 112.539,69.564 112.859,69.595L121.688,68.376 121.688,39.308C119.617,39.257 116.382,39.764 114.534,40.331 120.49,34.814 123.269,27.622 126,20.708z"
+            Fill="#FF000000" />
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -94,7 +94,7 @@ internal static partial class FlagsSetup
         {
             Description = "A vertical tricolour of black, yellow, and red.",
             StartDate = new FlagDate(1831, 01, 23),
-            Usage = FlagUsage.CivilEnsign
+            Usage = FlagUsage.NationalFlag
         });
     }
 

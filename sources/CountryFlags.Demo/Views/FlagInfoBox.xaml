@@ -126,7 +126,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <DockPanel
             Margin="0 0 0 10"
-            Visibility="{Binding FlagName, Converter={StaticResource NullToVisibilityConverter}}">
+            Visibility="{Binding FlagNames, Converter={StaticResource NullToVisibilityConverter}}">
 
             <TextBlock
                 DockPanel.Dock="Top"
@@ -134,9 +134,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 FontSize="14"
                 FontWeight="DemiBold" />
 
-            <TextBlock
-                Text="{Binding FlagName}"
-                TextWrapping="Wrap" />
+            <ItemsControl ItemsSource="{Binding FlagNames}">
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                            Text="{Binding}"
+                            TextWrapping="Wrap" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+            </ItemsControl>
 
         </DockPanel>
 
@@ -153,6 +161,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <TextBlock
                 Text="{Binding FlagDescription}"
                 TextWrapping="Wrap" />
+
+        </DockPanel>
+
+        <DockPanel
+            Margin="0 0 0 10"
+            Visibility="{Binding DesignedBy, Converter={StaticResource NullToVisibilityConverter}}">
+
+            <TextBlock
+                DockPanel.Dock="Top"
+                Text="Designed By"
+                FontSize="14"
+                FontWeight="DemiBold" />
+
+            <ItemsControl ItemsSource="{Binding DesignedBy}">
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                            Text="{Binding}"
+                            TextWrapping="Wrap" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+            </ItemsControl>
 
         </DockPanel>
 
