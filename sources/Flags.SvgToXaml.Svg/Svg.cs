@@ -27,7 +27,7 @@ public class Svg : SvgGroup
     public SvgViewBox? ViewBox { get; set; }
 
     public SvgStyleClasses? SvgStyleClasses { get; set; }
-    
+
     public SvgDefinitions? SvgDefinitions { get; set; }
 
     public Svg()
@@ -53,5 +53,11 @@ public class Svg : SvgGroup
 
         if (svg.Defs != null)
             SvgDefinitions = new SvgDefinitions(svg.Defs);
+    }
+
+    public SvgElement? FindChild(string id)
+    {
+        return SvgDefinitions?.FindChild(id) ??
+               Children.FindChild(id);
     }
 }

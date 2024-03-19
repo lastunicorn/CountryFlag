@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -24,22 +26,24 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class ShapeExtensions
 {
-    public static void UpdateFrom(this Shape shape, SvgElement svgElement)
+    public static void InheritPropertiesFrom(this Shape shape, params SvgElement[] svgElements)
     {
-        SetFill(shape, svgElement);
-        SetStroke(shape, svgElement);
-        SetStrokeThickness(shape, svgElement);
-        SetStrokeLineCap(shape, svgElement);
-        SetStrokeLineJoin(shape, svgElement);
-        SetStrokeDashOffset(shape, svgElement);
-        SetStrokeMiterLimit(shape, svgElement);
-        SetRenderTransform(shape, svgElement);
-        SetOpacity(shape, svgElement);
+        SetFill(shape, svgElements);
+        SetStroke(shape, svgElements);
+        SetStrokeThickness(shape, svgElements);
+        SetStrokeLineCap(shape, svgElements);
+        SetStrokeLineJoin(shape, svgElements);
+        SetStrokeDashOffset(shape, svgElements);
+        SetStrokeMiterLimit(shape, svgElements);
+        SetRenderTransform(shape, svgElements);
+        SetOpacity(shape, svgElements);
     }
 
-    private static void SetFill(Shape shape, SvgElement svgElement)
+    private static void SetFill(Shape shape, params SvgElement[] svgElements)
     {
-        string? fill = svgElement.CalculateFill();
+        string? fill = svgElements
+            .Select(x => x.CalculateFill())
+            .FirstOrDefault(x => x != null);
 
         if (fill == null)
         {
@@ -55,9 +59,12 @@ internal static class ShapeExtensions
         }
     }
 
-    private static void SetStroke(Shape shape, SvgElement svgElement)
+    private static void SetStroke(Shape shape, params SvgElement[] svgElements)
     {
-        string? stroke = svgElement.CalculateStroke();
+        string? stroke = svgElements
+            .Select(x => x.CalculateStroke())
+            .FirstOrDefault(x => x != null);
+
         if (stroke != null)
         {
             bool isNone = string.Compare(stroke, "none", StringComparison.OrdinalIgnoreCase) == 0;
@@ -67,16 +74,22 @@ internal static class ShapeExtensions
         }
     }
 
-    private static void SetStrokeThickness(Shape shape, SvgElement svgElement)
+    private static void SetStrokeThickness(Shape shape, params SvgElement[] svgElements)
     {
-        double? strokeWidth = svgElement.CalculateStrokeWidth();
+        double? strokeWidth = svgElements
+            .Select(x => x.CalculateStrokeWidth())
+            .FirstOrDefault(x => x != null);
+
         if (strokeWidth != null)
             shape.StrokeThickness = strokeWidth.Value;
     }
 
-    private static void SetStrokeLineCap(Shape shape, SvgElement svgElement)
+    private static void SetStrokeLineCap(Shape shape, params SvgElement[] svgElements)
     {
-        StrokeLineCap? strokeLineCap = svgElement.CalculateStrokeLineCap();
+        StrokeLineCap? strokeLineCap = svgElements
+            .Select(x => x.CalculateStrokeLineCap())
+            .FirstOrDefault(x => x != null);
+
         if (strokeLineCap != null)
         {
             PenLineCap penLineCap = strokeLineCap switch
@@ -92,9 +105,12 @@ internal static class ShapeExtensions
         }
     }
 
-    private static void SetStrokeLineJoin(Shape shape, SvgElement svgElement)
+    private static void SetStrokeLineJoin(Shape shape, params SvgElement[] svgElements)
     {
-        StrokeLineJoin? strokeLineJoin = svgElement.CalculateStrokeLineJoin();
+        StrokeLineJoin? strokeLineJoin = svgElements
+            .Select(x => x.CalculateStrokeLineJoin())
+            .FirstOrDefault(x => x != null);
+
         if (strokeLineJoin != null)
         {
             shape.StrokeLineJoin = strokeLineJoin switch
@@ -107,29 +123,46 @@ internal static class ShapeExtensions
         }
     }
 
-    private static void SetStrokeDashOffset(Shape shape, SvgElement svgElement)
+    private static void SetStrokeDashOffset(Shape shape, params SvgElement[] svgElements)
     {
-        double? strokeDashOffset = svgElement.CalculateStrokeDashOffset();
+        double? strokeDashOffset = svgElements
+            .Select(x => x.CalculateStrokeDashOffset())
+            .FirstOrDefault(x => x != null);
+
         if (strokeDashOffset != null)
             shape.StrokeDashOffset = strokeDashOffset.Value;
     }
 
-    private static void SetStrokeMiterLimit(Shape shape, SvgElement svgElement)
+    private static void SetStrokeMiterLimit(Shape shape, params SvgElement[] svgElements)
     {
-        double? strokeMiterLimit = svgElement.CalculateStrokeMiterLimit();
+        double? strokeMiterLimit = svgElements
+            .Select(x => x.CalculateStrokeMiterLimit())
+            .FirstOrDefault(x => x != null);
+
         if (strokeMiterLimit != null)
             shape.StrokeMiterLimit = strokeMiterLimit.Value;
     }
 
-    private static void SetRenderTransform(UIElement shape, SvgElement svgElement)
+    private static void SetRenderTransform(UIElement shape, params SvgElement[] svgElements)
     {
-        if (svgElement.Transforms.Count > 0)
-            shape.RenderTransform = svgElement.Transforms.ToXaml();
+        //if (svgElement.Transforms.Count > 0)
+        //    shape.RenderTransform = svgElement.Transforms.ToXaml();
+
+        List<ISvgTransform> transforms = svgElements
+            .Reverse()
+            .SelectMany(x => x.Transforms)
+            .ToList();
+
+        if (transforms.Any())
+            shape.RenderTransform = transforms.ToXaml();
     }
 
-    private static void SetOpacity(Shape shape, SvgElement svgElement)
+    private static void SetOpacity(Shape shape, params SvgElement[] svgElements)
     {
-        double? opacity = svgElement.CalculateOpacity();
+        double? opacity = svgElements
+            .Select(x => x.CalculateOpacity())
+            .FirstOrDefault(x => x != null);
+
         if (opacity != null)
             shape.Opacity = opacity.Value;
     }

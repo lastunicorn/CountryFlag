@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
@@ -22,7 +23,7 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgEllipseExtensions
 {
-    public static Ellipse ToXaml(this SvgEllipse svgEllipse)
+    public static Ellipse ToXaml(this SvgEllipse svgEllipse, params SvgElement[] svgElements)
     {
         Ellipse ellipse = new()
         {
@@ -30,7 +31,11 @@ internal static class SvgEllipseExtensions
             Height = svgEllipse.RadiusY * 2
         };
 
-        ellipse.UpdateFrom(svgEllipse);
+        SvgElement[] svgElementsToInherit = svgElements
+            .SafeConcat(svgEllipse)
+            .ToArray();
+
+        ellipse.InheritPropertiesFrom(svgElementsToInherit);
 
         double left = svgEllipse.CenterX - svgEllipse.RadiusX;
         if (left != 0)

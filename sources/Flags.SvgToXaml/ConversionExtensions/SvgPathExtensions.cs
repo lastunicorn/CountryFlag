@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+using System.Linq;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
@@ -22,14 +24,20 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgPathExtensions
 {
-    public static Path ToXaml(this SvgPath svgPath)
+    public static Path ToXaml(this SvgPath svgPath, params SvgElement[] svgElements)
     {
+        if (svgPath == null) throw new ArgumentNullException(nameof(svgPath));
+
         Path path = new()
         {
             Data = Geometry.Parse(svgPath.Data)
         };
 
-        path.UpdateFrom(svgPath);
+        SvgElement[] svgElementsToInherit = svgElements
+            .SafeConcat(svgPath)
+            .ToArray();
+
+        path.InheritPropertiesFrom(svgElementsToInherit);
 
         return path;
     }

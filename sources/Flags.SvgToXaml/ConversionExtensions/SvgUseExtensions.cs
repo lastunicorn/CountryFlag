@@ -30,53 +30,49 @@ internal static class SvgUseExtensions
 
         Svg.Svg? svg =  svgUse.GetParentSvg();
 
-        if (svg?.SvgDefinitions != null)
+        
+
+        if (svg != null)
         {
             if (svgUse.Href != null && svgUse.Href.StartsWith("#"))
             {
                 string id = svgUse.Href[1..];
 
-                SvgElement? svgElement = svg.SvgDefinitions.GetById(id);
+                SvgElement? svgElement = svg.FindChild(id);
 
                 if (svgElement is SvgCircle svgCircle)
                 {
-                    Ellipse ellipse = svgCircle.ToXaml();
-                    ellipse.UpdateFrom(svgUse);
+                    Ellipse ellipse = svgCircle.ToXaml(svgUse);
                     return ellipse;
                 }
                 
                 if (svgElement is SvgEllipse svgEllipse)
                 {
-                    Ellipse ellipse = svgEllipse.ToXaml();
-                    ellipse.UpdateFrom(svgUse);
+                    Ellipse ellipse = svgEllipse.ToXaml(svgUse);
                     return ellipse;
                 }
                 
                 if (svgElement is SvgPath svgPath)
                 {
-                    Path xamlPath = svgPath.ToXaml();
-                    xamlPath.UpdateFrom(svgUse);
+                    Path xamlPath = svgPath.ToXaml(svgUse);
                     return xamlPath;
                 }
                 
                 if (svgElement is SvgLine svgLine)
                 {
-                    Line xamlLine = svgLine.ToXaml();
-                    xamlLine.UpdateFrom(svgUse);
+                    Line xamlLine = svgLine.ToXaml(svgUse);
                     return xamlLine;
                 }
                 
                 if (svgElement is SvgRectangle svgRect)
                 {
-                    Rectangle xamlRectangle = svgRect.ToXaml();
-                    xamlRectangle.UpdateFrom(svgUse);
+                    Rectangle xamlRectangle = svgRect.ToXaml(svgUse);
                     return xamlRectangle;
                 }
                 
                 if (svgElement is SvgPolygon svgPolygon)
                 {
-                    Polygon xamlPolygon = svgPolygon.ToXaml();
-                    xamlPolygon.UpdateFrom(svgUse);
+                    Polygon xamlPolygon = svgPolygon.ToXaml(svgUse);
                     return xamlPolygon;
                 }
                 

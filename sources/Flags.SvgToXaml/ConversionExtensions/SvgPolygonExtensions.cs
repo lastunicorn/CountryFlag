@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Linq;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 using FillRule = System.Windows.Media.FillRule;
@@ -23,14 +24,18 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgPolygonExtensions
 {
-    public static Polygon ToXaml(this SvgPolygon svgPolygon)
+    public static Polygon ToXaml(this SvgPolygon svgPolygon, params SvgElement[] svgElements)
     {
         Polygon polygon = new()
         {
             Points = svgPolygon.Points.ToXaml()
         };
 
-        polygon.UpdateFrom(svgPolygon);
+        SvgElement[] svgElementsToInherit = svgElements
+            .SafeConcat(svgPolygon)
+            .ToArray();
+
+        polygon.InheritPropertiesFrom(svgElementsToInherit);
 
         SetFillRule(polygon, svgPolygon);
 

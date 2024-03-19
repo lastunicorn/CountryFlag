@@ -1,0 +1,96 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Japan (Ground Self-Defense Force) -->
+
+    <Canvas x:Key="CountryFlag_JP_GroundForces" Width="1089" Height="914">
+
+        <!-- Background -->
+
+        <Path
+            Data="M0,0L1089,0 1089,914 0,914z"
+            Fill="#FFC0A73F" />
+        <Path
+            Data="M1089,457L752,457 740.7,524.6 1036.1,626.2z"
+            Fill="#FFBC002D" />
+        <Path
+            Data="M1089,457L752,457 740.7,524.6 1036.1,626.2z"
+            Fill="#FFBC002D"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M725.2,51.2L624.7,277 544.5,249.5 544.5,0z"
+            Fill="#FFBC002D"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M725.2,51.2L624.7,277 544.5,249.5 544.5,0z"
+            Fill="#FFBC002D" />
+        <Path
+            Data="M0,0L385.5,323.6 464.3,277 363.8,51.19999999999999z"
+            Fill="#FFBC002D" />
+        <Path
+            Data="M0,0L385.5,323.6 464.3,277 363.8,51.19999999999999z"
+            Fill="#FFBC002D"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M1089,0L703.5,323.6 624.7,277 725.2,51.19999999999999z"
+            Fill="#FFFFFFFF" />
+        <Path
+            Data="M1036.1,287.8L740.6999999999999,389.4 703.4999999999999,323.59999999999997 1089,-5.684341886080802E-14z"
+            Fill="#FFBC002D" />
+        <Path
+            Data="M1089,457L752,457 740.7,389.4 1036.1,287.79999999999995z"
+            Fill="#FFFFFFFF" />
+        <Path
+            Data="M52.9,287.8L348.29999999999995,389.4 385.49999999999994,323.59999999999997 -5.684341886080802E-14,-5.684341886080802E-14z"
+            Fill="#FFFFFFFF"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M363.8,51.2L464.3,277 544.5,249.5 544.5,0z"
+            Fill="#FFFFFFFF"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M1036.1,287.8L740.6999999999999,389.4 703.4999999999999,323.59999999999997 1089,-5.684341886080802E-14z"
+            Fill="#FFBC002D"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M1089,0L703.5,323.6 624.7,277 725.2,51.19999999999999z"
+            Fill="#FFFFFFFF"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M1089,457L752,457 740.7,389.4 1036.1,287.79999999999995z"
+            Fill="#FFFFFFFF"
+            RenderTransform="-1,0,0,-1,1089,914" />
+        <Path
+            Data="M52.9,287.8L348.29999999999995,389.4 385.49999999999994,323.59999999999997 -5.684341886080802E-14,-5.684341886080802E-14z"
+            Fill="#FFFFFFFF" />
+        <Path
+            Data="M363.8,51.2L464.3,277 544.5,249.5 544.5,0z"
+            Fill="#FFFFFFFF" />
+        <Ellipse
+            Fill="#FFBC002D"
+            Width="415"
+            Height="415"
+            Canvas.Left="337"
+            Canvas.Top="249.5" />
+    </Canvas>
+
+</ResourceDictionary>

@@ -73,7 +73,7 @@ public class SvgDefinitions : SvgGroup
         }
     }
 
-    public SvgElement? GetById(string id)
+    public SvgElement? FindChild(string? id)
     {
         return Children.FirstOrDefault(x => x.Id == id);
     }

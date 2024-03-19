@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.DefaultFlags;
 
 internal static partial class FlagsSetup
@@ -25,7 +27,27 @@ internal static partial class FlagsSetup
 
     public static void Japan()
     {
-        Countries.Japan.Flags.Add(new CountryFlag());
+        Countries.Japan.Flags.Add(new CountryFlag
+        {
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    NativeName = "日章旗",
+                    EnglishTranslation = "flag of the sun",
+                    Romanized = "Nisshoki"
+                },
+                new ()
+                {
+                    NativeName = "日の丸",
+                    EnglishTranslation = "Ball of the sun",
+                    Romanized = "Hinomaru"
+                }
+            },
+            Description = "A white background with a large crimson dot in the middle",
+            StartDate = new FlagDate(1999, 08, 13),
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Jersey()

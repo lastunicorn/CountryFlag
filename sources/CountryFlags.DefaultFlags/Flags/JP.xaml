@@ -22,21 +22,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Japan -->
 
-    <Canvas x:Key="CountryFlag_JP" Width="90" Height="60">
+    <Canvas x:Key="CountryFlag_JP" Width="15" Height="10">
 
         <Rectangle
-            Width="90"
-            Height="60"
+            Width="15"
+            Height="10"
             Canvas.Left="0"
             Canvas.Top="0"
             Fill="#ffffff" />
 
         <Ellipse
             Fill="#bc002d"
-            Width="36"
-            Height="36"
-            Canvas.Left="27"
-            Canvas.Top="12" />
+            Width="6"
+            Height="6"
+            Canvas.Left="4.5"
+            Canvas.Top="2" />
 
     </Canvas>
 

@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Media;
 using DustInTheWind.SvgToXaml.Svg;
 
@@ -22,7 +24,7 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgTransformExtensions
 {
-    public static Transform? ToXaml(this SvgTransformList svgTransformList)
+    public static Transform? ToXaml(this IList<ISvgTransform> svgTransformList)
     {
         switch (svgTransformList.Count)
         {

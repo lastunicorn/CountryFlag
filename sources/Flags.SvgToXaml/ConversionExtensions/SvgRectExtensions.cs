@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
@@ -22,7 +23,7 @@ namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
 internal static class SvgRectExtensions
 {
-    public static Rectangle ToXaml(this SvgRectangle svgRect)
+    public static Rectangle ToXaml(this SvgRectangle svgRect, params SvgElement[] svgElements)
     {
         Rectangle rectangle = new()
         {
@@ -30,7 +31,11 @@ internal static class SvgRectExtensions
             Height = svgRect.Height
         };
 
-        rectangle.UpdateFrom(svgRect);
+        SvgElement[] svgElementsToInherit = svgElements
+            .SafeConcat(svgRect)
+            .ToArray();
+
+        rectangle.InheritPropertiesFrom(svgElementsToInherit);
 
         if (svgRect.X != 0)
             Canvas.SetLeft(rectangle, svgRect.X);

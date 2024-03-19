@@ -14,30 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml;
 
-internal static class SvgLineExtensions
+internal static class EnumerableExtensions
 {
-    public static Line ToXaml(this SvgLine svgLine, params SvgElement[] svgElements)
+    public static IEnumerable<T> SafeConcat<T>(this IEnumerable<T> svgElements, T svgElement)
     {
-        Line line = new()
-        {
-            X1 = svgLine.X1,
-            Y1 = svgLine.Y1,
-            X2 = svgLine.X2,
-            Y2 = svgLine.Y2,
-        };
+        if (svgElements == null)
+            return new[] { svgElement };
 
-        SvgElement[] svgElementsToInherit = svgElements
-            .SafeConcat(svgLine)
-            .ToArray();
-
-        line.InheritPropertiesFrom(svgElementsToInherit);
-
-        return line;
+        return svgElements
+            .Concat(new[] { svgElement });
     }
 }
