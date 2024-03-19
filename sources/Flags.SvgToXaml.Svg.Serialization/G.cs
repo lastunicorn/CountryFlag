@@ -32,6 +32,7 @@ public class G : Element
     [XmlElement("circle", typeof(Circle))]
     [XmlElement("ellipse", typeof(Ellipse))]
     [XmlElement("path", typeof(Path))]
+    [XmlElement("line", typeof(Line))]
     [XmlElement("rect", typeof(Rect))]
     [XmlElement("polygon", typeof(Polygon))]
     [XmlElement("g", typeof(G))]

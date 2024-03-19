@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,18 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+using System.Windows.Shapes;
+using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-public class Defs
+internal static class SvgLineExtensions
 {
-    [XmlElement("circle", typeof(Circle))]
-    [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
-    [XmlElement("line", typeof(Line))]
-    [XmlElement("rect", typeof(Rect))]
-    [XmlElement("polygon", typeof(Polygon))]
-    [XmlElement("g", typeof(G))]
-    public object[]? Children { get; set; }
+    public static Line ToXaml(this SvgLine svgLine)
+    {
+        Line line = new()
+        {
+            X1 = svgLine.X1,
+            Y1 = svgLine.Y1,
+            X2 = svgLine.X2,
+            Y2 = svgLine.Y2,
+        };
+
+        line.UpdateFrom(svgLine);
+
+        return line;
+    }
 }

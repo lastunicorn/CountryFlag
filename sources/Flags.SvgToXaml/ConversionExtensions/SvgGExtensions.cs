@@ -50,6 +50,11 @@ internal static class SvgGExtensions
                 Path xamlPath = svgPath.ToXaml();
                 canvas.Children.Add(xamlPath);
             }
+            else if (svgElement is SvgLine svgLine)
+            {
+                Line xamlLine = svgLine.ToXaml();
+                canvas.Children.Add(xamlLine);
+            }
             else if (svgElement is SvgRectangle svgRect)
             {
                 Rectangle xamlRectangle = svgRect.ToXaml();

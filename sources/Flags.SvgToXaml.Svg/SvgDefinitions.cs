@@ -49,6 +49,11 @@ public class SvgDefinitions : SvgGroup
                     SvgPath path = new(serializationPath);
                     Children.Add(path);
                 }
+                else if (serializationChild is Line serializationLine)
+                {
+                    SvgLine line = new(serializationLine);
+                    Children.Add(line);
+                }
                 else if (serializationChild is Rect serializationRect)
                 {
                     SvgRectangle rectangle = new(serializationRect);

@@ -59,6 +59,13 @@ internal static class SvgUseExtensions
                     return xamlPath;
                 }
                 
+                if (svgElement is SvgLine svgLine)
+                {
+                    Line xamlLine = svgLine.ToXaml();
+                    xamlLine.UpdateFrom(svgUse);
+                    return xamlLine;
+                }
+                
                 if (svgElement is SvgRectangle svgRect)
                 {
                     Rectangle xamlRectangle = svgRect.ToXaml();

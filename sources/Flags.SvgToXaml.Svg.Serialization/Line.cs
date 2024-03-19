@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -18,14 +18,17 @@ using System.Xml.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
-public class Defs
+public class Line : Element
 {
-    [XmlElement("circle", typeof(Circle))]
-    [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
-    [XmlElement("line", typeof(Line))]
-    [XmlElement("rect", typeof(Rect))]
-    [XmlElement("polygon", typeof(Polygon))]
-    [XmlElement("g", typeof(G))]
-    public object[]? Children { get; set; }
+    [XmlAttribute("x1")]
+    public double X1 { get; set; }
+
+    [XmlAttribute("y1")]
+    public double Y1 { get; set; }
+    
+    [XmlAttribute("x2")]
+    public double X2 { get; set; }
+    
+    [XmlAttribute("y2")]
+    public double Y2 { get; set; }
 }
