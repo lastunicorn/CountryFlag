@@ -217,6 +217,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
+      <Page Update="Flags\VE_StateAndWar.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\VE_NavalJack.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\RU_NavalEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
@@ -272,6 +278,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\SV_Dios.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\VN_Police.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\VN_WarFlag.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
     </ItemGroup>
 

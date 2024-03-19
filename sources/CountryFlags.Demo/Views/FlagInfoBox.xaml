@@ -138,9 +138,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock
-                            Text="{Binding}"
-                            TextWrapping="Wrap" />
+                        <TextBlock TextWrapping="Wrap">
+                            <Run Text="•" />
+                            <Run Text="{Binding Mode=OneWay}" />
+                        </TextBlock>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
 
@@ -178,9 +179,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock
-                            Text="{Binding}"
-                            TextWrapping="Wrap" />
+                        <TextBlock TextWrapping="Wrap">
+                            <Run Text="•" />
+                            <Run Text="{Binding Mode=OneWay}" />
+                        </TextBlock>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
 

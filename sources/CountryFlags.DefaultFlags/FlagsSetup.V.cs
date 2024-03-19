@@ -36,7 +36,7 @@ internal static partial class FlagsSetup
         Countries.Venezuela.Flags.Add(new CountryFlag
         {
             Description = "A horizontal tricolour of yellow, blue and red with an arc of eight white five-pointed stars centred on the blue band.",
-            StartDate = new FlagDate(2006, 03, 12),
+            StartDate = new FlagDate(1896, 03, 12),
             DesignedBy = "Francisco de Miranda",
             Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign
         });

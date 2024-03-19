@@ -304,10 +304,18 @@ internal static partial class FlagsSetup
     {
         Countries.Czechia.Flags.Add(new CountryFlag
         {
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    NativeName = "Státní vlajka České republiky",
+                    EnglishTranslation = "National flag of the Czech Republic"
+                }
+            },
             Description = "Two equal horizontal bands of white (top) and red with a blue isosceles triangle based on the hoist side.",
             StartDate = new FlagDate(1993, 03, 30),
             DesignedBy = "Jaroslav Kursa",
-            Usage = FlagUsage.NationalEnsign | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.NationalEnsign
         });
     }
 }

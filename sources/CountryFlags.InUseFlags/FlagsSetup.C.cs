@@ -254,5 +254,11 @@ internal static partial class FlagsSetup
 
     public static void Czechia ()
     {
+        Countries.Czechia.Flags.Add(new CountryFlag
+        {
+            Id = "WarFlag",
+            StartDate = new FlagDate(1993),
+            Usage = FlagUsage.WarFlag
+        });
     }
 }

@@ -21,15 +21,15 @@ namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
-    private FlagItemViewModel? selectedFlag;
-    private FlagInfoViewModel? flagInfoViewModel;
-    private string? flagId;
-    private string? title;
-    private string? subtitle;
+    private FlagItemViewModel selectedFlag;
+    private FlagInfoViewModel flagInfoViewModel;
+    private string flagId;
+    private string title;
+    private string subtitle;
 
     public ImmutableList<FlagItemViewModel> Flags { get; }
 
-    public FlagItemViewModel? SelectedFlag
+    public FlagItemViewModel SelectedFlag
     {
         get => selectedFlag;
         set
@@ -41,7 +41,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public string? Title
+    public string Title
     {
         get => title;
         private set
@@ -54,7 +54,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public string? Subtitle
+    public string Subtitle
     {
         get => subtitle;
         private set
@@ -67,7 +67,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public FlagInfoViewModel? FlagInfoViewModel
+    public FlagInfoViewModel FlagInfoViewModel
     {
         get => flagInfoViewModel;
         private set
@@ -80,7 +80,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public string? FlagId
+    public string FlagId
     {
         get => flagId;
         private set
@@ -105,7 +105,7 @@ public class MainViewModel : ViewModelBase
 
     private void UpdateDisplayedFlag()
     {
-        CountryFlag? countryFlag = selectedFlag == null
+        CountryFlag countryFlag = selectedFlag == null
             ? null
             : Countries.EnumerateAll()
                 .SelectMany(x => x.Flags)

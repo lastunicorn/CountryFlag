@@ -16,25 +16,24 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class FlagInfoViewModel
 {
-    public string? CountryName { get; }
+    public string CountryName { get; }
+    
+    public string IsoCodeAlpha2 { get; }
 
-    public string? IsoCodeAlpha2 { get; }
+    public string IsoCodeAlpha3 { get; }
 
-    public string? IsoCodeAlpha3 { get; }
+    public string IsoCodeNumeric { get; }
 
-    public string? IsoCodeNumeric { get; }
+    public string CountryFullName { get; }
 
-    public string? CountryFullName { get; }
+    public List<string> FlagNames { get; }
 
-    public List<string>? FlagNames { get; }
-
-    public string? FlagDescription { get; }
+    public string FlagDescription { get; }
 
     public FlagUsage FlagUsage { get; }
 
@@ -46,9 +45,9 @@ public class FlagInfoViewModel
 
     public ExportCommand ExportCommand { get; }
 
-    public List<string>? DesignedBy { get; }
+    public List<string> DesignedBy { get; }
 
-    public FlagInfoViewModel(CountryFlag? countryFlag)
+    public FlagInfoViewModel(CountryFlag countryFlag)
     {
         CountryName = countryFlag?.Country?.ShortName;
         IsoCodeAlpha2 = countryFlag?.Country?.IsoCodeAlpha2;
@@ -65,19 +64,13 @@ public class FlagInfoViewModel
                         ? $"{x.NativeName} ({x.EnglishTranslation})"
                         : x.NativeName;
                 }
-                else
-                {
-                    return x.EnglishTranslation;
-                }
+                
+                return x.EnglishTranslation;
             })
             .ToList();
 
-        //FlagName = flagNames != null
-        //    ? string.Join(", ", flagNames)
-        //    : null;
-
         FlagDescription = countryFlag?.Description;
-        FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
+        FlagUsage = countryFlag?.Usage ?? CountryFlags.FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
 
         StartDate = countryFlag?.StartDate;

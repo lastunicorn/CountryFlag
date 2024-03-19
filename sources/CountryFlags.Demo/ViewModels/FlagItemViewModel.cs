@@ -20,9 +20,9 @@ namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class FlagItemViewModel
 {
-    public string? Title { get; }
+    public string Title { get; }
 
-    public string? Id { get; }
+    public string Id { get; }
 
     public bool IsAdditional { get; }
 
@@ -36,7 +36,7 @@ public class FlagItemViewModel
 
         if (IsAdditional)
         {
-            string? name = countryFlag.Names?.Count is > 0
+            string name = countryFlag.Names?.Count is > 0
                 ? countryFlag.Names.First().EnglishTranslation
                 : null;
 

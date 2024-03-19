@@ -47,7 +47,6 @@ internal static partial class FlagsSetup
                 "Naval Jack"
             },
             Description = "A navy blue field charged with an anchor with eight five- pointed stars in an arc above it.",
-            StartDate = new FlagDate(2006, 03, 12),
             Usage = FlagUsage.NavalJack
         });
     }
@@ -56,10 +55,10 @@ internal static partial class FlagsSetup
     {
         Countries.Vietnam.Flags.Add(new CountryFlag
         {
-            Id = "WarJack",
+            Id = "WarFlag",
             Names = new List<FlagName>
             {
-                "War Jack"
+                "War Flag"
             },
             Description = "A golden star centered on a red field, and yellow words Quyết thắng (Determining to win) in the upper canton.",
             Usage = FlagUsage.WarFlag

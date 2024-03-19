@@ -20,7 +20,7 @@ public readonly struct FlagName
 {
     public string NativeName { get; init; }
     
-    public string? Romanized { get; init; }
+    public string Romanized { get; init; }
     
     public string EnglishTranslation { get; init; }
 
