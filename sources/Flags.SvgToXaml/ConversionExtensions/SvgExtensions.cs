@@ -45,20 +45,26 @@ internal static class SvgExtensions
             canvas.Width = svg.ViewBox.Width.Value;
             canvas.Height = svg.ViewBox.Height.Value;
 
-            if (svg.ViewBox.OriginX is { Value: not 0 } || svg.ViewBox.OriginY is { Value: not 0 })
-            {
-                TranslateTransform canvasRenderTransform = new();
+            bool viewBoxIsTranslated = svg.ViewBox.OriginX is { Value: not 0 } ||
+                                       svg.ViewBox.OriginY is { Value: not 0 };
 
-                if (svg.ViewBox.OriginX != null && svg.ViewBox.OriginX.Value != 0)
-                    canvasRenderTransform.X = -svg.ViewBox.OriginX.Value;
-
-                if (svg.ViewBox.OriginY != null && svg.ViewBox.OriginY.Value != 0)
-                    canvasRenderTransform.Y = -svg.ViewBox.OriginY.Value;
-
-                canvas.RenderTransform = canvasRenderTransform;
-            }
+            if (viewBoxIsTranslated) 
+                canvas.RenderTransform = CreateRenderTransform(svg);
         }
 
         return canvas;
+    }
+
+    private static TranslateTransform CreateRenderTransform(Svg.Svg svg)
+    {
+        TranslateTransform canvasRenderTransform = new();
+
+        if (svg.ViewBox.OriginX != null && svg.ViewBox.OriginX.Value != 0)
+            canvasRenderTransform.X = -svg.ViewBox.OriginX.Value;
+
+        if (svg.ViewBox.OriginY != null && svg.ViewBox.OriginY.Value != 0)
+            canvasRenderTransform.Y = -svg.ViewBox.OriginY.Value;
+
+        return canvasRenderTransform;
     }
 }

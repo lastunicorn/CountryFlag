@@ -22,7 +22,7 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgDocument
 {
-    public Svg? Svg { get; set; }
+    public Svg? Content { get; set; }
 
     public static SvgDocument Parse(string svg)
     {
@@ -35,7 +35,7 @@ public class SvgDocument
         {
             return new SvgDocument
             {
-                Svg = new Svg(svgObject)
+                Content = new Svg(svgObject)
             };
         }
 

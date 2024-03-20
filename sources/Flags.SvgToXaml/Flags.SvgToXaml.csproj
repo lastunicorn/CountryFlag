@@ -28,7 +28,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj" />
+      <ProjectReference Include="..\Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj" PrivateAssets="All" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>DustInTheWind.SvgToXaml.Tests</_Parameter1>
+        </AssemblyAttribute>
     </ItemGroup>
 
 </Project>
