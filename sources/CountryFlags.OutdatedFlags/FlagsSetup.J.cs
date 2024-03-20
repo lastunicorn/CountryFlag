@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
 internal static partial class FlagsSetup
@@ -24,6 +26,36 @@ internal static partial class FlagsSetup
 
     public static void Japan()
     {
+        Countries.Japan.Flags.Add(new CountryFlag
+        {
+            Id = "ImperialArmy",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    NativeName = "十六条旭日旗",
+                    EnglishTranslation = "War flag of the Imperial Japanese Army"
+                }
+            },
+            StartDate = new FlagDate(1868),
+            EndDate = new FlagDate(1945),
+            Usage = FlagUsage.WarFlag
+        });
+
+        Countries.Japan.Flags.Add(new CountryFlag
+        {
+            Id = "ImperialNavy",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Flag of the Imperial Japanese Navy"
+                }
+            },
+            StartDate = new FlagDate(1889),
+            EndDate = new FlagDate(1945),
+            Usage = FlagUsage.WarEnsign
+        });
     }
 
     public static void Jersey()
