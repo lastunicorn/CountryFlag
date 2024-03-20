@@ -43,7 +43,7 @@ internal static partial class FlagsSetup
             },
             Description = "A Union Flag defaced with the coat-of-arms of the Falkland Islands.",
             StartDate = new FlagDate(1948, 09, 29),
-            Usage = FlagUsage.Other
+            Usage = FlagUsage.LeaderFlag
         });
     }
 

@@ -83,6 +83,20 @@ internal static partial class FlagsSetup
             Description = "A 16-petal chrysanthemum (called Kikkamon, Japanese:菊花紋), colored in gold, centered on a red background with a 2:3 ratio.",
             Usage = FlagUsage.LeaderFlag
         });
+
+        Countries.Japan.Flags.Add(new CountryFlag
+        {
+            Id = "AirRoundel",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Military aircraft insignia"
+                }
+            },
+            StartDate = new FlagDate(1945),
+            Usage = FlagUsage.Other
+        });
     }
 
     public static void Jersey()

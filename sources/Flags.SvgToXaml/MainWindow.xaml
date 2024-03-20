@@ -44,7 +44,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             VerticalScrollBarVisibility="Auto"
             AcceptsReturn="True"
             AcceptsTab="True"
-            Text="{Binding SvgText}" />
+            Text="{Binding SvgText}"
+            FontFamily="Consolas"
+            FontSize="12" />
 
         <TextBox
             Grid.Column="1"
@@ -53,7 +55,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             VerticalScrollBarVisibility="Auto"
             AcceptsReturn="True"
             AcceptsTab="True"
-            Text="{Binding XamlText}" />
+            Text="{Binding XamlText}"
+            FontFamily="Consolas"
+            FontSize="12" />
     </Grid>
 
 </Window>

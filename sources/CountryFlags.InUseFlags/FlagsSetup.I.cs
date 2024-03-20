@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
@@ -24,6 +26,73 @@ internal static partial class FlagsSetup
 
     public static void India()
     {
+        Countries.India.Flags.Add(new CountryFlag
+        {
+            Id = "CivilEnsign",
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    EnglishTranslation = "Civil Ensign"
+                },
+                new ()
+                {
+                    EnglishTranslation = "Red Ensign"
+                }
+            },
+            Description = "A red ensign with the Indian Flag in the canton.",
+            Usage = FlagUsage.CivilEnsign
+        });
+
+        Countries.India.Flags.Add(new CountryFlag
+        {
+            Id = "StateEnsign",
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    EnglishTranslation = "State Ensign"
+                },
+                new ()
+                {
+                    EnglishTranslation = "Blue Ensign"
+                }
+            },
+            Description = "A blue ensign with the Indian Flag in the canton, and a yellow anchor horizontally in the fly.",
+            Usage = FlagUsage.StateEnsign
+        });
+
+        Countries.India.Flags.Add(new CountryFlag
+        {
+            Id = "NavalEnsign",
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    EnglishTranslation = "Naval Ensign"
+                },
+                new ()
+                {
+                    EnglishTranslation = "White Ensign"
+                }
+            },
+            Description = "A white ensign with the Indian Flag in the canton, and a blue octagon with golden borders encasing the national emblem atop an anchor superimposed on a shield with the naval motto \"Śaṁ No Varuṇaḥ\" in Devanagari in the fly.",
+            Usage = FlagUsage.WarEnsign
+        });
+
+        Countries.India.Flags.Add(new CountryFlag
+        {
+            Id = "AirEnsign",
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    EnglishTranslation = "Air Force Ensign"
+                }
+            },
+            Description = "A sky blue ensign with the Indian Flag in the canton and the Air Force roundel in the fly.",
+            Usage = FlagUsage.WarEnsign
+        });
     }
 
     public static void Indonesia()

@@ -35,6 +35,14 @@ internal static partial class FlagsSetup
     {
         Countries.India.Flags.Add(new CountryFlag
         {
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    NativeName = "Tiraṅgā",
+                    EnglishTranslation = "Tricolour"
+                }
+            },
             Description = "A horizontal triband of India saffron, white, and India green; charged with a navy blue wheel with 24 spokes in the centre.",
             StartDate = new FlagDate(1947, 07, 22),
             DesignedBy = "Pingali Venkayya",

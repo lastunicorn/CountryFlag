@@ -56,6 +56,21 @@ internal static partial class FlagsSetup
             EndDate = new FlagDate(1945),
             Usage = FlagUsage.WarEnsign
         });
+
+        Countries.Japan.Flags.Add(new CountryFlag
+        {
+            Id = "AirRoundel_PreWWII",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Military aircraft insignia"
+                }
+            },
+            StartDate = new FlagDate(1943),
+            EndDate = new FlagDate(1945),
+            Usage = FlagUsage.Other
+        });
     }
 
     public static void Jersey()

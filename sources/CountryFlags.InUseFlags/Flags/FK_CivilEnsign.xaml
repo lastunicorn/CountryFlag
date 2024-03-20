@@ -20,16 +20,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Falkland Islands -->
+    <!-- Falkland Islands (Civil Ensign) -->
 
-    <Canvas x:Key="CountryFlag_FK" Width="1200" Height="600">
+    <Canvas x:Key="CountryFlag_FK_CivilEnsign" Width="1200" Height="600">
 
         <!-- Background -->
 
         <Rectangle
             Width="1200"
             Height="600"
-            Fill="#012169" />
+            Fill="#c8102e" />
 
         <!-- United Kingdom Flag -->
 
