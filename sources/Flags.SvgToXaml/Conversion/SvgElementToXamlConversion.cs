@@ -20,7 +20,7 @@ using System.Linq;
 using System.Windows;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal abstract class SvgElementToXamlConversion<TSvg, TXaml>
     where TSvg : SvgElement

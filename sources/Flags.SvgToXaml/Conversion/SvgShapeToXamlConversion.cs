@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -17,29 +17,35 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal static class ShapeExtensions
+internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXamlConversion<TSvg, TXaml>
+    where TSvg : SvgElement
+    where TXaml : Shape
 {
-    public static void InheritPropertiesFrom(this Shape shape, params SvgElement[] svgElements)
+    protected SvgShapeToXamlConversion(TSvg svgElement, SvgUse? svgUse = null)
+        : base(svgElement, svgUse)
     {
-        SetFill(shape, svgElements);
-        SetStroke(shape, svgElements);
-        SetStrokeThickness(shape, svgElements);
-        SetStrokeLineCap(shape, svgElements);
-        SetStrokeLineJoin(shape, svgElements);
-        SetStrokeDashOffset(shape, svgElements);
-        SetStrokeMiterLimit(shape, svgElements);
-        SetRenderTransform(shape, svgElements);
-        SetOpacity(shape, svgElements);
     }
 
-    private static void SetFill(Shape shape, IEnumerable<SvgElement> svgElements)
+    protected override void InheritPropertiesFrom(IEnumerable<SvgElement> svgElements)
+    {
+        base.InheritPropertiesFrom(svgElements);
+
+        SetFill(svgElements);
+        SetStroke(svgElements);
+        SetStrokeThickness(svgElements);
+        SetStrokeLineCap(svgElements);
+        SetStrokeLineJoin(svgElements);
+        SetStrokeDashOffset(svgElements);
+        SetStrokeMiterLimit(svgElements);
+    }
+
+    private void SetFill(IEnumerable<SvgElement> svgElements)
     {
         string? fill = svgElements
             .Select(x => x.CalculateFill())
@@ -47,19 +53,19 @@ internal static class ShapeExtensions
 
         if (fill == null)
         {
-            shape.Fill = Brushes.Black;
+            XamlElement.Fill = Brushes.Black;
         }
         else
         {
             bool isNone = string.Compare(fill, "none", StringComparison.OrdinalIgnoreCase) == 0;
 
-            shape.Fill = isNone
+            XamlElement.Fill = isNone
                 ? null
                 : (Brush)new BrushConverter().ConvertFrom(fill)!;
         }
     }
 
-    private static void SetStroke(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStroke(IEnumerable<SvgElement> svgElements)
     {
         string? stroke = svgElements
             .Select(x => x.CalculateStroke())
@@ -70,21 +76,21 @@ internal static class ShapeExtensions
             bool isNone = string.Compare(stroke, "none", StringComparison.OrdinalIgnoreCase) == 0;
 
             if (!isNone)
-                shape.Stroke = (Brush)new BrushConverter().ConvertFrom(stroke)!;
+                XamlElement.Stroke = (Brush)new BrushConverter().ConvertFrom(stroke)!;
         }
     }
 
-    private static void SetStrokeThickness(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStrokeThickness(IEnumerable<SvgElement> svgElements)
     {
         double? strokeWidth = svgElements
             .Select(x => x.CalculateStrokeWidth())
             .FirstOrDefault(x => x != null);
 
         if (strokeWidth != null)
-            shape.StrokeThickness = strokeWidth.Value;
+            XamlElement.StrokeThickness = strokeWidth.Value;
     }
 
-    private static void SetStrokeLineCap(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStrokeLineCap(IEnumerable<SvgElement> svgElements)
     {
         StrokeLineCap? strokeLineCap = svgElements
             .Select(x => x.CalculateStrokeLineCap())
@@ -100,12 +106,12 @@ internal static class ShapeExtensions
                 _ => throw new ArgumentOutOfRangeException()
             };
 
-            shape.StrokeStartLineCap = penLineCap;
-            shape.StrokeEndLineCap = penLineCap;
+            XamlElement.StrokeStartLineCap = penLineCap;
+            XamlElement.StrokeEndLineCap = penLineCap;
         }
     }
 
-    private static void SetStrokeLineJoin(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStrokeLineJoin(IEnumerable<SvgElement> svgElements)
     {
         StrokeLineJoin? strokeLineJoin = svgElements
             .Select(x => x.CalculateStrokeLineJoin())
@@ -113,7 +119,7 @@ internal static class ShapeExtensions
 
         if (strokeLineJoin != null)
         {
-            shape.StrokeLineJoin = strokeLineJoin switch
+            XamlElement.StrokeLineJoin = strokeLineJoin switch
             {
                 StrokeLineJoin.Miter => PenLineJoin.Miter,
                 StrokeLineJoin.Bevel => PenLineJoin.Bevel,
@@ -123,44 +129,23 @@ internal static class ShapeExtensions
         }
     }
 
-    private static void SetStrokeDashOffset(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStrokeDashOffset(IEnumerable<SvgElement> svgElements)
     {
         double? strokeDashOffset = svgElements
             .Select(x => x.CalculateStrokeDashOffset())
             .FirstOrDefault(x => x != null);
 
         if (strokeDashOffset != null)
-            shape.StrokeDashOffset = strokeDashOffset.Value;
+            XamlElement.StrokeDashOffset = strokeDashOffset.Value;
     }
 
-    private static void SetStrokeMiterLimit(Shape shape, IEnumerable<SvgElement> svgElements)
+    private void SetStrokeMiterLimit(IEnumerable<SvgElement> svgElements)
     {
         double? strokeMiterLimit = svgElements
             .Select(x => x.CalculateStrokeMiterLimit())
             .FirstOrDefault(x => x != null);
 
         if (strokeMiterLimit != null)
-            shape.StrokeMiterLimit = strokeMiterLimit.Value;
-    }
-
-    private static void SetRenderTransform(UIElement shape, IEnumerable<SvgElement> svgElements)
-    {
-        List<ISvgTransform> transforms = svgElements
-            .Reverse()
-            .SelectMany(x => x.Transforms)
-            .ToList();
-
-        if (transforms.Any())
-            shape.RenderTransform = transforms.ToXaml();
-    }
-
-    private static void SetOpacity(Shape shape, IEnumerable<SvgElement> svgElements)
-    {
-        double? opacity = svgElements
-            .Select(x => x.CalculateOpacity())
-            .FirstOrDefault(x => x != null);
-
-        if (opacity != null)
-            shape.Opacity = opacity.Value;
+            XamlElement.StrokeMiterLimit = strokeMiterLimit.Value;
     }
 }

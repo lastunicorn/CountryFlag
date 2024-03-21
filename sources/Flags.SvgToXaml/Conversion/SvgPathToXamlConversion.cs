@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,25 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
 using System.Windows.Media;
+using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal static class SvgPointExtensions
+internal class SvgPathToXamlConversion : SvgShapeToXamlConversion<SvgPath, Path>
 {
-    public static PointCollection ToXaml(this List<SvgPoint> svgPoints)
+    public SvgPathToXamlConversion(SvgPath svgPath, SvgUse? svgUse = null)
+        : base(svgPath, svgUse)
     {
-        IEnumerable<Point> points = svgPoints
-            .Select(x => new Point
-            {
-                X = x.X,
-                Y = x.Y
-            });
+    }
 
-        return new PointCollection(points);
+    protected override Path CreateXamlElement()
+    {
+        return new Path
+        {
+            Data = Geometry.Parse(SvgElement.Data)
+        };
     }
 }

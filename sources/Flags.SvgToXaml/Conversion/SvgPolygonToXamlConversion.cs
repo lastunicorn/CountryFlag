@@ -19,7 +19,7 @@ using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 using FillRule = System.Windows.Media.FillRule;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgPolygonToXamlConversion : SvgShapeToXamlConversion<SvgPolygon, Polygon>
 {

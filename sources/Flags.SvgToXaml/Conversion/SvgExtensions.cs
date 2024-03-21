@@ -18,7 +18,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal static class SvgExtensions
 {

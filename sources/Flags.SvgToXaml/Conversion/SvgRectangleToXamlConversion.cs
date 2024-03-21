@@ -14,26 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgLineToXamlConversion : SvgShapeToXamlConversion<SvgLine, Line>
+internal class SvgRectangleToXamlConversion : SvgShapeToXamlConversion<SvgRectangle, Rectangle>
 {
-    public SvgLineToXamlConversion(SvgLine svgLine, SvgUse? svgUse = null)
-        : base(svgLine, svgUse)
+    public SvgRectangleToXamlConversion(SvgRectangle svgRectangle, SvgUse? svgUse = null)
+        : base(svgRectangle, svgUse)
     {
     }
 
-    protected override Line CreateXamlElement()
+    protected override Rectangle CreateXamlElement()
     {
-        return new Line
+        Rectangle rectangle = new()
         {
-            X1 = SvgElement.X1,
-            Y1 = SvgElement.Y1,
-            X2 = SvgElement.X2,
-            Y2 = SvgElement.Y2
+            Width = SvgElement.Width,
+            Height = SvgElement.Height
         };
+
+        if (SvgElement.X != 0)
+            Canvas.SetLeft(rectangle, SvgElement.X);
+
+        if (SvgElement.Y != 0)
+            Canvas.SetTop(rectangle, SvgElement.Y);
+
+        return rectangle;
     }
 }

@@ -18,29 +18,31 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgRectangleToXamlConversion : SvgShapeToXamlConversion<SvgRectangle, Rectangle>
+internal class SvgCircleToXamlConversion : SvgShapeToXamlConversion<SvgCircle, Ellipse>
 {
-    public SvgRectangleToXamlConversion(SvgRectangle svgRectangle, SvgUse? svgUse = null)
-        : base(svgRectangle, svgUse)
+    public SvgCircleToXamlConversion(SvgCircle svgCircle, SvgUse? svgUse = null)
+        : base(svgCircle, svgUse)
     {
     }
 
-    protected override Rectangle CreateXamlElement()
+    protected override Ellipse CreateXamlElement()
     {
-        Rectangle rectangle = new()
+        Ellipse ellipse = new()
         {
-            Width = SvgElement.Width,
-            Height = SvgElement.Height
+            Width = SvgElement.Radius * 2,
+            Height = SvgElement.Radius * 2
         };
 
-        if (SvgElement.X != 0)
-            Canvas.SetLeft(rectangle, SvgElement.X);
+        double left = SvgElement.CenterX - SvgElement.Radius;
+        if (left != 0)
+            Canvas.SetLeft(ellipse, left);
 
-        if (SvgElement.Y != 0)
-            Canvas.SetTop(rectangle, SvgElement.Y);
+        double top = SvgElement.CenterY - SvgElement.Radius;
+        if (top != 0)
+            Canvas.SetTop(ellipse, top);
 
-        return rectangle;
+        return ellipse;
     }
 }

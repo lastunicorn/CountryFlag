@@ -18,7 +18,7 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgEllipseToXamlConversion : SvgShapeToXamlConversion<SvgEllipse, Ellipse>
 {

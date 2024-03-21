@@ -18,7 +18,7 @@ using System;
 using System.Windows;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgUseToXamlConversion
 {

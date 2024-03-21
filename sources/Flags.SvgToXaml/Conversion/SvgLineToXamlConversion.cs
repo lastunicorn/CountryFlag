@@ -14,35 +14,26 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
-namespace DustInTheWind.SvgToXaml.ConversionExtensions;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgCircleToXamlConversion : SvgShapeToXamlConversion<SvgCircle, Ellipse>
+internal class SvgLineToXamlConversion : SvgShapeToXamlConversion<SvgLine, Line>
 {
-    public SvgCircleToXamlConversion(SvgCircle svgCircle, SvgUse? svgUse = null)
-        : base(svgCircle, svgUse)
+    public SvgLineToXamlConversion(SvgLine svgLine, SvgUse? svgUse = null)
+        : base(svgLine, svgUse)
     {
     }
 
-    protected override Ellipse CreateXamlElement()
+    protected override Line CreateXamlElement()
     {
-        Ellipse ellipse = new()
+        return new Line
         {
-            Width = SvgElement.Radius * 2,
-            Height = SvgElement.Radius * 2
+            X1 = SvgElement.X1,
+            Y1 = SvgElement.Y1,
+            X2 = SvgElement.X2,
+            Y2 = SvgElement.Y2
         };
-
-        double left = SvgElement.CenterX - SvgElement.Radius;
-        if (left != 0)
-            Canvas.SetLeft(ellipse, left);
-
-        double top = SvgElement.CenterY - SvgElement.Radius;
-        if (top != 0)
-            Canvas.SetTop(ellipse, top);
-
-        return ellipse;
     }
 }
