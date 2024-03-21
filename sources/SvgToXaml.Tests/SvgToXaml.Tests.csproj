@@ -29,7 +29,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     </PropertyGroup>
 
     <ItemGroup>
+        <None Remove="DefsTests\defs-2circles.svg" />
+        <None Remove="DefsTests\defs-circle.svg" />
+        <None Remove="DefsTests\defs-group-circle.svg" />
         <None Remove="empty.svg" />
+        <None Remove="StrokeTests\CircleInGroupTests\stroke-svgroot^-group^-circle.svg" />
+        <None Remove="StrokeTests\CircleInGroupTests\stroke-svgroot^-group^-circle^.svg" />
+        <None Remove="StrokeTests\CircleTests\stroke-circle-svgroot^.svg" />
+        <None Remove="StrokeTests\CircleTests\stroke-circle^-svgroot^.svg" />
+        <None Remove="StrokeTests\stroke-circle-group-svgroot^.svg" />
+        <None Remove="StrokeTests\stroke-circle-group^.svg" />
+        <None Remove="StrokeTests\stroke-circle.svg" />
+        <None Remove="StrokeTests\stroke-circle^-group.svg" />
+        <None Remove="StrokeTests\stroke-circle^-group^.svg" />
+        <None Remove="StrokeTests\stroke-circle^.svg" />
+        <None Remove="StrokeTests\UseReferenceCircleTests\use-references-defs-circle^.svg" />
+        <None Remove="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle.svg" />
+        <None Remove="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle^.svg" />
+        <None Remove="UseTests\use-references-circle-after.svg" />
+        <None Remove="UseTests\use-references-circle-before.svg" />
+        <None Remove="UseTests\use-references-defs-circle.svg" />
         <None Remove="svg-width-negativevalue.svg" />
         <None Remove="svg-width-none.svg" />
         <None Remove="svg-width-value.svg" />
@@ -44,9 +63,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-negative-value.svg" />
         <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-positive-value.svg" />
         <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-zero.svg" />
+        <None Remove="UseTests\use-references-defs-group-circle.svg" />
     </ItemGroup>
 
     <ItemGroup>
+        <EmbeddedResource Include="DefsTests\defs-2circles.svg" />
+        <EmbeddedResource Include="DefsTests\defs-group-circle.svg" />
+        <EmbeddedResource Include="DefsTests\defs-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-svgroot^-group^-circle^.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-svgroot^-group^-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-svgroot^-group-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-group^-circle^.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleTests\stroke-circle^-svgroot^.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleTests\stroke-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-group-circle^.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleInGroupTests\stroke-group^-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleTests\stroke-circle-svgroot^.svg" />
+        <EmbeddedResource Include="StrokeTests\CircleTests\stroke-circle^.svg" />
+        <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle^.svg" />
+        <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use-references-defs-circle^.svg" />
+        <EmbeddedResource Include="UseTests\use-references-circle-after.svg" />
+        <EmbeddedResource Include="UseTests\use-references-circle-before.svg" />
+        <EmbeddedResource Include="UseTests\use-references-defs-group-circle.svg" />
+        <EmbeddedResource Include="UseTests\use-references-defs-circle.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-negative-value.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-positive-value.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-zero.svg" />

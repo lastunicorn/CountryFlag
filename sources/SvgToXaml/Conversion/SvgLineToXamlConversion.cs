@@ -21,7 +21,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgLineToXamlConversion : SvgShapeToXamlConversion<SvgLine, Line>
 {
-    public SvgLineToXamlConversion(SvgLine svgLine, SvgUse? svgUse = null)
+    public SvgLineToXamlConversion(SvgLine svgLine, SvgUse svgUse = null)
         : base(svgLine, svgUse)
     {
     }

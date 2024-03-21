@@ -14,24 +14,28 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
 using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Svg;
+using DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Conversion;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests;
 
-internal class SvgPathToXamlConversion : SvgShapeToXamlConversion<SvgPath, Path>
+public class UseReferenceCircleTests : SvgFileTestsBase
 {
-    public SvgPathToXamlConversion(SvgPath svgPath, SvgUse svgUse = null)
-        : base(svgPath, svgUse)
+    [Fact]
+    public void HavingUseReferencingCircleDeclaredBeforeIt_WhenSvgIsParsed_ThenTwoEllipsesAreCreated()
     {
+        TestConvertSvgFile("use-references-circle-before.svg", canvas =>
+        {
+            canvas.AssertChildren(typeof(Ellipse), typeof(Ellipse));
+        });
     }
 
-    protected override Path CreateXamlElement()
+    [Fact]
+    public void HavingUseReferencingCircleDeclaredAfterIt_WhenSvgIsParsed_ThenTwoEllipsesAreCreated()
     {
-        return new Path
+        TestConvertSvgFile("use-references-circle-after.svg", canvas =>
         {
-            Data = Geometry.Parse(SvgElement.Data)
-        };
+            canvas.AssertChildren(typeof(Ellipse), typeof(Ellipse));
+        });
     }
 }

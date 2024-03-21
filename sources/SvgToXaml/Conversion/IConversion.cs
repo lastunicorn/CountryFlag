@@ -14,24 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
-using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Svg;
+using System.Windows;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgPathToXamlConversion : SvgShapeToXamlConversion<SvgPath, Path>
+internal interface IConversion<out TXaml>
+    where TXaml : UIElement
 {
-    public SvgPathToXamlConversion(SvgPath svgPath, SvgUse svgUse = null)
-        : base(svgPath, svgUse)
-    {
-    }
-
-    protected override Path CreateXamlElement()
-    {
-        return new Path
-        {
-            Data = Geometry.Parse(SvgElement.Data)
-        };
-    }
+    TXaml Execute();
 }

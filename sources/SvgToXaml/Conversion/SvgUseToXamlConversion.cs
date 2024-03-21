@@ -20,7 +20,7 @@ using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgUseToXamlConversion
+internal class SvgUseToXamlConversion : IConversion<UIElement>
 {
     private readonly SvgUse svgUse;
 
@@ -33,49 +33,38 @@ internal class SvgUseToXamlConversion
     {
         SvgElement? inheritedElement = svgUse.GetInheritedElement();
 
-        if (inheritedElement is SvgCircle svgCircle)
-        {
-            SvgCircleToXamlConversion conversion = new(svgCircle, svgUse);
-            return conversion.Execute();
-        }
+        IConversion<UIElement> conversion = ConvertChildElement(inheritedElement);
+        return conversion.Execute();
+    }
 
-        if (inheritedElement is SvgEllipse svgEllipse)
+    private IConversion<UIElement> ConvertChildElement(SvgElement svgElement)
+    {
+        switch (svgElement)
         {
-            SvgEllipseToXamlConversion conversion = new(svgEllipse, svgUse);
-            return conversion.Execute();
-        }
+            case SvgCircle svgCircle:
+                return new SvgCircleToXamlConversion(svgCircle, svgUse);
 
-        if (inheritedElement is SvgPath svgPath)
-        {
-            SvgPathToXamlConversion conversion = new(svgPath, svgUse);
-            return conversion.Execute();
-        }
+            case SvgEllipse svgEllipse:
+                return new SvgEllipseToXamlConversion(svgEllipse, svgUse);
 
-        if (inheritedElement is SvgLine svgLine)
-        {
-            SvgLineToXamlConversion conversion = new(svgLine, svgUse);
-            return conversion.Execute();
-        }
+            case SvgPath svgPath:
+                return new SvgPathToXamlConversion(svgPath, svgUse);
 
-        if (inheritedElement is SvgRectangle svgRectangle)
-        {
-            SvgRectangleToXamlConversion conversion = new(svgRectangle, svgUse);
-            return conversion.Execute();
-        }
+            case SvgLine svgLine:
+                return new SvgLineToXamlConversion(svgLine, svgUse);
 
-        if (inheritedElement is SvgPolygon svgPolygon)
-        {
-            SvgPolygonToXamlConversion conversion = new(svgPolygon, svgUse);
-            return conversion.Execute();
-        }
+            case SvgRectangle svgRect:
+                return new SvgRectangleToXamlConversion(svgRect, svgUse);
 
-        if (inheritedElement is SvgGroup svgGroup)
-        {
-            SvgGroupToXamlConversion conversion = new(svgGroup, svgUse);
-            return conversion.Execute();
-        }
+            case SvgPolygon svgPolygon:
+                return new SvgPolygonToXamlConversion(svgPolygon, svgUse);
 
-        Type inheritedElementType = inheritedElement.GetType();
-        throw new Exception($"Unknown inherited element type: {inheritedElementType.FullName}");
+            case SvgGroup svgGChild:
+                return new SvgGroupToXamlConversion(svgGChild, svgUse);
+
+            default:
+                Type inheritedElementType = svgElement.GetType();
+                throw new Exception($"Unknown inherited element type: {inheritedElementType.FullName}");
+        }
     }
 }

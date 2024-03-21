@@ -22,17 +22,13 @@ using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.SvgRootTests.SvgHeightPxTests;
 
-public class SvgHeightPxTests
+public class SvgHeightPxTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingSvgHeightSetToZeroPx_WhenSvgIsParsed_ThenCanvasHasHeightZero()
     {
-        string svg = TestResources.ReadTextFile("svg-height-zero.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-height-zero.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Height.Should().Be(0);
         });
     }
@@ -40,12 +36,8 @@ public class SvgHeightPxTests
     [Fact]
     public void HavingSvgHeightSetToPositivePxValue_WhenSvgIsParsed_ThenCanvasHasHeightSpecified()
     {
-        string svg = TestResources.ReadTextFile("svg-height-positive-value.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-height-positive-value.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Height.Should().Be(142);
         });
     }

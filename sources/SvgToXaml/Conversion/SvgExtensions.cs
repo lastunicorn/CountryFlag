@@ -22,7 +22,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal static class SvgExtensions
 {
-    public static Canvas? ToXaml(this Svg.Svg? svg)
+    public static Canvas ToXaml(this Svg.Svg svg)
     {
         if (svg == null)
             return null;

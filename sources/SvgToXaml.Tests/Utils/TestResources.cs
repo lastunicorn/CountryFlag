@@ -22,6 +22,17 @@ namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
 internal static class TestResources
 {
+    public static string ReadTextFile(string resourceFileName, Type relativeType)
+    {
+        Assembly assembly = Assembly.GetExecutingAssembly();
+        string callerNamespace = relativeType.Namespace;
+
+        using Stream stream = assembly.GetManifestResourceStream(callerNamespace + "." + resourceFileName);
+        using StreamReader streamReader = new(stream);
+
+        return streamReader.ReadToEnd();
+    }
+
     public static string ReadTextFile(string resourceFileName)
     {
         Assembly assembly = Assembly.GetExecutingAssembly();

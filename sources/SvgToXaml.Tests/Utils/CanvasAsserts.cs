@@ -14,24 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
-using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Svg;
+using System.Windows;
+using System.Windows.Controls;
+using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Conversion;
+namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal class SvgPathToXamlConversion : SvgShapeToXamlConversion<SvgPath, Path>
+internal static class CanvasAsserts
 {
-    public SvgPathToXamlConversion(SvgPath svgPath, SvgUse svgUse = null)
-        : base(svgPath, svgUse)
+    public static void AssertChildren(this Canvas canvas, params Type[] childrenTypes)
     {
-    }
+        canvas.Children.Count.Should().Be(childrenTypes.Length);
 
-    protected override Path CreateXamlElement()
-    {
-        return new Path
+        for (int i = 0; i < canvas.Children.Count; i++)
         {
-            Data = Geometry.Parse(SvgElement.Data)
-        };
+            Type expected = childrenTypes[i];
+            UIElement canvasChild = canvas.Children[i];
+            canvasChild.Should().BeOfType(expected);
+        }
     }
 }

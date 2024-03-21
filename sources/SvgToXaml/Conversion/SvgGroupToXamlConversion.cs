@@ -15,19 +15,20 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgGroupToXamlConversion
+internal class SvgGroupToXamlConversion : IConversion<Canvas>
 {
     private readonly SvgGroup svgGroup;
-    private readonly SvgUse? svgUse;
+    private readonly SvgUse svgUse;
 
-    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse? svgUse = null)
+    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse svgUse = null)
     {
         this.svgGroup = svgGroup ?? throw new ArgumentNullException(nameof(svgGroup));
         this.svgUse = svgUse;
@@ -40,58 +41,98 @@ internal class SvgGroupToXamlConversion
         if (svgGroup.Transforms.Count > 0)
             canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
-        foreach (SvgElement svgElement in svgGroup.Children)
-        {
-            if (svgElement is SvgCircle svgCircle)
-            {
-                SvgCircleToXamlConversion conversion = new(svgCircle);
-                Ellipse ellipse = conversion.Execute();
-                canvas.Children.Add(ellipse);
-            }
-            else if (svgElement is SvgEllipse svgEllipse)
-            {
-                SvgEllipseToXamlConversion conversion = new(svgEllipse);
-                Ellipse ellipse = conversion.Execute();
-                canvas.Children.Add(ellipse);
-            }
-            else if (svgElement is SvgPath svgPath)
-            {
-                SvgPathToXamlConversion conversion = new(svgPath);
-                Path xamlPath = conversion.Execute();
-                canvas.Children.Add(xamlPath);
-            }
-            else if (svgElement is SvgLine svgLine)
-            {
-                SvgLineToXamlConversion conversion = new(svgLine);
-                Line xamlLine = conversion.Execute();
-                canvas.Children.Add(xamlLine);
-            }
-            else if (svgElement is SvgRectangle svgRect)
-            {
-                SvgRectangleToXamlConversion conversion = new(svgRect);
-                Rectangle xamlRectangle = conversion.Execute();
-                canvas.Children.Add(xamlRectangle);
-            }
-            else if (svgElement is SvgPolygon svgPolygon)
-            {
-                SvgPolygonToXamlConversion conversion = new(svgPolygon);
-                Polygon xamlPolygon = conversion.Execute();
-                canvas.Children.Add(xamlPolygon);
-            }
-            else if (svgElement is SvgGroup svgGChild)
-            {
-                SvgGroupToXamlConversion conversion = new(svgGChild);
-                Canvas xamlCanvas = conversion.Execute();
-                canvas.Children.Add(xamlCanvas);
-            }
-            else if (svgElement is SvgUse svgUse)
-            {
-                SvgUseToXamlConversion conversion = new(svgUse);
-                UIElement uiElement = conversion.Execute();
-                canvas.Children.Add(uiElement);
-            }
-        }
+        IEnumerable<UIElement> xamlElements = svgGroup.Children
+            .Select(ConvertChildElement)
+            .Select(x => x.Execute());
+
+        foreach (UIElement uiElement in xamlElements) 
+            canvas.Children.Add(uiElement);
 
         return canvas;
     }
+
+    private static IConversion<UIElement> ConvertChildElement(SvgElement svgElement)
+    {
+        switch (svgElement)
+        {
+            case SvgCircle svgCircle:
+                return new SvgCircleToXamlConversion(svgCircle);
+
+            case SvgEllipse svgEllipse:
+                return new SvgEllipseToXamlConversion(svgEllipse);
+
+            case SvgPath svgPath:
+                return new SvgPathToXamlConversion(svgPath);
+
+            case SvgLine svgLine:
+                return new SvgLineToXamlConversion(svgLine);
+
+            case SvgRectangle svgRect:
+                return new SvgRectangleToXamlConversion(svgRect);
+
+            case SvgPolygon svgPolygon:
+                return new SvgPolygonToXamlConversion(svgPolygon);
+
+            case SvgGroup svgGChild:
+                return new SvgGroupToXamlConversion(svgGChild);
+
+            case SvgUse svgUse:
+                return new SvgUseToXamlConversion(svgUse);
+
+            default:
+                Type inheritedElementType = svgElement.GetType();
+                throw new Exception($"Unknown inherited element type: {inheritedElementType.FullName}");
+        }
+    }
+
+    //private static UIElement ConvertChildElement(SvgElement svgElement)
+    //{
+    //    if (svgElement is SvgCircle svgCircle)
+    //    {
+    //        SvgCircleToXamlConversion conversion = new(svgCircle);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgEllipse svgEllipse)
+    //    {
+    //        SvgEllipseToXamlConversion conversion = new(svgEllipse);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgPath svgPath)
+    //    {
+    //        SvgPathToXamlConversion conversion = new(svgPath);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgLine svgLine)
+    //    {
+    //        SvgLineToXamlConversion conversion = new(svgLine);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgRectangle svgRect)
+    //    {
+    //        SvgRectangleToXamlConversion conversion = new(svgRect);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgPolygon svgPolygon)
+    //    {
+    //        SvgPolygonToXamlConversion conversion = new(svgPolygon);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgGroup svgGChild)
+    //    {
+    //        SvgGroupToXamlConversion conversion = new(svgGChild);
+    //        return conversion.Execute();
+    //    }
+
+    //    if (svgElement is SvgUse svgUse)
+    //    {
+    //        SvgUseToXamlConversion conversion = new(svgUse);
+    //        return conversion.Execute();
+    //    }
+    //}
 }

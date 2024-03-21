@@ -23,7 +23,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgPolygonToXamlConversion : SvgShapeToXamlConversion<SvgPolygon, Polygon>
 {
-    public SvgPolygonToXamlConversion(SvgPolygon svgPolygon, SvgUse? svgUse = null)
+    public SvgPolygonToXamlConversion(SvgPolygon svgPolygon, SvgUse svgUse = null)
         : base(svgPolygon, svgUse)
     {
     }

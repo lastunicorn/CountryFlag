@@ -22,17 +22,17 @@ using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal abstract class SvgElementToXamlConversion<TSvg, TXaml>
+internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TXaml>
     where TSvg : SvgElement
     where TXaml : UIElement
 {
-    private readonly SvgUse? svgUse;
+    private readonly SvgUse svgUse;
 
     protected TSvg SvgElement { get; }
 
     protected TXaml XamlElement { get; private set; }
 
-    protected SvgElementToXamlConversion(TSvg svgElement, SvgUse? svgUse = null)
+    protected SvgElementToXamlConversion(TSvg svgElement, SvgUse svgUse = null)
     {
         this.svgUse = svgUse;
         SvgElement = svgElement ?? throw new ArgumentNullException(nameof(svgElement));

@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -16,14 +16,32 @@
 
 using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.SvgRootTests.EmptySvgTests;
+namespace DustInTheWind.SvgToXaml.Tests.DefsTests;
 
-public class EmptySvgTests : SvgFileTestsBase
+public class DefsTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingEmptySvg_WhenParsed_ThenCanvasHasNoChildren()
+    public void HavingCircleInDefinitions_WhenSvgIsParsed_ThenNoChildrenIsCreated()
     {
-        TestConvertSvgFile("empty.svg", canvas =>
+        TestConvertSvgFile("defs-circle.svg", canvas =>
+        {
+            canvas.Children.Count.Should().Be(0);
+        });
+    }
+
+    [Fact]
+    public void HavingTwoCirclesInDefinitions_WhenSvgIsParsed_ThenNoChildrenIsCreated()
+    {
+        TestConvertSvgFile("defs-2circles.svg", canvas =>
+        {
+            canvas.Children.Count.Should().Be(0);
+        });
+    }
+
+    [Fact]
+    public void HavingGroupWithCircleInDefinitions_WhenSvgIsParsed_ThenNoChildrenIsCreated()
+    {
+        TestConvertSvgFile("defs-group-circle.svg", canvas =>
         {
             canvas.Children.Count.Should().Be(0);
         });

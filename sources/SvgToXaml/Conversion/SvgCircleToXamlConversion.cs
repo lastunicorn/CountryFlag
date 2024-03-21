@@ -22,7 +22,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgCircleToXamlConversion : SvgShapeToXamlConversion<SvgCircle, Ellipse>
 {
-    public SvgCircleToXamlConversion(SvgCircle svgCircle, SvgUse? svgUse = null)
+    public SvgCircleToXamlConversion(SvgCircle svgCircle, SvgUse svgUse = null)
         : base(svgCircle, svgUse)
     {
     }
