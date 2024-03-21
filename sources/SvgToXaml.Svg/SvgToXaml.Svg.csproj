@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj" PrivateAssets="All" />
+      <ProjectReference Include="..\SvgToXaml.Svg.Serialization\SvgToXaml.Svg.Serialization.csproj" PrivateAssets="All" />
     </ItemGroup>
 
 </Project>

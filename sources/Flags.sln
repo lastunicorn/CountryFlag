@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags.Demo", "Countr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.Core", "Flags.Core\Flags.Core.csproj", "{219FC6BE-DB74-426E-9452-BE9DEB1BE0A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml", "Flags.SvgToXaml\Flags.SvgToXaml.csproj", "{71198B1B-0537-45DF-A89F-7801A13DD575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvgToXaml", "SvgToXaml\SvgToXaml.csproj", "{71198B1B-0537-45DF-A89F-7801A13DD575}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml.Svg", "Flags.SvgToXaml.Svg\Flags.SvgToXaml.Svg.csproj", "{68974C5B-5DB4-4264-AA8E-460293FC61D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvgToXaml.Svg", "SvgToXaml.Svg\SvgToXaml.Svg.csproj", "{68974C5B-5DB4-4264-AA8E-460293FC61D3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flags.SvgToXaml.Svg.Serialization", "Flags.SvgToXaml.Svg.Serialization\Flags.SvgToXaml.Svg.Serialization.csproj", "{780E9A3A-CCF5-4030-886F-CC2F33185CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvgToXaml.Svg.Serialization", "SvgToXaml.Svg.Serialization\SvgToXaml.Svg.Serialization.csproj", "{780E9A3A-CCF5-4030-886F-CC2F33185CB2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{714C17FF-A0D0-4995-8483-7205722A1878}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CountryFlags", "CountryFlag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{84C4C50B-27FB-48F6-A0E4-2308C5F32DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flags.SvgToXaml.Tests", "Flags.SvgToXaml.Tests\Flags.SvgToXaml.Tests.csproj", "{77448891-B3FE-486F-A4CB-B4587E22A009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvgToXaml.Tests", "SvgToXaml.Tests\SvgToXaml.Tests.csproj", "{77448891-B3FE-486F-A4CB-B4587E22A009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
