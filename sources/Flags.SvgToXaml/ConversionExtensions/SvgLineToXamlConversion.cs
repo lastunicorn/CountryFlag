@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,31 +14,26 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Linq;
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-internal static class SvgPathExtensions
+internal class SvgLineToXamlConversion : SvgShapeToXamlConversion<SvgLine, Line>
 {
-    public static Path ToXaml(this SvgPath svgPath, params SvgElement[] svgElements)
+    public SvgLineToXamlConversion(SvgLine svgLine, SvgUse? svgUse = null)
+        : base(svgLine, svgUse)
     {
-        if (svgPath == null) throw new ArgumentNullException(nameof(svgPath));
+    }
 
-        Path path = new()
+    protected override Line CreateXamlElement()
+    {
+        return new Line
         {
-            Data = Geometry.Parse(svgPath.Data)
+            X1 = SvgElement.X1,
+            Y1 = SvgElement.Y1,
+            X2 = SvgElement.X2,
+            Y2 = SvgElement.Y2
         };
-
-        SvgElement[] svgElementsToInherit = svgElements
-            .SafeConcat(svgPath)
-            .ToArray();
-
-        path.InheritPropertiesFrom(svgElementsToInherit);
-
-        return path;
     }
 }

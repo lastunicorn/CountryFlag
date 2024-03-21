@@ -14,18 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+//using System.Xml.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
-public class Defs
+/// <remarks>
+/// May contain any number of the following elements, in any order:
+///     - animation elements — ‘animate’, ‘animateMotion’, ‘animateTransform’, ‘discard’, ‘set’
+///     - descriptive elements — ‘desc’, ‘title’, ‘metadata’
+///     - paint server elements — ‘linearGradient’, ‘radialGradient’, ‘pattern’
+///     - shape elements — ‘circle’, ‘ellipse’, ‘line’, ‘path’, ‘polygon’, ‘polyline’, ‘rect’
+///     - structural elements — ‘defs’, ‘g’, ‘svg’, ‘symbol’, ‘use’
+///     - a, audio, canvas, clipPath, filter, foreignObject, iframe, image, marker, mask, script, style, switch, text, video, view
+/// </remarks>
+public class Defs : G
 {
-    [XmlElement("circle", typeof(Circle))]
-    [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
-    [XmlElement("line", typeof(Line))]
-    [XmlElement("rect", typeof(Rect))]
-    [XmlElement("polygon", typeof(Polygon))]
-    [XmlElement("g", typeof(G))]
-    public object[]? Children { get; set; }
 }

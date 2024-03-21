@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Shapes;
@@ -21,60 +22,72 @@ using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-internal static class SvgGExtensions
+internal class SvgGroupToXamlConversion
 {
-    public static Canvas? ToXaml(this SvgGroup? svgGroup)
-    {
-        if (svgGroup == null)
-            return null;
+    private readonly SvgGroup svgGroup;
+    private readonly SvgUse? svgUse;
 
+    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse? svgUse = null)
+    {
+        this.svgGroup = svgGroup ?? throw new ArgumentNullException(nameof(svgGroup));
+        this.svgUse = svgUse;
+    }
+
+    public Canvas Execute()
+    {
         Canvas canvas = new();
 
-        if (svgGroup.Transforms.Count > 0) 
+        if (svgGroup.Transforms.Count > 0)
             canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
         foreach (SvgElement svgElement in svgGroup.Children)
         {
             if (svgElement is SvgCircle svgCircle)
             {
-                Ellipse ellipse = svgCircle.ToXaml();
+                SvgCircleToXamlConversion conversion = new(svgCircle);
+                Ellipse ellipse = conversion.Execute();
                 canvas.Children.Add(ellipse);
             }
             else if (svgElement is SvgEllipse svgEllipse)
             {
-                Ellipse ellipse = svgEllipse.ToXaml();
+                SvgEllipseToXamlConversion conversion = new(svgEllipse);
+                Ellipse ellipse = conversion.Execute();
                 canvas.Children.Add(ellipse);
             }
             else if (svgElement is SvgPath svgPath)
             {
-                Path xamlPath = svgPath.ToXaml();
+                SvgPathToXamlConversion conversion = new(svgPath);
+                Path xamlPath = conversion.Execute();
                 canvas.Children.Add(xamlPath);
             }
             else if (svgElement is SvgLine svgLine)
             {
-                Line xamlLine = svgLine.ToXaml();
+                SvgLineToXamlConversion conversion = new(svgLine);
+                Line xamlLine = conversion.Execute();
                 canvas.Children.Add(xamlLine);
             }
             else if (svgElement is SvgRectangle svgRect)
             {
-                Rectangle xamlRectangle = svgRect.ToXaml();
+                SvgRectangleToXamlConversion conversion = new(svgRect);
+                Rectangle xamlRectangle = conversion.Execute();
                 canvas.Children.Add(xamlRectangle);
             }
             else if (svgElement is SvgPolygon svgPolygon)
             {
-                Polygon xamlPolygon = svgPolygon.ToXaml();
+                SvgPolygonToXamlConversion conversion = new(svgPolygon);
+                Polygon xamlPolygon = conversion.Execute();
                 canvas.Children.Add(xamlPolygon);
             }
             else if (svgElement is SvgGroup svgGChild)
             {
-                Canvas? xamlCanvas = svgGChild.ToXaml();
-
-                if (xamlCanvas != null)
-                    canvas.Children.Add(xamlCanvas);
+                SvgGroupToXamlConversion conversion = new(svgGChild);
+                Canvas xamlCanvas = conversion.Execute();
+                canvas.Children.Add(xamlCanvas);
             }
-            else if (svgElement is SvgUse svgUseChild)
+            else if (svgElement is SvgUse svgUse)
             {
-                UIElement uiElement = svgUseChild.ToXaml();
+                SvgUseToXamlConversion conversion = new(svgUse);
+                UIElement uiElement = conversion.Execute();
                 canvas.Children.Add(uiElement);
             }
         }

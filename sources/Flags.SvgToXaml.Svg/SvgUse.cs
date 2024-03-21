@@ -34,4 +34,24 @@ public class SvgUse : SvgElement
 
         Href = use.Href;
     }
+
+    public SvgUseInheritanceCollection GetInheritanceList()
+    {
+        return new SvgUseInheritanceCollection(this);
+    }
+
+    public SvgElement? GetInheritedElement()
+    {
+        Svg? svg = GetParentSvg();
+
+        if (svg == null)
+            return null;
+
+        if (Href == null || !Href.StartsWith("#"))
+            return null;
+
+        string referenceId = Href[1..];
+
+        return svg.FindChild(referenceId);
+    }
 }

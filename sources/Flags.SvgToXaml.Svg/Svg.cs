@@ -55,9 +55,8 @@ public class Svg : SvgGroup
             SvgDefinitions = new SvgDefinitions(svg.Defs);
     }
 
-    public SvgElement? FindChild(string id)
+    public override SvgElement? FindChild(string? id)
     {
-        return SvgDefinitions?.FindChild(id) ??
-               Children.FindChild(id);
+        return SvgDefinitions?.FindChild(id) ?? base.FindChild(id);
     }
 }

@@ -27,10 +27,8 @@ internal static class SvgExtensions
         if (svg == null)
             return null;
 
-        Canvas? canvas = ((SvgGroup)svg).ToXaml();
-
-        if (canvas == null)
-            return null;
+        SvgGroupToXamlConversion conversion = new(svg);
+        Canvas canvas = conversion.Execute();
 
         if (svg.ViewBox == null)
         {
@@ -49,22 +47,22 @@ internal static class SvgExtensions
                                        svg.ViewBox.OriginY is { Value: not 0 };
 
             if (viewBoxIsTranslated) 
-                canvas.RenderTransform = CreateRenderTransform(svg);
+                canvas.RenderTransform = CreateRenderTransform(svg.ViewBox);
         }
 
         return canvas;
     }
 
-    private static TranslateTransform CreateRenderTransform(Svg.Svg svg)
+    private static TranslateTransform CreateRenderTransform(SvgViewBox svgViewBox)
     {
-        TranslateTransform canvasRenderTransform = new();
+        TranslateTransform translateTransform = new();
 
-        if (svg.ViewBox.OriginX != null && svg.ViewBox.OriginX.Value != 0)
-            canvasRenderTransform.X = -svg.ViewBox.OriginX.Value;
+        if (svgViewBox.OriginX.Value != 0)
+            translateTransform.X = -svgViewBox.OriginX.Value;
 
-        if (svg.ViewBox.OriginY != null && svg.ViewBox.OriginY.Value != 0)
-            canvasRenderTransform.Y = -svg.ViewBox.OriginY.Value;
+        if (svgViewBox.OriginY.Value != 0)
+            translateTransform.Y = -svgViewBox.OriginY.Value;
 
-        return canvasRenderTransform;
+        return translateTransform;
     }
 }

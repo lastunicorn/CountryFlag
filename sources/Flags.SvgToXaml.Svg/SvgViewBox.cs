@@ -21,13 +21,13 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgViewBox
 {
-    public Size? OriginX { get; set; }
+    public Size OriginX { get; set; }
 
-    public Size? OriginY { get; set; }
+    public Size OriginY { get; set; }
 
-    public Size? Width { get; set; }
+    public Size Width { get; set; }
 
-    public Size? Height { get; set; }
+    public Size Height { get; set; }
 
     public static SvgViewBox? Parse(string? text)
     {

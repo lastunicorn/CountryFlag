@@ -21,7 +21,7 @@ namespace DustInTheWind.SvgToXaml;
 
 internal static class EnumerableExtensions
 {
-    public static IEnumerable<T> SafeConcat<T>(this IEnumerable<T> svgElements, T svgElement)
+    public static IEnumerable<T> SafeConcat<T>(this IEnumerable<T>? svgElements, T svgElement)
     {
         if (svgElements == null)
             return new[] { svgElement };

@@ -16,6 +16,7 @@
 
 using System;
 using System.IO;
+using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
 using DustInTheWind.SvgToXaml.ConversionExtensions;
@@ -82,9 +83,14 @@ public class MainViewModel : ViewModelBase
             Indent = true,
             NewLineOnAttributes = true
         };
-        XmlWriter xmlWriter = XmlWriter.Create(ms, xmlWriterSettings);
+        using XmlWriter xmlWriter = XmlWriter.Create(ms, xmlWriterSettings);
 
-        System.Windows.Markup.XamlWriter.Save(canvas, xmlWriter);
+        ResourceDictionary resourceDictionary = new()
+        {
+            { "SvgTransform", canvas }
+        };
+
+        System.Windows.Markup.XamlWriter.Save(resourceDictionary, xmlWriter);
 
         ms.Position = 0;
         using StreamReader sr = new(ms);

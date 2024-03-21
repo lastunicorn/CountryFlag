@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -15,29 +15,27 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Linq;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 using FillRule = System.Windows.Media.FillRule;
 
 namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-internal static class SvgPolygonExtensions
+internal class SvgPolygonToXamlConversion : SvgShapeToXamlConversion<SvgPolygon, Polygon>
 {
-    public static Polygon ToXaml(this SvgPolygon svgPolygon, params SvgElement[] svgElements)
+    public SvgPolygonToXamlConversion(SvgPolygon svgPolygon, SvgUse? svgUse = null)
+        : base(svgPolygon, svgUse)
+    {
+    }
+
+    protected override Polygon CreateXamlElement()
     {
         Polygon polygon = new()
         {
-            Points = svgPolygon.Points.ToXaml()
+            Points = SvgElement.Points.ToXaml()
         };
 
-        SvgElement[] svgElementsToInherit = svgElements
-            .SafeConcat(svgPolygon)
-            .ToArray();
-
-        polygon.InheritPropertiesFrom(svgElementsToInherit);
-
-        SetFillRule(polygon, svgPolygon);
+        SetFillRule(polygon, SvgElement);
 
         return polygon;
     }

@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,35 +14,35 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-internal static class SvgRectExtensions
+internal class SvgCircleToXamlConversion : SvgShapeToXamlConversion<SvgCircle, Ellipse>
 {
-    public static Rectangle ToXaml(this SvgRectangle svgRect, params SvgElement[] svgElements)
+    public SvgCircleToXamlConversion(SvgCircle svgCircle, SvgUse? svgUse = null)
+        : base(svgCircle, svgUse)
     {
-        Rectangle rectangle = new()
+    }
+
+    protected override Ellipse CreateXamlElement()
+    {
+        Ellipse ellipse = new()
         {
-            Width = svgRect.Width,
-            Height = svgRect.Height
+            Width = SvgElement.Radius * 2,
+            Height = SvgElement.Radius * 2
         };
 
-        SvgElement[] svgElementsToInherit = svgElements
-            .SafeConcat(svgRect)
-            .ToArray();
+        double left = SvgElement.CenterX - SvgElement.Radius;
+        if (left != 0)
+            Canvas.SetLeft(ellipse, left);
 
-        rectangle.InheritPropertiesFrom(svgElementsToInherit);
+        double top = SvgElement.CenterY - SvgElement.Radius;
+        if (top != 0)
+            Canvas.SetTop(ellipse, top);
 
-        if (svgRect.X != 0)
-            Canvas.SetLeft(rectangle, svgRect.X);
-
-        if (svgRect.Y != 0)
-            Canvas.SetTop(rectangle, svgRect.Y);
-
-        return rectangle;
+        return ellipse;
     }
 }

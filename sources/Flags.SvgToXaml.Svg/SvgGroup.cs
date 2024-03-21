@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Linq;
 using DustInTheWind.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
@@ -116,5 +117,10 @@ public class SvgGroup : SvgElement
                 }
             }
         }
+    }
+
+    public virtual SvgElement? FindChild(string? id)
+    {
+        return Children.FindChild(id);
     }
 }

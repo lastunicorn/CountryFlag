@@ -31,6 +31,14 @@ public class Size
         UnitOfMeasurement = UnitOfMeasurement.None
     };
 
+    public static implicit operator Size(double value)
+    {
+        return new Size
+        {
+            Value = value
+        };
+    }
+
     public static implicit operator Size?(double? value)
     {
         if (value == null)

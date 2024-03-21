@@ -1,5 +1,5 @@
 ﻿// Country Flags
-// Copyright (C) 2022 Dust in the Wind
+// Copyright (C) 2022-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,37 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Linq;
-using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.ConversionExtensions;
 
-internal static class SvgCircleExtensions
+internal class SvgPathToXamlConversion : SvgShapeToXamlConversion<SvgPath, Path>
 {
-    public static Ellipse ToXaml(this SvgCircle svgCircle, params SvgElement[] svgElements)
+    public SvgPathToXamlConversion(SvgPath svgPath, SvgUse? svgUse = null)
+        : base(svgPath, svgUse)
     {
-        Ellipse ellipse = new()
+    }
+
+    protected override Path CreateXamlElement()
+    {
+        return new Path
         {
-            Width = svgCircle.Radius * 2,
-            Height = svgCircle.Radius * 2
+            Data = Geometry.Parse(SvgElement.Data)
         };
-
-        SvgElement[] svgElementsToInherit = svgElements
-            .SafeConcat(svgCircle)
-            .ToArray();
-
-        ellipse.InheritPropertiesFrom(svgElementsToInherit);
-
-        double left = svgCircle.CenterX - svgCircle.Radius;
-        if (left != 0)
-            Canvas.SetLeft(ellipse, left);
-
-        double top = svgCircle.CenterY - svgCircle.Radius;
-        if (top != 0)
-            Canvas.SetTop(ellipse, top);
-
-        return ellipse;
     }
 }

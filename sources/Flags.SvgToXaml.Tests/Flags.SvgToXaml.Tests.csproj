@@ -34,17 +34,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <None Remove="svg-width-none.svg" />
       <None Remove="svg-width-value.svg" />
       <None Remove="svg-width-zero.svg" />
+      <None Remove="SvgRootTests\SvgHeightPxTests\svg-height-negative-value.svg" />
+      <None Remove="SvgRootTests\SvgHeightPxTests\svg-height-positive-value.svg" />
+      <None Remove="SvgRootTests\SvgHeightPxTests\svg-height-zero.svg" />
       <None Remove="SvgRootTests\SvgHeightTests\svg-height-negative-value.svg" />
       <None Remove="SvgRootTests\SvgHeightTests\svg-height-none.svg" />
       <None Remove="SvgRootTests\SvgHeightTests\svg-height-positive-value.svg" />
       <None Remove="SvgRootTests\SvgHeightTests\svg-height-zero.svg" />
+      <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-negative-value.svg" />
+      <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-positive-value.svg" />
+      <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-zero.svg" />
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-negative-value.svg" />
+      <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-positive-value.svg" />
+      <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-zero.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgHeightTests\svg-height-negative-value.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgHeightTests\svg-height-none.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgHeightTests\svg-height-positive-value.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgHeightTests\svg-height-zero.svg" />
+      <EmbeddedResource Include="SvgRootTests\SvgWidthPxTests\svg-width-negative-value.svg" />
+      <EmbeddedResource Include="SvgRootTests\SvgWidthPxTests\svg-width-positive-value.svg" />
+      <EmbeddedResource Include="SvgRootTests\SvgWidthPxTests\svg-width-zero.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgWidthTests\svg-width-negative-value.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgWidthTests\svg-width-zero.svg" />
       <EmbeddedResource Include="SvgRootTests\SvgWidthTests\svg-width-none.svg" />
