@@ -26,7 +26,7 @@ public class CircleTests : SvgFileTestsBase
     [Fact]
     public void HavingNoStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeNull()
     {
-        TestConvertSvgFile("stroke-circle.svg", canvas =>
+        TestConvertSvgFile("circle.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -37,7 +37,7 @@ public class CircleTests : SvgFileTestsBase
     [Fact]
     public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
     {
-        TestConvertSvgFile("stroke-circle^.svg", canvas =>
+        TestConvertSvgFile("circle^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -50,7 +50,7 @@ public class CircleTests : SvgFileTestsBase
     [Fact]
     public void HavingStrokeDeclaredOnSvgRootContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromSvgRoot()
     {
-        TestConvertSvgFile("stroke-circle-svgroot^.svg", canvas =>
+        TestConvertSvgFile("svgroot^-circle.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -63,7 +63,7 @@ public class CircleTests : SvgFileTestsBase
     [Fact]
     public void HavingStrokeDeclaredOnBothSvgRootAndOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
     {
-        TestConvertSvgFile("stroke-circle^-svgroot^.svg", canvas =>
+        TestConvertSvgFile("svgroot^-circle^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 

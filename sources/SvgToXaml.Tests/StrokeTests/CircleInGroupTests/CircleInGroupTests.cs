@@ -27,7 +27,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
     {
-        TestConvertSvgFile("stroke-group-circle^.svg", canvas =>
+        TestConvertSvgFile("group-circle^.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
@@ -42,7 +42,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnGroup_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroup()
     {
-        TestConvertSvgFile("stroke-group^-circle.svg", canvas =>
+        TestConvertSvgFile("group^-circle.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
@@ -57,7 +57,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnGroupAndCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
     {
-        TestConvertSvgFile("stroke-group^-circle^.svg", canvas =>
+        TestConvertSvgFile("group^-circle^.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
@@ -72,7 +72,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromSvgRoot()
     {
-        TestConvertSvgFile("stroke-svgroot^-group-circle.svg", canvas =>
+        TestConvertSvgFile("svgroot^-group-circle.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
@@ -87,7 +87,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnGroupAndSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroup()
     {
-        TestConvertSvgFile("stroke-svgroot^-group^-circle.svg", canvas =>
+        TestConvertSvgFile("svgroot^-group^-circle.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
@@ -102,7 +102,7 @@ public class CircleInGroupTests : SvgFileTestsBase
     [Fact]
     public void HavingCircleInGroupAndStrokeDeclaredOnCircleOnGroupAndOnSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
     {
-        TestConvertSvgFile("stroke-svgroot^-group^-circle^.svg", canvas =>
+        TestConvertSvgFile("svgroot^-group^-circle^.svg", canvas =>
         {
             Ellipse ellipse = canvas
                 .GetElementByIndex<Canvas>(0)
