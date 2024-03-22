@@ -17,7 +17,7 @@
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Tests.UseTests;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseReferenceCircleTests;
 
 public class UseReferenceCircleTests : SvgFileTestsBase
 {
@@ -26,7 +26,13 @@ public class UseReferenceCircleTests : SvgFileTestsBase
     {
         TestConvertSvgFile("use-references-circle-before.svg", canvas =>
         {
-            canvas.AssertChildren(typeof(Ellipse), typeof(Ellipse));
+            TypeHierarchy expectedTypes = new()
+            {
+                typeof(Ellipse).ToHierarchyItem(),
+                typeof(Ellipse).ToHierarchyItem()
+            };
+
+            canvas.Should().ContainExact(expectedTypes);
         });
     }
 
@@ -35,7 +41,13 @@ public class UseReferenceCircleTests : SvgFileTestsBase
     {
         TestConvertSvgFile("use-references-circle-after.svg", canvas =>
         {
-            canvas.AssertChildren(typeof(Ellipse), typeof(Ellipse));
+            TypeHierarchy expectedTypes = new()
+            {
+                typeof(Ellipse).ToHierarchyItem(),
+                typeof(Ellipse).ToHierarchyItem()
+            };
+
+            canvas.Should().ContainExact(expectedTypes);
         });
     }
 }

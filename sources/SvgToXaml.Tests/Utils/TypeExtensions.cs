@@ -14,23 +14,22 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows;
-using System.Windows.Controls;
-using FluentAssertions;
-
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal static class CanvasAsserts
+internal static class TypeExtensions
 {
-    public static void AssertChildren(this Canvas canvas, params Type[] childrenTypes)
+    public static TypeHierarchyItem ToHierarchyItem(this Type type)
     {
-        canvas.Children.Count.Should().Be(childrenTypes.Length);
+        return new TypeHierarchyItem(type);
+    }
 
-        for (int i = 0; i < canvas.Children.Count; i++)
-        {
-            Type expected = childrenTypes[i];
-            UIElement canvasChild = canvas.Children[i];
-            canvasChild.Should().BeOfType(expected);
-        }
+    public static TypeHierarchyItem ToHierarchyItem(this Type type, IEnumerable<TypeHierarchyItem> children)
+    {
+        TypeHierarchyItem typeHierarchyItem = new(type);
+
+        foreach (TypeHierarchyItem child in children)
+            typeHierarchyItem.Add(child);
+
+        return typeHierarchyItem;
     }
 }

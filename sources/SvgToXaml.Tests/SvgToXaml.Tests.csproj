@@ -49,6 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="StrokeTests\UseReferenceCircleTests\use-references-defs-circle^.svg" />
         <None Remove="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle.svg" />
         <None Remove="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle^.svg" />
+        <None Remove="StrokeTests\UseReferenceGroupCircleTests\use-references-defs-group-circle^.svg" />
         <None Remove="UseTests\use-references-circle-after.svg" />
         <None Remove="UseTests\use-references-circle-before.svg" />
         <None Remove="UseTests\use-references-defs-circle.svg" />
@@ -67,6 +68,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-positive-value.svg" />
         <None Remove="SvgRootTests\SvgWidthPxTests\svg-width-zero.svg" />
         <None Remove="UseTests\use-references-defs-group-circle.svg" />
+        <None Remove="UseTests\UseReferenceGroupCircleTests\group-use-references-group-circle.svg" />
+        <None Remove="UseTests\UseReferenceGroupCircleFromDefsTests\group-use-references-defs-group-circle.svg" />
+        <None Remove="UseTests\UseReferenceGroupCircleFromDefsTests\use-references-defs-group-circle.svg" />
+        <None Remove="UseTests\UseReferenceGroupCircleTests\use-references-group-circle.svg" />
     </ItemGroup>
 
     <ItemGroup>
@@ -89,10 +94,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle^.svg" />
         <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use^-references-defs-circle.svg" />
         <EmbeddedResource Include="StrokeTests\UseReferenceCircleTests\use-references-defs-circle^.svg" />
-        <EmbeddedResource Include="UseTests\use-references-circle-after.svg" />
-        <EmbeddedResource Include="UseTests\use-references-circle-before.svg" />
-        <EmbeddedResource Include="UseTests\use-references-defs-group-circle.svg" />
-        <EmbeddedResource Include="UseTests\use-references-defs-circle.svg" />
+        <EmbeddedResource Include="StrokeTests\UseReferenceGroupCircleTests\use-references-defs-group-circle^.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceCircleTests\use-references-circle-after.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceCircleTests\use-references-circle-before.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceCircleFromDefsTests\use-references-defs-group-circle.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceCircleFromDefsTests\use-references-defs-circle.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-negative-value.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-positive-value.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgHeightPxTests\svg-height-zero.svg" />
@@ -108,6 +114,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <EmbeddedResource Include="SvgRootTests\SvgWidthTests\svg-width-none.svg" />
         <EmbeddedResource Include="SvgRootTests\SvgWidthTests\svg-width-positive-value.svg" />
         <EmbeddedResource Include="SvgRootTests\EmptySvgTests\empty.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceGroupCircleTests\group-use-references-group-circle.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceGroupCircleTests\use-references-group-circle.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceGroupCircleFromDefsTests\use-references-defs-group-circle.svg" />
+        <EmbeddedResource Include="UseTests\UseReferenceGroupCircleFromDefsTests\group-use-references-defs-group-circle.svg" />
     </ItemGroup>
 
     <ItemGroup>

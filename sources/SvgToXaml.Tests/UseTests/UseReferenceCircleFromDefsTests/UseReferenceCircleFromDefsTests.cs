@@ -14,36 +14,28 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.UseTests;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseReferenceCircleFromDefsTests;
 
 public class UseReferenceCircleFromDefsTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingUseReferencingCircleFromDefs_WhenSvgIsParsed_ThenEllipseIsCreated()
+    public void HavingUseReferencingCircleFromDefs_WhenSvgIsParsed_ThenOneEllipseIsCreated()
     {
         TestConvertSvgFile("use-references-defs-circle.svg", canvas =>
         {
-            canvas.AssertChildren(typeof(Ellipse));
+            canvas.Should().ContainExact(typeof(Ellipse));
         });
     }
 
     [Fact]
-    public void HavingUseReferencingGroupFromDefsContainingCircle_WhenSvgIsParsed_ThenOneCanvasContainingEllipseIsCreated()
+    public void HavingUseReferencingCircleFromGroupFromDefs_WhenSvgIsParsed_ThenOneEllipseIsCreated()
     {
         TestConvertSvgFile("use-references-defs-group-circle.svg", canvas =>
         {
-            canvas.Children.Count.Should().Be(1);
-            Canvas canvas2 = canvas.GetElementByIndex<Canvas>(0);
-
-            canvas2.Children.Count.Should().Be(1);
-            Ellipse ellipse = canvas2.GetElementByIndex<Ellipse>(0);
-
-            ellipse.Should().NotBeNull();
+            canvas.Should().ContainExact(typeof(Ellipse));
         });
     }
 }
