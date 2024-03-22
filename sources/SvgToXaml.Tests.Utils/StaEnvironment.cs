@@ -20,6 +20,11 @@ public static class StaEnvironment
 {
     public static void Run(Action action)
     {
+        Run(ExecutionErrorBehavior.ThrowException, action);
+    }
+    
+    public static void Run(ExecutionErrorBehavior executionErrorBehavior, Action action)
+    {
         Exception exception = null;
 
         Thread thread = new(() =>
@@ -41,6 +46,19 @@ public static class StaEnvironment
         thread.Join();
 
         if (exception != null)
-            throw new Exception("Execution in STA environment failed.", exception);
+        {
+            switch (executionErrorBehavior)
+            {
+                default:
+                case ExecutionErrorBehavior.ThrowException:
+                    throw new StaEnvironmentException(exception);
+
+                case ExecutionErrorBehavior.ThrowOriginalException:
+                    throw exception;
+
+                case ExecutionErrorBehavior.SwallowException:
+                    break;
+            }
+        }
     }
 }

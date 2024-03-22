@@ -62,7 +62,11 @@ public class MainViewModel : ViewModelBase
             }
 
             SvgDocument svgDocument = SvgDocument.Parse(svgText);
-            Canvas canvas = svgDocument.Content.ToXaml();
+
+            SvgConversion svgConversion = new(svgDocument.Content);
+            Canvas canvas = svgConversion.Execute();
+            
+            //Canvas canvas = svgDocument.Content.ToXaml();
 
             XamlText = Serialize(canvas);
         }

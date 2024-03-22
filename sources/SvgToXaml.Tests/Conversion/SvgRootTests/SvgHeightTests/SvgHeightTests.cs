@@ -14,10 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
-using DustInTheWind.SvgToXaml.Conversion;
-using DustInTheWind.SvgToXaml.Svg;
-using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgHeightTests;
@@ -54,16 +50,9 @@ public class SvgHeightTests : SvgFileTestsBase
     [Fact]
     public void HavingSvgHeightSetToNegativeValue_WhenSvgIsParsed_ThenThrows()
     {
-        string svg = TestResources.ReadTextFile("svg-height-negative-value.svg", GetType());
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        Assert.ThrowsAny<Exception>(() =>
+        Assert.Throws<ArgumentException>(() =>
         {
-            StaEnvironment.Run(() =>
-            {
-                Canvas canvas = svgDocument.Content.ToXaml();
-                canvas.Height.Should().Be(142);
-            });
+            TestConvertSvgFile("svg-height-negative-value.svg");
         });
     }
 }

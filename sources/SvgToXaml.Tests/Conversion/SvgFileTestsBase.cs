@@ -25,16 +25,17 @@ namespace DustInTheWind.SvgToXaml.Tests.Conversion;
 
 public class SvgFileTestsBase
 {
-    protected void TestConvertSvgFile(string resourceFileName, Action<Canvas> callBack)
+    protected void TestConvertSvgFile(string resourceFileName, Action<Canvas> callBack = null)
     {
         Type callerType = GetCallerType();
 
         string svg = TestResources.ReadTextFile(resourceFileName, callerType);
         SvgDocument svgDocument = SvgDocument.Parse(svg);
 
-        StaEnvironment.Run(() =>
+        StaEnvironment.Run(ExecutionErrorBehavior.ThrowOriginalException, () =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
+            SvgConversion svgConversion = new(svgDocument.Content);
+            Canvas canvas = svgConversion.Execute();
 
             callBack?.Invoke(canvas);
         });

@@ -14,15 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
 using System.Windows.Controls;
 using System.Windows.Media;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal static class SvgExtensions
+internal class SvgConversion : IConversion<Canvas>
 {
-    public static Canvas ToXaml(this Svg.Svg svg)
+    private readonly Svg.Svg svg;
+
+    public SvgConversion(Svg.Svg svg)
+    {
+        this.svg = svg ?? throw new ArgumentNullException(nameof(svg));
+    }
+
+    public Canvas Execute()
     {
         if (svg == null)
             return null;
@@ -46,7 +54,7 @@ internal static class SvgExtensions
             bool viewBoxIsTranslated = svg.ViewBox.OriginX is { Value: not 0 } ||
                                        svg.ViewBox.OriginY is { Value: not 0 };
 
-            if (viewBoxIsTranslated) 
+            if (viewBoxIsTranslated)
                 canvas.RenderTransform = CreateRenderTransform(svg.ViewBox);
         }
 
