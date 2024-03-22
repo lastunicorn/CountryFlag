@@ -2,9 +2,9 @@
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <circle id="circle1" cx="300" cy="300" r="150" stroke="#332211" />
+        <circle id="circle1" cx="300" cy="300" r="150" stroke="#333333" />
     </defs>
-    <g stroke="#445566">
-        <use xlink:href="#circle1" stroke="#112233" />
+    <g stroke="#111111">
+        <use xlink:href="#circle1" stroke="#222222" />
     </g>
 </svg>

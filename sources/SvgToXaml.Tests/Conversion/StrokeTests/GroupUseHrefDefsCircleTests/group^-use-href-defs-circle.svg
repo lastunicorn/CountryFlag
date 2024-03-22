@@ -4,7 +4,7 @@
     <defs>
         <circle id="circle1" cx="300" cy="300" r="150" />
     </defs>
-    <g stroke="#445566">
+    <g stroke="#111111">
         <use xlink:href="#circle1" />
     </g>
 </svg>

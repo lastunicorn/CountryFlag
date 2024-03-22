@@ -24,12 +24,12 @@ namespace DustInTheWind.SvgToXaml.Tests.Utils.Assertions;
 
 public class CanvasAssertions : ReferenceTypeAssertions<Canvas, CanvasAssertions>
 {
+    protected override string Identifier => "Canvas";
+
     public CanvasAssertions(Canvas instance)
         : base(instance)
     {
     }
-
-    protected override string Identifier => "Canvas";
 
     public AndConstraint<CanvasAssertions> Contain(Type childType, string because = "", params object[] becauseArgs)
     {

@@ -15,10 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
+using DustInTheWind.SvgToXaml.Tests.Utils.Assertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.GroupUseHrefDefsCircleTests;
 
@@ -33,9 +32,7 @@ public class GroupUseHrefDefsCircleTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x44, 0x55, 0x66);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 
@@ -48,9 +45,7 @@ public class GroupUseHrefDefsCircleTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x22, 0x33);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff222222");
         });
     }
 
@@ -63,9 +58,7 @@ public class GroupUseHrefDefsCircleTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x22, 0x33);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff222222");
         });
     }
 }
