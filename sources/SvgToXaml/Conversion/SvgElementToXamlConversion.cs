@@ -41,6 +41,9 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
     public TXaml Execute()
     {
         XamlElement = CreateXamlElement();
+        
+        if (SvgElement.Transforms.Count > 0)
+            XamlElement.RenderTransform = SvgElement.Transforms.ToXaml();
 
         List<SvgElement> inheritedSvgElements = EnumerateInheritedElements().ToList();
 
@@ -76,25 +79,7 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
     protected virtual void InheritPropertiesFrom(IEnumerable<SvgElement> svgElements)
     {
-        SetRenderTransform(svgElements);
         SetOpacity(svgElements);
-    }
-
-    private void SetRenderTransform(IEnumerable<SvgElement> svgElements)
-    {
-        if (svgElements.Any(x => x == SvgElement))
-        {
-            if(SvgElement.Transforms.Any())
-                XamlElement.RenderTransform = SvgElement.Transforms.ToXaml();
-        }
-
-        //List<ISvgTransform> transforms = svgElements
-        //    .Reverse()
-        //    .SelectMany(x => x.Transforms)
-        //    .ToList();
-
-        //if (transforms.Any())
-        //    XamlElement.RenderTransform = transforms.ToXaml();
     }
 
     private void SetOpacity(IEnumerable<SvgElement> svgElements)

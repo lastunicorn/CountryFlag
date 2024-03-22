@@ -42,7 +42,7 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
             canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
         IEnumerable<UIElement> xamlElements = svgGroup.Children
-            .Select(ConvertChildElement)
+            .Select(CreateConversion)
             .Select(x => x.Execute());
 
         foreach (UIElement uiElement in xamlElements) 
@@ -51,7 +51,7 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
         return canvas;
     }
 
-    private static IConversion<UIElement> ConvertChildElement(SvgElement svgElement)
+    private static IConversion<UIElement> CreateConversion(SvgElement svgElement)
     {
         switch (svgElement)
         {
