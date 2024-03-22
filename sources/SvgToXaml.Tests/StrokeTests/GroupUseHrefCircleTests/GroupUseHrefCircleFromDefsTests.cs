@@ -14,34 +14,39 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.StrokeTests.UseReferenceCircleTests;
+namespace DustInTheWind.SvgToXaml.Tests.StrokeTests.GroupUseHrefCircleTests;
 
-public class UseReferenceCircleFromDefsTests : SvgFileTestsBase
+public class GroupUseHrefCircleFromDefsTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
+    public void HavingStrokeDeclaredOnGroup_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroup()
     {
-        TestConvertSvgFile("use-references-defs-circle^.svg", canvas =>
+        TestConvertSvgFile("group^-use-href-defs-circle.svg", canvas =>
         {
-            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+            Ellipse ellipse = canvas
+                .GetElementByIndex<Canvas>(0)
+                .GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x33, 0x22, 0x11);
+            Color expectedColor = Color.FromArgb(0xff, 0x44, 0x55, 0x66);
             SolidColorBrush expectedBrush = new(expectedColor);
             ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnUse_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
+    public void HavingStrokeDeclaredOnGroupAndOnUse_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
     {
-        TestConvertSvgFile("use^-references-defs-circle.svg", canvas =>
+        TestConvertSvgFile("group^-use^-href-defs-circle.svg", canvas =>
         {
-            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+            Ellipse ellipse = canvas
+                .GetElementByIndex<Canvas>(0)
+                .GetElementByIndex<Ellipse>(0);
 
             Color expectedColor = Color.FromArgb(0xff, 0x11, 0x22, 0x33);
             SolidColorBrush expectedBrush = new(expectedColor);
@@ -50,11 +55,13 @@ public class UseReferenceCircleFromDefsTests : SvgFileTestsBase
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnUseAndOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
+    public void HavingStrokeDeclaredOnGroupOnUseAndOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
     {
-        TestConvertSvgFile("use^-references-defs-circle^.svg", canvas =>
+        TestConvertSvgFile("group^-use^-href-defs-circle^.svg", canvas =>
         {
-            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+            Ellipse ellipse = canvas
+                .GetElementByIndex<Canvas>(0)
+                .GetElementByIndex<Ellipse>(0);
 
             Color expectedColor = Color.FromArgb(0xff, 0x11, 0x22, 0x33);
             SolidColorBrush expectedBrush = new(expectedColor);

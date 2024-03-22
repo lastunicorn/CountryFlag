@@ -18,14 +18,14 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseReferenceGroupCircleFromDefsTests;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseHrefGroupCircleFromDefsTests;
 
-public class UseReferenceGroupCircleFromDefsTests : SvgFileTestsBase
+public class UseHrefGroupCircleFromDefsTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingUseReferencingGroupFromDefsContainingCircle_WhenSvgIsParsed_ThenCreatesCanvasContainingEllipse()
     {
-        TestConvertSvgFile("use-references-defs-group-circle.svg", canvas =>
+        TestConvertSvgFile("use-href-defs-group-circle.svg", canvas =>
         {
             TypeHierarchy expected = new()
             {
@@ -42,7 +42,7 @@ public class UseReferenceGroupCircleFromDefsTests : SvgFileTestsBase
     [Fact]
     public void HavingGroupUseReferencingGroupFromDefsContainingCircle_WhenSvgIsParsed_ThenCreatesCanvasContainingCanvasContainingEllipse()
     {
-        TestConvertSvgFile("group-use-references-defs-group-circle.svg", canvas =>
+        TestConvertSvgFile("group-use-href-defs-group-circle.svg", canvas =>
         {
             TypeHierarchy expected = new()
             {

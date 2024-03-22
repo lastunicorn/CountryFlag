@@ -14,28 +14,28 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.StrokeTests.UseReferenceGroupCircleTests;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseHrefCircleFromDefsTests;
 
-public class UseReferenceGroupCircleFromDefsTests : SvgFileTestsBase
+public class UseHrefCircleFromDefsTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
+    public void HavingUseReferencingCircleFromDefs_WhenSvgIsParsed_ThenOneEllipseIsCreated()
     {
-        TestConvertSvgFile("use-references-defs-group-circle^.svg", canvas =>
+        TestConvertSvgFile("use-href-defs-circle.svg", canvas =>
         {
-            Ellipse ellipse = canvas
-                .GetElementByIndex<Canvas>(0)
-                .GetElementByIndex<Ellipse>(0);
+            canvas.Should().ContainExact(typeof(Ellipse));
+        });
+    }
 
-            Color expectedColor = Color.FromArgb(0xff, 0x33, 0x22, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+    [Fact]
+    public void HavingUseReferencingCircleFromGroupFromDefs_WhenSvgIsParsed_ThenOneEllipseIsCreated()
+    {
+        TestConvertSvgFile("use-href-defs-group-circle.svg", canvas =>
+        {
+            canvas.Should().ContainExact(typeof(Ellipse));
         });
     }
 }

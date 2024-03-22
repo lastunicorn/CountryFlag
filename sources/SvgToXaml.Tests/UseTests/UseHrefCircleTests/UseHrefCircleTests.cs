@@ -17,14 +17,14 @@
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseReferenceCircleTests;
+namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseHrefCircleTests;
 
-public class UseReferenceCircleTests : SvgFileTestsBase
+public class UseHrefCircleTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingUseReferencingCircleDeclaredBeforeIt_WhenSvgIsParsed_ThenTwoEllipsesAreCreated()
     {
-        TestConvertSvgFile("use-references-circle-before.svg", canvas =>
+        TestConvertSvgFile("use-href-circle-before.svg", canvas =>
         {
             TypeHierarchy expectedTypes = new()
             {
@@ -39,7 +39,7 @@ public class UseReferenceCircleTests : SvgFileTestsBase
     [Fact]
     public void HavingUseReferencingCircleDeclaredAfterIt_WhenSvgIsParsed_ThenTwoEllipsesAreCreated()
     {
-        TestConvertSvgFile("use-references-circle-after.svg", canvas =>
+        TestConvertSvgFile("use-href-circle-after.svg", canvas =>
         {
             TypeHierarchy expectedTypes = new()
             {
