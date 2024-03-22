@@ -62,7 +62,7 @@ public class MainViewModel : ViewModelBase
             }
 
             SvgDocument svgDocument = SvgDocument.Parse(svgText);
-            Canvas? canvas = svgDocument.Content.ToXaml();
+            Canvas canvas = svgDocument.Content.ToXaml();
 
             XamlText = Serialize(canvas);
         }
@@ -72,7 +72,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    private static string Serialize(Canvas? canvas)
+    private static string Serialize(Canvas canvas)
     {
         if (canvas == null)
             return string.Empty;

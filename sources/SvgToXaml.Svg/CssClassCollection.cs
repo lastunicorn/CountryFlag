@@ -21,11 +21,11 @@ using System.Text.RegularExpressions;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgStyleClasses : Collection<SvgStyleClass>
+public class CssClassCollection : Collection<CssClass>
 {
-    public SvgStyleClass? this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    public CssClass? this[string name] => Items.FirstOrDefault(x => x.Name == name);
 
-    public static implicit operator SvgStyleClasses?(string? text)
+    public static implicit operator CssClassCollection?(string? text)
     {
         if (text == null)
             return null;
@@ -34,18 +34,18 @@ public class SvgStyleClasses : Collection<SvgStyleClass>
 
         MatchCollection matches = regex.Matches(text);
         
-        IEnumerable<SvgStyleClass> items = matches
-            .Select(x => new SvgStyleClass
+        IEnumerable<CssClass> items = matches
+            .Select(x => new CssClass
             {
                 Name = x.Groups[1].Value,
                 Value = x.Groups[2].Value
             });
 
-        SvgStyleClasses svgStyleClasses = new();
+        CssClassCollection cssClasses = new();
 
-        foreach (SvgStyleClass item in items)
-            svgStyleClasses.Add(item);
+        foreach (CssClass item in items)
+            cssClasses.Add(item);
 
-        return svgStyleClasses;
+        return cssClasses;
     }
 }

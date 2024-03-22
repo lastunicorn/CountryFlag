@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -130,15 +131,15 @@ public class SvgElement
         }
     }
 
-    private IEnumerable<SvgStyleClass>? GetApplicableClasses()
+    private IEnumerable<CssClass>? GetApplicableClasses()
     {
         if (ClassNames == null)
             return null;
 
         Svg? parentSvg = GetParentSvg();
-        SvgStyleClasses? svgStyleClasses = parentSvg?.SvgStyleClasses;
+        IEnumerable<CssClass>? cssClasses = parentSvg?.GetAllCssClasses();
 
-        return svgStyleClasses?
+        return cssClasses?
             .Where(x => ClassNames.Contains(x.Name))
             .Where(x => x.Value != null)
             .Reverse();
@@ -146,12 +147,12 @@ public class SvgElement
 
     private string? GetStyleValueFromClasses(string name)
     {
-        IEnumerable<SvgStyleClass>? applicableClasses = GetApplicableClasses();
+        IEnumerable<CssClass>? applicableClasses = GetApplicableClasses();
 
         if (applicableClasses == null)
             return null;
 
-        foreach (SvgStyleClass svgStyleClass in applicableClasses)
+        foreach (CssClass svgStyleClass in applicableClasses)
         {
             SvgStyleItem? styleItem1 = svgStyleClass.Value?[name];
 

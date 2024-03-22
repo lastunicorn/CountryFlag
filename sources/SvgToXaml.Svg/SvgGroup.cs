@@ -58,6 +58,8 @@ public class SvgShapeElement
 public class SvgGroup : SvgElement
 {
     public SvgElementCollection<SvgElement> Children { get; }
+    
+    public CssClassCollection CssClasses { get; }
 
     public SvgGroup()
     {
@@ -114,6 +116,10 @@ public class SvgGroup : SvgElement
                 {
                     SvgUse svgUseChild = new(serializationUseChild);
                     Children.Add(svgUseChild);
+                }
+                else if (serializationChild is Style style)
+                {
+                    CssClasses = style.Value;
                 }
             }
         }

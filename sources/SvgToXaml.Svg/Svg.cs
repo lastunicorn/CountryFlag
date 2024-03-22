@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
@@ -25,8 +27,6 @@ public class Svg : SvgGroup
     public Size? Height { get; set; }
 
     public SvgViewBox? ViewBox { get; set; }
-
-    public SvgStyleClasses? SvgStyleClasses { get; set; }
 
     public SvgDefinitions? SvgDefinitions { get; set; }
 
@@ -48,9 +48,6 @@ public class Svg : SvgGroup
         if (svg.ViewBox != null)
             ViewBox = SvgViewBox.Parse(svg.ViewBox);
 
-        if (svg.StyleElement != null)
-            SvgStyleClasses = svg.StyleElement;
-
         if (svg.Defs != null)
             SvgDefinitions = new SvgDefinitions(svg.Defs);
     }
@@ -58,5 +55,33 @@ public class Svg : SvgGroup
     public override SvgElement? FindChild(string? id)
     {
         return SvgDefinitions?.FindChild(id) ?? base.FindChild(id);
+    }
+
+    public IEnumerable<CssClass> GetAllCssClasses()
+    {
+        IEnumerable<SvgGroup> svgGroups = GetAllGroups();
+
+        foreach (SvgGroup svgGroup in svgGroups)
+        {
+            if (svgGroup.CssClasses == null)
+                continue;
+
+            foreach (CssClass cssClass in svgGroup.CssClasses)
+                yield return cssClass;
+        }
+    }
+
+    private IEnumerable<SvgGroup> GetAllGroups()
+    {
+        yield return this;
+
+        if (SvgDefinitions != null)
+            yield return SvgDefinitions;
+
+        foreach (SvgElement svgElement in Children)
+        {
+            if (svgElement is SvgGroup svgGroup)
+                yield return svgGroup;
+        }
     }
 }

@@ -19,14 +19,14 @@ using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleClassTests;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleDefsClassTests;
 
-public class CircleClassTests : SvgFileTestsBase
+public class CircleDefsClassTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingStrokeDeclaredInClass_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
+    public void HavingStrokeDeclaredInDefsClass_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
     {
-        TestConvertSvgFile("circle-class^.svg", canvas =>
+        TestConvertSvgFile("circle-defs-class^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -37,9 +37,9 @@ public class CircleClassTests : SvgFileTestsBase
     }
 
     [Fact]
-    public void HavingStrokeDeclaredInCircleAndClass_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
+    public void HavingStrokeDeclaredInCircleAndDefsClass_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
     {
-        TestConvertSvgFile("circle^-class^.svg", canvas =>
+        TestConvertSvgFile("circle^-defs-class^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -50,9 +50,9 @@ public class CircleClassTests : SvgFileTestsBase
     }
 
     [Fact]
-    public void HavingStrokeDeclaredInClassAndSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
+    public void HavingStrokeDeclaredInDefsClassAndSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromClass()
     {
-        TestConvertSvgFile("svgroot^-circle-class^.svg", canvas =>
+        TestConvertSvgFile("svgroot^-circle-defs-class^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 

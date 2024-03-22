@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgStyleClass
+public class CssClass
 {
     public string? Name { get; init; }
     
