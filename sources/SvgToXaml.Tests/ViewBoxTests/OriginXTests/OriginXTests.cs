@@ -14,11 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
-using DustInTheWind.SvgToXaml.Svg;
-using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
-
 namespace DustInTheWind.SvgToXaml.Tests.ViewBoxTests.OriginXTests;
 
 public class OriginXTests
