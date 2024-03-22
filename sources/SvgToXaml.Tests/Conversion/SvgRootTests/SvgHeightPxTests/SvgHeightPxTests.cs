@@ -45,7 +45,7 @@ public class SvgHeightPxTests : SvgFileTestsBase
     [Fact]
     public void HavingSvgHeightSetToNegativePxValue_WhenSvgIsParsed_ThenThrows()
     {
-        string svg = TestResources.ReadTextFile("svg-height-negative-value.svg");
+        string svg = TestResources.ReadTextFile("svg-height-negative-value.svg", GetType());
         SvgDocument svgDocument = SvgDocument.Parse(svg);
 
         Assert.ThrowsAny<Exception>(() =>

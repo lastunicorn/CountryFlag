@@ -24,7 +24,9 @@ public static class TestResources
 {
     public static string ReadTextFile(string resourceFileName, Type relativeType)
     {
-        Assembly assembly = Assembly.GetExecutingAssembly();
+        if (relativeType == null) throw new ArgumentNullException(nameof(relativeType));
+
+        Assembly assembly = relativeType.Assembly;
         string callerNamespace = relativeType.Namespace;
 
         using Stream stream = assembly.GetManifestResourceStream(callerNamespace + "." + resourceFileName);

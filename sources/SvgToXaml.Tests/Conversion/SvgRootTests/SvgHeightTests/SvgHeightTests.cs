@@ -22,17 +22,13 @@ using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgHeightTests;
 
-public class SvgHeightTests
+public class SvgHeightTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingSvgHeightNotSet_WhenSvgIsParsed_ThenCanvasHasHeightNaN()
     {
-        string svg = TestResources.ReadTextFile("svg-height-none.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-height-none.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Height.Should().Be(double.NaN);
         });
     }
@@ -40,12 +36,8 @@ public class SvgHeightTests
     [Fact]
     public void HavingSvgHeightSetToZero_WhenSvgIsParsed_ThenCanvasHasHeightZero()
     {
-        string svg = TestResources.ReadTextFile("svg-height-zero.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-height-zero.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Height.Should().Be(0);
         });
     }
@@ -53,12 +45,8 @@ public class SvgHeightTests
     [Fact]
     public void HavingSvgHeightSetToPositiveValue_WhenSvgIsParsed_ThenCanvasHasHeightSpecified()
     {
-        string svg = TestResources.ReadTextFile("svg-height-positive-value.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-height-positive-value.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Height.Should().Be(142);
         });
     }
@@ -66,7 +54,7 @@ public class SvgHeightTests
     [Fact]
     public void HavingSvgHeightSetToNegativeValue_WhenSvgIsParsed_ThenThrows()
     {
-        string svg = TestResources.ReadTextFile("svg-height-negative-value.svg");
+        string svg = TestResources.ReadTextFile("svg-height-negative-value.svg", GetType());
         SvgDocument svgDocument = SvgDocument.Parse(svg);
 
         Assert.ThrowsAny<Exception>(() =>

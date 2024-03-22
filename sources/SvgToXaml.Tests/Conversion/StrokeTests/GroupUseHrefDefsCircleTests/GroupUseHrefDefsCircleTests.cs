@@ -20,9 +20,9 @@ using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.GroupUseHrefCircleTests;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.GroupUseHrefDefsCircleTests;
 
-public class GroupUseHrefCircleFromDefsTests : SvgFileTestsBase
+public class GroupUseHrefDefsCircleTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingStrokeDeclaredOnGroup_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroup()

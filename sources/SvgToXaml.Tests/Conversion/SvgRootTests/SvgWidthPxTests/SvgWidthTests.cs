@@ -22,17 +22,13 @@ using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgWidthPxTests;
 
-public class SvgWidthPxTests
+public class SvgWidthPxTests : SvgFileTestsBase
 {
     [Fact]
     public void HavingSvgWidthSetToZeroPx_WhenSvgIsParsed_ThenCanvasHasWidthZero()
     {
-        string svg = TestResources.ReadTextFile("svg-width-zero.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-width-zero.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Width.Should().Be(0);
         });
     }
@@ -40,12 +36,8 @@ public class SvgWidthPxTests
     [Fact]
     public void HavingSvgWidthSetToPositivePxValue_WhenSvgIsParsed_ThenCanvasHasWidthSpecified()
     {
-        string svg = TestResources.ReadTextFile("svg-width-positive-value.svg");
-        SvgDocument svgDocument = SvgDocument.Parse(svg);
-
-        StaEnvironment.Run(() =>
+        TestConvertSvgFile("svg-width-positive-value.svg", canvas =>
         {
-            Canvas canvas = svgDocument.Content.ToXaml();
             canvas.Width.Should().Be(142);
         });
     }
@@ -53,7 +45,7 @@ public class SvgWidthPxTests
     [Fact]
     public void HavingSvgWidthSetToNegativePxValue_WhenSvgIsParsed_ThenThrows()
     {
-        string svg = TestResources.ReadTextFile("svg-width-negative-value.svg");
+        string svg = TestResources.ReadTextFile("svg-width-negative-value.svg", GetType());
         SvgDocument svgDocument = SvgDocument.Parse(svg);
 
         Assert.ThrowsAny<Exception>(() =>
