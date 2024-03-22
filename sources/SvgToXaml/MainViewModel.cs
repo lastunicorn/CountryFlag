@@ -26,10 +26,10 @@ namespace DustInTheWind.SvgToXaml;
 
 public class MainViewModel : ViewModelBase
 {
-    private string? svgText;
-    private string? xamlText;
+    private string svgText;
+    private string xamlText;
 
-    public string? SvgText
+    public string SvgText
     {
         get => svgText;
         set
@@ -41,7 +41,7 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public string? XamlText
+    public string XamlText
     {
         get => xamlText;
         set

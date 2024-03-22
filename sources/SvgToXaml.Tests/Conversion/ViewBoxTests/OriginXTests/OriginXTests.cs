@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,19 +14,20 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Generic;
-using System.Linq;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.ViewBoxTests.OriginXTests;
 
-namespace DustInTheWind.SvgToXaml;
-
-internal static class EnumerableExtensions
+public class OriginXTests
 {
-    public static IEnumerable<T> SafeConcat<T>(this IEnumerable<T> svgElements, T svgElement)
-    {
-        if (svgElements == null)
-            return new[] { svgElement };
+    //[Fact]
+    //public void HavingOriginXNotSet_WhenSvgIsParsed_ThenCanvasHasWidthNaN()
+    //{
+    //    string svg = TestResources.ReadTextFile("origin-x-none.svg");
+    //    SvgDocument svgDocument = SvgDocument.Parse(svg);
 
-        return svgElements
-            .Concat(new[] { svgElement });
-    }
+    //    StaEnvironment.Run(() =>
+    //    {
+    //        Canvas canvas = svgDocument.Content.ToXaml();
+    //        canvas.Width.Should().Be(double.NaN);
+    //    });
+    //}
 }
