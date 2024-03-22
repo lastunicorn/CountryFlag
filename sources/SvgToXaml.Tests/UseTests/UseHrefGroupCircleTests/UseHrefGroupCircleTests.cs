@@ -17,6 +17,7 @@
 using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
+using DustInTheWind.SvgToXaml.Tests.Utils.Assertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.UseTests.UseHrefGroupCircleTests;
 

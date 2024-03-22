@@ -20,7 +20,7 @@ using FluentAssertions;
 using FluentAssertions.Execution;
 using FluentAssertions.Primitives;
 
-namespace DustInTheWind.SvgToXaml.Tests.Utils;
+namespace DustInTheWind.SvgToXaml.Tests.Utils.Assertions;
 
 public class CanvasAssertions : ReferenceTypeAssertions<Canvas, CanvasAssertions>
 {

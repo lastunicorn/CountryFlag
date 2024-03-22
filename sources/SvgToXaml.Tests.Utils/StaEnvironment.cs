@@ -14,19 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
+namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Tests.SvgRootTests.EmptySvgTests;
-
-public class EmptySvgTests : SvgFileTestsBase
+public static class StaEnvironment
 {
-    [Fact]
-    public void HavingEmptySvg_WhenParsed_ThenCanvasHasNoChildren()
+    public static void Run(Action action)
     {
-        TestConvertSvgFile("empty.svg", canvas =>
+        Exception exception = null;
+
+        Thread thread = new(() =>
         {
-            canvas.Children.Count.Should().Be(0);
+            try
+            {
+                action?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
         });
+
+        thread.SetApartmentState(ApartmentState.STA);
+        thread.IsBackground = true;
+
+        thread.Start();
+        thread.Join();
+
+        if (exception != null)
+            throw new Exception("Execution in STA environment failed.", exception);
     }
 }

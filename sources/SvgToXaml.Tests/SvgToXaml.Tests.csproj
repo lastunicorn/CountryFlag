@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Country Flags
 Copyright (C) 2022-2024 Dust in the Wind
 
@@ -136,6 +136,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <ItemGroup>
         <ProjectReference Include="..\SvgToXaml.Svg\SvgToXaml.Svg.csproj" PrivateAssets="All" />
+        <ProjectReference Include="..\SvgToXaml.Tests.Utils\SvgToXaml.Tests.Utils.csproj" PrivateAssets="All" />
         <ProjectReference Include="..\SvgToXaml\SvgToXaml.csproj" PrivateAssets="All" />
     </ItemGroup>
 

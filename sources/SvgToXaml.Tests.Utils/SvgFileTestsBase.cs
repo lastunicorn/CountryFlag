@@ -14,30 +14,34 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows;
+using System.Diagnostics;
+using System.Reflection;
 using System.Windows.Controls;
 
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal static class CanvasExtensions
+public class SvgFileTestsBase
 {
-    public static T GetFirstElement<T>(this Canvas canvas)
-        where T : UIElement
+    protected void TestConvertSvgFile(string resourceFileName, Action<Canvas> callBack)
     {
-        return canvas.Children[0] as T;
+        Type callerType = GetCallerType();
+
+        string svg = TestResources.ReadTextFile(resourceFileName, callerType);
+        SvgDocument svgDocument = SvgDocument.Parse(svg);
+
+        StaEnvironment.Run(() =>
+        {
+            Canvas canvas = svgDocument.Content.ToXaml();
+
+            callBack?.Invoke(canvas);
+        });
     }
 
-    public static T GetElementByIndex<T>(this Canvas canvas, int index)
-        where T : UIElement
+    private static Type GetCallerType()
     {
-        return canvas.Children[index] as T;
-    }
+        StackFrame stackFrame = new(2, false);
+        MethodBase caller = stackFrame.GetMethod();
 
-    public static T GetElement<T>(this Canvas canvas)
-        where T : UIElement
-    {
-        return canvas.Children
-            .OfType<T>()
-            .FirstOrDefault();
+        return caller.DeclaringType;
     }
 }

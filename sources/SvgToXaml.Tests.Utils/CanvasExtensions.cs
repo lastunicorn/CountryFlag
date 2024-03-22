@@ -14,14 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Windows;
 using System.Windows.Controls;
 
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-public static class CanvasAssertExtensions
+public static class CanvasExtensions
 {
-    public static CanvasAssertions Should(this Canvas instance)
+    public static T GetFirstElement<T>(this Canvas canvas)
+        where T : UIElement
     {
-        return new CanvasAssertions(instance);
+        return canvas.Children[0] as T;
+    }
+
+    public static T GetElementByIndex<T>(this Canvas canvas, int index)
+        where T : UIElement
+    {
+        return canvas.Children[index] as T;
+    }
+
+    public static T GetElement<T>(this Canvas canvas)
+        where T : UIElement
+    {
+        return canvas.Children
+            .OfType<T>()
+            .FirstOrDefault();
     }
 }

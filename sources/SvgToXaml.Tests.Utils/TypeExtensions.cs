@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal static class TypeExtensions
+public static class TypeExtensions
 {
     public static TypeHierarchyItem ToHierarchyItem(this Type type)
     {

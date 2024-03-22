@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{84C4C50B-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvgToXaml.Tests", "SvgToXaml.Tests\SvgToXaml.Tests.csproj", "{77448891-B3FE-486F-A4CB-B4587E22A009}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvgToXaml.Tests.Utils", "SvgToXaml.Tests.Utils\SvgToXaml.Tests.Utils.csproj", "{3F71CB7A-69E3-49D9-8F34-7EA014A42922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{77448891-B3FE-486F-A4CB-B4587E22A009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77448891-B3FE-486F-A4CB-B4587E22A009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77448891-B3FE-486F-A4CB-B4587E22A009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F71CB7A-69E3-49D9-8F34-7EA014A42922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F71CB7A-69E3-49D9-8F34-7EA014A42922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F71CB7A-69E3-49D9-8F34-7EA014A42922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F71CB7A-69E3-49D9-8F34-7EA014A42922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +100,7 @@ Global
 		{019AEBD6-CD92-4F08-8457-116D1CBB7CFE} = {3D809562-43E7-410D-AEEC-D7B91E93A228}
 		{D94308B5-95A8-4B0D-9B98-CD06D10BAD27} = {3D809562-43E7-410D-AEEC-D7B91E93A228}
 		{77448891-B3FE-486F-A4CB-B4587E22A009} = {531931B0-270C-4B40-BA2C-68D063CA205D}
+		{3F71CB7A-69E3-49D9-8F34-7EA014A42922} = {531931B0-270C-4B40-BA2C-68D063CA205D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {757DE211-2FA1-405A-97D8-4DFAA52867A4}

@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,33 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Windows.Media;
+
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal static class StaEnvironment
+public class SolidColorBrushComparer : IEqualityComparer<SolidColorBrush>
 {
-    public static void Run(Action action)
+    public bool Equals(SolidColorBrush x, SolidColorBrush y)
     {
-        Exception exception = null;
+        return x.Color == y.Color && x.Opacity == y.Opacity;
+    }
 
-        Thread thread = new(() =>
+    public int GetHashCode(SolidColorBrush obj)
+    {
+        var o = new
         {
-            try
-            {
-                action?.Invoke();
-            }
-            catch (Exception ex)
-            {
-                exception = ex;
-            }
-        });
+            C = obj.Color,
+            O = obj.Opacity
+        };
 
-        thread.SetApartmentState(ApartmentState.STA);
-        thread.IsBackground = true;
-
-        thread.Start();
-        thread.Join();
-
-        if (exception != null)
-            throw new Exception("Execution in STA environment failed.", exception);
+        return o.GetHashCode();
     }
 }

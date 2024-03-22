@@ -20,7 +20,7 @@ using System.Reflection;
 
 namespace DustInTheWind.SvgToXaml.Tests.Utils;
 
-internal static class TestResources
+public static class TestResources
 {
     public static string ReadTextFile(string resourceFileName, Type relativeType)
     {

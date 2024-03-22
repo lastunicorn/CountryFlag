@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,19 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
+using System.Windows.Controls;
 
-namespace DustInTheWind.SvgToXaml.Tests.SvgRootTests.EmptySvgTests;
+namespace DustInTheWind.SvgToXaml.Tests.Utils.Assertions;
 
-public class EmptySvgTests : SvgFileTestsBase
+public static class CanvasAssertExtensions
 {
-    [Fact]
-    public void HavingEmptySvg_WhenParsed_ThenCanvasHasNoChildren()
+    public static CanvasAssertions Should(this Canvas instance)
     {
-        TestConvertSvgFile("empty.svg", canvas =>
-        {
-            canvas.Children.Count.Should().Be(0);
-        });
+        return new CanvasAssertions(instance);
     }
 }
