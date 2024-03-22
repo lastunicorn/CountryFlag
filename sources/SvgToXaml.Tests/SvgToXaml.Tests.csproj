@@ -32,6 +32,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="Conversion\DefsTests\defs-2circles.svg" />
         <None Remove="Conversion\DefsTests\defs-circle.svg" />
         <None Remove="Conversion\DefsTests\defs-group-circle.svg" />
+        <None Remove="Conversion\StrokeTests\CircleClassTests\circle-class^.svg" />
+        <None Remove="Conversion\StrokeTests\CircleClassTests\circle^-class^.svg" />
+        <None Remove="Conversion\StrokeTests\CircleClassTests\svgroot^-circle-class^.svg" />
+        <None Remove="Conversion\StrokeTests\CircleStyleTests\circle-style^.svg" />
+        <None Remove="Conversion\StrokeTests\CircleStyleTests\circle^-style^.svg" />
+        <None Remove="Conversion\StrokeTests\CircleStyleTests\svgroot^-circle-style^.svg" />
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\group-use-href-defs-group-circle.svg" />
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\group-use-href-defs-group-circle^.svg" />
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\group-use-href-defs-group^-circle.svg" />
@@ -91,6 +97,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <EmbeddedResource Include="Conversion\StrokeTests\CircleInGroupTests\svgroot^-group^-circle.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleInGroupTests\svgroot^-group-circle.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleInGroupTests\group^-circle^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleClassTests\circle-class^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleClassTests\circle^-class^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleClassTests\svgroot^-circle-class^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleStyleTests\svgroot^-circle-style^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleStyleTests\circle^-style^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\CircleStyleTests\circle-style^.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleTests\svgroot^-circle^.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleTests\circle.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleInGroupTests\group-circle^.svg" />

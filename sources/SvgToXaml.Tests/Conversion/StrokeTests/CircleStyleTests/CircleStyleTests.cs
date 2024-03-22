@@ -19,25 +19,14 @@ using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleTests;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleStyleTests;
 
-public class CircleTests : SvgFileTestsBase
+public class CircleStyleTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingNoStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeNull()
+    public void HavingStrokeDeclaredInStyle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromStyle()
     {
-        TestConvertSvgFile("circle.svg", canvas =>
-        {
-            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
-
-            ellipse.Stroke.Should().BeNull();
-        });
-    }
-
-    [Fact]
-    public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
-    {
-        TestConvertSvgFile("circle^.svg", canvas =>
+        TestConvertSvgFile("circle-style^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
@@ -48,22 +37,22 @@ public class CircleTests : SvgFileTestsBase
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnSvgRootContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromSvgRoot()
+    public void HavingStrokeDeclaredInCircleAndStyle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromStyle()
     {
-        TestConvertSvgFile("svgroot^-circle.svg", canvas =>
+        TestConvertSvgFile("circle^-style^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x22, 0x22, 0x22);
+            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
             SolidColorBrush expectedBrush = new(expectedColor);
             ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnBothSvgRootAndOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
+    public void HavingStrokeDeclaredInStyleAndSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeFromStyle()
     {
-        TestConvertSvgFile("svgroot^-circle^.svg", canvas =>
+        TestConvertSvgFile("svgroot^-circle-style^.svg", canvas =>
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 

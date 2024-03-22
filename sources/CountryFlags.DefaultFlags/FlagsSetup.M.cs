@@ -90,7 +90,17 @@ internal static partial class FlagsSetup
 
     public static void Mexico()
     {
-        Countries.Mexico.Flags.Add(new CountryFlag());
+        Countries.Mexico.Flags.Add(new CountryFlag
+        {
+            Description = "A vertical tricolor of green, white and red, with the National Coat of Arms centered on the white band.",
+            StartDate = new FlagDate(1968, 09, 16),
+            DesignedBy = new StringList
+            {
+                "Agustin de Iturbide (Original version)",
+                "Francisco Eppens Helguera"
+            },
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Micronesia()
@@ -100,7 +110,12 @@ internal static partial class FlagsSetup
 
     public static void Moldova()
     {
-        Countries.Moldova.Flags.Add(new CountryFlag());
+        Countries.Moldova.Flags.Add(new CountryFlag
+        {
+            Description = "A vertical tricolour of blue, yellow and red; charged with the coat of arms centered on the yellow band.",
+            StartDate = new FlagDate(1990, 11, 06),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Monaco()

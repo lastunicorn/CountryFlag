@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
@@ -68,6 +70,12 @@ internal static partial class FlagsSetup
 
     public static void Mexico()
     {
+        Countries.Mexico.Flags.Add(new CountryFlag
+        {
+            Id = "NavalJack",
+            Description = "A diagonal tricolor of white, green, red, with a thin anchor in the center. Three eight-pointed gold stars are in the canton, and the bottom two corners.",
+            Usage = FlagUsage.NavalJack
+        });
     }
 
     public static void Micronesia()
@@ -76,6 +84,62 @@ internal static partial class FlagsSetup
 
     public static void Moldova()
     {
+        Countries.Moldova.Flags.Add(new CountryFlag
+        {
+            Id = "WarFlag",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Armed Forces of Moldova"
+                }
+            },
+            Description = "A blue cloth, bearing a red cross within a larger yellow cross. On the front of the cloth, in the center, lies the Emblem of the National Army. The reverse of the flag has the chromatic layout and features in the center the army motto in golden letters: Romanian: \"Pentru Onoare! Pentru Patrie! Pentru Tricolor!\" (For Honour! For Country! For the Tricolour!)",
+            StartDate = new FlagDate(1991, 03, 28),
+            Usage = FlagUsage.WarFlag
+        });
+
+        Countries.Moldova.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Standard of the President"
+                }
+            },
+            StartDate = new FlagDate(2010),
+            Usage = FlagUsage.LeaderFlag
+        });
+
+        Countries.Moldova.Flags.Add(new CountryFlag
+        {
+            Id = "PresidentOfParliament",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Standard of the President of the Parliament"
+                }
+            },
+            StartDate = new FlagDate(2010),
+            Usage = FlagUsage.LeaderFlag
+        });
+
+        Countries.Moldova.Flags.Add(new CountryFlag
+        {
+            Id = "PrimeMinister",
+            Names = new List<FlagName>
+            {
+                new()
+                {
+                    EnglishTranslation = "Standard of the Prime Minister"
+                }
+            },
+            StartDate = new FlagDate(2010),
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Monaco()

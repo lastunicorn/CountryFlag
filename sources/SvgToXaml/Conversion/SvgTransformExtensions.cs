@@ -23,7 +23,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal static class SvgTransformExtensions
 {
-    public static Transform? ToXaml(this IList<ISvgTransform> svgTransformList)
+    public static Transform ToXaml(this IList<ISvgTransform> svgTransformList)
     {
         switch (svgTransformList.Count)
         {

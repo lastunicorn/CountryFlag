@@ -76,7 +76,7 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
     protected virtual void InheritPropertiesFrom(IEnumerable<SvgElement> svgElements)
     {
-        SetRenderTransform(svgElements);
+        //SetRenderTransform(svgElements);
         SetOpacity(svgElements);
     }
 

@@ -1,0 +1,127 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Mexico (NavalJack) -->
+
+    <Canvas x:Key="CountryFlag_MX_NavalJack" Width="1000" Height="1000">
+
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FF006847"
+            StrokeThickness="3.43214273"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Round"
+            StrokeMiterLimit="4"
+            StrokeDashOffset="0"
+            Width="1000.0006"
+            Height="1000.0006"
+            Canvas.Left="-1.6613518E-06"
+            Canvas.Top="-1.6613519E-06" />
+
+        <Path
+            Data="M662.5,0L0,662.5 0,0 662.5,0z"
+            Fill="#FFFFFFFF"
+            StrokeThickness="1"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Miter" />
+
+        <Path
+            Data="M337.5,1000L1000,337.5 1000,1000 337.5,1000z"
+            Fill="#FFCE1126"
+            StrokeThickness="1"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Miter" />
+
+        <!-- Anchor -->
+
+        <Path
+            Data="M499.99995,663.88258C493.85645,648.93751 488.1455,632.57324 477.17644,627.88251 465.93508,613.12732 460.62663,603.41512 455.52939,593.88244L455.52939,622.8825C448.71807,600.32836 440.81232,579.63478 439.99998,546.88234 448.40684,556.54903 460.9817,566.21571 474.35291,575.8824L462.58821,581.88241C470.5882,596.46059 478.5882,606.95745 486.5882,610.88247 489.72545,612.88248 492.23525,609.54914 494.1176,600.88245L495.52937,410.88207 477.17644,410.88207 477.17644,391.88203 495.52937,391.88203 495.52937,362.88198 504.47054,362.88198 504.47054,391.88203 522.82347,391.88203 522.82347,410.88207 504.47054,410.88207 505.8823,600.88245C507.76466,609.54914 510.27446,612.88248 513.41171,610.88247 521.41171,606.95745 529.4117,596.46059 537.4117,581.88241L525.647,575.8824C539.01821,566.21571 551.59307,556.54903 559.99992,546.88234 559.18759,579.63478 551.28184,600.32836 544.47052,622.8825L544.47052,593.88244C539.37328,603.41512 534.06483,613.12732 522.82347,627.88251 511.85441,632.57324 506.14346,648.93751 499.99995,663.88258z"
+            Fill="#FFFFFFFF"
+            StrokeThickness="1"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Miter" />
+
+        <Path
+            Data="M510.83033,355.59567A16.245487,16.245487,0,1,1,478.33935,355.59567A16.245487,16.245487,0,1,1,510.83033,355.59567z"
+            Fill="#FF006847"
+            Stroke="#FFFFFFFF"
+            StrokeThickness="13.64123821"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Round"
+            StrokeMiterLimit="4"
+            StrokeDashOffset="0"
+            RenderTransform="0.502882,0,0,1.068627,251.2821,-21.52139" />
+
+        <!-- Star - Bottom Left -->
+
+        <Path
+            Data="M34.29603,519.85558L18.063067,474.20787 -25.693175,495.00724 -4.8938085,451.251 -50.541519,435.01804 -4.8938088,418.78507 -25.693178,375.02883 18.063066,395.8282 34.296026,350.18049 50.52899,395.8282 94.285232,375.02883 73.485865,418.78507 119.13358,435.01803 73.485865,451.251 94.285235,495.00724 50.52899,474.20787 34.29603,519.85558z"
+            Fill="#FFD9B45B"
+            StrokeThickness="0.69999999"
+            StrokeMiterLimit="4"
+            RenderTransform="0.589362,0,0,0.589362,129.7873,593.6169" />
+
+        <!-- Star - Top Left -->
+
+        <Path
+            Data="M34.29603,519.85558L18.063067,474.20787 -25.693175,495.00724 -4.8938085,451.251 -50.541519,435.01804 -4.8938088,418.78507 -25.693178,375.02883 18.063066,395.8282 34.296026,350.18049 50.52899,395.8282 94.285232,375.02883 73.485865,418.78507 119.13358,435.01803 73.485865,451.251 94.285235,495.00724 50.52899,474.20787 34.29603,519.85558z"
+            Fill="#FFD9B45B"
+            StrokeThickness="0.69999999"
+            StrokeMiterLimit="4">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <TransformGroup.Children>
+                        <MatrixTransform Matrix="0.589362,0,0,0.589362,129.7873,593.6169" />
+                        <TranslateTransform X="0" Y="-700" />
+                    </TransformGroup.Children>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <!-- Star - Bottom Right -->
+
+        <Path
+            Data="M34.29603,519.85558L18.063067,474.20787 -25.693175,495.00724 -4.8938085,451.251 -50.541519,435.01804 -4.8938088,418.78507 -25.693178,375.02883 18.063066,395.8282 34.296026,350.18049 50.52899,395.8282 94.285232,375.02883 73.485865,418.78507 119.13358,435.01803 73.485865,451.251 94.285235,495.00724 50.52899,474.20787 34.29603,519.85558z"
+            Fill="#FFD9B45B"
+            StrokeThickness="0.69999999"
+            StrokeMiterLimit="4">
+
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <TransformGroup.Children>
+                        <MatrixTransform Matrix="0.589362,0,0,0.589362,129.7873,593.6169" />
+                        <TranslateTransform X="700" Y="0" />
+                    </TransformGroup.Children>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>
