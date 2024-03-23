@@ -41,9 +41,7 @@ public class CircleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 
@@ -54,9 +52,7 @@ public class CircleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x22, 0x22, 0x22);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff222222");
         });
     }
 
@@ -67,9 +63,7 @@ public class CircleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 }

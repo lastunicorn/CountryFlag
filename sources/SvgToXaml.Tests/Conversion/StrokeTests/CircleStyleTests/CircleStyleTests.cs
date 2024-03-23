@@ -14,10 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleStyleTests;
 
@@ -30,9 +28,7 @@ public class CircleStyleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 
@@ -43,9 +39,7 @@ public class CircleStyleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 
@@ -56,9 +50,7 @@ public class CircleStyleTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x11, 0x11, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 }

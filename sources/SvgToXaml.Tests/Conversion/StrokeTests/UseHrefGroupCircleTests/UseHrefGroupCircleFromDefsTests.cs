@@ -15,10 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.UseHrefGroupCircleTests;
 
@@ -33,9 +31,7 @@ public class UseHrefGroupCircleFromDefsTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            Color expectedColor = Color.FromArgb(0xff, 0x33, 0x22, 0x11);
-            SolidColorBrush expectedBrush = new(expectedColor);
-            ellipse.Stroke.Should().Be(expectedBrush, new SolidColorBrushComparer());
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 }
