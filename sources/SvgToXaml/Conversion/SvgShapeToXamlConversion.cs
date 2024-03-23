@@ -67,7 +67,7 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
 
     private void SetStroke(IEnumerable<SvgElement> svgElements)
     {
-        string? stroke = svgElements
+        string stroke = svgElements
             .Select(x => x.CalculateStroke())
             .FirstOrDefault(x => x != null);
 

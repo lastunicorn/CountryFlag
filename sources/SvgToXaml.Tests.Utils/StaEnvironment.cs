@@ -53,7 +53,7 @@ public static class StaEnvironment
                 case ExecutionErrorBehavior.ThrowException:
                     throw new StaEnvironmentException(exception);
 
-                case ExecutionErrorBehavior.ThrowOriginalException:
+                case ExecutionErrorBehavior.RethrowOriginalException:
                     throw exception;
 
                 case ExecutionErrorBehavior.SwallowException:

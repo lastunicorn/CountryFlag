@@ -21,8 +21,8 @@ namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 public class ClipPath
 {
     [XmlAttribute("id")]
-    public string? Id { get; set; }
+    public string Id { get; set; }
 
     [XmlElement("path", typeof(Path))]
-    public Path? Path { get; set; }
+    public Path Path { get; set; }
 }

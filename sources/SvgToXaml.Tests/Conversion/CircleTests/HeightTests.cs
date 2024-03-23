@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,38 +14,47 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Conversion;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgHeightPxTests;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.CircleTests;
 
-public class SvgHeightPxTests : SvgFileTestsBase
+public class HeightTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingSvgHeightSetToZeroPx_WhenSvgIsParsed_ThenCanvasHasHeightZero()
+    public void HavingCircleWithRadius0_WhenSvgIsParsed_ThenResultedEllipseHasHeight0()
     {
-        TestConvertSvgFile("svg-height-zero.svg", canvas =>
+        TestConvertSvgFile("height-from-radius-0.svg", canvas =>
         {
-            canvas.Height.Should().Be(0);
+            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+
+            ellipse.Width.Should().Be(0);
         });
     }
 
     [Fact]
-    public void HavingSvgHeightSetToPositivePxValue_WhenSvgIsParsed_ThenCanvasHasHeightSpecified()
+    public void HavingCircleWithRadius50_WhenSvgIsParsed_ThenResultedEllipseHasHeight100()
     {
-        TestConvertSvgFile("svg-height-positive-value.svg", canvas =>
+        TestConvertSvgFile("height-from-radius-positive.svg", canvas =>
         {
-            canvas.Height.Should().Be(142);
+            Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+
+            ellipse.Width.Should().Be(100);
         });
     }
 
     [Fact]
-    public void HavingSvgHeightSetToNegativePxValue_WhenSvgIsParsed_ThenThrows()
+    public void HavingCircleWithRadiusMinus50_WhenSvgIsParsed_ThenThrows()
     {
         Action action = () =>
         {
-            TestConvertSvgFile("svg-height-negative-value.svg");
+            TestConvertSvgFile("height-from-radius-negative.svg", canvas =>
+            {
+                Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
+
+                ellipse.Width.Should().Be(100);
+            });
         };
 
         action.Should().Throw<StaEnvironmentException>()

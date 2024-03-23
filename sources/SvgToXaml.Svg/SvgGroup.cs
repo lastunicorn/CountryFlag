@@ -125,7 +125,7 @@ public class SvgGroup : SvgElement
         }
     }
 
-    public virtual SvgElement? FindChild(string? id)
+    public virtual SvgElement FindChild(string id)
     {
         return Children.FindChild(id);
     }

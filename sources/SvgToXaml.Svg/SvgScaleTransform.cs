@@ -29,7 +29,7 @@ public class SvgScaleTransform : ISvgTransform
 
     public double? ScaleY { get; set; }
 
-    public SvgScaleTransform(string? text)
+    public SvgScaleTransform(string text)
     {
         if (text == null)
             return;

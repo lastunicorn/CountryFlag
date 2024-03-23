@@ -27,7 +27,7 @@ public class SvgRotateTransform : ISvgTransform
 
     public double? CenterY { get; set; }
 
-    public SvgRotateTransform(string? text)
+    public SvgRotateTransform(string text)
     {
         if (text == null)
             return;

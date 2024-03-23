@@ -19,6 +19,6 @@ namespace DustInTheWind.SvgToXaml.Tests.Utils;
 public enum ExecutionErrorBehavior
 {
     ThrowException = 0,
-    ThrowOriginalException,
+    RethrowOriginalException,
     SwallowException
 }

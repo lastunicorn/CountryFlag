@@ -32,7 +32,7 @@ public class SvgFileTestsBase
         string svg = TestResources.ReadTextFile(resourceFileName, callerType);
         SvgDocument svgDocument = SvgDocument.Parse(svg);
 
-        StaEnvironment.Run(ExecutionErrorBehavior.ThrowOriginalException, () =>
+        StaEnvironment.Run(ExecutionErrorBehavior.ThrowException, () =>
         {
             SvgConversion svgConversion = new(svgDocument.Content);
             Canvas canvas = svgConversion.Execute();

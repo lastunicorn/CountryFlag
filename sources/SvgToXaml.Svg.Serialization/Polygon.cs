@@ -21,5 +21,5 @@ namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 public class Polygon : Element
 {
     [XmlAttribute("points")]
-    public string? Points { get; set; }
+    public string Points { get; set; }
 }

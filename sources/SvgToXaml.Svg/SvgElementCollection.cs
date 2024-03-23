@@ -62,7 +62,7 @@ public class SvgElementCollection<T> : Collection<T>
         base.ClearItems();
     }
 
-    public SvgElement? FindChild(string? id)
+    public SvgElement FindChild(string id)
     {
         foreach (T svgElement in Items)
         {
@@ -71,9 +71,9 @@ public class SvgElementCollection<T> : Collection<T>
 
             if (svgElement is SvgGroup svgGroup)
             {
-                SvgElement? child = svgGroup.Children.FindChild(id);
+                SvgElement child = svgGroup.Children.FindChild(id);
 
-                if(child != null)
+                if (child != null)
                     return child;
             }
         }

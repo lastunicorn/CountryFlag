@@ -21,7 +21,7 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgUse : SvgElement
 {
-    public string? Href { get; set; }
+    public string Href { get; set; }
 
     public SvgUse()
     {
@@ -40,9 +40,9 @@ public class SvgUse : SvgElement
         return new SvgUseInheritanceCollection(this);
     }
 
-    public SvgElement? GetInheritedElement()
+    public SvgElement GetInheritedElement()
     {
-        Svg? svg = GetParentSvg();
+        Svg svg = GetParentSvg();
 
         if (svg == null)
             return null;

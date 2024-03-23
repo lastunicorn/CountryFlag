@@ -16,19 +16,18 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
 public class Svg : SvgGroup
 {
-    public Size? Width { get; set; }
+    public Size Width { get; set; }
 
-    public Size? Height { get; set; }
+    public Size Height { get; set; }
 
-    public SvgViewBox? ViewBox { get; set; }
+    public SvgViewBox ViewBox { get; set; }
 
-    public SvgDefinitions? SvgDefinitions { get; set; }
+    public SvgDefinitions SvgDefinitions { get; set; }
 
     public Svg()
     {
@@ -52,7 +51,7 @@ public class Svg : SvgGroup
             SvgDefinitions = new SvgDefinitions(svg.Defs);
     }
 
-    public override SvgElement? FindChild(string? id)
+    public override SvgElement FindChild(string id)
     {
         return SvgDefinitions?.FindChild(id) ?? base.FindChild(id);
     }

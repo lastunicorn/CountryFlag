@@ -29,7 +29,7 @@ public class SvgViewBox
 
     public Size Height { get; set; }
 
-    public static SvgViewBox? Parse(string? text)
+    public static SvgViewBox Parse(string text)
     {
         if (text == null)
             return null;

@@ -20,7 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <AssemblyName>DustInTheWind.SvgToXaml.Svg.Serialization</AssemblyName>
         <RootNamespace>DustInTheWind.SvgToXaml.Svg.Serialization</RootNamespace>
     </PropertyGroup>

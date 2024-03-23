@@ -36,19 +36,30 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
 
     public Canvas Execute()
     {
-        Canvas canvas = new();
+        try
+        {
+            Canvas canvas = new();
 
-        if (svgGroup.Transforms.Count > 0)
-            canvas.RenderTransform = svgGroup.Transforms.ToXaml();
+            if (svgGroup.Transforms.Count > 0)
+                canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
-        IEnumerable<UIElement> xamlElements = svgGroup.Children
-            .Select(CreateConversion)
-            .Select(x => x.Execute());
+            IEnumerable<UIElement> xamlElements = svgGroup.Children
+                .Select(CreateConversion)
+                .Select(x => x.Execute());
 
-        foreach (UIElement uiElement in xamlElements) 
-            canvas.Children.Add(uiElement);
+            foreach (UIElement uiElement in xamlElements)
+                canvas.Children.Add(uiElement);
 
-        return canvas;
+            return canvas;
+        }
+        catch (SvgConversionException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            throw new SvgConversionException(ex);
+        }
     }
 
     private static IConversion<UIElement> CreateConversion(SvgElement svgElement)

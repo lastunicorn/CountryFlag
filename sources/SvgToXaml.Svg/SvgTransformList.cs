@@ -59,7 +59,7 @@ public class SvgTransformList : Collection<ISvgTransform>
     {
         ParseState parseState = ParseState.ExpectName;
 
-        string? name = null;
+        string name = null;
 
         int startIndex = -1;
 

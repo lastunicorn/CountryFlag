@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using DustInTheWind.SvgToXaml.Conversion;
+using DustInTheWind.SvgToXaml.Tests.Utils;
 using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgWidthPxTests;
@@ -41,9 +43,12 @@ public class SvgWidthPxTests : SvgFileTestsBase
     [Fact]
     public void HavingSvgWidthSetToNegativePxValue_WhenSvgIsParsed_ThenThrows()
     {
-        Assert.Throws<ArgumentException>(() =>
+        Action action = () =>
         {
             TestConvertSvgFile("svg-width-negative-value.svg");
-        });
+        };
+
+        action.Should().Throw<StaEnvironmentException>()
+            .WithInnerException<SvgConversionException>();
     }
 }

@@ -39,7 +39,7 @@ public class Size
         };
     }
 
-    public static implicit operator Size?(double? value)
+    public static implicit operator Size(double? value)
     {
         if (value == null)
             return null;
@@ -50,7 +50,7 @@ public class Size
         };
     }
 
-    public static implicit operator Size(string? text)
+    public static implicit operator Size(string text)
     {
         if (text == null)
             return Zero;

@@ -33,7 +33,7 @@ public class SvgMatrixTransform : ISvgTransform
 
     public double OffsetY { get; set; }
 
-    public SvgMatrixTransform(string? text)
+    public SvgMatrixTransform(string text)
     {
         if (text == null)
             return;

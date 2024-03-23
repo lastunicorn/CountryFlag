@@ -25,7 +25,7 @@ public class SvgTranslateTransform : ISvgTransform
 
     public double Y { get; set; }
 
-    public SvgTranslateTransform(string? text)
+    public SvgTranslateTransform(string text)
     {
         if (text == null)
             return;

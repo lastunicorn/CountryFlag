@@ -32,33 +32,44 @@ internal class SvgConversion : IConversion<Canvas>
 
     public Canvas Execute()
     {
-        if (svg == null)
-            return null;
-
-        SvgGroupToXamlConversion conversion = new(svg);
-        Canvas canvas = conversion.Execute();
-
-        if (svg.ViewBox == null)
+        try
         {
-            if (svg.Width != null)
-                canvas.Width = svg.Width.Value;
+            if (svg == null)
+                return null;
 
-            if (svg.Height != null)
-                canvas.Height = svg.Height.Value;
+            SvgGroupToXamlConversion conversion = new(svg);
+            Canvas canvas = conversion.Execute();
+
+            if (svg.ViewBox == null)
+            {
+                if (svg.Width != null)
+                    canvas.Width = svg.Width.Value;
+
+                if (svg.Height != null)
+                    canvas.Height = svg.Height.Value;
+            }
+            else
+            {
+                canvas.Width = svg.ViewBox.Width.Value;
+                canvas.Height = svg.ViewBox.Height.Value;
+
+                bool viewBoxIsTranslated = svg.ViewBox.OriginX is { Value: not 0 } ||
+                                           svg.ViewBox.OriginY is { Value: not 0 };
+
+                if (viewBoxIsTranslated)
+                    canvas.RenderTransform = CreateRenderTransform(svg.ViewBox);
+            }
+
+            return canvas;
         }
-        else
+        catch (SvgConversionException)
         {
-            canvas.Width = svg.ViewBox.Width.Value;
-            canvas.Height = svg.ViewBox.Height.Value;
-
-            bool viewBoxIsTranslated = svg.ViewBox.OriginX is { Value: not 0 } ||
-                                       svg.ViewBox.OriginY is { Value: not 0 };
-
-            if (viewBoxIsTranslated)
-                canvas.RenderTransform = CreateRenderTransform(svg.ViewBox);
+            throw;
         }
-
-        return canvas;
+        catch (Exception ex)
+        {
+            throw new SvgConversionException(ex);
+        }
     }
 
     private static TranslateTransform CreateRenderTransform(SvgViewBox svgViewBox)

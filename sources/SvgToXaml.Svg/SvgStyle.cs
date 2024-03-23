@@ -23,14 +23,14 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgStyle : Collection<SvgStyleItem>
 {
-    public SvgStyleItem? this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    public SvgStyleItem this[string name] => Items.FirstOrDefault(x => x.Name == name);
 
     public override string ToString()
     {
         return string.Join(";", Items);
     }
 
-    public static implicit operator SvgStyle?(string? text)
+    public static implicit operator SvgStyle(string text)
     {
         if (text == null)
             return null;

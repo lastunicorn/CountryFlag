@@ -14,31 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.IO;
-using System.Xml.Serialization;
+using DustInTheWind.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgDocument
 {
-    public Svg? Content { get; set; }
+    public Svg Content { get; set; }
 
     public static SvgDocument Parse(string svg)
     {
-        XmlSerializer xmlSerializer = new(typeof(Serialization.Svg));
+        using StringReader stringReader = new(svg);
 
-        using StringReader sr = new(svg);
-        object? deserializedObject = xmlSerializer.Deserialize(sr);
+        SvgSerializer serializer = new();
+        Serialization.Svg svgObject = serializer.Deserialize(stringReader);
 
-        if (deserializedObject is Serialization.Svg svgObject)
+        return new SvgDocument
         {
-            return new SvgDocument
-            {
-                Content = new Svg(svgObject)
-            };
-        }
-
-        throw new ArgumentException("The value is not a valid svg document.", nameof(svg));
+            Content = new Svg(svgObject)
+        };
     }
 }

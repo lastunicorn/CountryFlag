@@ -23,9 +23,9 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class CssClassCollection : Collection<CssClass>
 {
-    public CssClass? this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    public CssClass this[string name] => Items.FirstOrDefault(x => x.Name == name);
 
-    public static implicit operator CssClassCollection?(string? text)
+    public static implicit operator CssClassCollection(string text)
     {
         if (text == null)
             return null;

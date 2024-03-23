@@ -40,16 +40,27 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
     public TXaml Execute()
     {
-        XamlElement = CreateXamlElement();
-        
-        if (SvgElement.Transforms.Count > 0)
-            XamlElement.RenderTransform = SvgElement.Transforms.ToXaml();
+        try
+        {
+            XamlElement = CreateXamlElement();
 
-        List<SvgElement> inheritedSvgElements = EnumerateInheritedElements().ToList();
+            if (SvgElement.Transforms.Count > 0)
+                XamlElement.RenderTransform = SvgElement.Transforms.ToXaml();
 
-        InheritPropertiesFrom(inheritedSvgElements);
+            List<SvgElement> inheritedSvgElements = EnumerateInheritedElements().ToList();
 
-        return XamlElement;
+            InheritPropertiesFrom(inheritedSvgElements);
+
+            return XamlElement;
+        }
+        catch (SvgConversionException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            throw new SvgConversionException(ex);
+        }
     }
 
     protected abstract TXaml CreateXamlElement();

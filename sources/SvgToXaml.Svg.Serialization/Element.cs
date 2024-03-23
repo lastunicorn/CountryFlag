@@ -21,19 +21,19 @@ namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 public class Element
 {
     [XmlAttribute("id")]
-    public string? Id { get; set; }
+    public string Id { get; set; }
 
     [XmlAttribute("class")]
-    public string? Class { get; set; }
+    public string Class { get; set; }
 
     [XmlAttribute("fill")]
-    public string? Fill { get; set; }
+    public string Fill { get; set; }
 
     [XmlAttribute("fill-rule")]
-    public string? FillRule { get; set; }
+    public string FillRule { get; set; }
 
     [XmlAttribute("stroke")]
-    public string? Stroke { get; set; }
+    public string Stroke { get; set; }
 
     [XmlAttribute("stroke-width")]
     public double StrokeWidth { get; set; }
@@ -41,10 +41,10 @@ public class Element
     public bool StrokeWidthSpecified { get; set; }
 
     [XmlAttribute("stroke-linecap")]
-    public string? StrokeLineCap { get; set; }
+    public string StrokeLineCap { get; set; }
 
     [XmlAttribute("stroke-linejoin")]
-    public string? StrokeLineJoin { get; set; }
+    public string StrokeLineJoin { get; set; }
 
     [XmlAttribute("stroke-dashoffset")]
     public double StrokeDashOffset { get; set; }
@@ -57,10 +57,10 @@ public class Element
     public bool StrokeMiterLimitSpecified { get; set; }
 
     [XmlAttribute("style")]
-    public string? Style { get; set; }
+    public string Style { get; set; }
 
     [XmlAttribute("transform")]
-    public string? Transform { get; set; }
+    public string Transform { get; set; }
 
     [XmlAttribute("opacity")]
     public double Opacity { get; set; }

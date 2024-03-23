@@ -26,7 +26,7 @@ public class FlagItemViewModel
 
     public bool IsAdditional { get; }
 
-    public FlagItemViewModel(CountryFlag? countryFlag)
+    public FlagItemViewModel(CountryFlag countryFlag)
     {
         if (countryFlag == null)
             return;

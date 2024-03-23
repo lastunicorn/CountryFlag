@@ -21,7 +21,7 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgPath : SvgElement
 {
-    public string? Data { get; set; }
+    public string Data { get; set; }
 
     public SvgPath()
     {

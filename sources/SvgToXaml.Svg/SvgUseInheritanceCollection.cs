@@ -22,11 +22,11 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgUseInheritanceCollection : IEnumerable<SvgElement>
 {
-    private readonly SvgUse? svgUse;
+    private readonly SvgUse svgUse;
 
-    public SvgElement? InheritedElement { get; }
+    public SvgElement InheritedElement { get; }
 
-    public SvgUseInheritanceCollection(SvgUse? svgUse)
+    public SvgUseInheritanceCollection(SvgUse svgUse)
     {
         this.svgUse = svgUse;
         
@@ -50,11 +50,11 @@ public class SvgUseInheritanceCollection : IEnumerable<SvgElement>
     {
         private readonly SvgUseInheritanceCollection svgUseInheritanceCollection;
         private EnumeratorState state;
-        private IEnumerator<SvgElement>? ancestorsEnumerator;
+        private IEnumerator<SvgElement> ancestorsEnumerator;
 
-        object? IEnumerator.Current => Current;
+        object IEnumerator.Current => Current;
 
-        public SvgElement? Current { get; private set; }
+        public SvgElement Current { get; private set; }
 
         public Enumerator(SvgUseInheritanceCollection svgUseInheritanceCollection)
         {

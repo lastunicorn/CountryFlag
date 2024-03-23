@@ -14,25 +14,16 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Xml.Serialization;
+using System;
 
-namespace DustInTheWind.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-[XmlRoot("svg", Namespace = "http://www.w3.org/2000/svg")]
-public class Svg : G
+public class SvgConversionException : Exception
 {
-    [XmlElement("clipPath")]
-    public ClipPath[] ClipPaths { get; set; }
+    private const string DefaultMessage = "Conversion of the SVG document into XAML failed.";
 
-    [XmlAttribute("width")]
-    public string Width { get; set; }
-
-    [XmlAttribute("height")]
-    public string Height { get; set; }
-
-    [XmlAttribute("viewBox")]
-    public string ViewBox { get; set; }
-
-    [XmlElement("defs")]
-    public Defs Defs { get; set; }
+    public SvgConversionException(Exception innerException)
+        :base(DefaultMessage, innerException)
+    {
+    }
 }
