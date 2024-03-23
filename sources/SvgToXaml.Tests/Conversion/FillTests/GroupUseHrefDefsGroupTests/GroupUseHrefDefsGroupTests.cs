@@ -18,12 +18,12 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.GroupUseHrefDefsGroupTests;
+namespace DustInTheWind.SvgToXaml.Tests.Conversion.FillTests.GroupUseHrefDefsGroupTests;
 
 public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingNoStrokeDeclared_WhenSvgIsParsed_ThenResultedEllipseHasNullStroke()
+    public void HavingNoFillDeclared_WhenSvgIsParsed_ThenResultedEllipseHasNullFill()
     {
         TestConvertSvgFile("01-group-use-href-defs-group-circle.svg", canvas =>
         {
@@ -32,12 +32,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().BeNull();
+            ellipse.Fill.Should().BeNull();
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
+    public void HavingFillDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromCircle()
     {
         TestConvertSvgFile("02-group-use-href-defs-group-circle^.svg", canvas =>
         {
@@ -46,12 +46,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff111111");
+            ellipse.Fill.Should().Be("#ff333333");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroup()
+    public void HavingFillDeclaredOnGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromGroup()
     {
         TestConvertSvgFile("03-group-use-href-defs-group^-circle.svg", canvas =>
         {
@@ -60,12 +60,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff222222");
+            ellipse.Fill.Should().Be("#ff666666");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnGroupContainingCircleAndCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
+    public void HavingFillDeclaredOnGroupContainingCircleAndCircle_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromCircle()
     {
         TestConvertSvgFile("04-group-use-href-defs-group^-circle^.svg", canvas =>
         {
@@ -74,12 +74,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff111111");
+            ellipse.Fill.Should().Be("#ff333333");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnUseAndGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
+    public void HavingFillDeclaredOnUseAndGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromUse()
     {
         TestConvertSvgFile("05-group-use^-href-defs-group^-circle.svg", canvas =>
         {
@@ -88,12 +88,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff222222");
+            ellipse.Fill.Should().Be("#ff666666");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnUse_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromUse()
+    public void HavingFillDeclaredOnUse_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromUse()
     {
         TestConvertSvgFile("06-group-use^-href-defs-group-circle.svg", canvas =>
         {
@@ -102,12 +102,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff333333");
+            ellipse.Fill.Should().Be("#ff999999");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnGroupContainingUse_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroupContainingUse()
+    public void HavingFillDeclaredOnGroupContainingUse_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromGroupContainingUse()
     {
         TestConvertSvgFile("07-group^-use-href-defs-group-circle.svg", canvas =>
         {
@@ -116,12 +116,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff444444");
+            ellipse.Fill.Should().Be("#ffcccccc");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnGroupContainingUseAndGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroupContainingCircle()
+    public void HavingFillDeclaredOnGroupContainingUseAndGroupContainingCircle_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromGroupContainingCircle()
     {
         TestConvertSvgFile("08-group^-use-href-defs-group^-circle.svg", canvas =>
         {
@@ -130,12 +130,12 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff222222");
+            ellipse.Fill.Should().Be("#ff666666");
         });
     }
 
     [Fact]
-    public void HavingStrokeDeclaredOnSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromGroupContainingCircle()
+    public void HavingFillDeclaredOnSvgRoot_WhenSvgIsParsed_ThenResultedEllipseHasFillColorFromGroupContainingCircle()
     {
         TestConvertSvgFile("09-svgroot^-group-use-href-defs-group-circle.svg", canvas =>
         {
@@ -144,7 +144,7 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff555555");
+            ellipse.Fill.Should().Be("#ffffffff");
         });
     }
 }
