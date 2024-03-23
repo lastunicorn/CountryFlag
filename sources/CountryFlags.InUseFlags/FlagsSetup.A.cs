@@ -31,7 +31,7 @@ internal static partial class FlagsSetup
     public static void Aland()
     {
     }
-    
+
     public static void Albania()
     {
         Countries.Albania.Flags.Add(new CountryFlag
@@ -48,7 +48,7 @@ internal static partial class FlagsSetup
             Usage = FlagUsage.WarEnsign
         });
     }
-    
+
     public static void Algeria()
     {
         Countries.Algeria.Flags.Add(new CountryFlag
@@ -85,7 +85,7 @@ internal static partial class FlagsSetup
     public static void AmericanSamoa()
     {
     }
-    
+
     public static void Andorra()
     {
         Countries.Andorra.Flags.Add(new CountryFlag
@@ -123,7 +123,7 @@ internal static partial class FlagsSetup
             Usage = FlagUsage.StateEnsign
         });
     }
-    
+
     public static void Argentina()
     {
         Countries.Argentina.Flags.Add(new CountryFlag
@@ -165,7 +165,7 @@ internal static partial class FlagsSetup
             Usage = FlagUsage.LeaderFlag
         });
     }
-    
+
     public static void Australia()
     {
         Countries.Australia.Flags.Add(new CountryFlag
@@ -178,7 +178,7 @@ internal static partial class FlagsSetup
             Description = "A Red Ensign defaced with the Commonwealth/Federation Star at the hoist, and the Southern Cross in the fly half.",
             Usage = FlagUsage.CivilEnsign
         });
-       
+
         Countries.Australia.Flags.Add(new CountryFlag
         {
             Id = "NavalEnsign",
@@ -190,7 +190,7 @@ internal static partial class FlagsSetup
             StartDate = new FlagDate(1967),
             Usage = FlagUsage.CivilEnsign
         });
-       
+
         Countries.Australia.Flags.Add(new CountryFlag
         {
             Id = "AirEnsign",
@@ -203,7 +203,7 @@ internal static partial class FlagsSetup
             Usage = FlagUsage.AirForceEnsign
         });
     }
-    
+
     public static void Austria()
     {
         Countries.Austria.Flags.Add(new CountryFlag

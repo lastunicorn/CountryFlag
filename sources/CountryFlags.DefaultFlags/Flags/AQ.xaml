@@ -147,7 +147,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <Path
                     Data="M-100,133.5L367,133.5 M133.5,-100L133.5,367"
                     Stroke="#072b5f"
-                    StrokeThickness="2" >
+                    StrokeThickness="2">
 
                     <Path.RenderTransform>
                         <RotateTransform Angle="30" CenterX="133.5" CenterY="133.5" />
@@ -157,7 +157,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <Path
                     Data="M-100,133.5L367,133.5 M133.5,-100L133.5,367"
                     Stroke="#072b5f"
-                    StrokeThickness="2" >
+                    StrokeThickness="2">
 
                     <Path.RenderTransform>
                         <RotateTransform Angle="60" CenterX="133.5" CenterY="133.5" />

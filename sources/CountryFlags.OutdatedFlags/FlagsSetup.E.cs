@@ -18,35 +18,35 @@ namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Ecuador ()
+    public static void Ecuador()
     {
     }
 
-    public static void Egypt ()
+    public static void Egypt()
     {
     }
 
-    public static void ElSalvador ()
+    public static void ElSalvador()
     {
     }
 
-    public static void EquatorialGuinea ()
+    public static void EquatorialGuinea()
     {
     }
 
-    public static void Eritrea ()
+    public static void Eritrea()
     {
     }
 
-    public static void Estonia ()
+    public static void Estonia()
     {
     }
 
-    public static void Eswatini ()
+    public static void Eswatini()
     {
     }
 
-    public static void Ethiopia ()
+    public static void Ethiopia()
     {
     }
 }

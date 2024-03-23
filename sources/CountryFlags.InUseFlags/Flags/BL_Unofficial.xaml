@@ -22,8 +22,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Saint Barthélemy (Unofficial Flag) -->
 
-    <Canvas x:Key="CountryFlag_BL_Unofficial" Width="1000" Height="700">
-
-    </Canvas>
+    <Canvas x:Key="CountryFlag_BL_Unofficial" Width="1000" Height="700" />
 
 </ResourceDictionary>

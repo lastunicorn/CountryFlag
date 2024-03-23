@@ -21,6 +21,7 @@ public enum StrokeLineCap
     //Flat,
     Butt,
     Square,
-    Round,
+
+    Round
     //Triangle
 }

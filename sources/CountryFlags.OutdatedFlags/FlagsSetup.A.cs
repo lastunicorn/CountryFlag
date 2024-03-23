@@ -29,11 +29,11 @@ internal static partial class FlagsSetup
     public static void Aland()
     {
     }
-    
+
     public static void Albania()
     {
     }
-    
+
     public static void Algeria()
     {
     }
@@ -41,7 +41,7 @@ internal static partial class FlagsSetup
     public static void AmericanSamoa()
     {
     }
-    
+
     public static void Andorra()
     {
     }
@@ -61,7 +61,7 @@ internal static partial class FlagsSetup
     public static void AntiguaAndBarbuda()
     {
     }
-    
+
     public static void Argentina()
     {
     }
@@ -73,11 +73,11 @@ internal static partial class FlagsSetup
     public static void Aruba()
     {
     }
-    
+
     public static void Australia()
     {
     }
-    
+
     public static void Austria()
     {
     }

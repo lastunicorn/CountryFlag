@@ -28,7 +28,7 @@ namespace DustInTheWind.SvgToXaml.Tests.Conversion.CircleTests;
  * | OffsetX OffsetY   1 |
  *
  * - OffsetX and OffsetY => Translate
- * 
+ *
  */
 
 public class CircleTransformTests : SvgFileTestsBase

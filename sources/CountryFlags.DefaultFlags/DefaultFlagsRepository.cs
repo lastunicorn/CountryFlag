@@ -15,12 +15,14 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using DustInTheWind.Flags.Core;
@@ -91,7 +93,7 @@ internal class DefaultFlagsRepository : FlagRepositoryBase
 
     public static IEnumerable<object> GetResourcePaths(Assembly assembly)
     {
-        CultureInfo culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+        CultureInfo culture = Thread.CurrentThread.CurrentCulture;
         string resourceName = assembly.GetName().Name + ".g";
         ResourceManager resourceManager = new(resourceName, assembly);
 
@@ -102,7 +104,7 @@ internal class DefaultFlagsRepository : FlagRepositoryBase
             if (resourceSet == null)
                 yield break;
 
-            foreach (System.Collections.DictionaryEntry resource in resourceSet)
+            foreach (DictionaryEntry resource in resourceSet)
                 yield return resource.Key;
         }
         finally

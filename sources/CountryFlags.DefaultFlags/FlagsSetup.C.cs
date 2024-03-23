@@ -118,7 +118,7 @@ internal static partial class FlagsSetup
                 new()
                 {
                     NativeName = "La Estrella Solitaria",
-                    EnglishTranslation = "The Lone Star",
+                    EnglishTranslation = "The Lone Star"
                 }
             },
             Description = "A horizontal bicolor of white and red with the blue square ended on the upper hoist-side corner of the white band bearing the white five-pointed star in the center.",

@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Polygon
                 Points="-0.3249196962329062,0 0,-1 0.3249196962329062,0"
                 Fill="#FFFFFFFF">
-                
+
                 <Polygon.RenderTransform>
                     <RotateTransform Angle="-72" />
                 </Polygon.RenderTransform>
@@ -72,7 +72,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Polygon
                 Points="-0.3249196962329062,0 0,-1 0.3249196962329062,0"
                 Fill="#FFFFFFFF">
-                
+
                 <Polygon.RenderTransform>
                     <RotateTransform Angle="72" />
                 </Polygon.RenderTransform>
@@ -81,7 +81,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Polygon
                 Points="-0.3249196962329062,0 0,-1 0.3249196962329062,0"
                 Fill="#FFFFFFFF">
-                
+
                 <Polygon.RenderTransform>
                     <RotateTransform Angle="-144" />
                 </Polygon.RenderTransform>
@@ -90,7 +90,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Polygon
                 Points="-0.3249196962329062,0 0,-1 0.3249196962329062,0"
                 Fill="#FFFFFFFF">
-                
+
                 <Polygon.RenderTransform>
                     <RotateTransform Angle="144" />
                 </Polygon.RenderTransform>

@@ -36,7 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Path
             Data="M 6,0 L 6,10 M 0,5 L 16,5"
             Stroke="#fecc00"
-            StrokeThickness="2"/>
+            StrokeThickness="2" />
 
     </Canvas>
 

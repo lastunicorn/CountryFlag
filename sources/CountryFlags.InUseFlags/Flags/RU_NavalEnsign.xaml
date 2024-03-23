@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Fill="#FF000000"
             Stroke="#FF0032A0"
             StrokeThickness="3"
-            Clip="M 0 0 H30 V 20 H 0 z"/>
+            Clip="M 0 0 H30 V 20 H 0 z" />
 
     </Canvas>
 

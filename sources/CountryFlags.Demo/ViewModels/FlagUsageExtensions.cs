@@ -55,7 +55,7 @@ public static class FlagUsageExtensions
                     string text = string.Join(" and ", subItems);
                     items.Add(text + " flag");
                 }
-                
+
                 //if (flagUsage.HasFlag(FlagUsage.CivilFlag))
                 //    items.Add("civil flag");
 

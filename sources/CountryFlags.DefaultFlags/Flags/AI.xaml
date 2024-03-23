@@ -56,7 +56,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Fill="#FF000000"
                 Stroke="#FFC8102E"
                 StrokeThickness="4"
-                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
             <Path
                 Data="M30,0L30,30 M0,15L60,15"

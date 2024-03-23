@@ -1770,7 +1770,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             StrokeThickness="3.205"
             StrokeLineJoin="round"
             Data="m1859.33 1780.02 -32.7202 -0.6458s -4.2451 -26.6125 16.1449 -27.7691c16.9243 -0.96 17.2516 28.3629 16.5753 28.4149z" />
-        
+
         <Path
             Fill="#fa0204"
             Stroke="#000"

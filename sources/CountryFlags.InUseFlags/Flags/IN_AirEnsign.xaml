@@ -605,7 +605,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </Canvas>
 
         <!-- Right Part -->
-        
+
         <Ellipse
             Fill="#FFF15B25"
             Width="300"

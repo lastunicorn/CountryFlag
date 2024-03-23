@@ -47,7 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Height="17"
             Canvas.Top="40"
             Fill="#FF018A2C" />
-        
+
         <Path
             Data="M49.363,28.5L0,57 0,0z"
             Fill="#FF0645B1" />

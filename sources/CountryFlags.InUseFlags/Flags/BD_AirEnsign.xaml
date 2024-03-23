@@ -22,32 +22,32 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Bangladesh (Air force ensign) -->
 
-    <Canvas x:Key="CountryFlag_BD_AirEnsign" Width="1800" Height="900" >
+    <Canvas x:Key="CountryFlag_BD_AirEnsign" Width="1800" Height="900">
 
         <Rectangle
             Fill="#FF14AAF1"
             Width="1800"
             Height="900" />
-        
+
         <Rectangle
             Fill="#FF006A4E"
             Width="900"
             Height="450" />
-        
+
         <Ellipse
             Fill="#FFF42A41"
             Width="300"
             Height="300"
             Canvas.Left="255"
             Canvas.Top="75" />
-        
+
         <Ellipse
             Fill="#FF006A4E"
             Width="400"
             Height="400"
             Canvas.Left="1200"
             Canvas.Top="425" />
-        
+
         <Ellipse
             Fill="#FFF42A41"
             Width="220"

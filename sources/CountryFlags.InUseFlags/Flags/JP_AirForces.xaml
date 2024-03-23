@@ -1055,7 +1055,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Width="48.812"
                             Height="48.812"
                             Canvas.Left="88.48400000000001"
-                            Canvas.Top="-177.466"/>
+                            Canvas.Top="-177.466" />
                     </Canvas>
 
                     <Path

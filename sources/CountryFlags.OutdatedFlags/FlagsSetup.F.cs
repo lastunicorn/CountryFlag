@@ -18,35 +18,35 @@ namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void FalklandIslands ()
+    public static void FalklandIslands()
     {
     }
 
-    public static void FaroeIslands ()
+    public static void FaroeIslands()
     {
     }
 
-    public static void Fiji ()
+    public static void Fiji()
     {
     }
 
-    public static void Finland ()
+    public static void Finland()
     {
     }
 
-    public static void France ()
+    public static void France()
     {
     }
 
-    public static void FrenchGuiana ()
+    public static void FrenchGuiana()
     {
     }
 
-    public static void FrenchPolynesia ()
+    public static void FrenchPolynesia()
     {
     }
 
-    public static void FrenchSouthernTerritories ()
+    public static void FrenchSouthernTerritories()
     {
     }
 }

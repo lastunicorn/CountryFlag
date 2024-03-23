@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="6"
             Height="4"
             Fill="#FFDA121A"
-            Canvas.Left="6"/>
+            Canvas.Left="6" />
 
         <Rectangle
             Width="6"

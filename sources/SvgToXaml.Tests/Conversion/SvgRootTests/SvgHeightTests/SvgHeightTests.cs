@@ -16,7 +16,6 @@
 
 using DustInTheWind.SvgToXaml.Conversion;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.SvgRootTests.SvgHeightTests;
 

@@ -27,12 +27,11 @@ internal static partial class FlagsSetup
             Id = "Unofficial",
             Names = new List<FlagName>
             {
-                new FlagName()
+                new()
                 {
                     NativeName = "Uvéa Flag",
                     EnglishTranslation = "Unofficial Flag"
                 }
-                
             },
             Description = "Unofficial flag of the Territory of the Wallis and Futuna Islands.",
             StartDate = new FlagDate(1985),

@@ -37,7 +37,7 @@ public class Element
 
     [XmlAttribute("stroke-width")]
     public double StrokeWidth { get; set; }
-    
+
     public bool StrokeWidthSpecified { get; set; }
 
     [XmlAttribute("stroke-linecap")]
@@ -48,12 +48,12 @@ public class Element
 
     [XmlAttribute("stroke-dashoffset")]
     public double StrokeDashOffset { get; set; }
-    
+
     public bool StrokeDashOffsetSpecified { get; set; }
 
     [XmlAttribute("stroke-miterlimit")]
     public double StrokeMiterLimit { get; set; }
-    
+
     public bool StrokeMiterLimitSpecified { get; set; }
 
     [XmlAttribute("style")]

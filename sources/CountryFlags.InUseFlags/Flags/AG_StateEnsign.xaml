@@ -44,7 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <Path
                 Data="M-30,0L0,-5.742 0,5.742z"
-                Fill="#FFFCD116"/>
+                Fill="#FFFCD116" />
 
             <Path
                 Data="M-30,0L0,-5.742 0,5.742z"

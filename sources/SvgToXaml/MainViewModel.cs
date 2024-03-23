@@ -18,6 +18,7 @@ using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 using System.Xml;
 using DustInTheWind.SvgToXaml.Conversion;
 using DustInTheWind.SvgToXaml.Svg;
@@ -65,7 +66,7 @@ public class MainViewModel : ViewModelBase
 
             SvgConversion svgConversion = new(svgDocument.Content);
             Canvas canvas = svgConversion.Execute();
-            
+
             //Canvas canvas = svgDocument.Content.ToXaml();
 
             XamlText = Serialize(canvas);
@@ -94,7 +95,7 @@ public class MainViewModel : ViewModelBase
             { "SvgTransform", canvas }
         };
 
-        System.Windows.Markup.XamlWriter.Save(resourceDictionary, xmlWriter);
+        XamlWriter.Save(resourceDictionary, xmlWriter);
 
         ms.Position = 0;
         using StreamReader sr = new(ms);

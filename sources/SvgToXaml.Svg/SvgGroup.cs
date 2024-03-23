@@ -15,14 +15,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Linq;
 using DustInTheWind.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgGraphicElement
 {
-
 }
 
 public class SvgContainerElement
@@ -47,7 +45,6 @@ public class SvgStructuralElement
     // svg
     // symbol
     // use
-
 }
 
 public class SvgShapeElement
@@ -58,7 +55,7 @@ public class SvgShapeElement
 public class SvgGroup : SvgElement
 {
     public SvgElementCollection<SvgElement> Children { get; }
-    
+
     public CssClassCollection CssClasses { get; }
 
     public SvgGroup()

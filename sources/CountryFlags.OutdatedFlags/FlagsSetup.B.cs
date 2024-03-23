@@ -20,15 +20,15 @@ namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Bahamas ()
+    public static void Bahamas()
     {
     }
 
-    public static void Bahrain ()
+    public static void Bahrain()
     {
     }
 
-    public static void Bangladesh ()
+    public static void Bangladesh()
     {
         Countries.Bangladesh.Flags.Add(new CountryFlag
         {
@@ -44,75 +44,75 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Barbados ()
+    public static void Barbados()
     {
     }
 
-    public static void Belarus ()
+    public static void Belarus()
     {
     }
 
-    public static void Belgium ()
+    public static void Belgium()
     {
     }
 
-    public static void Belize ()
+    public static void Belize()
     {
     }
 
-    public static void Benin ()
+    public static void Benin()
     {
     }
 
-    public static void Bermuda ()
+    public static void Bermuda()
     {
     }
 
-    public static void Bhutan ()
+    public static void Bhutan()
     {
     }
 
-    public static void Bolivia ()
+    public static void Bolivia()
     {
     }
 
-    public static void CaribbeanNetherlands ()
+    public static void CaribbeanNetherlands()
     {
     }
 
-    public static void BosniaHerzegovina ()
+    public static void BosniaHerzegovina()
     {
     }
 
-    public static void Botswana ()
+    public static void Botswana()
     {
     }
 
-    public static void BouvetIsland ()
+    public static void BouvetIsland()
     {
     }
 
-    public static void Brazil ()
+    public static void Brazil()
     {
     }
 
-    public static void BritishIndianOceanTerritory ()
+    public static void BritishIndianOceanTerritory()
     {
     }
 
-    public static void Brunei ()
+    public static void Brunei()
     {
     }
 
-    public static void Bulgaria ()
+    public static void Bulgaria()
     {
     }
 
-    public static void BurkinaFaso ()
+    public static void BurkinaFaso()
     {
     }
 
-    public static void Burundi ()
+    public static void Burundi()
     {
     }
 }

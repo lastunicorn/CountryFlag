@@ -20,7 +20,7 @@ namespace DustInTheWind.CountryFlags.DefaultFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Reunion ()
+    public static void Reunion()
     {
         Countries.Reunion.Flags.Add(new CountryFlag
         {
@@ -30,7 +30,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Romania ()
+    public static void Romania()
     {
         Countries.Romania.Flags.Add(new CountryFlag
         {
@@ -40,7 +40,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Russia ()
+    public static void Russia()
     {
         Countries.Russia.Flags.Add(new CountryFlag
         {
@@ -72,7 +72,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Rwanda ()
+    public static void Rwanda()
     {
         Countries.Rwanda.Flags.Add(new CountryFlag
         {

@@ -130,7 +130,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Path
             Data="M40.942,0L37.56,1.176 37.487,4.755 35.324000000000005,1.9019999999999997 31.897000000000006,2.9389999999999996 33.942,0 31.897,-2.939 35.324,-1.9020000000000001 37.486999999999995,-4.755000000000001 37.56,-1.176z"
-            Fill="#FFFCD116" >
+            Fill="#FFFCD116">
 
             <Path.RenderTransform>
                 <RotateTransform Angle="120" CenterX="-2.019" CenterY="0" />
@@ -139,7 +139,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Path
             Data="M40.942,0L37.56,1.176 37.487,4.755 35.324000000000005,1.9019999999999997 31.897000000000006,2.9389999999999996 33.942,0 31.897,-2.939 35.324,-1.9020000000000001 37.486999999999995,-4.755000000000001 37.56,-1.176z"
-            Fill="#FFFCD116" >
+            Fill="#FFFCD116">
 
             <Path.RenderTransform>
                 <RotateTransform Angle="240" CenterX="-2.019" CenterY="0" />

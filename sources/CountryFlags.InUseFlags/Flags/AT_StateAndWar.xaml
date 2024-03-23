@@ -1768,7 +1768,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Stroke="#FF000000"
                 StrokeThickness="0.371"
                 StrokeMiterLimit="2.41420007" />
-            
+
             <Canvas>
 
                 <Path

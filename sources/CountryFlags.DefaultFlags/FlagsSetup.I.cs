@@ -37,7 +37,7 @@ internal static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     NativeName = "Tiraṅgā",
                     EnglishTranslation = "Tricolour"
@@ -87,7 +87,7 @@ internal static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new FlagName
+                new()
                 {
                     NativeName = "Bratach na hÉireann",
                     EnglishTranslation = "flag of Ireland"
@@ -125,7 +125,7 @@ internal static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new FlagName
+                new()
                 {
                     NativeName = "il Tricolore"
                 }

@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Belgium (Civil ensign) -->
 
     <Canvas x:Key="CountryFlag_BE_CivilEnsign" Width="3" Height="2">
-        
+
         <Rectangle
             Width="1"
             Height="2"

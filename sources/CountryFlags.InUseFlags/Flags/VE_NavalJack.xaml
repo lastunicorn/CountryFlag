@@ -208,7 +208,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                                                     <Canvas>
                                                         <Canvas.RenderTransform>
-                                                            <TranslateTransform  X="-262.6269" Y="228.62811" />
+                                                            <TranslateTransform X="-262.6269" Y="228.62811" />
                                                         </Canvas.RenderTransform>
 
                                                         <Canvas RenderTransform="2.1535491,0,0,2.1535491,-574.1397,16.507119">

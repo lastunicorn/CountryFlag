@@ -59,7 +59,7 @@ public class FlagUsageBox : Control
         nameof(IsCivilFlag),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsCivilFlagProperty = IsCivilFlagPropertyKey.DependencyProperty;
@@ -78,7 +78,7 @@ public class FlagUsageBox : Control
         nameof(IsStateFlag),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsStateFlagProperty = IsStateFlagPropertyKey.DependencyProperty;
@@ -97,7 +97,7 @@ public class FlagUsageBox : Control
         nameof(IsWarFlag),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsWarFlagProperty = IsWarFlagPropertyKey.DependencyProperty;
@@ -116,7 +116,7 @@ public class FlagUsageBox : Control
         nameof(IsCivilEnsign),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsCivilEnsignProperty = IsCivilEnsignPropertyKey.DependencyProperty;
@@ -135,7 +135,7 @@ public class FlagUsageBox : Control
         nameof(IsStateEnsign),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsStateEnsignProperty = IsStateEnsignPropertyKey.DependencyProperty;
@@ -154,7 +154,7 @@ public class FlagUsageBox : Control
         nameof(IsWarEnsign),
         typeof(bool),
         typeof(FlagUsageBox),
-        new FrameworkPropertyMetadata(false, flags: FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty IsWarEnsignProperty = IsWarEnsignPropertyKey.DependencyProperty;

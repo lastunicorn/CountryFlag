@@ -17,7 +17,6 @@
 using System;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Svg;
-using FillRule = System.Windows.Media.FillRule;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
@@ -42,14 +41,14 @@ internal class SvgPolygonToXamlConversion : SvgShapeToXamlConversion<SvgPolygon,
 
     private static void SetFillRule(Polygon polygon, SvgPolygon svgPolygon)
     {
-        Svg.FillRule? fillRule = svgPolygon.CalculateFillRule();
+        FillRule? fillRule = svgPolygon.CalculateFillRule();
 
         if (fillRule != null)
         {
             polygon.FillRule = fillRule switch
             {
-                Svg.FillRule.EvenOdd => FillRule.EvenOdd,
-                Svg.FillRule.Nonzero => FillRule.Nonzero,
+                FillRule.EvenOdd => System.Windows.Media.FillRule.EvenOdd,
+                FillRule.Nonzero => System.Windows.Media.FillRule.Nonzero,
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

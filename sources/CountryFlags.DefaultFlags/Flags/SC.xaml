@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Seychelles -->
 
-    <Canvas x:Key="CountryFlag_SC"  Width="6" Height="3">
+    <Canvas x:Key="CountryFlag_SC" Width="6" Height="3">
 
         <Path
             Data="M0,0L6,0 6,3 0,3z"
@@ -31,15 +31,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <Path
             Data="M0,3L0,0 6,0 6,1z"
             Fill="#FFD92323" />
-        
+
         <Path
             Data="M0,3L0,0 4,0z"
             Fill="#FFFCD955" />
-        
+
         <Path
             Data="M0,3L0,0 2,0z"
             Fill="#FF003D88" />
-        
+
         <Path
             Data="M0,3L6,2 6,3z"
             Fill="#FF007A3A" />

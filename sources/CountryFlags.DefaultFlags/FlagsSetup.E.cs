@@ -20,7 +20,7 @@ namespace DustInTheWind.CountryFlags.DefaultFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Ecuador ()
+    public static void Ecuador()
     {
         Countries.Ecuador.Flags.Add(new CountryFlag
         {
@@ -38,7 +38,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Egypt ()
+    public static void Egypt()
     {
         Countries.Egypt.Flags.Add(new CountryFlag
         {
@@ -58,7 +58,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void ElSalvador ()
+    public static void ElSalvador()
     {
         Countries.ElSalvador.Flags.Add(new CountryFlag
         {
@@ -76,7 +76,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void EquatorialGuinea ()
+    public static void EquatorialGuinea()
     {
         Countries.EquatorialGuinea.Flags.Add(new CountryFlag
         {
@@ -86,7 +86,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Eritrea ()
+    public static void Eritrea()
     {
         Countries.Eritrea.Flags.Add(new CountryFlag
         {
@@ -109,7 +109,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Estonia ()
+    public static void Estonia()
     {
         Countries.Estonia.Flags.Add(new CountryFlag
         {
@@ -127,7 +127,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Eswatini ()
+    public static void Eswatini()
     {
         Countries.Eswatini.Flags.Add(new CountryFlag
         {
@@ -138,7 +138,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Ethiopia ()
+    public static void Ethiopia()
     {
         Countries.Ethiopia.Flags.Add(new CountryFlag
         {

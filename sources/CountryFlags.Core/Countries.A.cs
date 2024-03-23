@@ -37,7 +37,7 @@ public static partial class Countries
         IsoCodeNumeric = "248",
         IsIndependent = false
     };
-    
+
     public static Country Albania { get; } = new()
     {
         ShortName = "Albania",
@@ -47,7 +47,7 @@ public static partial class Countries
         IsoCodeNumeric = "008",
         IsIndependent = true
     };
-    
+
     public static Country Algeria { get; } = new()
     {
         ShortName = "Algeria",
@@ -67,7 +67,7 @@ public static partial class Countries
         IsoCodeNumeric = "016",
         IsIndependent = false
     };
-    
+
     public static Country Andorra { get; } = new()
     {
         ShortName = "Andorra",
@@ -117,7 +117,7 @@ public static partial class Countries
         IsoCodeNumeric = "028",
         IsIndependent = true
     };
-    
+
     public static Country Argentina { get; } = new()
     {
         ShortName = "Argentina",
@@ -147,7 +147,7 @@ public static partial class Countries
         IsoCodeNumeric = "533",
         IsIndependent = false
     };
-    
+
     public static Country Australia { get; } = new()
     {
         ShortName = "Australia",
@@ -157,7 +157,7 @@ public static partial class Countries
         IsoCodeNumeric = "036",
         IsIndependent = true
     };
-    
+
     public static Country Austria { get; } = new()
     {
         ShortName = "Austria",

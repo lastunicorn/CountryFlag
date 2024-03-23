@@ -19,27 +19,26 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace DustInTheWind.Flags.Core.Converters
+namespace DustInTheWind.Flags.Core.Converters;
+
+[Localizability(LocalizationCategory.NeverLocalize)]
+public class NullToVisibilityConverter : IValueConverter
 {
-    [Localizability(LocalizationCategory.NeverLocalize)]
-    public class NullToVisibilityConverter : IValueConverter
+    public bool Inverse { get; set; }
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public bool Inverse { get; set; }
+        return Inverse
+            ? value == null
+                ? Visibility.Visible
+                : Visibility.Collapsed
+            : value == null
+                ? Visibility.Collapsed
+                : Visibility.Visible;
+    }
 
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return Inverse
-                ? value == null
-                    ? Visibility.Visible
-                    : Visibility.Collapsed
-                : value == null
-                    ? Visibility.Collapsed
-                    : Visibility.Visible;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return DependencyProperty.UnsetValue;
-        }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return DependencyProperty.UnsetValue;
     }
 }

@@ -21,7 +21,7 @@ namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Bahamas ()
+    public static void Bahamas()
     {
         Countries.Bahamas.Flags.Add(new CountryFlag
         {
@@ -29,14 +29,14 @@ internal static partial class FlagsSetup
             Description = "A white cross on a red field, the national flag in the canton.",
             Usage = FlagUsage.CivilEnsign
         });
-        
+
         Countries.Bahamas.Flags.Add(new CountryFlag
         {
             Id = "StateEnsign",
             Description = "A blue cross on a white field, the national flag in the canton.",
             Usage = FlagUsage.StateEnsign
         });
-        
+
         Countries.Bahamas.Flags.Add(new CountryFlag
         {
             Id = "WarEnsign",
@@ -45,11 +45,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Bahrain ()
+    public static void Bahrain()
     {
     }
 
-    public static void Bangladesh ()
+    public static void Bangladesh()
     {
         Countries.Bangladesh.Flags.Add(new CountryFlag
         {
@@ -85,7 +85,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Barbados ()
+    public static void Barbados()
     {
         Countries.Barbados.Flags.Add(new CountryFlag
         {
@@ -99,11 +99,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Belarus ()
+    public static void Belarus()
     {
     }
 
-    public static void Belgium ()
+    public static void Belgium()
     {
         Countries.Belgium.Flags.Add(new CountryFlag
         {
@@ -129,15 +129,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Belize ()
+    public static void Belize()
     {
     }
 
-    public static void Benin ()
+    public static void Benin()
     {
     }
 
-    public static void Bermuda ()
+    public static void Bermuda()
     {
         Countries.Bermuda.Flags.Add(new CountryFlag
         {
@@ -162,7 +162,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Bhutan ()
+    public static void Bhutan()
     {
         Countries.Bhutan.Flags.Add(new CountryFlag
         {
@@ -172,7 +172,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Bolivia ()
+    public static void Bolivia()
     {
         Countries.Bolivia.Flags.Add(new CountryFlag
         {
@@ -221,7 +221,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void CaribbeanNetherlands ()
+    public static void CaribbeanNetherlands()
     {
         Countries.CaribbeanNetherlands.Flags.Add(new CountryFlag
         {
@@ -248,11 +248,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void BosniaHerzegovina ()
+    public static void BosniaHerzegovina()
     {
     }
 
-    public static void Botswana ()
+    public static void Botswana()
     {
         Countries.Botswana.Flags.Add(new CountryFlag
         {
@@ -265,31 +265,31 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void BouvetIsland ()
+    public static void BouvetIsland()
     {
     }
 
-    public static void Brazil ()
+    public static void Brazil()
     {
     }
 
-    public static void BritishIndianOceanTerritory ()
+    public static void BritishIndianOceanTerritory()
     {
     }
 
-    public static void Brunei ()
+    public static void Brunei()
     {
     }
 
-    public static void Bulgaria ()
+    public static void Bulgaria()
     {
     }
 
-    public static void BurkinaFaso ()
+    public static void BurkinaFaso()
     {
     }
 
-    public static void Burundi ()
+    public static void Burundi()
     {
     }
 }

@@ -22,7 +22,7 @@ public static class StaEnvironment
     {
         Run(ExecutionErrorBehavior.ThrowException, action);
     }
-    
+
     public static void Run(ExecutionErrorBehavior executionErrorBehavior, Action action)
     {
         Exception exception = null;

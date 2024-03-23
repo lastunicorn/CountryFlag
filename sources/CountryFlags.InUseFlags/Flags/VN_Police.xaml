@@ -33,7 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Fill="#ffff00"
             FillRule="Nonzero"
             Points="11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85 15,4 "
-            RenderTransform="66.666667,0,0,66.666667,0,38.333351"/>
+            RenderTransform="66.666667,0,0,66.666667,0,38.333351" />
 
         <Canvas>
             <Path

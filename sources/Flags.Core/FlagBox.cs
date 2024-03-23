@@ -98,7 +98,7 @@ public class FlagBox : Control
         nameof(FlagCanvas),
         typeof(Canvas),
         typeof(FlagBox),
-        new FrameworkPropertyMetadata(null, flags: FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
+        new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender)
     );
 
     public static readonly DependencyProperty FlagCanvasProperty = FlagCanvasPropertyKey.DependencyProperty;

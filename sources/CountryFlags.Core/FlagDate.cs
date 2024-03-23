@@ -17,55 +17,54 @@
 using System;
 using System.Text;
 
-namespace DustInTheWind.CountryFlags
+namespace DustInTheWind.CountryFlags;
+
+public readonly struct FlagDate
 {
-    public readonly struct FlagDate
+    public int Year { get; }
+
+    public int? Month { get; }
+
+    public int? Day { get; }
+
+    public FlagDate(int year)
     {
-        public int Year { get; }
+        Year = year;
+        Month = null;
+        Day = null;
+    }
 
-        public int? Month { get; }
+    public FlagDate(int year, int month)
+    {
+        Year = year;
+        Month = month;
+        Day = null;
+    }
 
-        public int? Day { get; }
+    public FlagDate(int year, int month, int day)
+    {
+        Year = year;
+        Month = month;
+        Day = day;
+    }
 
-        public FlagDate(int year)
-        {
-            Year = year;
-            Month = null;
-            Day = null;
-        }
+    public override string ToString()
+    {
+        StringBuilder sb = new();
 
-        public FlagDate(int year, int month)
-        {
-            Year = year;
-            Month = month;
-            Day = null;
-        }
+        sb.Append(Year);
 
-        public FlagDate(int year, int month, int day)
-        {
-            Year = year;
-            Month = month;
-            Day = day;
-        }
+        if (Month.HasValue)
+            sb.Append($"-{Month:00}");
 
-        public override string ToString()
-        {
-            StringBuilder sb = new();
+        if (Day.HasValue)
+            sb.Append($"-{Day:00}");
 
-            sb.Append(Year);
+        return sb.ToString();
+    }
 
-            if (Month.HasValue)
-                sb.Append($"-{Month:00}");
-
-            if (Day.HasValue)
-                sb.Append($"-{Day:00}");
-
-            return sb.ToString();
-        }
-
-        public static implicit operator FlagDate(DateTime dateTime)
-        {
-            return new FlagDate(dateTime.Year, dateTime.Month, dateTime.Day);
-        }
+    public static implicit operator FlagDate(DateTime dateTime)
+    {
+        return new FlagDate(dateTime.Year, dateTime.Month, dateTime.Day);
     }
 }

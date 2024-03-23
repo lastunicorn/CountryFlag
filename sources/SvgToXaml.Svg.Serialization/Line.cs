@@ -25,10 +25,10 @@ public class Line : Element
 
     [XmlAttribute("y1")]
     public double Y1 { get; set; }
-    
+
     [XmlAttribute("x2")]
     public double X2 { get; set; }
-    
+
     [XmlAttribute("y2")]
     public double Y2 { get; set; }
 }

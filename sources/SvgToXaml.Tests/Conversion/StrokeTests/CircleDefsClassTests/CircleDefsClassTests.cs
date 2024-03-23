@@ -14,10 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Media;
 using System.Windows.Shapes;
 using DustInTheWind.SvgToXaml.Tests.Utils;
-using FluentAssertions;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.CircleDefsClassTests;
 

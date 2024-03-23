@@ -22,8 +22,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Sierra Leone (Standard of the President) -->
 
-    <Canvas x:Key="CountryFlag_SL_President" Width="3" Height="2">
-
-    </Canvas>
+    <Canvas x:Key="CountryFlag_SL_President" Width="3" Height="2" />
 
 </ResourceDictionary>

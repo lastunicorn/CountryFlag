@@ -21,11 +21,11 @@ namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void CaboVerde ()
+    public static void CaboVerde()
     {
     }
 
-    public static void Cambodia ()
+    public static void Cambodia()
     {
         Countries.Cambodia.Flags.Add(new CountryFlag
         {
@@ -36,15 +36,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Cameroon ()
+    public static void Cameroon()
     {
     }
 
-    public static void Canada ()
+    public static void Canada()
     {
     }
 
-    public static void CaymanIslands ()
+    public static void CaymanIslands()
     {
         Countries.CaymanIslands.Flags.Add(new CountryFlag
         {
@@ -69,15 +69,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void CentralAfricanRepublic ()
+    public static void CentralAfricanRepublic()
     {
     }
 
-    public static void Chad ()
+    public static void Chad()
     {
     }
 
-    public static void Chile ()
+    public static void Chile()
     {
         Countries.Chile.Flags.Add(new CountryFlag
         {
@@ -92,7 +92,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void China ()
+    public static void China()
     {
         Countries.China.Flags.Add(new CountryFlag
         {
@@ -103,15 +103,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void ChristmasIsland ()
+    public static void ChristmasIsland()
     {
     }
 
-    public static void CocosIslands ()
+    public static void CocosIslands()
     {
     }
 
-    public static void Colombia ()
+    public static void Colombia()
     {
         Countries.Colombia.Flags.Add(new CountryFlag
         {
@@ -136,15 +136,15 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Comoros ()
+    public static void Comoros()
     {
     }
 
-    public static void Congo_Republic ()
+    public static void Congo_Republic()
     {
     }
 
-    public static void Congo_DemocraticRepublic ()
+    public static void Congo_DemocraticRepublic()
     {
         Countries.Congo_DemocraticRepublic.Flags.Add(new CountryFlag
         {
@@ -155,7 +155,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void CookIslands ()
+    public static void CookIslands()
     {
         Countries.CookIslands.Flags.Add(new CountryFlag
         {
@@ -164,7 +164,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void CostaRica ()
+    public static void CostaRica()
     {
         Countries.CostaRica.Flags.Add(new CountryFlag
         {
@@ -180,11 +180,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void IvoryCoast ()
+    public static void IvoryCoast()
     {
     }
 
-    public static void Croatia ()
+    public static void Croatia()
     {
         Countries.Croatia.Flags.Add(new CountryFlag
         {
@@ -211,7 +211,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Cuba ()
+    public static void Cuba()
     {
         Countries.Cuba.Flags.Add(new CountryFlag
         {
@@ -234,7 +234,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Curacao ()
+    public static void Curacao()
     {
         Countries.Curacao.Flags.Add(new CountryFlag
         {
@@ -248,11 +248,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Cyprus ()
+    public static void Cyprus()
     {
     }
 
-    public static void Czechia ()
+    public static void Czechia()
     {
         Countries.Czechia.Flags.Add(new CountryFlag
         {

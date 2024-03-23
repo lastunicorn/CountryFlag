@@ -26,10 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Rectangle
             Width="16"
-            Height="8" 
+            Height="8"
             Fill="#002395" />
 
-        <Path 
+        <Path
             Data="m4.24,0h8v8z"
             Fill="#fecb00" />
 

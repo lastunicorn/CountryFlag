@@ -28,15 +28,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="36"
             Height="18"
             Fill="#FFDA291C" />
-        
+
         <Path
             Data="M18,9L0,18 0,0z"
             Fill="#FFFFC72C" />
-        
+
         <Path
             Data="M12,9L0,18 0,0z"
             Fill="#FF000000" />
-        
+
         <Path
             Data="F1 M2.7816,6.2586L6.5971,10.5017 1.0162000000000004,9.3116 6.230700000000001,6.9941 3.3743000000000007,11.934000000000001z"
             Fill="#FFFFFFFF" />

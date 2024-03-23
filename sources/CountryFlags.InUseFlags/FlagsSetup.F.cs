@@ -20,7 +20,7 @@ namespace DustInTheWind.CountryFlags.InUseFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void FalklandIslands ()
+    public static void FalklandIslands()
     {
         Countries.FalklandIslands.Flags.Add(new CountryFlag
         {
@@ -33,7 +33,7 @@ internal static partial class FlagsSetup
             StartDate = new FlagDate(1999, 01, 25),
             Usage = FlagUsage.CivilEnsign
         });
-        
+
         Countries.FalklandIslands.Flags.Add(new CountryFlag
         {
             Id = "Governor",
@@ -47,7 +47,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void FaroeIslands ()
+    public static void FaroeIslands()
     {
         Countries.FaroeIslands.Flags.Add(new CountryFlag
         {
@@ -60,7 +60,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Fiji ()
+    public static void Fiji()
     {
         Countries.Fiji.Flags.Add(new CountryFlag
         {
@@ -107,7 +107,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Finland ()
+    public static void Finland()
     {
         Countries.Finland.Flags.Add(new CountryFlag
         {
@@ -153,7 +153,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void France ()
+    public static void France()
     {
         Countries.France.Flags.Add(new CountryFlag
         {
@@ -164,11 +164,11 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void FrenchGuiana ()
+    public static void FrenchGuiana()
     {
     }
 
-    public static void FrenchPolynesia ()
+    public static void FrenchPolynesia()
     {
         Countries.FrenchPolynesia.Flags.Add(new CountryFlag
         {
@@ -182,7 +182,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void FrenchSouthernTerritories ()
+    public static void FrenchSouthernTerritories()
     {
     }
 }

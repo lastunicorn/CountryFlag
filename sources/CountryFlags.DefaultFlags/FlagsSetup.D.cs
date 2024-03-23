@@ -20,7 +20,7 @@ namespace DustInTheWind.CountryFlags.DefaultFlags;
 
 internal static partial class FlagsSetup
 {
-    public static void Denmark ()
+    public static void Denmark()
     {
         Countries.Denmark.Flags.Add(new CountryFlag
         {
@@ -34,7 +34,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Djibouti ()
+    public static void Djibouti()
     {
         Countries.Djibouti.Flags.Add(new CountryFlag
         {
@@ -57,7 +57,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void Dominica ()
+    public static void Dominica()
     {
         Countries.Dominica.Flags.Add(new CountryFlag
         {
@@ -68,7 +68,7 @@ internal static partial class FlagsSetup
         });
     }
 
-    public static void DominicanRepublic ()
+    public static void DominicanRepublic()
     {
         Countries.DominicanRepublic.Flags.Add(new CountryFlag
         {

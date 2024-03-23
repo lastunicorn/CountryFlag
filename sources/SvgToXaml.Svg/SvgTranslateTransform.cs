@@ -36,7 +36,7 @@ public class SvgTranslateTransform : ISvgTransform
         {
             X = double.Parse(parts[0], CultureInfo.InvariantCulture);
         }
-        
+
         if (parts.Length >= 2)
         {
             Y = double.Parse(parts[1], CultureInfo.InvariantCulture);

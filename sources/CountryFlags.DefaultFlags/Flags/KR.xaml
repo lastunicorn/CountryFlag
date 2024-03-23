@@ -91,7 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <Path
                 Stroke="#fff"
-                Data="M0-23.5v3M0,17v3.5M0,23.5v3"/>
+                Data="M0-23.5v3M0,17v3.5M0,23.5v3" />
 
         </Canvas>
 

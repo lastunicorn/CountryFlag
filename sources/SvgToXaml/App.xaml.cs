@@ -16,22 +16,21 @@
 
 using System.Windows;
 
-namespace DustInTheWind.SvgToXaml
+namespace DustInTheWind.SvgToXaml;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    protected override void OnStartup(StartupEventArgs e)
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            MainViewModel mainViewModel = new();
-            MainWindow mainWindow = new(mainViewModel);
-            mainWindow.Show();
+        MainViewModel mainViewModel = new();
+        MainWindow mainWindow = new(mainViewModel);
+        mainWindow.Show();
 
-            MainWindow = mainWindow;
+        MainWindow = mainWindow;
 
-            base.OnStartup(e);
-        }
+        base.OnStartup(e);
     }
 }

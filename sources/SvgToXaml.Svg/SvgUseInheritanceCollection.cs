@@ -29,7 +29,7 @@ public class SvgUseInheritanceCollection : IEnumerable<SvgElement>
     public SvgUseInheritanceCollection(SvgUse svgUse)
     {
         this.svgUse = svgUse;
-        
+
         InheritedElement = svgUse?.GetInheritedElement();
     }
 

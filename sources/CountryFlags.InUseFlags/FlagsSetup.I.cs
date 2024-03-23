@@ -31,11 +31,11 @@ internal static partial class FlagsSetup
             Id = "CivilEnsign",
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     EnglishTranslation = "Civil Ensign"
                 },
-                new ()
+                new()
                 {
                     EnglishTranslation = "Red Ensign"
                 }
@@ -49,11 +49,11 @@ internal static partial class FlagsSetup
             Id = "StateEnsign",
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     EnglishTranslation = "State Ensign"
                 },
-                new ()
+                new()
                 {
                     EnglishTranslation = "Blue Ensign"
                 }
@@ -67,11 +67,11 @@ internal static partial class FlagsSetup
             Id = "NavalEnsign",
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     EnglishTranslation = "Naval Ensign"
                 },
-                new ()
+                new()
                 {
                     EnglishTranslation = "White Ensign"
                 }
@@ -85,7 +85,7 @@ internal static partial class FlagsSetup
             Id = "AirEnsign",
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     EnglishTranslation = "Air Force Ensign"
                 }

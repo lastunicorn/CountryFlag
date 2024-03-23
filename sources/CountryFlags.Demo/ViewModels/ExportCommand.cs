@@ -49,7 +49,7 @@ public class ExportCommand : ICommand
             return;
 
         Canvas canvas = FlagRepositories.Repository.Get(countryFlag.FullId);
-        
+
         RenderWindow window = new();
 
         ContentPresenter contentPresenter = new()
@@ -66,7 +66,7 @@ public class ExportCommand : ICommand
         };
 
         window.Content = viewbox;
-        
+
         window.Show();
 
         Rect bounds = new(new Point(), viewbox.RenderSize);

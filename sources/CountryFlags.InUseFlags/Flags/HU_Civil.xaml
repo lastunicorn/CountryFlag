@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Hungary (Civil flag and ensign) -->
 
-    <Canvas x:Key="CountryFlag_HU_Civil"  Width="9" Height="6">
+    <Canvas x:Key="CountryFlag_HU_Civil" Width="9" Height="6">
 
         <Rectangle
             Width="9"

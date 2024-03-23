@@ -23,7 +23,7 @@ public class SvgConversionException : Exception
     private const string DefaultMessage = "Conversion of the SVG document into XAML failed.";
 
     public SvgConversionException(Exception innerException)
-        :base(DefaultMessage, innerException)
+        : base(DefaultMessage, innerException)
     {
     }
 }

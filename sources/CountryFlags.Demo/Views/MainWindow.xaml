@@ -117,7 +117,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 DockPanel.Dock="Top"
                 Height="40" />
 
-            <demo:ZoomBorder 
+            <demo:ZoomBorder
                 ClipToBounds="True"
                 Background="Transparent"
                 Padding="10">

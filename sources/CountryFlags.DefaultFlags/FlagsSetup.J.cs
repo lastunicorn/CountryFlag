@@ -31,13 +31,13 @@ internal static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new ()
+                new()
                 {
                     NativeName = "日章旗",
                     EnglishTranslation = "flag of the sun",
                     Romanized = "Nisshoki"
                 },
-                new ()
+                new()
                 {
                     NativeName = "日の丸",
                     EnglishTranslation = "Ball of the sun",

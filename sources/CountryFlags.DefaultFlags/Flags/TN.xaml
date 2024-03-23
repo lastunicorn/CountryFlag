@@ -61,7 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Path.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="9" ScaleY="9" />
-                    <RotateTransform Angle="-90"></RotateTransform>
+                    <RotateTransform Angle="-90" />
                     <TranslateTransform X="32" Y="20" />
                 </TransformGroup>
             </Path.RenderTransform>

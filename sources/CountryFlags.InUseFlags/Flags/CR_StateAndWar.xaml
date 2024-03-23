@@ -175,9 +175,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     StrokeThickness="3" />
 
             </Canvas>
-            
+
             <!-- Left Dots (Missing gradient) -->
-            
+
             <Canvas>
 
                 <Path
@@ -492,7 +492,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     RenderTransform="-1,0,0,1,833.412,0" />
 
             </Canvas>
-            
+
             <!-- Right Dots (Missing gradient) -->
 
             <Canvas RenderTransform="-1 0 0 1 832.957 0">

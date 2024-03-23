@@ -28,13 +28,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="300"
             Height="600"
             Fill="#FF000000" />
-        
+
         <Rectangle
             Width="300"
             Height="600"
             Canvas.Left="300"
             Fill="#FFD32011" />
-        
+
         <Rectangle
             Width="300"
             Height="600"

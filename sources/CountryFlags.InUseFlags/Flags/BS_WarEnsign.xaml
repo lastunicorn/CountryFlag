@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Bahamas (War Ensign)-->
 
-    <Canvas x:Key="CountryFlag_BS_WarEnsign"  Width="180" Height="90">
+    <Canvas x:Key="CountryFlag_BS_WarEnsign" Width="180" Height="90">
 
         <!-- Background -->
 

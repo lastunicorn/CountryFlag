@@ -126,12 +126,12 @@ internal static partial class FlagsSetup
         {
             Names = new List<FlagName>
             {
-                new FlagName
+                new()
                 {
                     NativeName = "al bayrak",
                     EnglishTranslation = "the red flag"
                 },
-                new FlagName
+                new()
                 {
                     NativeName = "al sancak",
                     EnglishTranslation = "the red banner"

@@ -84,7 +84,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             StrokeEndLineCap="Round"
             StrokeLineJoin="Round"
             RenderTransform="1.259719,0,0,1.259719,-29.41569,140.9042" />
-      
+
         <Path
             Data="M128.312,117.65L128,161.67 M163.902,118.274L171.395,153.24 M93.1339,117.725L88.9756,135.757"
             Fill="#FF000000"

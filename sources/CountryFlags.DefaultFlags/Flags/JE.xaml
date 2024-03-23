@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             StrokeMiterLimit="133.3333435"
             StrokeThickness="66.6669998"
             Data="M0-0.00021l1000,600     M0,599.9998169l1000-600"
-            Clip="M 0 0 H 1000 V 600 H 0 z"/>
+            Clip="M 0 0 H 1000 V 600 H 0 z" />
 
         <!-- Shield -->
 

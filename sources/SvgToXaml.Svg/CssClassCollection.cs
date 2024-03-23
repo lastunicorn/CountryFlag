@@ -33,7 +33,7 @@ public class CssClassCollection : Collection<CssClass>
         Regex regex = new(@"\.(\w+)\s*{\s*(.*?)\s*}", RegexOptions.Multiline);
 
         MatchCollection matches = regex.Matches(text);
-        
+
         IEnumerable<CssClass> items = matches
             .Select(x => new CssClass
             {

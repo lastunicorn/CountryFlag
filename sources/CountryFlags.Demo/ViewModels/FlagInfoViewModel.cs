@@ -22,7 +22,7 @@ namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 public class FlagInfoViewModel
 {
     public string CountryName { get; }
-    
+
     public string IsoCodeAlpha2 { get; }
 
     public string IsoCodeAlpha3 { get; }
@@ -64,13 +64,13 @@ public class FlagInfoViewModel
                         ? $"{x.NativeName} ({x.EnglishTranslation})"
                         : x.NativeName;
                 }
-                
+
                 return x.EnglishTranslation;
             })
             .ToList();
 
         FlagDescription = countryFlag?.Description;
-        FlagUsage = countryFlag?.Usage ?? CountryFlags.FlagUsage.None;
+        FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
 
         StartDate = countryFlag?.StartDate;

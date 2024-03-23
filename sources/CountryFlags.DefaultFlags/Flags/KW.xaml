@@ -47,7 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Polygon
             Fill="#000000"
-            Points="0,0 3,2 3,4 0,6"/>
+            Points="0,0 3,2 3,4 0,6" />
 
     </Canvas>
 

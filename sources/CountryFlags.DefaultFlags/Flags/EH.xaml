@@ -30,13 +30,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Fill="#FF000000"
             Width="600"
             Height="100" />
-        
+
         <Rectangle
             Fill="#FF007A3D"
             Width="600"
             Height="100"
             Canvas.Top="200" />
-        
+
         <Rectangle
             Fill="#FFFFFFFF"
             Width="600"
@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Height="80"
             Canvas.Left="260"
             Canvas.Top="110" />
-        
+
         <Ellipse
             Fill="#FFFFFFFF"
             Width="80"

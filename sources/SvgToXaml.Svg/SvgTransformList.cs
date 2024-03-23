@@ -110,9 +110,6 @@ public class SvgTransformList : Collection<ISvgTransform>
                         name = null;
                         parseState = ParseState.ExpectName;
                     }
-                    else
-                    {
-                    }
 
                     break;
 
@@ -193,9 +190,6 @@ public class SvgTransformList : Collection<ISvgTransform>
 
                         name = null;
                         parseState = ParseState.ExpectName;
-                    }
-                    else
-                    {
                     }
 
                     break;

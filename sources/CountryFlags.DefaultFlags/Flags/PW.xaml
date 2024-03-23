@@ -23,12 +23,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Palau -->
 
     <Canvas x:Key="CountryFlag_PW" Width="16" Height="10">
-        
+
         <Rectangle
             Fill="#FF0099FF"
             Width="16"
             Height="10" />
-        
+
         <Ellipse
             Fill="#FFFFFF00"
             Width="6"

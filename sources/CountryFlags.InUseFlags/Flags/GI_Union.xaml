@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Gibraltar -->
 
-    <Canvas x:Key="CountryFlag_GI_Union"  Width="60" Height="30">
+    <Canvas x:Key="CountryFlag_GI_Union" Width="60" Height="30">
 
         <Canvas Clip="M0,0 v30 h60 v-30 z">
 
@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Data="M0,0L60,30 M60,0L0,30"
                 Stroke="#FFC8102E"
                 StrokeThickness="4"
-                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
 
             <Path
                 Data="M30,0L30,30 M0,15L60,15"

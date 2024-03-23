@@ -43,11 +43,13 @@ public readonly struct FlagId
         int separatorIndex = value.IndexOf(":", StringComparison.Ordinal);
 
         if (separatorIndex >= 0)
+        {
             return new FlagId
             {
                 RepositoryId = value[..separatorIndex],
                 Value = value[(separatorIndex + 1)..]
             };
+        }
 
         return new FlagId
         {

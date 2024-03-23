@@ -37,7 +37,7 @@ internal static partial class FlagsSetup
             {
                 "Presidential Standard"
             },
-            Description = "A green field with a blue border with the national coat of arms (without humans) imposed at the center.",
+            Description = "A green field with a blue border with the national coat of arms (without humans) imposed at the center."
         });
     }
 

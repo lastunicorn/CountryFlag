@@ -44,7 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Width="250"
             Height="40"
             Fill="#FFFFFFFF" />
-        
+
         <Rectangle
             Canvas.Left="0"
             Canvas.Top="85"
@@ -67,7 +67,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Canvas.Top="5" />
 
         <!-- Stars - Row 1 -->
-        
+
         <Path
             Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
             Fill="#FFFFFFFF">
@@ -215,7 +215,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </TransformGroup>
             </Path.RenderTransform>
         </Path>
-        
+
     </Canvas>
 
 </ResourceDictionary>

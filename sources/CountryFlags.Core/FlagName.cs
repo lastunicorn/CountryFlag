@@ -19,9 +19,9 @@ namespace DustInTheWind.CountryFlags;
 public readonly struct FlagName
 {
     public string NativeName { get; init; }
-    
+
     public string Romanized { get; init; }
-    
+
     public string EnglishTranslation { get; init; }
 
     public static implicit operator FlagName(string flagName)

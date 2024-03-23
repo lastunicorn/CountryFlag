@@ -30,7 +30,7 @@ public class DefaultFlagsModule : IFlagModule
 
     public void InitializeFlags()
     {
-        if(isInitialized)
+        if (isInitialized)
             return;
 
         AddFlagsToCountries();

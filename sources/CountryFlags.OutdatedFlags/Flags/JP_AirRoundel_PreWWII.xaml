@@ -30,14 +30,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Height="608"
             Canvas.Left="1"
             Canvas.Top="1" />
-        
+
         <Ellipse
             Fill="#FFFFFFFF"
             Width="600"
             Height="600"
             Canvas.Left="5"
             Canvas.Top="5" />
-        
+
         <Ellipse
             Fill="#FFB0313F"
             Width="510"

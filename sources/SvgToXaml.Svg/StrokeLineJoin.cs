@@ -20,5 +20,5 @@ public enum StrokeLineJoin
 {
     Miter,
     Bevel,
-    Round,
+    Round
 }

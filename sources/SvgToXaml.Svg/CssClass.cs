@@ -19,7 +19,7 @@ namespace DustInTheWind.SvgToXaml.Svg;
 public class CssClass
 {
     public string Name { get; init; }
-    
+
     public SvgStyle Value { get; init; }
 
     public override string ToString()

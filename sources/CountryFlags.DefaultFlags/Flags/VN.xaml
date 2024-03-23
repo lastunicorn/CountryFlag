@@ -23,12 +23,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Vietnam -->
 
     <Canvas x:Key="CountryFlag_VN" Width="30" Height="20">
-        
+
         <Rectangle
             Fill="#FFDA251D"
             Width="30"
             Height="20" />
-        
+
         <Path
             Data="F1 m 0 -.5 .2939 .9045 -.7694 -.559h .951l -.7694 .559 z"
             Fill="#FFFFFF00">

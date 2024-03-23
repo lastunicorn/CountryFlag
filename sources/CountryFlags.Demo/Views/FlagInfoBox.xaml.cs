@@ -16,16 +16,15 @@
 
 using System.Windows.Controls;
 
-namespace DustInTheWind.CountryFlags.Demo.Views
+namespace DustInTheWind.CountryFlags.Demo.Views;
+
+/// <summary>
+/// Interaction logic for FlagInfoBox.xaml
+/// </summary>
+public partial class FlagInfoBox : UserControl
 {
-    /// <summary>
-    /// Interaction logic for FlagInfoBox.xaml
-    /// </summary>
-    public partial class FlagInfoBox : UserControl
+    public FlagInfoBox()
     {
-        public FlagInfoBox()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }
