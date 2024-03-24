@@ -14,35 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using DustInTheWind.SvgToXaml.Svg.Serialization;
-
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgUse : SvgElement
+public struct HypertextReference
 {
-    public HypertextReference Href { get; set; }
+    private readonly string rawValue;
 
-    public SvgUse()
+    public string Id { get; }
+
+    public HypertextReference(string value)
     {
+        rawValue = value;
+
+        Id = value != null && value.StartsWith("#")
+            ? value[1..]
+            : null;
     }
 
-    internal SvgUse(Use use)
-        : base(use)
+    public static implicit operator HypertextReference(string value)
     {
-        if (use == null) throw new ArgumentNullException(nameof(use));
-
-        Href = use.Href;
+        return new HypertextReference(value);
     }
 
-    public SvgUseInheritanceCollection GetInheritanceList()
+    public static implicit operator string(HypertextReference hypertextReference)
     {
-        return new SvgUseInheritanceCollection(this);
-    }
-
-    public SvgElement GetReferencedElement()
-    {
-        Svg svg = GetParentSvg();
-        return svg?.FindChild(Href.Id);
+        return hypertextReference.rawValue;
     }
 }

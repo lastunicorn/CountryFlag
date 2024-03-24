@@ -14,24 +14,16 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Controls;
-using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Tests.Utils;
+using System;
 
-namespace DustInTheWind.SvgToXaml.Tests.Conversion.StrokeTests.UseHrefGroupCircleTests;
+namespace DustInTheWind.SvgToXaml.Conversion;
 
-public class UseHrefGroupCircleFromDefsTests : SvgFileTestsBase
+internal class UnknownElementTypeException : Exception
 {
-    [Fact]
-    public void HavingStrokeDeclaredOnCircle_WhenSvgIsParsed_ThenResultedEllipseHasStrokeColorFromCircle()
-    {
-        TestConvertSvgFile("use-href-defs-group-circle^.svg", canvas =>
-        {
-            Ellipse ellipse = canvas
-                .GetElementByIndex<Canvas>(0)
-                .GetElementByIndex<Ellipse>(0);
+    private const string DefaultMessage = "Unknown inherited element type: {0}";
 
-            ellipse.Stroke.Should().Be("#ff111111");
-        });
+    public UnknownElementTypeException(Type type)
+        : base(string.Format(DefaultMessage, type.FullName))
+    {
     }
 }

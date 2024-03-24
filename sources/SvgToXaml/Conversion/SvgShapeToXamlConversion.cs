@@ -27,8 +27,8 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
     where TSvg : SvgElement
     where TXaml : Shape
 {
-    protected SvgShapeToXamlConversion(TSvg svgElement, SvgUse svgUse = null)
-        : base(svgElement, svgUse)
+    protected SvgShapeToXamlConversion(TSvg svgElement, SvgElement referrer = null)
+        : base(svgElement, referrer)
     {
     }
 

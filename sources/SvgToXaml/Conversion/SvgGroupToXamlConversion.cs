@@ -26,19 +26,19 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 internal class SvgGroupToXamlConversion : IConversion<Canvas>
 {
     private readonly SvgGroup svgGroup;
-    private readonly SvgUse svgUse;
+    private readonly SvgUse referrer;
 
-    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse svgUse = null)
+    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse referrer = null)
     {
         this.svgGroup = svgGroup ?? throw new ArgumentNullException(nameof(svgGroup));
-        this.svgUse = svgUse;
+        this.referrer = referrer;
     }
 
     public Canvas Execute()
     {
         try
         {
-            Canvas canvas = new();
+            Canvas canvas = CreateXamlElement();
 
             if (svgGroup.Transforms.Count > 0)
                 canvas.RenderTransform = svgGroup.Transforms.ToXaml();
@@ -62,30 +62,35 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
         }
     }
 
-    private static IConversion<UIElement> CreateConversion(SvgElement svgElement)
+    protected virtual Canvas CreateXamlElement()
+    {
+        return new Canvas();
+    }
+
+    private IConversion<UIElement> CreateConversion(SvgElement svgElement)
     {
         switch (svgElement)
         {
             case SvgCircle svgCircle:
-                return new SvgCircleToXamlConversion(svgCircle);
+                return new SvgCircleToXamlConversion(svgCircle, referrer);
 
             case SvgEllipse svgEllipse:
-                return new SvgEllipseToXamlConversion(svgEllipse);
+                return new SvgEllipseToXamlConversion(svgEllipse, referrer);
 
             case SvgPath svgPath:
-                return new SvgPathToXamlConversion(svgPath);
+                return new SvgPathToXamlConversion(svgPath, referrer);
 
             case SvgLine svgLine:
-                return new SvgLineToXamlConversion(svgLine);
+                return new SvgLineToXamlConversion(svgLine, referrer);
 
             case SvgRectangle svgRect:
-                return new SvgRectangleToXamlConversion(svgRect);
+                return new SvgRectangleToXamlConversion(svgRect, referrer);
 
             case SvgPolygon svgPolygon:
-                return new SvgPolygonToXamlConversion(svgPolygon);
+                return new SvgPolygonToXamlConversion(svgPolygon, referrer);
 
             case SvgGroup svgGChild:
-                return new SvgGroupToXamlConversion(svgGChild);
+                return new SvgGroupToXamlConversion(svgGChild, referrer);
 
             case SvgUse svgUse:
                 return new SvgUseToXamlConversion(svgUse);

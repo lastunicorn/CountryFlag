@@ -26,15 +26,15 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
     where TSvg : SvgElement
     where TXaml : UIElement
 {
-    private readonly SvgUse svgUse;
+    private readonly SvgElement referrer;
 
     protected TSvg SvgElement { get; }
 
     protected TXaml XamlElement { get; private set; }
 
-    protected SvgElementToXamlConversion(TSvg svgElement, SvgUse svgUse = null)
+    protected SvgElementToXamlConversion(TSvg svgElement, SvgElement referrer = null)
     {
-        this.svgUse = svgUse;
+        this.referrer = referrer;
         SvgElement = svgElement ?? throw new ArgumentNullException(nameof(svgElement));
     }
 
@@ -67,23 +67,30 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
     protected virtual IEnumerable<SvgElement> EnumerateInheritedElements()
     {
-        if (svgUse == null)
+        if (referrer == null)
         {
             yield return SvgElement;
 
-            List<SvgElement> ancestors = SvgElement.EnumerateAncestors().ToList();
+            IEnumerable<SvgElement> ancestors = SvgElement.EnumerateAncestors();
 
             foreach (SvgElement ancestor in ancestors)
                 yield return ancestor;
         }
         else
         {
-            yield return svgUse;
             yield return SvgElement;
 
-            List<SvgElement> ancestors = svgUse.EnumerateAncestors().ToList();
+            IEnumerable<SvgElement> ancestors = SvgElement.EnumerateAncestors()
+                .TakeWhile(x => x.GetType() != typeof(SvgDefinitions));
 
             foreach (SvgElement ancestor in ancestors)
+                yield return ancestor;
+            
+            yield return referrer;
+
+            IEnumerable<SvgElement> referrerAncestors = referrer.EnumerateAncestors();
+
+            foreach (SvgElement ancestor in referrerAncestors)
                 yield return ancestor;
         }
     }

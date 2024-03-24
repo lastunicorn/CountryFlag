@@ -57,7 +57,7 @@ public class GroupUseHrefDefsCircleTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff222222");
+            ellipse.Stroke.Should().Be("#ff333333");
         });
     }
 }

@@ -31,13 +31,13 @@ internal class SvgUseToXamlConversion : IConversion<UIElement>
 
     public UIElement Execute()
     {
-        SvgElement inheritedElement = svgUse.GetInheritedElement();
+        SvgElement referencedElement = svgUse.GetReferencedElement();
 
-        IConversion<UIElement> conversion = ConvertChildElement(inheritedElement);
+        IConversion<UIElement> conversion = ConvertReferencedElement(referencedElement);
         return conversion.Execute();
     }
 
-    private IConversion<UIElement> ConvertChildElement(SvgElement svgElement)
+    private IConversion<UIElement> ConvertReferencedElement(SvgElement svgElement)
     {
         switch (svgElement)
         {
@@ -64,7 +64,7 @@ internal class SvgUseToXamlConversion : IConversion<UIElement>
 
             default:
                 Type inheritedElementType = svgElement.GetType();
-                throw new Exception($"Unknown inherited element type: {inheritedElementType.FullName}");
+                throw new UnknownElementTypeException(inheritedElementType);
         }
     }
 }

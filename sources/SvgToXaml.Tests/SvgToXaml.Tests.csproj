@@ -72,6 +72,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\07-group^-use-href-defs-group-circle.svg" />
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\08-group^-use-href-defs-group^-circle.svg" />
         <None Remove="Conversion\StrokeTests\GroupUseHrefDefsGroupTests\09-svgroot^-group-use-href-defs-group-circle.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\01-use-href-defs-group-circle^.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\02-use-href-defs-group^-circle.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\03-use^-href-defs-group-circle.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\04-use-href-defs-group^-circle^.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\05-use^-href-defs-group-circle^.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\06-use^-href-defs-group^-circle.svg" />
+        <None Remove="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\07-use^-href-defs-group^-circle^.svg" />
         <None Remove="empty.svg" />
         <None Remove="Conversion\StrokeTests\CircleInGroupTests\svgroot^-group^-circle.svg" />
         <None Remove="Conversion\StrokeTests\CircleInGroupTests\svgroot^-group^-circle^.svg" />
@@ -89,7 +96,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="Conversion\StrokeTests\UseHrefCircleTests\use-href-defs-circle^.svg" />
         <None Remove="Conversion\StrokeTests\UseHrefCircleTests\use^-href-defs-circle.svg" />
         <None Remove="Conversion\StrokeTests\UseHrefCircleTests\use^-href-defs-circle^.svg" />
-        <None Remove="Conversion\StrokeTests\UseHrefGroupCircleTests\use-href-defs-group-circle^.svg" />
         <None Remove="Conversion\UseTests\use-references-circle-after.svg" />
         <None Remove="Conversion\UseTests\use-references-circle-before.svg" />
         <None Remove="Conversion\UseTests\use-references-defs-circle.svg" />
@@ -174,7 +180,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <EmbeddedResource Include="Conversion\StrokeTests\UseHrefCircleTests\use^-href-defs-circle^.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\UseHrefCircleTests\use^-href-defs-circle.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\UseHrefCircleTests\use-href-defs-circle^.svg" />
-        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefGroupCircleTests\use-href-defs-group-circle^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\04-use-href-defs-group^-circle^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\02-use-href-defs-group^-circle.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\03-use^-href-defs-group-circle.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\07-use^-href-defs-group^-circle^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\06-use^-href-defs-group^-circle.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\05-use^-href-defs-group-circle^.svg" />
+        <EmbeddedResource Include="Conversion\StrokeTests\UseHrefDefsGroupWithCircleTests\01-use-href-defs-group-circle^.svg" />
         <EmbeddedResource Include="Conversion\UseTests\UseHrefCircleTests\use-href-circle-after.svg" />
         <EmbeddedResource Include="Conversion\UseTests\UseHrefCircleTests\use-href-circle-before.svg" />
         <EmbeddedResource Include="Conversion\UseTests\UseHrefCircleFromDefsTests\use-href-defs-group-circle.svg" />

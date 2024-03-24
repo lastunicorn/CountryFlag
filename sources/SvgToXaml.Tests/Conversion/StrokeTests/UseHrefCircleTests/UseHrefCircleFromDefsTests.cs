@@ -50,7 +50,7 @@ public class UseHrefCircleFromDefsTests : SvgFileTestsBase
         {
             Ellipse ellipse = canvas.GetElementByIndex<Ellipse>(0);
 
-            ellipse.Stroke.Should().Be("#ff222222");
+            ellipse.Stroke.Should().Be("#ff111111");
         });
     }
 }

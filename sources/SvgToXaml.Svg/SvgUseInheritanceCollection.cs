@@ -30,7 +30,7 @@ public class SvgUseInheritanceCollection : IEnumerable<SvgElement>
     {
         this.svgUse = svgUse;
 
-        InheritedElement = svgUse?.GetInheritedElement();
+        InheritedElement = svgUse?.GetReferencedElement();
     }
 
     public IEnumerator<SvgElement> GetEnumerator()
