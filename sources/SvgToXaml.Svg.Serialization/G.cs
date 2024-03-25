@@ -36,6 +36,7 @@ public class G : Element
     [XmlElement("polygon", typeof(Polygon))]
     [XmlElement("polyline", typeof(Polyline))]
     [XmlElement("rect", typeof(Rect))]
+    [XmlElement("defs", typeof(Defs))]
     [XmlElement("g", typeof(G))]
     [XmlElement("use", typeof(Use))]
     [XmlElement("style", typeof(Style))]

@@ -32,7 +32,4 @@ public class Svg : G
 
     [XmlAttribute("viewBox")]
     public string ViewBox { get; set; }
-
-    [XmlElement("defs")]
-    public Defs Defs { get; set; }
 }

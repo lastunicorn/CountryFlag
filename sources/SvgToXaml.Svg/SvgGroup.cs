@@ -109,6 +109,11 @@ public class SvgGroup : SvgElement
                     SvgPolyline polyline = new(serializationPolyline);
                     Children.Add(polyline);
                 }
+                else if (serializationChild is Defs serializationDefs)
+                {
+                    SvgDefinitions svgDefinitions = new(serializationDefs);
+                    Children.Add(svgDefinitions);
+                }
                 else if (serializationChild is G serializationGChild)
                 {
                     SvgGroup svgGroupChild = new(serializationGChild);

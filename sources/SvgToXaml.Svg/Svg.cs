@@ -27,8 +27,6 @@ public class Svg : SvgGroup
 
     public SvgViewBox ViewBox { get; set; }
 
-    public SvgDefinitions SvgDefinitions { get; set; }
-
     public Svg()
     {
     }
@@ -46,14 +44,6 @@ public class Svg : SvgGroup
 
         if (svg.ViewBox != null)
             ViewBox = SvgViewBox.Parse(svg.ViewBox);
-
-        if (svg.Defs != null)
-            SvgDefinitions = new SvgDefinitions(svg.Defs);
-    }
-
-    public override SvgElement FindChild(string id)
-    {
-        return SvgDefinitions?.FindChild(id) ?? base.FindChild(id);
     }
 
     public IEnumerable<CssClass> GetAllCssClasses()
@@ -73,9 +63,6 @@ public class Svg : SvgGroup
     private IEnumerable<SvgGroup> GetAllGroups()
     {
         yield return this;
-
-        if (SvgDefinitions != null)
-            yield return SvgDefinitions;
 
         foreach (SvgElement svgElement in Children)
         {

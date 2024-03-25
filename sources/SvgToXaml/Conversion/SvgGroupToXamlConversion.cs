@@ -44,6 +44,7 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
                 canvas.RenderTransform = svgGroup.Transforms.ToXaml();
 
             IEnumerable<UIElement> xamlElements = svgGroup.Children
+                .Where(x => x is not SvgDefinitions)
                 .Select(CreateConversion)
                 .Select(x => x.Execute());
 
@@ -91,6 +92,9 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
 
             case SvgPolyline svgPolyline:
                 return new SvgPolylineToXamlConversion(svgPolyline, referrer);
+
+            case SvgDefinitions:
+                return null;
 
             case SvgGroup svgGChild:
                 return new SvgGroupToXamlConversion(svgGChild, referrer);
