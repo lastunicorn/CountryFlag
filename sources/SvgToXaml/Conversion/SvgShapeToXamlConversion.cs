@@ -51,7 +51,11 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
             .Select(x => x.CalculateFill())
             .FirstOrDefault(x => x != null);
 
-        if (fill != null)
+        if (fill == null)
+        {
+            XamlElement.Fill = Brushes.Black;
+        }
+        else
         {
             bool isNone = string.Compare(fill, "none", StringComparison.OrdinalIgnoreCase) == 0;
 

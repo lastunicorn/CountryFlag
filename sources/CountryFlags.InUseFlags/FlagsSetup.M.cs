@@ -26,6 +26,19 @@ internal static partial class FlagsSetup
 
     public static void Madagascar()
     {
+        Countries.Madagascar.Flags.Add(new CountryFlag
+        {
+            Id = "President",
+            Names = new List<FlagName>
+            {
+                new ()
+                {
+                    EnglishTranslation = "Presidential standard"
+                }
+            },
+            Description = "The National flag with the Seal of Madagascar in the center of the tri-point with the initials \"R. M.\" in the canton.",
+            Usage = FlagUsage.LeaderFlag
+        });
     }
 
     public static void Malawi()

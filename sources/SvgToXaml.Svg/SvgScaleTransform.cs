@@ -34,7 +34,7 @@ public class SvgScaleTransform : ISvgTransform
         if (text == null)
             return;
 
-        string[] parts = text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        string[] parts = text.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
         if (parts.Length >= 1)
         {

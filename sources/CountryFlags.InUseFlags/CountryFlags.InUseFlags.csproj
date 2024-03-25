@@ -243,6 +243,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\MD_WarFlag.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\MG_President.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
       <Page Update="Flags\MX_NavalJack.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>

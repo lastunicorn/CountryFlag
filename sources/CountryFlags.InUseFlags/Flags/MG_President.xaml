@@ -1,0 +1,1344 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Madagascar (Presidential standard) -->
+
+    <Canvas x:Key="CountryFlag_MG_President" Width="900" Height="600">
+
+        <Path
+            Data="M0,0L900,0 900,600 0,600z"
+            Fill="#FFFFFFFF" />
+        <Path
+            Data="M300,0L900,0 900,300 300,300z"
+            Fill="#FFF9423A" />
+        <Path
+            Data="M300,300L900,300 900,600 300,600z"
+            Fill="#FF00843D" />
+        <Canvas>
+            <Path
+                Data="M80.254595,92.803079Q83.811189,94.129266 87.12665799999999,98.469516 90.442127,102.80977 93.817877,110.4052L104.96991,134.99994999999998 93.154783,134.99994999999998 82.786408,111.91223999999998Q78.807845,102.87004999999998 75.010127,99.91626599999998 71.272689,96.96248499999997 64.762314,96.96248499999997L52.826626,96.96248499999997 52.826626,134.99994999999996 41.855439,134.99994999999996 41.855439,45.000047 66.570752,45.000047Q80.49572,45.000047 87.307502,51.450141 94.119283,57.900235 94.119283,70.920985 94.119283,79.420641 90.56268899999999,85.026797 87.06637699999999,90.632954 80.254595,92.803079z M52.826626,55.006735L52.826626,86.955797 66.570752,86.955797Q74.527877,86.955797 78.56672,82.916954 82.605564,78.817829 82.605564,70.920985 82.605564,63.024141 78.56672,59.045578000000006 74.527877,55.006735000000006 66.570752,55.006735000000006z"
+                Fill="#FFFFCC00"
+                StrokeThickness="0" />
+            <Path
+                Data="M115.57941,119.68852L127.03284,119.68852 127.03284,134.99994999999998 115.57941,134.99994999999998z"
+                Fill="#FFFFCC00"
+                StrokeThickness="0" />
+            <Path
+                Data="M149.87944,45.000047L166.21565999999999,45.000047 186.89212999999998,106.2458 207.62887999999998,45.000047 223.96509999999998,45.000047 223.96509999999998,134.99995 213.29531999999998,134.99995 213.29531999999998,55.971235 192.37771999999998,117.69924 181.40652999999998,117.69924 160.48893999999999,55.971235 160.48893999999999,134.99995 149.87944,134.99995z"
+                Fill="#FFFFCC00"
+                StrokeThickness="0" />
+            <Path
+                Data="M246.69112,119.68852L258.14456,119.68852 258.14456,134.99994999999998 246.69112,134.99994999999998z"
+                Fill="#FFFFCC00"
+                StrokeThickness="0" />
+        </Canvas>
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TranslateTransform
+                    X="150"
+                    Y="150" />
+            </Canvas.RenderTransform>
+            <Ellipse
+                Fill="#FFFFFF00"
+                Stroke="#FF000000"
+                StrokeStartLineCap="Round"
+                StrokeEndLineCap="Round"
+                StrokeLineJoin="Round"
+                Width="299"
+                Height="299"
+                Canvas.Left="0.5"
+                Canvas.Top="0.5" />
+            <Ellipse
+                Fill="#FFFFFFFF"
+                Width="105"
+                Height="105"
+                Canvas.Left="97.5"
+                Canvas.Top="97.5" />
+            <Canvas
+                RenderTransform="1.494774,0,0,1.488827,0.5194,1.7089">
+                <Path
+                    Data="M160.1148,154.8353L136.09194,147.69620999999998"
+                    Fill="{x:Null}"
+                    Stroke="#FFDE2919"
+                    StrokeThickness="0.986036" />
+                <Canvas>
+                    <Path
+                        Data="M65.03952,174.7933C49.16862999999999,170.74777999999998 29.252219999999994,144.91868 28.00745,139.62839 35.164909,139.62839 170.84545,139.93958 170.84545,139.93958 163.68799,157.05525 140.65964,172.92613 135.36934,174.17091"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M29.87461,143.3627L168.97831,143.3627"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M32.98655,147.7194L166.48874999999998,147.7194"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M38.58804,154.8769L160.57604,154.8769"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Canvas>
+                        <Path
+                            Data="M55.89356,170.4366L142.2156,170.4366"
+                            Fill="{x:Null}"
+                            Stroke="#FFDE2919"
+                            StrokeThickness="0.986036" />
+                        <Path
+                            Data="M54.81789,169.7545L143.59965,169.7545"
+                            Fill="{x:Null}"
+                            Stroke="#FFDE2919"
+                            StrokeThickness="0.986036" />
+                    </Canvas>
+                    <Canvas>
+                        <Path
+                            Data="M45.08529,161.7232L153.87409,161.7232"
+                            Fill="{x:Null}"
+                            Stroke="#FFDE2919"
+                            StrokeThickness="0.986036" />
+                        <Path
+                            Data="M44.53825,161.1045L154.39875,161.1045"
+                            Fill="{x:Null}"
+                            Stroke="#FFDE2919"
+                            StrokeThickness="0.986036" />
+                    </Canvas>
+                    <Path
+                        Data="M37.96726,143.4165L49.32182,139.59855000000002"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M160.8446,143.4089L149.17456,139.74226"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M38.95214,154.6834L62.67567,147.74726"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M141.6103,143.3734L155.72093999999998,147.74569"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M51.87202,161.4316L63.22284,154.96286"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M147.3165,161.4316L135.35542999999998,154.8408"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M58.09666,169.6091L68.47106,161.55368"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M140.9698,170.2194L130.47334999999998,161.67577"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M107.5276,143.49L102.27937,139.82844"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M85.80242,143.49L91.538854,139.70639"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M111.4333,169.9753L108.01584,161.55372"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M87.02294,170.0973L90.684494,161.67571999999998"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                    <Path
+                        Data="M44.07347,147.7198L56.42502,143.38255999999998"
+                        Fill="{x:Null}"
+                        Stroke="#FFDE2919"
+                        StrokeThickness="0.986036" />
+                </Canvas>
+            </Canvas>
+            <Path
+                Data="M92.2736,271.2221C119.69807,284.52486,163.25675999999999,292.46037,208.2548,271.09860000000003"
+                Fill="{x:Null}"
+                Stroke="#FFFFFFFF"
+                StrokeThickness="29.3886" />
+            <Canvas
+                RenderTransform="1.494774,0,0,1.506309,0.5194,-0.0177">
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <RotateTransform
+                            Angle="11.12082"
+                            CenterX="117.2637"
+                            CenterY="-4.729133" />
+                    </Canvas.RenderTransform>
+                    <Path
+                        Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                        Fill="{x:Null}"
+                        Stroke="#FFEF8410"
+                        StrokeThickness="0.986924" />
+                    <Path
+                        Data="M118.477,64.81278L118.4641,45.40545"
+                        Fill="{x:Null}"
+                        Stroke="#FFEF8410"
+                        StrokeThickness="0.986924" />
+                    <Path
+                        Data="M122.5162,64.81278L122.5033,45.40545"
+                        Fill="{x:Null}"
+                        Stroke="#FFEF8410"
+                        StrokeThickness="0.986924" />
+                </Canvas>
+                <Canvas>
+                    <Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <TranslateTransform
+                                    X="0.0289498"
+                                    Y="0" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                Fill="#FF00943A"
+                                Stroke="#FF00943A"
+                                StrokeThickness="0.980297" />
+                            <Path
+                                Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                Fill="#FF00943A"
+                                Stroke="#FF00943A"
+                                StrokeThickness="0.980297" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform
+                                            Angle="11.12082"
+                                            CenterX="17.2594849"
+                                            CenterY="-1031.9594282" />
+                                        <ScaleTransform
+                                            ScaleX="-1"
+                                            ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                Fill="{x:Null}"
+                                Stroke="#FFEF8410"
+                                StrokeThickness="0.986924" />
+                            <Path
+                                Data="M118.477,64.81278L118.4641,45.40545"
+                                Fill="{x:Null}"
+                                Stroke="#FFEF8410"
+                                StrokeThickness="0.986924" />
+                            <Path
+                                Data="M122.5162,64.81278L122.5033,45.40545"
+                                Fill="{x:Null}"
+                                Stroke="#FFEF8410"
+                                StrokeThickness="0.986924" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <TranslateTransform
+                                X="0"
+                                Y="0.0476392" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-24.34078"
+                                    CenterX="100.4332"
+                                    CenterY="101.4631" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-49.09801"
+                                    CenterX="99.81541"
+                                    CenterY="99.68198" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-72.93796"
+                                    CenterX="100.0121"
+                                    CenterY="100.0262" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
+                    <Canvas
+                        RenderTransform="-1,0,0,1,199.9946,0.0476392">
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-24.34078"
+                                    CenterX="100.4332"
+                                    CenterY="101.4631" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-49.09801"
+                                    CenterX="99.81541"
+                                    CenterY="99.68198" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-72.93796"
+                                    CenterX="100.0121"
+                                    CenterY="100.0262" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="0.0289498"
+                                        Y="0" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M98.91949,22.4779L93.61444,22.4779 97.89492,63.011939999999996 98.971047,62.97284 98.919487,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                                <Path
+                                    Data="M101.0226,22.4779L106.32764999999999,22.4779 102.04717,63.011939999999996 100.97103999999999,62.97284 101.02263999999998,22.477899999999998z"
+                                    Fill="#FF00943A"
+                                    Stroke="#FF00943A"
+                                    StrokeThickness="0.980297" />
+                            </Canvas>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform
+                                                Angle="11.12082"
+                                                CenterX="17.2594849"
+                                                CenterY="-1031.9594282" />
+                                            <ScaleTransform
+                                                ScaleX="-1"
+                                                ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M120.4914,64.81278L120.4894,26.395610000000005"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M118.477,64.81278L118.4641,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                                <Path
+                                    Data="M122.5162,64.81278L122.5033,45.40545"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFEF8410"
+                                    StrokeThickness="0.986924" />
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+            <Canvas
+                RenderTransform="1.494774,0,0,1.488827,0.2093,1.7089">
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <RotateTransform
+                            Angle="-1.09884"
+                            CenterX="34.28059"
+                            CenterY="143.0327" />
+                    </Canvas.RenderTransform>
+                    <Canvas>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <TranslateTransform
+                                X="-5.228673"
+                                Y="-3.338656" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <TranslateTransform
+                                X="-11.37151"
+                                Y="-7.139919" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="11.43778"
+                                CenterX="103.5844"
+                                CenterY="90.3455" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="17.06823"
+                                CenterX="97.09868"
+                                CenterY="99.51572" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="23.21328"
+                                CenterX="93.33039"
+                                CenterY="105.8615" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="26.86244"
+                                CenterX="96.19585"
+                                CenterY="103.3856" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="26.86244"
+                                CenterX="106.3203"
+                                CenterY="93.40102" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="36.54876"
+                                CenterX="94.85386"
+                                CenterY="104.3787" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="40.81023"
+                                CenterX="94.81317"
+                                CenterY="104.2784" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="43.4559"
+                                CenterX="97.26005"
+                                CenterY="101.594" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="50.82412"
+                                CenterX="93.03144"
+                                CenterY="105.3976" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="50.82412"
+                                CenterX="98.97574"
+                                CenterY="101.5394" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="57.08531"
+                                CenterX="96.09908"
+                                CenterY="103.9535" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Path
+                        Data="M12.44774,109.9015C10.803331,109.31737 11.558155,105.73598 12.239692,104.14192 13.635212,105.28103 14.572295,109.2812 12.44774,109.9015z"
+                        Fill="#FF60BC24"
+                        Stroke="#FF60BC24"
+                        StrokeThickness="0.493018" />
+                </Canvas>
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform
+                                    Angle="-1.09884"
+                                    CenterX="-65.92688"
+                                    CenterY="10592.721361" />
+                                <ScaleTransform
+                                    ScaleX="-1"
+                                    ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Canvas>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <TranslateTransform
+                                X="-5.228673"
+                                Y="-3.338656" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <TranslateTransform
+                                X="-11.37151"
+                                Y="-7.139919" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="11.43778"
+                                CenterX="103.5844"
+                                CenterY="90.3455" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="17.06823"
+                                CenterX="97.09868"
+                                CenterY="99.51572" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="23.21328"
+                                CenterX="93.33039"
+                                CenterY="105.8615" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="26.86244"
+                                CenterX="96.19585"
+                                CenterY="103.3856" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="26.86244"
+                                CenterX="106.3203"
+                                CenterY="93.40102" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="36.54876"
+                                CenterX="94.85386"
+                                CenterY="104.3787" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="40.81023"
+                                CenterX="94.81317"
+                                CenterY="104.2784" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="43.4559"
+                                CenterX="97.26005"
+                                CenterY="101.594" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="50.82412"
+                                CenterX="93.03144"
+                                CenterY="105.3976" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="50.82412"
+                                CenterX="98.97574"
+                                CenterY="101.5394" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="57.08531"
+                                CenterX="96.09908"
+                                CenterY="103.9535" />
+                        </Canvas.RenderTransform>
+                        <Path
+                            Data="M60.42487,179.2603C61.580453999999996,177.95267 58.721903999999995,174.85084 57.353449,173.78648 56.684427,175.45904000000002 58.265752,179.74686 60.42487,179.2603z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                        <Path
+                            Data="M58.69597,181.1184C58.035226,182.73355 53.988288000000004,181.54402000000002 52.428004,180.78835 53.631404,179.44788 58.176158,178.96705 58.69597,181.1184z"
+                            Fill="#FF60BC24"
+                            Stroke="#FF60BC24"
+                            StrokeThickness="0.493018" />
+                    </Canvas>
+                    <Path
+                        Data="M12.44774,109.9015C10.803331,109.31737 11.558155,105.73598 12.239692,104.14192 13.635212,105.28103 14.572295,109.2812 12.44774,109.9015z"
+                        Fill="#FF60BC24"
+                        Stroke="#FF60BC24"
+                        StrokeThickness="0.493018" />
+                </Canvas>
+            </Canvas>
+            <Path
+                Data="M83.8386,156.4995C82.10617,192.11882000000003,109.3839,218.47716000000003,127.57433,222.1031L127.57433,212.18333C106.07383,204.89187,90.98484,186.78659000000002,83.83860000000001,156.4995z M216.15499999999997,156.4995C209.00875999999997,186.78659000000002,193.88806999999997,204.89187,172.38757999999996,212.18333L172.38757999999996,222.1031C190.57800999999995,218.47716000000003,217.88742999999997,192.11882000000003,216.15499999999997,156.4995z M129.15891999999997,212.56364000000002L129.15891999999997,222.29326000000003C135.49360999999996,224.07213000000004 139.50658999999996,227.85767000000004 142.27963999999997,233.54412000000002 144.71101999999996,238.52992000000003 145.38064999999997,244.14736000000002 146.24120999999997,247.93254000000002 146.35789999999997,248.44581000000002 146.18550999999997,248.80846000000003 145.98766999999998,248.81993000000003 145.70140999999998,248.83653000000004 145.56713,248.33807000000002 145.51227999999998,248.12269000000003 143.83601999999996,241.54001000000002 141.07186,235.71602000000004 138.47652999999997,231.51579000000004 137.03052999999997,229.17560000000003 135.36414999999997,226.87037000000004 133.27894999999998,225.20897000000005 132.56472999999997,224.63990000000004 131.83353999999997,224.55103000000005 130.99709,224.82866000000004 131.32226,227.77048000000005 131.90043999999997,230.60460000000003 133.21556999999999,233.25888000000003 134.58393999999998,236.02063000000004 136.15352,237.54370000000003 137.46237,239.56570000000002 138.77122,241.58771000000002 139.97198,244.08408000000003 140.98024999999998,248.81993000000003 141.76375,252.50006000000002 141.71847,257.37800000000004 142.4698,261.33849000000004 143.26495,265.52998 145.68086,268.12070000000006 149.98093,268.12070000000006 154.28101,268.12070000000006 156.69692,265.5299800000001 157.49207,261.33849000000004 158.2434,257.37800000000004 158.19812000000002,252.50006000000005 158.98162000000002,248.81993000000003 159.98989000000003,244.08408000000003 161.19065000000003,241.58771000000002 162.4995,239.56570000000002 163.80834000000002,237.54370000000003 165.37793000000002,236.02063 166.74630000000002,233.25888000000003 168.06142000000003,230.60460000000003 168.63961000000003,227.77048000000002 168.96478000000002,224.82866000000004 168.12833,224.55103000000005 167.39714,224.63990000000004 166.68291000000002,225.20897000000005 164.59772,226.87037000000004 162.93134000000003,229.17560000000006 161.48533000000003,231.51579000000004 158.89001000000005,235.71602000000004 156.12585000000004,241.54001000000005 154.44959000000003,248.12269000000003 154.39469000000003,248.33807000000004 154.26045000000002,248.83656000000002 153.97420000000002,248.81993000000003 153.77634000000003,248.80843000000002 153.60397000000003,248.44581000000002 153.72066000000004,247.93254000000002 154.58121000000003,244.14736000000002 155.25084000000004,238.52992 157.68223000000003,233.54412000000002 160.45528000000004,227.85767 164.46826000000004,224.07213000000002 170.80295000000004,222.29326000000003L170.80295000000004,212.56364000000002C164.31794000000005,215.11224 156.91509000000005,216.08151 149.98093000000003,216.08151 143.04677000000004,216.08151 135.64393000000004,215.11224 129.15892000000002,212.56364000000002z M122.50347999999997,223.37080000000003C115.53015999999997,223.61632000000003 108.28385999999996,225.56690000000003 106.56211999999996,230.69178000000002 111.91519999999997,232.62641000000002 122.41096999999996,230.73058000000003 127.22566999999997,223.46588000000003 125.71826999999996,223.36071000000004 124.11270999999996,223.31409000000002 122.50347999999997,223.37088000000003z M174.28912999999997,223.37080000000003C173.77004999999997,223.38930000000002 173.27034999999998,223.43090000000004 172.76788999999997,223.46580000000003 177.58258999999995,230.73044000000004 188.07836999999998,232.62633000000002 193.43143999999995,230.69170000000003 191.44481999999996,224.77838000000003 182.07531999999995,223.09416000000002 174.28912999999994,223.37072000000003z"
+                Fill="#FFDE2919" />
+            <Canvas
+                RenderTransform="1.064458,0,0,1.076737,-2.7016,-4.0438">
+                <Path
+                    Data="M23.40945,112.615Q23.778911,112.0559 24.610591,111.65897 25.444758999999998,111.25259 26.788871999999998,110.98056L31.151784,110.05964999999999 30.611942,112.10887999999998 26.519945999999997,112.95976999999999Q24.919335999999998,113.28541999999999 24.282465999999996,113.82455999999999 23.648081999999995,114.35426 23.349552999999997,115.48746999999999L22.802247999999995,117.56503 28.761056999999994,119.1348 28.258530999999994,121.04237 14.159480999999994,117.32816000000001 15.293895999999995,113.02195Q15.930759999999994,110.60443000000001 17.254664999999996,109.68074 18.578566999999996,108.75707 20.618349999999996,109.29442 21.949874999999995,109.6452 22.663922999999997,110.49982 23.380460999999997,111.345 23.409453999999997,112.615z M16.229613999999998,115.83354999999999L21.234637,117.15205999999999 21.866525,114.75341999999999Q22.229737,113.37468 21.781115,112.50919999999999 21.325544999999998,111.63175999999999 20.088454,111.30587 18.851364,110.97997 18.041514,111.52405 17.224711,112.05618 16.8615,113.43492z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M18.52836,102L21.783368,93.375019 23.336595,93.961196 20.778102999999998,100.74058 24.816494,102.26464 27.268095,95.768493 28.821322,96.35467000000001 26.369721,102.85081000000001 31.312638,104.71624000000001 33.933196,97.77239800000001 35.486424,98.35857600000001 32.16935,107.14801000000001z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M26.40708,86.99548L31.283718,89.491984 32.414043,87.284023Q33.041506,86.058344 32.749593,85.06414500000001 32.457679,84.069945 31.284155999999996,83.46918200000002 30.119325999999997,82.87286900000002 29.142096999999996,83.21735400000001 28.164868999999996,83.56184000000002 27.537404999999996,84.78751900000002z M24.065163000000002,88.012701L26.094407,84.048803Q27.211382,81.86692000000001 28.771968,81.26155800000001 30.328313,80.64305300000001 32.232027,81.617625 34.153127000000005,82.601096 34.561347000000005,84.225323 34.974016000000006,85.840857 33.857041,88.022739L32.726716,90.230701 37.942372000000006,92.900759 37.04345200000001,94.656696z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M35.57443,70.59934Q34.394134,72.394524 35.034915,74.335172 35.681059999999995,76.267659 37.99032,77.785948 40.291419999999995,79.298872 42.321731,79.126098 44.357406,78.945164 45.537702,77.14998 46.717997000000004,75.354796 46.066486000000005,73.430469 45.42034,71.497981 43.119241,69.985057 40.809981,68.466767 38.779671,68.63954199999999 36.754725,68.80415599999999 35.57443,70.59934z M34.236202,69.719483Q35.920805,67.15726599999999 38.651165999999996,66.755211 41.373366999999995,66.347789 44.261981999999996,68.246992 47.142436,70.14083000000001 47.855565,72.806908 48.560534,75.46761900000001 46.87593,78.029837 45.185961,80.600214 42.45839599999999,81.015795 39.73619399999999,81.423215 36.847578999999996,79.524013 33.958965,77.62481 33.253997,74.96409799999999 32.546233,72.28986099999999 34.236202,69.719483z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M48.23797,64.06423L52.27410999999999,67.563425 54.346759999999996,65.172731Q55.389480999999996,63.970006 55.394079999999995,62.965865 55.397679999999994,61.947948000000004 54.372060999999995,61.058756 53.339045,60.163167 52.346683999999996,60.323877 51.353339999999996,60.470811000000005 50.310618999999996,61.673536000000006z M43.707457,60.13643199999999L47.027865,63.01511099999999 48.940588,60.80888499999999Q49.887353,59.71683999999999 49.942114,58.83373599999999 49.995894,57.936855999999985 49.154723999999995,57.20759099999999 48.320933,56.484721999999984 47.44073999999999,56.66513099999999 46.56694499999999,56.83815999999999 45.62017999999999,57.93020499999999z M41.190388,60.56501299999999L44.491274,56.757611999999995Q45.968996,55.053135999999995 47.476983,54.74491799999999 48.98497,54.43670099999999 50.290997,55.56898199999999 51.301877,56.44537999999999 51.490137999999995,57.43577799999999 51.678399999999996,58.42617599999999 51.032737,59.46907499999999 52.222018,58.57435599999999 53.499202999999994,58.62180499999999 54.775406,58.65547499999999 55.89696599999999,59.62783199999999 57.372702999999994,60.90724499999999 57.30697899999999,62.60802599999999 57.24125899999999,64.30880699999999 55.63559099999999,66.160857L52.20676399999999,70.115832z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M51.22196,49.50366L52.667100000000005,48.160923000000004 61.461361000000004,57.625876000000005 66.662435,52.793353 67.792461,54.009561000000005 61.146247,60.18482100000001z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M60.31124,41.46244L61.849083,40.226958 70.980638,51.593288 69.442795,52.82877z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M65.68196,37.183L67.322053,36.086883 70.74605799999999,41.210141 72.761962,32.451252 74.87297199999999,31.040408999999997 72.63331099999999,40.71232 83.40478099999999,42.874882 81.24505599999999,44.318281999999996 71.52201899999999,42.371196999999995 75.42353999999999,48.208951 73.783447,49.305067z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M83.61061,28.6267L84.534753,36.304802 89.30722499999999,33.861987z M81.734139,27.404038L83.72484299999999,26.385086 95.31438299999999,36.831966 93.48884699999999,37.766376 90.602409,35.042089000000004 84.75200199999999,38.036652000000004 85.27393699999999,41.971223 83.42232099999998,42.918982z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M91.99544,22.49478L94.489147,21.579853999999997 104.75965000000001,30.803967999999998 100.55839,19.353088 102.35533000000001,18.693803 107.37733000000001,32.381682999999995 104.88363000000001,33.296609 94.61311700000002,24.072495999999997 98.81437700000002,35.523376 97.01744100000002,36.182660999999996z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M114.3877,15.58655L115.5974,20.869747 113.97913,21.240285 112.76943,15.957087999999999z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M117.0861,15.02881L119.02250000000001,14.652376 121.80477,28.964526 119.86837,29.34096z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M148.5956,12.35622L151.52461,12.603686 154.39681,22.803576 158.95906,13.231807 161.88808,13.479274 160.66061,28.007594 158.74362,27.845631 159.82146,15.088351000000001 155.23315,24.736323 153.25777,24.569426999999997 150.35323,14.288396999999998 149.27539,27.045676999999998 147.36812999999998,26.884535999999997z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M171.4957,17.30648L167.30993,23.809305000000002 172.54365,24.972079z M170.83038,15.167924000000001L173.01349,15.652943 175.27571999999998,31.091123 173.27374999999998,30.646347 172.78842999999998,26.707093 166.37258999999997,25.281689 164.26489999999998,28.644853 162.23432999999997,28.193721z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M183.0964,20.10574L179.40318,30.82525 181.65603,31.601429Q184.50903,32.584379 186.27469,31.74665 188.04959,30.912104 189.01027,28.123739 189.96459,25.353839 189.07717,23.612379 188.2022,21.864868 185.34921,20.881918z M181.75938,17.930485L185.59108,19.25063Q189.5982,20.631212 190.89673,22.948140000000002 192.19843,25.255836000000002 190.97692999999998,28.801307 189.74903999999998,32.365244000000004 187.28973,33.387479 184.83043999999998,34.409715999999996 180.84178,33.035495L177.01008,31.715351z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M200.4525,27.48676L194.86121,32.829494 199.6775,35.184749z M200.30612,25.251897L202.3151,26.234327 200.90175,41.773227 199.05946,40.872310999999996 199.50945000000002,36.928861 193.60534,34.041638999999996 190.76913000000002,36.81818199999999 188.90051000000003,35.904393999999996z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M211.9514,46.35622L214.09184000000002,43.076934 211.39317000000003,41.315476000000004 212.27924000000002,39.957966000000006 216.61346,42.78697100000001 213.19196,48.02892100000001Q211.79213,48.08316100000001 210.40954,47.68218200000001 209.03229,47.27302800000001 207.72385,46.41898800000001 204.86163,44.55077600000001 204.33133,41.825640000000014 203.81455,39.09766000000001 205.76283,36.11277500000001 207.71644,33.119712000000014 210.41637,32.50298400000001 213.1298,31.88341300000001 215.99202,33.75162500000001 217.18597,34.530935000000014 218.0651,35.52458100000001 218.95241000000001,36.52356200000001 219.48649,37.68849300000001L218.33888000000002,39.44671300000001Q217.93005000000002,38.07199800000001 217.15587000000002,37.00690900000001 216.38169000000002,35.941824000000004 215.24497000000002,35.19987300000001 213.00426000000002,33.73733200000001 211.05906000000002,34.25192400000001 209.12203000000002,34.77185200000001 207.50469,37.24971600000001 205.89269000000002,39.71940200000001 206.19637,41.70187200000001 206.50823,43.68967500000001 208.74893,45.15221700000001 209.62396,45.72336000000001 210.40697,46.024530000000006 211.19532,46.317522000000004 211.9514,46.35622000000001z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M227.1678,44.85403L220.48216,48.741112 224.61411999999999,52.157339z M227.54811,42.646903L229.27164000000002,44.071884000000004 224.26372,58.849424000000006 222.68319,57.542669000000004 224.04288,53.813798000000006 218.97763,49.62595400000001 215.57078,51.66227200000001 213.96766000000002,50.336847000000006z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M241.7478,56.69824L240.35786000000002,58.028341999999995Q239.96946000000003,56.84560199999999 239.47128,55.94364099999999 238.97309,55.041672999999996 238.33167,54.37139899999999 237.21763,53.20722999999999 236.15842,53.00434899999999 235.10595,52.80851899999999 234.2734,53.60522599999999 233.5749,54.27365499999999 233.61341000000002,55.03427399999999 233.66571000000002,55.79518999999999 234.56782,57.17571999999999L235.21514000000002,58.20528699999999Q236.43767000000003,60.09017399999999 236.39104000000003,61.58106699999999 236.35824000000002,63.07226299999999 235.07413000000003,64.30108399999999 233.54307000000003,65.76621999999999 231.76708000000002,65.492302 229.99786000000003,65.22545 228.10061000000002,63.242839 227.38492000000002,62.494946999999996 226.74404,61.48623799999999 226.10991,60.48458699999999 225.57729,59.26414499999999L227.04485,57.85977499999999Q227.38849,59.193473999999995 227.93825,60.26234099999999 228.48801,61.33121599999999 229.25772,62.13554899999999 230.42577,63.35615799999999 231.54022,63.56025499999999 232.65467,63.76435899999999 233.54367,62.91363299999999 234.31977999999998,62.17093599999999 234.2981,61.27255599999999 234.2832,60.381219999999985 233.46212,59.08535299999999L232.80099,58.05548099999999Q231.59259,56.157090999999994 231.58799000000002,54.796307999999996 231.58299000000002,53.435523999999994 232.78989,52.280970999999994 234.18689,50.944120999999996 235.92973,51.15514699999999 237.6793,51.37321699999999 239.33349,53.10182999999999 240.04243000000002,53.842662999999995 240.64432000000002,54.73999499999999 241.24621000000002,55.637342 241.7478,56.69823999999999z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M245.8276,60.73355L247.07125,62.264798 235.75368,71.456715 234.51003,69.925467z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M250.0418,66.0152L251.16716,67.635375 246.10613,71.150707 254.89976000000001,73.00921199999999 256.34823,75.09458 246.63771,73.02872799999999 244.66866,83.83724799999999 243.18676,81.703752 244.95917,71.94736599999999 239.19232,75.95294799999999 238.06697,74.33277299999999z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M258.9246,83.67917L251.26683,84.758911 253.80597,89.48083z M260.10894,81.778279L261.16807,83.747891 250.95849,95.547021 249.98723,93.740813 252.65239000000003,90.7997 249.53974000000002,85.011252 245.61657000000002,85.61291299999999 244.63144000000003,83.780908z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M260.5045,101.2425Q260.5368,101.91186 260.10029000000003,102.72349000000001 259.66740000000004,103.54421 258.74371,104.55784000000001L255.76786,107.87859000000002 254.99264000000002,105.90634000000001 257.79128000000003,102.80213000000002Q258.89023000000003,101.59371000000002 259.0855,100.78244000000002 259.28435,99.98027500000002 258.85565,98.88962300000003L258.06971000000004,96.89010100000003 252.33472000000003,99.14432400000003 251.61309000000003,97.30840800000003 265.18256,91.97472100000003 266.8116,96.11917600000002Q267.72615,98.44589000000002 267.20379,99.97332300000002 266.68143000000003,101.50076000000003 264.71826000000004,102.27241000000002 263.43675,102.77613000000002 262.35571000000004,102.50851000000002 261.27825000000007,102.24998000000002 260.50450000000006,101.24250000000002z M264.39547,94.403666L259.57842999999997,96.297074 260.48584,98.605611Q261.00741999999997,99.932564 261.88072999999997,100.36578 262.76669,100.8045 263.95732,100.33648 265.14795,99.86848599999999 265.47987,98.95105199999999 265.82445,98.039126 265.30287,96.71217299999999z"
+                    Fill="#FF000000" />
+                <Path
+                    Data="M270.022,112.4612L262.33123,111.64921000000001 263.64784000000003,116.84637000000001z M271.63246,110.90477L272.18165,113.07261 259.41261,122.0396 258.90898999999996,120.05161 262.20853999999997,117.84564999999999 260.59455999999994,111.47464 256.64269999999993,111.1057 256.1318799999999,109.08932z"
+                    Fill="#FF000000" />
+            </Canvas>
+            <Path
+                Data="M103.9807,269.1377L107.66132,270.54001 107.47256,271.03542 105.92805,270.44696 104.45912,274.30243 103.86754,274.07704 105.33647,270.22157 103.79195,269.63311999999996z"
+                Fill="#FF000000" />
+            <Path
+                Data="M109.4131,271.8133L107.83047,273.70915 109.44322000000001,274.28381z M109.28651,271.10939L109.95922,271.34909000000005 110.06795,276.33054000000004 109.45105,276.11073000000005 109.45205,274.84326000000004 107.47503,274.13881000000003 106.67462,275.12157 106.04891,274.89862z"
+                Fill="#FF000000" />
+            <Path
+                Data="M112.0798,272.062L112.88645000000001,272.32437 113.64492000000001,276.66695999999996 114.84967000000002,272.96291999999994 115.43094000000002,273.15196999999995 113.99083000000002,277.57962999999995 113.18418000000001,277.31726999999995 112.42571000000001,272.97466999999995 111.22095000000002,276.67871999999994 110.63969000000002,276.48965999999996z"
+                Fill="#FF000000" />
+            <Path
+                Data="M116.3928,273.41L116.99713999999999,273.58779000000004 115.68305999999998,278.05448 115.07871999999999,277.87668z"
+                Fill="#FF000000" />
+            <Path
+                Data="M117.9921,273.8909L118.81178,274.10915 119.80454999999999,278.40423 120.80673999999999,274.64033 121.39739999999999,274.7976 120.19942999999999,279.29681 119.37974999999999,279.07856 118.38696999999999,274.78346999999997 117.38477999999999,278.54736999999994 116.79413,278.39010999999994z"
+                Fill="#FF000000" />
+            <Path
+                Data="M122.8293,275.6672L122.01393,279.1948 122.75531000000001,279.36616Q123.69418,279.58317 124.227,279.25822999999997 124.76285,278.93397 124.97495,278.01637999999997 125.18564,277.10484999999994 124.84572,276.58137 124.50955,276.05557 123.57068,275.83856z M122.33212,275.02094999999997L123.59307,275.31240999999994Q124.91174,275.61719999999997 125.40142999999999,276.30972999999994 125.89182,276.99920999999995 125.62212999999998,278.16596999999996 125.35104999999999,279.33879999999994 124.60408999999999,279.74548 123.85713999999999,280.15217 122.54452999999998,279.84877L121.28358999999998,279.55732z"
+                Fill="#FF000000" />
+            <Path
+                Data="M128.4045,278.8377Q128.5908,278.94298 128.73571,279.19912 128.88368,279.45583999999997 129.00016000000002,279.878L129.39034,281.24744 128.72555,281.12093 128.36369,279.83624Q128.22442999999998,279.33356999999995 128.03853999999998,279.14265 127.85571999999998,278.95231 127.48809999999999,278.88235000000003L126.81410999999999,278.75410000000005 126.44625999999998,280.6872000000001 125.82742999999998,280.5694400000001 126.69779999999997,275.9955500000001 128.09478,276.2613800000001Q128.87904999999998,276.4106200000001 129.20266999999998,276.8118800000001 129.52631,277.21314000000007 129.40039,277.87486000000007 129.31819,278.3068200000001 129.06178,278.5532600000001 128.80843,278.8002800000001 128.4045,278.8377000000001z M127.21986000000001,276.62185999999997L126.91089000000001,278.24555 127.68903,278.39362Q128.13631,278.47872 128.40207,278.31662 128.67148,278.15202 128.74785,277.75069 128.82425,277.34936000000005 128.63292,277.10345 128.44528000000003,276.85505 127.99801000000001,276.76994z"
+                Fill="#FF000000" />
+            <Path
+                Data="M132.5296,277.659L131.33568,279.82083 133.02819,280.07886z M132.27167999999998,276.99192L132.97767999999996,277.09954999999997 134.03012999999996,281.96977 133.38271999999995,281.87107 133.14345999999995,280.62638999999996 131.06865999999994,280.31007999999997 130.46937999999994,281.42692 129.81270999999995,281.32681z"
+                Fill="#FF000000" />
+            <Path
+                Data="M134.9095,277.3798L138.54234,277.8085 138.48604,278.28544 135.13519,281.56088 138.13003,281.9143 138.06793000000002,282.44079000000005 134.29264,281.99528000000004 134.34894,281.51833000000005 137.69979,278.2429000000001 134.84741,277.9063000000001z"
+                Fill="#FF000000" />
+            <Path
+                Data="M140.4389,278.593L139.39372999999998,280.83054000000004 141.09981,280.97365z M140.13648999999998,277.94487000000004L140.84813999999997,278.00457000000006 142.22719999999998,282.79257000000007 141.57459999999998,282.73787000000004 141.25179999999997,281.51220000000006 139.16037999999998,281.33677000000006 138.63790999999998,282.49154000000004 137.97597999999996,282.43604000000005z"
+                Fill="#FF000000" />
+            <Path
+                Data="M143.0266,278.1773L143.87394,278.2165 145.75618,282.20279 145.9362,278.31191 146.54678,278.34011000000004 146.33159,282.99109000000004 145.48426,282.95189000000005 143.60201,278.96560000000005 143.422,282.85648000000003 142.81142,282.82828z"
+                Fill="#FF000000" />
+            <Path
+                Data="M149.0594,278.9968L148.18333,281.30579 149.89533,281.32179z M148.7097,278.37291L149.4238,278.37991 151.15471,283.05224 150.49984999999998,283.04624 150.08689999999999,281.84793 147.98821999999998,281.82833 147.55297,283.01872 146.88875,283.01272z"
+                Fill="#FF000000" />
+            <Path
+                Data="M126.8368,284.5268L129.46885,285.00811 129.37345,285.52961 127.36106,285.16161999999997 127.11422999999999,286.51138999999995 128.93028999999999,286.84349 128.83488999999997,287.36499 127.01883999999997,287.0329 126.61886999999997,289.22013999999996 125.99920999999998,289.10681999999997z"
+                Fill="#FF000000" />
+            <Path
+                Data="M131.928,285.9675L130.78836,288.15842999999995 132.48679,288.37415999999996z M131.65351,285.30704999999995L132.36197,285.3970499999999 133.53558,290.2394999999999 132.88591000000002,290.1569999999999 132.61567000000002,288.91867999999994 130.53363000000002,288.65421999999995 129.96239000000003,289.78565999999995 129.30343000000002,289.70195999999993z"
+                Fill="#FF000000" />
+            <Path
+                Data="M134.536,285.6499L135.38123,285.7213 137.11033999999998,289.77637 137.43834999999999,285.89516 138.04742,285.94665999999995 137.65533,290.58608999999996 136.81010999999998,290.51469 135.08097999999998,286.45962 134.75296999999998,290.34083999999996 134.14390999999998,290.28934z"
+                Fill="#FF000000" />
+            <Path
+                Data="M139.627,286.5548L139.44436000000002,290.1708 140.20431000000002,290.2092Q141.16671000000002,290.25780000000003 141.63412000000002,289.84427 142.10463000000001,289.43088 142.15214000000003,288.49029 142.19934000000003,287.55592 141.77271000000002,287.10034 141.34935000000002,286.64181 140.38695,286.5932z M139.02397000000002,286.006L140.31652000000003,286.07129999999995Q141.66823000000002,286.1396 142.27201000000002,286.73524999999995 142.87595000000002,287.32779999999997 142.81554000000003,288.52379999999994 142.75484000000003,289.7260099999999 142.09098000000003,290.25764999999996 141.42713000000003,290.78929999999997 140.08165000000002,290.72133999999994L138.78910000000002,290.65603999999996z"
+                Fill="#FF000000" />
+            <Path
+                Data="M145.6795,288.7367Q145.88072,288.80949999999996 146.06624,289.03794999999997 146.25487999999999,289.26645999999994 146.44001,289.66333L147.0527,290.94872 146.37613,290.93462 145.80546999999999,289.72808Q145.58447999999999,289.25559999999996 145.36939999999998,289.09828999999996 145.15744999999998,288.94104 144.78330999999997,288.93325L144.09737999999996,288.91895 144.05647999999997,290.88631 143.42666999999997,290.87321 143.52356999999998,286.21824999999995 144.94530999999998,286.24784999999997Q145.74347999999998,286.26444999999995 146.12938999999997,286.60623999999996 146.51528999999996,286.94802999999996 146.50127999999998,287.62147999999996 146.49228,288.06111 146.28032,288.34677999999997 146.07162,288.63251999999994 145.67955999999998,288.73666z M144.14254,286.74897L144.10814,288.40143 144.90008,288.41793Q145.35528,288.42693 145.59036,288.22331 145.82861,288.01616 145.83711,287.60772000000003 145.84511,287.19929 145.61605,286.98864000000003 145.38967,286.77494 144.93447,286.76547000000005z"
+                Fill="#FF000000" />
+            <Path
+                Data="M149.9353,286.705Q149.24922,286.705 148.84381000000002,287.21644 148.44152000000003,287.72787999999997 148.44152000000003,288.61042 148.44152000000003,289.48985 148.84381000000002,290.00129 149.24922,290.51273 149.9353,290.51273 150.62138000000002,290.51273 151.02055000000001,290.00129 151.42284,289.48985 151.42284,288.61042 151.42284,287.72787999999997 151.02055000000001,287.21644 150.62138000000002,286.705 149.9353,286.705z M149.9353,286.19356Q150.91452,286.19356 151.5008,286.85157 152.08708,287.50646 152.08708,288.61042 152.08708,289.71126 151.5008,290.36927 150.91452,291.02416999999997 149.9353,291.02416999999997 148.95296000000002,291.02416999999997 148.36356,290.36927 147.77728000000002,289.71437999999995 147.77728000000002,288.61042 147.77728000000002,287.50646 148.36356,286.85157 148.95296000000002,286.19356 149.9353,286.19356z"
+                Fill="#FF000000" />
+            <Path
+                Data="M155.6993,286.3018L155.7216,286.91575Q155.35699,286.75734 155.03606,286.68473 154.71513,286.61213 154.41905,286.62283 153.90484,286.64143 153.63159,286.85112000000004 153.36146,287.06063000000006 153.3748,287.42837000000003 153.386,287.73690000000005 153.57562,287.88918 153.76826999999997,288.03822 154.28911,288.11606L154.67215,288.18026000000003Q155.38133,288.28872 155.72711999999999,288.61632000000003 156.0759,288.94069 156.09647999999999,289.50788000000006 156.12097999999997,290.18417000000005 155.67866999999998,290.54972000000004 155.23943999999997,290.91516 154.36370999999997,290.94693 154.03336999999996,290.95893 153.65667999999997,290.89763 153.28309999999996,290.83633 152.87887999999995,290.70428L152.85537999999994,290.05604999999997Q153.24650999999994,290.25717999999995 153.61821999999995,290.35292 153.98990999999995,290.44862 154.34518999999995,290.43582 154.88433999999995,290.41621999999995 155.16959999999995,290.19372 155.45485999999994,289.97117 155.44061999999994,289.57849 155.42821999999992,289.23566999999997 155.20924999999994,289.05014 154.99343999999994,288.8645 154.50999999999993,288.78529L154.12395999999993,288.72449Q153.41454999999993,288.60979 153.08892999999992,288.32202 152.76330999999993,288.03427 152.7439799999999,287.50135 152.7215799999999,286.88429 153.1418999999999,286.51329 153.5653199999999,286.14218 154.3288599999999,286.11447999999996 154.65607999999992,286.10257999999993 154.9979299999999,286.14957999999996 155.3397799999999,286.19647999999995 155.6993599999999,286.30200999999994z"
+                Fill="#FF000000" />
+            <Path
+                Data="M158.9083,286.4004Q158.22486,286.4606 157.86588,287.00561999999996 157.51001,287.55037999999996 157.58743,288.42951999999997 157.66453,289.30555999999996 158.11018,289.77973 158.55890000000002,290.25363 159.24233,290.19343999999995 159.92576,290.13323999999994 160.27852000000001,289.58876999999995 160.63439000000002,289.04401999999993 160.55725,288.16797999999994 160.47985,287.28884999999997 160.03422,286.8146699999999 159.59172,286.34021999999993 158.9083,286.40039999999993z M158.86339999999998,285.89092999999997Q159.83883999999998,285.80503 160.48058999999998,286.40907 161.12205999999998,287.01000999999997 161.21890999999997,288.10971 161.31550999999996,289.20631000000003 160.78917999999996,289.91321 160.26259999999996,290.61701 159.28716999999995,290.70291 158.30861999999993,290.78911 157.66403999999994,290.18843 157.02255999999994,289.5875 156.92570999999995,288.48778999999996 156.82890999999995,287.38809 157.35543999999996,286.68429 157.88484999999997,285.97711 158.86339999999996,285.89092999999997z"
+                Fill="#FF000000" />
+            <Path
+                Data="M163.4387,286.1995L162.83804,288.59494 164.54021,288.41105z M163.01859000000002,285.62069L163.72860000000003,285.54399 165.99287000000004,289.98243 165.34176000000005,290.05273 164.79181000000005,288.9108 162.70518000000004,289.13623 162.41180000000003,290.36926 161.75141000000002,290.44056z"
+                Fill="#FF000000" />
+            <Path
+                Data="M165.8397,285.3224L166.67631,285.18244000000004 169.35514,288.68348000000003 168.71249,284.84182000000004 169.31534,284.74097000000006 170.08354,289.33312000000006 169.24693,289.47307000000006 166.5681,285.97204000000005 167.21075,289.81370000000004 166.6079,289.91455z"
+                Fill="#FF000000" />
+            <Path
+                Data="M171.6326,284.8136L171.40743,287.27291 173.06108,286.82946000000004z M171.12849,284.30627L171.81826,284.12129999999996 174.73809,288.15876999999995 174.10555,288.32839999999993 173.38654,287.2846199999999 171.35939,287.8282299999999 171.25911,289.0917099999999 170.61751999999998,289.26375999999993z"
+                Fill="#FF000000" />
+            <Path
+                Data="M156.7984,278.1992L159.4691,278.03562 159.5015,278.56477 157.45956999999999,278.68985000000004 157.54346999999999,280.05943 159.38618,279.94656000000003 159.41858,280.47572 157.57586999999998,280.58859 157.71180999999999,282.80794000000003 157.08305,282.84644000000003z"
+                Fill="#FF000000" />
+            <Path
+                Data="M162.1756,278.3994L161.54832,280.78801 163.25243,280.62307999999996z M161.76195,277.81595L162.47277000000003,277.74715 164.68751000000003,282.21052 164.03566000000004,282.27362 163.49845000000005,281.12563 161.40944000000005,281.32782 161.10236000000003,282.55753 160.44121000000004,282.62153z"
+                Fill="#FF000000" />
+            <Path
+                Data="M164.6699,277.541L165.29437000000001,277.4582 165.54523,279.35017999999997 167.81438,279.04931 167.56352,277.15733 168.18800000000002,277.07453 168.79998,281.69011 168.1755,281.77291 167.88406,279.57486 165.61491,279.87573 165.90635,282.07376999999997 165.28188,282.15657z"
+                Fill="#FF000000" />
+            <Path
+                Data="M170.7726,277.2933L170.29998,279.71726 171.98999,279.44324z M170.32234000000003,276.73762L171.02728000000002,276.62332 173.52404,280.93525 172.87759000000003,281.04007 172.26777,279.92896 170.19606000000002,280.26487000000003 169.96857000000003,281.51174000000003 169.31289000000004,281.61806z"
+                Fill="#FF000000" />
+            <Path
+                Data="M173.2382,276.224L175.86692,275.72484 175.96581999999998,276.24568 173.95597999999998,276.62733 174.21195999999998,277.97538999999995 176.02571999999998,277.63097999999997 176.12461999999996,278.15182 174.31085999999996,278.49622999999997 174.72566999999995,280.68071 174.10678999999996,280.79823z"
+                Fill="#FF000000" />
+            <Path
+                Data="M178.6114,275.7794L178.28645,278.22753 179.95675,277.85168z M178.12833,275.252L178.82504,275.09522 181.57834,279.24806 180.93943,279.39183 180.26343999999997,278.31967000000003 178.21586999999997,278.78043 178.06430999999998,280.03880000000004 177.41626999999997,280.18462000000005z"
+                Fill="#FF000000" />
+            <Path
+                Data="M181.0027,274.6025L181.61309,274.44678000000005 182.08488,276.29609000000005 184.30284,275.73025000000007 183.83105,273.88095000000004 184.44145,273.72522000000004 185.5924,278.23668000000004 184.982,278.39241000000004 184.43389,276.24395000000004 182.21593,276.80979 182.76404,278.95824000000005 182.15365,279.11397000000005z"
+                Fill="#FF000000" />
+            <Path
+                Data="M187.0402,273.6283L186.85027,276.09059 188.49739,275.62351z M186.52886,273.12824L187.21592,272.93341 190.19327,276.92866999999995 189.56322,277.10733999999997 188.82934,276.07394999999997 186.81018,276.64651999999995 186.72798,277.91131999999993 186.08893,278.09253999999993z"
+                Fill="#FF000000" />
+            <Path
+                Data="M189.3849,272.2993L190.19428,272.04552 193.32953,275.1445 192.16419000000002,271.42786 192.74742,271.24499000000003 194.14042,275.6877 193.33103,275.94148 190.19579,272.84250000000003 191.36112999999997,276.55914 190.77788999999999,276.74201z"
+                Fill="#FF000000" />
+            <Path
+                Data="M195.3695,271.0264L195.3114,273.49532000000005 196.93122,272.94090000000006z M194.83218,270.55437L195.50784,270.32311 198.69439,274.15359 198.07479,274.36566 197.28675,273.37296 195.30106,274.0526 195.28656,275.31998 194.65811000000002,275.53508z"
+                Fill="#FF000000" />
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TransformGroup.Children>
+                            <ScaleTransform
+                                ScaleX="0.4750002"
+                                ScaleY="0.4750002" />
+                            <TranslateTransform
+                                X="137.72635"
+                                Y="53.371627" />
+                        </TransformGroup.Children>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Path
+                    Data="M21.663134,295.51546C20.916339,295.47626 20.521718,295.44836000000004 20.007424,295.44836000000004 19.492856,295.44836000000004 18.858614,295.47656000000006 18.104425,295.63841 17.35051,295.80053000000004 16.476373,296.09657000000004 15.517890999999999,296.51227 14.559408,296.92798 13.516305,297.46364 12.586028999999998,298.02722 11.655752999999999,298.59136 10.838029999999998,299.18343 10.309494999999998,299.66952 9.780959399999999,300.15587999999997 9.541338799999998,300.53625999999997 9.301718099999999,300.65619999999996 9.062097399999999,300.77615 8.8224767,300.63509999999997 8.554649199999998,300.71259999999995 8.286547899999999,300.79009999999994 7.990787499999998,301.08612999999997 7.687633099999998,301.21293 7.384478699999998,301.33972 7.074477999999998,301.29753 6.637683699999998,301.29753 6.200615499999999,301.29753 5.636753799999998,301.33973 5.094252599999998,301.42458999999997 4.551477499999998,301.50919 4.030062899999998,301.63572999999997 3.5929946999999984,301.77676999999994 3.1559265999999986,301.91779999999994 2.8037525999999984,302.0727999999999 2.6063051999999987,301.98817999999994 2.4088576999999987,301.9035799999999 2.3666844999999985,301.57958999999994 2.345323999999999,301.31888999999995 2.3239629999999987,301.05817999999994 2.3242369999999988,300.86072999999993 2.197443799999999,300.74790999999993 2.070650199999999,300.63507999999996 1.816789199999999,300.60686999999996 1.4361346999999989,300.47295999999994 1.055480099999999,300.33903999999995 0.5480318999999989,300.09941999999995 0.18161769999999877,299.75409999999994 -0.18479660000000125,299.40876999999995 -0.4104509000000012,298.9577299999999 -0.7626248000000012,298.63348999999994 -1.1147988000000013,298.30924999999996 -1.5943140000000011,298.11207999999993 -2.0946420000000012,297.92886999999996 -2.595243900000001,297.74539 -3.1166585000000016,297.57642 -3.624106600000001,297.49179999999996 -4.131554800000001,297.40719999999993 -4.624762600000001,297.40719999999993 -5.188624400000001,297.37184999999994 -5.752486100000001,297.33654999999993 -6.386727800000001,297.2661499999999 -6.876649400000002,297.18508999999995 -7.366571000000001,297.10398999999995 -7.711898700000002,297.01228999999995 -7.898665900000002,296.90301999999997 -8.085433100000001,296.79402999999996 -8.113639900000003,296.66722999999996 -8.113639900000003,296.49798999999996 -8.113639900000003,296.32902999999993 -8.085432900000002,296.11733999999996 -8.088992900000003,295.94453999999996 -8.092552900000003,295.77200999999997 -8.127605900000002,295.63809999999995 -8.303966900000002,295.52554 -8.480327700000002,295.41272 -8.797448600000003,295.32097999999996 -9.036795400000003,295.17665999999997 -9.276416100000002,295.03234 -9.438536600000003,294.83489 -9.597097100000003,294.69057 -9.755657500000003,294.54596999999995 -9.910931700000003,294.45450999999997 -10.129192000000003,294.41206 -10.347726000000003,294.36986 -10.629520000000003,294.37676 -10.869415000000004,294.34136 -11.109035000000004,294.30606 -11.306209000000004,294.22880000000004 -11.524743000000004,294.00671 -11.743277000000004,293.78434 -11.982898000000004,293.4182 -12.113252000000005,293.12545 -12.243605000000004,292.83325 -12.264692000000004,292.61472 -12.264692000000004,292.38934 -12.264692000000004,292.16368 -12.243602000000005,291.93091 -12.381079000000003,291.64912 -12.518553000000002,291.36732 -12.814587000000003,291.03623 -13.043528000000004,290.73281 -13.272468000000003,290.42992999999996 -13.434862000000004,290.15524999999997 -13.522769000000004,289.86962 -13.610949000000003,289.58427 -13.625190000000003,289.28824 -13.621359000000004,289.08011 -13.617759000000003,288.87225 -13.596709000000004,288.75284999999997 -13.543859000000003,288.65371999999996 -13.491009000000004,288.55541999999997 -13.406659000000003,288.47763 -13.409945000000002,288.32647 -13.413545000000003,288.17474999999996 -13.505245000000002,287.9491 -13.730626000000003,287.61445 -13.956280000000003,287.27952999999997 -14.315574000000003,286.83534 -14.717315000000003,286.40567 -15.119057000000003,285.97598999999997 -15.562971000000003,285.56001 -15.985799000000004,285.24289 -16.408627000000003,284.92577 -16.810368000000004,284.70724 -17.014662000000005,284.33699 -17.218955000000005,283.96701 -17.226076000000006,283.4456 -17.247436000000004,282.85353000000003 -17.268796000000005,282.26146000000006 -17.303846000000004,281.59901 -17.324936000000005,281.01762 -17.346296000000006,280.43624 -17.353416000000003,279.93591000000004 -17.356706000000006,279.42134000000004 -17.360006000000006,278.90677000000005 -17.360306000000005,278.37824000000006 -17.367386000000007,277.87791000000004 -17.374186000000005,277.37758 -17.38874600000001,276.90519000000006 -17.504860000000008,276.51056000000005 -17.620973000000006,276.11622000000006 -17.83950800000001,275.79882000000003 -17.892361000000008,275.58741000000003 -17.945211000000008,275.37627000000003 -17.83266100000001,275.27029000000005 -17.769127000000008,275.01314 -17.705597000000008,274.75599 -17.691627000000008,274.34686000000005 -17.702037000000008,273.9558 -17.71271700000001,273.56474000000003 -17.748047000000007,273.19148 -17.631657000000008,272.95158000000004 -17.515543000000008,272.71223000000003 -17.247716000000008,272.60625000000005 -17.050268000000006,272.53259 -16.853095000000007,272.45839 -16.726027000000006,272.4162 -16.704941000000005,272.25764000000004 -16.683851000000004,272.09908 -16.768471000000005,271.82413 -16.715621000000006,271.63736000000006 -16.662771000000006,271.45032000000003 -16.472440000000006,271.35201000000006 -16.366733000000007,271.2038600000001 -16.261026000000008,271.0559800000001 -16.239940000000008,270.8585300000001 -16.370333000000006,270.6189100000001 -16.500687000000006,270.3792900000001 -16.782481000000004,270.0974900000001 -17.092756000000005,269.8578700000001 -17.403030000000005,269.6182500000001 -17.741238000000006,269.4208000000001 -17.977298000000005,269.1672200000001 -18.213359000000004,268.9136300000001 -18.347273000000005,268.6033600000001 -18.400126000000004,268.1944900000001 -18.452976000000003,267.7859100000001 -18.424776000000005,267.2781800000001 -18.435176000000002,266.8553600000001 -18.445586000000002,266.4325300000001 -18.495146000000002,266.0943200000001 -18.551563,265.84758000000005 -18.607973,265.60084000000006 -18.671511000000002,265.44557000000003 -18.836917000000003,265.21635000000003 -19.002324,264.98741 -19.270425000000003,264.68453000000005 -19.619039000000004,264.37070000000006 -19.967927000000003,264.05713000000003 -20.397875000000003,263.73289000000005 -20.746763000000005,263.35224000000005 -21.095650000000006,262.9715800000001 -21.363478000000004,262.53479000000004 -21.564211000000004,262.18946000000005 -21.765219000000005,261.84414000000004 -21.899133000000003,261.59027000000003 -21.990599000000003,261.2835600000001 -22.082339000000005,260.97712000000007 -22.131633000000004,260.61755000000005 -22.117667000000004,260.34616000000005 -22.103427000000003,260.07505000000003 -22.026197000000003,259.89184000000006 -22.029487000000003,259.66619000000003 -22.033087000000002,259.44081000000006 -22.117667000000004,259.17298000000005 -22.265548000000003,258.88051 -22.413428000000003,258.58803 -22.624842,258.27091 -22.723703000000004,257.95379 -22.822293000000005,257.63667000000004 -22.808323000000005,257.31955000000005 -22.878703000000005,257.02351000000004 -22.949083000000005,256.72748000000007 -23.104083000000006,256.45253 -23.139410000000005,256.21291 -23.174740000000003,255.97329000000002 -23.090120000000006,255.76900000000003 -23.167620000000007,255.49405000000002 -23.245120000000007,255.21938000000003 -23.484741000000007,254.87377 -23.620298000000005,254.51092000000003 -23.755855000000004,254.14807000000002 -23.787622000000006,253.76741000000004 -23.673148000000005,253.51026000000002 -23.558678000000004,253.25312000000002 -23.297697000000007,253.11893 -23.072317000000005,253.11893 -22.846936000000007,253.11893 -22.656335000000006,253.25284 -22.570345000000007,253.10853 -22.484085000000007,252.96394 -22.50160500000001,252.54111 -22.584315000000007,252.28396 -22.667295000000006,252.02682000000001 -22.815172000000008,251.93508 -22.998653000000008,251.86771000000002 -23.18186100000001,251.80121000000003 -23.400395000000007,251.75872 -23.50966200000001,251.46268 -23.61892900000001,251.16665 -23.61892900000001,250.61703 -23.61180800000001,250.21008 -23.60470800000001,249.80314 -23.59044800000001,249.5386 -23.58003800000001,249.34307 -23.56935800000001,249.14753000000002 -23.562238000000008,249.02047000000002 -23.55347800000001,248.81782 -23.544678000000008,248.61544 -23.53403800000001,248.33693000000002 -23.48638800000001,248.11128000000002 -23.43900800000001,247.88590000000002 -23.35439100000001,247.71337000000003 -23.23280100000001,247.63916000000003 -23.111211000000008,247.56496000000004 -22.95292400000001,247.58956000000003 -22.83653700000001,247.70436000000004 -22.72015000000001,247.81883000000005 -22.64621000000001,248.02313000000004 -22.49997200000001,248.12363000000005 -22.35373500000001,248.22386000000006 -22.13520100000001,248.22053000000005 -22.020731000000012,248.06883000000005 -21.90626100000001,247.91739000000004 -21.89558100000001,247.61807000000005 -21.89037700000001,247.38913000000005 -21.88487700000001,247.15992000000006 -21.88487700000001,247.00135000000006 -21.911467000000012,246.77926000000005 -21.938027000000012,246.55717000000004 -21.99088700000001,246.27154000000004 -21.943237000000014,245.98098000000005 -21.895587000000013,245.69042000000005 -21.747706000000015,245.39412000000004 -21.585586000000013,245.18982000000005 -21.423465000000014,244.98553000000007 -21.247378000000012,244.87270000000007 -21.078138000000013,244.81629000000007 -20.908897000000014,244.76019000000008 -20.747050000000012,244.76019000000008 -20.662430000000015,244.61911000000006 -20.577810000000014,244.47781000000006 -20.570690000000013,244.19601000000006 -20.577540000000013,243.51932000000005 -20.584640000000014,242.84264000000005 -20.60602000000001,241.77160000000006 -20.591780000000014,241.10586000000006 -20.577540000000013,240.43958000000006 -20.528250000000014,240.17887000000007 -20.253573000000014,239.86531000000005 -19.978625000000015,239.55175000000006 -19.478297000000012,239.18534000000005 -19.083676000000015,238.97392000000005 -18.689055000000014,238.76251000000005 -18.400141000000016,238.70582000000005 -18.142720000000015,238.72718000000006 -17.885573000000015,238.74858000000006 -17.659918000000015,238.84713000000005 -17.469591000000015,238.87890000000007 -17.279264000000015,238.91070000000008 -17.124264000000014,238.87490000000008 -16.962143000000015,238.76251000000008 -16.800022000000016,238.64968000000007 -16.631056000000015,238.4596300000001 -16.430048000000014,238.21645000000007 -16.229314000000013,237.97327000000007 -15.996540000000014,237.67723000000007 -15.862626000000013,237.24729000000008 -15.728713000000013,236.8176100000001 -15.693386000000013,236.25348000000008 -15.584119000000014,235.53489000000008 -15.474852000000013,234.81575000000007 -15.291644000000014,233.9421600000001 -15.115557000000013,233.26548000000008 -14.939471000000013,232.58879000000007 -14.770230000000014,232.10955000000007 -14.523489000000014,231.77846000000008 -14.276748000000014,231.4471000000001 -13.952507000000013,231.2636200000001 -13.677559000000015,231.1510600000001 -13.402886000000015,231.0382400000001 -13.177231000000015,230.99606000000009 -13.008265000000014,230.6929100000001 -12.839298000000014,230.3897500000001 -12.726197000000013,229.8261700000001 -12.620490000000014,229.3044800000001 -12.514783000000014,228.7830600000001 -12.416196000000014,228.3038200000001 -12.232715000000015,227.9831400000001 -12.049508000000015,227.6624600000001 -11.781681000000015,227.5003400000001 -11.644207000000016,227.3349300000001 -11.506733000000017,227.1692500000001 -11.499613000000016,227.0000100000001 -11.372819000000016,226.8485700000001 -11.246026000000017,226.6968600000001 -10.999559000000016,226.56322000000011 -10.802111000000016,226.43259000000012 -10.604664000000016,226.30223000000012 -10.456783000000016,226.17544000000012 -10.357923000000016,225.9287000000001 -10.259063000000015,225.68196000000012 -10.210043000000015,225.31555000000012 -10.100776000000016,224.98774000000012 -9.991508300000016,224.65994000000012 -9.822267600000016,224.3710300000001 -9.617973800000016,223.9870900000001 -9.413406200000015,223.6028700000001 -9.174059400000015,223.1236300000001 -8.937998800000015,222.6865600000001 -8.701938200000015,222.2497700000001 -8.469437600000015,221.8551500000001 -8.201610200000015,221.4462900000001 -7.933782700000015,221.0377000000001 -7.630628300000016,220.61487000000008 -7.398127800000015,220.3152800000001 -7.165627200000015,220.0156800000001 -7.003506700000015,219.83987000000008 -6.933126700000015,219.6635100000001 -6.862746700000015,219.4871500000001 -6.883559700000015,219.31106000000008 -6.961333700000015,219.1382600000001 -7.039107700000015,218.9654600000001 -7.172747600000015,218.7964900000001 -7.215194700000015,218.58864000000008 -7.257641700000015,218.38051000000007 -7.208074700000015,218.13404000000008 -7.328021800000014,218.06366000000008 -7.447969100000014,217.9929600000001 -7.736883100000014,218.09876000000008 -7.9554172000000145,218.0596600000001 -8.173951300000015,218.02076000000008 -8.321831500000014,217.83757000000008 -8.304304900000014,217.3761300000001 -8.286778900000014,216.9144100000001 -8.103571300000015,216.1744600000001 -7.9871841000000146,215.5930700000001 -7.871070700000015,215.0116900000001 -7.821503500000015,214.5885800000001 -7.648976600000014,214.3278800000001 -7.476449700000014,214.06717000000012 -7.180415400000014,213.96831000000012 -7.113595500000014,213.8593200000001 -7.046501500000014,213.7500500000001 -7.208622500000014,213.6301000000001 -7.272155900000014,213.4504500000001 -7.3356899000000135,213.2708100000001 -7.300362900000014,213.0311900000001 -7.300362900000014,212.8058100000001 -7.300362900000014,212.5801500000001 -7.335415900000013,212.3687400000001 -7.557510100000014,212.0658600000001 -7.779604300000014,211.7629800000001 -8.188191800000014,211.3680800000001 -8.589933000000014,210.8044900000001 -8.991674200000014,210.2406300000001 -9.386295300000015,209.5075300000001 -9.745863200000015,208.8875300000001 -10.105157000000014,208.2672500000001 -10.429398000000015,207.7598100000001 -10.612605000000014,207.29480000000012 -10.795813000000015,206.82953000000012 -10.838260000000014,206.40698000000012 -10.859346000000015,206.01920000000013 -10.880706000000014,205.63143000000014 -10.880706000000014,205.27925000000013 -10.774726000000015,204.87751000000011 -10.669019000000015,204.47550000000012 -10.457605000000015,204.02473000000012 -10.386951000000016,203.6369600000001 -10.316571000000016,203.2494600000001 -10.386951000000016,202.9252200000001 -10.633692000000016,202.2698900000001 -10.880433000000016,201.6142900000001 -11.302987000000016,200.6276000000001 -11.789348000000016,199.8172700000001 -12.275710000000016,199.0066700000001 -12.825605000000017,198.3724200000001 -13.072072000000016,197.9424800000001 -13.318813000000016,197.5125300000001 -13.262399000000016,197.2868700000001 -13.234193000000017,196.73013000000012 -13.205983000000018,196.17339000000013 -13.205983000000018,195.28556000000012 -13.308133000000018,194.72855000000013 -13.410554000000017,194.17181000000014 -13.614847000000017,193.94588000000013 -13.734521000000017,193.56194000000013 -13.854468000000017,193.17772000000014 -13.889521000000016,192.63522000000015 -13.907048000000017,192.11709000000013 -13.924578000000018,191.59896000000012 -13.924578000000018,191.10576000000015 -13.885958000000018,190.69689000000014 -13.847348000000018,190.28803000000013 -13.769845000000018,189.96379000000013 -13.678104000000019,189.65023000000014 -13.58636400000002,189.33667000000014 -13.480657000000019,189.03352000000012 -13.459570000000019,188.74460000000013 -13.43848000000002,188.45541000000014 -13.50202000000002,188.18074000000013 -13.695631000000018,187.86718000000013 -13.889518000000018,187.55335000000014 -14.21375900000002,187.20117000000013 -14.470906000000019,186.88761000000014 -14.72805400000002,186.57405000000014 -14.91838100000002,186.29910000000012 -14.989035000000019,185.93981000000014 -15.05968500000002,185.58024000000015 -15.010395000000019,185.13633000000013 -14.93262500000002,184.66064000000014 -14.855125000000019,184.18496000000013 -14.74941800000002,183.67751000000015 -14.580177000000019,183.21224000000015 -14.410937000000018,182.74697000000015 -14.17843600000002,182.32414000000014 -13.91772900000002,181.96128000000016 -13.657022000000019,181.59843000000015 -13.36810700000002,181.29527000000016 -13.124927000000019,180.98527000000016 -12.88174600000002,180.67527000000015 -12.684572000000019,180.35788000000016 -12.53997800000002,179.98462000000015 -12.39538400000002,179.61108000000016 -12.303918000000019,179.18114000000014 -12.155764000000019,178.90619000000015 -12.00788300000002,178.63124000000016 -11.803316000000018,178.51157000000015 -11.57437500000002,178.24374000000014 -11.34543500000002,177.97591000000014 -11.09130000000002,177.56020000000015 -10.851679000000019,177.16230000000016 -10.612059000000018,176.76439000000016 -10.386404000000018,176.38346000000016 -10.242084000000018,176.02773000000016 -10.097490000000018,175.67199000000016 -10.034231000000018,175.34063000000017 -9.882516500000017,175.01283000000015 -9.731076200000016,174.68503000000015 -9.491455500000017,174.36106000000015 -9.258955000000018,174.08967000000015 -9.026454400000018,173.81829000000016 -8.800800200000019,173.59948000000014 -8.624713200000018,173.41655000000014 -8.448626300000019,173.23334000000014 -8.321832700000018,173.08546000000015 -8.247618700000018,172.89513000000014 -8.173678700000018,172.70480000000015 -8.152591700000018,172.47230000000013 -8.272265700000018,172.16942000000014 -8.392213000000018,171.86627000000016 -8.652920300000018,171.49273000000014 -8.719740300000018,171.28488000000016 -8.786834300000018,171.07675000000015 -8.659766300000017,171.03458000000015 -8.444792600000017,170.90067000000016 -8.229818600000018,170.76675000000017 -7.926938100000017,170.54110000000017 -7.824517400000017,170.32612000000017 -7.722370500000017,170.11115000000018 -7.820957400000017,169.90686000000017 -7.9937580000000175,169.62479000000016 -8.166558800000017,169.34299000000016 -8.413299600000018,168.98343000000017 -8.578706400000017,168.63810000000015 -8.744387000000017,168.29277000000016 -8.829007300000017,167.96141000000014 -8.737266800000018,167.36962000000014 -8.645525800000017,166.77782000000013 -8.377698800000019,165.92477000000014 -8.106585100000018,165.54795000000013 -7.835197600000018,165.17086000000012 -7.560250000000018,165.26944000000012 -7.292696400000018,165.26944000000012 -7.024868900000018,165.26944000000012 -6.763887700000018,165.1708400000001 -6.355300200000018,165.1955400000001 -5.946438800000018,165.2201400000001 -5.389697300000018,165.3680700000001 -4.8611625000000185,165.4526900000001 -4.332627700000018,165.5372900000001 -3.8322997000000187,165.5584000000001 -3.5255852000000187,165.6501400000001 -3.2191446000000186,165.7416400000001 -3.106317500000019,165.9037200000001 -2.7820765000000187,165.8755200000001 -2.4578354000000187,165.8473200000001 -1.9221805000000187,165.62878000000012 -1.4007659000000188,165.29057000000012 -0.8793513000000188,164.9523600000001 -0.3719031000000188,164.49421000000012 0.026278099999981208,164.05741000000012 0.4244590999999812,163.6203400000001 0.7133731999999812,163.20464000000013 1.1186744999999811,162.86643000000012 1.523975799999981,162.52822000000012 2.045390399999981,162.26724000000013 2.390991899999981,162.09471000000013 2.7363195999999808,161.92191000000014 2.905286399999981,161.83729000000014 3.042760199999981,161.88659000000013 3.180233999999981,161.93589000000011 3.285940999999981,162.1193600000001 3.349474699999981,162.36939000000012 3.412734699999981,162.61969000000013 3.434094699999981,162.93681000000012 3.388361699999981,163.34540000000013 3.342628699999981,163.75426000000013 3.229801299999981,164.25459000000012 3.307301699999981,164.46600000000012 3.384801699999981,164.67741000000012 3.652629299999981,164.5999100000001 3.937983299999981,164.4238000000001 4.223611199999981,164.24744000000013 4.526491699999981,163.9727600000001 4.681492099999981,163.7895600000001 4.836492399999981,163.6060700000001 4.8436125999999815,163.51461000000012 4.778436099999981,163.3806900000001 4.713259099999981,163.24678000000011 4.5757853999999805,163.0704200000001 4.528408999999981,162.9085700000001 4.480758999999981,162.74645000000012 4.523208999999981,162.5983000000001 4.651642499999982,162.52436000000012 4.780352999999982,162.45016000000012 4.995053199999981,162.45016000000012 5.225910599999982,162.43616000000011 5.456767999999982,162.42196000000013 5.703234999999982,162.39366000000012 6.002829299999982,162.33045000000013 6.3024236999999825,162.26695000000012 6.654597599999982,162.16833000000014 6.894218299999983,162.18230000000014 7.133838999999982,162.19630000000015 7.260632599999982,162.32333000000014 7.292399399999983,162.55939000000015 7.324166399999983,162.79545000000016 7.260632399999983,163.14078000000015 7.269669399999983,163.37355000000014 7.2784293999999825,163.60605000000012 7.359493399999983,163.72600000000014 7.525173499999983,163.66438000000014 7.690854099999983,163.60278000000014 7.941154999999983,163.35959000000014 8.076711899999983,163.18514000000013 8.212542599999983,163.01070000000013 8.233355399999983,162.90499000000014 8.279362499999984,162.68482000000014 8.325095499999984,162.46436000000014 8.395749699999984,162.12972000000013 8.427516599999983,161.81780000000015 8.459009599999982,161.50588000000016 8.451889599999983,161.21697000000015 8.342622599999983,161.03376000000014 8.233355599999982,160.85055000000014 8.021941599999982,160.77278000000015 7.997294899999982,160.56520000000015 7.972647899999982,160.35735000000014 8.134494899999982,160.01886000000016 8.353302799999982,159.77952000000013 8.571562999999982,159.53990000000013 8.846510699999982,159.39886000000013 9.068604799999981,159.44104000000013 9.290698999999982,159.48344000000012 9.459665799999982,159.70914000000013 9.702846599999981,159.82881000000012 9.946028399999982,159.9487600000001 10.26314899999998,159.9627200000001 10.597796999999982,159.8713100000001 10.932717999999982,159.7798100000001 11.284891999999981,159.58212000000012 11.595165999999981,159.4996900000001 11.905440999999982,159.4169900000001 12.173268999999982,159.4487900000001 12.305538999999982,159.7042600000001 12.437535999999982,159.9597600000001 12.434249999999981,160.43900000000008 12.485185999999981,160.7279200000001 12.536125999999982,161.01683000000008 12.64210399999998,161.11542000000009 12.950186999999982,161.1419800000001 13.258544999999982,161.1682800000001 13.769552999999982,161.1225800000001 14.056823999999981,160.9831500000001 14.34382099999998,160.84376000000012 14.407354999999981,160.6112600000001 14.312327999999981,160.47378000000012 14.217297999999982,160.3363100000001 13.96343999999998,160.2941400000001 13.77311299999998,160.22020000000012 13.582785999999981,160.14600000000013 13.45599199999998,160.0405500000001 13.52637199999998,159.86419000000012 13.59675199999998,159.68783000000013 13.86457999999998,159.44136000000012 14.08667399999998,159.2439100000001 14.308767999999981,159.0464600000001 14.48485499999998,158.89858000000012 14.70530599999998,158.77699000000013 14.92548299999998,158.65568000000013 15.19002499999998,158.56038000000012 15.43840899999998,158.50944000000013 15.686791999999981,158.45824000000013 15.91929299999998,158.45134000000013 16.19780099999998,158.54834000000014 16.47630799999998,158.64524000000014 16.80054899999998,158.84602000000015 16.90433899999998,159.11905000000013 17.00840299999998,159.39235000000014 16.89201899999998,159.73740000000012 16.76166199999998,159.94361000000012 16.63103499999998,160.14983000000012 16.48671499999998,160.21665000000013 16.509717999999978,160.31879000000012 16.532717999999978,160.42121000000012 16.72304899999998,160.55841000000012 16.895849999999978,160.76462000000012 17.068376999999977,160.97083000000012 17.223376999999978,161.2455100000001 17.315117999999977,161.50485000000012 17.406587999999978,161.76391000000012 17.434790999999976,162.00682000000012 17.52653199999998,162.13361000000012 17.61800199999998,162.26040000000012 17.772998999999977,162.27108000000013 17.943881999999977,162.17931000000013 18.114765999999978,162.08761000000013 18.301532999999978,161.89396000000013 18.546356999999976,161.78086000000013 18.791454999999974,161.66803000000013 19.094335999999977,161.63654000000014 19.260015999999975,161.54480000000012 19.425696999999975,161.45330000000013 19.453903999999977,161.30162000000013 19.327105999999976,161.14853000000014 19.200311999999975,160.99518000000015 18.918244999999974,160.84018000000015 18.647130999999977,160.66929000000013 18.375742999999975,160.49841000000012 18.115035999999975,160.31164000000012 18.032058999999975,160.14240000000012 17.949078999999976,159.97316000000012 18.044108999999974,159.8217200000001 18.134205999999974,159.65084000000013 18.224025999999974,159.47968000000014 18.308649999999975,159.28963000000013 18.342059999999975,159.16639000000012 18.375469999999975,159.0428800000001 18.357939999999974,158.98675000000011 18.231148999999974,158.92677000000012 18.104355999999974,158.86677000000012 17.868294999999975,158.8035400000001 17.751907999999975,158.66606000000013 17.635520999999976,158.52859000000012 17.639080999999976,158.31718000000012 17.695497999999976,158.12165000000013 17.751907999999975,157.92612000000014 17.860904999999974,157.74647000000013 18.290852999999977,157.35705000000013 18.720800999999977,156.96763000000013 19.471429999999977,156.36872000000014 19.86057399999998,156.05653000000012 20.24971799999998,155.74433000000013 20.27819899999998,155.71996000000013 20.463322999999978,155.57893000000013 20.64817299999998,155.43789000000012 20.990214999999978,155.18075000000013 21.43577199999998,154.80037000000013 21.881329999999977,154.41971000000012 22.43095099999998,153.91582000000014 22.91375299999998,153.47711000000012 23.396553999999977,153.03840000000014 23.81226199999998,152.66487000000012 24.298622999999978,152.30174000000014 24.784984999999978,151.93861000000012 25.341999999999977,151.58644000000012 25.75770799999998,151.40323000000015 26.17341499999998,151.22002000000015 26.44836299999998,151.20578000000015 26.54366399999998,151.35753000000014 26.63896399999998,151.50924000000015 26.55407399999998,151.82609000000014 26.56831399999998,152.06571000000014 26.58255399999998,152.30533000000014 26.69510799999998,152.46745000000013 26.92788199999998,152.57316000000014 27.16065699999998,152.67886000000016 27.51283099999998,152.72816000000014 27.74204499999998,152.81278000000015 27.97098499999998,152.89738000000014 28.07696599999998,153.01707000000013 28.05204599999998,153.16851000000014 28.027395999999978,153.32022000000015 27.87239899999998,153.50343000000015 27.58704499999998,153.77838000000014 27.301690999999977,154.05305000000013 26.885708999999977,154.41974000000013 26.72030199999998,154.72618000000014 26.55462199999998,155.03262000000015 26.639241999999978,155.27936000000014 26.87858899999998,155.33934000000013 27.11848299999998,155.39934000000014 27.51283099999998,155.27224000000012 27.85459799999998,155.13860000000014 28.19663999999998,155.00469000000015 28.485553999999983,154.86366000000015 28.732294999999983,154.86010000000013 28.978761999999982,154.85610000000014 29.18305499999998,154.99045000000012 29.42623599999998,155.00113000000013 29.66941699999998,155.01153000000014 29.95148499999998,154.89871000000014 29.98653799999998,154.69798000000014 30.02186799999998,154.49724000000015 29.810450999999983,154.20805000000016 29.63436399999998,154.01444000000015 29.45800299999998,153.82055000000014 29.31724299999998,153.72197000000014 29.31724299999998,153.49987000000016 29.31724299999998,153.27778000000015 29.45827699999998,152.93245000000016 29.352292999999978,152.71775000000017 29.24658599999998,152.50278000000017 28.894411999999978,152.41816000000017 28.647670999999978,152.29848000000015 28.40120399999998,152.17854000000014 28.260169999999977,152.02353000000016 28.133102999999977,151.78747000000016 28.006308999999977,151.55141000000015 27.893481999999977,151.23429000000016 27.928808999999976,150.96291000000016 27.964138999999975,150.69152000000017 28.147342999999978,150.46614000000017 28.471309999999978,150.20872000000017 28.79582499999998,149.95157000000017 29.260825999999977,149.66238000000018 29.525093999999978,149.30309000000017 29.78963499999998,148.94352000000018 29.85289499999998,148.51384000000016 30.05362899999998,148.21425000000016 30.25463599999998,147.91466000000017 30.593116999999978,147.74569000000017 30.95241199999998,147.57645000000016 31.31170599999998,147.40721000000016 31.69235999999998,147.23824000000016 31.86132699999998,147.03367000000017 32.03056799999998,146.82911000000018 31.988120999999982,146.58976000000018 31.79450699999998,146.51582000000016 31.60061999999998,146.44162000000017 31.255291999999983,146.53332000000017 31.04031799999998,146.51582000000016 30.82534399999998,146.49802000000017 30.740723999999982,146.37122000000016 30.804256999999982,146.07875000000016 30.86751699999998,145.78628000000015 31.07920499999998,145.32812000000015 31.45273999999998,144.89133000000015 31.82627399999998,144.45453000000015 32.36165499999998,144.03855000000016 32.79872299999998,143.95037000000016 33.23579099999998,143.86247000000017 33.57399899999998,144.10181000000017 33.778292999999984,144.42277000000016 33.98285999999998,144.74345000000017 34.05323999999998,145.14519000000016 34.07432699999998,145.42014000000015 34.09541699999998,145.69481000000013 34.067526999999984,145.84296000000015 34.07812699999998,146.00152000000014 34.08853699999998,146.16008000000014 34.13809699999998,146.32905000000014 33.97926699999998,146.56183000000013 33.82098099999998,146.79433000000012 33.45429199999998,147.09036000000012 33.20070499999998,147.46034000000012 32.94684399999998,147.8303100000001 32.80608399999998,148.2745000000001 32.73871699999998,148.68665000000013 32.67189699999998,149.09879000000012 32.67874699999998,149.47972000000013 32.82360699999998,149.63116000000014 32.96792699999998,149.78260000000014 33.249994999999984,149.70506000000015 33.40143499999998,149.50081000000014 33.55287499999998,149.29624000000015 33.57396199999998,148.96488000000014 33.732521999999975,148.73950000000013 33.89108299999997,148.51412000000013 34.18711699999997,148.39417000000014 34.451383999999976,148.09458000000012 34.715925999999975,147.79526000000013 34.94815199999998,147.31602000000012 35.11739299999998,146.8964700000001 35.28663399999998,146.4772100000001 35.39234099999998,146.1176400000001 35.56924899999998,145.73452000000012 35.74615799999998,145.35140000000013 35.99508899999998,144.94418000000013 36.22129099999998,144.6068000000001 36.44776699999998,144.2696800000001 36.65206099999998,144.0015800000001 36.87059499999998,143.8219300000001 37.08912899999998,143.6422900000001 37.32162899999998,143.5505500000001 37.55412999999998,143.5330200000001 37.78690399999998,143.5155200000001 38.01940499999998,143.5716200000001 38.17796499999998,143.7197900000001 38.33625199999998,143.8679400000001 38.42114599999998,144.1075600000001 38.58573099999998,144.10647000000012 38.750315999999984,144.1054700000001 38.99513999999998,143.86438000000012 39.16711999999998,143.90217000000013 39.338824999999986,143.93997000000013 39.43741199999998,144.25709000000012 39.52915199999998,144.37676000000013 39.62062199999998,144.49671000000012 39.705238999999985,144.41896000000014 39.786298999999985,144.23244000000014 39.867358999999986,144.04567000000014 39.944859999999984,143.74964000000014 40.07165299999998,143.65461000000013 40.19844699999998,143.55931000000012 40.37453399999998,143.66531000000015 40.54404799999998,143.92244000000014 40.713014999999984,144.17959000000013 40.87513599999998,144.58845000000014 41.09640799999998,144.62980000000013 41.31768099999998,144.67110000000014 41.59783199999998,144.34527000000014 41.583590999999984,143.94352000000012 41.56935099999998,143.54178000000013 41.26099399999998,143.0644600000001 40.97317499999998,142.7728100000001 40.685355999999985,142.4811500000001 40.41725499999998,142.37545000000011 40.00866699999998,142.4072100000001 39.59980599999998,142.4390100000001 39.04991099999998,142.6079500000001 38.71526299999998,142.58686000000012 38.38034199999998,142.56576000000013 38.26066899999998,142.35436000000013 38.11607499999998,142.31191000000013 37.97148099999998,142.26971000000012 37.80223999999998,142.39651000000012 37.60835299999998,142.40011000000013 37.41446499999998,142.40411000000012 37.19620499999998,142.28373000000013 37.07653199999998,141.95237000000012 36.95658399999998,141.62128000000013 36.93549799999998,141.0785000000001 36.80432299999998,140.65294000000011 36.67314699999998,140.22737000000012 36.431609999999985,139.9192900000001 36.412987999999984,139.6807600000001 36.394367999999986,139.4422400000001 36.59865999999998,139.2730000000001 36.806786999999986,139.0615800000001 37.01491499999999,138.8501700000001 37.22605499999999,138.5963100000001 37.346001999999984,138.30383000000012 37.465949999999985,138.0113600000001 37.493881999999985,137.68027000000012 37.63847599999998,137.5145900000001 37.78279699999998,137.3489100000001 38.043503999999984,137.3489100000001 38.283124999999984,137.4723900000001 38.522744999999986,137.5956200000001 38.741278999999984,137.8423600000001 39.01951299999998,137.8883700000001 39.298020999999984,137.9340700000001 39.63622799999998,137.77910000000008 39.78794199999998,137.55345000000008 39.93938299999998,137.32807000000008 39.90405599999998,137.03176000000008 39.79154199999998,136.7674900000001 39.67871399999998,136.50322000000008 39.48838699999998,136.2707200000001 39.53055999999998,136.0875200000001 39.57300999999998,135.9043100000001 39.84768099999998,135.7704000000001 40.10838899999998,135.8514600000001 40.36936999999998,135.93256000000008 40.61611099999998,136.2282800000001 40.777135999999985,136.61879000000008 40.938434999999984,137.00903000000008 41.014017999999986,137.4934700000001 41.04496299999998,137.89439000000007 41.07590299999998,138.29504000000009 41.06194299999998,138.61243000000007 41.22187199999998,138.79016000000007 41.382348999999984,138.96817000000007 41.717269999999985,139.00705000000008 41.877473999999985,138.81156000000007 42.037950999999985,138.61603000000008 42.023710999999984,138.18609000000006 41.99577799999999,137.81940000000006 41.967297999999985,137.45298000000005 41.92512799999999,137.14983000000007 41.882128999999985,136.75795000000005 41.838858999999985,136.36579000000006 41.79503899999998,135.88491000000005 41.70248199999998,135.58449000000005 41.60992199999998,135.28407000000004 41.46888599999998,135.16413000000006 41.16244599999998,135.01597000000004 40.855730999999984,134.86809000000005 40.38333599999998,134.69201000000004 40.291595999999984,134.48032000000003 40.20012599999998,134.26890000000003 40.489316999999986,134.02216000000004 40.40086299999999,133.69820000000004 40.312952999999986,133.37395000000004 39.84768099999999,132.97221000000005 39.52946499999999,132.65263000000004 39.211522999999985,132.33277000000004 39.040638999999985,132.09506000000005 38.90891599999999,131.79273000000003 38.77774099999999,131.49067000000002 38.68627399999999,131.12426000000002 38.700239999999994,130.85287000000002 38.714209999999994,130.58148000000003 38.83415399999999,130.40540000000001 38.99244099999999,130.31010000000003 39.151000999999994,130.21510000000004 39.348448999999995,130.20083000000002 39.32024199999999,130.04939000000005 39.29176199999999,129.89795000000004 39.038447999999995,129.60903000000005 38.95355399999999,129.35161000000005 38.86893399999999,129.09447000000006 38.95355399999999,128.86881000000005 39.10855399999999,128.74202000000005 39.26355399999999,128.61522000000005 39.48920899999999,128.58702000000005 39.65105499999999,128.53416000000004 39.81317599999999,128.48136000000005 39.91176299999999,128.40381000000005 39.97173599999999,128.11134000000004 40.031985999999996,127.81886000000004 40.052795999999994,127.31141000000004 40.21847699999999,127.02250000000004 40.383883999999995,126.73331000000003 40.694157999999995,126.66293000000003 40.831357999999994,126.91323000000004 40.96883199999999,127.16353000000004 40.933778999999994,127.73424000000004 40.997038999999994,127.98783000000005 41.06029899999999,128.24142000000006 41.222418999999995,128.17816000000005 41.31087399999999,127.99853000000004 41.39878399999999,127.81888000000005 41.41302099999999,127.52285000000005 41.54337399999999,127.40290000000005 41.674001999999994,127.28295000000004 41.92046899999999,127.33940000000004 42.061502999999995,127.50150000000005 42.202535999999995,127.66362000000005 42.237863,127.93145000000005 42.371503,128.07604000000006 42.505691,128.22036000000006 42.738191,128.24145000000007 42.882512,128.35783000000006 43.027105999999996,128.47395000000006 43.083245,128.68536000000006 43.128979,129.11175000000006 43.174989000000004,129.53814000000006 43.210309,130.17950000000005 43.54496,130.66230000000004 43.880155,131.14483000000004 44.514123000000005,131.46907000000004 44.859451,131.50440000000003 45.205052,131.53950000000003 45.261466,131.28586000000004 45.261466,130.86303000000004 45.261466,130.44021000000004 45.205056,129.84814000000003 45.257666,129.38642000000004 45.310516,128.92471000000003 45.47264,128.59335000000004 45.56438,128.33620000000005 45.65585,128.07905000000005 45.676934,127.89585000000005 45.853294,127.75837000000004 46.029655,127.62090000000005 46.361016,127.52916000000005 46.741397,127.49410000000005 47.122052,127.45880000000004 47.551726,127.47990000000004 47.78094,127.38840000000005 48.010154,127.29670000000004 48.038087000000004,127.09236000000004 47.883087,126.87027000000005 47.728087,126.64817000000005 47.389605,126.40855000000005 47.297865,126.01749000000005 47.206395,125.62643000000006 47.361395,125.08366000000005 47.583493000000004,124.92510000000006 47.805587,124.76626000000006 48.094501,124.99190000000006 48.242381,125.23181000000005 48.390261,125.47143000000005 48.397382,125.72502000000006 48.608795,125.90138000000005 48.820209,126.07747000000005 49.236191,126.17605000000005 49.627252,126.18317000000005 50.018587,126.19017000000005 50.385275,126.10567000000005 50.689797999999996,126.03502000000005 50.994595999999994,125.96462000000004 51.237503,125.90823000000005 51.422627,125.78855000000004 51.607476999999996,125.66860000000004 51.734545,125.48540000000004 51.737831,125.26686000000004 51.741131,125.04833000000004 51.621444,124.79474000000003 51.63541,124.56909000000003 51.64965,124.34343000000003 51.797805,124.14626000000003 51.963211,123.98414000000002 52.128618,123.82202000000002 52.312099,123.69523000000002 52.340306,123.52599000000002 52.368516,123.35674000000002 52.241716,123.14533000000002 52.174898999999996,122.88818000000002 52.107808999999996,122.63104000000001 52.100688999999996,122.32788000000002 52.203109,121.98967000000002 52.30553,121.65147000000002 52.516943,121.27766000000001 52.869391,120.69983000000002 53.221565,120.12200000000001 53.715047,119.33988000000002 53.979314,118.77930000000002 54.243582,118.21928000000003 54.278635,117.88080000000002 54.172928,117.63789000000003 54.067220999999996,117.39498000000003 53.820479999999996,117.24683000000003 53.669039999999995,117.10579000000003 53.517326,116.96476000000003 53.46091199999999,116.83085000000003 53.464471999999994,116.55617000000002 53.46827199999999,116.28150000000002 53.53129199999999,115.86552000000002 53.44694199999999,115.64698000000003 53.36259199999999,115.42845000000003 53.13009499999999,115.40736000000003 53.03835399999999,115.25236000000002 52.94661399999999,115.09736000000002 52.99618399999999,114.80817000000002 53.02411399999999,114.54747000000002 53.05259399999999,114.28676000000002 53.05944399999999,114.05426000000001 52.96085399999999,113.94499000000002 52.86226399999999,113.83572000000002 52.65797299999999,113.84999000000002 52.56623299999999,113.75466000000002 52.47476299999999,113.65936000000002 52.49585299999999,113.45507000000002 52.32305199999999,113.25434000000001 52.15025099999999,113.05360000000002 51.78383699999999,112.85616000000002 51.51244999999999,112.55656000000002 51.24133599999999,112.25697000000002 51.06497499999999,111.85523000000002 51.13535499999999,111.60164000000002 51.20600499999999,111.34778000000001 51.52312999999999,111.24234000000001 51.87557799999999,111.25275000000002 52.22775199999999,111.26345000000002 52.61552599999999,111.39022000000001 52.87979399999999,111.61232000000003 53.14433499999999,111.83441000000002 53.28509499999999,112.15126000000002 53.45433599999999,112.35583000000003 53.62357599999999,112.56039000000003 53.82074999999999,112.65186000000003 53.98999099999999,112.54971000000002 54.15895699999999,112.44729000000002 54.29999099999999,112.15153000000002 54.37064499999999,111.83441000000002 54.44102499999999,111.51729000000002 54.44102499999999,111.17881000000001 54.53276599999999,110.88661000000002 54.62423599999999,110.59414000000002 54.80743899999999,110.34739000000002 55.05773999999999,110.14666000000003 55.30776699999999,109.94593000000003 55.62488799999999,109.79065000000003 55.83657599999999,109.70275000000002 56.047989999999984,109.61455000000002 56.15369699999999,109.59348000000003 56.27364399999999,109.52639000000002 56.393590999999994,109.45929000000002 56.52723099999999,109.34674000000003 56.67867199999999,109.25856000000002 56.83011199999999,109.17036000000002 56.99935299999999,109.10712000000002 57.091092999999994,108.93788000000002 57.182562999999995,108.76864000000002 57.196799999999996,108.49396000000002 57.305792999999994,108.26119000000003 57.41506,108.02869000000003 57.61962799999999,107.83836000000002 57.510360999999996,107.71841000000003 57.40109399999999,107.59874000000003 56.978266,107.54917000000003 56.671550999999994,107.47523000000004 56.364836999999994,107.40133000000004 56.174783999999995,107.30271000000003 56.188475999999994,107.06309000000005 56.202715999999995,106.82346000000004 56.42125099999999,106.44281000000005 56.678397999999994,106.34778000000004 56.935545,106.25248000000005 57.231852999999994,106.44278000000004 57.47832,106.59781000000004 57.724787,106.75281000000004 57.92223499999999,106.87276000000004 57.92223499999999,106.77773000000003 57.92223499999999,106.68243000000004 57.72478699999999,106.37243000000004 57.707533999999995,106.05531000000003 57.690003999999995,105.73819000000003 57.85185499999999,105.41395000000003 58.070389,105.17789000000003 58.288923,104.94183000000004 58.563596,104.79367000000003 58.84183,104.85009000000004 59.120612,104.90649000000003 59.402406,105.16721000000004 59.574933,105.49145000000004 59.747733000000004,105.81569000000005 59.810993,106.20319000000005 59.884933000000004,106.48882000000005 59.959143000000005,106.77417000000004 60.04376800000001,106.95738000000004 60.156321000000005,107.22877000000004 60.26914800000001,107.50015000000003 60.410182000000006,107.85945000000004 60.389095000000005,108.07798000000004 60.368005000000004,108.29624000000004 60.184802000000005,108.37402000000004 59.90300800000001,108.31048000000004 59.620940000000004,108.24718000000004 59.24028500000001,108.04265000000004 58.96917200000001,108.07442000000005 58.697784000000006,108.10622000000005 58.53566300000001,108.37402000000004 58.521423000000006,108.55010000000004 58.507453000000005,108.72619000000005 58.64137000000001,108.81081000000005 58.704904000000006,108.96225000000004 58.768164000000006,109.11396000000003 58.761044000000005,109.33250000000004 58.845664000000006,109.51899000000004 58.93055400000001,109.70576000000004 59.10664500000001,109.86103000000004 59.296699000000004,109.77997000000005 59.48702600000001,109.69887000000004 59.691320000000005,109.38179000000005 59.89944800000001,109.23364000000005 60.10730100000001,109.08548000000005 60.318715000000005,109.10684000000005 60.495076000000005,109.22964000000005 60.67116300000001,109.35287000000005 60.81192300000001,109.57853000000004 60.90339,109.82883000000004 60.99513,110.07913000000003 61.037577,110.35380000000004 61.189018000000004,110.46690000000004 61.340732,110.57973000000004 61.601439000000006,110.53020000000004 61.914726,110.60410000000005 62.228561,110.67800000000004 62.594975000000005,110.87549000000004 62.894569000000004,111.16440000000004 63.19389,111.45332000000005 63.426390000000005,111.83397000000004 63.567424,112.16177000000005 63.708458,112.48957000000006 63.757751000000006,112.76452000000005 63.606314000000005,113.04632000000005 63.454874000000004,113.32811000000005 63.102426,113.61702000000005 62.96166600000001,114.00480000000005 62.82063200000001,114.39230000000005 62.89128600000001,114.87866000000004 63.099140000000006,115.10760000000005 63.306994,115.33654000000004 63.65232100000001,115.30861000000004 63.90946900000001,115.38255000000005 64.166616,115.45645000000005 64.335856,115.63258000000005 64.399116,115.94285000000005 64.462646,116.25285000000005 64.42047600000001,116.69704000000004 64.480446,116.84136000000005 64.54041600000001,116.98568000000004 64.702541,116.83066000000005 64.945448,116.78496000000005 65.188354,116.73926000000006 65.512595,116.80246000000005 65.752216,116.93996000000006 65.991837,117.07743000000005 66.146837,117.28884000000005 66.206811,117.48958000000006 66.26678100000001,117.69031000000005 66.231731,117.88064000000006 66.404258,118.06029000000007 66.577059,118.23993000000007 66.957714,118.40917000000006 67.102034,118.63483000000006 67.246354,118.86021000000007 67.15461400000001,119.14228000000007 67.22882700000001,119.36766000000007 67.303037,119.59304000000007 67.542662,119.76228000000008 67.789129,119.99149000000007 68.03587,120.22043000000006 68.289731,120.50935000000007 68.349431,120.85139000000007 68.409401,121.19316000000006 68.275221,121.58778000000007 68.240164,122.01772000000007 68.205114,122.44767000000007 68.268374,122.91267000000006 68.419811,123.33222000000006 68.571525,123.75148000000006 68.811145,124.12502000000006 69.099786,124.56537000000006 69.38897399999999,125.00600000000006 69.727181,125.51317000000006 69.84356799999999,125.94312000000006 69.95968199999999,126.37307000000007 69.85397799999998,126.72552000000006 69.80111799999999,127.02840000000006 69.74853799999998,127.33128000000006 69.74853799999998,127.58514000000007 69.84328799999999,127.85297000000006 69.93858799999998,128.12080000000006 70.12891599999999,128.40259000000006 70.23462299999998,128.63180000000006 70.34060399999998,128.86074000000005 70.36141699999999,129.03710000000007 70.35100999999999,129.26605000000006 70.3406,129.49499000000006 70.29815999999998,129.77705000000006 70.41426999999999,130.06597000000005 70.53065799999999,130.35488000000004 70.80560499999999,130.65092000000004 70.96416599999999,130.96119000000004 71.12272599999999,131.27147000000005 71.16489899999999,131.59543000000005 71.19310599999999,132.14505000000005 71.22158599999999,132.69468000000006 71.23527599999998,133.46995000000007 71.23199599999998,134.45335000000006 71.22839599999998,135.43648000000005 71.20734599999999,136.62747000000005 71.23879599999998,137.25130000000007 71.27056599999997,137.87486000000007 71.35518399999998,137.93128000000007 71.45732999999998,138.07943000000006 71.55947699999999,138.22759000000005 71.67942499999998,138.46693000000005 71.75692499999998,138.73503000000005 71.83442499999998,139.00286000000006 71.86975199999998,139.29890000000006 71.86263199999998,139.53852000000006 71.85583199999998,139.77814000000006 71.80649199999998,139.96134000000006 71.72899199999998,140.11634000000006 71.65149199999998,140.27134000000007 71.54578499999998,140.39814000000007 71.51045799999997,140.80700000000007 71.47512799999997,141.21586000000008 71.51045799999997,141.90652000000009 71.58466799999997,142.37152000000006 71.65860799999996,142.83652000000006 71.77143499999997,143.07614000000007 71.89822799999996,143.29467000000005 72.02529599999995,143.51321000000004 72.16632999999996,143.71065000000004 72.26135699999996,143.93247000000005 72.35638699999996,144.15457000000006 72.40567699999995,144.40104000000005 72.44812399999996,144.82058000000006 72.49057399999997,145.24012000000008 72.52562399999997,145.83191000000005 72.61024399999997,146.35333000000006 72.69513399999997,146.87474000000006 72.82877799999997,147.32605000000007 72.97309799999996,147.56923000000006 73.11741899999997,147.81241000000006 73.27269299999996,147.84747000000007 73.33266599999996,147.97782000000007 73.39291599999996,148.10817000000006 73.35758599999996,148.33383000000006 73.37483599999996,148.57701000000006 73.39263599999995,148.82019000000005 73.46301599999995,149.08090000000007 73.65361699999995,149.39802000000006 73.84367099999996,149.71514000000005 74.15394499999995,150.08867000000006 74.46038599999996,150.37759000000005 74.76682599999995,150.66650000000004 75.07025499999996,150.87079000000006 75.22142099999996,151.22680000000005 75.37313499999996,151.58281000000005 75.37313499999996,152.08998000000005 75.37998199999997,152.48817000000005 75.38678199999997,152.88662000000005 75.40107199999997,153.17526000000007 75.41531199999997,153.50662000000005 75.42928199999997,153.83771000000004 75.44352199999997,154.21152000000006 75.39395199999997,154.67323000000005 75.34466199999997,155.13495000000006 75.23183199999997,155.68457000000004 75.04177799999997,156.28020000000004 74.85172499999996,156.87555000000003 74.58362299999996,157.51691000000002 74.30182899999997,157.97863000000004 74.01976199999997,158.44034000000005 73.72372699999997,158.72214000000002 73.54051999999997,159.08499000000003 73.35731299999998,159.44785000000005 73.28665899999997,159.89203000000003 73.24092599999997,160.22668000000004 73.19519599999997,160.56160000000006 73.17410599999997,160.78698000000006 73.07168499999997,160.92802000000003 72.96981199999998,161.06905000000003 72.78633099999998,161.12546000000003 72.56423699999998,161.35085000000004 72.34214299999998,161.57623000000004 72.08143599999998,161.97112000000004 71.90534899999997,162.29865000000004 71.72898799999997,162.62617000000003 71.63752099999998,162.88688000000005 71.48252099999998,163.03504000000004 71.32751999999998,163.18319000000002 71.10898599999997,163.21824000000004 70.94330599999998,163.14430000000004 70.77762499999997,163.07040000000003 70.66479799999998,162.88716000000005 70.43941799999997,162.64398000000006 70.21376299999997,162.40079000000006 69.87528199999997,162.09764000000007 69.55816099999997,161.92511000000005 69.24131399999997,161.75259000000005 68.94527999999997,161.71014000000005 68.78671999999997,161.54446000000004 68.62815899999997,161.37878000000003 68.60707299999997,161.08986000000004 68.60323899999997,160.82204000000004 68.59963899999997,160.55421000000004 68.61391899999997,160.30774000000005 68.50492899999998,160.07853000000006 68.39566199999997,159.84959000000006 68.16288699999997,159.63790000000006 67.97967999999997,159.43717000000007 67.79647299999998,159.23616000000007 67.66255899999997,159.04583000000005 67.62011199999998,158.84154000000007 67.57766199999998,158.63724000000008 67.62721199999997,158.41871000000006 67.69076199999998,158.25988000000007 67.75429199999998,158.10104000000007 67.83179599999998,158.00273000000007 67.85288299999998,157.87237000000007 67.87397299999998,157.74202000000008 67.83864299999998,157.57990000000007 67.69432199999997,157.47419000000008 67.54972799999997,157.36849000000007 67.29586699999997,157.31919000000008 67.16907399999997,157.18172000000007 67.04227999999996,157.04425000000006 67.04227999999996,156.81859000000006 67.05624599999997,156.45218000000008 67.07048599999997,156.08576000000008 67.09869599999998,155.57831000000007 67.02803599999997,155.31076000000007 66.95765599999997,155.04293000000007 66.78841499999997,155.01473000000007 66.41131999999998,155.04978000000008 66.03422599999998,155.0850800000001 65.44927799999998,155.18369000000007 65.02288999999998,155.3564900000001 64.59650199999997,155.5292900000001 64.32894799999997,155.7757600000001 64.13150099999997,156.0403000000001 63.93405299999997,156.3045700000001 63.80725999999997,156.5863600000001 63.79657899999997,156.83667000000008 63.78616899999997,157.0869700000001 63.891878999999975,157.30523000000008 63.93761299999997,157.5237600000001 63.98362299999997,157.74229000000008 63.96938299999997,157.9608300000001 64.00443299999998,158.2179800000001 64.03976299999998,158.4751200000001 64.12438099999997,158.7711600000001 64.25473399999997,159.1375700000001 64.38536199999997,159.5039900000001 64.56117499999998,159.9410500000001 64.67400199999997,160.2932300000001 64.78682899999997,160.6456800000001 64.83612199999997,160.9135000000001 64.88212999999998,161.1638000000001 64.92785999999998,161.4141000000001 64.97003999999997,161.6466100000001 64.95606999999997,161.8826700000001 64.94209999999997,162.1187300000001 64.87144999999997,162.35835000000012 64.72685499999997,162.5382700000001 64.58253499999998,162.7179200000001 64.36400099999997,162.8375900000001 64.25829399999998,163.0068300000001 64.15258699999998,163.1760700000001 64.15970399999998,163.39460000000008 64.27582399999997,163.5249600000001 64.39193699999997,163.6553100000001 64.61759099999998,163.6977600000001 64.73041899999997,163.85988000000012 64.84324599999997,164.0220000000001 64.84324599999997,164.3037900000001 64.92786599999997,164.49768000000012 65.01248599999997,164.69157000000013 65.18172699999997,164.7970000000001 65.49501399999997,164.9980100000001 65.80884899999997,165.1987400000001 66.26672899999997,165.4947800000001 66.51675699999997,165.7344000000001 66.76705699999997,165.9740200000001 66.80923099999997,166.1572300000001 66.73529099999998,166.3475500000001 66.66135099999998,166.5378800000001 66.47102299999997,166.7353300000001 66.35463599999997,167.0313600000001 66.23824899999997,167.3274000000001 66.19607599999998,167.7220200000001 66.22428199999997,168.0391400000001 66.25249199999998,168.35626000000008 66.35107599999998,168.59588000000008 66.46390299999997,168.7437600000001 66.57672999999997,168.89191000000008 66.70352399999997,168.94833000000008 66.73173099999997,169.2512100000001 66.76021099999997,169.5543600000001 66.68956099999997,170.1039800000001 66.59781699999996,170.4986000000001 66.50634699999996,170.8932300000001 66.39352299999996,171.1331200000001 66.25577499999996,171.35521000000008 66.11857499999996,171.5773100000001 65.95645499999996,171.78160000000008 65.86471399999996,172.0176600000001 65.77324399999996,172.2537200000001 65.75188699999997,172.5215500000001 65.73792099999996,172.6943500000001 65.72368099999996,172.8668800000001 65.71683099999996,172.9446500000001 65.55087999999996,173.0290000000001 65.38547299999996,173.1136000000001 65.06123199999996,173.2053600000001 64.88131099999997,173.3989700000001 64.70193799999997,173.59286000000012 64.66661099999997,173.8889000000001 64.88841099999996,174.1813700000001 65.11023199999997,174.4738400000001 65.58974699999996,174.7627600000001 65.91015399999996,174.9391200000001 66.23056099999997,175.11548000000008 66.39322899999996,175.1787400000001 66.26616199999997,175.2877300000001 66.13936799999996,175.3970000000001 65.72366099999996,175.5522700000001 65.30083299999997,175.6683900000001 64.87773099999997,175.7845000000001 64.44805699999996,175.8622700000001 64.14134199999997,175.92909000000012 63.834901999999964,175.99619000000013 63.65169499999997,176.05233000000013 63.36990099999996,176.29195000000013 63.088106999999965,176.53157000000013 62.70745199999996,176.95440000000013 62.421823999999965,177.34929000000014 62.13646999999997,177.74391000000014 61.946142999999964,178.11033000000015 61.84399599999997,178.43457000000015 61.74184899999997,178.75881000000015 61.727608999999966,179.04060000000015 61.55179599999997,179.44946000000016 61.37543499999997,179.85833000000017 61.03722799999997,180.39371000000017 60.80445299999997,180.90855000000016 60.57167899999997,181.42284000000015 60.444884999999964,181.91633000000016 60.395591999999965,182.38845000000015 60.346301999999966,182.86057000000014 60.37478199999997,183.31188000000014 60.557985999999964,183.66405000000015 60.74119299999997,184.01650000000015 61.07940099999996,184.27008000000015 61.220434999999966,184.52395000000016 61.361468999999964,184.77781000000016 61.30505499999997,185.03139000000016 61.276844999999966,185.33455000000015 61.248364999999964,185.63743000000014 61.248364999999964,185.98988000000014 61.38255199999997,186.30015000000014 61.516465999999966,186.61015000000015 61.78429299999997,186.87798000000015 61.840706999999966,187.20934000000014 61.897116999999966,187.54070000000013 61.742116999999965,187.93505000000013 61.47429299999997,188.72457000000014 61.20619099999997,189.51381000000015 60.825810999999966,190.69794000000013 60.59330999999997,191.45213000000015 60.36053599999997,192.20605000000015 60.27618899999997,192.53056000000015 60.29727599999997,192.85453000000015 60.31836599999997,193.17877000000016 60.44515599999997,193.50301000000016 60.49444899999997,193.77084000000016 60.54401899999997,194.03867000000017 60.51580899999997,194.25008000000017 60.35341599999997,194.46862000000016 60.191568999999966,194.68715000000014 59.89553499999997,194.91280000000015 59.708766999999966,195.21924000000016 59.52199999999996,195.52568000000016 59.44449999999997,195.91319000000016 59.41273299999997,196.31137000000015 59.380962999999966,196.70955000000015 59.39520299999997,197.11841000000015 59.388082999999966,197.38624000000016 59.380982999999965,197.65406000000016 59.352752999999964,197.78086000000016 59.225962999999965,198.06265000000016 59.09916899999997,198.34472000000017 58.87351499999996,198.78151000000017 58.612807999999966,199.22570000000016 58.35210099999996,199.66962000000015 58.056065999999966,200.12065000000015 57.79535899999996,200.73381000000015 57.534651999999966,201.34696000000014 57.30927099999996,202.12224000000015 57.12578999999996,202.76360000000014 56.942582999999956,203.40496000000013 56.80154899999996,203.91241000000014 56.60437599999996,204.55350000000013 56.40692799999996,205.19513000000012 56.15361499999996,205.97041000000013 55.87866699999996,206.44226000000012 55.60371999999996,206.9146500000001 55.30768499999996,207.0836200000001 55.11763199999996,207.4218300000001 54.927304999999954,207.7600300000001 54.842683999999956,208.26775000000012 54.74409799999996,208.7116700000001 54.64550799999996,209.1555800000001 54.53268399999996,209.5362400000001 54.51132299999996,209.99439000000012 54.48996299999996,210.45255000000012 54.560892999999965,210.98820000000012 54.42670299999996,211.43924000000013 54.29251499999996,211.89027000000013 53.95458199999996,212.25669000000013 53.602133999999964,212.88381000000012 53.24968599999996,213.51120000000012 52.88327199999996,214.39903000000012 52.63653099999996,215.11105000000012 52.39006399999996,215.8230600000001 52.26326999999996,216.35844000000012 52.121962999999965,217.02089000000012 51.981202999999965,217.68362000000013 51.82620199999997,218.4728600000001 51.77663499999996,219.09286000000012 51.727344999999964,219.71341000000012 51.783734999999965,220.16417000000013 51.64984099999997,220.6434100000001 51.51592799999997,221.1226500000001 51.191686999999966,221.6303700000001 50.84608499999997,222.1728800000001 50.500756999999965,222.7153800000001 50.134342999999966,223.2934800000001 49.84542899999997,223.9488100000001 49.55651499999997,224.6041400000001 49.345100999999964,225.3369600000001 49.049066999999965,226.2464300000001 48.75330599999997,227.15562000000008 48.37265199999997,228.2408900000001 48.06237699999996,229.26976000000008 47.75210299999996,230.29889000000009 47.51248199999996,231.27161000000007 47.36460199999996,232.00444000000007 47.216447999999964,232.73727000000008 47.160307999999965,233.23075000000009 47.08609399999996,233.52679000000006 47.01188399999996,233.82282000000006 46.92041399999996,233.92114000000007 46.76869899999996,234.06573000000006 46.61725899999996,234.21005000000005 46.405844999999964,234.40065000000007 46.44117199999996,234.50964000000005 46.47622199999996,234.61891000000006 46.75829299999996,234.64712000000006 46.839078999999955,234.89358000000004 46.92040899999996,235.14033000000003 46.80046899999996,235.60560000000004 46.634785999999956,236.08128000000005 46.469378999999954,236.55696000000006 46.25769099999996,237.04360000000005 46.053396999999954,237.57542000000004 45.849103999999954,238.10724000000005 45.65165599999995,238.68562000000003 45.531982999999954,239.19279000000003 45.41230899999995,239.69996000000003 45.369861999999955,240.13703000000004 45.18665499999995,240.77839000000003 45.00344799999995,241.41976000000003 44.67893299999995,242.26569000000003 44.104664999999954,243.83732000000003 43.53039699999995,245.40869000000004 42.705827999999954,247.70658000000003 42.145525999999954,249.08789000000004 41.58522499999995,250.46920000000006 41.289189999999955,250.93393000000003 41.09886299999995,251.43426000000005 40.90853599999995,251.93459000000004 40.82391499999995,252.47024000000005 40.65494899999995,253.07655000000005 40.48570799999995,253.68259000000006 40.23184699999995,254.35927000000007 40.00646699999995,255.00748000000004 39.78108599999995,255.65596000000005 39.58363899999995,256.27624000000003 39.37934499999995,256.80477 39.17477699999995,257.33358000000004 38.96336299999995,257.77038000000005 38.91406999999995,258.34109 38.86477999999995,258.91207 38.97732999999995,259.61696 38.99156999999995,260.30762 39.005809999999954,260.99827 38.92091999999995,261.67469 38.758795999999954,262.26676 38.596674999999955,262.85882999999995 38.35732899999996,263.36654999999996 38.14591499999995,263.90193 37.934500999999955,264.43757999999997 37.75129399999995,265.00144 37.687759999999955,265.52997999999997 37.624499999999955,266.05850999999996 37.680959999999956,266.55172 37.532758999999956,267.10873999999995 37.384878999999955,267.66547999999995 37.03243099999995,268.28574999999995 36.71531099999996,268.91288 36.39818999999996,269.54026999999996 36.116121999999955,270.17451 35.975361999999954,270.71729 35.834601999999954,271.26006 35.83432799999996,271.7111 35.76394799999996,272.55674999999997 35.693567999999956,273.40268 35.552807999999956,274.64295999999996 35.22829299999996,275.92567999999994 34.90405199999996,277.20840999999996 34.39687799999996,278.53329999999994 33.93160299999996,279.3929299999999 33.46660199999996,280.2530999999999 33.04377399999996,280.64771999999994 32.84632599999996,281.1830999999999 32.648878999999965,281.7187499999999 32.677359999999965,282.3954399999999 32.47963799999996,282.9450599999999 32.28246499999996,283.4949599999999 31.85963699999996,283.9177899999999 31.549635999999957,284.5941999999999 31.239635999999958,285.2706199999999 31.042187999999957,286.2011699999999 30.802566999999957,286.9904099999999 30.562672999999958,287.7799199999999 30.281152999999957,288.4281299999999 30.182017999999957,288.9216099999999 30.083427999999955,289.4150999999999 30.168047999999956,289.75329999999985 30.040983999999956,289.9647199999999 29.914190999999956,290.1761299999999 29.575982999999955,290.26074999999986 29.406742999999956,290.48640999999986 29.237775999999958,290.71178999999984 29.237775999999958,291.07819999999987 29.096741999999956,291.38847999999984 28.955707999999955,291.69847999999985 28.673913999999957,291.9523399999998 28.532879999999956,292.24836999999985 28.391845999999955,292.5441299999998 28.391845999999955,292.88260999999983 28.264778999999955,293.06581999999986 28.137984999999954,293.24902999999983 27.884123999999954,293.27695999999986 27.662303999999956,293.45331999999985 27.440483999999955,293.62967999999984 27.249882999999958,293.95364999999987 27.063114999999957,294.06647999999984 26.876347999999957,294.17902999999984 26.693140999999958,294.08067999999986 26.45351999999996,294.0031799999998 26.21389999999996,293.92567999999983 25.91786499999996,293.8692599999998 25.60074399999996,294.1474999999998 25.28362399999996,294.4257299999998 24.94514199999996,295.0391599999998 24.22682799999996,295.3206799999998 23.50851399999996,295.6021999999998 22.40954499999996,295.5539999999998 21.66302299999996,295.5148399999998z M68.476528,176.05482C68.170087,176.72439 67.75410600000001,177.57005 67.390978,178.11638 67.028124,178.66271999999998 66.718123,178.90919 66.390596,178.96204 66.06279500000001,179.01494 65.717467,178.87414 65.83714,178.30671 65.95681400000001,177.73929 66.541762,176.74548000000001 66.97527000000001,175.84341 67.40877800000001,174.94134 67.690572,174.13074 67.90198600000001,173.64109000000002 68.11340000000001,173.15117 68.254434,172.9822 68.45544100000001,173.16185000000002 68.65644900000001,173.34150000000002 68.917156,173.87003 68.94892300000001,174.38131 68.98041300000001,174.89205 68.783242,175.38526000000002 68.476528,176.05482z M49.491175,116.67353C49.198701,116.72643 48.818047,116.94492 48.549945,117.23027 48.282118000000004,117.51563 48.127117,117.86807 48.166004,118.19944000000001 48.204894,118.53080000000001 48.437392,118.84080000000002 48.726306,118.94650000000001 49.015494000000004,119.05221000000002 49.360548,118.95350000000002 49.530062,118.75262000000002 49.699029,118.55161000000003 49.692183,118.24846000000002 49.702589,117.99843000000003 49.713269000000004,117.74813000000003 49.741479000000005,117.55095000000003 49.825823,117.36775000000003 49.910713,117.18454000000003 50.051477,117.01530000000002 50.019709999999996,116.87454000000002 49.987669999999994,116.73350000000002 49.783376,116.62040000000002 49.491175,116.67353000000003z M44.591411,125.59755C44.21952,125.48993 43.860226,125.29632 43.645252,125.05149 43.430278,124.80639000000001 43.359624,124.51036 43.393308,124.24609 43.426718,123.98183 43.564192,123.74932 43.694545,123.64005999999999 43.825173,123.53079 43.948406,123.54505999999999 44.03823,123.45711999999999 44.12805,123.36891999999999 44.184467,123.17862 44.269087,122.97431999999999 44.353707,122.76975999999999 44.466535,122.55149999999999 44.711359,122.44550999999998 44.956456,122.34007999999999 45.333277,122.34690999999998 45.572898,122.48080999999999 45.812518000000004,122.61471999999999 45.914665,122.87543 45.907819,123.09916999999999 45.901019000000005,123.32291 45.784586000000004,123.50994999999999 45.819909,123.68246999999998 45.855239000000005,123.85499999999998 46.042004000000006,124.01383999999999 46.12991,124.18307999999998 46.218090000000004,124.35203999999997 46.20741,124.53168999999997 46.18112,124.67792999999998 46.15483,124.82415999999998 46.11266,124.93698999999998 46.035156,125.10978999999998 45.957656,125.28258999999997 45.844829,125.51481999999997 45.596171,125.62079999999997 45.347513,125.72677999999998 44.963025,125.70489999999998 44.591407,125.59749999999997z M45.743782,125.93056C45.477597,125.89526 45.076130000000006,126.10692 44.964946000000005,126.36927 44.85403600000001,126.63189 45.033686,126.94545 45.269743000000005,127.08457 45.505804000000005,127.22369 45.798278,127.18836 45.974365000000006,127.06707 46.15045200000001,126.94576 46.210426000000005,126.73763 46.175099,126.49253 46.140049000000005,126.24771 46.009966000000006,125.96564000000001 45.743782,125.93059z M37.422234,133.2038C37.228621000000004,133.2531 36.981880000000004,133.44342 36.942993,133.66551 36.904103,133.88761000000002 37.07362,134.14119000000002 37.193294,134.39506 37.313241000000005,134.64892 37.383347,134.9025 37.475088,135.10707 37.566828,135.31136999999998 37.679381,135.46663999999998 37.813295,135.44172 37.946934999999996,135.41702 38.102208999999995,135.21278 38.18682999999999,134.9203 38.271449999999994,134.62783 38.285419999999995,134.24718 38.22543999999999,133.96867 38.16546999999999,133.69016 38.031825999999995,133.51407 37.89435199999999,133.38043 37.75715199999999,133.2457 37.61611899999999,133.15422999999998 37.42223099999999,133.2038z M34.596353,140.95792C34.43971,141.15181 34.305522,141.52863 34.279232,141.88108 34.252672,142.23353 34.334002,142.56133 34.64948,142.72701 34.964684,142.89242000000002 35.514579999999995,142.89598 35.784324,142.66351 36.054068,142.43101000000001 36.043113999999996,141.96217000000001 35.884554,141.6026 35.725994,141.24303 35.419553,140.99301 35.176372,140.87306 34.933191,140.75311000000002 34.752997,140.76407 34.596353,140.95796z M-15.264468999999998,167.55527C-15.614999999999998,167.60297 -16.006061,167.83898000000002 -16.032625,168.13502 -16.058915,168.43105 -15.720706999999999,168.78679 -15.322526,168.89085 -14.924345,168.99491 -14.466464,168.84675000000001 -14.284626,168.62138 -14.103062,168.39573 -14.198366,168.09285 -14.401012999999999,167.87075 -14.603663999999998,167.64837999999997 -14.913937999999998,167.50761999999997 -15.264468999999998,167.55526999999998z M-15.202848999999999,199.78604C-15.537771,199.81064 -15.798478,199.93775000000002 -15.918150999999998,200.20886000000002 -16.037824999999998,200.47998 -16.016741,200.89596 -15.851060999999998,201.20267 -15.685653999999998,201.50911000000002 -15.375378999999997,201.70656000000002 -15.047577999999998,201.66439000000003 -14.719776999999997,201.62189000000004 -14.374448999999998,201.34015000000002 -14.205208999999998,201.00879000000003 -14.035967999999999,200.67743000000004 -14.043087999999997,200.29704000000004 -14.250938999999999,200.06783000000004 -14.459067,199.83889000000005 -14.868201999999998,199.76139000000003 -15.202848999999999,199.78604000000004z M-17.299736,198.46443000000002C-17.546477,198.54903000000002 -17.765010999999998,198.72513000000004 -17.82471,198.97543000000002 -17.88441,199.22573000000003 -17.78582,199.54970000000003 -17.51471,199.72606000000002 -17.243596,199.90242 -16.799408,199.93036 -16.52446,199.79996000000003 -16.249786,199.66961000000003 -16.144079,199.38069000000002 -16.168726,199.11999000000003 -16.193376,198.85928000000004 -16.348373,198.62651000000002 -16.563347,198.50683000000004 -16.778047,198.38689000000002 -17.052995,198.37977000000004 -17.299736,198.46443000000005z M-14.984314999999999,197.04423000000003C-15.319237,197.04823000000002 -15.805597999999998,197.28741000000002 -15.918150999999998,197.64698 -16.030977999999998,198.00627 -15.769996999999998,198.48579 -15.428229999999997,198.66187000000002 -15.086187999999998,198.83796 -14.663633999999998,198.71117 -14.459066999999997,198.46799000000001 -14.254772999999997,198.22480000000002 -14.268738999999998,197.86524000000003 -14.367596999999998,197.56948000000003 -14.466456999999998,197.27344000000002 -14.649664999999999,197.04067000000003 -14.984311999999997,197.04423000000003z"
+                    Fill="#FFDE2919"
+                    Stroke="#FFDE2919"
+                    StrokeThickness="0.821529"
+                    StrokeStartLineCap="Round"
+                    StrokeEndLineCap="Round"
+                    StrokeLineJoin="Round"
+                    StrokeMiterLimit="22.9256" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+
+</ResourceDictionary>

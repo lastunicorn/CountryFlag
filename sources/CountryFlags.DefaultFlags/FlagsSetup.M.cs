@@ -29,18 +29,28 @@ internal static partial class FlagsSetup
                 "Zhang Lei",
                 "Xiao Hong"
             },
-            Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign
+            Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign
         });
     }
 
     public static void Madagascar()
     {
-        Countries.Madagascar.Flags.Add(new CountryFlag());
+        Countries.Madagascar.Flags.Add(new CountryFlag
+        {
+            Description = "Two horizontal bands of red and green with a white vertical band on the hoist side.",
+            StartDate = new FlagDate(1958, 10, 14),
+            Usage = FlagUsage.NationalFlagAndEnsign
+        });
     }
 
     public static void Malawi()
     {
-        Countries.Malawi.Flags.Add(new CountryFlag());
+        Countries.Malawi.Flags.Add(new CountryFlag
+        {
+            Description = "A horizontal triband of black, red, and green; charged with a red rising sun with 31 rays centred on the black stripe.",
+            StartDate = new FlagDate(1964, 07, 06),
+            Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign
+        });
     }
 
     public static void Malaysia()
