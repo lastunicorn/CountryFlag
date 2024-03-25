@@ -14,9 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using DustInTheWind.SvgToXaml.Svg;
 
@@ -85,7 +82,7 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
             foreach (SvgElement ancestor in ancestors)
                 yield return ancestor;
-            
+
             yield return referrer;
 
             IEnumerable<SvgElement> referrerAncestors = referrer.EnumerateAncestors();

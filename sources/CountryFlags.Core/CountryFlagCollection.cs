@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
 using System.Collections.ObjectModel;
 
 namespace DustInTheWind.CountryFlags;
@@ -35,7 +34,7 @@ public class CountryFlagCollection : Collection<CountryFlag>
         if (item.Country == null)
             item.Country = country;
 
-            if (item.Country != country)
+        if (item.Country != country)
             throw new Exception($"Flag does not belong to country {country.ShortName}.");
 
         base.InsertItem(index, item);

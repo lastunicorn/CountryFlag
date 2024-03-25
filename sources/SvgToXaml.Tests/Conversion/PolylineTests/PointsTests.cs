@@ -15,7 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Conversion;
 using DustInTheWind.SvgToXaml.Tests.Utils;
 
 namespace DustInTheWind.SvgToXaml.Tests.Conversion.PolylineTests;

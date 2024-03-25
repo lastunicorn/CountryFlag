@@ -14,9 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using DustInTheWind.Flags.Core;
 
@@ -28,6 +25,7 @@ public static class FlagsSetup
     {
         LoadAllFrom(typeof(T).Assembly);
     }
+
     public static void LoadAllFromAssemblyContaining(Type type)
     {
         LoadAllFrom(type.Assembly);
@@ -41,11 +39,11 @@ public static class FlagsSetup
         foreach (Type type in types)
         {
             bool isCountryFlag = typeof(CountryFlag).IsAssignableFrom(type);
-            if (isCountryFlag) 
+            if (isCountryFlag)
                 CreateAndRegisterFlag(type);
 
             bool isRepository = typeof(IFlagRepository).IsAssignableFrom(type);
-            if (isRepository) 
+            if (isRepository)
                 CreateAndRegisterRepository(type);
         }
     }

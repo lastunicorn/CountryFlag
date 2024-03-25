@@ -14,14 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Generic;
 using System.Text;
 
 namespace DustInTheWind.CountryFlags;
 
 public class CountryFlag
 {
-    public Country? Country { get;  set; }
+    public Country? Country { get; set; }
 
     public string? Id { get; init; }
 
@@ -48,7 +47,7 @@ public class CountryFlag
 
     public List<FlagName>? Names { get; set; }
 
-    public string? Description { get;  init; }
+    public string? Description { get; init; }
 
     public FlagDate? StartDate { get; init; }
 
