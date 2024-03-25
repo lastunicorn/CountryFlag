@@ -24,7 +24,7 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal static class SvgPointExtensions
 {
-    public static PointCollection ToXaml(this List<SvgPoint> svgPoints)
+    public static PointCollection ToXaml(this SvgPointCollection svgPoints)
     {
         IEnumerable<Point> points = svgPoints
             .Select(x => new Point

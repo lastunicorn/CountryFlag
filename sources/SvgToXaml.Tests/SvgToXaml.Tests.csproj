@@ -54,6 +54,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="Conversion\FillTests\GroupUseHrefDefsGroupTests\07-group^-use-href-defs-group-circle.svg" />
         <None Remove="Conversion\FillTests\GroupUseHrefDefsGroupTests\08-group^-use-href-defs-group^-circle.svg" />
         <None Remove="Conversion\FillTests\GroupUseHrefDefsGroupTests\09-svgroot^-group-use-href-defs-group-circle.svg" />
+        <None Remove="Conversion\PolylineTests\points-1.svg" />
+        <None Remove="Conversion\PolylineTests\points-2.svg" />
+        <None Remove="Conversion\PolylineTests\points-3.svg" />
         <None Remove="Conversion\StrokeTests\CircleDefsClassTests\circle-defs-class^.svg" />
         <None Remove="Conversion\StrokeTests\CircleDefsClassTests\circle^-defs-class^.svg" />
         <None Remove="Conversion\StrokeTests\CircleClassTests\circle-class^.svg" />
@@ -151,6 +154,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <EmbeddedResource Include="Conversion\FillTests\GroupUseHrefDefsGroupTests\07-group^-use-href-defs-group-circle.svg" />
         <EmbeddedResource Include="Conversion\FillTests\GroupUseHrefDefsGroupTests\08-group^-use-href-defs-group^-circle.svg" />
         <EmbeddedResource Include="Conversion\FillTests\GroupUseHrefDefsGroupTests\09-svgroot^-group-use-href-defs-group-circle.svg" />
+        <EmbeddedResource Include="Conversion\PolylineTests\points-3.svg" />
+        <EmbeddedResource Include="Conversion\PolylineTests\points-2.svg" />
+        <EmbeddedResource Include="Conversion\PolylineTests\points-1.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleDefsClassTests\circle-defs-class^.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleDefsClassTests\circle^-defs-class^.svg" />
         <EmbeddedResource Include="Conversion\StrokeTests\CircleDefsClassTests\svgroot^-circle-defs-class^.svg" />

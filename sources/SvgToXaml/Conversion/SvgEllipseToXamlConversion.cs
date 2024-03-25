@@ -22,8 +22,8 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 
 internal class SvgEllipseToXamlConversion : SvgShapeToXamlConversion<SvgEllipse, Ellipse>
 {
-    public SvgEllipseToXamlConversion(SvgEllipse svgEllipse, SvgUse svgUse = null)
-        : base(svgEllipse, svgUse)
+    public SvgEllipseToXamlConversion(SvgEllipse svgEllipse, SvgElement referrer = null)
+        : base(svgEllipse, referrer)
     {
     }
 

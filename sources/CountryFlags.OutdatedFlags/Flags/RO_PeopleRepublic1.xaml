@@ -2986,6 +2986,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FF605D5C"
                         Stroke="#FF0A0B0C"
                         StrokeThickness="2.822" />
+                    <Polyline
+                        Points="555.878,526.574 526.864,534.913 526.744,534.913"
+                        Fill="{x:Null}"
+                        Stroke="#FF0A0B0C"
+                        StrokeThickness="2.822" />
+                    <Line
+                        X1="530.309"
+                        Y1="528.901"
+                        X2="511.327"
+                        Y2="535.553"
+                        Fill="{x:Null}"
+                        Stroke="#FF0A0B0C"
+                        StrokeThickness="2.822" />
+                    <Line
+                        X1="511.526"
+                        Y1="530.469"
+                        X2="498.237"
+                        Y2="535.962"
+                        Fill="{x:Null}"
+                        Stroke="#FF0A0B0C"
+                        StrokeThickness="2.822" />
+                    <Line
+                        X1="496.641"
+                        Y1="531.017"
+                        X2="480.817"
+                        Y2="536.194"
+                        Fill="{x:Null}"
+                        Stroke="#FF0A0B0C"
+                        StrokeThickness="2.822" />
+                    <Line
+                        X1="482.182"
+                        Y1="530.864"
+                        X2="469.289"
+                        Y2="535.671"
+                        Fill="{x:Null}"
+                        Stroke="#FF0A0B0C"
+                        StrokeThickness="2.822" />
                 </Canvas>
 
                 <Path
@@ -3157,7 +3194,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     Data="M642.819,568.707C645.5798,568.9374 646.688,570.0014 646.1436,571.8996 620.8118,578.226 604.6412,577.5568 578.4352,575.973 573.7810000000001,575.6243999999999 571.6656,576.8442 572.0886,579.6322 571.4776,585.4262 572.6924,587.0840000000001 576.4062,586.779 601.75,588.2258 625.1248,589.7478 647.318,582.1114 649.2508,574.5528 647.7512,570.0848 642.819,568.707z"
                     Fill="#FF838281"
                     Stroke="#FF0A0B0C"
-                    StrokeThickness="2.822" />
+                    StrokeThickness="2.822"
+                    StrokeLineJoin="Bevel" />
                 <Path
                     Data="M277.555,567.548C274.396,584.7926 279.9638,597.8052 297.6056,606.9652 323.3922,613.7594 374.34159999999997,620.1042 450.4536,625.9992 467.4154,625.242 488.56419999999997,614.4182 498.4226,612.4248 411.2896,605.3498 342.6296,603.094 317.87559999999996,597.3668 279.12539999999996,590.3154000000001 272.5902,558.7022000000001 310.241,549.3204000000001 294.9486,548.576 279.8976,553.0852000000001 277.5548,567.5480000000001z"
                     Fill="#FF383431"
@@ -3212,6 +3250,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     Points="448.947,551.566 397.937,551.819 495.714,543.564 508.621,547.523"
                     FillRule="EvenOdd"
                     Fill="#FF605D5C"
+                    Stroke="#FF0A0B0C"
+                    StrokeThickness="2.822" />
+                <Polyline
+                    Points="435.026,543.2 392.102,551.987 391.925,551.987"
+                    Fill="{x:Null}"
+                    Stroke="#FF0A0B0C"
+                    StrokeThickness="2.822" />
+                <Line
+                    X1="397.198"
+                    Y1="545.652"
+                    X2="369.116"
+                    Y2="552.661"
+                    Fill="{x:Null}"
+                    Stroke="#FF0A0B0C"
+                    StrokeThickness="2.822" />
+                <Line
+                    X1="369.411"
+                    Y1="547.304"
+                    X2="349.751"
+                    Y2="553.092"
+                    Fill="{x:Null}"
+                    Stroke="#FF0A0B0C"
+                    StrokeThickness="2.822" />
+                <Line
+                    X1="347.389"
+                    Y1="547.882"
+                    X2="323.979"
+                    Y2="553.337"
+                    Fill="{x:Null}"
+                    Stroke="#FF0A0B0C"
+                    StrokeThickness="2.822" />
+                <Line
+                    X1="325.998"
+                    Y1="547.721"
+                    X2="306.925"
+                    Y2="552.786"
+                    Fill="{x:Null}"
                     Stroke="#FF0A0B0C"
                     StrokeThickness="2.822" />
                 <Path

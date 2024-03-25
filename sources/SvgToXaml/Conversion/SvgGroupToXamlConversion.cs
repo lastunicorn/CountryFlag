@@ -26,9 +26,9 @@ namespace DustInTheWind.SvgToXaml.Conversion;
 internal class SvgGroupToXamlConversion : IConversion<Canvas>
 {
     private readonly SvgGroup svgGroup;
-    private readonly SvgUse referrer;
+    private readonly SvgElement referrer;
 
-    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgUse referrer = null)
+    public SvgGroupToXamlConversion(SvgGroup svgGroup, SvgElement referrer = null)
     {
         this.svgGroup = svgGroup ?? throw new ArgumentNullException(nameof(svgGroup));
         this.referrer = referrer;
@@ -88,6 +88,9 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
 
             case SvgPolygon svgPolygon:
                 return new SvgPolygonToXamlConversion(svgPolygon, referrer);
+
+            case SvgPolyline svgPolyline:
+                return new SvgPolylineToXamlConversion(svgPolyline, referrer);
 
             case SvgGroup svgGChild:
                 return new SvgGroupToXamlConversion(svgGChild, referrer);

@@ -20,32 +20,32 @@ using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
 
-internal class SvgPolygonToXamlConversion : SvgShapeToXamlConversion<SvgPolygon, Polygon>
+internal class SvgPolylineToXamlConversion : SvgShapeToXamlConversion<SvgPolyline, Polyline>
 {
-    public SvgPolygonToXamlConversion(SvgPolygon svgPolygon, SvgElement referrer = null)
-        : base(svgPolygon, referrer)
+    public SvgPolylineToXamlConversion(SvgPolyline svgPolyline, SvgElement referrer = null)
+        : base(svgPolyline, referrer)
     {
     }
 
-    protected override Polygon CreateXamlElement()
+    protected override Polyline CreateXamlElement()
     {
-        Polygon polygon = new()
+        Polyline polyline = new()
         {
             Points = SvgElement.Points.ToXaml()
         };
 
-        SetFillRule(polygon, SvgElement);
+        SetFillRule(polyline, SvgElement);
 
-        return polygon;
+        return polyline;
     }
 
-    private static void SetFillRule(Polygon polygon, SvgPolygon svgPolygon)
+    private static void SetFillRule(Polyline polyline, SvgPolyline svgPolyline)
     {
-        FillRule? fillRule = svgPolygon.CalculateFillRule();
+        FillRule? fillRule = svgPolyline.CalculateFillRule();
 
         if (fillRule != null)
         {
-            polygon.FillRule = fillRule switch
+            polyline.FillRule = fillRule switch
             {
                 FillRule.EvenOdd => System.Windows.Media.FillRule.EvenOdd,
                 FillRule.Nonzero => System.Windows.Media.FillRule.Nonzero,

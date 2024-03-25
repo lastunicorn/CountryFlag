@@ -14,26 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Windows.Shapes;
-using DustInTheWind.SvgToXaml.Svg;
+using System;
+using DustInTheWind.SvgToXaml.Svg.Serialization;
 
-namespace DustInTheWind.SvgToXaml.Conversion;
+namespace DustInTheWind.SvgToXaml.Svg;
 
-internal class SvgLineToXamlConversion : SvgShapeToXamlConversion<SvgLine, Line>
+public class SvgPolyline : SvgElement
 {
-    public SvgLineToXamlConversion(SvgLine svgLine, SvgElement referrer = null)
-        : base(svgLine, referrer)
+    public SvgPointCollection Points { get; } = new();
+
+    public SvgPolyline()
     {
     }
 
-    protected override Line CreateXamlElement()
+    internal SvgPolyline(Polyline polyline)
+        : base(polyline)
     {
-        return new Line
-        {
-            X1 = SvgElement.X1,
-            Y1 = SvgElement.Y1,
-            X2 = SvgElement.X2,
-            Y2 = SvgElement.Y2
-        };
+        if (polyline == null) throw new ArgumentNullException(nameof(polyline));
+
+        if (polyline.Points == null)
+            return;
+
+        Points = new SvgPointCollection(polyline.Points);
     }
 }

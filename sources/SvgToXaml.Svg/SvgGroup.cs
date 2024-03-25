@@ -104,6 +104,11 @@ public class SvgGroup : SvgElement
                     SvgPolygon polygon = new(serializationPolygon);
                     Children.Add(polygon);
                 }
+                else if (serializationChild is Polyline serializationPolyline)
+                {
+                    SvgPolyline polyline = new(serializationPolyline);
+                    Children.Add(polyline);
+                }
                 else if (serializationChild is G serializationGChild)
                 {
                     SvgGroup svgGroupChild = new(serializationGChild);

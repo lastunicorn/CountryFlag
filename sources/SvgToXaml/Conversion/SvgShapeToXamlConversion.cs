@@ -118,8 +118,10 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
             XamlElement.StrokeLineJoin = strokeLineJoin switch
             {
                 StrokeLineJoin.Miter => PenLineJoin.Miter,
-                StrokeLineJoin.Bevel => PenLineJoin.Bevel,
+                StrokeLineJoin.MiterClip => PenLineJoin.Miter,
                 StrokeLineJoin.Round => PenLineJoin.Round,
+                StrokeLineJoin.Bevel => PenLineJoin.Bevel,
+                StrokeLineJoin.Arcs => PenLineJoin.Miter,
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

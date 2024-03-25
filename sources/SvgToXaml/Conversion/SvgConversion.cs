@@ -31,48 +31,6 @@ internal class SvgConversion : SvgGroupToXamlConversion
         this.svg = svg ?? throw new ArgumentNullException(nameof(svg));
     }
 
-    //public Canvas Execute()
-    //{
-    //    try
-    //    {
-    //        if (svg == null)
-    //            return null;
-
-    //        SvgGroupToXamlConversion conversion = new(svg);
-    //        Canvas canvas = conversion.Execute();
-
-    //        if (svg.ViewBox == null)
-    //        {
-    //            if (svg.Width != null)
-    //                canvas.Width = svg.Width.Value;
-
-    //            if (svg.Height != null)
-    //                canvas.Height = svg.Height.Value;
-    //        }
-    //        else
-    //        {
-    //            canvas.Width = svg.ViewBox.Width.Value;
-    //            canvas.Height = svg.ViewBox.Height.Value;
-
-    //            bool viewBoxIsTranslated = svg.ViewBox.OriginX is { Value: not 0 } ||
-    //                                       svg.ViewBox.OriginY is { Value: not 0 };
-
-    //            if (viewBoxIsTranslated)
-    //                canvas.RenderTransform = CreateRenderTransform(svg.ViewBox);
-    //        }
-
-    //        return canvas;
-    //    }
-    //    catch (SvgConversionException)
-    //    {
-    //        throw;
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        throw new SvgConversionException(ex);
-    //    }
-    //}
-
     protected override Canvas CreateXamlElement()
     {
         try

@@ -15,15 +15,13 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Collections.Generic;
-using System.Globalization;
 using DustInTheWind.SvgToXaml.Svg.Serialization;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
 public class SvgPolygon : SvgElement
 {
-    public List<SvgPoint> Points { get; } = new();
+    public SvgPointCollection Points { get; } = new();
 
     public SvgPolygon()
     {
@@ -37,20 +35,6 @@ public class SvgPolygon : SvgElement
         if (polygon.Points == null)
             return;
 
-        string[] parts = polygon.Points.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-
-        if (parts.Length % 2 != 0)
-            throw new ArgumentException("Invalid number of points", nameof(polygon));
-
-        for (int i = 0; i < parts.Length; i += 2)
-        {
-            SvgPoint svgPoint = new()
-            {
-                X = double.Parse(parts[i], CultureInfo.InvariantCulture),
-                Y = double.Parse(parts[i + 1], CultureInfo.InvariantCulture)
-            };
-
-            Points.Add(svgPoint);
-        }
+        Points = new SvgPointCollection(polygon.Points);
     }
 }

@@ -31,10 +31,11 @@ public class G : Element
 {
     [XmlElement("circle", typeof(Circle))]
     [XmlElement("ellipse", typeof(Ellipse))]
-    [XmlElement("path", typeof(Path))]
     [XmlElement("line", typeof(Line))]
-    [XmlElement("rect", typeof(Rect))]
+    [XmlElement("path", typeof(Path))]
     [XmlElement("polygon", typeof(Polygon))]
+    [XmlElement("polyline", typeof(Polyline))]
+    [XmlElement("rect", typeof(Rect))]
     [XmlElement("g", typeof(G))]
     [XmlElement("use", typeof(Use))]
     [XmlElement("style", typeof(Style))]
