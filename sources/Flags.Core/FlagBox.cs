@@ -43,7 +43,7 @@ public class FlagBox : Control
                                                  ?? FlagRepositories.Repository
                                                  ?? new EmptyFlagRepository();
 
-                flagBox.FlagCanvas = flagRepository.Get(flagBox.CountryCode) ?? EmptyFlagRepository.MissingFlag;
+                flagBox.FlagCanvas = flagRepository.GetCanvas(flagBox.CountryCode) ?? EmptyFlagRepository.MissingFlag;
             }
         }
     }
@@ -75,7 +75,7 @@ public class FlagBox : Control
                                                  ?? FlagRepositories.Repository
                                                  ?? new EmptyFlagRepository();
 
-                flagBox.FlagCanvas = flagRepository.Get(newCountryCode) ?? EmptyFlagRepository.MissingFlag;
+                flagBox.FlagCanvas = flagRepository.GetCanvas(newCountryCode) ?? EmptyFlagRepository.MissingFlag;
             }
             else
             {

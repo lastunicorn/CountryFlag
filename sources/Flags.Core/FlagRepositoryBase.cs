@@ -22,7 +22,7 @@ public abstract class FlagRepositoryBase : IFlagRepository
 {
     public abstract string Id { get; }
 
-    public Canvas? Get(FlagId flagId)
+    public Canvas? GetCanvas(FlagId flagId)
     {
         bool flagIdMatchRepository = flagId.MatchRepository(Id);
         if (!flagIdMatchRepository)
@@ -30,7 +30,7 @@ public abstract class FlagRepositoryBase : IFlagRepository
 
         try
         {
-            return GetInternal(flagId);
+            return GetCanvasInternal(flagId);
         }
         catch
         {
@@ -38,5 +38,5 @@ public abstract class FlagRepositoryBase : IFlagRepository
         }
     }
 
-    protected abstract Canvas? GetInternal(FlagId flagId);
+    protected abstract Canvas? GetCanvasInternal(FlagId flagId);
 }

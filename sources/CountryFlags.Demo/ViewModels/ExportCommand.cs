@@ -47,7 +47,7 @@ public class ExportCommand : ICommand
         if (countryFlag == null)
             return;
 
-        Canvas canvas = FlagRepositories.Repository.Get(countryFlag.FullId);
+        Canvas canvas = FlagRepositories.Repository.GetCanvas(countryFlag.FullId);
 
         RenderWindow window = new();
 

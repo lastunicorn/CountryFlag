@@ -33,16 +33,16 @@ internal class AggregateFlagRepository : IFlagRepository, IEnumerable<IFlagRepos
         childRepositories.Add(flagRepository);
     }
 
-    public Canvas? Get(FlagId flagId)
+    public Canvas? GetCanvas(FlagId flagId)
     {
         if (flagId.HasRepository)
         {
             IFlagRepository? flagRepository = childRepositories.FirstOrDefault(x => x.Id == flagId.RepositoryId);
-            return flagRepository?.Get(flagId);
+            return flagRepository?.GetCanvas(flagId);
         }
 
         return childRepositories
-            .Select(x => x.Get(flagId))
+            .Select(x => x.GetCanvas(flagId))
             .FirstOrDefault(x => x != null);
     }
 
