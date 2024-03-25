@@ -43,9 +43,6 @@ public class Country
 
     public Country()
     {
-        Flags = new CountryFlagCollection
-        {
-            Country = this
-        };
+        Flags = new CountryFlagCollection(this);
     }
 }

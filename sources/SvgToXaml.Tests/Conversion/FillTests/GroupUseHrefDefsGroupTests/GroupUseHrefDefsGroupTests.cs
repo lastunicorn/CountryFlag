@@ -23,7 +23,7 @@ namespace DustInTheWind.SvgToXaml.Tests.Conversion.FillTests.GroupUseHrefDefsGro
 public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
 {
     [Fact]
-    public void HavingNoFillDeclared_WhenSvgIsParsed_ThenResultedEllipseHasNullFill()
+    public void HavingNoFillDeclared_WhenSvgIsParsed_ThenResultedEllipseHasBlackFill()
     {
         TestConvertSvgFile("01-group-use-href-defs-group-circle.svg", canvas =>
         {
@@ -32,7 +32,7 @@ public class GroupUseHrefDefsGroupTests : SvgFileTestsBase
                 .GetElementByIndex<Canvas>(0)
                 .GetElementByIndex<Ellipse>(0);
 
-            ellipse.Fill.Should().BeNull();
+            ellipse.Fill.Should().Be("#ff000000");
         });
     }
 

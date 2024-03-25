@@ -20,7 +20,6 @@ using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
 using DustInTheWind.CountryFlags.InUseFlags;
 using DustInTheWind.CountryFlags.OutdatedFlags;
-using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Demo;
 
@@ -31,9 +30,9 @@ public partial class App : Application
 {
     protected override void OnStartup(StartupEventArgs e)
     {
-        FlagsSetup.LoadModule(typeof(DefaultFlagsModule));
-        FlagsSetup.LoadModule(typeof(InUseFlagsModule));
-        FlagsSetup.LoadModule(typeof(OutdatedFlagsModule));
+        FlagsSetup.LoadAllFromAssemblyContaining(typeof(DefaultFlagsRepository));
+        FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
+        FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
 
         MainViewModel mainViewModel = new();
         MainWindow mainWindow = new(mainViewModel);

@@ -21,53 +21,33 @@ namespace DustInTheWind.CountryFlags;
 
 public class CountryFlagCollection : Collection<CountryFlag>
 {
-    private Country? country;
+    private readonly Country country;
 
-    public Country? Country
+    public CountryFlagCollection(Country country)
     {
-        get => country;
-        set
-        {
-            country = value;
-
-            foreach (CountryFlag countryFlag in Items)
-                countryFlag.Country = country;
-        }
+        this.country = country ?? throw new ArgumentNullException(nameof(country));
     }
 
     protected override void InsertItem(int index, CountryFlag item)
     {
         if (item == null) throw new ArgumentNullException(nameof(item));
 
-        item.Country = country;
+        if (item.Country == null)
+            item.Country = country;
+
+            if (item.Country != country)
+            throw new Exception($"Flag does not belong to country {country.ShortName}.");
+
         base.InsertItem(index, item);
-    }
-
-    protected override void RemoveItem(int index)
-    {
-        CountryFlag countryFlag = Items[index];
-        countryFlag.Country = null;
-
-        base.RemoveItem(index);
     }
 
     protected override void SetItem(int index, CountryFlag item)
     {
         if (item == null) throw new ArgumentNullException(nameof(item));
 
-        CountryFlag countryFlag = Items[index];
-        countryFlag.Country = null;
-
-        item.Country = country;
+        if (item.Country != country)
+            throw new Exception($"Flag does not belong to country {country.ShortName}.");
 
         base.SetItem(index, item);
-    }
-
-    protected override void ClearItems()
-    {
-        foreach (CountryFlag countryFlag in Items)
-            countryFlag.Country = null;
-
-        base.ClearItems();
     }
 }

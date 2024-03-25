@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <PropertyGroup>
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>
         <AssemblyName>DustInTheWind.CountryFlags.DefaultFlags</AssemblyName>
         <RootNamespace>DustInTheWind.CountryFlags.DefaultFlags</RootNamespace>

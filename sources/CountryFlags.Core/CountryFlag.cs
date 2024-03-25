@@ -21,7 +21,7 @@ namespace DustInTheWind.CountryFlags;
 
 public class CountryFlag
 {
-    public Country? Country { get; internal set; }
+    public Country? Country { get;  set; }
 
     public string? Id { get; init; }
 
@@ -48,7 +48,7 @@ public class CountryFlag
 
     public List<FlagName>? Names { get; set; }
 
-    public string? Description { get; init; }
+    public string? Description { get;  init; }
 
     public FlagDate? StartDate { get; init; }
 

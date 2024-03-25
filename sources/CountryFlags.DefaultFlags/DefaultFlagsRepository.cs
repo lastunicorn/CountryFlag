@@ -29,7 +29,7 @@ using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.DefaultFlags;
 
-internal class DefaultFlagsRepository : FlagRepositoryBase
+public class DefaultFlagsRepository : FlagRepositoryBase
 {
     public override string Id => "country";
 
