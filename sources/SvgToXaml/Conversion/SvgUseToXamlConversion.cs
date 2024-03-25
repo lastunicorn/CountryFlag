@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows;
+using System.Windows.Controls;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
@@ -33,7 +34,18 @@ internal class SvgUseToXamlConversion : IConversion<UIElement>
         SvgElement referencedElement = svgUse.GetReferencedElement();
 
         IConversion<UIElement> conversion = ConvertReferencedElement(referencedElement);
-        return conversion.Execute();
+        UIElement uiElement = conversion.Execute();
+
+        if (svgUse.Transforms.Count > 0)
+            uiElement.RenderTransform = svgUse.Transforms.ToXaml();
+
+        if (svgUse.X != 0)
+            Canvas.SetLeft(uiElement, svgUse.X);
+
+        if (svgUse.Y != 0)
+            Canvas.SetTop(uiElement, svgUse.Y);
+
+        return uiElement;
     }
 
     private IConversion<UIElement> ConvertReferencedElement(SvgElement svgElement)

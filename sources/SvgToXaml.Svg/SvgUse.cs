@@ -22,6 +22,10 @@ public class SvgUse : SvgElement
 {
     public HypertextReference Href { get; set; }
 
+    public double X { get; set; }
+
+    public double Y { get; set; }
+
     public SvgUse()
     {
     }
@@ -32,6 +36,8 @@ public class SvgUse : SvgElement
         if (use == null) throw new ArgumentNullException(nameof(use));
 
         Href = use.Href;
+        X = use.X;
+        Y = use.Y;
     }
 
     public SvgUseInheritanceCollection GetInheritanceList()

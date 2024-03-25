@@ -22,4 +22,10 @@ public class Use : Element
 {
     [XmlAttribute("href", Namespace = "http://www.w3.org/1999/xlink")]
     public string Href { get; set; }
+
+    [XmlAttribute("x")]
+    public double X { get; set; }
+
+    [XmlAttribute("y")]
+    public double Y { get; set; }
 }
