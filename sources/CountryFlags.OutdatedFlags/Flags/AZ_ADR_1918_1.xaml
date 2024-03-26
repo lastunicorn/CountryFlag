@@ -1,0 +1,43 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Azerbaijan (Azerbaijan Democratic Republic 1918) -->
+
+    <Canvas x:Key="CountryFlag_AZ_ADR_1918_1" Width="1200" Height="600">
+
+        <Rectangle
+            Fill="#FFE00034"
+            Width="1200"
+            Height="600" />
+
+        <Path
+            Data="M599.73704,371.49897C560.23685,371.49897 528.2117,339.46843 528.2117,299.97969 528.2117,260.44593 560.23935,228.43290000000002 599.73704,228.43290000000002 621.94214,228.43290000000002 641.7897399999999,238.58136000000002 654.9098,254.44536000000002 639.4872300000001,228.93544000000003 611.49209,211.88132000000002 579.50694,211.88132000000002 530.87421,211.88132000000002 491.44153,251.31507000000002 491.44153,299.97969 491.44153,348.6068 530.87171,388.02554 579.50694,388.02554 611.49209,388.02554 639.48723,370.97391999999996 654.9098,345.469 641.79224,361.35801 621.94214,371.49897 599.73704,371.49897z"
+            Fill="#FFFFFFFF" />
+
+        <Polygon
+            Points="330.043,334.138 333.439,341.79 341.254,338.783 338.245,346.596 345.896,349.995 338.243,353.391 341.25,361.205 333.438,358.195 330.039,365.847 326.643,358.194 318.828,361.201 321.838,353.388 314.187,349.989 321.839,346.594 318.832,338.78 326.645,341.789"
+            Fill="#FFFFFFFF"
+            RenderTransform="2.5000118,0,0,2.5002373,-150.0065,-575.11087" />
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -1,0 +1,42 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Azerbaijan (Azerbaijan Soviet Socialist Republic 1920) -->
+
+    <Canvas x:Key="CountryFlag_AZ_ASSR_1920_1" Width="2400" Height="1200">
+
+        <Rectangle
+            Fill="#FFCD000F"
+            Width="2400"
+            Height="1200" />
+
+        <Path
+            Data="M479.9091,62.2727C415.82590000000005,62.2727 356.44530000000003,79.9414 307.7044,110.0219 313.8444,109.7171 320.03200000000004,109.5454 326.27270000000004,109.5454 482.41870000000006,109.5454 609,206.41469999999998 609,325.90909999999997 609,445.40349999999995 482.4187,542.2727 326.2727,542.2727 320.032,542.2727 313.8445,542.101 307.70439999999996,541.7963 356.4453,571.8763 415.82589999999993,589.5454 479.90909999999997,589.5454 645.5944999999999,589.5454 779.9091,471.5114 779.9091,325.90909999999997 779.9091,180.30679999999995 645.5944999999999,62.272699999999986 479.90909999999997,62.272699999999986z"
+            Fill="#FFFFFFFF" />
+
+        <Polygon
+            Points="207.178,284.509 257.454,235.909 264.489,300.322 334.454,325.909 264.489,351.496 257.454,415.909 207.178,367.309 132.865,381.532 171.758,325.909 132.865,270.286"
+            Fill="#FFFFFFFF" />
+
+    </Canvas>
+
+</ResourceDictionary>

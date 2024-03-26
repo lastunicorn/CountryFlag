@@ -14,17 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.DefaultFlags;
+namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
-public class AzerbaijanFlag : CountryFlag
+public class Azerbaijan_Transcaucasian_SFSRFlag : CountryFlag
 {
-    public AzerbaijanFlag()
+    public Azerbaijan_Transcaucasian_SFSRFlag()
     {
         Country = Countries.Azerbaijan;
 
-        Description = "A horizontal tricolour of bright blue, red, and green, with a white crescent and an eight-pointed star centred on a red band.";
-        StartDate = new FlagDate(1991, 02, 05);
-        DesignedBy = "Ali bey Huseynzade";
-        Usage = FlagUsage.NationalFlagAndEnsign;
+        Id = "Transcaucasian_SFSR";
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                EnglishTranslation = "Transcaucasian SFSR (1930s–1936)"
+            }
+        };
+        StartDate = new FlagDate(1930);
+        EndDate = new FlagDate(1936);
     }
 }
