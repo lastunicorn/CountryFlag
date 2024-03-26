@@ -131,7 +131,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <None Remove="Conversion\UseTests\UseHrefGroupCircleTests\group-use-href-group-circle.svg" />
         <None Remove="Conversion\UseTests\UseHrefGroupCircleTests\use-href-group-circle.svg" />
     </ItemGroup>
-
+    
     <ItemGroup>
         <EmbeddedResource Include="Conversion\CircleTests\top-from-radius-equal-to-y.svg" />
         <EmbeddedResource Include="Conversion\CircleTests\left-from-radius-equal-to-x.svg" />

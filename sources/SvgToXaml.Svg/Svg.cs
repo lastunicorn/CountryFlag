@@ -43,16 +43,16 @@ public class Svg : SvgGroup
             ViewBox = SvgViewBox.Parse(svg.ViewBox);
     }
 
-    public IEnumerable<CssClass> GetAllCssClasses()
+    public IEnumerable<SvgStyleRuleSet> GetAllCssClasses()
     {
         IEnumerable<SvgGroup> svgGroups = GetAllGroups();
 
         foreach (SvgGroup svgGroup in svgGroups)
         {
-            if (svgGroup.CssClasses == null)
+            if (svgGroup.StyleSheet == null)
                 continue;
 
-            foreach (CssClass cssClass in svgGroup.CssClasses)
+            foreach (SvgStyleRuleSet cssClass in svgGroup.StyleSheet)
                 yield return cssClass;
         }
     }

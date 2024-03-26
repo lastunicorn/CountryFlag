@@ -19,31 +19,31 @@ using System.Text.RegularExpressions;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class CssClassCollection : Collection<CssClass>
+public class SvgStyleSheet : Collection<SvgStyleRuleSet>
 {
-    public CssClass this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    private static readonly Regex Regex = new(@"\.(\w+)\s*{\s*(.*?)\s*}", RegexOptions.Multiline);
 
-    public static implicit operator CssClassCollection(string text)
+    public SvgStyleRuleSet this[string name] => Items.FirstOrDefault(x => x.Selector == name);
+
+    public static implicit operator SvgStyleSheet(string text)
     {
         if (text == null)
             return null;
 
-        Regex regex = new(@"\.(\w+)\s*{\s*(.*?)\s*}", RegexOptions.Multiline);
+        MatchCollection matches = Regex.Matches(text);
 
-        MatchCollection matches = regex.Matches(text);
-
-        IEnumerable<CssClass> items = matches
-            .Select(x => new CssClass
+        IEnumerable<SvgStyleRuleSet> items = matches
+            .Select(x => new SvgStyleRuleSet
             {
-                Name = x.Groups[1].Value,
-                Value = x.Groups[2].Value
+                Selector = x.Groups[1].Value,
+                Declarations = x.Groups[2].Value
             });
 
-        CssClassCollection cssClasses = new();
+        SvgStyleSheet svgClasses = new();
 
-        foreach (CssClass item in items)
-            cssClasses.Add(item);
+        foreach (SvgStyleRuleSet item in items)
+            svgClasses.Add(item);
 
-        return cssClasses;
+        return svgClasses;
     }
 }

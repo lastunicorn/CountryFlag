@@ -56,7 +56,7 @@ public class SvgGroup : SvgElement
 {
     public SvgElementCollection<SvgElement> Children { get; }
 
-    public CssClassCollection CssClasses { get; }
+    public SvgStyleSheet StyleSheet { get; }
 
     public SvgGroup()
     {
@@ -126,7 +126,7 @@ public class SvgGroup : SvgElement
                 }
                 else if (serializationChild is Style style)
                 {
-                    CssClasses = style.Value;
+                    StyleSheet = style.Value;
                 }
                 else if (serializationChild is Text serializationText)
                 {

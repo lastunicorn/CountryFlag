@@ -20,11 +20,19 @@ namespace DustInTheWind.SvgToXaml.Svg.Serialization;
 
 public class Element
 {
+    // Core Attributes
+
     [XmlAttribute("id")]
     public string Id { get; set; }
 
     [XmlAttribute("class")]
     public string Class { get; set; }
+
+    [XmlAttribute("style")]
+    public string Style { get; set; }
+
+    // Shape Attributes
+    // (shapes and text content elements)
 
     [XmlAttribute("fill")]
     public string Fill { get; set; }
@@ -32,8 +40,14 @@ public class Element
     [XmlAttribute("fill-rule")]
     public string FillRule { get; set; }
 
+    //[XmlAttribute("fill-opacity")]
+    //public string FillOpacity { get; set; }
+
     [XmlAttribute("stroke")]
     public string Stroke { get; set; }
+
+    //[XmlAttribute("stroke-opacity")]
+    //public string StrokeOpacity { get; set; }
 
     [XmlAttribute("stroke-width")]
     public double StrokeWidth { get; set; }
@@ -46,18 +60,20 @@ public class Element
     [XmlAttribute("stroke-linejoin")]
     public string StrokeLineJoin { get; set; }
 
-    [XmlAttribute("stroke-dashoffset")]
-    public double StrokeDashOffset { get; set; }
-
-    public bool StrokeDashOffsetSpecified { get; set; }
-
     [XmlAttribute("stroke-miterlimit")]
     public double StrokeMiterLimit { get; set; }
 
     public bool StrokeMiterLimitSpecified { get; set; }
 
-    [XmlAttribute("style")]
-    public string Style { get; set; }
+    //[XmlAttribute("stroke-dasharray")]
+    //public double StrokeDashArray { get; set; }
+
+    [XmlAttribute("stroke-dashoffset")]
+    public double StrokeDashOffset { get; set; }
+
+    public bool StrokeDashOffsetSpecified { get; set; }
+
+    //
 
     [XmlAttribute("transform")]
     public string Transform { get; set; }

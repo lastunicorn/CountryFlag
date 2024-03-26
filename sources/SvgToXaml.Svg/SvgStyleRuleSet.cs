@@ -16,14 +16,14 @@
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgStyleItem
+public class SvgStyleRuleSet
 {
-    public string Name { get; init; }
+    public string Selector { get; init; }
 
-    public string Value { get; init; }
+    public SvgStyleDeclarationCollection Declarations { get; init; }
 
     public override string ToString()
     {
-        return $"{Name}:{Value}";
+        return $".{Selector}{{{Declarations}}}";
     }
 }

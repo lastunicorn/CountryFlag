@@ -41,7 +41,7 @@ public class SvgElement
 
     public double? StrokeMiterLimit { get; set; }
 
-    public SvgStyle Style { get; set; }
+    public SvgStyleDeclarationCollection Style { get; set; }
 
     public string[] ClassNames { get; set; }
 
@@ -127,30 +127,30 @@ public class SvgElement
         }
     }
 
-    private IEnumerable<CssClass> GetApplicableClasses()
+    private IEnumerable<SvgStyleRuleSet> GetApplicableClasses()
     {
         if (ClassNames == null)
             return null;
 
         Svg parentSvg = GetParentSvg();
-        IEnumerable<CssClass> cssClasses = parentSvg?.GetAllCssClasses();
+        IEnumerable<SvgStyleRuleSet> cssClasses = parentSvg?.GetAllCssClasses();
 
         return cssClasses?
-            .Where(x => ClassNames.Contains(x.Name))
-            .Where(x => x.Value != null)
+            .Where(x => ClassNames.Contains(x.Selector))
+            .Where(x => x.Declarations != null)
             .Reverse();
     }
 
     private string GetStyleValueFromClasses(string name)
     {
-        IEnumerable<CssClass> applicableClasses = GetApplicableClasses();
+        IEnumerable<SvgStyleRuleSet> applicableClasses = GetApplicableClasses();
 
         if (applicableClasses == null)
             return null;
 
-        foreach (CssClass svgStyleClass in applicableClasses)
+        foreach (SvgStyleRuleSet svgStyleClass in applicableClasses)
         {
-            SvgStyleItem styleItem1 = svgStyleClass.Value?[name];
+            SvgStyleDeclaration styleItem1 = svgStyleClass.Declarations?[name];
 
             if (styleItem1 != null)
                 return styleItem1.Value;
@@ -166,10 +166,10 @@ public class SvgElement
         if (rawValue != null)
             return rawValue;
 
-        SvgStyleItem styleItem = Style?["fill"];
+        SvgStyleDeclaration styleDeclaration = Style?["fill"];
 
-        if (styleItem != null)
-            return styleItem.Value;
+        if (styleDeclaration != null)
+            return styleDeclaration.Value;
 
         return Fill;
     }
@@ -181,10 +181,10 @@ public class SvgElement
         if (rawValue != null)
             return (FillRule)Enum.Parse(typeof(FillRule), rawValue, true);
 
-        SvgStyleItem styleItem = Style?["fill-rule"];
+        SvgStyleDeclaration styleDeclaration = Style?["fill-rule"];
 
-        if (styleItem != null)
-            return (FillRule)Enum.Parse(typeof(FillRule), styleItem.Value, true);
+        if (styleDeclaration != null)
+            return (FillRule)Enum.Parse(typeof(FillRule), styleDeclaration.Value, true);
 
         return FillRule;
     }
@@ -196,10 +196,10 @@ public class SvgElement
         if (rawValue != null)
             return rawValue;
 
-        SvgStyleItem styleItem = Style?["stroke"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke"];
 
-        if (styleItem != null)
-            return styleItem.Value;
+        if (styleDeclaration != null)
+            return styleDeclaration.Value;
 
         return Stroke;
     }
@@ -211,11 +211,11 @@ public class SvgElement
         if (rawValue != null)
             return double.Parse(rawValue, CultureInfo.InvariantCulture);
 
-        SvgStyleItem styleItem = Style?["stroke-width"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke-width"];
 
-        if (styleItem != null)
+        if (styleDeclaration != null)
         {
-            string valueAsString = styleItem.Value.Trim();
+            string valueAsString = styleDeclaration.Value.Trim();
 
             if (valueAsString.EndsWith("px"))
                 valueAsString = valueAsString[..^2];
@@ -233,10 +233,10 @@ public class SvgElement
         if (rawValue != null)
             return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), rawValue, true);
 
-        SvgStyleItem styleItem = Style?["stroke-linecap"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke-linecap"];
 
-        if (styleItem != null)
-            return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), styleItem.Value, true);
+        if (styleDeclaration != null)
+            return (StrokeLineCap)Enum.Parse(typeof(StrokeLineCap), styleDeclaration.Value, true);
 
         return StrokeLineCap;
     }
@@ -248,10 +248,10 @@ public class SvgElement
         if (rawValue != null)
             return (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), rawValue, true);
 
-        SvgStyleItem styleItem = Style?["stroke-linejoin"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke-linejoin"];
 
-        if (styleItem != null)
-            return (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), styleItem.Value, true);
+        if (styleDeclaration != null)
+            return (StrokeLineJoin)Enum.Parse(typeof(StrokeLineJoin), styleDeclaration.Value, true);
 
         return StrokeLineJoin;
     }
@@ -263,10 +263,10 @@ public class SvgElement
         if (rawValue != null)
             return double.Parse(rawValue, CultureInfo.InvariantCulture);
 
-        SvgStyleItem styleItem = Style?["stroke-dashoffset"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke-dashoffset"];
 
-        if (styleItem != null)
-            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+        if (styleDeclaration != null)
+            return double.Parse(styleDeclaration.Value, CultureInfo.InvariantCulture);
 
         return StrokeDashOffset;
     }
@@ -278,10 +278,10 @@ public class SvgElement
         if (rawValue != null)
             return double.Parse(rawValue, CultureInfo.InvariantCulture);
 
-        SvgStyleItem styleItem = Style?["stroke-miterlimit"];
+        SvgStyleDeclaration styleDeclaration = Style?["stroke-miterlimit"];
 
-        if (styleItem != null)
-            return double.Parse(styleItem.Value, CultureInfo.InvariantCulture);
+        if (styleDeclaration != null)
+            return double.Parse(styleDeclaration.Value, CultureInfo.InvariantCulture);
 
         return StrokeMiterLimit;
     }

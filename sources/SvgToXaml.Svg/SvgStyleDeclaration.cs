@@ -16,14 +16,28 @@
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class CssClass
+public class SvgStyleDeclaration
 {
     public string Name { get; init; }
 
-    public SvgStyle Value { get; init; }
+    public string Value { get; init; }
+
+    public static implicit operator SvgStyleDeclaration(string text)
+    {
+        int pos = text.IndexOf(':');
+
+        if (pos == -1)
+            return null;
+
+        return new SvgStyleDeclaration
+        {
+            Name = text[..pos].Trim(),
+            Value = text[(pos + 1)..].Trim()
+        };
+    }
 
     public override string ToString()
     {
-        return $".{Name}{{{Value}}}";
+        return $"{Name}:{Value}";
     }
 }

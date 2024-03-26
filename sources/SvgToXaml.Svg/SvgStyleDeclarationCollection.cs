@@ -18,41 +18,34 @@ using System.Collections.ObjectModel;
 
 namespace DustInTheWind.SvgToXaml.Svg;
 
-public class SvgStyle : Collection<SvgStyleItem>
+public class SvgStyleDeclarationCollection : Collection<SvgStyleDeclaration>
 {
-    public SvgStyleItem this[string name] => Items.FirstOrDefault(x => x.Name == name);
+    public SvgStyleDeclaration this[string name] => Items.FirstOrDefault(x => x.Name == name);
 
     public override string ToString()
     {
         return string.Join(";", Items);
     }
 
-    public static implicit operator SvgStyle(string text)
+    public static implicit operator SvgStyleDeclarationCollection(string text)
     {
         if (text == null)
             return null;
 
-        SvgStyle svgStyle = new();
+        SvgStyleDeclarationCollection svgStyleDeclarationCollection = new();
 
-        IEnumerable<SvgStyleItem> items = text.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(x =>
-            {
-                string[] parts = x.Split(':', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        IEnumerable<SvgStyleDeclaration> items = ParseItems(text);
 
-                if (parts.Length != 2)
-                    return null;
+        foreach (SvgStyleDeclaration item in items)
+            svgStyleDeclarationCollection.Add(item);
 
-                return new SvgStyleItem
-                {
-                    Name = parts[0],
-                    Value = parts[1]
-                };
-            })
+        return svgStyleDeclarationCollection;
+    }
+
+    private static IEnumerable<SvgStyleDeclaration> ParseItems(string text)
+    {
+        return text.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(x => (SvgStyleDeclaration)x)
             .Where(x => x != null)!;
-
-        foreach (SvgStyleItem item in items)
-            svgStyle.Add(item);
-
-        return svgStyle;
     }
 }
