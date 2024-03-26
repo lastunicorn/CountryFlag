@@ -16,22 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Cambodia_KingFlag : CountryFlag
+public class Bermuda_GovernorFlag : CountryFlag
 {
-    public Cambodia_KingFlag()
+    public Bermuda_GovernorFlag()
     {
-        Country = Countries.Cambodia;
+        Country = Countries.Bermuda;
 
-        Id = "King";
+        Id = "Governor";
         Names = new List<FlagName>
         {
-            new()
-            {
-                EnglishTranslation = "King's Flag"
-            }
+            "Flag of the Governor of Bermuda"
         };
-        Description = "The royal arms in gold centered on a blue field.";
-        StartDate = new FlagDate(1993, 09, 24);
+        Description = "A Union Flag defaced with the coat-of-arms of Bermuda.";
         Usage = FlagUsage.LeaderFlag;
     }
 }

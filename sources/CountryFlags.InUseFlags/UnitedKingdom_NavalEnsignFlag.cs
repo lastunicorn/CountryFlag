@@ -16,22 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Cambodia_KingFlag : CountryFlag
+public class UnitedKingdom_NavalEnsignFlag : CountryFlag
 {
-    public Cambodia_KingFlag()
+    public UnitedKingdom_NavalEnsignFlag()
     {
-        Country = Countries.Cambodia;
+        Country = Countries.UnitedKingdom;
 
-        Id = "King";
+        Id = "NavalEnsign";
         Names = new List<FlagName>
         {
             new()
             {
-                EnglishTranslation = "King's Flag"
+                EnglishTranslation = "White Ensign"
             }
         };
-        Description = "The royal arms in gold centered on a blue field.";
-        StartDate = new FlagDate(1993, 09, 24);
-        Usage = FlagUsage.LeaderFlag;
+        Description = "White field defaced with the Saint George's Cross and the Union placed in the canton.";
+        Usage = FlagUsage.WarEnsign;
     }
 }

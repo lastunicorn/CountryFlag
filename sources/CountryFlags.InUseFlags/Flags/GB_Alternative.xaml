@@ -20,36 +20,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- United Kingdom (1:2 ratio) -->
+    <!-- United Kingdom (Alternative Flag - 3:5 ratio) -->
 
-    <Canvas x:Key="CountryFlag_GB" Width="60" Height="30" Clip="M0,0 H60 V30 H0 z">
+    <Canvas x:Key="CountryFlag_GB_Alternative" Width="50" Height="30" Clip="M0,0 H50 V30 H0 z">
 
         <Rectangle
-            Width="60"
+            Width="50"
             Height="30"
             Fill="#FF012169" />
 
         <Path
-            Data="M0,0L60,30 M60,0L0,30"
+            Data="M0,0L50,30 M50,0L0,30"
             Fill="#FF000000"
             Stroke="#FFFFFFFF"
             StrokeThickness="6" />
 
         <Path
-            Data="M0,0L60,30 M60,0L0,30"
+            Data="M0,0L50,30 M50,0L0,30"
             Fill="#FF000000"
             Stroke="#FFC8102E"
             StrokeThickness="4"
-            Clip="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+            Clip="M25,15 h25 v15 z v15 h-25 z h-25 v-15 z v-15 h25 z" />
 
         <Path
-            Data="M30,0L30,30 M0,15L60,15"
+            Data="M25,0L25,30 M0,15L50,15"
             Fill="#FF000000"
             Stroke="#FFFFFFFF"
             StrokeThickness="10" />
 
         <Path
-            Data="M30,0L30,30 M0,15L60,15"
+            Data="M25,0L25,30 M0,15L50,15"
             Fill="#FF000000"
             Stroke="#FFC8102E"
             StrokeThickness="6" />

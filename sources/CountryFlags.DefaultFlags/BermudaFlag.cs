@@ -24,6 +24,6 @@ public class BermudaFlag : CountryFlag
 
         Description = "Red Ensign with the coat-of-arms of Bermuda in the fly.";
         StartDate = new FlagDate(1999);
-        Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign;
+        Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilEnsign;
     }
 }

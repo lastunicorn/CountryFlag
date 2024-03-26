@@ -16,18 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Bermuda_GovernorFlagFlag : CountryFlag
+public class UnitedKingdom_StateEnsignFlag : CountryFlag
 {
-    public Bermuda_GovernorFlagFlag()
+    public UnitedKingdom_StateEnsignFlag()
     {
-        Country = Countries.Bermuda;
+        Country = Countries.UnitedKingdom;
 
-        Id = "GovernorFlag";
+        Id = "StateEnsign";
         Names = new List<FlagName>
         {
-            "Flag of the Governor of Bermuda"
+            new()
+            {
+                EnglishTranslation = "Blue Ensign"
+            }
         };
-        Description = "A Union Flag defaced with the coat-of-arms of Bermuda.";
-        Usage = FlagUsage.LeaderFlag;
+        Description = "A blue field with the Union occupying one quarter of the field and placed in the canton.";
+        Usage = FlagUsage.StateEnsign;
     }
 }

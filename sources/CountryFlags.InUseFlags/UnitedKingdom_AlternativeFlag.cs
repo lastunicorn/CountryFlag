@@ -16,22 +16,22 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Cambodia_KingFlag : CountryFlag
+public class UnitedKingdom_AlternativeFlag : CountryFlag
 {
-    public Cambodia_KingFlag()
+    public UnitedKingdom_AlternativeFlag()
     {
-        Country = Countries.Cambodia;
+        Country = Countries.UnitedKingdom;
 
-        Id = "King";
+        Id = "Alternative";
         Names = new List<FlagName>
         {
             new()
             {
-                EnglishTranslation = "King's Flag"
+                EnglishTranslation = "Alternative Flag"
             }
         };
-        Description = "The royal arms in gold centered on a blue field.";
-        StartDate = new FlagDate(1993, 09, 24);
-        Usage = FlagUsage.LeaderFlag;
+        Description = "A white-fimbriated symmetric red cross on a blue field with a white-fimbriated counterchanged saltire of red and white.";
+        StartDate = new FlagDate(1801, 01, 01);
+        Usage = FlagUsage.NationalFlag;
     }
 }

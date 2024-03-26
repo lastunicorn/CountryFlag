@@ -16,22 +16,25 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Cambodia_KingFlag : CountryFlag
+public class UnitedKingdom_CivilEnsignFlag : CountryFlag
 {
-    public Cambodia_KingFlag()
+    public UnitedKingdom_CivilEnsignFlag()
     {
-        Country = Countries.Cambodia;
+        Country = Countries.UnitedKingdom;
 
-        Id = "King";
+        Id = "CivilEnsign";
         Names = new List<FlagName>
         {
             new()
             {
-                EnglishTranslation = "King's Flag"
+                EnglishTranslation = "Red Ensign"
+            },
+            new()
+            {
+                EnglishTranslation = "Red Duster"
             }
         };
-        Description = "The royal arms in gold centered on a blue field.";
-        StartDate = new FlagDate(1993, 09, 24);
-        Usage = FlagUsage.LeaderFlag;
+        Description = "Red with the Union Jack occupying one quarter of the field and placed in the canton.";
+        Usage = FlagUsage.CivilEnsign;
     }
 }

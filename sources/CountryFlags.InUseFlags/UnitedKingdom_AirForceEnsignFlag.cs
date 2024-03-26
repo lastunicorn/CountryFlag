@@ -16,22 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Cambodia_KingFlag : CountryFlag
+public class UnitedKingdom_AirForceEnsignFlag : CountryFlag
 {
-    public Cambodia_KingFlag()
+    public UnitedKingdom_AirForceEnsignFlag()
     {
-        Country = Countries.Cambodia;
+        Country = Countries.UnitedKingdom;
 
-        Id = "King";
+        Id = "AirForceEnsign";
         Names = new List<FlagName>
         {
             new()
             {
-                EnglishTranslation = "King's Flag"
+                EnglishTranslation = "Air Force Ensign"
             }
         };
-        Description = "The royal arms in gold centered on a blue field.";
-        StartDate = new FlagDate(1993, 09, 24);
-        Usage = FlagUsage.LeaderFlag;
+        Description = "A field of air force blue with the Union Flag in the canton and the RAF roundel in the middle of the fly.";
+        Usage = FlagUsage.AirForceEnsign;
     }
 }
