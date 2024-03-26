@@ -24,6 +24,6 @@ public class GermanyFlag : CountryFlag
 
         Description = "A horizontal tricolour of black, red, and gold.";
         StartDate = new FlagDate(1949, 05, 23);
-        Usage = FlagUsage.CivilFlag | FlagUsage.StateFlag | FlagUsage.CivilEnsign;
+        Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilEnsign;
     }
 }

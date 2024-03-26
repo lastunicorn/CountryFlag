@@ -23,6 +23,13 @@ public class Bahamas_StateEnsignFlag : CountryFlag
         Country = Countries.Bahamas;
 
         Id = "StateEnsign";
+        Names = new List<FlagName>
+        {
+            new ()
+            {
+                EnglishTranslation = "Flag of the Auxiliary Fleet of the Navy"
+            }
+        };
         Description = "A blue cross on a white field, the national flag in the canton.";
         Usage = FlagUsage.StateEnsign;
     }

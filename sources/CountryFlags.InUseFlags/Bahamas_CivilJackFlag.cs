@@ -16,21 +16,20 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Bahamas_CivilEnsignFlag : CountryFlag
+public class Bahamas_CivilJackFlag : CountryFlag
 {
-    public Bahamas_CivilEnsignFlag()
+    public Bahamas_CivilJackFlag()
     {
         Country = Countries.Bahamas;
 
-        Id = "CivilEnsign";
+        Id = "CivilJack";
         Names = new List<FlagName>
         {
-            new ()
+            new()
             {
-                EnglishTranslation = "Civil Ensign"
+                EnglishTranslation = "Civil Jack"
             }
         };
-        Description = "A white cross on a red field, the national flag in the canton.";
-        Usage = FlagUsage.CivilEnsign;
+        Usage = FlagUsage.NavalJack;
     }
 }

@@ -1,0 +1,85 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Bahamas (Civil Jack)-->
+
+    <Canvas x:Key="CountryFlag_BS_CivilJack" Width="180" Height="90" Clip="M 0,0 0,90 180,90 L 120,45 180,0 z">
+
+        <!-- Background -->
+
+        <Rectangle
+            Fill="#FFCF142B"
+            Width="180"
+            Height="90" />
+
+        <!-- Top-Left Flag -->
+
+        <Canvas Clip="M 0 0 H 180 V 90 H 0 z">
+
+            <Rectangle
+                Fill="#FF00778B"
+                Width="84"
+                Height="39" />
+
+            <Rectangle
+                Fill="#FFFFC72C"
+                Width="84"
+                Height="13"
+                Canvas.Top="13" />
+
+            <Path
+                Data="M0,0L0,39 39,39z"
+                Fill="#FF000000">
+
+                <Path.RenderTransform>
+                    <RotateTransform Angle="-30" CenterX="0" CenterY="39" />
+                </Path.RenderTransform>
+            </Path>
+
+            <Path
+                Data="M0,39L0,0 39,0z"
+                Fill="#FF000000">
+
+                <Path.RenderTransform>
+                    <RotateTransform Angle="30" />
+                </Path.RenderTransform>
+            </Path>
+
+        </Canvas>
+
+        <!-- Cross -->
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="180"
+            Height="12"
+            Canvas.Top="39" />
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="12"
+            Height="90"
+            Canvas.Left="84" />
+
+    </Canvas>
+
+</ResourceDictionary>

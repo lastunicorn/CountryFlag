@@ -23,6 +23,13 @@ public class Bahamas_WarEnsignFlag : CountryFlag
         Country = Countries.Bahamas;
 
         Id = "WarEnsign";
+        Names = new List<FlagName>
+        {
+            new ()
+            {
+                EnglishTranslation = "Naval ensign"
+            }
+        };
         Description = "A red cross on a white field, the national flag in the canton.";
         Usage = FlagUsage.WarEnsign;
     }
