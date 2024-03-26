@@ -40,5 +40,6 @@ public class G : Element
     [XmlElement("g", typeof(G))]
     [XmlElement("use", typeof(Use))]
     [XmlElement("style", typeof(Style))]
+    [XmlElement("text", typeof(Text))]
     public object[] Children { get; set; }
 }

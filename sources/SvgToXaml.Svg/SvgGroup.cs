@@ -128,6 +128,11 @@ public class SvgGroup : SvgElement
                 {
                     CssClasses = style.Value;
                 }
+                else if (serializationChild is Text serializationText)
+                {
+                    SvgText svgText = new(serializationText);
+                    Children.Add(svgText);
+                }
             }
         }
     }

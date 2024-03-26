@@ -73,6 +73,9 @@ internal class SvgUseToXamlConversion : IConversion<UIElement>
             case SvgGroup svgGChild:
                 return new SvgGroupToXamlConversion(svgGChild, svgUse);
 
+            case SvgText svgText:
+                return new SvgTextToXamlConversion(svgText, svgUse);
+
             default:
                 Type inheritedElementType = svgElement.GetType();
                 throw new UnknownElementTypeException(inheritedElementType);

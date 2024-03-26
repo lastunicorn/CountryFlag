@@ -31,8 +31,8 @@ internal abstract class SvgElementToXamlConversion<TSvg, TXaml> : IConversion<TX
 
     protected SvgElementToXamlConversion(TSvg svgElement, SvgElement referrer = null)
     {
-        this.referrer = referrer;
         SvgElement = svgElement ?? throw new ArgumentNullException(nameof(svgElement));
+        this.referrer = referrer;
     }
 
     public TXaml Execute()

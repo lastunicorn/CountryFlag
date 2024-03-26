@@ -99,6 +99,9 @@ internal class SvgGroupToXamlConversion : IConversion<Canvas>
             case SvgUse svgUse:
                 return new SvgUseToXamlConversion(svgUse);
 
+            case SvgText svgText:
+                return new SvgTextToXamlConversion(svgText, referrer);
+
             default:
                 Type inheritedElementType = svgElement.GetType();
                 throw new Exception($"Unknown inherited element type: {inheritedElementType.FullName}");
