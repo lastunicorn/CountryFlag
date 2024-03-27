@@ -52,6 +52,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\BM_StateEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\BT_FirstFlag.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\BT_Variant.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\DE_NavalEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
@@ -295,6 +301,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\NO_STATE.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
         <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Flags\PA_NavalJack.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
       <Page Update="Flags\PK_NavalEnsign.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

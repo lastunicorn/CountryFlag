@@ -22,9 +22,17 @@ public record SvgColor
 {
     private static readonly Regex Regex = new(@"^\s*#([\dabcdef]{3}|[\dabcdef]{6}|[\dabcdef]{8})\s*$", RegexOptions.Singleline);
 
-    private readonly string value;
+    private readonly string rawValue;
 
-    public bool IsEmpty => value == null;
+    public byte A { get; set; }
+
+    public byte R { get; set; }
+
+    public byte G { get; set; }
+
+    public byte B { get; set; }
+
+    public bool IsEmpty => rawValue == null;
 
     public SvgColor(string text)
     {
@@ -33,15 +41,50 @@ public record SvgColor
             Match match = Regex.Match(text);
 
             if (match.Success)
-                value = match.Groups[1].Value;
+            {
+                rawValue = match.Groups[1].Value;
+
+                if (rawValue.Length == 3)
+                {
+                    A = byte.MaxValue;
+                    R = GetChanelValue(rawValue[0]);
+                    G = GetChanelValue(rawValue[1]);
+                    B = GetChanelValue(rawValue[2]);
+                }
+                else if (rawValue.Length == 6)
+                {
+                    A = byte.MaxValue;
+                    R = GetChanelValue(rawValue.Substring(0, 2));
+                    G = GetChanelValue(rawValue.Substring(2, 2));
+                    B = GetChanelValue(rawValue.Substring(4, 2));
+                }
+                else if (rawValue.Length == 8)
+                {
+                    A = GetChanelValue(rawValue.Substring(0, 2));
+                    R = GetChanelValue(rawValue.Substring(2, 2));
+                    G = GetChanelValue(rawValue.Substring(4, 2));
+                    B = GetChanelValue(rawValue.Substring(6, 2));
+                }
+            }
         }
+    }
+
+    private static byte GetChanelValue(char c)
+    {
+        string hexValue = new(c, 2);
+        return Convert.ToByte(hexValue, 16);
+    }
+
+    private static byte GetChanelValue(string hexValue)
+    {
+        return Convert.ToByte(hexValue, 16);
     }
 
     public override string ToString()
     {
-        return string.IsNullOrEmpty(value)
+        return string.IsNullOrEmpty(rawValue)
             ? string.Empty
-            : $"#{value}";
+            : $"#{rawValue}";
     }
 
     public static implicit operator SvgColor(string text)

@@ -70,7 +70,9 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
                 IEnumerable<GradientStop> gradientStops = svgLinearGradient.Stops
                     .Select(x =>
                     {
-                        Color color = (Color)ColorConverter.ConvertFromString(x.StopColor);
+                        //Color color = (Color)ColorConverter.ConvertFromString(x.StopColor);
+
+                        Color color = Color.FromArgb(x.StopColor.A, x.StopColor.R, x.StopColor.G, x.StopColor.B);
                         return new GradientStop(color, x.Offset);
                     });
 

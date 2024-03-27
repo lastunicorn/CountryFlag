@@ -14,30 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.CountryFlags.InUseFlags;
 
-namespace DustInTheWind.SvgToXaml.Svg;
-
-public class SvgStop : SvgElement
+public class Bhutan_FirstFlag : CountryFlag
 {
-    public double Offset { get; set; }
-
-    public SvgColor StopColor { get; set; }
-
-    public SvgStop(Stop stop)
-        : base(stop)
+    public Bhutan_FirstFlag()
     {
-        Offset = stop.Offset;
-        StopColor = stop.StopColor;
+        Country = Countries.Bhutan;
 
-        if (stop.StopOpacitySpecified)
-        {
-            StopColor.A = stop.StopOpacity switch
-            {
-                < 0 => 0,
-                > 1 => 1,
-                _ => (byte)Math.Round(stop.StopOpacity * 255)
-            };
-        }
+        Id = "FirstFlag";
+        Comments = "This illustration of the first national flag of Bhutan, used in 1949 at the signing of the Indo-Bhutan Treaty, is based upon black-and-white photos of the event with colours supplied from later documentation.";
+        StartDate = new FlagDate(1949);
+        EndDate = new FlagDate(1956);
     }
 }

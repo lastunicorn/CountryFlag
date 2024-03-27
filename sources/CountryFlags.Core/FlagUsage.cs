@@ -72,7 +72,7 @@ public enum FlagUsage : ulong
     CivilAndStateEnsign = 0x18,
 
     /// <summary>
-    /// Bit 1, 2, 3, 4, 5
+    /// Bit 0, 1, 2, 3, 4, 5
     /// </summary>
     NationalFlagAndEnsign = 0x3f,
 

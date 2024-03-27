@@ -25,4 +25,9 @@ public class Stop : Element
 
     [XmlAttribute("stop-color")]
     public string StopColor { get; set; }
+
+    [XmlAttribute("stop-opacity")]
+    public double StopOpacity { get; set; }
+    
+    public bool StopOpacitySpecified { get; set; }
 }

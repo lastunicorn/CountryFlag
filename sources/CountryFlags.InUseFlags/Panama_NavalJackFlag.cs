@@ -14,30 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.SvgToXaml.Svg.Serialization;
+namespace DustInTheWind.CountryFlags.InUseFlags;
 
-namespace DustInTheWind.SvgToXaml.Svg;
-
-public class SvgStop : SvgElement
+public class Panama_NavalJackFlag : CountryFlag
 {
-    public double Offset { get; set; }
-
-    public SvgColor StopColor { get; set; }
-
-    public SvgStop(Stop stop)
-        : base(stop)
+    public Panama_NavalJackFlag()
     {
-        Offset = stop.Offset;
-        StopColor = stop.StopColor;
+        Country = Countries.Panama;
 
-        if (stop.StopOpacitySpecified)
+        Id = "NavalJack";
+        Names = new List<FlagName>
         {
-            StopColor.A = stop.StopOpacity switch
-            {
-                < 0 => 0,
-                > 1 => 1,
-                _ => (byte)Math.Round(stop.StopOpacity * 255)
-            };
-        }
+            "Naval Jack"
+        };
+        Usage = FlagUsage.NavalJack;
     }
 }

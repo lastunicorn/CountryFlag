@@ -16,14 +16,13 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Bhutan_AlternateFlagFlag : CountryFlag
+public class Bhutan_VariantFlag : CountryFlag
 {
-    public Bhutan_AlternateFlagFlag()
+    public Bhutan_VariantFlag()
     {
         Country = Countries.Bhutan;
 
-        Id = "AlternateFlag";
-        Description = "Variant of the Flag of Bhutan with a differently rendered dragon";
-        Usage = FlagUsage.NationalFlag;
+        Id = "Variant";
+        Description = "Variant of the Flag of Bhutan with a differently rendered dragon.";
     }
 }
