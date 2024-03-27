@@ -25,7 +25,7 @@ public class SvgElement
 
     public SvgGroup Parent { get; set; }
 
-    public string Fill { get; set; }
+    public SvgPaint Fill { get; set; }
 
     public FillRule? FillRule { get; set; }
 
@@ -159,7 +159,7 @@ public class SvgElement
         return null;
     }
 
-    public string CalculateFill()
+    public SvgPaint CalculateFill()
     {
         string rawValue = GetStyleValueFromClasses("fill");
 

@@ -32,7 +32,7 @@ public partial class App : Application
     {
         FlagsSetup.LoadAllFromAssemblyContaining(typeof(DefaultFlagsRepository));
         FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
-        FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
+        //FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
 
         MainViewModel mainViewModel = new();
         MainWindow mainWindow = new(mainViewModel);

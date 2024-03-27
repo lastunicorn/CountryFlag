@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Xml.Serialization;
 using DustInTheWind.SvgToXaml.Svg.Serialization;
 using Path = DustInTheWind.SvgToXaml.Svg.Serialization.Path;
 
@@ -132,6 +133,11 @@ public class SvgGroup : SvgElement
                 {
                     SvgText svgText = new(serializationText);
                     Children.Add(svgText);
+                }
+                else if (serializationChild is LinearGradient linearGradient)
+                {
+                    SvgLinearGradient svgLinearGradient = new(linearGradient);
+                    Children.Add(svgLinearGradient);
                 }
             }
         }

@@ -16,6 +16,7 @@
 
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Xml;
 using DustInTheWind.SvgToXaml.Svg;
 
 namespace DustInTheWind.SvgToXaml.Conversion;
@@ -44,7 +45,7 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
 
     private void SetFill(IEnumerable<SvgElement> svgElements)
     {
-        string fill = svgElements
+        SvgPaint fill = svgElements
             .Select(x => x.CalculateFill())
             .FirstOrDefault(x => x != null);
 
@@ -52,13 +53,30 @@ internal abstract class SvgShapeToXamlConversion<TSvg, TXaml> : SvgElementToXaml
         {
             XamlElement.Fill = Brushes.Black;
         }
-        else
+        else if (fill.IsNone)
         {
-            bool isNone = string.Compare(fill, "none", StringComparison.OrdinalIgnoreCase) == 0;
+            XamlElement.Fill = null;
+        }
+        else if (!fill.Color.IsEmpty)
+        {
+            XamlElement.Fill = (Brush)new BrushConverter().ConvertFrom(fill.Color.ToString())!;
+        }
+        else if (!fill.Url.IsEmpty)
+        {
+            SvgElement referencedElement = SvgElement.GetParentSvg().FindChild(fill.Url.ReferencedId);
 
-            XamlElement.Fill = isNone
-                ? null
-                : (Brush)new BrushConverter().ConvertFrom(fill)!;
+            if (referencedElement is SvgLinearGradient svgLinearGradient)
+            {
+                IEnumerable<GradientStop> gradientStops = svgLinearGradient.Stops
+                    .Select(x =>
+                    {
+                        Color color = (Color)ColorConverter.ConvertFromString(x.StopColor);
+                        return new GradientStop(color, x.Offset);
+                    });
+
+                GradientStopCollection gradientStopCollection = new(gradientStops);
+                XamlElement.Fill = new LinearGradientBrush(gradientStopCollection);
+            }
         }
     }
 

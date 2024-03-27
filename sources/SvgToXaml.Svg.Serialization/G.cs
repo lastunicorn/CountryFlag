@@ -41,5 +41,6 @@ public class G : Element
     [XmlElement("use", typeof(Use))]
     [XmlElement("style", typeof(Style))]
     [XmlElement("text", typeof(Text))]
+    [XmlElement("linearGradient", typeof(LinearGradient))]
     public object[] Children { get; set; }
 }
