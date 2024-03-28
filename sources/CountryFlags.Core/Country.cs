@@ -45,4 +45,9 @@ public class Country
     {
         Flags = new CountryFlagCollection(this);
     }
+
+    public override string ToString()
+    {
+        return $"{ShortName} ({IsoCodeAlpha2})";
+    }
 }

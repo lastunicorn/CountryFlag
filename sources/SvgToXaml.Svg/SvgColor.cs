@@ -20,7 +20,7 @@ namespace DustInTheWind.SvgToXaml.Svg;
 
 public record SvgColor
 {
-    private static readonly Regex Regex = new(@"^\s*#([\dabcdef]{3}|[\dabcdef]{6}|[\dabcdef]{8})\s*$", RegexOptions.Singleline);
+    private static readonly Regex Regex = new(@"^\s*#([\dabcdef]{3}|[\dabcdef]{6}|[\dabcdef]{8})\s*$", RegexOptions.Singleline | RegexOptions.IgnoreCase);
 
     private readonly string rawValue;
 

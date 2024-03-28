@@ -29,6 +29,7 @@ public class Bolivia_StateFlag : CountryFlag
         };
         Description = "A horizontal tricolor of red, yellow and green with the coat of arms.";
         StartDate = new DateTime(1851, 10, 31);
+        DesignedBy = "Manuel Isidoro Belzu";
         Usage = FlagUsage.StateFlag | FlagUsage.WarFlag | FlagUsage.StateEnsign;
     }
 }

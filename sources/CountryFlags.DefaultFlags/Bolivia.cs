@@ -32,6 +32,7 @@ public class Bolivia : CountryFlag
         };
         Description = "A horizontal tricolor of red, yellow and green.";
         StartDate = new FlagDate(1851, 10, 31);
+        DesignedBy = "Manuel Isidoro Belzu";
         Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign;
     }
 }
