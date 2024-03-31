@@ -1,4 +1,4 @@
-CountryFlags 1.0.0
+CountryFlags 1.1.0
 ====================================================================================================
 
 A WPF user control and a library containing the flags used by the world's countries.
