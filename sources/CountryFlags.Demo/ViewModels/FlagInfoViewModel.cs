@@ -36,9 +36,9 @@ public class FlagInfoViewModel
 
     public string FlagUsageDescription { get; }
 
-    public FlagDate? StartDate { get; }
+    public Date? StartDate { get; }
 
-    public FlagDate? EndDate { get; }
+    public Date? EndDate { get; }
 
     public ExportCommand ExportCommand { get; }
 
@@ -70,8 +70,8 @@ public class FlagInfoViewModel
         FlagUsage = countryFlag?.Usage ?? FlagUsage.None;
         FlagUsageDescription = countryFlag?.Usage.ToDisplayString() ?? string.Empty;
 
-        StartDate = countryFlag?.StartDate;
-        EndDate = countryFlag?.EndDate;
+        StartDate = countryFlag?.StartDate?.Date;
+        EndDate = countryFlag?.EndDate?.Date;
 
         ExportCommand = new ExportCommand(countryFlag);
 

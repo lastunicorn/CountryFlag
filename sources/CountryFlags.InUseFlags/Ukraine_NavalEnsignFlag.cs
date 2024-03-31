@@ -14,31 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.DefaultFlags;
+namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class UkraineFlag : CountryFlag
+public class Ukraine_NavalEnsignFlag : CountryFlag
 {
-    public UkraineFlag()
+    public Ukraine_NavalEnsignFlag()
     {
         Country = Countries.Ukraine;
 
-        Description = "A horizontal bicolour of blue and yellow.";
-        StartDate = new FlagDate(2006, 09, 01);
-        OtherDates = new List<FlagDate>
+        Id = "NavalEnsign";
+        Names = new List<FlagName>
         {
-            new(1918, 03, 22)
+            new()
             {
-                Description = "officially adopted"
-            },
-            new(1991, 08, 24)
-            {
-                Description = "de facto restored"
-            },
-            new(1992, 01, 28)
-            {
-                Description = "officially restored, current design"
+                EnglishTranslation = "Naval Ensign"
             }
         };
-        Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign;
+        Description = "White with a blue Saint George's cross that extends to the edges of the flag, with the national bicolour in the canton.";
+        StartDate = new FlagDate(2006, 06, 20);
+        Usage = FlagUsage.WarEnsign;
     }
 }

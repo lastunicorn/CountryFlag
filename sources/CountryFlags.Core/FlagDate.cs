@@ -14,11 +14,60 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System.Security.Cryptography;
 using System.Text;
+using System.Xml.Linq;
 
 namespace DustInTheWind.CountryFlags;
 
-public readonly struct FlagDate
+public class FlagDate
+{
+    public Date Date { get; init; }
+
+    public string Description { get; init; }
+
+    public FlagDate(Date date)
+    {
+        Date = date;
+        Description = string.Empty;
+    }
+
+    public FlagDate(DateTime dateTime)
+    {
+        Date = new Date(dateTime.Year, dateTime.Month, dateTime.Day);
+        Description = string.Empty;
+    }
+
+    public FlagDate(int year)
+    {
+        Date = new Date(year);
+        Description = string.Empty;
+    }
+
+    public FlagDate(int year, int month)
+    {
+        Date = new Date(year, month);
+        Description = string.Empty;
+    }
+
+    public FlagDate(int year, int month, int day)
+    {
+        Date = new Date(year, month, day);
+        Description = string.Empty;
+    }
+
+    public static implicit operator FlagDate(Date date)
+    {
+        return new FlagDate(date);
+    }
+
+    public static implicit operator FlagDate(DateTime dateTime)
+    {
+        return new FlagDate(dateTime);
+    }
+}
+
+public readonly struct Date
 {
     public int Year { get; }
 
@@ -26,21 +75,21 @@ public readonly struct FlagDate
 
     public int? Day { get; }
 
-    public FlagDate(int year)
+    public Date(int year)
     {
         Year = year;
         Month = null;
         Day = null;
     }
 
-    public FlagDate(int year, int month)
+    public Date(int year, int month)
     {
         Year = year;
         Month = month;
         Day = null;
     }
 
-    public FlagDate(int year, int month, int day)
+    public Date(int year, int month, int day)
     {
         Year = year;
         Month = month;
@@ -62,8 +111,8 @@ public readonly struct FlagDate
         return sb.ToString();
     }
 
-    public static implicit operator FlagDate(DateTime dateTime)
+    public static implicit operator Date(DateTime dateTime)
     {
-        return new FlagDate(dateTime.Year, dateTime.Month, dateTime.Day);
+        return new Date(dateTime.Year, dateTime.Month, dateTime.Day);
     }
 }

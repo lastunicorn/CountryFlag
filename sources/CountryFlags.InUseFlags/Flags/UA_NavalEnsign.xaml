@@ -1,0 +1,74 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ukraine (Naval Ensign) -->
+
+    <Canvas x:Key="CountryFlag_UA_NavalEnsign" Width="90" Height="60">
+
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="90"
+            Height="60" />
+
+        <Path
+            Data="M520,400L520,800 680,800 680,0 600,0 600,400z"
+            Fill="#FF005BBB">
+
+            <Path.RenderTransform>
+                <ScaleTransform ScaleX="0.075" ScaleY="0.075" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M600,320L600,400 0,400 0,480C400,480,1200,480,1200,480L1200,320z"
+            Fill="#FF005BBB">
+            
+            <Path.RenderTransform>
+                <ScaleTransform ScaleX="0.075" ScaleY="0.075" />
+            </Path.RenderTransform>
+        </Path>
+
+        <Path
+            Data="M45,0L45,60 M0,30L90,30"
+            Fill="#FF000000"
+            Stroke="#FFFFFFFF"
+            StrokeThickness="9" />
+
+        <Path
+            Data="M45,0L45,60 M0,30L90,30"
+            Fill="#FF000000"
+            Stroke="#FF005BBB"
+            StrokeThickness="6" />
+
+        <Rectangle
+            Fill="#FFFFD500"
+            Width="40.5"
+            Height="25.5" />
+
+        <Rectangle
+            Fill="#FF005BBB"
+            Width="40.5"
+            Height="12.75" />
+
+    </Canvas>
+
+</ResourceDictionary>

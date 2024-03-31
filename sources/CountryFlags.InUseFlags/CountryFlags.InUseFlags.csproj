@@ -340,6 +340,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\PA_President.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\UA_Variant.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\UA_NavalEnsign.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\VE_StateAndWar.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>

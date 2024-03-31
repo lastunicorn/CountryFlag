@@ -14,31 +14,26 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.DefaultFlags;
+namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class UkraineFlag : CountryFlag
+public class Ukraine_VariantFlag : CountryFlag
 {
-    public UkraineFlag()
+    public Ukraine_VariantFlag()
     {
         Country = Countries.Ukraine;
 
-        Description = "A horizontal bicolour of blue and yellow.";
-        StartDate = new FlagDate(2006, 09, 01);
-        OtherDates = new List<FlagDate>
+        Id = "Variant";
+        Names = new List<FlagName>
         {
-            new(1918, 03, 22)
+            new()
             {
-                Description = "officially adopted"
-            },
-            new(1991, 08, 24)
-            {
-                Description = "de facto restored"
-            },
-            new(1992, 01, 28)
-            {
-                Description = "officially restored, current design"
+                EnglishTranslation = "Variant Flag"
             }
         };
+        Description = "The sky-blue version that was official in 1991–1992.";
+        Comments = "This variant is still in widespread use next to the current darker version.";
+        StartDate = new FlagDate(1991);
+        EndDate = new FlagDate(1992);
         Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

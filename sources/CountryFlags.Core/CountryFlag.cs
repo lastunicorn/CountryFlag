@@ -53,6 +53,8 @@ public class CountryFlag
 
     public FlagDate? EndDate { get; init; }
 
+    public List<FlagDate> OtherDates { get; init; } = new();
+
     public StringList? DesignedBy { get; init; }
 
     public FlagUsage Usage { get; init; }
