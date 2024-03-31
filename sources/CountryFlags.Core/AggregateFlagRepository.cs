@@ -18,7 +18,7 @@ using System.Collections;
 using System.Collections.Concurrent;
 using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.CountryFlags;
 
 internal class AggregateFlagRepository : IFlagRepository, IEnumerable<IFlagRepository>
 {

@@ -21,7 +21,6 @@ using System.Resources;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags;
 

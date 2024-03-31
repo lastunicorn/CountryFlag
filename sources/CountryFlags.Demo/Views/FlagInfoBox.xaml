@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:viewModels="clr-namespace:DustInTheWind.CountryFlags.Demo.ViewModels"
-    xmlns:countryFlags1="clr-namespace:DustInTheWind.CountryFlags;assembly=DustInTheWind.CountryFlags.Core"
-    xmlns:converters="clr-namespace:DustInTheWind.Flags.Core.Converters;assembly=DustInTheWind.Flags.Core"
+    xmlns:countryFlags="clr-namespace:DustInTheWind.CountryFlags;assembly=DustInTheWind.CountryFlags.Core"
+    xmlns:converters="clr-namespace:DustInTheWind.CountryFlags.Converters;assembly=DustInTheWind.CountryFlags.Core"
 
     mc:Ignorable="d"
     d:DesignHeight="450"
@@ -235,7 +235,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Text="{Binding FlagUsageDescription}"
                 TextWrapping="Wrap" />
 
-            <countryFlags1:FlagUsageBox
+            <countryFlags:FlagUsageBox
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 Value="{Binding FlagUsage}"

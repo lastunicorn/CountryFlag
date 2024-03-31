@@ -44,7 +44,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <ItemGroup>
       <ProjectReference Include="..\CountryFlags.Core\CountryFlags.Core.csproj" />
-      <ProjectReference Include="..\Flags.Core\Flags.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

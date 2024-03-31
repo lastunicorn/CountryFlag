@@ -17,7 +17,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.CountryFlags;
 
 public class FlagBox : Control
 {

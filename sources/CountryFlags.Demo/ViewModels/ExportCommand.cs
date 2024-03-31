@@ -22,7 +22,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using DustInTheWind.CountryFlags.Demo.Views;
-using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 

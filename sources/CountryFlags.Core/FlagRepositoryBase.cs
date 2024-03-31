@@ -16,25 +16,27 @@
 
 using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.CountryFlags;
 
-public class EmptyFlagRepository : IFlagRepository
+public abstract class FlagRepositoryBase : IFlagRepository
 {
-    public string Id => "empty";
+    public abstract string Id { get; }
 
-    public static Canvas MissingFlag => GetMissingFlagCanvas();
-
-    public Canvas GetCanvas(FlagId flagId)
+    public Canvas? GetCanvas(FlagId flagId)
     {
-        return GetMissingFlagCanvas();
-    }
+        bool flagIdMatchRepository = flagId.MatchRepository(Id);
+        if (!flagIdMatchRepository)
+            return null;
 
-    private static Canvas GetMissingFlagCanvas()
-    {
-        return new Canvas
+        try
         {
-            Width = 1,
-            Height = 1
-        };
+            return GetCanvasInternal(flagId);
+        }
+        catch
+        {
+            return null;
+        }
     }
+
+    protected abstract Canvas? GetCanvasInternal(FlagId flagId);
 }

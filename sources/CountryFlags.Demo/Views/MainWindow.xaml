@@ -23,10 +23,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:core="clr-namespace:DustInTheWind.Flags.Core;assembly=DustInTheWind.Flags.Core"
     xmlns:views="clr-namespace:DustInTheWind.CountryFlags.Demo.Views"
     xmlns:viewModels="clr-namespace:DustInTheWind.CountryFlags.Demo.ViewModels"
     xmlns:demo="clr-namespace:DustInTheWind.CountryFlags.Demo"
+    xmlns:countryFlags="clr-namespace:DustInTheWind.CountryFlags;assembly=DustInTheWind.CountryFlags.Core"
 
     mc:Ignorable="d"
     Title="MainWindow"
@@ -65,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Width="20"
                             Visibility="{Binding IsAdditional, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
-                        <core:FlagBox
+                        <countryFlags:FlagBox
                             DockPanel.Dock="Left"
                             CountryCode="{Binding Id}"
                             MaxHeight="16"
@@ -122,18 +122,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 Background="Transparent"
                 Padding="10">
 
-                <core:FlagBox
+                <countryFlags:FlagBox
                     CountryCode="{Binding FlagId}">
 
-                    <core:FlagBox.Effect>
+                    <countryFlags:FlagBox.Effect>
                         <DropShadowEffect
                             Color="Black"
                             Direction="0"
                             ShadowDepth="0"
                             BlurRadius="10" />
-                    </core:FlagBox.Effect>
+                    </countryFlags:FlagBox.Effect>
 
-                </core:FlagBox>
+                </countryFlags:FlagBox>
             </demo:ZoomBorder>
 
         </DockPanel>

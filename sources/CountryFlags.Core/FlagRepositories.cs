@@ -16,7 +16,7 @@
 
 using System.Reflection;
 
-namespace DustInTheWind.Flags.Core;
+namespace DustInTheWind.CountryFlags;
 
 public static class FlagRepositories
 {

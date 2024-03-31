@@ -15,7 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Reflection;
-using DustInTheWind.Flags.Core;
 
 namespace DustInTheWind.CountryFlags;
 

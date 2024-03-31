@@ -14,30 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Globalization;
-using System.Windows;
-using System.Windows.Data;
+using System.Windows.Controls;
 
-namespace DustInTheWind.Flags.Core.Converters;
+namespace DustInTheWind.CountryFlags;
 
-[Localizability(LocalizationCategory.NeverLocalize)]
-public class NullToVisibilityConverter : IValueConverter
+public class EmptyFlagRepository : IFlagRepository
 {
-    public bool Inverse { get; set; }
+    public string Id => "empty";
 
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public static Canvas MissingFlag => GetMissingFlagCanvas();
+
+    public Canvas GetCanvas(FlagId flagId)
     {
-        return Inverse
-            ? value == null
-                ? Visibility.Visible
-                : Visibility.Collapsed
-            : value == null
-                ? Visibility.Collapsed
-                : Visibility.Visible;
+        return GetMissingFlagCanvas();
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    private static Canvas GetMissingFlagCanvas()
     {
-        return DependencyProperty.UnsetValue;
+        return new Canvas
+        {
+            Width = 1,
+            Height = 1
+        };
     }
 }
