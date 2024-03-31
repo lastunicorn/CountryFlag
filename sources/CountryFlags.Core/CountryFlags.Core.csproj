@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <UseWPF>true</UseWPF>
         <AssemblyName>DustInTheWind.CountryFlags.Core</AssemblyName>
         <RootNamespace>DustInTheWind.CountryFlags</RootNamespace>
-        <Description>A resource library containing the country flags as vectorial graphics.</Description>
+        <Description>A core WPF library containing user controls to display flags.</Description>
         <PackageProjectUrl>https://github.com/lastunicorn/CountryFlags</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
         <PackageTags>flags;country;country-flags</PackageTags>
