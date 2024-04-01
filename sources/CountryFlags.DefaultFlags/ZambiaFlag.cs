@@ -23,7 +23,10 @@ public class ZambiaFlag : CountryFlag
         Country = Countries.Zambia;
 
         Description = "A green field with an orange coloured eagle in flight over a rectangular block of three vertical stripes coloured from left to right in red, black and orange";
-        StartDate = new FlagDate(1964, 10, 24);
+        StartDate = new FlagDate(1964, 10, 24)
+        {
+            Description = "modified in 1996"
+        };
         DesignedBy = "Gabriel Ellison";
         Usage = FlagUsage.NationalFlagAndEnsign;
     }

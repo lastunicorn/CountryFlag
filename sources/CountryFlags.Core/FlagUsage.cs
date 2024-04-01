@@ -37,16 +37,6 @@ public enum FlagUsage : ulong
     WarFlag = 0x4,
 
     /// <summary>
-    /// Bit 0, 1 ,2
-    /// </summary>
-    NationalFlag = 0x7,
-
-    /// <summary>
-    /// Bit 0, 1
-    /// </summary>
-    CivilAndStateFlag = 0x3,
-
-    /// <summary>
     /// Bit 3
     /// </summary>
     CivilEnsign = 0x8,
@@ -62,9 +52,19 @@ public enum FlagUsage : ulong
     WarEnsign = 0x20,
 
     /// <summary>
+    /// Bit 0, 1 ,2
+    /// </summary>
+    NationalFlag = 0x7,
+
+    /// <summary>
     /// Bit 3, 4, 5
     /// </summary>
     NationalEnsign = 0x38,
+
+    /// <summary>
+    /// Bit 0, 1
+    /// </summary>
+    CivilAndStateFlag = 0x3,
 
     /// <summary>
     /// Bit 3, 4
@@ -75,6 +75,16 @@ public enum FlagUsage : ulong
     /// Bit 0, 3
     /// </summary>
     CivilFlagAndEnsign = 0x9,
+
+    /// <summary>
+    /// Bit 1, 4
+    /// </summary>
+    StateFlagAndEnsign = 0x12,
+
+    /// <summary>
+    /// Bit 2, 5
+    /// </summary>
+    WarFlagAndEnsign = 0x24,
 
     /// <summary>
     /// Bit 0, 1, 2, 3, 4, 5

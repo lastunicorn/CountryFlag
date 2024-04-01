@@ -29,72 +29,64 @@ public static class FlagUsageExtensions
         {
             items.Add("national flag and ensign");
         }
+        else if (flagUsage.HasFlag(FlagUsage.CivilFlagAndEnsign))
+        {
+            items.Add("civil flag and ensign");
+        }
+        else if (flagUsage.HasFlag(FlagUsage.StateFlagAndEnsign))
+        {
+            items.Add("state flag and ensign");
+        }
+        else if (flagUsage.HasFlag(FlagUsage.WarFlagAndEnsign))
+        {
+            items.Add("war flag and ensign");
+        }
+        else if (flagUsage.HasFlag(FlagUsage.NationalFlag))
+        {
+            items.Add("national flag");
+        }
+        else if (flagUsage.HasFlag(FlagUsage.NationalEnsign))
+        {
+            items.Add("national ensign");
+        }
         else
         {
-            if (flagUsage.HasFlag(FlagUsage.NationalFlag))
+            // Add flag items
+
+            List<string> flagItems = new();
+
+            if (flagUsage.HasFlag(FlagUsage.CivilFlag))
+                flagItems.Add("civil");
+
+            if (flagUsage.HasFlag(FlagUsage.StateFlag))
+                flagItems.Add("state");
+
+            if (flagUsage.HasFlag(FlagUsage.WarFlag))
+                flagItems.Add("war");
+
+            if (flagItems.Count > 0)
             {
-                items.Add("national flag");
-            }
-            else
-            {
-                List<string> subItems = new();
-
-                if (flagUsage.HasFlag(FlagUsage.CivilFlag))
-                    subItems.Add("civil");
-
-                if (flagUsage.HasFlag(FlagUsage.StateFlag))
-                    subItems.Add("state");
-
-                if (flagUsage.HasFlag(FlagUsage.WarFlag))
-                    subItems.Add("war");
-
-                if (subItems.Count > 0)
-                {
-                    string text = string.Join(" and ", subItems);
-                    items.Add(text + " flag");
-                }
-
-                //if (flagUsage.HasFlag(FlagUsage.CivilFlag))
-                //    items.Add("civil flag");
-
-                //if (flagUsage.HasFlag(FlagUsage.StateFlag))
-                //    items.Add("state flag");
-
-                //if (flagUsage.HasFlag(FlagUsage.WarFlag))
-                //    items.Add("war flag");
+                string text = string.Join(" and ", flagItems);
+                items.Add(text + " flag");
             }
 
-            if (flagUsage.HasFlag(FlagUsage.NationalEnsign))
+            // Add ensign items
+
+            List<string> ensignItems = new();
+
+            if (flagUsage.HasFlag(FlagUsage.CivilEnsign))
+                ensignItems.Add("civil");
+
+            if (flagUsage.HasFlag(FlagUsage.StateEnsign))
+                ensignItems.Add("state");
+
+            if (flagUsage.HasFlag(FlagUsage.WarEnsign))
+                ensignItems.Add("war");
+
+            if (ensignItems.Count > 0)
             {
-                items.Add("national ensign");
-            }
-            else
-            {
-                List<string> subItems = new();
-
-                if (flagUsage.HasFlag(FlagUsage.CivilEnsign))
-                    subItems.Add("civil");
-
-                if (flagUsage.HasFlag(FlagUsage.StateEnsign))
-                    subItems.Add("state");
-
-                if (flagUsage.HasFlag(FlagUsage.WarEnsign))
-                    subItems.Add("war");
-
-                if (subItems.Count > 0)
-                {
-                    string text = string.Join(" and ", subItems);
-                    items.Add(text + " ensign");
-                }
-
-                //if (flagUsage.HasFlag(FlagUsage.CivilEnsign))
-                //    items.Add("civil ensign");
-
-                //if (flagUsage.HasFlag(FlagUsage.StateEnsign))
-                //    items.Add("state ensign");
-
-                //if (flagUsage.HasFlag(FlagUsage.WarEnsign))
-                //    items.Add("war ensign");
+                string text = string.Join(" and ", ensignItems);
+                items.Add(text + " ensign");
             }
         }
 

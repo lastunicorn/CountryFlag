@@ -16,15 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Finland_TailedStateFlagFlag : CountryFlag
+public class Zimbabwe_PresidentFlag : CountryFlag
 {
-    public Finland_TailedStateFlagFlag()
+    public Zimbabwe_PresidentFlag()
     {
-        Country = Countries.Finland;
+        Country = Countries.Zimbabwe;
 
-        Id = "TailedStateFlag";
-        Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red), swallow-tailed.";
-        StartDate = new FlagDate(1978);
-        Usage = FlagUsage.WarFlag | FlagUsage.WarEnsign;
+        Id = "President";
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                EnglishTranslation = "President's Flag"
+            }
+        };
+        StartDate = new FlagDate(1987);
+        Usage = FlagUsage.LeaderFlag;
     }
 }

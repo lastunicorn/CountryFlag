@@ -16,19 +16,20 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Finland_StateFlag : CountryFlag
+public class Uzbekistan_PresidentFlag : CountryFlag
 {
-    public Finland_StateFlag()
+    public Uzbekistan_PresidentFlag()
     {
-        Country = Countries.Finland;
+        Country = Countries.Uzbekistan;
 
-        Id = "State";
+        Id = "President";
         Names = new List<FlagName>
         {
-            "State flag and ensign"
+            new()
+            {
+                EnglishTranslation = "President's Flag"
+            }
         };
-        Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red).";
-        StartDate = new FlagDate(1978);
-        Usage = FlagUsage.StateFlagAndEnsign;
+        Usage = FlagUsage.LeaderFlag;
     }
 }

@@ -16,19 +16,22 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Finland_StateFlag : CountryFlag
+public class Finland_WarFlag : CountryFlag
 {
-    public Finland_StateFlag()
+    public Finland_WarFlag()
     {
         Country = Countries.Finland;
 
-        Id = "State";
+        Id = "War";
         Names = new List<FlagName>
         {
-            "State flag and ensign"
+            new()
+            {
+                EnglishTranslation = "War flag and naval ensign"
+            }
         };
-        Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red).";
+        Description = "Sea-blue Nordic cross on white field, rectangular Coat of Arms of Finland (colours gold and silver on red), swallow-tailed.";
         StartDate = new FlagDate(1978);
-        Usage = FlagUsage.StateFlagAndEnsign;
+        Usage = FlagUsage.WarFlagAndEnsign;
     }
 }
