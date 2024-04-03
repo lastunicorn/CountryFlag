@@ -16,33 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Poland_PresidentFlag : CountryFlag
+public class Czechia_UnitColourFlag : CountryFlag
 {
-    public Poland_PresidentFlag()
+    public Czechia_UnitColourFlag()
     {
-        Country = Countries.Poland;
+        Country = Countries.Czechia;
 
-        Id = "President";
+        Id = "UnitColour";
         Names = new List<FlagName>
         {
-            "Presidential standard"
-        };
-        Description = "Crowned white eagle in a red field bordered with a white wavy line.";
-        StartDate = new FlagDate(1919)
-        {
-            Description = "original"
-        };
-        OtherDates = new List<FlagDate>
-        {
-            new(1927)
+            new()
             {
-                Description = "officially"
-            },
-            new(1996, 01, 26)
-            {
-                Description = "restored"
+                EnglishTranslation = "Unit colour"
             }
         };
-        Usage = FlagUsage.LeaderFlag;
+        StartDate = new FlagDate(1993);
+        Usage = FlagUsage.WarFlag;
     }
 }

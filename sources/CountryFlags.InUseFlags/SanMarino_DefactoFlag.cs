@@ -16,33 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Poland_PresidentFlag : CountryFlag
+public class SanMarino_DefactoFlag : CountryFlag
 {
-    public Poland_PresidentFlag()
+    public SanMarino_DefactoFlag()
     {
-        Country = Countries.Poland;
+        Country = Countries.SanMarino;
 
-        Id = "President";
+        Id = "Defacto";
         Names = new List<FlagName>
         {
-            "Presidential standard"
+            "Defacto flag"
         };
-        Description = "Crowned white eagle in a red field bordered with a white wavy line.";
-        StartDate = new FlagDate(1919)
-        {
-            Description = "original"
-        };
-        OtherDates = new List<FlagDate>
-        {
-            new(1927)
-            {
-                Description = "officially"
-            },
-            new(1996, 01, 26)
-            {
-                Description = "restored"
-            }
-        };
-        Usage = FlagUsage.LeaderFlag;
+        Description = "Plain white-blue bicolor.";
+        Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign;
     }
 }

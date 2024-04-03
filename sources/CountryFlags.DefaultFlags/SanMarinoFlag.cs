@@ -22,11 +22,11 @@ public class SanMarinoFlag : CountryFlag
     {
         Country = Countries.SanMarino;
 
-        Names = new List<FlagName>
+        Description = "A horizontal bicolour of white and light blue; charged with the national coat of arms in the centre.";
+        StartDate = new FlagDate(2011, 07, 22)
         {
-            "Civil flag"
+            Description = "standardized"
         };
-        Description = "Plain white-blue bicolor.";
-        Usage = FlagUsage.CivilFlag | FlagUsage.CivilEnsign;
+        Usage = FlagUsage.NationalFlagAndEnsign;
     }
 }

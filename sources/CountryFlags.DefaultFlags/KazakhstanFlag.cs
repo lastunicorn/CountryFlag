@@ -22,6 +22,9 @@ public class KazakhstanFlag : CountryFlag
     {
         Country = Countries.Kazakhstan;
 
-        ;
+        Description = "A gold sun with 32 rays above a soaring golden steppe eagle, both centered on a turquoise field. The hoist side displays a national ornamental pattern \"qoşqar-müiız\"";
+        StartDate = new FlagDate(1992, 07, 04);
+        DesignedBy = "Shaken Niyazbekov";
+        Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign;
     }
 }

@@ -22,6 +22,9 @@ public class KiribatiFlag : CountryFlag
     {
         Country = Countries.Kiribati;
 
-        ;
+        Description = "A horizontal bicolour of red and blue with the yellow frigate bird flying over the rising sun with seventeen rays centered on the upper half and three white wavy horizontal stripes on the lower half.";
+        StartDate = new FlagDate(1979, 07, 12);
+        DesignedBy = "Arthur Grimble";
+        Usage = FlagUsage.NationalFlagAndEnsign;
     }
 }

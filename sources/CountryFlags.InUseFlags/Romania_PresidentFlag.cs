@@ -16,31 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Poland_PresidentFlag : CountryFlag
+public class Romania_PresidentFlag : CountryFlag
 {
-    public Poland_PresidentFlag()
+    public Romania_PresidentFlag()
     {
-        Country = Countries.Poland;
+        Country = Countries.Romania;
 
         Id = "President";
         Names = new List<FlagName>
         {
-            "Presidential standard"
-        };
-        Description = "Crowned white eagle in a red field bordered with a white wavy line.";
-        StartDate = new FlagDate(1919)
-        {
-            Description = "original"
-        };
-        OtherDates = new List<FlagDate>
-        {
-            new(1927)
+            new()
             {
-                Description = "officially"
-            },
-            new(1996, 01, 26)
-            {
-                Description = "restored"
+                EnglishTranslation = "President's Flag"
             }
         };
         Usage = FlagUsage.LeaderFlag;

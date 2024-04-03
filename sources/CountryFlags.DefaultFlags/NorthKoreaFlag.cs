@@ -22,6 +22,23 @@ public class NorthKoreaFlag : CountryFlag
     {
         Country = Countries.NorthKorea;
 
-        ;
+        Description = "A wide red stripe at the centre, bordered by a narrow white stripe both above and below, followed by a blue stripe. The central red stripe carries a five-pointed red star within a white circle near the hoist.";
+        StartDate = new FlagDate(1948, 07, 10)
+        {
+            Description = "introduced"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1948, 09, 08)
+            {
+                Description = "official"
+            }
+        };
+        DesignedBy = new StringList
+        {
+            "Kim Il Sung (North Korean official claim)",
+            "Kim Tu-bong"
+        };
+        Usage = FlagUsage.NationalFlagAndEnsign;
     }
 }

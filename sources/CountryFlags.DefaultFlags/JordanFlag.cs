@@ -22,6 +22,8 @@ public class JordanFlag : CountryFlag
     {
         Country = Countries.Jordan;
 
-        ;
+        Description = "A horizontal triband of black, white and green; with a red chevron based on the hoist side containing a white seven-pointed star";
+        StartDate = new FlagDate(1928, 04, 16);
+        Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

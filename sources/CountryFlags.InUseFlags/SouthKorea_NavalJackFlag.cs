@@ -16,19 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class SanMarino_StateFlag : CountryFlag
+public class SouthKorea_NavalJackFlag : CountryFlag
 {
-    public SanMarino_StateFlag()
+    public SouthKorea_NavalJackFlag()
     {
-        Country = Countries.SanMarino;
+        Country = Countries.SouthKorea;
 
-        Id = "State";
+        Id = "NavalJack";
         Names = new List<FlagName>
         {
-            "State flag"
+            new()
+            {
+                EnglishTranslation = "Naval Jack"
+            }
         };
-        Description = "A horizontal bicolour of white and light blue; charged with the national coat of arms in the centre.";
-        StartDate = new FlagDate(2011, 07, 22);
-        Usage = FlagUsage.StateFlag | FlagUsage.WarFlag;
+        Description = "A Blue Ensign with a white canton that has a red and blue taegeuk superimposed in the center of the canton, with two anchors crossing.";
+        Usage = FlagUsage.NavalJack;
     }
 }

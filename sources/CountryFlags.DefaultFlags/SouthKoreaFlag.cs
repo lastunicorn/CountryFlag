@@ -22,6 +22,43 @@ public class SouthKoreaFlag : CountryFlag
     {
         Country = Countries.SouthKorea;
 
-        ;
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                NativeName = "태극기"
+            },
+            new()
+            {
+                NativeName = "太極旗"
+            }
+        };
+        Description = "A white field with a centered red and blue taegeuk surrounded by four trigrams";
+        StartDate = new FlagDate(1883, 01, 27)
+        {
+            Description = "original version, used by the Joseon dynasty"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1942, 06, 29)
+            {
+                Description = "during Japanese occupation, by the exiled Provisional Government of the Republic of Korea"
+            },
+            new(1949, 10, 15)
+            {
+                Description = "for South Korea, by the first Republic of Korea, current geometry"
+            },
+            new(2011, 05, 30)
+            {
+                Description = "current colors"
+            }
+        };
+        DesignedBy = new StringList
+        {
+            "Lee Eung-jun and Ma Jianzhong (Designed)",
+            "Park Yung-hyo (Selected)",
+            "Gojong (Approved)"
+        };
+        Usage = FlagUsage.NationalFlagAndEnsign;
     }
 }

@@ -16,33 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Poland_PresidentFlag : CountryFlag
+public class SouthKorea_StateEnsignFlag : CountryFlag
 {
-    public Poland_PresidentFlag()
+    public SouthKorea_StateEnsignFlag()
     {
-        Country = Countries.Poland;
+        Country = Countries.SouthKorea;
 
-        Id = "President";
+        Id = "StateEnsign";
         Names = new List<FlagName>
         {
-            "Presidential standard"
-        };
-        Description = "Crowned white eagle in a red field bordered with a white wavy line.";
-        StartDate = new FlagDate(1919)
-        {
-            Description = "original"
-        };
-        OtherDates = new List<FlagDate>
-        {
-            new(1927)
+            new()
             {
-                Description = "officially"
-            },
-            new(1996, 01, 26)
-            {
-                Description = "restored"
+                EnglishTranslation = "Governmental ensign (state ensign)"
             }
         };
-        Usage = FlagUsage.LeaderFlag;
+        Description = "A Blue Ensign with a white canton that has a red and blue taegeuk superimposed in the center of the canton, with two anchors crossing.";
+        Usage = FlagUsage.StateEnsign;
     }
 }

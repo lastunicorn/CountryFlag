@@ -16,33 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Poland_PresidentFlag : CountryFlag
+public class Jordan_KingFlag : CountryFlag
 {
-    public Poland_PresidentFlag()
+    public Jordan_KingFlag()
     {
-        Country = Countries.Poland;
+        Country = Countries.Jordan;
 
-        Id = "President";
+        Id = "King";
         Names = new List<FlagName>
         {
-            "Presidential standard"
-        };
-        Description = "Crowned white eagle in a red field bordered with a white wavy line.";
-        StartDate = new FlagDate(1919)
-        {
-            Description = "original"
-        };
-        OtherDates = new List<FlagDate>
-        {
-            new(1927)
+            new()
             {
-                Description = "officially"
-            },
-            new(1996, 01, 26)
-            {
-                Description = "restored"
+                EnglishTranslation = "Royal standard of The King"
             }
         };
+        Description = "Pan-Arab colors resembles the Rising Sun Flag; Jordanian flag in the center, with the star being replaced with a crown";
         Usage = FlagUsage.LeaderFlag;
     }
 }

@@ -22,6 +22,8 @@ public class JerseyFlag : CountryFlag
     {
         Country = Countries.Jersey;
 
-        ;
+        StartDate = new FlagDate(1981, 04, 07);
+        Description = "A red saltire on a white field, surmounted by a yellow Plantagenet crown, and the badge of Jersey.";
+        Usage = FlagUsage.NationalFlag;
     }
 }

@@ -23,7 +23,17 @@ public class PolandFlag : CountryFlag
         Country = Countries.Poland;
 
         Description = "A horizontal bicolour of white and red.";
-        StartDate = new FlagDate(1980, 01, 31);
+        StartDate = new FlagDate(1980, 01, 31)
+        {
+            Description = "restored"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1919, 08, 01)
+            {
+                Description = "officially"
+            }
+        };
         Usage = FlagUsage.NationalFlag;
     }
 }

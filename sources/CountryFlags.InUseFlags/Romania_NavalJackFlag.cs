@@ -16,14 +16,20 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Czechia_WarFlagFlag : CountryFlag
+public class Romania_NavalJackFlag : CountryFlag
 {
-    public Czechia_WarFlagFlag()
+    public Romania_NavalJackFlag()
     {
-        Country = Countries.Czechia;
+        Country = Countries.Romania;
 
-        Id = "WarFlag";
-        StartDate = new FlagDate(1993);
-        Usage = FlagUsage.WarFlag;
+        Id = "NavalJack";
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                EnglishTranslation = "Naval Jack"
+            }
+        };
+        Usage = FlagUsage.NavalJack;
     }
 }

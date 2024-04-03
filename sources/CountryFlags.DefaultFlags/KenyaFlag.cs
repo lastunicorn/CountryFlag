@@ -22,6 +22,8 @@ public class KenyaFlag : CountryFlag
     {
         Country = Countries.Kenya;
 
-        ;
+        Description = "A horizontal tricolour of black, white-edged red, and green with two crossed white spears behind a red, white, and black Maasai shield";
+        StartDate = new FlagDate(1963, 12, 12);
+        Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

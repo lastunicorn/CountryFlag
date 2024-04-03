@@ -28,7 +28,14 @@ public class Poland_StateFlagFlag : CountryFlag
             "State flag and civil and state ensign"
         };
         Description = "A horizontal bicolour of white and red defaced with the arms of Poland in the white stripe.";
-        StartDate = new FlagDate(1990);
-        Usage = FlagUsage.StateFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign;
+        StartDate = new FlagDate(1919);
+        OtherDates = new List<FlagDate>
+        {
+            new(1990)
+            {
+                Description = "last modified"
+            }
+        };
+        Usage = FlagUsage.StateFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

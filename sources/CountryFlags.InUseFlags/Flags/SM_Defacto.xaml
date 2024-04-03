@@ -20,18 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Qatar -->
+    <!-- San Marino (Defacto flag) -->
 
-    <Canvas x:Key="CountryFlag_QA" Width="12600" Height="4950">
+    <Canvas x:Key="CountryFlag_SM_Defacto" Width="800" Height="600">
 
         <Rectangle
-            Width="12600"
-            Height="4950"
-            Fill="#FF8A1538" />
+            Fill="#FF5EB6E4"
+            Width="800"
+            Height="600" />
 
-        <Path
-            Data="M 0,0 L 3696,0 4704,275 3696,550 4704,825 3696,1100 4704,1375 3696,1650 4704,1925 3696,2200 4704,2475 3696,2750 4704,3025 3696,3300 4704,3575 3696,3850 4704,4125 3696,4400 4704,4675 3696,4950 0,4950 z"
-            Fill="#FFFFFFFF" />
+        <Rectangle
+            Fill="#FFFFFFFF"
+            Width="800"
+            Height="300" />
 
     </Canvas>
 

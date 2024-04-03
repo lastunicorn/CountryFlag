@@ -22,6 +22,13 @@ public class QatarFlag : CountryFlag
     {
         Country = Countries.Qatar;
 
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                NativeName = "Al-Adaam"
+            }
+        };
         Description = "A white band on the hoist side, separated from a maroon area on the fly side by nine white triangles which act as a serrated line.";
         StartDate = new FlagDate(1971, 07, 09);
         Usage = FlagUsage.NationalFlagAndEnsign;
