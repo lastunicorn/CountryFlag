@@ -16,19 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Tajikistan_CivilFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Tajikistan_CivilFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Tajikistan;
 
-        Id = "Ensign";
+        Id = "Civil";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                EnglishTranslation = "Civil flag and ensign"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Description = "A horizontal tricolour of red, white and green in a 2:3:2 ratio to distinguish it from the flag of Hungary.";
+        Usage = FlagUsage.CivilFlagAndEnsign;
     }
 }

@@ -22,6 +22,55 @@ public class TaiwanFlag : CountryFlag
     {
         Country = Countries.Taiwan;
 
-        ;
+        Names = new List<FlagName>
+        {
+            new()
+            {
+                NativeName = "青天白日滿地紅",
+                EnglishTranslation = "Blue Sky, White Sun, and a Wholly Red Earth"
+            }
+        };
+        Description = "A red field with a navy blue canton bearing a white sun with 12 triangular rays";
+        StartDate = new FlagDate(1895)
+        {
+            Description = "by Revive China Society, original version"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1906)
+            {
+                Description = "addition of the red field"
+            },
+            new(1912, 01, 01)
+            {
+                Description = "naval flag"
+            },
+            new(1921, 05, 05)
+            {
+                Description = "by Guangzhou government"
+            },
+            new(1928, 12, 09)
+            {
+                Description = "in mainland China"
+            },
+            new(1945, 10, 25)
+            {
+                Description = "in Taiwan"
+            },
+            new(1949, 10, 01)
+            {
+                Description = "Relinquished in mainland China"
+            },
+            new(1950, 05, 01)
+            {
+                Description = "Relinquished in Hainan"
+            }
+        };
+        DesignedBy = new StringList
+        {
+            "Lu Haodong (The canton of the flag)",
+            "Sun Yat-sen (The full layout)"
+        };
+        Usage = FlagUsage.CivilAndStateFlag | FlagUsage.NationalEnsign;
     }
 }

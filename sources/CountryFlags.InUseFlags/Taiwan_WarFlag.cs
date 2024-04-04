@@ -16,19 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Taiwan_WarFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Taiwan_WarFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Taiwan;
 
-        Id = "Ensign";
+        Id = "War";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                EnglishTranslation = "War Flag"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Description = "A red field with a navy blue rectangular center with a white sun with twelve rays on top of the blue.";
+        Usage = FlagUsage.WarFlag;
     }
 }

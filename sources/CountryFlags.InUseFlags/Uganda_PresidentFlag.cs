@@ -16,19 +16,20 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Uganda_PresidentFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Uganda_PresidentFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Uganda;
 
-        Id = "Ensign";
+        Id = "President";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                EnglishTranslation = "Presidential standard"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Usage = FlagUsage.LeaderFlag;
     }
 }

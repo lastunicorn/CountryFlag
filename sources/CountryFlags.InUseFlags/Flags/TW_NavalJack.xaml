@@ -1,0 +1,46 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Taiwan (Naval Jack) -->
+
+    <Canvas x:Key="CountryFlag_TW_NavalJack" Width="450" Height="300">
+
+        <Path
+            Data="M0,0L450,0 450,300 0,300z"
+            Fill="#FF000095" />
+
+        <Path
+            Data="F1 M225,37.5L281.25,247.427858 127.57214,93.75 337.5,150 127.57214200000001,206.25 281.25,52.572142 225,262.5 168.75,52.572142 322.427858,206.25 112.5,150 322.427858,93.75 168.75,247.427858z"
+            Fill="#FFFFFFFF" />
+
+        <Ellipse
+            Fill="{x:Null}"
+            Stroke="#FF000095"
+            StrokeThickness="7.5"
+            Width="120"
+            Height="120"
+            Canvas.Left="165"
+            Canvas.Top="90" />
+
+    </Canvas>
+
+</ResourceDictionary>

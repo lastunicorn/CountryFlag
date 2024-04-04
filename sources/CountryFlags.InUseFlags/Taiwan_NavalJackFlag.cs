@@ -16,19 +16,27 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Taiwan_NavalJackFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Taiwan_NavalJackFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Taiwan;
 
-        Id = "Ensign";
+        Id = "NavalJack";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                NativeName = "青天白日旗",
+                EnglishTranslation = "Blue Sky with a White Sun"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Description = "A white Sun with twelve rays on a navy blue background.";
+        StartDate = new FlagDate(1895);
+        DesignedBy = new StringList
+        {
+            "Lu Haodong"
+        };
+        Usage = FlagUsage.NavalJack;
     }
 }

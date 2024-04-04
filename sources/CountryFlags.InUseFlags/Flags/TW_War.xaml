@@ -1,0 +1,50 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Taiwan (War Flag) -->
+
+    <Canvas x:Key="CountryFlag_TW_War" Width="900" Height="600">
+
+        <Path
+            Data="M0,0L900,0 900,600 0,600z"
+            Fill="#FFFE0000" />
+
+        <Path
+            Data="M225,150L675,150 675,450 225,450z"
+            Fill="#FF000095" />
+
+        <Path
+            Data="F1 M450,187.5L506.25,397.42786 352.57214,243.75 562.5,300 352.57214,356.25 506.25,202.57214 450,412.5 393.75,202.57214 547.42786,356.25 337.5,300 547.42786,243.75 393.75,397.42786z"
+            Fill="#FFFFFFFF" />
+
+        <Ellipse
+            Fill="{x:Null}"
+            Stroke="#FF000095"
+            StrokeThickness="7.5"
+            Width="120"
+            Height="120"
+            Canvas.Left="390"
+            Canvas.Top="240" />
+
+    </Canvas>
+
+</ResourceDictionary>

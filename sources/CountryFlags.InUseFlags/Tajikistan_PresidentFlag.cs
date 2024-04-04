@@ -16,19 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Tajikistan_PresidentFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Tajikistan_PresidentFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Tajikistan;
 
-        Id = "Ensign";
+        Id = "President";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                EnglishTranslation = "Presidential standard"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Description = "A variant of the national flag charged with a gold Derafsh Kāviān extending beyond the central stripe with one seven-pointed star per corner and a winged lion at its center.";
+        Usage = FlagUsage.LeaderFlag;
     }
 }

@@ -16,19 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Switzerland_EnsignFlag : CountryFlag
+public class Taiwan_PresidentFlag : CountryFlag
 {
-    public Switzerland_EnsignFlag()
+    public Taiwan_PresidentFlag()
     {
-        Country = Countries.Switzerland;
+        Country = Countries.Taiwan;
 
-        Id = "Ensign";
+        Id = "President";
         Names = new List<FlagName>
         {
-            "Civil and state ensign"
+            new()
+            {
+                EnglishTranslation = "Presidential standard"
+            }
         };
-        Description = "Red flag with a white cross in the centre and background in red.";
-        StartDate = new FlagDate(1882);
-        Usage = FlagUsage.CivilAndStateEnsign;
+        Description = "A red field with a yellow border and navy blue circle on the top, a white sun with twelve rays is on top of the blue.";
+        Usage = FlagUsage.LeaderFlag;
     }
 }

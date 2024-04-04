@@ -1,0 +1,55 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Taiwan (President Flag) -->
+
+    <Canvas x:Key="CountryFlag_TW_President" Width="1020" Height="680">
+
+        <Path
+            Data="M20,20L1000,20 1000,660 20,660z"
+            Fill="#FFFE0000"
+            Stroke="#FFFEDB01"
+            StrokeThickness="40" />
+
+        <Ellipse
+            Fill="#FF000095"
+            Width="450"
+            Height="450"
+            Canvas.Left="285"
+            Canvas.Top="115" />
+
+        <Path
+            Data="F1 M510,190L585,469.90381 380.09619,265 660,340 380.09619,415 585,210.09619 510,490 435,210.09618999999998 639.90381,415 360,340 639.90381,265 435,469.90381z"
+            Fill="#FFFFFFFF" />
+
+        <Ellipse
+            Fill="{x:Null}"
+            Stroke="#FF000095"
+            StrokeThickness="10"
+            Width="160"
+            Height="160"
+            Canvas.Left="430"
+            Canvas.Top="260" />
+
+    </Canvas>
+
+</ResourceDictionary>
