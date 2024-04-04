@@ -28,6 +28,7 @@ public class Vietnam_NavalFlag : CountryFlag
             "Naval Ensign"
         };
         Description = "A white flag with an emblem referring the Vietnam People's Navy in the top with the red label Hải quân Việt Nam (Navy of Vietnam) and a blue strip below.";
+        DesignedBy = "Vietnam People's Navy, with the influence from the naval ensign of the Soviet Navy";
         StartDate = new FlagDate(2014, 10, 15);
         Usage = FlagUsage.WarEnsign;
     }

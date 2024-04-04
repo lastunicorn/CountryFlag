@@ -1,0 +1,1977 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Vietnam (Naval Ensign) -->
+
+    <Canvas x:Key="CountryFlag_VN_Naval" Width="1989" Height="1326">
+
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TranslateTransform
+                    X="1814.2857"
+                    Y="252.56638" />
+            </Canvas.RenderTransform>
+            <Rectangle
+                Fill="#FFFFFFFF"
+                StrokeThickness="1.00022"
+                Width="1989"
+                Height="1326"
+                Canvas.Left="-1814.2856"
+                Canvas.Top="-252.56638" />
+            <Canvas
+                RenderTransform="1.1658465,0,0,1.1939831,196.16622,-195.23549">
+                <Canvas
+                    RenderTransform="0.94992942,0,0,0.94992942,-769.91574,49.306505">
+                    <Canvas>
+                        <Path
+                            Data="M-130.0203,81.886228L-145.79776999999999,475.92063C-187.25689,547.9171,-267.58177,481.63171,-284.45786,466.82644L-251.36955999999998,454.88317C-271.45867999999996,441.01987 -281.39401999999995,438.97063 -338.02149999999995,378.5908 -352.9971499999999,428.06515 -363.4583999999999,507.10953 -344.78502999999995,521.92015L-327.62694999999997,493.20853000000005C-183.54889999999997,651.54656,0.1013586600000167,605.55953,96.20885100000004,497.96860000000004L122.73543000000004,521.0009100000001C126.39919000000003,467.6419700000001,122.96451000000003,415.6172400000001,106.20198000000003,377.2321700000001L23.622317000000038,462.5680800000001 55.70340500000004,468.5685300000001C-20.052057999999967,529.4358700000001,-62.468163999999966,499.1291700000001,-71.74209499999995,477.9526700000001L-91.179863,79.067943 -128.23588,71.254162z"
+                            Fill="#FF0055C6" />
+                        <Path
+                            Data="M16.944171,132.82442L-234.94248,133.02597"
+                            Fill="#FF0055C6"
+                            Stroke="#FF0055C6"
+                            StrokeThickness="35.2887"
+                            StrokeStartLineCap="Square"
+                            StrokeEndLineCap="Square" />
+                        <Path
+                            Data="M-135.54198,73.947714A41.543903,40.778745,34.909444,1,0,-88.868175,7.0658784A41.543903,40.778745,34.909444,0,0,-135.54198,73.947714z"
+                            Fill="#FFFFFFFF"
+                            Stroke="#FF0055C6"
+                            StrokeThickness="32.7416"
+                            StrokeLineJoin="Round" />
+                    </Canvas>
+                    <Path
+                        Data="M-80.812214,924.89835L-500.91857,633.03939 -911.97025,937.51844 -764.21588,447.78418 -1180.8146,150.94 -669.39105,140.12654 -515.8115499999999,-347.81230000000005 -347.48876999999993,135.23887999999994 164.0273200000001,130.52026999999993 -243.3670499999999,439.87576999999993z"
+                        Fill="#FFFFC61C"
+                        RenderTransform="0.27560972,0,0,0.27560972,31.119077,220.46998" />
+                </Canvas>
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <TranslateTransform
+                            X="577.14286"
+                            Y="-74.285715" />
+                    </Canvas.RenderTransform>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="3.7664116"
+                                CenterX="-1759.033"
+                                CenterY="300.56795" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="-33.634852"
+                                CenterX="-1420.0855"
+                                CenterY="451.28759" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="36.037649"
+                                CenterX="-1441.4656"
+                                CenterY="444.63774" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="-72.719658"
+                                CenterX="-1449.0923"
+                                CenterY="442.19782" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+                <Canvas
+                    RenderTransform="-1,0,0,1,-2329.5883,-74.285715">
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="3.7664116"
+                                CenterX="-1759.033"
+                                CenterY="300.56795" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="-33.634852"
+                                CenterX="-1420.0855"
+                                CenterY="451.28759" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="36.037649"
+                                CenterX="-1441.4656"
+                                CenterY="444.63774" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas>
+                        <Canvas.RenderTransform>
+                            <RotateTransform
+                                Angle="-72.719658"
+                                CenterX="-1449.0923"
+                                CenterY="442.19782" />
+                        </Canvas.RenderTransform>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-33.821359"
+                                    CenterX="-1445.2393"
+                                    CenterY="661.57726" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-29.543554"
+                                    CenterX="-1463.3252"
+                                    CenterY="689.22633" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-30.952178"
+                                    CenterX="-1527.4337"
+                                    CenterY="644.46792" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <RotateTransform
+                                        Angle="7.4395151"
+                                        CenterX="-1124.8948"
+                                        CenterY="2048.6487" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-21.114285"
+                                    CenterX="-1523.064"
+                                    CenterY="766.67087" />
+                            </Canvas.RenderTransform>
+                            <Canvas>
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform
+                                        X="227.73852"
+                                        Y="-76.080413" />
+                                </Canvas.RenderTransform>
+                                <Path
+                                    Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                                <Path
+                                    Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                    Fill="{x:Null}"
+                                    Stroke="#FFFFC61C"
+                                    StrokeThickness="11"
+                                    StrokeStartLineCap="Flat"
+                                    StrokeEndLineCap="Flat"
+                                    StrokeLineJoin="Miter"
+                                    StrokeMiterLimit="4" />
+                            </Canvas>
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-17.82302"
+                                    CenterX="-1936.8972"
+                                    CenterY="111.33576" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-13.944657"
+                                    CenterX="-2093.8875"
+                                    CenterY="-24.854176" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="-8.8838585"
+                                    CenterX="-2438.6849"
+                                    CenterY="-340.58048" />
+                            </Canvas.RenderTransform>
+                            <Path
+                                Data="M-1839.0875,286.47563C-1826.4171000000001,297.79962 -1818.5369,311.16019 -1830.2342,332.84419 -1853.1314000000002,318.09345 -1844.2674000000002,302.21939000000003 -1839.0875,286.47563z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                            <Path
+                                Data="M-1780.4155,336.84538C-1793.5273,326.03546 -1807.9269000000002,320.26885 -1827.5900000000001,335.11422 -1809.5427000000002,355.51426 -1795.1936,344.34914 -1780.4155,336.84538z"
+                                Fill="{x:Null}"
+                                Stroke="#FFFFC61C"
+                                StrokeThickness="11"
+                                StrokeStartLineCap="Flat"
+                                StrokeEndLineCap="Flat"
+                                StrokeLineJoin="Miter"
+                                StrokeMiterLimit="4" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+                <Canvas>
+                    <Canvas.RenderTransform>
+                        <TranslateTransform
+                            X="577.14286"
+                            Y="-40" />
+                    </Canvas.RenderTransform>
+                    <Canvas
+                        RenderTransform="0.80514962,0,0,0.80514962,-1681.4713,-21.764826">
+                        <Ellipse
+                            Fill="#FFFFC61C"
+                            Width="194.28572"
+                            Height="194.28572"
+                            Canvas.Left="188.57143000000002"
+                            Canvas.Top="890.14285" />
+                    </Canvas>
+                    <Rectangle
+                        Fill="#FFFFC61C"
+                        Width="26.793562"
+                        Height="40.828285"
+                        Canvas.Left="-1464.8253"
+                        Canvas.Top="669.04913" />
+                    <Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="37.420719" />
+                            </Canvas.RenderTransform>
+                            <Rectangle
+                                Fill="#FFFFC61C"
+                                Width="26.793562"
+                                Height="40.828285"
+                                Canvas.Left="-696.36932"
+                                Canvas.Top="1391.9342" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="71.712293" />
+                            </Canvas.RenderTransform>
+                            <Rectangle
+                                Fill="#FFFFC61C"
+                                Width="26.793562"
+                                Height="40.828285"
+                                Canvas.Left="265.15216"
+                                Canvas.Top="1516.705" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas
+                        RenderTransform="-1,0,0,1,-2901.4667,0.71428573">
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="37.420719" />
+                            </Canvas.RenderTransform>
+                            <Rectangle
+                                Fill="#FFFFC61C"
+                                Width="26.793562"
+                                Height="40.828285"
+                                Canvas.Left="-696.36932"
+                                Canvas.Top="1391.9342" />
+                        </Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <RotateTransform
+                                    Angle="71.712293" />
+                            </Canvas.RenderTransform>
+                            <Rectangle
+                                Fill="#FFFFC61C"
+                                Width="26.793562"
+                                Height="40.828285"
+                                Canvas.Left="265.15216"
+                                Canvas.Top="1516.705" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+                <Canvas
+                    RenderTransform="0.72183984,0,0,0.72183984,0.84584496,-192.11634">
+                    <Path
+                        Data="M-1610.6095,1199.149C-1613.983,1177.1369 -1605.7745,1137.7975 -1691.97,1154.0327 -1715.8802,1158.5362 -1725.3095,1134.7252 -1705.7997,1086.3144 -1729.4374,1100.5569 -1764.0181,1093.8254 -1754.1141,1172.3564999999999 -1749.5655,1219.4429999999998 -1773.1523,1225.3259999999998 -1774.5716,1255.8037 -1777.2721999999999,1269.8198 -1752.2008,1277.3867 -1716.3214,1282.5012L-1635.8262,1282.5012z"
+                        Fill="#FFFFC61C" />
+                    <Path
+                        Data="M157.14286,1467.2857C456.66047000000003,1594.1462,697.6292000000001,1599.4505,1042.8572,1467.2857L1085.7142999999999,1618.7142999999999C777.8230799999999,1732.0173,458.3251799999998,1763.7226999999998,119.99999999999989,1618.7142999999999z"
+                        Fill="#FFFFC61C">
+                        <Path.RenderTransform>
+                            <TranslateTransform
+                                X="-1808.5714"
+                                Y="-259.85211" />
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path
+                        Data="M-806.19916,1199.149C-802.82566,1177.1369 -811.03416,1137.7975 -724.83866,1154.0327 -700.92846,1158.5362 -691.49916,1134.7252 -711.00896,1086.3144 -687.37126,1100.5569 -652.79056,1093.8254 -662.69456,1172.3564999999999 -667.24316,1219.4429999999998 -643.6563600000001,1225.3259999999998 -642.23706,1255.8037 -639.53646,1269.8198 -664.6078600000001,1277.3867 -700.48726,1282.5012L-780.98246,1282.5012z"
+                        Fill="#FFFFC61C" />
+                    <Path
+                        Data="M-1648.0117,1348.5325L-1621.9208,1262.3959 -1609.9426,1266.0241 -1620.2117,1299.9264 -1596.7409,1307.0357000000001 -1586.4718,1273.1334000000002 -1574.4936,1276.7617000000002 -1600.5845,1362.8983000000003 -1612.5627,1359.2701000000002 -1601.1545999999998,1321.6072000000001 -1624.6254,1314.4979 -1636.0335,1352.1607000000001z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1534.6639,1382.8657L-1547.6943,1378.9188000000001 -1546.9476000000002,1357.784 -1570.6612000000002,1350.6011 -1581.4842000000003,1368.6838 -1594.1908000000003,1364.8349 -1544.9933000000003,1285.6973 -1532.3272000000004,1289.5339000000001z M-1546.396,1342.1067L-1544.8885,1307.6673 -1562.5827,1337.2037z M-1537.9469,1277.3115C-1536.338,1277.5424 -1535.288,1277.6252 -1534.797,1277.56 -1533.213,1277.484 -1532.2117,1276.8037 -1531.7931,1275.519 -1531.4932000000001,1274.6265 -1531.6397000000002,1273.7482 -1532.2321000000002,1272.8843 -1533.0923000000003,1271.6404 -1534.7506,1270.6464999999998 -1537.2055000000003,1269.9027999999998 -1538.0418000000002,1269.6495999999997 -1536.9570000000003,1269.3438999999998 -1538.7039000000002,1268.9855999999997L-1537.3331000000003,1262.8575999999998C-1536.1861000000004,1262.8675999999998 -1536.5787000000003,1263.3142999999998 -1533.7580000000003,1264.2114 -1530.4516000000003,1265.2557 -1527.9776000000002,1266.8603999999998 -1526.3360000000002,1269.0254 -1524.5143000000003,1271.3734 -1524.0213000000003,1274.0245 -1524.8572000000001,1276.9786 -1525.9833,1281.0851 -1529.1916,1282.8288 -1534.4824,1282.2096999999999L-1535.3723,1285.1474999999998 -1539.9046,1283.7746999999997z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1524.2713,1386.7045L-1503.0505,1299.2407 -1490.8878,1302.1917 -1512.1086,1389.6555z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1427.6337,1396.1766C-1425.2084,1399.8846,-1422.3982,1402.9991,-1419.2030000000002,1405.5199L-1426.1172000000001,1417.2703C-1427.8209000000002,1416.1146999999999 -1429.4258000000002,1414.6653999999999 -1430.9320000000002,1412.9225999999999 -1431.2664000000002,1412.5675999999999 -1433.4999000000003,1409.4374999999998 -1437.6323000000002,1403.5318 -1442.1000000000001,1405.3105 -1446.7574000000002,1405.7412 -1451.6043000000002,1404.824 -1460.9658000000002,1403.0523 -1467.5413,1397.6634000000001 -1471.3307000000002,1388.6570000000002 -1475.1202000000003,1379.6505000000002 -1475.6450000000002,1367.9086000000002 -1472.9053000000001,1353.4315000000001 -1470.1731000000002,1338.9945000000002 -1465.3891,1328.2677 -1458.553,1321.2512000000002 -1451.717,1314.2349000000002 -1443.7428000000002,1311.5889000000002 -1434.6305000000002,1313.3132 -1425.6014000000002,1315.0221000000001 -1419.2009000000003,1320.3884 -1415.4291000000003,1329.4122 -1411.6574000000003,1338.4361999999999 -1411.1376000000002,1350.1668 -1413.8697000000002,1364.6037 -1415.3157,1372.2443999999998 -1417.3206000000002,1378.8213999999998 -1419.8843000000002,1384.3345 -1421.8296000000003,1388.5484 -1424.4126,1392.4958 -1427.6337,1396.1766z M-1435.615,1384.2317C-1433.5264,1381.8361 -1431.726,1378.8028 -1430.2136,1375.1318 -1428.7012,1371.4609 -1427.477,1367.1522000000002 -1426.5409,1362.2058000000002 -1424.6079,1351.9913000000001 -1424.7148,1344.0670000000002 -1426.8617,1338.4330000000002 -1429.0086,1332.7991000000002 -1432.5885999999998,1329.5078000000003 -1437.6019,1328.5590000000002 -1442.6149999999998,1327.6103000000003 -1447.1589,1329.3747000000003 -1451.2337,1333.8519000000001 -1455.3085,1338.3293 -1458.3085,1345.6552000000001 -1460.234,1355.8295 -1462.1898999999999,1366.1645 -1462.0951,1374.1907 -1459.9496,1379.9077 -1457.8039999999999,1385.6247 -1454.3492999999999,1388.9339 -1449.5854,1389.8355 -1447.8129,1390.1708999999998 -1446.0573,1390.0658999999998 -1444.3188,1389.5201 -1446.3625,1386.6758 -1448.5466,1384.3462 -1450.8712,1382.5316L-1445.4937,1372.9898C-1441.8307,1375.7659,-1438.5378,1379.5130000000001,-1435.615,1384.2317z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1395.2736,1324.9504L-1383.0124,1327.4614 -1392.7919000000002,1375.2158C-1394.3439,1382.7940999999998 -1395.1979000000001,1387.7369999999999 -1395.3540000000003,1390.0445 -1395.5682000000002,1393.7606 -1394.9120000000003,1396.9134999999999 -1393.3850000000002,1399.5031 -1391.8579000000002,1402.0928 -1389.3824000000002,1403.7382 -1385.9581000000003,1404.4394 -1382.4785000000004,1405.1519 -1379.6437000000003,1404.6568 -1377.4533000000004,1402.9537 -1375.2632000000003,1401.2507 -1373.6807000000003,1398.9323 -1372.7057000000004,1395.9985 -1371.7310000000004,1393.0649999999998 -1370.5291000000004,1388.1097 -1369.1003000000005,1381.1329999999998L-1359.1113000000005,1332.3560999999997 -1346.8502000000005,1334.8669999999997 -1356.3342000000005,1381.1779999999997C-1358.5020000000004,1391.7633999999996 -1360.3648000000005,1399.1735999999996 -1361.9225000000004,1403.4081999999996 -1363.4804000000004,1407.6430999999995 -1365.4577000000004,1411.0816999999997 -1367.8549000000003,1413.7240999999997 -1370.2518000000002,1416.3664999999996 -1373.1243000000002,1418.2744999999998 -1376.4721000000002,1419.4479999999996 -1379.8199000000002,1420.6215999999997 -1383.8964,1420.7161999999996 -1388.7014000000001,1419.7321999999997 -1394.5007,1418.5445999999997 -1398.6992000000002,1416.6717999999996 -1401.2972000000002,1414.1133999999997 -1403.8952000000002,1411.5550999999998 -1405.7459000000001,1408.5441999999998 -1406.8493000000003,1405.0803999999998 -1407.9528000000003,1401.6166999999998 -1408.4316000000003,1398.1241999999997 -1408.2860000000003,1394.6028999999999 -1408.0521000000003,1389.3867999999998 -1406.9253000000003,1381.8467999999998 -1404.9054000000003,1371.9832z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1293.2748,1431.063L-1306.7631,1429.2121000000002 -1309.3457999999998,1408.2224 -1333.8932999999997,1404.8539 -1341.7413999999997,1424.4122 -1354.8946999999996,1422.6073 -1318.7398999999996,1336.7237 -1305.6282999999996,1338.523z M-1311.2638,1392.6531L-1315.1851,1358.4045 -1328.0198,1390.3538z M-1325.7299,1330.4353L-1314.4708,1316.0203000000001 -1303.5794,1317.5149000000001 -1297.3703,1334.3269 -1306.8376,1333.0278 -1310.4531000000002,1323.2984000000001 -1316.2208000000003,1331.7402000000002z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1279.7033,1429.5606L-1277.4266,1339.588 -1265.2531,1339.896 -1241.4121,1400.6218 -1239.8917,1340.5377999999998 -1228.2676999999999,1340.8319999999999 -1230.5443999999998,1430.8046 -1243.0982999999999,1430.4868999999999 -1266.5946,1371.1823 -1268.0792999999999,1429.8547999999998z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1155.8959,1425.849L-1191.2887,1340.184 -1177.8693,1338.1501 -1152.3778,1401.6581 -1147.3515,1333.5247000000002 -1134.2248,1331.5352000000003 -1142.6855,1423.8468000000003z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1114.7179,1420.6181L-1128.2049000000002,1331.6329999999998 -1115.8305000000003,1329.7574999999997 -1102.3436000000002,1418.7425999999998z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1090.5964,1415.952L-1104.0833,1326.9669 -1058.6411,1320.0794999999998 -1056.3596,1335.1326999999999 -1089.4273,1340.1445999999999 -1086.4374,1359.8718999999999 -1055.669,1355.2085 -1053.3966,1370.2013 -1084.165,1374.8646999999999 -1080.4943,1399.0837999999999 -1046.256,1393.8944999999999 -1043.9837,1408.8872z M-1084.2295,1313.4926L-1087.4805,1320.9855 -1095.7160999999999,1322.2337 -1091.3591,1307.6913 -1079.4764,1305.3707 -1070.0478,1318.3433 -1078.2833,1319.5916z M-1068.5548,1432.8697L-1071.1399,1420.4542999999999 -1059.3926999999999,1418.6738999999998 -1056.8075,1431.0892999999999z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-1018.9833,1405.106L-1031.1804,1331.3313 -1049.327,1334.3315 -1051.8105,1319.3102 -1003.2111,1311.2752999999998 -1000.7275999999999,1326.2966 -1018.8325,1329.2897999999998 -1006.6354,1403.0644999999997z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-953.36515,1390.9536L-971.74816,1302.8496 -959.82758,1300.3623 -922.7167000000001,1354.0167 -934.99291,1295.1805 -923.61032,1292.8055 -905.22731,1380.9095 -917.5205,1383.4745 -953.97043,1331.1246 -941.98259,1388.5786z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-836.12888,1360.2902L-849.25234,1363.9153999999999 -859.91261,1345.6508 -883.7956899999999,1352.2482 -883.2837,1373.3162 -896.0811199999999,1376.8513 -896.7737299999999,1283.6704 -884.0170799999999,1280.1466z M-867.8221,1332.1037999999999L-884.94747,1302.1861 -884.1245399999999,1336.6071z"
+                        Fill="#FFDA251D" />
+                    <Path
+                        Data="M-826.00664,1357.8845L-857.9471,1273.7413999999999 -840.43517,1267.0938999999998 -808.13267,1320.4986 -819.52364,1259.156 -801.97219,1252.4933999999998 -770.0317399999999,1336.6364999999998 -780.9025699999999,1340.7631 -806.0453499999999,1274.5276 -792.4058799999999,1345.1297 -803.67203,1349.4062 -840.2785899999999,1287.5223999999998 -815.1358099999999,1353.7578999999998z"
+                        Fill="#FFDA251D" />
+                </Canvas>
+            </Canvas>
+            <Rectangle
+                Fill="#FF0055C6"
+                StrokeThickness="1.00178"
+                Width="1989"
+                Height="221"
+                Canvas.Left="-1814.2856"
+                Canvas.Top="852.43359" />
+        </Canvas>
+
+    </Canvas>
+
+
+</ResourceDictionary>

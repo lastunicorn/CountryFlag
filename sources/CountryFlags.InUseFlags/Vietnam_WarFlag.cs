@@ -16,9 +16,9 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Vietnam_WarFlagFlag : CountryFlag
+public class Vietnam_WarFlag : CountryFlag
 {
-    public Vietnam_WarFlagFlag()
+    public Vietnam_WarFlag()
     {
         Country = Countries.Vietnam;
 

@@ -468,6 +468,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\RO_Coa.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\VN_Naval.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\ZW_President.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
