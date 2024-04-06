@@ -24,6 +24,6 @@ public class GeorgiaFlag : CountryFlag
 
         Description = "A white field with a centred red cross; a red Bolnur-Katskhuri cross centres each quarter.";
         StartDate = new FlagDate(2004, 01, 14);
-        Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign;
+        Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

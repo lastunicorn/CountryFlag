@@ -32,4 +32,12 @@ public readonly struct FlagName
             EnglishTranslation = flagName
         };
     }
+
+    public static implicit operator List<FlagName>(FlagName flagName)
+    {
+        return new List<FlagName>
+        {
+            flagName
+        };
+    }
 }

@@ -14,17 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.DefaultFlags;
+namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class TogoFlag : CountryFlag
+public class Tonga_NavalEnsignFlag : CountryFlag
 {
-    public TogoFlag()
+    public Tonga_NavalEnsignFlag()
     {
-        Country = Countries.Togo;
+        Country = Countries.Tonga;
 
-        Description = "Five equal horizontal bands of green (top and bottom) alternating with yellow; with a red canton bearing a white five-pointed star.";
-        StartDate = new FlagDate(1960, 04, 27);
-        DesignedBy = "Paul Ahyi";
-        Usage = FlagUsage.NationalFlagAndEnsign;
+        Id = "NavalEnsign";
+        Names = new FlagName
+        {
+            EnglishTranslation = "Naval (War) Ensign"
+        };
+        Usage = FlagUsage.WarEnsign;
     }
 }
