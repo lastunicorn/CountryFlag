@@ -1,0 +1,53 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ukraine (Coat of Arms) -->
+
+    <Canvas x:Key="CountryFlag_UA_Coa" Width="165" Height="230.5">
+        <Canvas.RenderTransform>
+            <TranslateTransform
+                X="82.5" />
+        </Canvas.RenderTransform>
+        <Path
+            Data="F1M-81.25,1.25L81.25,1.25 81.25,173.75A31.25,31.25,0,0,1,62.671971,202.315428L0,228.867475 -62.671971,201.065428A31.25,31.25,0,0,1,-81.25,172.5z"
+            Fill="#FF005BBB"
+            Stroke="#FFFFD500"
+            StrokeThickness="2.5" />
+        <Path
+            Data="F1M5.985561,78.82382A104.079383,104.079383,0,0,0,20.039158999999998,134.84085299999998A55,55,0,0,1,6.820384999999998,205.47803199999998A20,20,0,0,0,0,212.5A20,20,0,0,0,-6.820384,205.478032A55,55,0,0,1,-20.039158,134.840853A104.079383,104.079383,0,0,0,-5.98556,78.82382L-7.585202000000001,33.563300999999996A30.103986,30.103986,0,0,1,0,12.5A30.103986,30.103986,0,0,1,7.585202,33.563300999999996z M5,193.624749A45,45,0,0,0,11.395675,139.86978900000003A114.079383,114.079383,0,0,1,0,112.734179A114.079383,114.079383,0,0,1,-11.395675,139.869789A45,45,0,0,0,-5,193.624749L-5,162.5 5,162.5z"
+            Fill="#FFFFD500" />
+        <Path
+            Data="F1M27.779818,75.17546A62.64982,62.64982,0,0,1,60,27.5L60,172.5 0,172.5 -5,162.5A22.5,22.5,0,0,1,12.560976,140.54878L27.195123000000002,137.25609699999998A10,10,0,1,0,22.767680000000002,117.75234599999999z M33.778133,109.529347A20,20,0,0,1,29.390243999999996,147.012195L14.756097999999996,150.304878A12.5,12.5,0,0,0,5,162.5L50,162.5 50,48.265462A52.64982,52.64982,0,0,0,37.716121,76.303264z M42,122.5L52,122.5 52,132.5 42,132.5z"
+            Fill="#FFFFD500" />
+        <Path
+            Data="F1M27.779818,75.17546A62.64982,62.64982,0,0,1,60,27.5L60,172.5 0,172.5 -5,162.5A22.5,22.5,0,0,1,12.560976,140.54878L27.195123000000002,137.25609699999998A10,10,0,1,0,22.767680000000002,117.75234599999999z M33.778133,109.529347A20,20,0,0,1,29.390243999999996,147.012195L14.756097999999996,150.304878A12.5,12.5,0,0,0,5,162.5L50,162.5 50,48.265462A52.64982,52.64982,0,0,0,37.716121,76.303264z M42,122.5L52,122.5 52,132.5 42,132.5z"
+            Fill="#FFFFD500">
+            <Path.RenderTransform>
+                <ScaleTransform
+                    ScaleX="-1"
+                    ScaleY="1" />
+            </Path.RenderTransform>
+        </Path>
+
+    </Canvas>
+
+</ResourceDictionary>
