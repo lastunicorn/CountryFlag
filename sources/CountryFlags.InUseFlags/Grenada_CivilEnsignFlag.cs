@@ -23,9 +23,9 @@ public class Grenada_CivilEnsignFlag : CountryFlag
         Country = Countries.Grenada;
 
         Id = "CivilEnsign";
-        Names = new List<FlagName>
+        Names = new FlagName
         {
-            "Civil ensign"
+            EnglishTranslation = "Civil ensign"
         };
         Usage = FlagUsage.CivilEnsign;
     }

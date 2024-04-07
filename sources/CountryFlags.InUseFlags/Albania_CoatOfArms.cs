@@ -16,17 +16,16 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Grenada_NavalEnsignFlag : CountryFlag
+public class Albania_CoatOfArms : CountryFlag
 {
-    public Grenada_NavalEnsignFlag()
+    public Albania_CoatOfArms()
     {
-        Country = Countries.Grenada;
+        Country = Countries.Albania;
 
-        Id = "NavalEnsign";
-        Names = new FlagName
+        Id = "Coa";
+        Names = new List<FlagName>
         {
-            EnglishTranslation = "Naval ensign"
+            "Coat of Arms"
         };
-        Usage = FlagUsage.WarEnsign;
     }
 }

@@ -23,8 +23,8 @@ public class GhanaFlag : CountryFlag
         Country = Countries.Ghana;
 
         Description = "A horizontal triband of red, gold, and green, charged with a black star in the centre.";
-        StartDate = new FlagDate(1966, 02, 28);
+        StartDate = new FlagDate(1957, 03, 06);
         DesignedBy = "Theodosia Okoh";
-        Usage = FlagUsage.NationalFlag | FlagUsage.CivilEnsign | FlagUsage.StateEnsign;
+        Usage = FlagUsage.NationalFlag | FlagUsage.CivilAndStateEnsign;
     }
 }

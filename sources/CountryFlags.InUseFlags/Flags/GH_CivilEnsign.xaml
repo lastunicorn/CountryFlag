@@ -1,0 +1,119 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ghana (Civil Ensign) -->
+
+    <Canvas x:Key="CountryFlag_GH_CivilEnsign" Width="450" Height="300">
+
+        <Rectangle
+            Fill="#FFCE1126"
+            StrokeThickness="5"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Miter"
+            StrokeMiterLimit="4"
+            StrokeDashOffset="0"
+            Width="450"
+            Height="300" />
+
+        <Path
+            Data="F1M0,2.5C0,53.333333 0,104.16667 0,155 76.666667,155 153.33333,155 230,155 230,103.33333 230,51.666667 230,0 153.33333,0 76.666667,0 0,0 0,0.8333333 0,1.6666667 0,2.5z"
+            Fill="#FF000000"
+            StrokeThickness="0.25"
+            StrokeStartLineCap="Flat"
+            StrokeEndLineCap="Flat"
+            StrokeLineJoin="Miter"
+            StrokeMiterLimit="4"
+            StrokeDashOffset="0" />
+
+        <Canvas
+            RenderTransform="0.5,0,0,0.5,0,3.90625E-06">
+
+            <Rectangle
+                Fill="#FF006B3F"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                Width="281.25"
+                Height="187.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <TransformGroup.Children>
+                            <TranslateTransform
+                                X="125"
+                                Y="489.86218" />
+                            <MatrixTransform Matrix="1.6,0,0,1.6,-200,-783.7795" />
+                        </TransformGroup.Children>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle
+                Fill="#FFFCD116"
+                StrokeThickness="2.26274174"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                Width="450"
+                Height="200">
+                <Rectangle.RenderTransform>
+                    <TranslateTransform
+                        X="0"
+                        Y="-7.8124995E-06" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle
+                Fill="#FFCE1126"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                Width="281.25"
+                Height="62.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <TransformGroup.Children>
+                            <TranslateTransform
+                                X="125"
+                                Y="489.86218" />
+                            <MatrixTransform Matrix="1.6,0,0,1.6,-200,-783.7795" />
+                        </TransformGroup.Children>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Path
+                Data="F1M232.76875,576.23585L257.87093,576.23585 265.625,552.36218 273.37907,576.23585 298.48125,576.23585 278.17609,590.98851 285.93016,614.86218 265.625,600.10953 245.31984,614.86218 253.07391,590.98851 232.76875,576.23585z"
+                Fill="#FF000000"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                RenderTransform="1.6,0,0,1.6,-200,-783.7795" />
+
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

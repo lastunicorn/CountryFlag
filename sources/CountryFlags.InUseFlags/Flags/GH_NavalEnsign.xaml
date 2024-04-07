@@ -1,0 +1,57 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ghana (Naval Ensign) -->
+
+    <Canvas x:Key="CountryFlag_GH_NavalEnsign" Width="450" Height="300">
+
+        <Path
+            Data="M0,0L450,0 450,300 0,300z"
+            Fill="#FFCE1126" />
+
+        <Canvas>
+            <Path
+                Data="F1M245,0L245,130 450,130 450,0z"
+                Fill="#FFFFFFFF" />
+            <Path
+                Data="F1M0,170L0,300 205,300 205,170z"
+                Fill="#FFFFFFFF" />
+            <Path
+                Data="F1M245,170L245,300 450,300 450,170z"
+                Fill="#FFFFFFFF" />
+        </Canvas>
+
+        <Canvas>
+            <Path
+                Data="F1M0,43.333302L204.99997,43.333302 204.99997,129.999997 0,129.999997z"
+                Fill="#FFFCD116" />
+            <Path
+                Data="F1M0,86.666656L204.99997,86.666656 204.99997,129.99999200000002 0,129.99999200000002z"
+                Fill="#FF006B3F" />
+            <Path
+                Data="F1M79.71982,59.885757L97.12386,59.885757 102.49998,43.333477 107.8761,59.885757 125.28014999999999,59.885757 111.202,70.114197 116.57812,86.666477 102.49998,76.438057 88.42183999999999,86.666477 93.79795999999999,70.114197z"
+                Fill="#FF000000" />
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

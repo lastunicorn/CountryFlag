@@ -1,0 +1,63 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ghana (Air Force Ensign) -->
+
+    <Canvas x:Key="CountryFlag_GH_AirWarEnsign" Width="600" Height="400">
+
+        <Path
+            Data="F1M0,2.3E-05L600,2.3E-05 600,400.000023 0,400.000023z"
+            Fill="#FF73B6DC" />
+        <Canvas>
+            <Path
+                Data="F1M31.428842,393.37335C31.659307,203.27049000000002 185.92442,49.33231599999999 376.02734,49.505165000000034 566.1302599999999,49.678014000000076 720.11518,203.89646000000005 719.9999499999999,393.99943 719.8847099999999,584.10239 565.7129399999999,738.13404 375.6099499999999,738.0764300000001 185.5069599999999,738.01881 31.428586999999936,583.89373 31.42858899999993,393.79073000000005"
+                Fill="#FFCE1126"
+                RenderTransform="0.29163143,0,0,0.29163143,350.95839,139.961061" />
+            <Path
+                Data="F1M31.428842,393.37335C31.659307,203.27049000000002 185.92442,49.33231599999999 376.02734,49.505165000000034 566.1302599999999,49.678014000000076 720.11518,203.89646000000005 719.9999499999999,393.99943 719.8847099999999,584.10239 565.7129399999999,738.13404 375.6099499999999,738.0764300000001 185.5069599999999,738.01881 31.428586999999936,583.89373 31.42858899999993,393.79073000000005"
+                Fill="#FFFCD116"
+                RenderTransform="0.18539028,0,0,0.18539028,390.874715,181.797852" />
+            <Path
+                Data="F1M31.428842,393.37335C31.659307,203.27049000000002 185.92442,49.33231599999999 376.02734,49.505165000000034 566.1302599999999,49.678014000000076 720.11518,203.89646000000005 719.9999499999999,393.99943 719.8847099999999,584.10239 565.7129399999999,738.13404 375.6099499999999,738.0764300000001 185.5069599999999,738.01881 31.428586999999936,583.89373 31.42858899999993,393.79073000000005"
+                Fill="#FF006B3F"
+                RenderTransform="0.07914949,0,0,0.07914949,430.790908,223.634496" />
+        </Canvas>
+        <Canvas
+            RenderTransform="0.6666585,0,0,0.6666585,0.000288,0.001489">
+            <Path
+                Data="F1M0,0L450,0 450,300 0,300z"
+                Fill="#FFCE1126" />
+            <Path
+                Data="F1M0,100L450,100 450,300 0,300z"
+                Fill="#FFFCD116" />
+            <Path
+                Data="F1M0,200L450,200 450,300 0,300z"
+                Fill="#FF006B3F" />
+            <Path
+                Data="F1M232.76875,576.23585L257.87093,576.23585 265.625,552.3621800000001 273.37907,576.23585 298.48125,576.23585 278.17609,590.98851 285.93016,614.86218 265.625,600.10953 245.31984,614.86218 253.07391,590.98851z"
+                Fill="#FF000000"
+                RenderTransform="1.6,0,0,1.6,-200,-783.7795" />
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

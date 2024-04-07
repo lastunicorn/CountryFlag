@@ -16,17 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Grenada_NavalEnsignFlag : CountryFlag
+public class Romania_CoatOfArms : CountryFlag
 {
-    public Grenada_NavalEnsignFlag()
+    public Romania_CoatOfArms()
     {
-        Country = Countries.Grenada;
+        Country = Countries.Romania;
 
-        Id = "NavalEnsign";
-        Names = new FlagName
+        Id = "Coa";
+        Names = new List<FlagName>
         {
-            EnglishTranslation = "Naval ensign"
+            "Coat of Arms"
         };
-        Usage = FlagUsage.WarEnsign;
+        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
+        StartDate = new FlagDate(2016, 07, 11);
     }
 }

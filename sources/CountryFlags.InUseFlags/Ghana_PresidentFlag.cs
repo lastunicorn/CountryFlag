@@ -16,17 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Grenada_NavalEnsignFlag : CountryFlag
+public class Ghana_PresidentFlag : CountryFlag
 {
-    public Grenada_NavalEnsignFlag()
+    public Ghana_PresidentFlag()
     {
-        Country = Countries.Grenada;
+        Country = Countries.Ghana;
 
-        Id = "NavalEnsign";
+        Id = "President";
         Names = new FlagName
         {
-            EnglishTranslation = "Naval ensign"
+            EnglishTranslation = "Presidential Standard"
         };
-        Usage = FlagUsage.WarEnsign;
+        StartDate = new FlagDate(1966);
+        Usage = FlagUsage.LeaderFlag;
     }
 }

@@ -1,0 +1,194 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Grenada (Naval Ensign) -->
+
+    <Canvas x:Key="CountryFlag_GD_NavalEnsign" Width="600" Height="300">
+
+        <Canvas>
+            <Rectangle
+                Fill="#FFCE1126"
+                StrokeThickness="1.97836268"
+                StrokeStartLineCap="Round"
+                StrokeEndLineCap="Round"
+                StrokeLineJoin="Round"
+                StrokeMiterLimit="4"
+                StrokeDashOffset="0.99999998"
+                Width="600"
+                Height="300" />
+            <Path
+                Data="F1M320,0L320,130 600,130 600,0 320,0z"
+                Fill="#FFFFFFFF"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                StrokeMiterLimit="4"
+                StrokeDashOffset="0" />
+            <Path
+                Data="F1M320,170L320,300 600,300 600,170 320,170z"
+                Fill="#FFFFFFFF"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                StrokeMiterLimit="4"
+                StrokeDashOffset="0" />
+            <Path
+                Data="F1M0,170L0,300 280,300 280,170 0,170z"
+                Fill="#FFFFFFFF"
+                StrokeThickness="1"
+                StrokeStartLineCap="Flat"
+                StrokeEndLineCap="Flat"
+                StrokeLineJoin="Miter"
+                StrokeMiterLimit="4"
+                StrokeDashOffset="0" />
+            <Canvas
+                RenderTransform="0.820793,0,0,0.735294,20.46501,22.50003">
+                <Rectangle
+                    Fill="#FF007A5E"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter"
+                    Width="292.40027"
+                    Height="122.40007">
+                    <Rectangle.RenderTransform>
+                        <TranslateTransform
+                            X="23.800024"
+                            Y="23.799913" />
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Path
+                    Data="F1M23.800025,146.19998L170.00016,84.999947 316.20029,146.19998 23.800025,146.19998z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M23.800025,23.799913L170.00016,84.999947 316.20029,23.799913 23.800025,23.799913z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+            </Canvas>
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TranslateTransform
+                        X="-10.00005"
+                        Y="4.248412E-05" />
+                </Canvas.RenderTransform>
+                <Path
+                    Data="F1M190.40011,84.999941C190.40011,73.733326 181.26671,64.599929 170.0001,64.599929 158.73349,64.599929 149.60009,73.733326 149.60009,84.999941 149.60009,96.266556 158.73349,105.39995 170.0001,105.39995 181.26671,105.39995 190.40011,96.266556 190.40011,84.999941z"
+                    Fill="#FFCE1126"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M152.21526,79.222278L165.80288,79.222278 170.0001,66.29993 174.19732,79.222278 187.78494,79.222278 176.79391,87.207602 180.99113,100.12995 170.0001,92.144626 159.00907,100.12995 163.20629,87.207602 152.21526,79.222278z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+            </Canvas>
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TranslateTransform
+                        X="0.317841"
+                        Y="0" />
+                </Canvas.RenderTransform>
+                <Path
+                    Data="F1M62.885048,17.760548L70.913802,17.760548 73.393888,10.124025 75.873977,17.760548 83.902727,17.760548 77.408267,22.479515 79.888347,30.116037 73.393888,25.397075 66.899425,30.116037 69.379511,22.479515 62.885048,17.760548z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M149.17337,17.760548L157.20212,17.760548 159.68221,10.124025 162.1623,17.760548 170.19105,17.760548 163.69659,22.479515 166.17667,30.116037 159.68221,25.397075 153.18775,30.116037 155.66783,22.479515 149.17337,17.760548z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M235.46169,17.760548L243.49044,17.760548 245.97053,10.124025 248.45062,17.760548 256.47937,17.760548 249.98491,22.479515 252.46499,30.116037 245.97053,25.397075 239.47607,30.116037 241.95615,22.479515 235.46169,17.760548z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+            </Canvas>
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TranslateTransform
+                        X="0.317841"
+                        Y="0" />
+                </Canvas.RenderTransform>
+                <Path
+                    Data="F1M62.885048,146.44284L70.913802,146.44284 73.393888,138.80632 75.873976,146.44284 83.902727,146.44284 77.408266,151.16181 79.888346,158.79833 73.393888,154.07937 66.899425,158.79833 69.379511,151.16181 62.885048,146.44284z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M149.17337,146.44284L157.20212,146.44284 159.68221,138.80632 162.1623,146.44284 170.19105,146.44284 163.69659,151.16181 166.17667,158.79833 159.68221,154.07937 153.18775,158.79833 155.66783,151.16181 149.17337,146.44284z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M235.46169,146.44284L243.49044,146.44284 245.97053,138.80632 248.45062,146.44284 256.47937,146.44284 249.98491,151.16181 252.46499,158.79833 245.97053,154.07937 239.47607,158.79833 241.95615,151.16181 235.46169,146.44284z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+            </Canvas>
+            <Canvas
+                RenderTransform="0.865316,0,0,0.865316,18.84961,12.19595">
+                <Path
+                    Data="F1M48.59087,85.229781C51.143206,89.98482 56.108025,95.159425 60.443502,96.977525 60.513428,92.152559 58.800218,85.964011 56.457663,81.034156L48.59087,85.229781z"
+                    Fill="#FFCE1126"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+                <Path
+                    Data="F1M44.263624,68.923666C47.963067,76.637268 34.66788,95.033211 56.818635,99.347893 54.086053,95.619581 52.324598,89.463458 52.990944,84.521243 57.637848,86.292639 62.527533,91.462965 64.503852,95.419389 70.300765,74.367528 49.634612,75.651477 44.263624,68.923666z"
+                    Fill="#FFFCD116"
+                    StrokeThickness="1"
+                    StrokeStartLineCap="Flat"
+                    StrokeEndLineCap="Flat"
+                    StrokeLineJoin="Miter" />
+            </Canvas>
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

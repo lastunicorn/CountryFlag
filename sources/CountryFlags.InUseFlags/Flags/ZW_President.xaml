@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Zimbabwe (Presidential flag) -->
 
     <Canvas x:Key="CountryFlag_ZW_President" Width="1260" Height="630">
+
     </Canvas>
 
 </ResourceDictionary>

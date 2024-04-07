@@ -23,9 +23,9 @@ public class Ghana_CivilEnsignFlag : CountryFlag
         Country = Countries.Ghana;
 
         Id = "CivilEnsign";
-        Names = new List<FlagName>
+        Names = new FlagName
         {
-            "Civil ensign"
+            EnglishTranslation = "Civil ensign"
         };
         Description = "A red field with the national flag, fimbriated in black, in the canton.";
         Usage = FlagUsage.CivilEnsign;

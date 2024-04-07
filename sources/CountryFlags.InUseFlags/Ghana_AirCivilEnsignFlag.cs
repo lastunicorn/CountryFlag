@@ -16,18 +16,17 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class RomaniaCoatOfArms : CountryFlag
+public class Ghana_AirCivilEnsignFlag : CountryFlag
 {
-    public RomaniaCoatOfArms()
+    public Ghana_AirCivilEnsignFlag()
     {
-        Country = Countries.Romania;
+        Country = Countries.Ghana;
 
-        Id = "Coa";
-        Names = new List<FlagName>
+        Id = "AirCivilEnsign";
+        Names = new FlagName
         {
-            "Coat of Arms"
+            EnglishTranslation = "Civil Air Ensign"
         };
-        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
-        StartDate = new FlagDate(2016, 07, 11);
+        Usage = FlagUsage.AirForceEnsign;
     }
 }

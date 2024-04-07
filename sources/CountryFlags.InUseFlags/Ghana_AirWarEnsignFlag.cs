@@ -16,17 +16,17 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Grenada_NavalEnsignFlag : CountryFlag
+public class Ghana_AirWarEnsignFlag : CountryFlag
 {
-    public Grenada_NavalEnsignFlag()
+    public Ghana_AirWarEnsignFlag()
     {
-        Country = Countries.Grenada;
+        Country = Countries.Ghana;
 
-        Id = "NavalEnsign";
+        Id = "AirWarEnsign";
         Names = new FlagName
         {
-            EnglishTranslation = "Naval ensign"
+            EnglishTranslation = "Air Force Ensign"
         };
-        Usage = FlagUsage.WarEnsign;
+        Usage = FlagUsage.AirForceEnsign;
     }
 }

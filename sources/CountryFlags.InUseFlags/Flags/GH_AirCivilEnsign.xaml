@@ -1,0 +1,55 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ghana (Civil Air Ensign) -->
+
+    <Canvas x:Key="CountryFlag_GH_AirCivilEnsign" Width="600" Height="400">
+
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TranslateTransform
+                    X="0"
+                    Y="-2.3E-05" />
+            </Canvas.RenderTransform>
+            <Path
+                Data="F1M0,2.3E-05L600,2.3E-05 600,400.000023 0,400.000023z"
+                Fill="#FF73B6DC" />
+            <Path
+                Data="F1M0.000288,0.001489L299.996628,0.001489 299.996628,199.99904899999999 0.00028800000001183435,199.99904899999999z"
+                Fill="#FFCE1126" />
+            <Path
+                Data="F1M0.000288,66.667336L299.996628,66.667336 299.996628,199.99903600000002 0.00028800000001183435,199.99903600000002z"
+                Fill="#FFFCD116" />
+            <Path
+                Data="F1M0.000288,133.33319L299.996628,133.33319 299.996628,199.99903799999998 0.00028800000001183435,199.99903799999998z"
+                Fill="#FF006B3F" />
+            <Path
+                Data="F1M114.95222,92.132264L141.72755,92.132264 149.99845000000002,66.667328 158.26936,92.13226399999999 185.04469,92.13226399999999 163.38612,107.86823999999999 171.65702000000002,133.33317999999997 149.99845000000002,117.59720999999998 128.33988000000002,133.33317999999997 136.61079,107.86823999999997z"
+                Fill="#FF000000" />
+            <Path
+                Data="F1M350,177.57594L426.40002,177.57594 449.99998999999997,105 473.59997999999996,177.57594 550,177.57594 488.20001,222.42403000000002 511.79998,295 449.99999,250.15194 388.19999,295 411.79999000000004,222.42403000000002z"
+                Fill="#FF000000" />
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>
