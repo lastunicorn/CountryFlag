@@ -23,9 +23,6 @@ public class Albania_CoatOfArms : CountryFlag
         Country = Countries.Albania;
 
         Id = "Coa";
-        Names = new List<FlagName>
-        {
-            "Coat of Arms"
-        };
+        Label = "Coat of Arms";
     }
 }

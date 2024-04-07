@@ -14,25 +14,29 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.OutdatedFlags;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 
-public class Japan_ImperialNavyFlag : CountryFlag
+namespace DustInTheWind.CountryFlags.Demo;
+
+public static class TreeViewItemExtensions
 {
-    public Japan_ImperialNavyFlag()
+    public static int GetDepth(this TreeViewItem item)
     {
-        Country = Countries.Japan;
+        while (GetParent(item) is { } parent)
+            return GetDepth(parent) + 1;
 
-        Id = "ImperialNavy";
-        Label = "Imperial Navy Flag";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Flag of the Imperial Japanese Navy"
-            }
-        };
-        StartDate = new FlagDate(1889);
-        EndDate = new FlagDate(1945);
-        Usage = FlagUsage.WarEnsign;
+        return 0;
+    }
+
+    private static TreeViewItem GetParent(TreeViewItem item)
+    {
+        DependencyObject parent = VisualTreeHelper.GetParent(item);
+        
+        while (parent is not (TreeViewItem or TreeView)) 
+            parent = VisualTreeHelper.GetParent(parent);
+
+        return parent as TreeViewItem;
     }
 }

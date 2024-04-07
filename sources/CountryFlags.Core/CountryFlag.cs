@@ -45,6 +45,8 @@ public class CountryFlag
         }
     }
 
+    public string? Label { get; set; }
+
     public List<FlagName>? Names { get; set; }
 
     public string? Description { get; init; }

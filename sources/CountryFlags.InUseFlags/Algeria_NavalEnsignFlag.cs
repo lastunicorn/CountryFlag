@@ -23,10 +23,7 @@ public class Algeria_NavalEnsignFlag : CountryFlag
         Country = Countries.Algeria;
 
         Id = "NavalEnsign";
-        Names = new List<FlagName>
-        {
-            "Naval ensign"
-        };
+        Label = "Naval ensign";
         Usage = FlagUsage.WarEnsign;
     }
 }

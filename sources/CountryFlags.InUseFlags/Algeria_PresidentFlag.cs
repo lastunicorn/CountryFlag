@@ -23,10 +23,7 @@ public class Algeria_PresidentFlag : CountryFlag
         Country = Countries.Algeria;
 
         Id = "President";
-        Names = new List<FlagName>
-        {
-            "President's Flag"
-        };
+        Label = "President's Flag";
         Usage = FlagUsage.LeaderFlag;
     }
 }

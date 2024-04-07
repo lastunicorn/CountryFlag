@@ -23,10 +23,7 @@ public class Andorra_CivilFlag : CountryFlag
         Country = Countries.Andorra;
 
         Id = "Civil";
-        Names = new List<FlagName>
-        {
-            "Civil flag and ensign"
-        };
+        Label = "Civil flag and ensign";
         Description = "A vertical tricolour of blue, yellow and red.";
         StartDate = new FlagDate(1866);
         DesignedBy = "Napoleon III";

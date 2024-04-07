@@ -23,13 +23,7 @@ public class Japan_AirRoundelFlag : CountryFlag
         Country = Countries.Japan;
 
         Id = "AirRoundel";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Military aircraft insignia"
-            }
-        };
+        Label = "Military aircraft insignia";
         StartDate = new FlagDate(1945);
         Usage = FlagUsage.Other;
     }

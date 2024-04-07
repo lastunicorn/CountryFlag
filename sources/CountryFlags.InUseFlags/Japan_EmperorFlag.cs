@@ -23,13 +23,7 @@ public class Japan_EmperorFlag : CountryFlag
         Country = Countries.Japan;
 
         Id = "Emperor";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "The standard of the Japanese Emperor"
-            }
-        };
+        Label = "Emperor's Standard";
         Description = "A 16-petal chrysanthemum (called Kikkamon, Japanese:菊花紋), colored in gold, centered on a red background with a 2:3 ratio.";
         Usage = FlagUsage.LeaderFlag;
     }

@@ -37,7 +37,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     WindowState="Maximized">
 
     <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Pack://application:,,,/DustInTheWind.CountryFlags.Demo;component/Styles/TreeViewStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
 
     <Grid>
@@ -50,38 +54,86 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <ColumnDefinition Width="250" MaxWidth="500" />
         </Grid.ColumnDefinitions>
 
-        <ListView
+        <TreeView
             Grid.Column="0"
-            ItemsSource="{Binding Flags}"
-            SelectedItem="{Binding SelectedFlag}"
-            BorderThickness="0">
+            ItemsSource="{Binding CountryTree}"
+            BorderThickness="0"
+            SelectedItemChanged="TreeView_OnSelectedItemChanged">
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <DockPanel
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                    <Setter Property="IsExpanded" Value="True" />
+                </Style>
+            </TreeView.ItemContainerStyle>
+
+            <TreeView.Resources>
+
+                <HierarchicalDataTemplate DataType="{x:Type viewModels:CountryTreeItem}" ItemsSource="{Binding Flags}">
+                    <StackPanel
+                        Orientation="Horizontal"
                         MinHeight="30">
 
-                        <Control
-                            Width="20"
-                            Visibility="{Binding IsAdditional, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <Border
+                            VerticalAlignment="Center"
+                            Padding="6 0">
 
-                        <countryFlags:FlagBox
-                            DockPanel.Dock="Left"
-                            CountryCode="{Binding Id}"
-                            MaxHeight="16"
-                            Width="30"
-                            Margin="0 0 8 0"
-                            BorderThickness="1"
-                            BorderBrush="LightGray" />
+                            <StackPanel
+                                Orientation="Horizontal">
 
-                        <TextBlock
-                            Text="{Binding Title}"
-                            VerticalAlignment="Center" />
+                                <countryFlags:FlagBox
+                                    DockPanel.Dock="Left"
+                                    CountryCode="{Binding FlagId}"
+                                    MaxHeight="20"
+                                    Width="30"
+                                    Margin="0 0 8 0"
+                                    BorderThickness="1"
+                                    BorderBrush="LightGray"
+                                    IsTabStop="False" />
 
-                    </DockPanel>
+                                <TextBlock Text="{Binding Title}" />
+                            </StackPanel>
+
+                        </Border>
+
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+
+                <DataTemplate DataType="{x:Type viewModels:FlagTreeItem}">
+                    <StackPanel
+                        Orientation="Horizontal"
+                        MinHeight="30">
+
+                        <Border
+                            VerticalAlignment="Center"
+                            Padding="6 0">
+
+                            <StackPanel
+                                Orientation="Horizontal">
+
+                                <countryFlags:FlagBox
+                                    DockPanel.Dock="Left"
+                                    CountryCode="{Binding Id}"
+                                    MaxHeight="20"
+                                    Width="30"
+                                    Margin="0 0 8 0"
+                                    BorderThickness="1"
+                                    BorderBrush="LightGray"
+                                    IsTabStop="False" />
+
+                                <TextBlock
+                                    Text="{Binding Title}"
+                                    VerticalAlignment="Center" />
+                            </StackPanel>
+
+                        </Border>
+
+                    </StackPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+
+            </TreeView.Resources>
+
+        </TreeView>
+
 
         <GridSplitter
             Grid.Column="1"

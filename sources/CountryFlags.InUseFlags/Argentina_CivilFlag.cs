@@ -23,6 +23,7 @@ public class Argentina_CivilFlag : CountryFlag
         Country = Countries.Argentina;
 
         Id = "Civil";
+        Label = "Ornamental Flag";
         Names = new List<FlagName>
         {
             new()

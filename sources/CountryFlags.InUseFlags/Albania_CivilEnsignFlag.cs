@@ -23,6 +23,7 @@ public class Albania_CivilEnsignFlag : CountryFlag
         Country = Countries.Albania;
 
         Id = "CivilEnsign";
+        Label = "Civil Ensign";
         Description = "A horizontal tricolour with red on the top and bottom stripes, and black in the middle.";
         Usage = FlagUsage.CivilEnsign;
     }

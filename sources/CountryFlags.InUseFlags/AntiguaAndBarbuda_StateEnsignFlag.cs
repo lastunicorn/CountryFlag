@@ -23,6 +23,7 @@ public class AntiguaAndBarbuda_StateEnsignFlag : CountryFlag
         Country = Countries.AntiguaAndBarbuda;
 
         Id = "StateEnsign";
+        Label = "State Ensign";
         Description = "A white field with a red cross, the national flag in the canton.";
         Usage = FlagUsage.StateEnsign;
     }

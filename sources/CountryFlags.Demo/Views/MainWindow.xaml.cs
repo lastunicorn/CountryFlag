@@ -30,4 +30,17 @@ public partial class MainWindow : Window
 
         DataContext = mainViewModel;
     }
+
+    private void TreeView_OnSelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+    {
+        if (DataContext is MainViewModel mainViewModel)
+        {
+            mainViewModel.SelectedFlagId = e.NewValue switch
+            {
+                CountryTreeItem countryTreeItem => countryTreeItem.FlagId,
+                FlagTreeItem flagTreeItem => flagTreeItem.Id,
+                _ => null
+            };
+        }
+    }
 }

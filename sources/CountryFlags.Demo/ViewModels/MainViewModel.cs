@@ -14,26 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Collections.Immutable;
-
 namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
-    private FlagItemViewModel selectedFlag;
     private FlagInfoViewModel flagInfoViewModel;
     private string flagId;
     private string title;
     private string subtitle;
+    private string selectedFlagId;
 
-    public ImmutableList<FlagItemViewModel> Flags { get; }
-
-    public FlagItemViewModel SelectedFlag
+    public List<CountryTreeItem> CountryTree { get; }
+    
+    public string SelectedFlagId
     {
-        get => selectedFlag;
+        get => selectedFlagId;
         set
         {
-            selectedFlag = value;
+            if (value == selectedFlagId) return;
+            selectedFlagId = value;
             OnPropertyChanged();
 
             UpdateDisplayedFlag();
@@ -94,21 +93,18 @@ public class MainViewModel : ViewModelBase
 
     public MainViewModel()
     {
-        Flags = Countries.EnumerateAll()
-            .SelectMany(x => x.Flags)
-            .Where(x => x != null)
-            //.Where(x => string.IsNullOrEmpty(x.Id))
-            .Select(x => new FlagItemViewModel(x))
-            .ToImmutableList();
+        CountryTree = Countries.EnumerateAll()
+            .Select(x => new CountryTreeItem(x))
+            .ToList();
     }
 
     private void UpdateDisplayedFlag()
     {
-        CountryFlag countryFlag = selectedFlag == null
+        CountryFlag countryFlag = selectedFlagId == null
             ? null
             : Countries.EnumerateAll()
                 .SelectMany(x => x.Flags)
-                .FirstOrDefault(x => x.IsMatch(selectedFlag.Id));
+                .FirstOrDefault(x => x.IsMatch(selectedFlagId));
 
         FlagInfoViewModel = new FlagInfoViewModel(countryFlag);
         FlagId = countryFlag?.FullId;

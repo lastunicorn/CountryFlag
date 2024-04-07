@@ -16,38 +16,29 @@
 
 namespace DustInTheWind.CountryFlags.Demo.ViewModels;
 
-public class FlagItemViewModel
+public class FlagTreeItem
 {
     public string Title { get; }
 
     public string Id { get; }
 
-    public bool IsAdditional { get; }
-
-    public FlagItemViewModel(CountryFlag countryFlag)
+    public FlagTreeItem(CountryFlag countryFlag)
     {
         if (countryFlag == null)
             return;
 
         Id = countryFlag.FullId;
-        IsAdditional = !string.IsNullOrEmpty(countryFlag.Id);
-
-        if (IsAdditional)
-        {
-            string name = countryFlag.Names?.Count is > 0
-                ? countryFlag.Names.First().EnglishTranslation
-                : null;
-
-            Title = name ?? countryFlag.Country?.ShortName;
-        }
-        else
-        {
-            Title = countryFlag.Country?.ShortName;
-        }
+        Title = ComputeTitle(countryFlag);
     }
 
-    public override string ToString()
+    private static string ComputeTitle(CountryFlag countryFlag)
     {
-        return Title ?? string.Empty;
+        if (countryFlag.Label != null)
+            return countryFlag.Label;
+        
+        if (countryFlag.Names?.Count is > 0)
+            return countryFlag.Names.First().EnglishTranslation;
+
+        return countryFlag.Country?.ShortName;
     }
 }

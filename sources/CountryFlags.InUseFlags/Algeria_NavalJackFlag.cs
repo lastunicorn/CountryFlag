@@ -23,10 +23,7 @@ public class Algeria_NavalJackFlag : CountryFlag
         Country = Countries.Algeria;
 
         Id = "NavalJack";
-        Names = new List<FlagName>
-        {
-            "Naval jack"
-        };
+        Label = "Naval Jack";
         Usage = FlagUsage.NavalJack;
     }
 }

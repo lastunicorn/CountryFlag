@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.OutdatedFlags;
+using System.Collections.ObjectModel;
 
-public class Japan_ImperialNavyFlag : CountryFlag
+namespace DustInTheWind.CountryFlags.Demo.ViewModels;
+
+public class CountryTreeItem
 {
-    public Japan_ImperialNavyFlag()
-    {
-        Country = Countries.Japan;
+    public string Title { get; }
 
-        Id = "ImperialNavy";
-        Label = "Imperial Navy Flag";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Flag of the Imperial Japanese Navy"
-            }
-        };
-        StartDate = new FlagDate(1889);
-        EndDate = new FlagDate(1945);
-        Usage = FlagUsage.WarEnsign;
+    public string FlagId { get; }
+
+    public ObservableCollection<FlagTreeItem> Flags { get; }
+
+    public CountryTreeItem(Country country)
+    {
+        Title = country.ShortName;
+
+        FlagId = country.Flags
+            .FirstOrDefault(x => x.Id == null)?
+            .FullId;
+
+        IEnumerable<FlagTreeItem> flags = country.Flags
+            .Where(x => x.Id != null)
+            .Select(x => new FlagTreeItem(x));
+
+        Flags = new ObservableCollection<FlagTreeItem>(flags);
     }
 }

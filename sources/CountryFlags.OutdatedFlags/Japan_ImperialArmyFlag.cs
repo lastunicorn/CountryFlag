@@ -23,6 +23,7 @@ public class Japan_ImperialArmyFlag : CountryFlag
         Country = Countries.Japan;
 
         Id = "ImperialArmy";
+        Label = "Imperial Army Flag";
         Names = new List<FlagName>
         {
             new()

@@ -14,25 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.OutdatedFlags;
+using System.Globalization;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
 
-public class Japan_ImperialNavyFlag : CountryFlag
+namespace DustInTheWind.CountryFlags.Demo;
+
+public class LeftMarginMultiplierConverter : IValueConverter
 {
-    public Japan_ImperialNavyFlag()
-    {
-        Country = Countries.Japan;
+    public double Length { get; set; }
 
-        Id = "ImperialNavy";
-        Label = "Imperial Navy Flag";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Flag of the Imperial Japanese Navy"
-            }
-        };
-        StartDate = new FlagDate(1889);
-        EndDate = new FlagDate(1945);
-        Usage = FlagUsage.WarEnsign;
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if (value is TreeViewItem item)
+            return new Thickness(Length * item.GetDepth(), 0, 0, 0);
+
+        return new Thickness(0);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
     }
 }

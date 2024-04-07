@@ -23,6 +23,7 @@ public class Albania_NavalEnsignFlag : CountryFlag
         Country = Countries.Albania;
 
         Id = "NavalEnsign";
+        Label = "Naval Ensign";
         Description = "A double-headed eagle on a white background with a red stripe at the bottom.";
         Usage = FlagUsage.WarEnsign;
     }
