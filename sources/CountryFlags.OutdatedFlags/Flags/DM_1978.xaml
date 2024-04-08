@@ -1,0 +1,1056 @@
+﻿<!--
+Country Flags
+Copyright (C) 2022-2024 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Dominica (Flag used in 1978-1981) -->
+
+    <Canvas x:Key="CountryFlag_DM_1978" Width="1200" Height="600">
+
+        <Path
+            Data="F1M0,0L1200,0 1200,600 0,600z"
+            Fill="#FF006B3F" />
+        <Path
+            Data="F1M0,225L1200,225 1200,375 0,375z"
+            Fill="#FFFFFFFF"
+            StrokeThickness="1.224745" />
+        <Path
+            Data="F1M0,225L1200,225 1200,275 0,275z"
+            Fill="#FFFCD116"
+            StrokeThickness="0.577351" />
+        <Path
+            Data="F1M0,325L1200,325 1200,375 0,375z"
+            Fill="#FF000000" />
+        <Path
+            Data="F1M525,1.3E-05L675,1.3E-05 675,600.00001 525,600.00001z"
+            Fill="#FFFFFFFF"
+            StrokeThickness="1.224745" />
+        <Path
+            Data="F1M525,1.3E-05L575,1.3E-05 575,600.00001 525,600.00001z"
+            Fill="#FFFCD116"
+            StrokeThickness="0.577351" />
+        <Path
+            Data="F1M625,1.3E-05L675,1.3E-05 675,600.00001 625,600.00001z"
+            Fill="#FF000000" />
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TranslateTransform
+                    X="600"
+                    Y="300" />
+            </Canvas.RenderTransform>
+            <Ellipse
+                Fill="#FFD41C30"
+                Width="300"
+                Height="300">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform
+                        X="-150"
+                        Y="-150" />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Canvas>
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32" />
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32">
+                    <Path.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="-1"
+                            ScaleY="-1" />
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+            <Canvas
+                RenderTransform="0.80901699,0.58778525,-0.58778525,0.80901699,0,0">
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32" />
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32">
+                    <Path.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="-1"
+                            ScaleY="-1" />
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+            <Canvas
+                RenderTransform="0.30901699,0.95105652,-0.95105652,0.30901699,0,0">
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32" />
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32">
+                    <Path.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="-1"
+                            ScaleY="-1" />
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+            <Canvas
+                RenderTransform="-0.30901699,0.95105652,-0.95105652,-0.30901699,0,0">
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32" />
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32">
+                    <Path.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="-1"
+                            ScaleY="-1" />
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+            <Canvas
+                RenderTransform="-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0">
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32" />
+                <Path
+                    Data="F1M-4.81,-118.41L0,-132.13 4.37,-118.63 19.02,-118.41 7.43,-109.56 12.68,-94.51 0,-103.80000000000001 -12.46,-94.95000000000002 -7.650000000000001,-109.56000000000002 -19.02,-118.19000000000001z"
+                    Fill="#FF32CD32">
+                    <Path.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="-1"
+                            ScaleY="-1" />
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+            <Canvas
+                RenderTransform="-1,0,0,1,-0.00858,0">
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="61.61000061035156"
+                    Height="379.6400146484375">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="649.4050216674805"
+                                    Y="396.30999755859375" />
+                                <MatrixTransform>0.289553,-0.03018225,0.01658794,0.23225804,-186.11735,-75.926206</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="61.61000061035156"
+                    Height="379.6400146484375">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="649.4050216674805"
+                                    Y="396.30999755859375" />
+                                <MatrixTransform>0.30625538,-0.03184484,0.01668502,0.23224838,-188.73313,-74.886801</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="61.61000061035156"
+                    Height="379.6400146484375">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="649.4050216674805"
+                                    Y="396.30999755859375" />
+                                <MatrixTransform>0.24500433,-0.0258909,0.01789798,0.25675005,-151.94706,-90.935577</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path
+                    Data="F1M-44.213085,62.564681C-36.555754,62.246167 -39.880982,58.148949 -36.013843,55.969030000000004 -32.149305,53.791762000000006 -26.648485,55.232245000000006 -24.998279000000004,57.954864 -23.348072000000002,60.677484 -24.671266000000003,63.351595 -22.547808000000003,63.388163 -20.421798000000003,63.424773 37.380306999999995,61.000524999999996 39.462422999999994,63.282897999999996 41.547141999999994,65.562618 41.89072999999999,70.05887 39.73186499999999,71.807039 37.57260199999999,73.576775 -35.502873,74.394946 -38.019302,72.54468800000001 -40.536227000000004,70.72139100000001 -44.221373,63.014920000000004 -44.21308500000001,62.56468100000001z"
+                    Fill="#FF9C4A00"
+                    Stroke="#FF000000"
+                    StrokeThickness="0.6573" />
+                <Canvas>
+                    <Path
+                        Data="F1M-3.3768912,68.194919C-3.5157446,73.97045 5.0266835,72.334565 5.1440072,77.158287 4.886691,82.271863 -9.1802916,77.470843 -9.315606299999999,68.11661000000001 -8.730737399999999,58.77187400000001 5.038237100000002,54.15437700000001 5.208533000000001,59.49179600000001 5.335199200000001,63.92692000000001 -3.2380378999999984,62.41938700000001 -3.3768911999999993,68.19491900000001z"
+                        Fill="#FFFCD116"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.6326" />
+                    <Path
+                        Data="F1M1.6637058,68.261384C1.5248524,74.03691500000001 10.067281000000001,72.40103 10.184604,77.22475200000001 9.927288,82.338328 -4.1396946,77.53730800000001 -4.275009299999999,68.183075 -3.690140399999999,58.838339000000005 10.078834,54.220842000000005 10.249130000000001,59.558261 10.375796000000001,63.993385 1.8025591000000016,62.485852 1.6637058000000007,68.261384z"
+                        Fill="#FFFCD116"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.6326" />
+                    <Path
+                        Data="F1M7.0709208,68.057753C6.932067399999999,73.833284 15.474496,72.197399 15.591819,77.02112100000001 15.334503,82.134697 1.2675203999999987,77.33367700000001 1.1322057,67.979444 1.7170746000000001,58.634708 15.486049,54.017211 15.656345,59.35463 15.783011,63.789754 7.209774100000001,62.282221 7.0709208,68.057753z"
+                        Fill="#FFFCD116"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.6326" />
+                    <Path
+                        Data="F1M12.111394,68.124255C11.97254,73.899787 20.514969,72.263901 20.632292,77.087624 20.374976,82.2012 6.307993399999999,77.40018 6.1726787000000005,68.04594700000001 6.7575476000000005,58.701211000000015 20.526522,54.083714000000015 20.696818,59.42113300000001 20.823484,63.856257000000014 12.250247,62.34872400000001 12.111394,68.124255z"
+                        Fill="#FFFCD116"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.6326" />
+                </Canvas>
+                <Ellipse
+                    Fill="#FF9C4A00"
+                    Stroke="#FF000000"
+                    StrokeThickness="0.3991"
+                    Width="7.067800045013428"
+                    Height="6.806000232696533">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="474.8461048603058"
+                                    Y="-44.48899865150452" />
+                                <MatrixTransform>1.3799165,0.02078085,-0.03061721,1.4544413,-625.22695,117.20523</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20742248,-0.03129182,0.04226118,0.39513675,-119.97806,-293.41566</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20742248,-0.03129182,0.04226118,0.39513675,-127.33463,-293.99555</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20742248,-0.0312918,0.04226106,0.39513549,-132.603,-303.41129</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.19942957,-0.0315355,0.04632234,0.43592867,-125.4075,-340.63478</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.19950028,-0.03083913,0.04356143,0.40873864,-112.65072,-316.23218</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.19950028,-0.03083913,0.04356143,0.40873864,-118.30405,-319.63879</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.19950028,-0.03083913,0.04356143,0.40873864,-125.43742,-324.55362</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.19950028,-0.03083913,0.04356143,0.40873864,-132.04249,-327.53171</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path
+                    Data="F1M-14.73408,-52.686013C-14.73408,-52.686013 -29.389421,-39.966852 -27.744911000000002,-5.5423602000000045 -25.899475000000002,29.077561999999993 4.6485804,45.351977 4.6485804,45.351977 4.6485804,45.351977 12.434561,35.525045 11.530538,7.708479199999999 9.3473299,-32.960001 -5.0778777999999996,-50.928723 -5.0778777999999996,-50.928723z"
+                    Fill="#FF9461C9"
+                    Stroke="#FF000000"
+                    StrokeThickness="0.5749" />
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20967854,0.00617733,-0.02883923,0.39634241,-45.183498,-309.40147</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20967854,0.00617733,-0.02883923,0.39634241,-52.318928,-311.28321</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20967854,0.00617736,-0.02883913,0.39634115,-55.824816,-321.48715</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.20185704,0.00451301,-0.03211329,0.43720504,-42.110313,-356.83224</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.2018025,0.00521083,-0.02998402,0.40995827,-33.906971,-330.54675</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.2018025,0.00521083,-0.02998402,0.40995827,-38.862639,-334.90639</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.2018025,0.00521083,-0.02998402,0.40995827,-45.005838,-341.01389</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="41.62799835205078"
+                    Height="48.28799819946289">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="406.2959861755371"
+                                    Y="880.8560009002686" />
+                                <MatrixTransform>0.2018025,0.00521083,-0.02998402,0.40995827,-50.974388,-345.12149</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FFD41C30"
+                    Stroke="#FF000000"
+                    StrokeThickness="1"
+                    Width="116.55999755859375"
+                    Height="372.9800109863281">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="566.1399841308594"
+                                    Y="419.61997985839844" />
+                                <MatrixTransform>0.19786701,-0.07643491,0.08023488,0.18709671,-155.83813,-59.21337</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.4635"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.49827764,0.00887179,-0.00656928,0.3689586,-99.510833,-162.76931</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5462"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.00656928,0.3689586,-84.135444,-169.29958</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5462"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.00656928,0.3689586,-90.652069,-169.41561</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.56"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.46713655,0.00831733,-0.00616707,0.34636886,-93.887858,-166.3691</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.56"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.46713655,0.00831733,-0.00616707,0.34636886,-94.461639,-172.01688</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5462"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.00656928,0.3689586,-96.8782,-173.22007</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5623"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.0064352,0.36142827,-95.468785,-176.63136</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.4635"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.49827764,0.00887179,-0.00656928,0.3689586,-114.72518,-179.36983</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.56"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.46713655,0.00831733,-0.00616707,0.34636886,-98.157196,-179.08115</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5623"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.0064352,0.36142827,-100.2913,-183.52126</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5462"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.00656928,0.3689586,-110.48856,-178.90566</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5623"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.0064352,0.36142827,-108.8569,-179.77161</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.5623"
+                    Width="21.645999908447266"
+                    Height="25.809999465942383">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="207.30700492858887"
+                                    Y="343.8450002670288" />
+                                <MatrixTransform>0.44637456,0.00794766,-0.0064352,0.36142827,-106.80676,-183.69602</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5449"
+                    Width="134.87600708007812"
+                    Height="411.2799987792969">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="461.2419891357422"
+                                    Y="358.83998107910156" />
+                                <MatrixTransform>0.21931516,-0.07742835,0.08682875,0.20202384,-145.01539,-72.55561</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.20574399,-0.0978521,0.09471329,0.21196041,-137.12211,-77.403485</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Canvas>
+                    <Path
+                        Data="F1M31.462582,7.798675C44.273286,23.396889 42.655575,33.301970000000004 41.319929,41.682190000000006 37.295042,32.018935000000006 35.09747,25.935914000000004 22.284544,10.334996000000007 9.4716187,-5.265922499999993 15.867064,-16.21255199999999 16.746886,-21.98116899999999 18.673467,-16.98809199999999 18.649656,-7.802243399999991 31.462581999999998,7.79867500000001z"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                    <Path
+                        Data="F1M32.616052,20.397765C45.426756000000005,35.995979 43.809045000000005,45.90106 42.473399,54.28128 38.448512,44.618025 36.25094,38.535004 23.438014,22.934086000000004 10.625089,7.333167500000004 17.020533999999998,-3.613461799999996 17.900356,-9.382078999999994 19.826936999999997,-4.389001999999993 19.803126,4.796846600000006 32.616051999999996,20.397765000000007z"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                    <Path
+                        Data="F1M33.001502,30.545466C46.121623,45.867895000000004 44.702257,55.805012000000005 43.534416,64.211635 39.317096,54.636146000000004 36.998322,48.601234000000005 23.875927,33.276148000000006 10.753531,17.951062000000007 16.928895,6.8711542000000065 17.693213,1.0852029000000059 19.719255,6.036183500000006 19.879107,15.220380000000006 33.001502,30.545466000000005z"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                </Canvas>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.3887"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.40784061,-0.1037946,0.16693789,0.37767112,-299.57061,-196.0302</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.6398"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.36689221,-0.0631048,0.12978287,0.31264984,-259.00282,-166.87124</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="1.6398"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.36814797,-0.0553158,0.1232589,0.31530969,-261.52366,-166.81962</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.0966"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.29657862,-0.05431058,0.11151259,0.23307633,-211.06958,-135.53834</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.0966"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.29951522,-0.03800069,0.09680807,0.23872917,-208.27027,-143.86531</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path
+                    Data="F1M8.6195396,-15.767835C12.407426,-6.5127711 13.940854,1.8088667999999988 12.039861,2.8095164000000015 10.141163,3.808957300000001 5.5266551,-2.890854899999998 1.7387689000000002,-12.145919"
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="0.5749" />
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.0966"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.29951522,-0.03800069,0.09680807,0.23872917,-208.89375,-154.73721</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF006B3F"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.0966"
+                    Width="26.642000198364258"
+                    Height="81.59200286865234">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="515.3589925765991"
+                                    Y="605.2740058898926" />
+                                <MatrixTransform>0.30032211,-0.03210428,0.09144035,0.24056268,-212.194,-155.98718</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Canvas>
+                    <Path
+                        Data="F1M2.0257453,-28.338145C5.7037061,-22.084217000000002 7.6838742,-16.244395 6.4442276,-15.300898 5.206078199999999,-14.358542 1.2167244999999998,-18.66917 -2.4612363000000013,-24.923099"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                    <Path
+                        Data="F1M4.5726443,-32.485105C8.250605100000001,-26.231176999999995 10.230773,-20.391354999999997 8.991126600000001,-19.447857999999997 7.752977200000001,-18.505501999999996 3.7636235000000013,-22.816129999999998 0.08566270000000031,-29.070058999999997"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                    <Path
+                        Data="F1M16.013433,-31.606808C21.138396999999998,-23.064207000000003 23.896037,-15.086229 22.166736,-13.796183 20.439524,-12.507694999999998 14.879081,-18.394802 9.7541163,-26.937403"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                    <Path
+                        Data="F1M8.4524006,-36.082328C12.145098,-29.177736999999997 14.138941,-22.734091 12.901413000000002,-21.697065999999996 11.665379000000001,-20.661293999999994 7.665783100000001,-25.424157999999995 3.973086200000001,-32.328748"
+                        Fill="#FF006B3F"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.5749" />
+                </Canvas>
+                <Canvas>
+                    <Canvas>
+                        <Path
+                            Data="F1M8.1245845,-46.086178C5.659383399999999,-43.603944 8.0737545,-38.962582999999995 10.330106999999998,-37.285139 12.860735999999998,-34.990918 27.072240999999998,-19.99905 37.098888,-32.612917 29.065350000000002,-32.759025 14.072204000000003,-51.61744900000001 8.124584500000001,-46.086178000000004z"
+                            Fill="#FF9461C9"
+                            Stroke="#FF000000"
+                            StrokeThickness="0.5905" />
+                        <Path
+                            Data="F1M6.3689905,-53.485518C3.9037894,-51.003284 6.318160499999999,-46.361923 8.5745131,-44.684478999999996 11.105142,-42.390257999999996 25.316647,-27.398389999999996 35.343294,-40.012257 27.309756,-40.158364999999996 12.31661,-59.016789 6.368990499999999,-53.485518z"
+                            Fill="#FF9461C9"
+                            Stroke="#FF000000"
+                            StrokeThickness="0.5905" />
+                        <Path
+                            Data="F1M4.1226915,-60.575768C1.6574904000000004,-58.093534 4.0718615,-53.452172999999995 6.3282141,-51.774728999999994 8.8588435,-49.48050799999999 23.070348,-34.48863999999999 33.096995,-47.102506999999996 25.063457,-47.248614999999994 10.070311,-66.107039 4.122691499999998,-60.575768z"
+                            Fill="#FF9461C9"
+                            Stroke="#FF000000"
+                            StrokeThickness="0.5905" />
+                        <Path
+                            Data="F1M-0.75854747,-68.686568C-3.2237486,-66.20433399999999 -0.80937737,-61.56297299999999 1.4469751,-59.88552899999999 3.9776045,-57.59130799999999 18.189109,-42.59943999999999 28.215756,-55.21330699999999 20.182218,-55.35941499999999 5.189072400000001,-74.217839 -0.7585474699999999,-68.686568z"
+                            Fill="#FF9461C9"
+                            Stroke="#FF000000"
+                            StrokeThickness="0.5905" />
+                    </Canvas>
+                    <Path
+                        Data="F1M-18.271949,-76.448224C-13.191647,-80.227175 -3.8602964999999987,-81.332229 3.409471500000002,-77.63141 9.464848400000001,-74.664603 19.556775000000002,-62.558485000000005 27.143500000000003,-59.696463 21.803506000000002,-58.743924 18.554949,-59.548732 15.142192000000003,-61.188056 8.403327400000002,-56.308335 6.0020232000000036,-55.576758000000005 -0.8656887699999967,-54.617895000000004 -10.417290999999997,-53.239941 -18.345371999999998,-55.726452 -21.131753999999994,-60.70732100000001 -23.971005999999996,-65.40682600000001 -22.747183999999994,-72.946055 -18.271948999999992,-76.44822400000001z"
+                        Fill="#FF9461C9"
+                        Stroke="#FF000000"
+                        StrokeThickness="0.6276" />
+                </Canvas>
+                <Ellipse
+                    Fill="#FFD41C30"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="28.308000564575195"
+                    Height="29.972000122070312">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="273.0760107040405"
+                                    Y="308.0540084838867" />
+                                <MatrixTransform>0.30909157,0.00550335,-0.00301489,0.16932914,-95.304017,-125.19072</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FFFCD116"
+                    Stroke="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="46.507999420166016"
+                    Height="31.790000915527344">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="181.32600212097168"
+                                    Y="332.3650093078613" />
+                                <MatrixTransform>0.24579207,-0.09143683,0.08132205,0.2192462,-99.445497,-116.289</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse
+                    Fill="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="11.656000137329102"
+                    Height="11.655799865722656">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="278.0719938278198"
+                                    Y="328.0320854187012" />
+                                <MatrixTransform>0.26990081,0.00480556,-0.00415607,0.23342269,-82.956029,-148.37388</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path
+                    Data="F1M-17.127905,-65.514747C-16.725827,-63.565822 -18.171409999999998,-60.932431 -21.30792,-59.999745 -24.503127,-58.677023 -26.926336,-55.677727999999995 -28.323995,-50.773402999999995 -33.179798,-61.957198999999996 -30.093604,-66.688947 -24.936096,-67.839073 -20.499516999999997,-69.254018 -17.825806,-69.074752 -17.127905,-65.514747z"
+                    Fill="#FFFCD116"
+                    Stroke="#FF000000"
+                    StrokeThickness="0.7318" />
+                <Ellipse
+                    Fill="#FF000000"
+                    StrokeThickness="2.5"
+                    Width="0"
+                    Height="0">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <TranslateTransform
+                                    X="198.98"
+                                    Y="362.39001" />
+                                <MatrixTransform>0.23597119,-0.0123552,0.01333585,0.24161486,-73.600709,-149.7658</MatrixTransform>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Canvas>
+        </Canvas>
+
+    </Canvas>
+
+</ResourceDictionary>

@@ -22,6 +22,9 @@ public class LatviaFlag : CountryFlag
     {
         Country = Countries.Latvia;
 
-        ;
+        StartDate = new FlagDate(1921, 06, 15);
+        Description = "A carmine red field bisected by a narrow white stripe (one-fifth the width of the flag)";
+        DesignedBy = "Ansis Cīrulis";
+        Usage = FlagUsage.CivilAndStateFlag | FlagUsage.CivilEnsign;
     }
 }

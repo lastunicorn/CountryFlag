@@ -16,16 +16,16 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_NavalEnsignFlag : CountryFlag
+public class Estonia_CoatOfArms : CountryFlag
 {
-    public Estonia_NavalEnsignFlag()
+    public Estonia_CoatOfArms()
     {
         Country = Countries.Estonia;
 
-        Id = "NavalEnsign";
-        Label = "Naval ensign";
-        Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.";
-        StartDate = new FlagDate(1991);
-        Usage = FlagUsage.WarEnsign;
+        Id = "Coa";
+        Label = "Coat of Arms";
+        Description = "Or, three lions passant guardant azure, langued and armed gules. A garland of oak leaves surrounds the greater arms.";
+        StartDate = new FlagDate(1990, 08, 07);
+        Comments = "Armiger: Republic of Estonia";
     }
 }

@@ -28,5 +28,11 @@ public class Ukraine_CoatOfArms : CountryFlag
             "Coat of Arms"
         };
         StartDate = new FlagDate(1992, 02, 19);
+        DesignedBy = new StringList
+        {
+            "Andriy Grechylo",
+            "Oleksii Kokhan",
+            "Ivan Turetskyi"
+        };
     }
 }

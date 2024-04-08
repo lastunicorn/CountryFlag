@@ -58,7 +58,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             Grid.Column="0"
             ItemsSource="{Binding CountryTree}"
             BorderThickness="0"
-            SelectedItemChanged="TreeView_OnSelectedItemChanged">
+            SelectedItemChanged="TreeView_OnSelectedItemChanged"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
             <TreeView.ItemContainerStyle>
                 <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}">
@@ -90,7 +91,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     BorderBrush="LightGray"
                                     IsTabStop="False" />
 
-                                <TextBlock Text="{Binding Title}" />
+                                <TextBlock
+                                    Text="{Binding Title}"
+                                    TextTrimming="CharacterEllipsis"/>
                             </StackPanel>
 
                         </Border>
@@ -116,13 +119,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     MaxHeight="20"
                                     Width="30"
                                     Margin="0 0 8 0"
-                                    BorderThickness="1"
-                                    BorderBrush="LightGray"
                                     IsTabStop="False" />
 
                                 <TextBlock
                                     Text="{Binding Title}"
-                                    VerticalAlignment="Center" />
+                                    VerticalAlignment="Center"
+                                    TextWrapping="WrapWithOverflow"
+                                    TextTrimming="CharacterEllipsis" />
                             </StackPanel>
 
                         </Border>

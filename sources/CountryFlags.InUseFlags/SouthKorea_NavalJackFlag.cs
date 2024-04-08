@@ -23,13 +23,7 @@ public class SouthKorea_NavalJackFlag : CountryFlag
         Country = Countries.SouthKorea;
 
         Id = "NavalJack";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Naval Jack"
-            }
-        };
+        Label = "Naval Jack";
         Description = "A Blue Ensign with a white canton that has a red and blue taegeuk superimposed in the center of the canton, with two anchors crossing.";
         Usage = FlagUsage.NavalJack;
     }

@@ -86,6 +86,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\AZ_ADR_1918_1.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\DM_1978.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
       <Page Update="Flags\DM_1955.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>

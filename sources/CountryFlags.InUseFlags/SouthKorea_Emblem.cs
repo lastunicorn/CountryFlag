@@ -16,16 +16,15 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_NavalEnsignFlag : CountryFlag
+public class SouthKorea_Emblem : CountryFlag
 {
-    public Estonia_NavalEnsignFlag()
+    public SouthKorea_Emblem()
     {
-        Country = Countries.Estonia;
+        Country = Countries.SouthKorea;
 
-        Id = "NavalEnsign";
-        Label = "Naval ensign";
-        Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.";
-        StartDate = new FlagDate(1991);
-        Usage = FlagUsage.WarEnsign;
+        Id = "Emblem";
+        Label = "National Emblem";
+        StartDate = new FlagDate(1963, 12, 10);
+        Comments = "Motto: 대한민국 (Republic of Korea); Armiger:  South Korea";
     }
 }

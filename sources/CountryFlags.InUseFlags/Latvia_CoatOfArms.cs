@@ -16,16 +16,16 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_NavalEnsignFlag : CountryFlag
+public class Latvia_CoatOfArms : CountryFlag
 {
-    public Estonia_NavalEnsignFlag()
+    public Latvia_CoatOfArms()
     {
-        Country = Countries.Estonia;
+        Country = Countries.Latvia;
 
-        Id = "NavalEnsign";
-        Label = "Naval ensign";
-        Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.";
-        StartDate = new FlagDate(1991);
-        Usage = FlagUsage.WarEnsign;
+        Id = "Coa";
+        Label = "Greater Coat of Arms";
+        Description = "Creast: An arc of three mullets Or. Shield: Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent. Supporters: Dexter, a lion rampant Gules, and sinister, a griffin segreant Argent; both langued Or. Compartment: Two oak branches fructed Vert tied together by a ribbon Sanguine charged with a bar Argent.";
+        StartDate = new FlagDate(1921, 06, 15);
+        Comments = "Armiger: Republic of Latvia";
     }
 }

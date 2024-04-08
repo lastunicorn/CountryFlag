@@ -16,16 +16,26 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_NavalEnsignFlag : CountryFlag
+public class Finland_CoatOfArms : CountryFlag
 {
-    public Estonia_NavalEnsignFlag()
+    public Finland_CoatOfArms()
     {
-        Country = Countries.Estonia;
+        Country = Countries.Finland;
 
-        Id = "NavalEnsign";
-        Label = "Naval ensign";
-        Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.";
-        StartDate = new FlagDate(1991);
-        Usage = FlagUsage.WarEnsign;
+        Id = "Coa";
+        Label = "Coat of arms";
+        Description = "Shield: Gules, sémy of nine roses Argent, a crowned lion rampant Or armed of the same trampling a sabre Argent hilted and pommeled Or, his dexter foreleg in the form of an arm in armour Argent garnished Or bearing aloft a sword Argent hilted and pommeled Or.";
+        StartDate = new FlagDate(1580)
+        {
+            Description = "first documented"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1978)
+            {
+                Description = "current version"
+            }
+        };
+        Comments = "Armiger: Republic of Finland";
     }
 }

@@ -20,23 +20,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Latvia -->
+    <!-- Latvia (Naval Ensign) -->
 
-    <Canvas x:Key="CountryFlag_LV" Width="60" Height="30">
-
-        <Rectangle
-            Width="60"
-            Height="30"
-            Canvas.Left="0"
-            Canvas.Top="0"
-            Fill="#FF77353D" />
+    <Canvas x:Key="CountryFlag_LV_NavalEnsign" Width="150" Height="100">
 
         <Rectangle
-            Width="60"
-            Height="6"
-            Canvas.Left="0"
-            Canvas.Top="12"
-            Fill="#ffffff" />
+            RadiusX="0"
+            RadiusY="0"
+            Fill="#FFFFFFFF"
+            Width="150"
+            Height="100" />
+
+        <Path
+            Data="F1M75,0L75,100 M0,50L150,50"
+            Stroke="#FF9E292B"
+            StrokeThickness="20" />
+
+        <Path
+            Data="F1M75,0L75,100 M0,50L150,50"
+            Stroke="#FFFFFFFF"
+            StrokeThickness="4" />
 
     </Canvas>
 

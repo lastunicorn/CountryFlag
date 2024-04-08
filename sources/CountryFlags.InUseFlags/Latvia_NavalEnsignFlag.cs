@@ -16,16 +16,16 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_NavalEnsignFlag : CountryFlag
+public class Latvia_NavalEnsignFlag : CountryFlag
 {
-    public Estonia_NavalEnsignFlag()
+    public Latvia_NavalEnsignFlag()
     {
-        Country = Countries.Estonia;
+        Country = Countries.Latvia;
 
         Id = "NavalEnsign";
         Label = "Naval ensign";
-        Description = "Tricolour, swallowtail, defaced with the shield of the state arms off-set towards hoist.";
         StartDate = new FlagDate(1991);
+        Description = "White field with Saint George's cross voided in the colors of the State Flag (the width of the arms of the cross is 1/5 of the flag width).";
         Usage = FlagUsage.WarEnsign;
     }
 }
