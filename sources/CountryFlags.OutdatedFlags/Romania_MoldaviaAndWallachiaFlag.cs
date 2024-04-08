@@ -25,7 +25,7 @@ public class Romania_MoldaviaAndWallachiaFlag : CountryFlag
         Id = "MoldaviaAndWallachia";
         Names = new List<FlagName>
         {
-            "Flag of the United Principalities of Moldavia and Wallachia"
+            "United Principalities of Moldavia and Wallachia"
         };
         StartDate = new FlagDate(1859);
         EndDate = new FlagDate(1862);

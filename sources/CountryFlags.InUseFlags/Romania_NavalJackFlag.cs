@@ -23,13 +23,7 @@ public class Romania_NavalJackFlag : CountryFlag
         Country = Countries.Romania;
 
         Id = "NavalJack";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "Naval Jack"
-            }
-        };
+        Label = "Naval Jack";
         Usage = FlagUsage.NavalJack;
     }
 }

@@ -23,10 +23,7 @@ public class Romania_UnitedPrincipalitiesFlag : CountryFlag
         Country = Countries.Romania;
 
         Id = "UnitedPrincipalities";
-        Names = new List<FlagName>
-        {
-            "Flag of the Romanian United Principalities"
-        };
+        Label = "Romanian United Principalities";
         StartDate = new FlagDate(1862);
         EndDate = new FlagDate(1866);
     }

@@ -23,10 +23,7 @@ public class Romania_PeopleRepublic1Flag : CountryFlag
         Country = Countries.Romania;
 
         Id = "PeopleRepublic1";
-        Names = new List<FlagName>
-        {
-            "Flag of the Romanian People's Republic (1948)"
-        };
+        Label = "Romanian People's Republic (1948)";
         StartDate = new FlagDate(1948);
         EndDate = new FlagDate(1948);
     }

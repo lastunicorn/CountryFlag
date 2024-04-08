@@ -23,10 +23,7 @@ public class Romania_SocialistRepublicFlag : CountryFlag
         Country = Countries.Romania;
 
         Id = "SocialistRepublic";
-        Names = new List<FlagName>
-        {
-            "Flag of the Socialist Republic of Romania (1965–1989)"
-        };
+        Label = "Socialist Republic of Romania (1965–1989)";
         StartDate = new FlagDate(1952);
         EndDate = new FlagDate(1965);
     }

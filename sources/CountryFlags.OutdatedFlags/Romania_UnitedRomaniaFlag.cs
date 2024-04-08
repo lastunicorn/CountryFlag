@@ -25,7 +25,7 @@ public class Romania_UnitedRomaniaFlag : CountryFlag
         Id = "UnitedRomania";
         Names = new List<FlagName>
         {
-            "Flag of Romania"
+            "United Romania 1866"
         };
         StartDate = new FlagDate(1866);
         EndDate = new FlagDate(1948);

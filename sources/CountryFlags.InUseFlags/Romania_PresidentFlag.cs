@@ -23,13 +23,7 @@ public class Romania_PresidentFlag : CountryFlag
         Country = Countries.Romania;
 
         Id = "President";
-        Names = new List<FlagName>
-        {
-            new()
-            {
-                EnglishTranslation = "President's Flag"
-            }
-        };
+        Label = "President's Flag";
         Usage = FlagUsage.LeaderFlag;
     }
 }

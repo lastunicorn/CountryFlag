@@ -23,10 +23,7 @@ public class Romania_Revolution1989Flag : CountryFlag
         Country = Countries.Romania;
 
         Id = "Revolution1989";
-        Names = new List<FlagName>
-        {
-            "Flag of the anti-Ceaușescu protesters during the Romanian Revolution"
-        };
+        Label = "Romanian Revolution 1989";
         StartDate = new FlagDate(1989, 12, 17);
         EndDate = new FlagDate(1989);
         Comments = "Starting on 17 December 1989, during the revolution at Timișoara, the protesters began waving flags with the Communist coat of arms cut out of the middle. The coat of arms was perceived as a symbol of Nicolae Ceaușescu's dictatorship. These flags were called \"the flag with the hole\" (drapelul cu gaură).";

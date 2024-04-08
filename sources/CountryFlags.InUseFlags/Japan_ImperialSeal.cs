@@ -16,15 +16,16 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Romania_CoatOfArms : CountryFlag
+public class Japan_ImperialSeal : CountryFlag
 {
-    public Romania_CoatOfArms()
+    public Japan_ImperialSeal()
     {
-        Country = Countries.Romania;
+        Country = Countries.Japan;
 
-        Id = "Coa";
-        Label = "Coat of Arms";
-        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
-        StartDate = new FlagDate(2016, 07, 11);
+        Id = "ImperialSeal";
+        Label = "Imperial seal";
+        Description = "The symbol is a yellow or orange chrysanthemum with black or red outlines and background. A central disc is surrounded by a front set of 16 petals. A rear set of 16 petals are half staggered in relation to the front set and are visible at the edges of the flower.";
+        StartDate = new FlagDate(1183);
+        Comments = "Armiger: Naruhito, Emperor of Japan";
     }
 }
