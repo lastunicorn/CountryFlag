@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Finland_CoatOfArms : CountryFlag
+public class Finland_CoatOfArms : CoatOfArms
 {
     public Finland_CoatOfArms()
     {
@@ -24,7 +24,7 @@ public class Finland_CoatOfArms : CountryFlag
 
         Id = "Coa";
         Label = "Coat of arms";
-        Description = "Shield: Gules, sémy of nine roses Argent, a crowned lion rampant Or armed of the same trampling a sabre Argent hilted and pommeled Or, his dexter foreleg in the form of an arm in armour Argent garnished Or bearing aloft a sword Argent hilted and pommeled Or.";
+        Armiger = "Republic of Finland";
         StartDate = new FlagDate(1580)
         {
             Description = "first documented"
@@ -36,6 +36,9 @@ public class Finland_CoatOfArms : CountryFlag
                 Description = "current version"
             }
         };
-        Comments = "Armiger: Republic of Finland";
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Gules, sémy of nine roses Argent, a crowned lion rampant Or armed of the same trampling a sabre Argent hilted and pommeled Or, his dexter foreleg in the form of an arm in armour Argent garnished Or bearing aloft a sword Argent hilted and pommeled Or."
+        };
     }
 }

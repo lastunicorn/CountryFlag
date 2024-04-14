@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_LesserCoatOfArms : CountryFlag
+public class Estonia_LesserCoatOfArms : CoatOfArms
 {
     public Estonia_LesserCoatOfArms()
     {
@@ -24,8 +24,11 @@ public class Estonia_LesserCoatOfArms : CountryFlag
 
         Id = "Coa_Lesser";
         Label = "Lesser Coat of Arms";
-        Description = "Or, three lions passant guardant azure, langued and armed gules.";
+        Armiger = "Republic of Estonia";
         StartDate = new FlagDate(1990, 08, 07);
-        Comments = "Armiger: Republic of Estonia";
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Or, three lions passant guardant azure, langued and armed gules."
+        };
     }
 }

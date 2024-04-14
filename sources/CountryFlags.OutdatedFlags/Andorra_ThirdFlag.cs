@@ -14,30 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.OutdatedFlags;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Andorra_ThirdFlag : CountryFlag
 {
-    public Ukraine_CoatOfArms()
+    public Andorra_ThirdFlag()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Andorra;
 
-        Id = "Coa";
-        Names = new List<FlagName>
+        Id = "Third";
+        Label = "Third flag - without crown";
+        StartDate = new FlagDate(1900)
         {
-            "Coat of Arms"
+            Description = "aprox. end of 19th century"
         };
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
+        EndDate = new FlagDate(1900)
         {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Azure background, a tryzub Or."
+            Description = "aprox. end of 19th century"
         };
     }
 }

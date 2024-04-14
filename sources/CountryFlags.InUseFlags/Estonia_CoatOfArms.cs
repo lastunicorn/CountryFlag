@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Estonia_CoatOfArms : CountryFlag
+public class Estonia_CoatOfArms : CoatOfArms
 {
     public Estonia_CoatOfArms()
     {
@@ -24,8 +24,12 @@ public class Estonia_CoatOfArms : CountryFlag
 
         Id = "Coa";
         Label = "Coat of Arms";
-        Description = "Or, three lions passant guardant azure, langued and armed gules. A garland of oak leaves surrounds the greater arms.";
+        Armiger = "Republic of Estonia";
         StartDate = new FlagDate(1990, 08, 07);
-        Comments = "Armiger: Republic of Estonia";
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Or, three lions passant guardant azure, langued and armed gules.",
+            OtherElements = "A garland of oak leaves surrounds the greater arms."
+        };
     }
 }

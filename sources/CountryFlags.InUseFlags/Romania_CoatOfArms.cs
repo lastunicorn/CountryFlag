@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Romania_CoatOfArms : CountryFlag
+public class Romania_CoatOfArms : CoatOfArms
 {
     public Romania_CoatOfArms()
     {
@@ -24,7 +24,12 @@ public class Romania_CoatOfArms : CountryFlag
 
         Id = "Coa";
         Label = "Coat of Arms";
-        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
+        Armiger = "Romania";
         StartDate = new FlagDate(2016, 07, 11);
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)"
+        };
+        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
     }
 }

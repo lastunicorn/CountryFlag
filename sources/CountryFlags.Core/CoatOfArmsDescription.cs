@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,30 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class CoatOfArmsDescription
 {
-    public Ukraine_CoatOfArms()
-    {
-        Country = Countries.Ukraine;
+    public string Crest { get; set; }
 
-        Id = "Coa";
-        Names = new List<FlagName>
-        {
-            "Coat of Arms"
-        };
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Azure background, a tryzub Or."
-        };
-    }
+    public string Shield { get; set; }
+    
+    public string Supporters { get; set; }
+
+    public string Compartment { get; set; }
+    
+    public string Motto { get; set; }
+
+    public string OtherElements { get; set; }
 }

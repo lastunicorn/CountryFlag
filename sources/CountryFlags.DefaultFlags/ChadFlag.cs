@@ -28,8 +28,9 @@ public class ChadFlag : CountryFlag
             "علم تشاد",
             "Les trois barres"
         };
-        Description = "The flag of Chad is a vertical tricolour consisting (left to right) of a blue, a gold and a red column. These were intended to be a combination of the colours of blue, white and red as seen on the Flag of France with the Pan-African colours of green, yellow and red. Furthermore, the blue represents the sky and hope; the gold is the sun and desert, and the red signifies the bloodshed over independence.";
+        Description = "A vertical tricolour of blue, gold and red.";
         StartDate = new FlagDate(1959, 11, 06);
         Usage = FlagUsage.NationalFlag;
+        Comments = "The colours were intended to be a combination of the blue, white and red as seen on the Flag of France with the Pan-African colours of green, yellow and red. Furthermore, the blue represents the sky and hope; the gold is the sun and desert, and the red signifies the bloodshed over independence.";
     }
 }

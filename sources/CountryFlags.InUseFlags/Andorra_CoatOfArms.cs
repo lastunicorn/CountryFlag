@@ -16,28 +16,23 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Andorra_CoatOfArms : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Andorra_CoatOfArms()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Andorra;
 
         Id = "Coa";
-        Names = new List<FlagName>
+        Label = "Coat of arms";
+        StartDate = new FlagDate(1993)
         {
-            "Coat of Arms"
-        };
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
+            Description = "officially"
         };
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Shield = "Quarterly: first Gules, a crosier bendways sinister surmounted by a mitre Or lined Argent (Bishop of Urgell); second Or, three pallets Gules (Count of Foix); third Or, four pallets Gules (Catalonia); fourth Or, two cows passant in pale Gules horned and collared Azure (Viscount of Béarn).",
+            Motto = "Virtus Unita Fortior (\"United virtue is stronger\").",
+            OtherElements = "A console or."
         };
     }
 }

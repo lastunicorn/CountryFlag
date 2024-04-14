@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Latvia_LesserCoatOfArms : CountryFlag
+public class Latvia_LesserCoatOfArms : CoatOfArms
 {
     public Latvia_LesserCoatOfArms()
     {
@@ -24,8 +24,12 @@ public class Latvia_LesserCoatOfArms : CountryFlag
 
         Id = "Coa_Lesser";
         Label = "Lesser Coat of Arms";
-        Description = "Creast: An arc of three mullets Or. Shield: Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent.";
+        Armiger = "Republic of Latvia";
         StartDate = new FlagDate(1921, 06, 15);
-        Comments = "Armiger: Republic of Latvia";
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Crest = "An arc of three mullets Or.",
+            Shield = "Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent."
+        };
     }
 }

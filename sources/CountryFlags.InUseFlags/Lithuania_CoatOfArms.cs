@@ -16,7 +16,7 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class Lithuania_CoatOfArms : CountryFlag
+public class Lithuania_CoatOfArms : CoatOfArms
 {
     public Lithuania_CoatOfArms()
     {
@@ -24,7 +24,7 @@ public class Lithuania_CoatOfArms : CountryFlag
 
         Id = "Coa";
         Label = "Coat of arms";
-        Description = "Gules, an armoured knight armed cap-à-pie mounted on a horse salient holding in his dexter hand a sword Argent above his head. A shield Azure hangs on the sinister shoulder charged with a double cross (Cross of Lorraine) Or. The horse saddles, straps, and belts Azure. The hilt of the sword and the fastening of the sheath, the stirrups, the curb bits of the bridle, the horseshoes, as well as the decoration of the harness, all Or.";
+        Armiger = "Grand Duchy of Lithuania, Republic of Lithuania";
         StartDate = new FlagDate(1366)
         {
             Description = "first documented"
@@ -36,6 +36,9 @@ public class Lithuania_CoatOfArms : CountryFlag
                 Description = "current official version"
             }
         };
-        Comments = "Armiger: Grand Duchy of Lithuania, Republic of Lithuania";
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Gules, an armoured knight armed cap-à-pie mounted on a horse salient holding in his dexter hand a sword Argent above his head. A shield Azure hangs on the sinister shoulder charged with a double cross (Cross of Lorraine) Or. The horse saddles, straps, and belts Azure. The hilt of the sword and the fastening of the sheath, the stirrups, the curb bits of the bridle, the horseshoes, as well as the decoration of the harness, all Or."
+        };
     }
 }
