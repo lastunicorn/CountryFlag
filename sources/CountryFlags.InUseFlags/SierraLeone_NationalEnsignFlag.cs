@@ -16,19 +16,19 @@
 
 namespace DustInTheWind.CountryFlags.InUseFlags;
 
-public class SierraLeone_NationalEnsignFlag : CountryFlag
+public class SierraLeone_NavalEnsignFlag : CountryFlag
 {
-    public SierraLeone_NationalEnsignFlag()
+    public SierraLeone_NavalEnsignFlag()
     {
         Country = Countries.SierraLeone;
 
         Id = "NationalEnsign";
         Names = new List<FlagName>
         {
-            "National ensign"
+            "Naval ensign"
         };
         Description = "White flag with the national flag in canton.";
         StartDate = new FlagDate(1961, 04, 27);
-        Usage = FlagUsage.NationalEnsign;
+        Usage = FlagUsage.WarEnsign;
     }
 }

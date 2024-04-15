@@ -22,7 +22,7 @@ public class AngolaFlag : CountryFlag
     {
         Country = Countries.Angola;
 
-        Description = "Two horizontal bands of red and black with the Machete and Gear Emblem in the center.";
+        Description = "A horizontal bicolour of red and black, with a yellow half gear wheel crossed by a machete and crowned with a star in the center.";
         StartDate = new FlagDate(1975, 11, 11);
         DesignedBy = new StringList
         {
