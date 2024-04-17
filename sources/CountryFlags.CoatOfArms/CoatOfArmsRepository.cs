@@ -14,21 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Estonia_LesserCoatOfArms : CoatOfArms
+public class CoatOfArmsRepository : CountryFlagsRepositoryBase
 {
-    public Estonia_LesserCoatOfArms()
+    protected override Uri BuildResourceUri(string resourceId)
     {
-        Country = Countries.Estonia;
-
-        Id = "Coa_Lesser";
-        Label = "Lesser Coat of Arms";
-        Armiger = "Republic of Estonia";
-        StartDate = new FlagDate(1990, 08, 07);
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Or, three lions passant guardant azure, langued and armed gules."
-        };
+        return new Uri($"Pack://application:,,,/DustInTheWind.CountryFlags.CountryCoatOfArms;component/Flags/{resourceId}.xaml");
     }
 }

@@ -14,30 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Estonia_LesserCoatOfArms : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Estonia_LesserCoatOfArms()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Estonia;
 
-        Id = "Coa";
-        Names = new List<FlagName>
-        {
-            "Coat of Arms"
-        };
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Id = "Coa_Lesser";
+        Label = "Lesser Coat of Arms";
+        Armiger = "Republic of Estonia";
+        StartDate = new FlagDate(1990, 08, 07);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Shield = "Or, three lions passant guardant azure, langued and armed gules."
         };
     }
 }

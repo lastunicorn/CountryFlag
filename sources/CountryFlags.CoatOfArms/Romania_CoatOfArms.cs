@@ -14,24 +14,22 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Latvia_CoatOfArms : CoatOfArms
+public class Romania_CoatOfArms : CoatOfArms
 {
-    public Latvia_CoatOfArms()
+    public Romania_CoatOfArms()
     {
-        Country = Countries.Latvia;
+        Country = Countries.Romania;
 
         Id = "Coa";
-        Label = "Greater Coat of Arms";
-        Armiger = "Republic of Latvia";
-        StartDate = new FlagDate(1921, 06, 15);
+        Label = "Coat of Arms";
+        Armiger = "Romania";
+        StartDate = new FlagDate(2016, 07, 11);
         CoaDescription = new CoatOfArmsDescription
         {
-            Crest = "An arc of three mullets Or.",
-            Shield = "Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent.",
-            Supporters = "Dexter, a lion rampant Gules, and sinister, a griffin segreant Argent; both langued Or.",
-            Compartment = "Two oak branches fructed Vert tied together by a ribbon Sanguine charged with a bar Argent."
+            Shield = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)"
         };
+        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
     }
 }

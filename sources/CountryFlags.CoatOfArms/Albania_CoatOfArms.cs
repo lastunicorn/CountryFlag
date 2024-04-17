@@ -14,31 +14,31 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Lithuania_CoatOfArms : CoatOfArms
+public class Albania_CoatOfArms : CoatOfArms
 {
-    public Lithuania_CoatOfArms()
+    public Albania_CoatOfArms()
     {
-        Country = Countries.Lithuania;
+        Country = Countries.Albania;
 
         Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "Grand Duchy of Lithuania, Republic of Lithuania";
-        StartDate = new FlagDate(1366)
+        Label = "Coat of Arms";
+        StartDate = new FlagDate(1998, 11, 28)
         {
-            Description = "first documented"
+            Description = "by presidential decree nr. 2260"
         };
         OtherDates = new List<FlagDate>
         {
-            new(1991)
+            new(2003, 07, 10)
             {
-                Description = "current official version"
+                Description = "standardized by government decision nr. 474"
             }
         };
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Gules, an armoured knight armed cap-à-pie mounted on a horse salient holding in his dexter hand a sword Argent above his head. A shield Azure hangs on the sinister shoulder charged with a double cross (Cross of Lorraine) Or. The horse saddles, straps, and belts Azure. The hilt of the sword and the fastening of the sheath, the stirrups, the curb bits of the bridle, the horseshoes, as well as the decoration of the harness, all Or."
+            Shield = "Gules within a bordure narrow Or, charged by a bicapitate eagle displayed Sable, in chief a helm adorned with rosettes upon which sits a goat's head erased Or dexter proper."
         };
+        Comments = "It is used in the seals and at the entrance of state institutions; as a distinctive sign in state objects; in all official acts; in documents and agreements of the Albanian state with foreign countries, based on reciprocity.";
     }
 }

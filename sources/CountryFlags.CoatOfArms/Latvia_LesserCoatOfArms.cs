@@ -14,25 +14,22 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Andorra_CoatOfArms : CoatOfArms
+public class Latvia_LesserCoatOfArms : CoatOfArms
 {
-    public Andorra_CoatOfArms()
+    public Latvia_LesserCoatOfArms()
     {
-        Country = Countries.Andorra;
+        Country = Countries.Latvia;
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        StartDate = new FlagDate(1993)
-        {
-            Description = "officially"
-        };
+        Id = "Coa_Lesser";
+        Label = "Lesser Coat of Arms";
+        Armiger = "Republic of Latvia";
+        StartDate = new FlagDate(1921, 06, 15);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Quarterly: first Gules, a crosier bendways sinister surmounted by a mitre Or lined Argent (Bishop of Urgell); second Or, three pallets Gules (Count of Foix); third Or, four pallets Gules (Catalonia); fourth Or, two cows passant in pale Gules horned and collared Azure (Viscount of Béarn).",
-            Motto = "Virtus Unita Fortior (\"United virtue is stronger\").",
-            OtherElements = "A console or."
+            Crest = "An arc of three mullets Or.",
+            Shield = "Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent."
         };
     }
 }

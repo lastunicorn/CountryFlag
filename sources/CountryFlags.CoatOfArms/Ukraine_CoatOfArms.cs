@@ -14,24 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class AngolaCoatOfArms : CoatOfArms
+public class Ukraine_CoatOfArms : CoatOfArms
 {
-    public AngolaCoatOfArms()
+    public Ukraine_CoatOfArms()
     {
-        Country = Countries.Angola;
+        Country = Countries.Ukraine;
 
         Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "Republic of Angola";
-        StartDate = new FlagDate(1990, 11, 02);
-        OtherDates = new List<FlagDate>
+        Names = new List<FlagName>
         {
-            new(2010, 01, 02)
-            {
-                Description = "modified"
-            }
+            "Coat of Arms"
+        };
+        Armiger = "Ukraine";
+        StartDate = new FlagDate(1992, 02, 19);
+        DesignedBy = new StringList
+        {
+            "Andriy Grechylo",
+            "Oleksii Kokhan",
+            "Ivan Turetskyi"
+        };
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Azure background, a tryzub Or."
         };
     }
 }

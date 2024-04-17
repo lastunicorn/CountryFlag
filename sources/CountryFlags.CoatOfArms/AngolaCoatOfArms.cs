@@ -14,31 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Finland_CoatOfArms : CoatOfArms
+public class AngolaCoatOfArms : CoatOfArms
 {
-    public Finland_CoatOfArms()
+    public AngolaCoatOfArms()
     {
-        Country = Countries.Finland;
+        Country = Countries.Angola;
 
         Id = "Coa";
         Label = "Coat of arms";
-        Armiger = "Republic of Finland";
-        StartDate = new FlagDate(1580)
-        {
-            Description = "first documented"
-        };
+        Armiger = "Republic of Angola";
+        StartDate = new FlagDate(1990, 11, 02);
         OtherDates = new List<FlagDate>
         {
-            new(1978)
+            new(2010, 01, 02)
             {
-                Description = "current version"
+                Description = "modified"
             }
-        };
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Gules, sémy of nine roses Argent, a crowned lion rampant Or armed of the same trampling a sabre Argent hilted and pommeled Or, his dexter foreleg in the form of an arm in armour Argent garnished Or bearing aloft a sword Argent hilted and pommeled Or."
         };
     }
 }

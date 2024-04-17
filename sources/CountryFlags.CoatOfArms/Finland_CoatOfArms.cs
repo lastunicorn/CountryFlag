@@ -14,23 +14,31 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class ChadCoatOfArms : CoatOfArms
+public class Finland_CoatOfArms : CoatOfArms
 {
-    public ChadCoatOfArms()
+    public Finland_CoatOfArms()
     {
-        Country = Countries.Chad;
+        Country = Countries.Finland;
 
         Id = "Coa";
-        StartDate = new FlagDate(1970);
-        Armiger = "Republic of Chad";
+        Label = "Coat of arms";
+        Armiger = "Republic of Finland";
+        StartDate = new FlagDate(1580)
+        {
+            Description = "first documented"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1978)
+            {
+                Description = "current version"
+            }
+        };
         CoaDescription = new CoatOfArmsDescription
         {
-            Crest = "A demi sun Gules",
-            Shield = "Barry dancetty of eight Or and Azure",
-            Supporters = "Dexter a goat guardant and sinister a lion Or, both charged on the shoulder with an arrow the point upwards Gules",
-            Motto = "Unité, Travail, Progrès (Unity, Work, Progress)"
+            Shield = "Gules, sémy of nine roses Argent, a crowned lion rampant Or armed of the same trampling a sabre Argent hilted and pommeled Or, his dexter foreleg in the form of an arm in armour Argent garnished Or bearing aloft a sword Argent hilted and pommeled Or."
         };
     }
 }

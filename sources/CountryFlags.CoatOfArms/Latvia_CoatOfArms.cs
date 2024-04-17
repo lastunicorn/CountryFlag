@@ -14,23 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Latvia_MiddleCoatOfArms : CoatOfArms
+public class Latvia_CoatOfArms : CoatOfArms
 {
-    public Latvia_MiddleCoatOfArms()
+    public Latvia_CoatOfArms()
     {
         Country = Countries.Latvia;
 
-        Id = "Coa_Middle";
-        Label = "Middle Coat of Arms";
+        Id = "Coa";
+        Label = "Greater Coat of Arms";
         Armiger = "Republic of Latvia";
         StartDate = new FlagDate(1921, 06, 15);
         CoaDescription = new CoatOfArmsDescription
         {
             Crest = "An arc of three mullets Or.",
             Shield = "Per fess and in base per pale: 1st Azure, a demi-sun issuing from base Or; 2nd Argent, a lion rampant contourné Gules; 3rd Gules, a gryphon segreant brandishing in the dexter claw a sword Argent.",
-            Compartment = "Two oak branches fructed Vert."
+            Supporters = "Dexter, a lion rampant Gules, and sinister, a griffin segreant Argent; both langued Or.",
+            Compartment = "Two oak branches fructed Vert tied together by a ribbon Sanguine charged with a bar Argent."
         };
     }
 }

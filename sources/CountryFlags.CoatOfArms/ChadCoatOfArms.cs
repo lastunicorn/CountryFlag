@@ -14,22 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags.InUseFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Romania_CoatOfArms : CoatOfArms
+public class ChadCoatOfArms : CoatOfArms
 {
-    public Romania_CoatOfArms()
+    public ChadCoatOfArms()
     {
-        Country = Countries.Romania;
+        Country = Countries.Chad;
 
         Id = "Coa";
-        Label = "Coat of Arms";
-        Armiger = "Romania";
-        StartDate = new FlagDate(2016, 07, 11);
+        StartDate = new FlagDate(1970);
+        Armiger = "Republic of Chad";
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)"
+            Crest = "A demi sun Gules",
+            Shield = "Barry dancetty of eight Or and Azure",
+            Supporters = "Dexter a goat guardant and sinister a lion Or, both charged on the shoulder with an arrow the point upwards Gules",
+            Motto = "Unité, Travail, Progrès (Unity, Work, Progress)"
         };
-        Comments = "It is used on the national currency, in classrooms, in the Parliament, on state buildings, on passports, on ID cards, in the header of the official documents (including diplomas)";
     }
 }

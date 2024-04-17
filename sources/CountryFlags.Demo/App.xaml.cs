@@ -15,6 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Windows;
+using DustInTheWind.CountryFlags.CountryCoatOfArms;
 using DustInTheWind.CountryFlags.DefaultFlags;
 using DustInTheWind.CountryFlags.Demo.ViewModels;
 using DustInTheWind.CountryFlags.Demo.Views;
@@ -31,8 +32,9 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         FlagsSetup.LoadAllFromAssemblyContaining(typeof(DefaultFlagsRepository));
-        FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
-        FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
+        //FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
+        //FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
+        FlagsSetup.LoadAllFromAssemblyContaining(typeof(CoatOfArmsRepository));
 
         MainViewModel mainViewModel = new();
         MainWindow mainWindow = new(mainViewModel);
