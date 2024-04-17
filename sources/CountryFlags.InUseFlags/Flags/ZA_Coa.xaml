@@ -51,8 +51,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             <Canvas.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
-                                        <MatrixTransform>0.99563064,0.09050967,-0.09633906,0.99563064,3046.0173,-4917.7977</MatrixTransform>
-                                        <MatrixTransform>-1,0,0,1,-2735.4754,0</MatrixTransform>
+                                        <MatrixTransform
+                                            Matrix="0.99563064,0.09050967,-0.09633906,0.99563064,3046.0173,-4917.7977" />
+                                        <MatrixTransform
+                                            Matrix="-1,0,0,1,-2735.4754,0" />
                                     </TransformGroup.Children>
                                 </TransformGroup>
                             </Canvas.RenderTransform>
@@ -671,8 +673,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <Canvas.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
-                                    <MatrixTransform>0.98805487,0.05064834,-0.04338678,1.0613212,-17670.324,-3445.046</MatrixTransform>
-                                    <MatrixTransform>-1,0,0,1,3120.4711,0</MatrixTransform>
+                                    <MatrixTransform
+                                        Matrix="0.98805487,0.05064834,-0.04338678,1.0613212,-17670.324,-3445.046" />
+                                    <MatrixTransform
+                                        Matrix="-1,0,0,1,3120.4711,0" />
                                 </TransformGroup.Children>
                             </TransformGroup>
                         </Canvas.RenderTransform>
@@ -2076,8 +2080,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <Canvas.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
-                                    <MatrixTransform>0.97603941,0.21801408,-0.21757996,0.97594882,22.027806,0.34441198</MatrixTransform>
-                                    <MatrixTransform>-1,0,0,1,833.33416,0</MatrixTransform>
+                                    <MatrixTransform
+                                        Matrix="0.97603941,0.21801408,-0.21757996,0.97594882,22.027806,0.34441198" />
+                                    <MatrixTransform
+                                        Matrix="-1,0,0,1,833.33416,0" />
                                 </TransformGroup.Children>
                             </TransformGroup>
                         </Canvas.RenderTransform>
