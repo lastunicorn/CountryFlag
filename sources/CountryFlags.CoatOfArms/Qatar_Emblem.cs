@@ -16,25 +16,20 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Qatar_Emblem : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Qatar_Emblem()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Qatar;
 
-        Id = "Coa";
-        Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Id = "Emblem";
+        Label = "State emblem";
+        Armiger = "Emir of Qatar";
+        StartDate = new FlagDate(2022);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Supporters = "Two scimitars",
+            Motto = "دولة قطر \"State of Qatar\""
         };
     }
 }

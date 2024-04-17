@@ -23,7 +23,7 @@ public class Estonia_CoatOfArms : CoatOfArms
         Country = Countries.Estonia;
 
         Id = "Coa";
-        Label = "Coat of Arms";
+        Label = "Coat of arms";
         Armiger = "Republic of Estonia";
         StartDate = new FlagDate(1990, 08, 07);
         CoaDescription = new CoatOfArmsDescription

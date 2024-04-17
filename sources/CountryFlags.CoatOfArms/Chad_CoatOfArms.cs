@@ -16,25 +16,22 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Chad_CoatOfArms : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Chad_CoatOfArms()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Chad;
 
         Id = "Coa";
-        Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Label = "Coat of arms";
+        StartDate = new FlagDate(1970);
+        Armiger = "Republic of Chad";
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Crest = "A demi sun Gules",
+            Shield = "Barry dancetty of eight Or and Azure",
+            Supporters = "Dexter a goat guardant and sinister a lion Or, both charged on the shoulder with an arrow the point upwards Gules",
+            Motto = "Unité, Travail, Progrès (Unity, Work, Progress)"
         };
     }
 }

@@ -16,25 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class AmericanSamoa_Seal : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public AmericanSamoa_Seal()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.AmericanSamoa;
 
-        Id = "Coa";
-        Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Id = "Seal";
+        Label = "Seal";
+        Armiger = "American Samoa";
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Motto = "Samoa Muamua Le Atua \"Samoa, God Is First\""
         };
     }
 }

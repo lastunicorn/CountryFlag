@@ -23,7 +23,7 @@ public class Estonia_LesserCoatOfArms : CoatOfArms
         Country = Countries.Estonia;
 
         Id = "Coa_Lesser";
-        Label = "Lesser Coat of Arms";
+        Label = "Lesser coat of arms";
         Armiger = "Republic of Estonia";
         StartDate = new FlagDate(1990, 08, 07);
         CoaDescription = new CoatOfArmsDescription

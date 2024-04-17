@@ -16,25 +16,27 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Aland_CoatOfArms : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Aland_CoatOfArms()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Aland;
 
         Id = "Coa";
         Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
+        Armiger = "Åland";
+        StartDate = new FlagDate(1560);
+        OtherDates = new List<FlagDate>
         {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
+            new(1952, 12, 10)
+            {
+                Description = "current version"
+            }
         };
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Shield = "Azure a stag trippant Or.",
+            OtherElements = "Comital coronet above the shield"
         };
     }
 }

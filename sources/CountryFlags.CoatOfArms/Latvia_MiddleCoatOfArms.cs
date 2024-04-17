@@ -23,7 +23,7 @@ public class Latvia_MiddleCoatOfArms : CoatOfArms
         Country = Countries.Latvia;
 
         Id = "Coa_Middle";
-        Label = "Middle Coat of Arms";
+        Label = "Middle coat of arms";
         Armiger = "Republic of Latvia";
         StartDate = new FlagDate(1921, 06, 15);
         CoaDescription = new CoatOfArmsDescription

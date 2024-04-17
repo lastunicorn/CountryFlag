@@ -23,7 +23,7 @@ public class Latvia_LesserCoatOfArms : CoatOfArms
         Country = Countries.Latvia;
 
         Id = "Coa_Lesser";
-        Label = "Lesser Coat of Arms";
+        Label = "Lesser coat of arms";
         Armiger = "Republic of Latvia";
         StartDate = new FlagDate(1921, 06, 15);
         CoaDescription = new CoatOfArmsDescription

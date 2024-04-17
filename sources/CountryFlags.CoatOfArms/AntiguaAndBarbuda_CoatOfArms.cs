@@ -16,25 +16,25 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class AntiguaAndBarbuda_CoatOfArms : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public AntiguaAndBarbuda_CoatOfArms()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.AntiguaAndBarbuda;
 
         Id = "Coa";
         Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Armiger = "Charles III in Right of Antigua and Barbuda";
+        StartDate = new FlagDate(1967, 02, 16);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Crest = "On a helmet to the dexter, lambrequined Azure and Argent, a pineapple and four hibiscusflowers proper.",
+            Torse = "Argent and Azure",
+            Shield = "Barry wavy of six Argent and Azure, a sugar mill on a grassy ground, proper; and a chief wavy Sable, a rising sun radiant Or.",
+            Supporters = "Two deer, the dexter supporting a sugarcane and the sinister supporting an aloe, all proper",
+            Compartment = "A grassy ground surrounded by waves of the sea Argent and Azure.",
+            Motto = "Each Endeavouring, All Achieving",
+            OtherElements = "Comital coronet above the shield"
         };
     }
 }

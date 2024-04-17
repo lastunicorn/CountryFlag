@@ -16,25 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Ukraine_CoatOfArms : CoatOfArms
+public class Afghanistan_Emblem : CoatOfArms
 {
-    public Ukraine_CoatOfArms()
+    public Afghanistan_Emblem()
     {
-        Country = Countries.Ukraine;
+        Country = Countries.Afghanistan_IslamicEmirate;
 
-        Id = "Coa";
-        Label = "Coat of Arms";
-        Armiger = "Ukraine";
-        StartDate = new FlagDate(1992, 02, 19);
-        DesignedBy = new StringList
-        {
-            "Andriy Grechylo",
-            "Oleksii Kokhan",
-            "Ivan Turetskyi"
-        };
+        Id = "Emblem";
+        Label = "National emblem";
+        Armiger = "Islamic Emirate of Afghanistan";
+        StartDate = new FlagDate(2021, 08, 15);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure background, a tryzub Or."
+            Shield = "Azure a stag trippant Or.",
+            OtherElements = "Comital coronet above the shield",
+            Motto = "لا إله إلا الله محمد رسول الله \"There is no god except Allah; Mohammad is the messenger of Allah.\" (Shahada)"
         };
     }
 }

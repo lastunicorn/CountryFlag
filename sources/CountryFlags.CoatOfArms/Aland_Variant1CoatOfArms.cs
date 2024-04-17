@@ -16,21 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class ChadCoatOfArms : CoatOfArms
+public class Aland_Variant1CoatOfArms : CoatOfArms
 {
-    public ChadCoatOfArms()
+    public Aland_Variant1CoatOfArms()
     {
-        Country = Countries.Chad;
+        Country = Countries.Aland;
 
-        Id = "Coa";
-        StartDate = new FlagDate(1970);
-        Armiger = "Republic of Chad";
+        Id = "Coa_Variant1";
+        Label = "Coat of Arms (Gustaf von Numers)";
+        Armiger = "Åland";
+        StartDate = new FlagDate(1952);
         CoaDescription = new CoatOfArmsDescription
         {
-            Crest = "A demi sun Gules",
-            Shield = "Barry dancetty of eight Or and Azure",
-            Supporters = "Dexter a goat guardant and sinister a lion Or, both charged on the shoulder with an arrow the point upwards Gules",
-            Motto = "Unité, Travail, Progrès (Unity, Work, Progress)"
+            Shield = "Azure a stag trippant Or.",
+            OtherElements = "Comital coronet above the shield"
         };
+        DesignedBy = "Gustaf von Numers";
     }
 }

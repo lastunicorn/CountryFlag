@@ -23,7 +23,7 @@ public class Romania_CoatOfArms : CoatOfArms
         Country = Countries.Romania;
 
         Id = "Coa";
-        Label = "Coat of Arms";
+        Label = "Coat of arms";
         Armiger = "Romania";
         StartDate = new FlagDate(2016, 07, 11);
         CoaDescription = new CoatOfArmsDescription
