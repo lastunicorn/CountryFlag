@@ -219,14 +219,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -253,14 +253,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -281,14 +281,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -315,14 +315,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -338,14 +338,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -372,14 +372,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -403,14 +403,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -437,14 +437,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -674,6 +674,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeThickness="2.6443"
                             StrokeMiterLimit="4" />
                         <Rectangle
+                            RadiusX="3.0061483"
+                            RadiusY="3.0061483"
                             Stroke="#FF333333"
                             StrokeThickness="2.6443"
                             StrokeStartLineCap="Flat"
@@ -695,6 +697,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <Canvas>
                             <Canvas>
                                 <Rectangle
+                                    RadiusX="5.1772556"
+                                    RadiusY="5.1772556"
                                     Fill="#FFB3B3B3"
                                     Stroke="#FFB3B3B3"
                                     StrokeThickness="2.6443"
@@ -752,6 +756,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     StrokeMiterLimit="4"
                                     StrokeDashOffset="0" />
                                 <Rectangle
+                                    RadiusX="5.1772556"
+                                    RadiusY="5.1772556"
                                     Stroke="#FF333333"
                                     StrokeThickness="2.6443"
                                     StrokeStartLineCap="Flat"
@@ -769,6 +775,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 </Rectangle>
                             </Canvas>
                             <Rectangle
+                                RadiusX="0"
+                                RadiusY="0"
                                 Fill="#FFE6E6E6"
                                 Stroke="#FFFFFFFF"
                                 StrokeThickness="2.6443"
@@ -1131,14 +1139,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1165,14 +1173,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1189,14 +1197,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -1223,14 +1231,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -1246,14 +1254,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1280,14 +1288,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1311,14 +1319,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1345,14 +1353,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1376,14 +1384,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1410,14 +1418,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1432,14 +1440,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1466,14 +1474,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1488,14 +1496,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1522,14 +1530,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1544,14 +1552,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1578,14 +1586,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1600,14 +1608,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1634,14 +1642,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1656,14 +1664,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1690,14 +1698,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -1720,14 +1728,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1754,14 +1762,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1776,14 +1784,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1810,14 +1818,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1832,14 +1840,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1866,14 +1874,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1888,14 +1896,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1922,14 +1930,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1944,14 +1952,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -1978,14 +1986,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2000,14 +2008,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2034,14 +2042,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2056,14 +2064,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2090,14 +2098,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2112,14 +2120,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2146,14 +2154,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2168,14 +2176,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2202,14 +2210,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2224,14 +2232,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2258,14 +2266,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2280,14 +2288,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2314,14 +2322,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2336,14 +2344,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2370,14 +2378,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2392,14 +2400,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2426,14 +2434,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2448,14 +2456,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2482,14 +2490,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2504,14 +2512,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2538,14 +2546,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2560,14 +2568,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2594,14 +2602,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2616,14 +2624,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2650,14 +2658,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2672,14 +2680,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2706,14 +2714,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2728,14 +2736,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FFECECEC"
                                 StrokeThickness="1.76779"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2762,14 +2770,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
                                             <TranslateTransform
                                                 X="0"
                                                 Y="-2.0633135" />
@@ -2785,14 +2793,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -2819,14 +2827,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -2842,14 +2850,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -2876,14 +2884,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -2898,14 +2906,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -2932,14 +2940,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -2954,14 +2962,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -2988,14 +2996,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3010,14 +3018,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3044,14 +3052,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3066,14 +3074,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3100,14 +3108,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3122,14 +3130,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3156,14 +3164,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3178,14 +3186,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3212,14 +3220,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -3271,14 +3279,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3305,14 +3313,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3327,14 +3335,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3361,14 +3369,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3383,14 +3391,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3417,14 +3425,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3439,14 +3447,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3473,14 +3481,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3495,14 +3503,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3529,14 +3537,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3551,14 +3559,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3585,14 +3593,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3607,14 +3615,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3641,14 +3649,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3663,14 +3671,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3697,14 +3705,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3719,14 +3727,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -3753,14 +3761,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4251,14 +4259,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4285,14 +4293,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4307,14 +4315,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4341,14 +4349,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4363,14 +4371,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4397,14 +4405,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4419,14 +4427,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4453,14 +4461,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4475,14 +4483,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4509,14 +4517,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4531,14 +4539,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4565,14 +4573,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4587,14 +4595,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4621,14 +4629,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4643,14 +4651,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4677,14 +4685,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4699,14 +4707,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4733,14 +4741,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4755,14 +4763,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4789,14 +4797,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4811,14 +4819,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4845,14 +4853,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4867,14 +4875,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4901,14 +4909,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4923,14 +4931,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4957,14 +4965,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -4979,14 +4987,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5013,14 +5021,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5035,14 +5043,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5069,14 +5077,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5091,14 +5099,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5125,14 +5133,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5147,14 +5155,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5181,14 +5189,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5203,14 +5211,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5237,14 +5245,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5259,14 +5267,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.76779"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5293,14 +5301,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -5316,14 +5324,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5350,14 +5358,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5372,14 +5380,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5406,14 +5414,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5428,14 +5436,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5462,14 +5470,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5484,14 +5492,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5518,14 +5526,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5540,14 +5548,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5574,14 +5582,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5596,14 +5604,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5630,14 +5638,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5652,14 +5660,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5686,14 +5694,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5708,14 +5716,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5742,14 +5750,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5764,14 +5772,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5798,14 +5806,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5820,14 +5828,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5854,14 +5862,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5876,14 +5884,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5910,14 +5918,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5932,14 +5940,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5966,14 +5974,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -5988,14 +5996,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -6022,14 +6030,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -6044,14 +6052,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Fill="#FFECECEC"
                         StrokeThickness="1.76779"
                         StrokeMiterLimit="4"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -6078,14 +6086,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         StrokeLineJoin="Miter"
                         StrokeMiterLimit="4"
                         StrokeDashOffset="0"
-                        Width="20.977020263671875"
-                        Height="21.320905685424805">
+                        Width="20.97702"
+                        Height="21.320906">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <TransformGroup.Children>
                                     <TranslateTransform
-                                        X="2679.212661743164"
-                                        Y="774.3652429580688" />
+                                        X="2679.21269"
+                                        Y="774.3652470000001" />
                                     <TranslateTransform
                                         X="0"
                                         Y="-2.0633135" />
@@ -6108,15 +6116,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 Fill="#FF666666"
                                 StrokeThickness="0.667573"
                                 StrokeMiterLimit="4"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
-                                            <MatrixTransform Matrix="1.039961,0,0,1.039961,-2741.9134,82.47589" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
+                                            <MatrixTransform
+                                                Matrix="1.039961,0,0,1.039961,-2741.9134,82.47589" />
                                         </TransformGroup.Children>
                                     </TransformGroup>
                                 </Ellipse.RenderTransform>
@@ -6147,15 +6156,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
                                 StrokeDashOffset="0"
-                                Width="20.977020263671875"
-                                Height="21.320905685424805">
+                                Width="20.97702"
+                                Height="21.320906">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="2679.212661743164"
-                                                Y="774.3652429580688" />
-                                            <MatrixTransform Matrix="1.039961,0,0,1.039961,-2741.9134,82.47589" />
+                                                X="2679.21269"
+                                                Y="774.3652470000001" />
+                                            <MatrixTransform
+                                                Matrix="1.039961,0,0,1.039961,-2741.9134,82.47589" />
                                         </TransformGroup.Children>
                                     </TransformGroup>
                                 </Ellipse.RenderTransform>
@@ -6279,15 +6289,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 StrokeEndLineCap="Round"
                                 StrokeLineJoin="Miter"
                                 StrokeMiterLimit="4"
-                                Width="39.96443557739258"
-                                Height="38.14786911010742">
+                                Width="39.964436"
+                                Height="38.14787">
                                 <Ellipse.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <TranslateTransform
-                                                X="990.02809715271"
-                                                Y="621.0477695465088" />
-                                            <MatrixTransform Matrix="0.74328616,0,0,0.74328616,548.18454,193.59293" />
+                                                X="990.028082"
+                                                Y="621.047765" />
+                                            <MatrixTransform
+                                                Matrix="0.74328616,0,0,0.74328616,548.18454,193.59293" />
                                         </TransformGroup.Children>
                                     </TransformGroup>
                                 </Ellipse.RenderTransform>
@@ -6335,14 +6346,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Fill="#FFECECEC"
                             StrokeThickness="1.85852"
                             StrokeMiterLimit="4"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -6369,14 +6380,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             StrokeLineJoin="Miter"
                             StrokeMiterLimit="4"
                             StrokeDashOffset="0"
-                            Width="20.977020263671875"
-                            Height="21.320905685424805">
+                            Width="20.97702"
+                            Height="21.320906">
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
                                     <TransformGroup.Children>
                                         <TranslateTransform
-                                            X="2679.212661743164"
-                                            Y="774.3652429580688" />
+                                            X="2679.21269"
+                                            Y="774.3652470000001" />
                                         <TranslateTransform
                                             X="0"
                                             Y="-2.0633135" />
@@ -6682,7 +6693,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </Canvas>
             </Canvas>
         </Canvas>
-
     </Canvas>
 
 </ResourceDictionary>

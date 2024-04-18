@@ -128,6 +128,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\LV_Coa_Middle.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\RO_Coa_Seal.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\RO_Coa.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
