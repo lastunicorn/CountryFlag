@@ -16,27 +16,21 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Aruba_CoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Aruba_CoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Aruba;
 
         Id = "Coa";
         Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
-        OtherDates = new List<FlagDate>
-        {
-            new(1952, 12, 10)
-            {
-                Description = "current version"
-            }
-        };
+        Armiger = "Aruba";
+        StartDate = new FlagDate(1955, 11, 15);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Crest = "A lion couchant Gules",
+            Shield = "Quartered by a cross Argent, the first Azure an aloe plant Or, the second Or the Hooiberg hill Vert issuant from barry wavy sea of Azure and Argent, the third Or two dexter hands Gules shaking each other fesswise, the fourth Gules an Argent cogwheel.",
+            Supporters = "A pair of laurel branches Vert, tied at the bottom."
         };
     }
 }

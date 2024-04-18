@@ -16,27 +16,28 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Argentina_CoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Argentina_CoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Argentina;
 
         Id = "Coa";
         Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
+        Armiger = "Argentine Republic";
+        StartDate = new FlagDate(1944);
         OtherDates = new List<FlagDate>
         {
-            new(1952, 12, 10)
+            new(1813)
             {
-                Description = "current version"
+                Description = "older design"
             }
         };
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Crest = "A Sun of May or",
+            Shield = "Party per fess azure and argent, in base two arms throughout fessways, the hands shaking and holding a pike paleways proper ensigned on the top with a Phrygian cap gules.",
+            OtherElements = "Around the shield two sprigs of laurel vert tied together in base by a ribbon azure charged with a fess argent."
         };
     }
 }

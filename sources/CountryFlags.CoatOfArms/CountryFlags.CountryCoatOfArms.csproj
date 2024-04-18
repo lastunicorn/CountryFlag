@@ -50,6 +50,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <Page Update="Flags\AG_Coa.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>
+      <Page Update="Flags\AU_Coa_Commonwealth.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AU_Coa_Escutcheon.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AU_Coa.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AW_Coa_Variant.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AW_Coa.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AM_Coa_Lesser.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AM_Coa.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
+      <Page Update="Flags\AR_Coa.xaml">
+        <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      </Page>
       <Page Update="Flags\QA_Emblem.xaml">
         <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       </Page>

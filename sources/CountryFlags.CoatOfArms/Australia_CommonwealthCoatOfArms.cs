@@ -16,27 +16,23 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Australia_CommonwealthCoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Australia_CommonwealthCoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Australia;
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
-        OtherDates = new List<FlagDate>
-        {
-            new(1952, 12, 10)
-            {
-                Description = "current version"
-            }
-        };
+        Id = "Coa_Commonwealth";
+        Label = "Coat of arms (Commonwealth)";
+        StartDate = new FlagDate(1908, 05, 07);
+        EndDate = new FlagDate(1912, 09, 19);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Crest = "Commonwealth Star",
+            Torse = "White and blue",
+            Supporters = "Red kangaroo and emu",
+            Compartment = "Grassy field proper",
+            Motto = "Advance Australia"
         };
     }
 }

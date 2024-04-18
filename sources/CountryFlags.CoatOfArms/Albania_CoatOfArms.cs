@@ -23,7 +23,7 @@ public class Albania_CoatOfArms : CoatOfArms
         Country = Countries.Albania;
 
         Id = "Coa";
-        Label = "Coat of Arms";
+        Label = "Coat of arms";
         StartDate = new FlagDate(1998, 11, 28)
         {
             Description = "by presidential decree nr. 2260"

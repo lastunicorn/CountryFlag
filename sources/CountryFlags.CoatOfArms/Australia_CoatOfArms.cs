@@ -16,27 +16,23 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Australia_CoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Australia_CoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Australia;
 
         Id = "Coa";
         Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
-        OtherDates = new List<FlagDate>
-        {
-            new(1952, 12, 10)
-            {
-                Description = "current version"
-            }
-        };
+        StartDate = new FlagDate(1912, 09, 19);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Crest = "The Commonwealth Star: A seven-pointed star, or (gold)",
+            Torse = "Or and azure (blue)",
+            Shield = "The official blazon of the Commonwealth.",
+            Supporters = "Dexter (left) a red kangaroo, sinister (right) an emu, both proper (natural colours)",
+            Compartment = "none, golden wattle is depicted in its place",
+            Motto = "none, the name of the country is written on a scroll"
         };
     }
 }

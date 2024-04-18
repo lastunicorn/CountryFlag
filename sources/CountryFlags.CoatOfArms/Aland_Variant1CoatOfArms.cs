@@ -23,7 +23,7 @@ public class Aland_Variant1CoatOfArms : CoatOfArms
         Country = Countries.Aland;
 
         Id = "Coa_Variant1";
-        Label = "Coat of Arms (Gustaf von Numers)";
+        Label = "Coat of arms (Gustaf von Numers)";
         Armiger = "Åland";
         StartDate = new FlagDate(1952);
         CoaDescription = new CoatOfArmsDescription

@@ -23,7 +23,7 @@ public class Aland_Variant2CoatOfArms : CoatOfArms
         Country = Countries.Aland;
 
         Id = "Coa_Variant2";
-        Label = "Coat of Arms (Ahti Hammar)";
+        Label = "Coat of arms (Ahti Hammar)";
         Armiger = "Åland";
         StartDate = new FlagDate(1962);
         CoaDescription = new CoatOfArmsDescription

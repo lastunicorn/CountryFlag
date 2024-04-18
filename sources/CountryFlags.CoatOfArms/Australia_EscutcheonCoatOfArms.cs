@@ -16,27 +16,18 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Australia_EscutcheonCoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Australia_EscutcheonCoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Australia;
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
-        OtherDates = new List<FlagDate>
-        {
-            new(1952, 12, 10)
-            {
-                Description = "current version"
-            }
-        };
+        Id = "Coa_Escutcheon";
+        Label = "Coat of arms (Escutcheon-only)";
+        StartDate = new FlagDate(1912, 09, 19);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Shield = "The official blazon of the Commonwealth."
         };
     }
 }

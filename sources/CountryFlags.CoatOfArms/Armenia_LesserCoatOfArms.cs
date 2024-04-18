@@ -16,27 +16,19 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Aland_CoatOfArms : CoatOfArms
+public class Armenia_LesserCoatOfArms : CoatOfArms
 {
-    public Aland_CoatOfArms()
+    public Armenia_LesserCoatOfArms()
     {
-        Country = Countries.Aland;
+        Country = Countries.Armenia;
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "Åland";
-        StartDate = new FlagDate(1560);
-        OtherDates = new List<FlagDate>
-        {
-            new(1952, 12, 10)
-            {
-                Description = "current version"
-            }
-        };
+        Id = "Coa_Lesser";
+        Label = "Coat of arms (Lesser)";
+        Armiger = "Republic of Armenia";
+        StartDate = new FlagDate(1992, 04, 19);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield"
+            Shield = "Quarterly: 1; Gules, a lion passant facing to the sinister with a cross rising from its back Or, 2; Azure, a double headed eagle Or, 3; Azure, a roundel Or charged with an octofoil between two eagles trussed regardant and addorsed Or, 4; Gules, a Lion passant guardant holding a cross Or. On an Inescutcheon en surtout, a Landscape of Mount Ararat with the flood waters receding and Noah's ark at the summit, all Argent."
         };
     }
 }
