@@ -1,4 +1,4 @@
-// Country Flags
+﻿// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,17 +14,22 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.CountryFlags;
+namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class CoatOfArms : CountryFlag
+public class Bahrain_CoatOfArms : CoatOfArms
 {
-    /// <summary>
-    /// In heraldry, an armiger is a person entitled to use a heraldic achievement
-    /// (e.g., bear arms, an "armour-bearer") either by hereditary right, grant, matriculation,
-    /// or assumption of arms. Such a person is said to be armigerous; a family or a clan
-    /// likewise. 
-    /// </summary>
-    public string Armiger { get; set; }
-    
-    public CoatOfArmsDescription CoaDescription { get; set; }
+    public Bahrain_CoatOfArms()
+    {
+        Country = Countries.Bahrain;
+
+        Id = "Coa";
+        Label = "Coat of arms";
+        Armiger = "King of Bahrain";
+        StartDate = new FlagDate(1932);
+        CoaDescription = new CoatOfArmsDescription
+        {
+            Shield = "Gules, a chief dancetty of five Argent",
+            OtherElements = "Mantling gules doubled argent"
+        };
+    }
 }
