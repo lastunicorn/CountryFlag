@@ -31,7 +31,11 @@ public class Chad_CoatOfArms : CoatOfArms
             Crest = "A demi sun Gules",
             Shield = "Barry dancetty of eight Or and Azure",
             Supporters = "Dexter a goat guardant and sinister a lion Or, both charged on the shoulder with an arrow the point upwards Gules",
-            Motto = "Unité, Travail, Progrès (Unity, Work, Progress)"
+            Motto = new TranslationNote
+            {
+                Text = "Unité, Travail, Progrès",
+                EnglishTranslation = "Unity, Work, Progress"
+            }
         };
     }
 }

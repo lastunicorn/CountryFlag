@@ -14,24 +14,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Globalization;
-
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Bahrain_CoatOfArms : CoatOfArms
+public class Belarus_1991CoatOfArms : CoatOfArms
 {
-    public Bahrain_CoatOfArms()
+    public Belarus_1991CoatOfArms()
     {
-        Country = Countries.Bahrain;
+        Country = Countries.Belarus;
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "King of Bahrain";
-        StartDate = new FlagDate(1932);
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Gules, a chief dancetty of five Argent",
-            OtherElements = "Mantling gules doubled argent"
-        };
+        Id = "Coa_1991";
+        Label = "Coat of arms (in the 1990s)";
+        Armiger = "Republic of Belarus";
+        StartDate = new FlagDate(1991);
+        EndDate = new FlagDate(1995);
     }
 }

@@ -29,7 +29,11 @@ public class Qatar_Emblem : CoatOfArms
         CoaDescription = new CoatOfArmsDescription
         {
             Supporters = "Two scimitars",
-            Motto = "دولة قطر \"State of Qatar\""
+            Motto = new TranslationNote
+            {
+                Text = "دولة قطر",
+                EnglishTranslation = "State of Qatar"
+            }
         };
     }
 }

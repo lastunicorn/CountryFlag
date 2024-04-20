@@ -1,4 +1,4 @@
-﻿// Country Flags
+// Country Flags
 // Copyright (C) 2022-2024 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -16,22 +16,19 @@
 
 using System.Globalization;
 
-namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
+namespace DustInTheWind.CountryFlags;
 
-public class Bahrain_CoatOfArms : CoatOfArms
+public readonly struct TranslationNote
 {
-    public Bahrain_CoatOfArms()
-    {
-        Country = Countries.Bahrain;
+    public string? Text { get; init; }
 
-        Id = "Coa";
-        Label = "Coat of arms";
-        Armiger = "King of Bahrain";
-        StartDate = new FlagDate(1932);
-        CoaDescription = new CoatOfArmsDescription
-        {
-            Shield = "Gules, a chief dancetty of five Argent",
-            OtherElements = "Mantling gules doubled argent"
-        };
-    }
+    public string? Language { get; init; }
+
+    public string? Romanized { get; init; }
+
+    public string? Phonetic { get; init; }
+
+    public string? EnglishTranslation { get; init; }
+
+    public string? Comments { get; init; }
 }

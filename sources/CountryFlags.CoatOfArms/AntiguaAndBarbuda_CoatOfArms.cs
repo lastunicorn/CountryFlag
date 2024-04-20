@@ -33,7 +33,11 @@ public class AntiguaAndBarbuda_CoatOfArms : CoatOfArms
             Shield = "Barry wavy of six Argent and Azure, a sugar mill on a grassy ground, proper; and a chief wavy Sable, a rising sun radiant Or.",
             Supporters = "Two deer, the dexter supporting a sugarcane and the sinister supporting an aloe, all proper",
             Compartment = "A grassy ground surrounded by waves of the sea Argent and Azure.",
-            Motto = "Each Endeavouring, All Achieving",
+            Motto = new TranslationNote
+            {
+                Text = "Each Endeavouring",
+                EnglishTranslation = "All Achieving"
+            },
             OtherElements = "Comital coronet above the shield"
         };
     }

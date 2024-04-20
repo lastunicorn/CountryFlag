@@ -54,7 +54,7 @@ public class CoatOfArmsDescription
     /// 'sentence') is a sentence or phrase expressing a belief or purpose, or the general
     /// motivation or intention of an individual, family, social group, or organisation.
     /// </summary>
-    public string Motto { get; set; }
+    public MultiLanguageText Motto { get; set; }
 
     public string OtherElements { get; set; }
 }

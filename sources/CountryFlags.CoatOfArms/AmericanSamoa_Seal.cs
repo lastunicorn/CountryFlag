@@ -27,7 +27,11 @@ public class AmericanSamoa_Seal : CoatOfArms
         Armiger = "American Samoa";
         CoaDescription = new CoatOfArmsDescription
         {
-            Motto = "Samoa Muamua Le Atua \"Samoa, God Is First\""
+            Motto = new TranslationNote
+            {
+                Text = "Samoa Muamua Le Atua",
+                EnglishTranslation = "Samoa, God Is First"
+            }
         };
     }
 }

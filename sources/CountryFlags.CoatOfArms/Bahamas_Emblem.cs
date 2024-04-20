@@ -27,7 +27,11 @@ public class Bahamas_Emblem : CoatOfArms
         StartDate = new FlagDate(1964);
         CoaDescription = new CoatOfArmsDescription
         {
-            Motto = "Expulsis Piratis – Restituta Commercia (Pirates Expelled – Commerce Restored)"
+            Motto = new TranslationNote
+            {
+                Text = "Expulsis Piratis – Restituta Commercia",
+                EnglishTranslation = "Pirates Expelled – Commerce Restored"
+            }
         };
     }
 }

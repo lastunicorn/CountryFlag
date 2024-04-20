@@ -29,7 +29,11 @@ public class Algeria_CoatOfArms : CoatOfArms
         CoaDescription = new CoatOfArmsDescription
         {
             Shield = "At the top, the sun rising over a mountain, In the center, a skilled goldsmith symmetrical about the major, the three central fingers together, the two ends of the fingers ended in beak of a dove carrying an olive branch. At the bottom, the crescent and star. Right, the ballot box topped with three ears differentiated and oak leaves and left an olive branch with fruit, layered and topped with a palm roof and smokestacks and oil drilling derricks and form of an outside circumference with an inscription in Arabic",
-            Motto = "الجمهورية الجزائرية الديمقراطية الشّعبية - People's Democratic Republic of Algeria"
+            Motto = new TranslationNote
+            {
+                Text = "الجمهورية الجزائرية الديمقراطية الشّعبية",
+                EnglishTranslation = "People's Democratic Republic of Algeria"
+            }
         };
     }
 }

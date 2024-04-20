@@ -14,29 +14,45 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.Globalization;
-
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Afghanistan_Emblem : CoatOfArms
+public class Belarus_CoatOfArms : CoatOfArms
 {
-    public Afghanistan_Emblem()
+    public Belarus_CoatOfArms()
     {
-        Country = Countries.Afghanistan_IslamicEmirate;
+        Country = Countries.Belarus;
 
-        Id = "Emblem";
-        Label = "National emblem";
-        Armiger = "Islamic Emirate of Afghanistan";
-        StartDate = new FlagDate(2021, 08, 15);
+        Id = "Coa";
+        Label = "Coat of arms";
+        Armiger = "Republic of Belarus";
+        StartDate = new FlagDate(1937)
+        {
+            Description = "original design"
+        };
+        OtherDates = new List<FlagDate>
+        {
+            new(1958)
+            {
+                Description = "modified"
+            },
+            new(1995)
+            {
+                Description = "restored"
+            },
+            new(2020)
+            {
+                Description = "current design"
+            }
+        };
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield",
+            Crest = "Red star",
+            Supporters = "Stalks of wheat, clover and flax",
             Motto = new TranslationNote
             {
-                Text = "لا إله إلا الله محمد رسول الله",
-                EnglishTranslation = "There is no god except Allah; Mohammad is the messenger of Allah.",
-                Comments = "Shahada"
+                Text = "Рэспубліка Беларусь",
+                Language = "belarusian",
+                EnglishTranslation = "Republic of Belarus"
             }
         };
     }

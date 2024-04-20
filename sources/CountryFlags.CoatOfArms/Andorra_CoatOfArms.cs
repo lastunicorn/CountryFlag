@@ -31,7 +31,11 @@ public class Andorra_CoatOfArms : CoatOfArms
         CoaDescription = new CoatOfArmsDescription
         {
             Shield = "Quarterly: first Gules, a crosier bendways sinister surmounted by a mitre Or lined Argent (Bishop of Urgell); second Or, three pallets Gules (Count of Foix); third Or, four pallets Gules (Catalonia); fourth Or, two cows passant in pale Gules horned and collared Azure (Viscount of Béarn).",
-            Motto = "Virtus Unita Fortior (\"United virtue is stronger\").",
+            Motto = new TranslationNote
+            {
+                Text = "Virtus Unita Fortior",
+                EnglishTranslation = "United virtue is stronger"
+            },
             OtherElements = "A console or."
         };
     }
