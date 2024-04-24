@@ -16,25 +16,31 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Afghanistan_Emblem : CoatOfArms
+public class Lesotho_1966CoatOfArms : CoatOfArms
 {
-    public Afghanistan_Emblem()
+    public Lesotho_1966CoatOfArms()
     {
-        Country = Countries.Afghanistan_IslamicEmirate;
+        Country = Countries.Lesotho;
 
-        Id = "Emblem";
-        Label = "National emblem";
-        Armiger = "Islamic Emirate of Afghanistan";
-        StartDate = new FlagDate(2021, 08, 15);
+        Id = "Coa_1966";
+        Label = "Coat of arms 1966";
+        Armiger = "Letsie III, King of Lesotho";
+        StartDate = new FlagDate(1966);
+        EndDate = new FlagDate(2006);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield",
-            Motto = new TranslationNote
+            Compartment = "The summit of Thaba Bosiu",
+            Motto = new MultiLanguageText
             {
-                Text = "لا إله إلا الله محمد رسول الله",
-                EnglishTranslation = "There is no god except Allah; Mohammad is the messenger of Allah.",
-                Comments = "Shahada"
+                new()
+                {
+                    Text = "Khotso, Pula, Nala"
+                },
+                new()
+                {
+                    Text = "Peace, Rain, Prosperity",
+                    Language = "english"
+                }
             }
         };
     }

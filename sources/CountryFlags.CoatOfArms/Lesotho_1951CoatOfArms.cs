@@ -16,26 +16,31 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Afghanistan_Emblem : CoatOfArms
+public class Lesotho_1951CoatOfArms : CoatOfArms
 {
-    public Afghanistan_Emblem()
+    public Lesotho_1951CoatOfArms()
     {
-        Country = Countries.Afghanistan_IslamicEmirate;
+        Country = Countries.Lesotho;
 
-        Id = "Emblem";
-        Label = "National emblem";
-        Armiger = "Islamic Emirate of Afghanistan";
-        StartDate = new FlagDate(2021, 08, 15);
+        Id = "Coa_1951";
+        Label = "Coat of arms (Colonial Basutoland)";
+        StartDate = new FlagDate(1966);
+        EndDate = new FlagDate(2006);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield",
-            Motto = new TranslationNote
+            Motto = new MultiLanguageText
             {
-                Text = "لا إله إلا الله محمد رسول الله",
-                EnglishTranslation = "There is no god except Allah; Mohammad is the messenger of Allah.",
-                Comments = "Shahada"
+                new()
+                {
+                    Text = "KHOTSO KE NALA"
+                },
+                new()
+                {
+                    Text = "Peace is Prosperity",
+                    Language = "english"
+                }
             }
         };
+        Comments = "Coat of arms of colonial Basutoland";
     }
 }

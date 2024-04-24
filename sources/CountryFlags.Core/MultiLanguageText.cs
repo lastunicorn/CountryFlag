@@ -33,6 +33,16 @@ public class MultiLanguageText : Collection<Translation>
 
     public string? Comments { get; set; }
 
+    public MultiLanguageText()
+    {
+    }
+
+    public MultiLanguageText(IEnumerable<Translation> translations)
+    {
+        foreach (Translation translation in translations)
+            Items.Add(translation);
+    }
+
     public static implicit operator MultiLanguageText(string text)
     {
         MultiLanguageText multiLanguageText = new();

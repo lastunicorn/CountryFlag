@@ -16,25 +16,33 @@
 
 namespace DustInTheWind.CountryFlags.CountryCoatOfArms;
 
-public class Afghanistan_Emblem : CoatOfArms
+public class Lesotho_CoatOfArms : CoatOfArms
 {
-    public Afghanistan_Emblem()
+    public Lesotho_CoatOfArms()
     {
-        Country = Countries.Afghanistan_IslamicEmirate;
+        Country = Countries.Lesotho;
 
-        Id = "Emblem";
-        Label = "National emblem";
-        Armiger = "Islamic Emirate of Afghanistan";
-        StartDate = new FlagDate(2021, 08, 15);
+        Id = "Coa";
+        Label = "Coat of arms";
+        Armiger = "Letsie III, King of Lesotho";
+        StartDate = new FlagDate(2006, 10, 04);
         CoaDescription = new CoatOfArmsDescription
         {
-            Shield = "Azure a stag trippant Or.",
-            OtherElements = "Comital coronet above the shield",
-            Motto = new TranslationNote
+            Shield = "The crocodile on the shield has been retained from the arms of Basutoland, the predecessor to Lesotho",
+            Supporters = "two Basotho horses",
+            Compartment = "The summit of Thaba Bosiu",
+            Motto = new MultiLanguageText
             {
-                Text = "لا إله إلا الله محمد رسول الله",
-                EnglishTranslation = "There is no god except Allah; Mohammad is the messenger of Allah.",
-                Comments = "Shahada"
+                new()
+                {
+                    Text = "Khotso, Pula, Nala ",
+                    Language = "sesotho"
+                },
+                new()
+                {
+                    Text = "Peace, Rain, Prosperity",
+                    Language = "english"
+                }
             }
         };
     }
