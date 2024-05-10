@@ -32,9 +32,9 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         FlagsSetup.LoadAllFromAssemblyContaining(typeof(DefaultFlagsRepository));
-        //FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
+        FlagsSetup.LoadAllFromAssemblyContaining(typeof(InUseFlagsRepository));
         //FlagsSetup.LoadAllFromAssemblyContaining(typeof(OutdatedFlagsRepository));
-        FlagsSetup.LoadAllFromAssemblyContaining(typeof(CoatOfArmsRepository));
+        //FlagsSetup.LoadAllFromAssemblyContaining(typeof(CoatOfArmsRepository));
 
         MainViewModel mainViewModel = new();
         MainWindow mainWindow = new(mainViewModel);
